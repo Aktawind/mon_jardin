@@ -172,19 +172,18 @@ class _PlantListState extends State<_PlantList> {
               shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
               child: ListTile(
                 // Avatar avec la première lettre
-                leading: plant.photoPath != null
-                    ? CircleAvatar(
-                        radius: 25,
-                        backgroundImage: FileImage(File(plant.photoPath!)),
-                      )
-                    : CircleAvatar(
-                        radius: 25,
-                        backgroundColor: Theme.of(context).colorScheme.primary.withOpacity(0.1),
-                        child: Text(
-                          plant.name.isNotEmpty ? plant.name[0].toUpperCase() : "?",
-                          style: TextStyle(color: Theme.of(context).colorScheme.primary, fontWeight: FontWeight.bold),
+                leading: Hero(
+                  // Le tag doit être IDENTIQUE à celui de l'autre écran (l'ID de la plante)
+                  tag: plant.id, 
+                  child: plant.photoPath != null
+                      ? CircleAvatar(
+                          radius: 25,
+                          backgroundImage: FileImage(File(plant.photoPath!)),
+                        )
+                      : CircleAvatar(
+                          // ... ton avatar par défaut ...
                         ),
-                      ),
+                ),
                 
                 // Titre et info pièce
                 title: Text(plant.name, style: const TextStyle(fontWeight: FontWeight.bold)),

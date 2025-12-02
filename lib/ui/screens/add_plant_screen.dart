@@ -164,26 +164,15 @@ class _AddPlantScreenState extends State<AddPlantScreen> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              // Photo (avec un petit système pour charger l'image existante si besoin)
-              // Note: ImageInput a été conçu pour créer, il faut peut-être l'adapter légèrement
-              // pour afficher l'image existante au démarrage. 
-              // Pour simplifier ici, on reconstruit ImageInput pour qu'il prenne une image initiale ?
-              // Ou plus simple : on affiche l'image actuelle au dessus s'il y en a une.
-              if (_selectedImage != null && !_selectedImage!.contains('cache')) 
-                 Padding(
-                   padding: const EdgeInsets.only(bottom: 16),
-                   child: ClipRRect(
-                     borderRadius: BorderRadius.circular(12),
-                     child: Image.file(
-                       File(_selectedImage!), 
-                       height: 200, 
-                       fit: BoxFit.cover
-                     ),
-                   ),
-                 ),
               
               // Widget de sélection (pour changer ou ajouter)
-              ImageInput(onSelectImage: _selectImage),
+              ImageInput(
+                onSelectImage: _selectImage,
+                // On passe l'image actuelle pour qu'elle s'affiche dedans
+                initialImage: _selectedImage, 
+                // On passe l'ID de la plante comme "Tag" pour l'animation
+                heroTag: _isEditing ? widget.plantToEdit!.id : null,
+              ),
               
               const SizedBox(height: 24),
 

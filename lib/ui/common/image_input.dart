@@ -6,8 +6,15 @@ import 'package:path_provider/path_provider.dart' as syspaths;
 
 class ImageInput extends StatefulWidget {
   final Function(String) onSelectImage;
+  final String? initialImage; // Nouveau : image de départ
+  final String? heroTag;      // Nouveau : pour l'animation
 
-  const ImageInput({super.key, required this.onSelectImage});
+  const ImageInput({
+    super.key, 
+    required this.onSelectImage, 
+    this.initialImage,
+    this.heroTag,
+  });
 
   @override
   State<ImageInput> createState() => _ImageInputState();
@@ -16,28 +23,32 @@ class ImageInput extends StatefulWidget {
 class _ImageInputState extends State<ImageInput> {
   File? _storedImage;
 
+  @override
+  void initState() {
+    super.initState();
+    // Si on nous donne une image au démarrage (mode édition), on l'affiche
+    if (widget.initialImage != null) {
+      _storedImage = File(widget.initialImage!);
+    }
+  }
+
   Future<void> _takePicture(ImageSource source) async {
     final picker = ImagePicker();
-    // On ouvre la caméra ou la galerie
     final imageFile = await picker.pickImage(
       source: source,
-      maxWidth: 600, // On limite la taille pour pas faire exploser la mémoire
+      maxWidth: 600,
     );
 
-    if (imageFile == null) {
-      return;
-    }
+    if (imageFile == null) return;
 
     setState(() {
       _storedImage = File(imageFile.path);
     });
 
-    // Sauvegarde de l'image dans le dossier de l'appli
     final appDir = await syspaths.getApplicationDocumentsDirectory();
     final fileName = path.basename(imageFile.path);
     final savedImage = await _storedImage!.copy('${appDir.path}/$fileName');
 
-    // On renvoie le chemin au formulaire parent
     widget.onSelectImage(savedImage.path);
   }
 
@@ -69,39 +80,55 @@ class _ImageInputState extends State<ImageInput> {
 
   @override
   Widget build(BuildContext context) {
+    // Le contenu de l'image (soit l'image, soit le bouton)
+    Widget content;
+
+    if (_storedImage != null) {
+      // C'est ici qu'on met l'animation Hero
+      // On vérifie si un Tag existe (pour éviter les erreurs en mode création)
+      Widget imageWidget = Image.file(
+        _storedImage!,
+        fit: BoxFit.cover,
+        width: double.infinity,
+      );
+
+      if (widget.heroTag != null) {
+        content = Hero(
+          tag: widget.heroTag!, 
+          child: imageWidget,
+        );
+      } else {
+        content = imageWidget;
+      }
+    } else {
+      content = Center(
+        child: TextButton.icon(
+          onPressed: _showPickerOptions,
+          icon: const Icon(Icons.add_a_photo),
+          label: const Text('Ajouter une photo'),
+        ),
+      );
+    }
+
     return Column(
       children: [
-        Container(
-          height: 200,
-          width: double.infinity,
-          decoration: BoxDecoration(
-            border: Border.all(width: 1, color: Colors.grey),
-            borderRadius: BorderRadius.circular(12),
-            color: Colors.grey[100],
+        GestureDetector(
+          onTap: _showPickerOptions, // Permet de changer la photo en cliquant dessus
+          child: Container(
+            height: 250, // Un peu plus grand pour être joli
+            width: double.infinity,
+            decoration: BoxDecoration(
+              border: Border.all(width: 1, color: Colors.grey),
+              borderRadius: BorderRadius.circular(12),
+              color: Colors.grey[100],
+            ),
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(12),
+              child: content,
+            ),
           ),
-          child: _storedImage != null
-              ? ClipRRect(
-                  borderRadius: BorderRadius.circular(12),
-                  child: Image.file(
-                    _storedImage!,
-                    fit: BoxFit.cover,
-                    width: double.infinity,
-                  ),
-                )
-              : Center(
-                  child: TextButton.icon(
-                    onPressed: _showPickerOptions,
-                    icon: const Icon(Icons.add_a_photo),
-                    label: const Text('Ajouter une photo'),
-                  ),
-                ),
         ),
-        if (_storedImage != null)
-          TextButton.icon(
-             onPressed: _showPickerOptions,
-             icon: const Icon(Icons.refresh),
-             label: const Text("Changer la photo"),
-          )
+        // On enlève le bouton "Changer la photo" du bas car on peut cliquer sur l'image maintenant
       ],
     );
   }
