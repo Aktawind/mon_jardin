@@ -64,10 +64,35 @@ class _HomeScreenState extends State<HomeScreen> {
 }
 
 // Widget séparé pour afficher la liste, pour ne pas surcharger le code principal
-class _PlantList extends StatelessWidget {
+class _PlantList extends StatefulWidget {
   final String locationFilter;
 
   const _PlantList({required this.locationFilter});
+
+  @override
+  State<_PlantList> createState() => _PlantListState();
+}
+
+class _PlantListState extends State<_PlantList> {
+  
+  // Fonction pour gérer le clic sur la goutte d'eau
+  Future<void> _waterPlant(Plant plant) async {
+    await DatabaseService().updatePlantWatering(plant.id);
+    setState(() {
+      // Le setState va relancer le FutureBuilder et mettre à jour l'affichage
+    });
+    
+    // Petit feedback visuel en bas de l'écran
+    if (mounted) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text("${plant.name} a été arrosée ! 💧"),
+          duration: const Duration(seconds: 2),
+          backgroundColor: Theme.of(context).colorScheme.secondary,
+        ),
+      );
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -78,10 +103,12 @@ class _PlantList extends StatelessWidget {
           return const Center(child: CircularProgressIndicator());
         }
 
-        // On filtre la liste globale pour ne garder que le bon lieu
         final plants = snapshot.data!
-            .where((p) => p.location == locationFilter)
+            .where((p) => p.location == widget.locationFilter)
             .toList();
+            
+        // Optionnel : Trier pour mettre ceux qui ont soif en premier !
+        plants.sort((a, b) => a.daysUntilWatering.compareTo(b.daysUntilWatering));
 
         if (plants.isEmpty) {
           return Center(
@@ -90,7 +117,7 @@ class _PlantList extends StatelessWidget {
               children: [
                 Icon(Icons.spa_outlined, size: 64, color: Colors.grey[300]),
                 const SizedBox(height: 16),
-                Text("Aucune plante en $locationFilter", 
+                Text("Aucune plante en ${widget.locationFilter}", 
                   style: TextStyle(color: Colors.grey[500])),
               ],
             ),
@@ -101,21 +128,75 @@ class _PlantList extends StatelessWidget {
           itemCount: plants.length,
           itemBuilder: (context, index) {
             final plant = plants[index];
+            final days = plant.daysUntilWatering;
+            
+            // Gestion des couleurs et textes selon l'urgence
+            Color statusColor;
+            String statusText;
+            
+            if (days < 0) {
+              statusColor = Colors.redAccent;
+              statusText = "En retard de ${days.abs()} j !";
+            } else if (days == 0) {
+              statusColor = Colors.orange;
+              statusText = "Aujourd'hui !";
+            } else {
+              statusColor = Colors.green;
+              statusText = "Dans $days j";
+            }
+
             return Card(
               margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
               elevation: 2,
               shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
               child: ListTile(
+                // Avatar avec la première lettre
                 leading: CircleAvatar(
-                  backgroundColor: Theme.of(context).colorScheme.primary.withOpacity(0.2),
-                  child: Text(plant.name[0].toUpperCase(), 
-                    style: TextStyle(color: Theme.of(context).colorScheme.primary)),
+                  backgroundColor: Theme.of(context).colorScheme.primary.withOpacity(0.1),
+                  child: Text(
+                    plant.name.isNotEmpty ? plant.name[0].toUpperCase() : "?",
+                    style: TextStyle(color: Theme.of(context).colorScheme.primary, fontWeight: FontWeight.bold),
+                  ),
                 ),
+                
+                // Titre et info pièce
                 title: Text(plant.name, style: const TextStyle(fontWeight: FontWeight.bold)),
-                subtitle: Text(plant.species),
-                trailing: const Icon(Icons.chevron_right),
+                subtitle: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(plant.species),
+                    if (plant.room != null && plant.room!.isNotEmpty)
+                      Text("📍 ${plant.room}", style: TextStyle(fontSize: 12, color: Colors.grey[600])),
+                    const SizedBox(height: 4),
+                    // Le petit indicateur de temps
+                    Container(
+                      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                      decoration: BoxDecoration(
+                        color: statusColor.withOpacity(0.1),
+                        borderRadius: BorderRadius.circular(8),
+                        border: Border.all(color: statusColor.withOpacity(0.5)),
+                      ),
+                      child: Text(
+                        statusText,
+                        style: TextStyle(color: statusColor, fontSize: 12, fontWeight: FontWeight.bold),
+                      ),
+                    )
+                  ],
+                ),
+                
+                // Le bouton d'action rapide
+                trailing: IconButton(
+                  icon: Icon(
+                    days <= 0 ? Icons.water_drop : Icons.check_circle_outline,
+                    color: days <= 0 ? Theme.of(context).colorScheme.primary : Colors.grey,
+                    size: 32,
+                  ),
+                  onPressed: () => _waterPlant(plant),
+                  tooltip: "Marquer comme arrosée",
+                ),
+                
                 onTap: () {
-                  // Plus tard : aller vers le détail de la plante
+                  // Plus tard : détail complet
                 },
               ),
             );

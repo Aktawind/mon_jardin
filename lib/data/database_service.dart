@@ -74,4 +74,17 @@ class DatabaseService {
     final List<Map<String, dynamic>> maps = await db.query('plants');
     return List.generate(maps.length, (i) => Plant.fromMap(maps[i]));
   }
+
+  // Met à jour la date d'arrosage à "Maintenant"
+  Future<void> updatePlantWatering(String id) async {
+    final db = await database;
+    await db.update(
+      'plants',
+      {
+        'last_watered': DateTime.now().toIso8601String(),
+      },
+      where: 'id = ?',
+      whereArgs: [id],
+    );
+  }
 }

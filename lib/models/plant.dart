@@ -62,4 +62,35 @@ class Plant {
       'last_fertilized': lastFertilized?.toIso8601String(),
     };
   }
+
+  // Est-ce qu'on est en hiver ? (Simplification : Octobre à Mars)
+  bool get _isWinter {
+    final month = DateTime.now().month;
+    return month >= 10 || month <= 3;
+  }
+
+  // Quelle fréquence utiliser aujourd'hui ?
+  int get currentFrequency => _isWinter ? waterFrequencyWinter : waterFrequencySummer;
+
+  // Calcul de la prochaine date d'arrosage
+  DateTime get nextWateringDate {
+    if (lastWatered == null) {
+      // Si jamais arrosée, on considère qu'il faut le faire aujourd'hui (ou date d'ajout)
+      return dateAdded; 
+    }
+    return lastWatered!.add(Duration(days: currentFrequency));
+  }
+
+  // Combien de jours restants ? (Négatif = Retard)
+  int get daysUntilWatering {
+    final now = DateTime.now();
+    // On normalise les dates pour ignorer les heures/minutes et comparer juste les jours
+    final today = DateTime(now.year, now.month, now.day);
+    final next = DateTime(nextWateringDate.year, nextWateringDate.month, nextWateringDate.day);
+    
+    return next.difference(today).inDays;
+  }
+
+  // Est-ce urgent ? (Si on doit arroser aujourd'hui ou avant)
+  bool get isThirsty => daysUntilWatering <= 0;
 }
