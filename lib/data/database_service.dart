@@ -1,6 +1,7 @@
 import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
 import '../models/plant.dart';
+import '../models/plant_event.dart';
 
 class DatabaseService {
   // Singleton : on s'assure qu'il n'y a qu'une seule instance de la BDD ouverte
@@ -23,7 +24,7 @@ class DatabaseService {
     // On ouvre la base. Si la version change, on appelle onUpgrade
     return await openDatabase(
       path,
-      version: 3, 
+      version: 4, 
       onCreate: _onCreate,
       onUpgrade: _onUpgrade,
     );
@@ -54,6 +55,18 @@ class DatabaseService {
         last_watered TEXT
       )
     ''');
+
+    // Création table events
+    await db.execute('''
+      CREATE TABLE events(
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        plant_id TEXT,
+        type TEXT,
+        date TEXT,
+        note TEXT,
+        FOREIGN KEY(plant_id) REFERENCES plants(id) ON DELETE CASCADE
+      )
+    ''');
   }
 
   // Gestion des futures mises à jour (ex: passer de V1 à V2)
@@ -75,6 +88,19 @@ class DatabaseService {
       await db.execute("ALTER TABLE plants ADD COLUMN repotting_freq INTEGER DEFAULT 24");  // Par défaut 2 ans
       await db.execute("ALTER TABLE plants ADD COLUMN last_repotted TEXT");
       await db.execute("ALTER TABLE plants ADD COLUMN pruning_info TEXT");
+    }
+
+    if (oldVersion < 4) {
+      print("Mise à jour V4 : Création de l'historique");
+      await db.execute('''
+        CREATE TABLE events(
+          id INTEGER PRIMARY KEY AUTOINCREMENT,
+          plant_id TEXT,
+          type TEXT,
+          date TEXT,
+          note TEXT
+        )
+      ''');
     }
   }
 
@@ -98,14 +124,22 @@ class DatabaseService {
   // Met à jour la date d'arrosage à "Maintenant"
   Future<void> updatePlantWatering(String id) async {
     final db = await database;
+    final now = DateTime.now();
+
+    // 1. Mise à jour de la plante (comme avant)
     await db.update(
       'plants',
-      {
-        'last_watered': DateTime.now().toIso8601String(),
-      },
+      {'last_watered': now.toIso8601String()},
       where: 'id = ?',
       whereArgs: [id],
     );
+
+    // 2. AJOUT HISTORIQUE   
+    await logEvent(PlantEvent(
+      plantId: id,
+      type: 'water',
+      date: now,
+    ));
   }
 
   // Mettre à jour toutes les infos d'une plante
@@ -161,5 +195,43 @@ class DatabaseService {
     );
     
     print("Apprentissage : Plante ${plant.name} ajustée de $currentFreq à $newFreq jours (${isWinter ? 'Hiver' : 'Été'})");
+  }
+
+  Future<void> logEvent(PlantEvent event) async {
+    final db = await database;
+    
+    // 1. On insère le nouvel événement
+    await db.insert('events', event.toMap());
+
+    // 2. On définit la limite selon le type
+    int limit = 10; // Par défaut (Arrosage)
+    if (event.type == 'fertilizer') limit = 5;
+    if (event.type == 'repot') limit = 2;
+    if (event.type == 'prune') limit = 5;
+
+    // 3. NETTOYAGE : On supprime les vieux enregistrements en trop
+    // La requête SQL un peu complexe dit : "Garde les X plus récents, supprime les autres"
+    await db.execute('''
+      DELETE FROM events 
+      WHERE plant_id = ? AND type = ? 
+      AND id NOT IN (
+        SELECT id FROM events 
+        WHERE plant_id = ? AND type = ? 
+        ORDER BY date DESC 
+        LIMIT ?
+      )
+    ''', [event.plantId, event.type, event.plantId, event.type, limit]);
+  }
+
+  // Récupérer l'historique d'une plante
+  Future<List<PlantEvent>> getEventsForPlant(String plantId) async {
+    final db = await database;
+    final List<Map<String, dynamic>> maps = await db.query(
+      'events',
+      where: 'plant_id = ?',
+      whereArgs: [plantId],
+      orderBy: 'date DESC', // Du plus récent au plus vieux
+    );
+    return List.generate(maps.length, (i) => PlantEvent.fromMap(maps[i]));
   }
 }

@@ -6,6 +6,7 @@ import '../../data/database_service.dart';
 import '../../services/notification_service.dart';
 import 'add_plant_screen.dart';
 import '../common/smart_watering_sheet.dart';
+import 'history_screen.dart';
 
 class PlantDetailScreen extends StatefulWidget {
   final Plant plant;
@@ -125,6 +126,16 @@ class _PlantDetailScreenState extends State<PlantDetailScreen> {
             pinned: true, // La barre reste visible quand on scrolle
             backgroundColor: Theme.of(context).colorScheme.primary,
             actions: [
+              IconButton(
+                icon: const Icon(Icons.history),
+                tooltip: "Voir le journal",
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => HistoryScreen(plant: _plant)),
+                  );
+                },
+              ),
               // Le fameux menu "3 points"
               PopupMenuButton<String>(
                 onSelected: (value) {
