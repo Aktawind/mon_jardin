@@ -28,6 +28,7 @@ class _AddPlantScreenState extends State<AddPlantScreen> {
   String? _selectedImage;
   String _location = 'Intérieur'; 
   int _waterFreqSummer = 7;
+  PlantSpeciesData? _foundSpeciesData;
   
   // Pour savoir si on est en mode édition
   bool get _isEditing => widget.plantToEdit != null;
@@ -60,11 +61,16 @@ class _AddPlantScreenState extends State<AddPlantScreen> {
   void _onSpeciesSelected(String species) {
     setState(() {
       _selectedSpecies = species;
-      // On ne change la fréquence automatiquement que si on est en mode création
-      // ou si l'utilisateur change d'espèce (pour ne pas écraser ses réglages perso)
-      if (!_isEditing || _selectedSpecies != widget.plantToEdit?.species) {
-         if (speciesWateringData.containsKey(species)) {
-          _waterFreqSummer = speciesWateringData[species]!;
+      
+      // On cherche dans la nouvelle encyclopédie
+      final data = getSpeciesData(species);
+      
+      if (data != null) {
+        _foundSpeciesData = data; // On stocke tout (lumière, terre, etc.)
+        
+        // On met à jour la fréquence si on est en création
+        if (!_isEditing || _selectedSpecies != widget.plantToEdit?.species) {
+          _waterFreqSummer = data.waterSummer;
         }
       }
     });
@@ -86,18 +92,35 @@ class _AddPlantScreenState extends State<AddPlantScreen> {
 
       // 2. Création de l'objet (Nouvel ID ou Ancien ID)
       final plant = Plant(
+        // 1. Identifiants et infos de base
         id: _isEditing ? widget.plantToEdit!.id : const Uuid().v4(),
         name: finalName,
         species: _selectedSpecies,
         location: _location,
         room: _roomController.text.trim(),
         photoPath: _selectedImage,
+        
+        // 2. Dates
         dateAdded: _isEditing ? widget.plantToEdit!.dateAdded : DateTime.now(),
         lastWatered: _isEditing ? widget.plantToEdit!.lastWatered : null,
-        // Si on édite, on garde l'historique, sinon null
-        
+        // On garde l'historique de fertilisation/rempotage si on édite
+        lastFertilized: _isEditing ? widget.plantToEdit!.lastFertilized : null,
+        lastRepotted: _isEditing ? widget.plantToEdit!.lastRepotted : null,
+
+        // 3. Arrosage (Priorité : Slider actuel > Données encyclopédie > Valeur par défaut)
         waterFrequencySummer: _waterFreqSummer,
-        waterFrequencyWinter: _waterFreqSummer * 2, 
+        waterFrequencyWinter: _foundSpeciesData?.waterWinter ?? (_isEditing ? widget.plantToEdit!.waterFrequencyWinter : _waterFreqSummer * 2),
+        
+        // 4. Infos Encyclopédiques (Priorité : Encyclopédie > Existant > Null)
+        lightLevel: _foundSpeciesData?.light ?? widget.plantToEdit?.lightLevel,
+        temperatureInfo: _foundSpeciesData?.temp ?? widget.plantToEdit?.temperatureInfo,
+        humidityPref: _foundSpeciesData?.humidity ?? widget.plantToEdit?.humidityPref,
+        soilType: _foundSpeciesData?.soil ?? widget.plantToEdit?.soilType,
+        pruningInfo: _foundSpeciesData?.pruning ?? widget.plantToEdit?.pruningInfo,
+        
+        // 5. Fréquences techniques
+        fertilizerFreq: _foundSpeciesData?.fertilizeFreq ?? widget.plantToEdit?.fertilizerFreq ?? 30,
+        repottingFreq: _foundSpeciesData?.repotFreq ?? widget.plantToEdit?.repottingFreq ?? 24,
       );
 
       // 3. Sauvegarde (Update ou Insert)
@@ -177,10 +200,14 @@ class _AddPlantScreenState extends State<AddPlantScreen> {
               const SizedBox(height: 24),
 
               Autocomplete<String>(
-                initialValue: TextEditingValue(text: _selectedSpecies), // Valeur initiale !
+                initialValue: TextEditingValue(text: _selectedSpecies),
                 optionsBuilder: (TextEditingValue textEditingValue) {
                   if (textEditingValue.text == '') return const Iterable<String>.empty();
-                  return speciesWateringData.keys.where((String option) {
+                  
+                  // NOUVELLE LOGIQUE : On parcourt l'encyclopédie
+                  return encyclopedia
+                      .map((e) => e.species) // On ne garde que les noms
+                      .where((String option) {
                     return option.toLowerCase().contains(textEditingValue.text.toLowerCase());
                   });
                 },

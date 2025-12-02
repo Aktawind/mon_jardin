@@ -23,7 +23,7 @@ class DatabaseService {
     // On ouvre la base. Si la version change, on appelle onUpgrade
     return await openDatabase(
       path,
-      version: 2, 
+      version: 3, 
       onCreate: _onCreate,
       onUpgrade: _onUpgrade,
     );
@@ -41,13 +41,19 @@ class DatabaseService {
         photo_path TEXT,
         water_freq_summer INTEGER,
         water_freq_winter INTEGER,
-        light_needs TEXT,
+        light_level TEXT,       -- Faible, Indirecte, Vive
+        temperature_info TEXT,  -- Texte libre (ex: 18-24°C, éviter courants d'air)
+        humidity_pref TEXT,     -- Normal, Humide (SDB)
+        soil_type TEXT,         -- Drainant, Riche, Terre de bruyère...
+        fertilizer_freq INTEGER,-- En jours (ex: 30 pour 1 mois). 0 = jamais
+        last_fertilized TEXT,   -- Date
+        repotting_freq INTEGER, -- En mois (ex: 24 pour 2 ans)
+        last_repotted TEXT,     -- Date (ou date d'achat par défaut)
+        pruning_info TEXT,      -- Conseils de taille
         date_added TEXT,
-        last_watered TEXT,
-        last_fertilized TEXT
+        last_watered TEXT
       )
     ''');
-    print("Base de données créée avec la table Plants");
   }
 
   // Gestion des futures mises à jour (ex: passer de V1 à V2)
@@ -55,6 +61,20 @@ class DatabaseService {
     if (oldVersion < 2) {
       print("Mise à jour de la BDD : Ajout de la colonne 'room'");
       await db.execute("ALTER TABLE plants ADD COLUMN room TEXT");
+    }
+
+    // Migration V2 -> V3 (La grosse mise à jour)
+    if (oldVersion < 3) {
+      print("Mise à jour V3 : Ajout des infos encyclopédiques");
+      // SQLite ne permet pas d'ajouter plusieurs colonnes en une seule ligne ALTER, il faut les faire une par une
+      await db.execute("ALTER TABLE plants ADD COLUMN light_level TEXT");
+      await db.execute("ALTER TABLE plants ADD COLUMN temperature_info TEXT");
+      await db.execute("ALTER TABLE plants ADD COLUMN humidity_pref TEXT");
+      await db.execute("ALTER TABLE plants ADD COLUMN soil_type TEXT");
+      await db.execute("ALTER TABLE plants ADD COLUMN fertilizer_freq INTEGER DEFAULT 30"); // Par défaut 1 mois
+      await db.execute("ALTER TABLE plants ADD COLUMN repotting_freq INTEGER DEFAULT 24");  // Par défaut 2 ans
+      await db.execute("ALTER TABLE plants ADD COLUMN last_repotted TEXT");
+      await db.execute("ALTER TABLE plants ADD COLUMN pruning_info TEXT");
     }
   }
 
