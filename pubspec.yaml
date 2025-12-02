@@ -30,12 +30,14 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  sqflite: ^2.3.0
-  path: ^1.8.3
-  uuid: ^4.2.1
-  intl: ^0.20.2
-  flutter_local_notifications: ^18.0.1
-  timezone: ^0.10.0 # Indispensable pour programmer à une date précise
+  sqflite: ^2.3.0 # Pour la base de données SQLite
+  path: ^1.8.3 # Pour gérer les chemins de fichiers
+  uuid: ^4.2.1 # Pour générer des IDs uniques
+  intl: ^0.20.2 # Pour la gestion des dates et heures
+  flutter_local_notifications: ^18.0.1 # Pour les notifications locales
+  timezone: ^0.10.0  # Pour la gestion des fuseaux horaires
+  image_picker: ^1.0.4 # Pour sélectionner des images dans la galerie ou prendre des photos
+  path_provider: ^2.1.1 # Pour accéder aux répertoires de stockage
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.

@@ -3,6 +3,7 @@ import '../../data/database_service.dart';
 import '../../models/plant.dart';
 import 'add_plant_screen.dart';
 import '../../services/notification_service.dart';
+import 'dart:io';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -171,13 +172,19 @@ class _PlantListState extends State<_PlantList> {
               shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
               child: ListTile(
                 // Avatar avec la première lettre
-                leading: CircleAvatar(
-                  backgroundColor: Theme.of(context).colorScheme.primary.withOpacity(0.1),
-                  child: Text(
-                    plant.name.isNotEmpty ? plant.name[0].toUpperCase() : "?",
-                    style: TextStyle(color: Theme.of(context).colorScheme.primary, fontWeight: FontWeight.bold),
-                  ),
-                ),
+                leading: plant.photoPath != null
+                    ? CircleAvatar(
+                        radius: 25,
+                        backgroundImage: FileImage(File(plant.photoPath!)),
+                      )
+                    : CircleAvatar(
+                        radius: 25,
+                        backgroundColor: Theme.of(context).colorScheme.primary.withOpacity(0.1),
+                        child: Text(
+                          plant.name.isNotEmpty ? plant.name[0].toUpperCase() : "?",
+                          style: TextStyle(color: Theme.of(context).colorScheme.primary, fontWeight: FontWeight.bold),
+                        ),
+                      ),
                 
                 // Titre et info pièce
                 title: Text(plant.name, style: const TextStyle(fontWeight: FontWeight.bold)),
@@ -215,8 +222,19 @@ class _PlantListState extends State<_PlantList> {
                   tooltip: "Marquer comme arrosée",
                 ),
                 
-                onTap: () {
-                  // Plus tard : détail complet
+                onTap: () async {
+                  // Navigation vers l'écran d'ajout, mais en passant la plante existante
+                  final result = await Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => AddPlantScreen(plantToEdit: plant),
+                    ),
+                  );
+                  
+                  // Si on a supprimé ou modifié, on rafraichit la liste
+                  if (result == true) {
+                    setState(() {});
+                  }
                 },
               ),
             );

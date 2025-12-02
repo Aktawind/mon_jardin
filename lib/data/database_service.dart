@@ -87,4 +87,25 @@ class DatabaseService {
       whereArgs: [id],
     );
   }
+
+  // Mettre à jour toutes les infos d'une plante
+  Future<void> updatePlant(Plant plant) async {
+    final db = await database;
+    await db.update(
+      'plants',
+      plant.toMap(),
+      where: 'id = ?',
+      whereArgs: [plant.id],
+    );
+  }
+
+  // Supprimer une plante
+  Future<void> deletePlant(String id) async {
+    final db = await database;
+    await db.delete(
+      'plants',
+      where: 'id = ?',
+      whereArgs: [id],
+    );
+  }
 }
