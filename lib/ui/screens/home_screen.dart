@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../../data/database_service.dart';
 import '../../models/plant.dart';
 import 'add_plant_screen.dart';
+import '../../services/notification_service.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -77,10 +78,29 @@ class _PlantListState extends State<_PlantList> {
   
   // Fonction pour gérer le clic sur la goutte d'eau
   Future<void> _waterPlant(Plant plant) async {
+    // 1. Mise à jour BDD
     await DatabaseService().updatePlantWatering(plant.id);
-    setState(() {
-      // Le setState va relancer le FutureBuilder et mettre à jour l'affichage
-    });
+    
+    // 2. On récupère la plante mise à jour pour avoir la NOUVELLE date calculée
+    // (Petite astuce : comme updatePlantWatering ne renvoie pas l'objet, 
+    // on peut recalculer manuellement ou recharger, ici on recrée une instance temporaire propre)
+    final updatedPlant = Plant(
+      id: plant.id,
+      name: plant.name,
+      species: plant.species,
+      location: plant.location,
+      room: plant.room,
+      dateAdded: plant.dateAdded,
+      waterFrequencySummer: plant.waterFrequencySummer,
+      waterFrequencyWinter: plant.waterFrequencyWinter,
+      // Le point clé : on simule que lastWatered est "Maintenant"
+      lastWatered: DateTime.now(), 
+    );
+
+    // 3. On programme la prochaine notif
+    await NotificationService().schedulePlantNotification(updatedPlant);
+
+    setState(() {});
     
     // Petit feedback visuel en bas de l'écran
     if (mounted) {

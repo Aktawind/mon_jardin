@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:uuid/uuid.dart';
 import '../../data/database_service.dart';
 import '../../models/plant.dart';
-import '../../data/plant_data.dart'; // Import des données
+import '../../data/plant_data.dart';
+import '../../services/notification_service.dart';
 
 class AddPlantScreen extends StatefulWidget {
   const AddPlantScreen({super.key});
@@ -53,6 +54,7 @@ class _AddPlantScreenState extends State<AddPlantScreen> {
       );
 
       await DatabaseService().insertPlant(newPlant);
+      await NotificationService().schedulePlantNotification(newPlant);
       if (mounted) Navigator.pop(context, true);
     }
   }

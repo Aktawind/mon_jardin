@@ -1,11 +1,20 @@
 import 'package:flutter/material.dart';
 import 'data/database_service.dart';
-import 'ui/screens/home_screen.dart'; // Importe le nouvel écran
+import 'ui/screens/home_screen.dart';
+import 'services/notification_service.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+
+  // Init BDD
   final db = DatabaseService();
   await db.database; 
+  
+  // Init Notifications
+  final notifService = NotificationService();
+  await notifService.init();
+  await notifService.requestPermissions(); // Demande la permission dès le lancement
+
   runApp(const MyApp());
 }
 
