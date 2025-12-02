@@ -1,13 +1,11 @@
 import 'package:flutter/material.dart';
 import 'data/database_service.dart';
+import 'ui/screens/home_screen.dart'; // Importe le nouvel écran
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  
-  // Petit test pour initialiser la DB au démarrage
   final db = DatabaseService();
   await db.database; 
-
   runApp(const MyApp());
 }
 
@@ -17,20 +15,21 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false, // Enlève le bandeau "Debug"
       title: 'Mon Jardin',
       theme: ThemeData(
-        // Ta palette de couleurs : Vert d'eau et Rose pâle
         colorScheme: ColorScheme.fromSeed(
-          seedColor: const Color(0xFF00b894), // Vert d'eau approximatif
+          seedColor: const Color(0xFF00b894), // Vert d'eau
           secondary: const Color(0xFFfab1a0), // Rose pâle
         ),
         useMaterial3: true,
-      ),
-      home: const Scaffold(
-        body: Center(
-          child: Text("Initialisation terminée.\nBase de données prête."),
+        // On force un peu le style de l'AppBar pour qu'il soit joli
+        appBarTheme: const AppBarTheme(
+          centerTitle: true,
+          titleTextStyle: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
         ),
       ),
+      home: const HomeScreen(), // On lance l'écran d'accueil
     );
   }
 }

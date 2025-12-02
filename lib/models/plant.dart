@@ -1,16 +1,15 @@
 class Plant {
-  final String id; // UUID pour future synchro
-  final String name; // Surnom (ex: "Pépette")
-  final String species; // Espèce (ex: "Monstera")
-  final String location; // "indoor" ou "outdoor"
-  final String? photoPath; // Chemin vers la photo locale
+  final String id;
+  final String name; // Le surnom (ou l'espèce si pas de surnom)
+  final String species;
+  final String location; // "Intérieur" ou "Extérieur"
+  final String? room; // NOUVEAU : Salon, Cuisine, Jardin Sud...
+  final String? photoPath;
   
-  // Besoins (pour le futur algo de recommandation et soin)
-  final int waterFrequencySummer; // en jours
-  final int waterFrequencyWinter; // en jours
-  final String? lightNeeds; // "low", "medium", "high"
+  final int waterFrequencySummer;
+  final int waterFrequencyWinter;
+  final String? lightNeeds;
   
-  // État actuel
   final DateTime dateAdded;
   final DateTime? lastWatered;
   final DateTime? lastFertilized;
@@ -20,8 +19,9 @@ class Plant {
     required this.name,
     required this.species,
     required this.location,
+    this.room, // Peut être vide
     this.photoPath,
-    this.waterFrequencySummer = 7, // Valeur par défaut
+    this.waterFrequencySummer = 7,
     this.waterFrequencyWinter = 14,
     this.lightNeeds,
     required this.dateAdded,
@@ -29,13 +29,13 @@ class Plant {
     this.lastFertilized,
   });
 
-  // Conversion de la BDD vers l'objet Dart
   factory Plant.fromMap(Map<String, dynamic> map) {
     return Plant(
       id: map['id'],
       name: map['name'],
       species: map['species'],
       location: map['location'],
+      room: map['room'], // Mapping du nouveau champ
       photoPath: map['photo_path'],
       waterFrequencySummer: map['water_freq_summer'],
       waterFrequencyWinter: map['water_freq_winter'],
@@ -46,13 +46,13 @@ class Plant {
     );
   }
 
-  // Conversion de l'objet Dart vers la BDD
   Map<String, dynamic> toMap() {
     return {
       'id': id,
       'name': name,
       'species': species,
       'location': location,
+      'room': room, // Ajout
       'photo_path': photoPath,
       'water_freq_summer': waterFrequencySummer,
       'water_freq_winter': waterFrequencyWinter,

@@ -23,7 +23,7 @@ class DatabaseService {
     // On ouvre la base. Si la version change, on appelle onUpgrade
     return await openDatabase(
       path,
-      version: 1, 
+      version: 2, 
       onCreate: _onCreate,
       onUpgrade: _onUpgrade,
     );
@@ -37,6 +37,7 @@ class DatabaseService {
         name TEXT,
         species TEXT,
         location TEXT,
+        room TEXT,
         photo_path TEXT,
         water_freq_summer INTEGER,
         water_freq_winter INTEGER,
@@ -52,7 +53,8 @@ class DatabaseService {
   // Gestion des futures mises à jour (ex: passer de V1 à V2)
   Future<void> _onUpgrade(Database db, int oldVersion, int newVersion) async {
     if (oldVersion < 2) {
-      // Exemple futur : await db.execute("ALTER TABLE plants ADD COLUMN humidity TEXT");
+      print("Mise à jour de la BDD : Ajout de la colonne 'room'");
+      await db.execute("ALTER TABLE plants ADD COLUMN room TEXT");
     }
   }
 
