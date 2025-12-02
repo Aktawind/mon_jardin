@@ -2,6 +2,7 @@ import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:timezone/data/latest.dart' as tz; // Important : pour charger la base de données des heures
 import 'package:timezone/timezone.dart' as tz;   // Important : pour utiliser les types
 import '../models/plant.dart';
+import 'preferences_service.dart';
 
 class NotificationService {
   static final NotificationService _instance = NotificationService._internal();
@@ -48,6 +49,18 @@ class NotificationService {
   }
 
   Future<void> schedulePlantNotification(Plant plant) async {
+    // 1. Vérification des préférences
+    final prefs = PreferencesService();
+    final canNotifyWater = await prefs.getBool(PreferencesService.keyNotifyWater);
+
+    // Si l'utilisateur a désactivé les notifs d'arrosage, on arrête tout ici.
+    if (!canNotifyWater) {
+      print("Notif annulée par les paramètres (Arrosage OFF)");
+      // Optionnel : on pourrait aussi annuler une notif existante ici
+      await cancelNotification(plant);
+      return;
+    }
+
     final nextDate = plant.nextWateringDate;
     // On crée la date précise à 9h00 du matin
     var scheduledDate = tz.TZDateTime(

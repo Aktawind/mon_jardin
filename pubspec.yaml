@@ -40,6 +40,7 @@ dependencies:
   path_provider: ^2.1.1 # Pour accéder aux répertoires de stockage
   package_info_plus: 9.0.0 # Pour obtenir des informations sur le package
   flutter_launcher_icons: ^0.13.1 # Pour générer des icônes d'application
+  shared_preferences: ^2.2.2 # Pour stocker des préférences simples
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
