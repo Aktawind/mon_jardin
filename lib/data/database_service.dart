@@ -128,4 +128,38 @@ class DatabaseService {
       whereArgs: [id],
     );
   }
+
+  // Ajuste la fréquence d'une plante (Apprentissage)
+  // daysAdjustment : +1 (ralentir) ou -1 (accélérer)
+  Future<void> adjustPlantFrequency(Plant plant, int daysAdjustment) async {
+    final db = await database;
+    
+    // On détermine si on touche à l'été ou l'hiver
+    final isWinter = DateTime.now().month >= 10 || DateTime.now().month <= 3;
+    
+    // On calcule la nouvelle valeur
+    int currentFreq = isWinter ? plant.waterFrequencyWinter : plant.waterFrequencySummer;
+    int newFreq = currentFreq + daysAdjustment;
+    
+    // Sécurité : pas moins de 1 jour, pas plus de 60 jours (pour éviter les bugs)
+    if (newFreq < 1) newFreq = 1;
+    if (newFreq > 60) newFreq = 60;
+
+    // On prépare la mise à jour
+    Map<String, dynamic> updateData = {};
+    if (isWinter) {
+      updateData['water_freq_winter'] = newFreq;
+    } else {
+      updateData['water_freq_summer'] = newFreq;
+    }
+
+    await db.update(
+      'plants',
+      updateData,
+      where: 'id = ?',
+      whereArgs: [plant.id],
+    );
+    
+    print("Apprentissage : Plante ${plant.name} ajustée de $currentFreq à $newFreq jours (${isWinter ? 'Hiver' : 'Été'})");
+  }
 }

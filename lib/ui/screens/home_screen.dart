@@ -5,6 +5,7 @@ import 'add_plant_screen.dart';
 import '../../services/notification_service.dart';
 import 'dart:io';
 import 'plant_detail_screen.dart';
+import '../common/smart_watering_sheet.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -218,8 +219,17 @@ class _PlantListState extends State<_PlantList> {
                     color: days <= 0 ? Theme.of(context).colorScheme.primary : Colors.grey,
                     size: 32,
                   ),
-                  onPressed: () => _waterPlant(plant),
-                  tooltip: "Marquer comme arrosée",
+                  onPressed: () {
+                    // On ouvre le Smart Menu
+                    showModalBottomSheet(
+                      context: context,
+                      backgroundColor: Colors.transparent, // Important pour voir les coins arrondis
+                      builder: (ctx) => SmartWateringSheet(
+                        plant: plant,
+                        onSuccess: () => setState(() {}), // On rafraichit la liste au retour
+                      ),
+                    );
+                  },
                 ),
                 
                 onTap: () async {

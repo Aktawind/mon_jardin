@@ -5,6 +5,7 @@ import '../../models/plant.dart';
 import '../../data/database_service.dart';
 import '../../services/notification_service.dart';
 import 'add_plant_screen.dart';
+import '../common/smart_watering_sheet.dart';
 
 class PlantDetailScreen extends StatefulWidget {
   final Plant plant;
@@ -238,16 +239,24 @@ class _PlantDetailScreenState extends State<PlantDetailScreen> {
       
       // Petit bouton flottant pour valider l'arrosage rapidement
       floatingActionButton: FloatingActionButton.extended(
-        onPressed: () async {
-          await DatabaseService().updatePlantWatering(_plant.id);
-          ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text("Plante arrosée !")));
-          setState(() {
-             // Astuce : on ne recharge pas tout depuis la DB ici pour simplifier, 
-             // mais idéalement il faudrait recharger l'objet _plant
-          });
-          Navigator.pop(context, true); // On revient à l'accueil
+        onPressed: () {
+           showModalBottomSheet(
+              context: context,
+              backgroundColor: Colors.transparent,
+              builder: (ctx) => SmartWateringSheet(
+                plant: _plant,
+                onSuccess: () async {
+                  // On recharge la plante affichée
+                  final updatedList = await DatabaseService().getPlants();
+                  final updatedPlant = updatedList.firstWhere((p) => p.id == _plant.id);
+                  setState(() {
+                    _plant = updatedPlant;
+                  });
+                }, 
+              ),
+            );
         },
-        label: const Text("Arroser maintenant"),
+        label: const Text("Arroser..."), // Petit changement de texte pour indiquer qu'il y a un menu
         icon: const Icon(Icons.water_drop),
       ),
     );
