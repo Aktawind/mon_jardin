@@ -6,6 +6,7 @@ import '../../services/notification_service.dart';
 import 'dart:io';
 import 'plant_detail_screen.dart';
 import '../common/smart_watering_sheet.dart';
+import 'settings_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -39,6 +40,17 @@ class _HomeScreenState extends State<HomeScreen> {
               Tab(icon: Icon(Icons.park), text: "Extérieur"),
             ],
           ),
+          actions: [
+            IconButton(
+              icon: const Icon(Icons.settings),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const SettingsScreen()),
+                );
+              },
+            ),
+          ],
         ),
         body: TabBarView(
           children: [
