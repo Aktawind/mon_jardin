@@ -113,7 +113,7 @@ class _PlantListState extends State<_PlantList> {
     );
 
     // 3. On programme la prochaine notif
-    await NotificationService().schedulePlantNotification(updatedPlant);
+    await NotificationService().scheduleAllNotifications(updatedPlant);
 
     setState(() {});
     

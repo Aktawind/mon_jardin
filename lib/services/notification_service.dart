@@ -48,49 +48,102 @@ class NotificationService {
     await androidImplementation?.requestNotificationsPermission();
   }
 
-  Future<void> schedulePlantNotification(Plant plant) async {
-    // 1. Vérification des préférences
-    final prefs = PreferencesService();
-    final canNotifyWater = await prefs.getBool(PreferencesService.keyNotifyWater);
+  // Méthode principale à appeler de partout
+  Future<void> scheduleAllNotifications(Plant plant) async {
+    await _scheduleWater(plant);
+    await _scheduleFertilizer(plant);
+    await _scheduleRepot(plant);
+  }
 
-    // Si l'utilisateur a désactivé les notifs d'arrosage, on arrête tout ici.
-    if (!canNotifyWater) {
-      print("Notif annulée par les paramètres (Arrosage OFF)");
-      // Optionnel : on pourrait aussi annuler une notif existante ici
-      await cancelNotification(plant);
-      return;
-    }
+  // 1. ARROSAGE
+  Future<void> _scheduleWater(Plant plant) async {
+    final prefs = PreferencesService();
+    if (!await prefs.getBool(PreferencesService.keyNotifyWater)) return;
 
     final nextDate = plant.nextWateringDate;
-    // On crée la date précise à 9h00 du matin
+    if (_isDateInPast(nextDate)) return;
+
+    await _scheduleSpecific(
+      plant: plant,
+      typeKey: 'water', // Pour l'ID unique
+      title: 'Soif ! 💧',
+      body: '${plant.name} a besoin d\'eau.',
+      date: nextDate,
+    );
+  }
+
+  // 2. ENGRAIS
+  Future<void> _scheduleFertilizer(Plant plant) async {
+    // Si la plante n'a pas besoin d'engrais (freq = 0), on sort
+    if (plant.fertilizerFreq <= 0) return;
+
+    final prefs = PreferencesService();
+    if (!await prefs.getBool(PreferencesService.keyNotifyFertilizer)) return;
+
+    final nextDate = plant.nextFertilizingDate;
+    if (_isDateInPast(nextDate)) return;
+
+    await _scheduleSpecific(
+      plant: plant,
+      typeKey: 'fert',
+      title: 'Miam ! 🧪',
+      body: 'C\'est l\'heure de l\'engrais pour ${plant.name}.',
+      date: nextDate,
+    );
+  }
+
+  // 3. REMPOTAGE
+  Future<void> _scheduleRepot(Plant plant) async {
+    if (plant.repottingFreq <= 0) return;
+
+    final prefs = PreferencesService();
+    if (!await prefs.getBool(PreferencesService.keyNotifyRepot)) return;
+
+    final nextDate = plant.nextRepottingDate;
+    if (_isDateInPast(nextDate)) return;
+
+    await _scheduleSpecific(
+      plant: plant,
+      typeKey: 'repot',
+      title: 'À l\'étroit ? 🪴',
+      body: 'Pensez à rempoter ${plant.name} cette année.',
+      date: nextDate,
+    );
+  }
+
+  // Méthode générique pour programmer
+  Future<void> _scheduleSpecific({
+    required Plant plant,
+    required String typeKey, // 'water', 'fert', 'repot'
+    required String title,
+    required String body,
+    required DateTime date,
+  }) async {
+    
+    // ASTUCE : On combine l'ID de la plante et le type pour avoir un ID unique par action
+    // ex: "uuid-de-la-plante_water" -> HashCode 12345
+    // ex: "uuid-de-la-plante_fert"  -> HashCode 67890
+    final uniqueId = '${plant.id}_$typeKey'.hashCode;
+
+    // On fixe l'heure à 9h00 du matin
     var scheduledDate = tz.TZDateTime(
       tz.local,
-      nextDate.year,
-      nextDate.month,
-      nextDate.day,
-      9, 
-      0,
+      date.year,
+      date.month,
+      date.day,
+      9, 0,
     );
-    // Si 9h00 est déjà passé aujourd'hui, on pourrait vouloir programmer pour demain
-    // Mais ici on garde simple.
-
-    if (scheduledDate.isBefore(tz.TZDateTime.now(tz.local))) {
-      print("Date passée, pas de notif");
-      return; 
-    }
-
-    final notificationId = plant.id.hashCode;
 
     await flutterLocalNotificationsPlugin.zonedSchedule(
-      notificationId,
-      'Soif ! 🌿',
-      '${plant.name} a besoin d\'eau !',
+      uniqueId,
+      title,
+      body,
       scheduledDate,
       const NotificationDetails(
         android: AndroidNotificationDetails(
-          'watering_channel',
-          'Arrosage',
-          channelDescription: 'Rappels pour arroser les plantes',
+          'care_channel', // On peut garder le même canal ou en créer d'autres
+          'Soin des plantes',
+          channelDescription: 'Notifications d\'entretien',
           importance: Importance.max,
           priority: Priority.high,
         ),
@@ -101,11 +154,17 @@ class NotificationService {
           UILocalNotificationDateInterpretation.absoluteTime,
     );
     
-    print("PROGRAMMÉ pour : $scheduledDate (Heure locale)");
+    print("PROGRAMMÉ ($typeKey) pour ${plant.name} le $scheduledDate");
   }
-  
-  // Fonction pour annuler (utile plus tard)
-  Future<void> cancelNotification(Plant plant) async {
-    await flutterLocalNotificationsPlugin.cancel(plant.id.hashCode);
+
+  // Annuler TOUTES les notifs d'une plante (quand on la supprime)
+  Future<void> cancelAllNotifications(Plant plant) async {
+    await flutterLocalNotificationsPlugin.cancel('${plant.id}_water'.hashCode);
+    await flutterLocalNotificationsPlugin.cancel('${plant.id}_fert'.hashCode);
+    await flutterLocalNotificationsPlugin.cancel('${plant.id}_repot'.hashCode);
+  }
+
+  bool _isDateInPast(DateTime date) {
+    return date.isBefore(DateTime.now());
   }
 }

@@ -36,7 +36,7 @@ class SmartWateringSheet extends StatelessWidget {
     // Astuce : on recharche la plante pour avoir la nouvelle fréquence à jour
     final plants = await DatabaseService().getPlants();
     final updatedPlant = plants.firstWhere((p) => p.id == plant.id);
-    await NotificationService().schedulePlantNotification(updatedPlant);
+    await NotificationService().scheduleAllNotifications(updatedPlant);
 
     _showSnack(context, "C'est noté ! Je la laisserai tranquille un peu plus longtemps.");
     onSuccess();
@@ -62,7 +62,7 @@ class SmartWateringSheet extends StatelessWidget {
     // Il faut recharger la plante depuis la BDD pour avoir les dates à jour si on vient de modifier
     final plants = await DatabaseService().getPlants();
     final updatedPlant = plants.firstWhere((pl) => pl.id == p.id);
-    await NotificationService().schedulePlantNotification(updatedPlant);
+    await NotificationService().scheduleAllNotifications(updatedPlant);
   }
 
   void _showSnack(BuildContext context, String msg) {

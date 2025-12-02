@@ -63,7 +63,7 @@ class _PlantDetailScreenState extends State<PlantDetailScreen> {
 
     if (confirm == true) {
       await DatabaseService().deletePlant(_plant.id);
-      await NotificationService().cancelNotification(_plant);
+      await NotificationService().cancelAllNotifications(_plant);
       if (mounted) {
         Navigator.pop(context, true); // On revient à l'accueil en disant "J'ai changé qqchose"
       }
@@ -188,10 +188,47 @@ class _PlantDetailScreenState extends State<PlantDetailScreen> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
-                      _StatusBadge(label: "Arrosage", date: nextWater, icon: Icons.water_drop, color: Colors.blue[100]!),
+                      // Arrosage (Ouvre le Smart Menu)
+                      _StatusBadge(
+                        label: "Arrosage",
+                        date: nextWater,
+                        icon: Icons.water_drop,
+                        color: Colors.blue[100]!,
+                        onTap: () {
+                          showModalBottomSheet(
+                            context: context,
+                            backgroundColor: Colors.transparent,
+                            builder: (ctx) => SmartWateringSheet(
+                              plant: _plant,
+                              onSuccess: () async {
+                                final updatedList = await DatabaseService().getPlants();
+                                final updatedPlant = updatedList.firstWhere((p) => p.id == _plant.id);
+                                setState(() { _plant = updatedPlant; });
+                              },
+                            ),
+                          );
+                        },
+                      ),
+                      
+                      // Engrais
                       if(_plant.fertilizerFreq > 0)
-                        _StatusBadge(label: "Engrais", date: nextFertilizer, icon: Icons.science, color: Colors.purple[100]!),
-                      _StatusBadge(label: "Rempotage", date: nextRepot, icon: Icons.change_circle, color: Colors.orange[100]!),
+                        _StatusBadge(
+                          label: "Engrais",
+                          date: nextFertilizer,
+                          icon: Icons.science,
+                          color: Colors.purple[100]!,
+                          onTap: () => _confirmAction("fert"),
+                        ),
+                        
+                      // Rempotage
+                      if(_plant.repottingFreq > 0)
+                        _StatusBadge(
+                          label: "Rempotage",
+                          date: nextRepot,
+                          icon: Icons.change_circle,
+                          color: Colors.orange[100]!,
+                          onTap: () => _confirmAction("repot"),
+                        ),
                     ],
                   ),
 
@@ -272,6 +309,48 @@ class _PlantDetailScreenState extends State<PlantDetailScreen> {
       ),
     );
   }
+
+  Future<void> _confirmAction(String type) async {
+    String title = type == 'fert' ? "Fertilisation" : "Rempotage";
+    String content = type == 'fert' 
+        ? "Avez-vous donné de l'engrais à ${_plant.name} ?" 
+        : "Avez-vous rempoté ${_plant.name} ?";
+
+    final confirm = await showDialog<bool>(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        title: Text(title),
+        content: Text(content),
+        actions: [
+          TextButton(onPressed: () => Navigator.pop(ctx, false), child: const Text("Non")),
+          TextButton(
+            onPressed: () => Navigator.pop(ctx, true), 
+            child: const Text("Oui, c'est fait !"),
+          ),
+        ],
+      ),
+    );
+
+    if (confirm == true) {
+      if (type == 'fert') {
+        await DatabaseService().updatePlantFertilizing(_plant.id);
+        ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text("Miam ! 🧪")));
+      } else {
+        await DatabaseService().updatePlantRepotting(_plant.id);
+        ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text("Nouvelle maison ! 🪴")));
+      }
+
+      // On recharge la plante et on reprogramme TOUT
+      final updatedList = await DatabaseService().getPlants();
+      final updatedPlant = updatedList.firstWhere((p) => p.id == _plant.id);
+      
+      await NotificationService().scheduleAllNotifications(updatedPlant);
+
+      setState(() {
+        _plant = updatedPlant;
+      });
+    }
+  }
 }
 
 // Petit widget interne pour les badges ronds (Planning)
@@ -280,22 +359,73 @@ class _StatusBadge extends StatelessWidget {
   final String date;
   final IconData icon;
   final Color color;
+  final VoidCallback? onTap; // Si null, pas d'action
 
-  const _StatusBadge({required this.label, required this.date, required this.icon, required this.color});
+  const _StatusBadge({
+    required this.label,
+    required this.date,
+    required this.icon,
+    required this.color,
+    this.onTap,
+  });
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        CircleAvatar(
-          radius: 24,
-          backgroundColor: color,
-          child: Icon(icon, color: Colors.black54),
+    // Si on a une action (onTap), on affiche différemment
+    final isActionable = onTap != null;
+
+    return InkWell(
+      onTap: onTap,
+      borderRadius: BorderRadius.circular(12),
+      child: Container(
+        padding: const EdgeInsets.all(8),
+        child: Column(
+          children: [
+            // L'icône avec potentiellement un petit badge "+"
+            Stack(
+              children: [
+                Container(
+                  padding: const EdgeInsets.all(12),
+                  decoration: BoxDecoration(
+                    color: color,
+                    shape: BoxShape.circle,
+                    // Une petite ombre si c'est cliquable pour donner du relief
+                    boxShadow: isActionable
+                        ? [BoxShadow(color: Colors.black12, blurRadius: 4, offset: const Offset(0, 2))]
+                        : null,
+                  ),
+                  child: Icon(icon, color: Colors.black54, size: 24),
+                ),
+                
+                // La petite pastille d'action
+                if (isActionable)
+                  Positioned(
+                    bottom: 0,
+                    right: 0,
+                    child: Container(
+                      padding: const EdgeInsets.all(4),
+                      decoration: const BoxDecoration(
+                        color: Colors.white,
+                        shape: BoxShape.circle,
+                        boxShadow: [BoxShadow(color: Colors.black12, blurRadius: 2)],
+                      ),
+                      child: const Icon(Icons.edit, size: 10, color: Colors.black87),
+                    ),
+                  ),
+              ],
+            ),
+            const SizedBox(height: 8),
+            Text(label, style: const TextStyle(fontSize: 12, color: Colors.grey)),
+            // On souligne légèrement la date si c'est cliquable
+            Text(
+              date,
+              style: const TextStyle(
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ],
         ),
-        const SizedBox(height: 8),
-        Text(label, style: const TextStyle(fontSize: 12, color: Colors.grey)),
-        Text(date, style: const TextStyle(fontWeight: FontWeight.bold)),
-      ],
+      ),
     );
   }
 }

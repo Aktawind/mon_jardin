@@ -121,7 +121,7 @@ class DatabaseService {
     return List.generate(maps.length, (i) => Plant.fromMap(maps[i]));
   }
 
-  // Met à jour la date d'arrosage à "Maintenant"
+  // Valider l'arrosage
   Future<void> updatePlantWatering(String id) async {
     final db = await database;
     final now = DateTime.now();
@@ -138,6 +138,44 @@ class DatabaseService {
     await logEvent(PlantEvent(
       plantId: id,
       type: 'water',
+      date: now,
+    ));
+  }
+
+  // Valider la fertilisation
+  Future<void> updatePlantFertilizing(String id) async {
+    final db = await database;
+    final now = DateTime.now();
+
+    await db.update(
+      'plants',
+      {'last_fertilized': now.toIso8601String()},
+      where: 'id = ?',
+      whereArgs: [id],
+    );
+
+    await logEvent(PlantEvent(
+      plantId: id,
+      type: 'fertilizer', // Correspond à notre code history
+      date: now,
+    ));
+  }
+
+  // Valider le rempotage
+  Future<void> updatePlantRepotting(String id) async {
+    final db = await database;
+    final now = DateTime.now();
+
+    await db.update(
+      'plants',
+      {'last_repotted': now.toIso8601String()},
+      where: 'id = ?',
+      whereArgs: [id],
+    );
+
+    await logEvent(PlantEvent(
+      plantId: id,
+      type: 'repot',
       date: now,
     ));
   }

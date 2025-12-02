@@ -127,11 +127,11 @@ class _AddPlantScreenState extends State<AddPlantScreen> {
       if (_isEditing) {
         await DatabaseService().updatePlant(plant);
         // Si on change les réglages, on reprogramme la notif
-        await NotificationService().cancelNotification(plant);
-        await NotificationService().schedulePlantNotification(plant);
+        await NotificationService().cancelAllNotifications(plant);
+        await NotificationService().scheduleAllNotifications(plant);
       } else {
         await DatabaseService().insertPlant(plant);
-        await NotificationService().schedulePlantNotification(plant);
+        await NotificationService().scheduleAllNotifications(plant);
       }
 
       if (mounted) Navigator.pop(context, true);
@@ -159,7 +159,7 @@ class _AddPlantScreenState extends State<AddPlantScreen> {
     if (confirm == true) {
       // Suppression BDD + Notif
       await DatabaseService().deletePlant(widget.plantToEdit!.id);
-      await NotificationService().cancelNotification(widget.plantToEdit!);
+      await NotificationService().cancelAllNotifications(widget.plantToEdit!);
       if (mounted) Navigator.pop(context, true);
     }
   }
