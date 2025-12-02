@@ -2,18 +2,19 @@ import 'package:flutter/material.dart';
 import 'data/database_service.dart';
 import 'ui/screens/home_screen.dart';
 import 'services/notification_service.dart';
+import 'package:intl/date_symbol_data_local.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  
+  await initializeDateFormatting('fr_FR', null);
 
-  // Init BDD
   final db = DatabaseService();
   await db.database; 
   
-  // Init Notifications
   final notifService = NotificationService();
   await notifService.init();
-  await notifService.requestPermissions(); // Demande la permission dès le lancement
+  await notifService.requestPermissions();
 
   runApp(const MyApp());
 }

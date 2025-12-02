@@ -4,6 +4,7 @@ import '../../models/plant.dart';
 import 'add_plant_screen.dart';
 import '../../services/notification_service.dart';
 import 'dart:io';
+import 'plant_detail_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -222,15 +223,15 @@ class _PlantListState extends State<_PlantList> {
                 ),
                 
                 onTap: () async {
-                  // Navigation vers l'écran d'ajout, mais en passant la plante existante
+                  // Navigation vers le DETAIL
                   final result = await Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => AddPlantScreen(plantToEdit: plant),
+                      builder: (context) => PlantDetailScreen(plant: plant),
                     ),
                   );
                   
-                  // Si on a supprimé ou modifié, on rafraichit la liste
+                  // Si on a fait une action dans le détail (supprimer/arroser), on rafraichit la liste
                   if (result == true) {
                     setState(() {});
                   }
