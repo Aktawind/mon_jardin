@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:uuid/uuid.dart';
 import '../../data/database_service.dart';
 import '../../models/plant.dart';
-import '../../data/plant_data.dart';
+import '../../data/encyclopedia/indoor_plants.dart';
 import '../../services/notification_service.dart';
 import '../common/image_input.dart';
 import 'dart:io';
