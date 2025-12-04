@@ -43,7 +43,7 @@ class HistoryScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Journal de ${plant.name}"),
+        title: Text("Journal de ${plant.displayName}"),
         backgroundColor: Theme.of(context).colorScheme.secondary,
       ),
       body: FutureBuilder<List<PlantEvent>>(

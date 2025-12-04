@@ -91,6 +91,16 @@ class Plant {
   int get daysUntilWatering => nextWateringDate.difference(DateTime.now()).inDays;
   // Note: Pour fertilisation/rempotage, on peut avoir des logiques similaires
 
+  // LOGIQUE D'AFFICHAGE DU NOM
+  // Si le nom est différent de l'espèce (surnom) -> "Pépette (Monstera)"
+  // Sinon -> "Monstera"
+  String get displayName {
+    if (name == species) {
+      return species;
+    } else {
+      return '$name ($species)';
+    }
+  }
 
   factory Plant.fromMap(Map<String, dynamic> map) {
     return Plant(

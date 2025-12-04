@@ -49,7 +49,7 @@ class _PlantDetailScreenState extends State<PlantDetailScreen> {
       context: context,
       builder: (ctx) => AlertDialog(
         title: const Text("Supprimer ?"),
-        content: Text("Voulez-vous vraiment dire au revoir à ${_plant.name} ?"),
+        content: Text("Voulez-vous vraiment dire au revoir à ${_plant.displayName} ?"),
         actions: [
           TextButton(onPressed: () => Navigator.pop(ctx, false), child: const Text("Non")),
           TextButton(
@@ -149,7 +149,7 @@ class _PlantDetailScreenState extends State<PlantDetailScreen> {
               ),
             ],
             flexibleSpace: FlexibleSpaceBar(
-              title: Text(_plant.name, 
+              title: Text(_plant.displayName, 
                 style: const TextStyle(
                   color: Colors.white, 
                   fontWeight: FontWeight.bold,
@@ -178,7 +178,13 @@ class _PlantDetailScreenState extends State<PlantDetailScreen> {
                     children: [
                       const Icon(Icons.place, size: 16, color: Colors.grey),
                       const SizedBox(width: 4),
-                      Text("${_plant.location} - ${_plant.room ?? 'Non précisé'}", style: const TextStyle(fontSize: 16, color: Colors.grey)),
+                      Text(
+                        // Condition ternaire : Si on a une pièce, on l'affiche avec le tiret, sinon juste le lieu
+                        (_plant.room != null && _plant.room!.isNotEmpty)
+                            ? "${_plant.location} - ${_plant.room}"
+                            : _plant.location,
+                        style: const TextStyle(fontSize: 16, color: Colors.grey),
+                      ),
                     ],
                   ),
                   

@@ -236,28 +236,15 @@ class _PlantListState extends State<_PlantList> {
                 ),
                 
                 // Titre et info pièce
-                title: Text(plant.name, style: const TextStyle(fontWeight: FontWeight.bold)),
-                subtitle: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(plant.species),
-                    if (plant.room != null && plant.room!.isNotEmpty)
-                      Text("📍 ${plant.room}", style: TextStyle(fontSize: 12, color: Colors.grey[600])),
-                    const SizedBox(height: 4),
-                    // Le petit indicateur de temps
-                    Container(
-                      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
-                      decoration: BoxDecoration(
-                        color: statusColor.withOpacity(0.1),
-                        borderRadius: BorderRadius.circular(8),
-                        border: Border.all(color: statusColor.withOpacity(0.5)),
-                      ),
-                      child: Text(
-                        statusText,
-                        style: TextStyle(color: statusColor, fontSize: 12, fontWeight: FontWeight.bold),
-                      ),
-                    )
-                  ],
+                // TITRE : On utilise le nom intelligent
+                title: Text(plant.displayName, style: const TextStyle(fontWeight: FontWeight.bold)),
+                
+                // SOUS-TITRE : On affiche juste la pièce/lieu (plus besoin de répéter l'espèce)
+                subtitle: Text(
+                  plant.room != null && plant.room!.isNotEmpty 
+                      ? plant.room! 
+                      : plant.location,
+                  style: TextStyle(color: Colors.grey[600]),
                 ),
                 
                 // Le bouton d'action rapide
