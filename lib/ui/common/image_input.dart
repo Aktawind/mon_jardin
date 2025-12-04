@@ -52,32 +52,34 @@ class _ImageInputState extends State<ImageInput> {
     widget.onSelectImage(savedImage.path);
   }
 
-  void _showPickerOptions() {
+void _showPickerOptions() {
     showModalBottomSheet(
       context: context,
-      builder: (ctx) => Wrap(
-        children: [
-          ListTile(
-            leading: const Icon(Icons.photo_camera),
-            title: const Text('Prendre une photo'),
-            onTap: () {
-              Navigator.of(ctx).pop();
-              _takePicture(ImageSource.camera);
-            },
-          ),
-          ListTile(
-            leading: const Icon(Icons.photo_library),
-            title: const Text('Choisir dans la galerie'),
-            onTap: () {
-              Navigator.of(ctx).pop();
-              _takePicture(ImageSource.gallery);
-            },
-          ),
-        ],
+      builder: (ctx) => SafeArea( // <--- AJOUTE CA
+        child: Wrap(
+          children: [
+            ListTile(
+              leading: const Icon(Icons.photo_camera),
+              title: const Text('Prendre une photo'),
+              onTap: () {
+                Navigator.of(ctx).pop();
+                _takePicture(ImageSource.camera);
+              },
+            ),
+            ListTile(
+              leading: const Icon(Icons.photo_library),
+              title: const Text('Choisir dans la galerie'),
+              onTap: () {
+                Navigator.of(ctx).pop();
+                _takePicture(ImageSource.gallery);
+              },
+            ),
+          ],
+        ),
       ),
     );
   }
-
+  
   @override
   Widget build(BuildContext context) {
     // Le contenu de l'image (soit l'image, soit le bouton)

@@ -180,137 +180,139 @@ class _AddPlantScreenState extends State<AddPlantScreen> {
             )
         ],
       ),
-      body: SingleChildScrollView(
-        padding: const EdgeInsets.all(16.0),
-        child: Form(
-          key: _formKey,
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              
-              // Widget de sélection (pour changer ou ajouter)
-              ImageInput(
-                onSelectImage: _selectImage,
-                // On passe l'image actuelle pour qu'elle s'affiche dedans
-                initialImage: _selectedImage, 
-                // On passe l'ID de la plante comme "Tag" pour l'animation
-                heroTag: _isEditing ? widget.plantToEdit!.id : null,
-              ),
-              
-              const SizedBox(height: 24),
-
-              Autocomplete<String>(
-                initialValue: TextEditingValue(text: _selectedSpecies),
-                optionsBuilder: (TextEditingValue textEditingValue) {
-                  if (textEditingValue.text == '') return const Iterable<String>.empty();
-                  
-                  // NOUVELLE LOGIQUE : On parcourt l'encyclopédie
-                  return encyclopedia
-                      .map((e) => e.species) // On ne garde que les noms
-                      .where((String option) {
-                    return option.toLowerCase().contains(textEditingValue.text.toLowerCase());
-                  });
-                },
-                onSelected: _onSpeciesSelected,
-                fieldViewBuilder: (context, textEditingController, focusNode, onFieldSubmitted) {
-                  // Astuce : Si le controller est vide (au démarrage) mais qu'on a une espèce sélectionnée (mode edit)
-                  // on force le texte.
-                  if (textEditingController.text.isEmpty && _selectedSpecies.isNotEmpty) {
-                    textEditingController.text = _selectedSpecies;
-                  }
-                  return TextFormField(
-                    controller: textEditingController,
-                    focusNode: focusNode,
-                    decoration: const InputDecoration(
-                      labelText: "Espèce",
-                      border: OutlineInputBorder(),
-                      prefixIcon: Icon(Icons.search),
-                    ),
-                    onChanged: (val) => _selectedSpecies = val,
-                  );
-                },
-              ),
-              const SizedBox(height: 16),
-
-              TextFormField(
-                controller: _nameController,
-                decoration: const InputDecoration(
-                  labelText: "Surnom",
-                  border: OutlineInputBorder(),
-                  prefixIcon: Icon(Icons.favorite_border),
+      body: SafeArea( 
+        child: SingleChildScrollView(
+          padding: const EdgeInsets.all(16.0),
+          child: Form(
+            key: _formKey,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                
+                // Widget de sélection (pour changer ou ajouter)
+                ImageInput(
+                  onSelectImage: _selectImage,
+                  // On passe l'image actuelle pour qu'elle s'affiche dedans
+                  initialImage: _selectedImage, 
+                  // On passe l'ID de la plante comme "Tag" pour l'animation
+                  heroTag: _isEditing ? widget.plantToEdit!.id : null,
                 ),
-              ),
-              const SizedBox(height: 16),
+                
+                const SizedBox(height: 24),
 
-              DropdownButtonFormField<String>(
-                value: _location,
-                decoration: const InputDecoration(
-                  labelText: "Emplacement",
-                  border: OutlineInputBorder(),
-                  prefixIcon: Icon(Icons.place),
+                Autocomplete<String>(
+                  initialValue: TextEditingValue(text: _selectedSpecies),
+                  optionsBuilder: (TextEditingValue textEditingValue) {
+                    if (textEditingValue.text == '') return const Iterable<String>.empty();
+                    
+                    // NOUVELLE LOGIQUE : On parcourt l'encyclopédie
+                    return encyclopedia
+                        .map((e) => e.species) // On ne garde que les noms
+                        .where((String option) {
+                      return option.toLowerCase().contains(textEditingValue.text.toLowerCase());
+                    });
+                  },
+                  onSelected: _onSpeciesSelected,
+                  fieldViewBuilder: (context, textEditingController, focusNode, onFieldSubmitted) {
+                    // Astuce : Si le controller est vide (au démarrage) mais qu'on a une espèce sélectionnée (mode edit)
+                    // on force le texte.
+                    if (textEditingController.text.isEmpty && _selectedSpecies.isNotEmpty) {
+                      textEditingController.text = _selectedSpecies;
+                    }
+                    return TextFormField(
+                      controller: textEditingController,
+                      focusNode: focusNode,
+                      decoration: const InputDecoration(
+                        labelText: "Espèce",
+                        border: OutlineInputBorder(),
+                        prefixIcon: Icon(Icons.search),
+                      ),
+                      onChanged: (val) => _selectedSpecies = val,
+                    );
+                  },
                 ),
-                items: const [
-                  DropdownMenuItem(value: 'Intérieur', child: Text("Intérieur 🏠")),
-                  DropdownMenuItem(value: 'Extérieur', child: Text("Extérieur 🌳")),
-                ],
-                onChanged: (value) => setState(() => _location = value!),
-              ),
-              const SizedBox(height: 16),
+                const SizedBox(height: 16),
 
-              TextFormField(
-                controller: _roomController,
-                textCapitalization: TextCapitalization.sentences,
-                decoration: InputDecoration(
-                  labelText: _location == 'Intérieur' ? "Pièce" : "Zone",
-                  border: const OutlineInputBorder(),
-                  prefixIcon: const Icon(Icons.meeting_room_outlined),
+                TextFormField(
+                  controller: _nameController,
+                  decoration: const InputDecoration(
+                    labelText: "Surnom",
+                    border: OutlineInputBorder(),
+                    prefixIcon: Icon(Icons.favorite_border),
+                  ),
                 ),
-              ),
-              const SizedBox(height: 24),
+                const SizedBox(height: 16),
 
-              Container(
-                padding: const EdgeInsets.all(12),
-                decoration: BoxDecoration(
-                  color: Theme.of(context).colorScheme.primary.withOpacity(0.1),
-                  borderRadius: BorderRadius.circular(12),
-                ),
-                child: Column(
-                  children: [
-                    Row(
-                      children: [
-                        const Icon(Icons.water_drop),
-                        const SizedBox(width: 8),
-                        Text(
-                          "Fréquence : tous les $_waterFreqSummer jours",
-                          style: const TextStyle(fontWeight: FontWeight.bold),
-                        ),
-                      ],
-                    ),
-                    Slider(
-                      value: _waterFreqSummer.toDouble(),
-                      min: 1,
-                      max: 30,
-                      divisions: 29,
-                      label: "$_waterFreqSummer j",
-                      onChanged: (val) => setState(() => _waterFreqSummer = val.toInt()),
-                    ),
+                DropdownButtonFormField<String>(
+                  value: _location,
+                  decoration: const InputDecoration(
+                    labelText: "Emplacement",
+                    border: OutlineInputBorder(),
+                    prefixIcon: Icon(Icons.place),
+                  ),
+                  items: const [
+                    DropdownMenuItem(value: 'Intérieur', child: Text("Intérieur 🏠")),
+                    DropdownMenuItem(value: 'Extérieur', child: Text("Extérieur 🌳")),
                   ],
+                  onChanged: (value) => setState(() => _location = value!),
                 ),
-              ),
+                const SizedBox(height: 16),
 
-              const SizedBox(height: 32),
-              
-              ElevatedButton.icon(
-                onPressed: _savePlant,
-                icon: Icon(_isEditing ? Icons.save_as : Icons.save),
-                label: Text(_isEditing ? "ENREGISTRER LES MODIFICATIONS" : "AJOUTER MA PLANTE"),
-                style: ElevatedButton.styleFrom(
-                  padding: const EdgeInsets.symmetric(vertical: 16),
-                  backgroundColor: Theme.of(context).colorScheme.primary,
-                  foregroundColor: Colors.white,
+                TextFormField(
+                  controller: _roomController,
+                  textCapitalization: TextCapitalization.sentences,
+                  decoration: InputDecoration(
+                    labelText: _location == 'Intérieur' ? "Pièce" : "Zone",
+                    border: const OutlineInputBorder(),
+                    prefixIcon: const Icon(Icons.meeting_room_outlined),
+                  ),
                 ),
-              )
-            ],
+                const SizedBox(height: 24),
+
+                Container(
+                  padding: const EdgeInsets.all(12),
+                  decoration: BoxDecoration(
+                    color: Theme.of(context).colorScheme.primary.withOpacity(0.1),
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                  child: Column(
+                    children: [
+                      Row(
+                        children: [
+                          const Icon(Icons.water_drop),
+                          const SizedBox(width: 8),
+                          Text(
+                            "Fréquence : tous les $_waterFreqSummer jours",
+                            style: const TextStyle(fontWeight: FontWeight.bold),
+                          ),
+                        ],
+                      ),
+                      Slider(
+                        value: _waterFreqSummer.toDouble(),
+                        min: 1,
+                        max: 30,
+                        divisions: 29,
+                        label: "$_waterFreqSummer j",
+                        onChanged: (val) => setState(() => _waterFreqSummer = val.toInt()),
+                      ),
+                    ],
+                  ),
+                ),
+
+                const SizedBox(height: 32),
+                
+                ElevatedButton.icon(
+                  onPressed: _savePlant,
+                  icon: Icon(_isEditing ? Icons.save_as : Icons.save),
+                  label: Text(_isEditing ? "ENREGISTRER LES MODIFICATIONS" : "AJOUTER MA PLANTE"),
+                  style: ElevatedButton.styleFrom(
+                    padding: const EdgeInsets.symmetric(vertical: 16),
+                    backgroundColor: Theme.of(context).colorScheme.primary,
+                    foregroundColor: Colors.white,
+                  ),
+                )
+              ],
+            ),
           ),
         ),
       ),
