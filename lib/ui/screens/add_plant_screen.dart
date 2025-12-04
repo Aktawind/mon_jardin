@@ -2,16 +2,20 @@ import 'package:flutter/material.dart';
 import 'package:uuid/uuid.dart';
 import '../../data/database_service.dart';
 import '../../models/plant.dart';
-import '../../data/encyclopedia/indoor_plants.dart';
+import '../../data/plant_data.dart';
 import '../../services/notification_service.dart';
 import '../common/image_input.dart';
-import 'dart:io';
 
 class AddPlantScreen extends StatefulWidget {
   // Si cette variable est remplie, on est en mode "Édition", sinon "Création"
   final Plant? plantToEdit;
+  final String? initialLocation;
 
-  const AddPlantScreen({super.key, this.plantToEdit});
+  const AddPlantScreen({
+    super.key, 
+    this.plantToEdit, 
+    this.initialLocation // <--- AJOUT
+  });
 
   @override
   State<AddPlantScreen> createState() => _AddPlantScreenState();
@@ -45,9 +49,14 @@ class _AddPlantScreenState extends State<AddPlantScreen> {
       _selectedImage = p.photoPath;
       _location = p.location;
       _waterFreqSummer = p.waterFrequencySummer;
+
+      final data = getSpeciesData(p.species);
+      if (data != null) _foundSpeciesData = data;
+      
     } else {
       _nameController = TextEditingController();
       _roomController = TextEditingController();
+      _location = widget.initialLocation ?? 'Intérieur';
     }
   }
 
@@ -189,7 +198,7 @@ class _AddPlantScreenState extends State<AddPlantScreen> {
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
                 
-                // Widget de sélection (pour changer ou ajouter)
+                /// 1. IMAGE
                 ImageInput(
                   onSelectImage: _selectImage,
                   // On passe l'image actuelle pour qu'elle s'affiche dedans
@@ -200,19 +209,52 @@ class _AddPlantScreenState extends State<AddPlantScreen> {
                 
                 const SizedBox(height: 24),
 
+                // 2. EMPLACEMENT (On le met AVANT de choisir l'espèce)
+                DropdownButtonFormField<String>(
+                  value: _location,
+                  decoration: const InputDecoration(
+                    labelText: "Emplacement",
+                    border: OutlineInputBorder(),
+                    prefixIcon: Icon(Icons.place),
+                  ),
+                  items: const [
+                    DropdownMenuItem(value: 'Intérieur', child: Text("Intérieur 🏠")),
+                    DropdownMenuItem(value: 'Extérieur', child: Text("Extérieur 🌳")),
+                    DropdownMenuItem(value: 'Potager', child: Text("Potager 🥕")),
+                  ],
+                  onChanged: (value) => setState(() => _location = value!),
+                ),
+                const SizedBox(height: 16),
+
+                // 3. ESPECE (Autocomplete)
                 Autocomplete<String>(
-                  initialValue: TextEditingValue(text: _selectedSpecies),
-                  optionsBuilder: (TextEditingValue textEditingValue) {
-                    if (textEditingValue.text == '') return const Iterable<String>.empty();
-                    
-                    // NOUVELLE LOGIQUE : On parcourt l'encyclopédie
-                    return encyclopedia
-                        .map((e) => e.species) // On ne garde que les noms
-                        .where((String option) {
-                      return option.toLowerCase().contains(textEditingValue.text.toLowerCase());
-                    });
-                  },
-                  onSelected: _onSpeciesSelected,
+                initialValue: TextEditingValue(text: _selectedSpecies),
+                optionsBuilder: (TextEditingValue textEditingValue) {
+                  // 1. On choisit la bonne liste selon la sélection actuelle
+                  List<PlantSpeciesData> sourceList;
+                  
+                  if (_location == 'Intérieur') {
+                    sourceList = getIndoorSorted();
+                  } else if (_location == 'Extérieur') {
+                    sourceList = getOutdoorSorted();
+                  } else {
+                    sourceList = getVegetablesSorted(); // Potager
+                  }
+
+                  // 2. Si le champ est vide, on peut tout afficher (ou rien, selon ton goût)
+                  // Ici j'affiche tout pour que l'utilisateur puisse scroller la liste alphabétique
+                  if (textEditingValue.text == '') {
+                    return sourceList.map((e) => e.species);
+                  }
+
+                  // 3. Sinon on filtre ce que l'utilisateur tape
+                  return sourceList
+                      .map((e) => e.species)
+                      .where((String option) {
+                    return option.toLowerCase().contains(textEditingValue.text.toLowerCase());
+                  });
+                },
+                onSelected: _onSpeciesSelected,
                   fieldViewBuilder: (context, textEditingController, focusNode, onFieldSubmitted) {
                     // Astuce : Si le controller est vide (au démarrage) mais qu'on a une espèce sélectionnée (mode edit)
                     // on force le texte.
@@ -233,6 +275,7 @@ class _AddPlantScreenState extends State<AddPlantScreen> {
                 ),
                 const SizedBox(height: 16),
 
+                // 4. SURNOM
                 TextFormField(
                   controller: _nameController,
                   decoration: const InputDecoration(
@@ -243,21 +286,7 @@ class _AddPlantScreenState extends State<AddPlantScreen> {
                 ),
                 const SizedBox(height: 16),
 
-                DropdownButtonFormField<String>(
-                  value: _location,
-                  decoration: const InputDecoration(
-                    labelText: "Emplacement",
-                    border: OutlineInputBorder(),
-                    prefixIcon: Icon(Icons.place),
-                  ),
-                  items: const [
-                    DropdownMenuItem(value: 'Intérieur', child: Text("Intérieur 🏠")),
-                    DropdownMenuItem(value: 'Extérieur', child: Text("Extérieur 🌳")),
-                  ],
-                  onChanged: (value) => setState(() => _location = value!),
-                ),
-                const SizedBox(height: 16),
-
+                // 5. PIECE PRECISE
                 TextFormField(
                   controller: _roomController,
                   textCapitalization: TextCapitalization.sentences,

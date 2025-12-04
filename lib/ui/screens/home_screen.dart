@@ -15,65 +15,86 @@ class HomeScreen extends StatefulWidget {
   State<HomeScreen> createState() => _HomeScreenState();
 }
 
-class _HomeScreenState extends State<HomeScreen> {
+class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateMixin {
   // Cette méthode permet de rafraichir la liste quand on revient de l'ajout
   void _refreshPlants() {
     setState(() {});
   }
 
+  late TabController _tabController;
+
+  @override
+  void initState() {
+    super.initState();
+    // 3 onglets
+    _tabController = TabController(length: 3, vsync: this);
+  }
+
+  @override
+  void dispose() {
+    _tabController.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
-    return DefaultTabController(
-      length: 2, // Deux onglets
-      child: Scaffold(
-        appBar: AppBar(
-          title: const Text("Mon Jardin"),
-          centerTitle: true,
-          backgroundColor: Theme.of(context).colorScheme.primary, // Vert d'eau
-          foregroundColor: Colors.white,
-          bottom: const TabBar(
-            indicatorColor: Colors.white,
-            labelColor: Colors.white,
-            unselectedLabelColor: Colors.white70,
-            tabs: [
-              Tab(icon: Icon(Icons.home), text: "Intérieur"),
-              Tab(icon: Icon(Icons.park), text: "Extérieur"),
-            ],
+    // On n'utilise plus DefaultTabController ici
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("Sève"),
+        centerTitle: true,
+        backgroundColor: Theme.of(context).colorScheme.primary,
+        foregroundColor: Colors.white,
+        actions: [
+           IconButton(
+            icon: const Icon(Icons.settings),
+            onPressed: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) => const SettingsScreen()));
+            },
           ),
-          actions: [
-            IconButton(
-              icon: const Icon(Icons.settings),
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => const SettingsScreen()),
-                );
-              },
+        ],
+        bottom: TabBar(
+          controller: _tabController, // <--- CONNEXION DU CONTROLEUR
+          indicatorColor: Colors.white,
+          labelColor: Colors.white,
+          unselectedLabelColor: Colors.white70,
+          tabs: const [
+            Tab(icon: Icon(Icons.home), text: "Intérieur"),
+            Tab(icon: Icon(Icons.park), text: "Extérieur"),
+            Tab(icon: Icon(Icons.local_florist), text: "Potager"),
+          ],
+        ),
+      ),
+      body: TabBarView(
+        controller: _tabController, // <--- CONNEXION DU CONTROLEUR
+        children: const [
+          _PlantList(locationFilter: 'Intérieur'),
+          _PlantList(locationFilter: 'Extérieur'),
+          _PlantList(locationFilter: 'Potager'),
+        ],
+      ),
+      floatingActionButton: FloatingActionButton.extended(
+        onPressed: () async {
+          // C'est ici qu'on détermine où on est !
+          String currentLocation = 'Intérieur';
+          if (_tabController.index == 1) currentLocation = 'Extérieur';
+          if (_tabController.index == 2) currentLocation = 'Potager';
+
+          final result = await Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => AddPlantScreen(
+                initialLocation: currentLocation // On passe l'info !
+              ),
             ),
-          ],
-        ),
-        body: TabBarView(
-          children: [
-            _PlantList(locationFilter: 'Intérieur'),
-            _PlantList(locationFilter: 'Extérieur'),
-          ],
-        ),
-        floatingActionButton: FloatingActionButton.extended(
-          onPressed: () async {
-            // On attend le retour de l'écran d'ajout
-            final result = await Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => const AddPlantScreen()),
-            );
-            // Si on a ajouté une plante, on rafraichit la liste
-            if (result == true) {
-              _refreshPlants();
-            }
-          },
-          label: const Text("Ajouter"),
-          icon: const Icon(Icons.add),
-          backgroundColor: Theme.of(context).colorScheme.secondary, // Rose
-        ),
+          );
+          if (result == true) {
+            _refreshPlants();
+          }
+        },
+        label: const Text("Ajouter"),
+        icon: const Icon(Icons.add),
+        backgroundColor: Theme.of(context).colorScheme.secondary,
       ),
     );
   }
