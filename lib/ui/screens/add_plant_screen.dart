@@ -133,16 +133,27 @@ class _AddPlantScreenState extends State<AddPlantScreen> {
       );
 
       // 3. Sauvegarde (Update ou Insert)
+      // On sauvegarde D'ABORD en base (le plus important)
       if (_isEditing) {
         await DatabaseService().updatePlant(plant);
-        // Si on change les réglages, on reprogramme la notif
-        await NotificationService().cancelAllNotifications(plant);
-        await NotificationService().scheduleAllNotifications(plant);
       } else {
         await DatabaseService().insertPlant(plant);
-        await NotificationService().scheduleAllNotifications(plant);
       }
 
+      // 4. Notifications (BLOC SÉCURISÉ)
+      // On met ça dans un try-catch pour que si ça plante (ex: permissions Android),
+      // ça ne bloque pas la fermeture de l'écran.
+      try {
+        if (_isEditing) {
+          await NotificationService().cancelAllNotifications(plant); // Nettoyage
+        }
+        await NotificationService().scheduleAllNotifications(plant); // Programmation
+      } catch (e) {
+        print("Erreur lors de la programmation des notifs : $e");
+        // On pourrait afficher un petit message discret à l'utilisateur ici
+      }
+
+      // 5. Fermeture (On est sûr d'arriver ici maintenant)
       if (mounted) Navigator.pop(context, true);
     }
   }
@@ -166,9 +177,16 @@ class _AddPlantScreenState extends State<AddPlantScreen> {
     );
 
     if (confirm == true) {
-      // Suppression BDD + Notif
+      // Suppression BDD
       await DatabaseService().deletePlant(widget.plantToEdit!.id);
-      await NotificationService().cancelAllNotifications(widget.plantToEdit!);
+      
+      // Suppression Notif (Sécurisé)
+      try {
+        await NotificationService().cancelAllNotifications(widget.plantToEdit!);
+      } catch (e) {
+        print("Erreur suppression notif : $e");
+      }
+
       if (mounted) Navigator.pop(context, true);
     }
   }
