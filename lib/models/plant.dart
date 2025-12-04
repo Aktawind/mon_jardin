@@ -1,3 +1,5 @@
+import '../data/plant_data.dart'; // Pour accéder à getSpeciesData
+
 class Plant {
   final String id;
   final String name;
@@ -63,28 +65,59 @@ class Plant {
     return lastWatered!.add(Duration(days: currentFrequency));
   }
   
-  // Calcul Fertilisation (On ne fertilise généralement pas en hiver !)
+  // --- CALCUL INTELLIGENT FERTILISATION ---
   DateTime get nextFertilizingDate {
-    if (fertilizerFreq == 0) return DateTime(2100); // Jamais
-    // Si on est en hiver, on repousse au printemps (ex: 1er Avril)
-    if (_isWinter) {
-      final now = DateTime.now();
-      // Année actuelle ou suivante selon le mois
-      final year = now.month > 3 ? now.year + 1 : now.year;
-      return DateTime(year, 4, 1); 
+    // 1. Si fréquence 0, jamais
+    if (fertilizerFreq <= 0) return DateTime(2100);
+
+    // 2. Date théorique (Dernière fois + fréquence)
+    // Si jamais fait, on dit 2 semaines après l'ajout
+    DateTime baseDate = lastFertilized != null 
+        ? lastFertilized!.add(Duration(days: fertilizerFreq))
+        : dateAdded.add(const Duration(days: 14));
+
+    // 3. Correction selon l'Encyclopédie (Hivernage)
+    final speciesData = getSpeciesData(species);
+    
+    // Si on a des infos sur l'hivernage
+    if (speciesData != null && speciesData.winteringMonths.isNotEmpty) {
+      // Tant que la date tombe pendant le repos, on repousse au mois suivant
+      while (speciesData.winteringMonths.contains(baseDate.month)) {
+        // On passe au 1er du mois suivant
+        // ex: Si on est le 15 Décembre et que Décembre est repos -> 1er Janvier
+        // Si Janvier est aussi repos -> 1er Février...
+        baseDate = DateTime(baseDate.year, baseDate.month + 1, 1);
+      }
     }
     
-    if (lastFertilized == null) return dateAdded.add(const Duration(days: 14)); // 2 semaines après achat
-    return lastFertilized!.add(Duration(days: fertilizerFreq));
+    return baseDate;
   }
 
-  // Calcul Rempotage
+  // --- CALCUL INTELLIGENT REMPOTAGE ---
   DateTime get nextRepottingDate {
-    // Base : dernier rempotage ou date d'ajout
-    final baseDate = lastRepotted ?? dateAdded;
-    // On ajoute le nombre de mois
-    final nextDate = DateTime(baseDate.year, baseDate.month + repottingFreq, baseDate.day);
-    return nextDate;
+    if (repottingFreq <= 0) return DateTime(2100);
+
+    // 1. Date théorique (ex: Date d'achat + 24 mois)
+    DateTime baseDate = (lastRepotted ?? dateAdded);
+    DateTime targetDate = DateTime(baseDate.year, baseDate.month + repottingFreq, baseDate.day);
+
+    // 2. Correction selon l'Encyclopédie (Période idéale)
+    final speciesData = getSpeciesData(species);
+
+    if (speciesData != null && speciesData.repottingMonths.isNotEmpty) {
+      // Tant que le mois cible N'EST PAS dans la liste idéale, on avance
+      // ex: Si théorique = Novembre, mais idéal = [Mars, Avril]
+      // -> On avance jusqu'à Mars de l'année suivante.
+      
+      // Sécurité anti-boucle infinie : on s'arrête si on a fait plus de 12 mois de recherche
+      int safetyCounter = 0;
+      while (!speciesData.repottingMonths.contains(targetDate.month) && safetyCounter < 12) {
+        targetDate = DateTime(targetDate.year, targetDate.month + 1, 1);
+        safetyCounter++;
+      }
+    }
+
+    return targetDate;
   }
 
   // Jours restants

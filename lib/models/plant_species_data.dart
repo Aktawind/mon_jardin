@@ -33,7 +33,9 @@ class PlantSpeciesData {
     this.sowingMonths = const [],
     this.harvestMonths = const [],
     this.pruningMonths = const [],
-    this.repottingMonths = const [], // Souvent [3, 4, 5] (Printemps)
-    this.winteringMonths = const [], // Souvent [11, 12, 1, 2]
+    
+    // VALEURS PAR DÉFAUT STANDARD (Printemps / Hiver)
+    this.repottingMonths = const [3, 4, 5],      // Mars, Avril, Mai
+    this.winteringMonths = const [11, 12, 1, 2], // Nov, Déc, Jan, Fév
   });
 }
