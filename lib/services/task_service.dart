@@ -96,4 +96,84 @@ class TaskService {
 
     return tasks;
   }
+
+  // Pour la vue SEMAINE : On veut surtout les arrosages jour par jour
+  List<CalendarTask> getTasksForDay(List<Plant> myPlants, DateTime date) {
+    List<CalendarTask> tasks = [];
+    
+    for (var plant in myPlants) {
+      // Arrosage ce jour là ?
+      if (isSameDay(plant.nextWateringDate, date)) {
+        tasks.add(CalendarTask(
+          plant: plant,
+          type: TaskType.water,
+          title: "Arrosage",
+          subtitle: "Cycle de ${plant.currentFrequency} jours",
+          specificDate: plant.nextWateringDate,
+        ));
+      }
+      
+      // On peut aussi ajouter les engrais s'ils tombent ce jour précis
+      if (isSameDay(plant.nextFertilizingDate, date) && plant.fertilizerFreq > 0) {
+        tasks.add(CalendarTask(
+          plant: plant,
+          type: TaskType.fertilizer,
+          title: "Engrais",
+          subtitle: "Jour J !",
+          specificDate: plant.nextFertilizingDate,
+        ));
+      }
+    }
+    return tasks;
+  }
+
+  // Pour la vue ANNEE : On veut juste les gros travaux (Rempotage, Hivernage)
+  // On retourne une Map : { Mois (1..12) : [Tâches] }
+  Map<int, List<CalendarTask>> getTasksForYear(List<Plant> myPlants, int year) {
+    Map<int, List<CalendarTask>> yearMap = {};
+
+    for (int m = 1; m <= 12; m++) {
+      yearMap[m] = [];
+      // On réutilise notre moteur existant mais on ne garde que les gros trucs
+      final tasksOfMonth = getTasksForMonth(myPlants, m, year);
+      
+      for (var task in tasksOfMonth) {
+        // On ne garde que Rempotage et Taille pour la vue Année (vision long terme)
+        if (task.type == TaskType.repot || task.type == TaskType.prune) {
+          yearMap[m]!.add(task);
+        }
+      }
+    }
+    return yearMap;
+  }
+
+  // Petit helper pour comparer deux dates
+  bool isSameDay(DateTime a, DateTime b) {
+    return a.year == b.year && a.month == b.month && a.day == b.day;
+  }
+
+  // Récupère tout ce qui est en retard (tous types confondus, ou juste arrosage ?)
+  // Disons Arrosage surtout.
+  List<CalendarTask> getOverdueTasks(List<Plant> myPlants) {
+    List<CalendarTask> overdue = [];
+    final now = DateTime.now();
+    // On normalise "aujourd'hui" à minuit pour comparer les dates pures
+    final todayMidnight = DateTime(now.year, now.month, now.day);
+
+    for (var plant in myPlants) {
+      // Si la date d'arrosage est strictement AVANT aujourd'hui
+      if (plant.nextWateringDate.isBefore(todayMidnight)) {
+        final daysLate = todayMidnight.difference(plant.nextWateringDate).inDays;
+        
+        overdue.add(CalendarTask(
+          plant: plant,
+          type: TaskType.water,
+          title: "En retard !",
+          subtitle: "$daysLate jours de retard",
+          specificDate: plant.nextWateringDate,
+        ));
+      }
+    }
+    return overdue;
+  }
 }
