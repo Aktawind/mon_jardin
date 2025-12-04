@@ -12,6 +12,9 @@ const List<PlantSpeciesData> vegetablePlants = [
     fertilizeFreq: 15, // Gourmande
     repotFreq: 0,
     pruning: 'Supprimer les gourmands (tiges à l\'aisselle des feuilles).',
+    sowingMonths: [2, 3, 4], // Février (sous abri), Mars, Avril
+    harvestMonths: [7, 8, 9, 10], // Juillet -> Octobre
+    pruningMonths: [6, 7, 8], // Taille pendant la croissance
   ),
   PlantSpeciesData(
     species: 'Carotte',

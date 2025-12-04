@@ -96,6 +96,7 @@ const List<PlantSpeciesData> outdoorPlants = [
     fertilizeFreq: 180,
     repotFreq: 0,
     pruning: 'Idéal pour les haies (charmille), tailler en juin et septembre.',
+    pruningMonths: [6, 9], // Taille pendant la croissance
   ),
   PlantSpeciesData(
     species: 'Saule pleureur',

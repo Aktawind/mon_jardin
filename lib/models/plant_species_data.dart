@@ -10,6 +10,13 @@ class PlantSpeciesData {
   final int repotFreq; // mois
   final String pruning;
 
+  // NOUVEAUX CHAMPS (Mois : 1=Janvier ... 12=Décembre)
+  final List<int> sowingMonths;    // Semis
+  final List<int> harvestMonths;   // Récolte
+  final List<int> pruningMonths;   // Période de taille idéale
+  final List<int> repottingMonths; // Période de rempotage idéale
+  final List<int> winteringMonths; // Mois de repos (moins d'eau, pas d'engrais)
+
   const PlantSpeciesData({
     required this.species,
     required this.waterSummer,
@@ -21,5 +28,12 @@ class PlantSpeciesData {
     required this.fertilizeFreq,
     required this.repotFreq,
     required this.pruning,
+
+    // On met des valeurs par défaut pour ne pas casser l'encyclopédie actuelle
+    this.sowingMonths = const [],
+    this.harvestMonths = const [],
+    this.pruningMonths = const [],
+    this.repottingMonths = const [], // Souvent [3, 4, 5] (Printemps)
+    this.winteringMonths = const [], // Souvent [11, 12, 1, 2]
   });
 }
