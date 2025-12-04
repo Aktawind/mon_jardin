@@ -23,10 +23,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       // On affiche la page active
       // Astuce : IndexedStack garde l'état des pages (ne recharge pas tout quand on change d'onglet)
-      body: IndexedStack(
-        index: _currentIndex,
-        children: _pages,
-      ),
+      body: _pages[_currentIndex],
       
       bottomNavigationBar: NavigationBar(
         selectedIndex: _currentIndex,
