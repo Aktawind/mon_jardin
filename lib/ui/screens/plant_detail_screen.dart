@@ -8,6 +8,7 @@ import 'add_plant_screen.dart';
 import '../common/smart_watering_sheet.dart';
 import 'history_screen.dart';
 import '../common/plant_action_menu.dart';
+import '../common/plant_management_menu.dart';
 
 class PlantDetailScreen extends StatefulWidget {
   final Plant plant;
@@ -28,6 +29,13 @@ class _PlantDetailScreenState extends State<PlantDetailScreen> {
   }
 
   // --- ACTIONS DU MENU ---
+  void _openAlbum() {
+    // TODO: Ouvrir l'écran d'album
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => PhotoGalleryScreen(plant: _plant)),
+    );
+  }
 
   Future<void> _editPlant() async {
     // On ouvre l'écran d'ajout en mode "Édition"
@@ -128,25 +136,26 @@ class _PlantDetailScreenState extends State<PlantDetailScreen> {
             backgroundColor: Theme.of(context).colorScheme.primary,
             actions: [
               IconButton(
-                icon: const Icon(Icons.history),
-                tooltip: "Voir le journal",
+                icon: const Icon(Icons.more_vert), // Les 3 points verticaux (Standard)
+                // Ou Icons.menu si tu préfères les barres
                 onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => HistoryScreen(plant: _plant)),
+                  showModalBottomSheet(
+                    context: context,
+                    backgroundColor: Colors.transparent,
+                    builder: (ctx) => PlantManagementMenu(
+                      plant: _plant,
+                      onEdit: _editPlant,
+                      onDelete: _deletePlant,
+                      onHistory: () {
+                         Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => HistoryScreen(plant: _plant)),
+                        );
+                      },
+                      onAlbum: _openAlbum,
+                    ),
                   );
                 },
-              ),
-              // Le fameux menu "3 points"
-              PopupMenuButton<String>(
-                onSelected: (value) {
-                  if (value == 'edit') _editPlant();
-                  if (value == 'delete') _deletePlant();
-                },
-                itemBuilder: (BuildContext context) => [
-                  const PopupMenuItem(value: 'edit', child: Row(children: [Icon(Icons.edit, color: Colors.grey), SizedBox(width: 8), Text("Modifier")])),
-                  const PopupMenuItem(value: 'delete', child: Row(children: [Icon(Icons.delete, color: Colors.red), SizedBox(width: 8), Text("Supprimer", style: TextStyle(color: Colors.red))])),
-                ],
               ),
             ],
             flexibleSpace: FlexibleSpaceBar(
