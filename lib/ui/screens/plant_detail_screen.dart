@@ -9,6 +9,7 @@ import '../common/smart_watering_sheet.dart';
 import 'history_screen.dart';
 import '../common/plant_action_menu.dart';
 import '../common/plant_management_menu.dart';
+import 'photo_gallery_screen.dart';
 
 class PlantDetailScreen extends StatefulWidget {
   final Plant plant;
@@ -30,7 +31,6 @@ class _PlantDetailScreenState extends State<PlantDetailScreen> {
 
   // --- ACTIONS DU MENU ---
   void _openAlbum() {
-    // TODO: Ouvrir l'écran d'album
     Navigator.push(
       context,
       MaterialPageRoute(builder: (context) => PhotoGalleryScreen(plant: _plant)),
