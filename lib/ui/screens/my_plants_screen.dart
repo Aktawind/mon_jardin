@@ -129,36 +129,19 @@ class _PlantListState extends State<_PlantList> {
   
   // Fonction pour gérer le clic sur la goutte d'eau
   Future<void> _waterPlant(Plant plant) async {
-    // 1. Mise à jour BDD
     await DatabaseService().updatePlantWatering(plant.id);
     
-    // 2. On récupère la plante mise à jour pour avoir la NOUVELLE date calculée
-    // (Petite astuce : comme updatePlantWatering ne renvoie pas l'objet, 
-    // on peut recalculer manuellement ou recharger, ici on recrée une instance temporaire propre)
-    final updatedPlant = Plant(
-      id: plant.id,
-      name: plant.name,
-      species: plant.species,
-      location: plant.location,
-      room: plant.room,
-      dateAdded: plant.dateAdded,
-      waterFrequencySummer: plant.waterFrequencySummer,
-      waterFrequencyWinter: plant.waterFrequencyWinter,
-      // Le point clé : on simule que lastWatered est "Maintenant"
-      lastWatered: DateTime.now(), 
-    );
-
-    // 3. On programme la prochaine notif
-    await NotificationService().scheduleAllNotifications(updatedPlant);
+    // Reprogrammation
+    final plants = await DatabaseService().getPlants();
+    final updated = plants.firstWhere((p) => p.id == plant.id);
+    await NotificationService().scheduleAllNotifications(updated);
 
     setState(() {});
     
-    // Petit feedback visuel en bas de l'écran
     if (mounted) {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
           content: Text("${plant.name} a été arrosée ! 💧"),
-          duration: const Duration(seconds: 2),
           backgroundColor: Theme.of(context).colorScheme.secondary,
         ),
       );
@@ -254,17 +237,9 @@ class _PlantListState extends State<_PlantList> {
                     color: days <= 0 ? Theme.of(context).colorScheme.primary : Colors.grey,
                     size: 32,
                   ),
-                  onPressed: () {
-                    // On ouvre le Smart Menu
-                    showModalBottomSheet(
-                      context: context,
-                      backgroundColor: Colors.transparent, // Important pour voir les coins arrondis
-                      builder: (ctx) => SmartWateringSheet(
-                        plant: plant,
-                        onSuccess: () => setState(() {}), // On rafraichit la liste au retour
-                      ),
-                    );
-                  },
+                  // ICI : On appelle directement la fonction, pas de showModalBottomSheet
+                  onPressed: () => _waterPlant(plant), 
+                  tooltip: "Marquer comme arrosée",
                 ),
                 
                 onTap: () async {

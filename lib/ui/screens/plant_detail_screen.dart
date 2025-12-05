@@ -7,6 +7,7 @@ import '../../services/notification_service.dart';
 import 'add_plant_screen.dart';
 import '../common/smart_watering_sheet.dart';
 import 'history_screen.dart';
+import '../common/plant_action_menu.dart';
 
 class PlantDetailScreen extends StatefulWidget {
   final Plant plant;
@@ -194,46 +195,28 @@ class _PlantDetailScreenState extends State<PlantDetailScreen> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
-                      // Arrosage (Ouvre le Smart Menu)
                       _StatusBadge(
                         label: "Arrosage",
                         date: nextWater,
                         icon: Icons.water_drop,
                         color: Colors.blue[100]!,
-                        onTap: () {
-                          showModalBottomSheet(
-                            context: context,
-                            backgroundColor: Colors.transparent,
-                            builder: (ctx) => SmartWateringSheet(
-                              plant: _plant,
-                              onSuccess: () async {
-                                final updatedList = await DatabaseService().getPlants();
-                                final updatedPlant = updatedList.firstWhere((p) => p.id == _plant.id);
-                                setState(() { _plant = updatedPlant; });
-                              },
-                            ),
-                          );
-                        },
+                        // Plus de onTap !
                       ),
                       
-                      // Engrais
-                      if(_plant.fertilizerFreq > 0)
+                      if(_plant.trackFertilizer && _plant.fertilizerFreq > 0)
                         _StatusBadge(
                           label: "Engrais",
                           date: nextFertilizer,
                           icon: Icons.science,
                           color: Colors.purple[100]!,
-                          onTap: () => _confirmAction("fert"),
                         ),
                         
-                      // Rempotage
                       if(_plant.repottingFreq > 0)
                         _StatusBadge(
                           label: "Rempotage",
                           date: nextRepot,
                           icon: Icons.change_circle,
                           color: Colors.orange[100]!,
-                          onTap: () => _confirmAction("repot"),
                         ),
                     ],
                   ),
@@ -294,68 +277,28 @@ class _PlantDetailScreenState extends State<PlantDetailScreen> {
       // Petit bouton flottant pour valider l'arrosage rapidement
       floatingActionButton: FloatingActionButton.extended(
         onPressed: () {
-           showModalBottomSheet(
-              context: context,
-              backgroundColor: Colors.transparent,
-              builder: (ctx) => SmartWateringSheet(
-                plant: _plant,
-                onSuccess: () async {
-                  // On recharge la plante affichée
-                  final updatedList = await DatabaseService().getPlants();
-                  final updatedPlant = updatedList.firstWhere((p) => p.id == _plant.id);
-                  setState(() {
-                    _plant = updatedPlant;
-                  });
-                }, 
-              ),
-            );
+          showModalBottomSheet(
+            context: context,
+            backgroundColor: Colors.transparent, // Important pour voir les coins ronds
+            builder: (ctx) => PlantActionMenu(
+              plant: _plant,
+              onSuccess: () async {
+                // Rafraichissement
+                final updatedList = await DatabaseService().getPlants();
+                final updatedPlant = updatedList.firstWhere((p) => p.id == _plant.id);
+                setState(() {
+                  _plant = updatedPlant;
+                });
+              },
+            ),
+          );
         },
-        label: const Text("Arroser..."), // Petit changement de texte pour indiquer qu'il y a un menu
-        icon: const Icon(Icons.water_drop),
+        // Un Label bien explicite pour ta maman
+        label: const Text("Prendre soin...", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16)),
+        icon: const Icon(Icons.volunteer_activism), // Une icône "main qui donne" ou un coeur
+        elevation: 4,
       ),
     );
-  }
-
-  Future<void> _confirmAction(String type) async {
-    String title = type == 'fert' ? "Fertilisation" : "Rempotage";
-    String content = type == 'fert' 
-        ? "Avez-vous donné de l'engrais à ${_plant.name} ?" 
-        : "Avez-vous rempoté ${_plant.name} ?";
-
-    final confirm = await showDialog<bool>(
-      context: context,
-      builder: (ctx) => AlertDialog(
-        title: Text(title),
-        content: Text(content),
-        actions: [
-          TextButton(onPressed: () => Navigator.pop(ctx, false), child: const Text("Non")),
-          TextButton(
-            onPressed: () => Navigator.pop(ctx, true), 
-            child: const Text("Oui, c'est fait !"),
-          ),
-        ],
-      ),
-    );
-
-    if (confirm == true) {
-      if (type == 'fert') {
-        await DatabaseService().updatePlantFertilizing(_plant.id);
-        ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text("Miam ! 🧪")));
-      } else {
-        await DatabaseService().updatePlantRepotting(_plant.id);
-        ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text("Nouvelle maison ! 🪴")));
-      }
-
-      // On recharge la plante et on reprogramme TOUT
-      final updatedList = await DatabaseService().getPlants();
-      final updatedPlant = updatedList.firstWhere((p) => p.id == _plant.id);
-      
-      await NotificationService().scheduleAllNotifications(updatedPlant);
-
-      setState(() {
-        _plant = updatedPlant;
-      });
-    }
   }
 }
 

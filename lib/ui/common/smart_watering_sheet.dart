@@ -5,116 +5,85 @@ import '../../services/notification_service.dart';
 
 class SmartWateringSheet extends StatelessWidget {
   final Plant plant;
-  final VoidCallback onSuccess; // Pour dire à l'écran parent de rafraichir
+  final VoidCallback onSuccess;
 
   const SmartWateringSheet({super.key, required this.plant, required this.onSuccess});
 
-  // 1. Cas Standard : On arrose, on ne change rien
-  Future<void> _waterStandard(BuildContext context) async {
-    Navigator.pop(context); // Ferme le menu
-    await DatabaseService().updatePlantWatering(plant.id);
-    await _reschedule(plant);
-    _showSnack(context, "Arrosée ! À dans ${plant.currentFrequency} jours.");
-    onSuccess();
-  }
-
-  // 2. Cas "Terre Humide" : On n'arrose pas, on décale et on augmente la fréquence
-  Future<void> _snoozeAndLearn(BuildContext context) async {
+  // Cas 1 : Terre Humide (On repousse l'arrosage + Apprentissage)
+  Future<void> _tooWet(BuildContext context) async {
     Navigator.pop(context);
     
-    // On apprend : +1 jour au cycle
+    // On apprend : +1 jour au cycle (le cycle était trop court)
     await DatabaseService().adjustPlantFrequency(plant, 1);
     
-    // On ne touche PAS à last_watered (car on n'a pas arrosé).
-    // Mais comme on a augmenté la fréquence, la "nextWateringDate" va reculer mécaniquement.
-    // Cependant, pour le Snooze immédiat (ne pas rappeler demain), c'est l'augmentation de fréquence qui va jouer.
-    
-    // Note : Pour faire un vrai "Snooze" de 2 jours fixes sans toucher à la fréquence, il faudrait une colonne "snooze_until".
-    // Ici, on fait le pari de l'apprentissage : si c'est humide, c'est que le cycle est trop court.
-    
-    // On force la reprogrammation de la notif avec la nouvelle fréquence
-    // Astuce : on recharche la plante pour avoir la nouvelle fréquence à jour
-    final plants = await DatabaseService().getPlants();
-    final updatedPlant = plants.firstWhere((p) => p.id == plant.id);
-    await NotificationService().scheduleAllNotifications(updatedPlant);
+    // ON NE MARQUE PAS COMME ARROSÉ (puisque c'est humide)
+    // On reprogramme juste la notif avec la nouvelle fréquence
+    // Comme la fréquence est plus longue, la prochaine date (lastWatered + freq) va reculer.
+    await _reschedule(plant);
 
-    _showSnack(context, "C'est noté ! Je la laisserai tranquille un peu plus longtemps.");
+    _showSnack(context, "C'est noté ! Je repousse l'arrosage et je rallonge le cycle.");
     onSuccess();
   }
 
-  // 3. Cas "Trop sec / Urgence" : On arrose et on réduit la fréquence
-  Future<void> _waterEarlyAndLearn(BuildContext context) async {
+  // Cas 2 : Terre Sèche (On rapproche l'arrosage + Apprentissage)
+  Future<void> _tooDry(BuildContext context) async {
     Navigator.pop(context);
     
-    // On arrose
-    await DatabaseService().updatePlantWatering(plant.id);
-    // On apprend : -1 jour au cycle
+    // On apprend : -1 jour au cycle (le cycle était trop long)
     await DatabaseService().adjustPlantFrequency(plant, -1);
     
+    // ICI, C'est subtil :
+    // Tu as dit "on marque la plante comme étant à arroser".
+    // Le plus simple c'est de laisser l'utilisateur cliquer sur "Arroser" dans le menu principal s'il veut arroser maintenant.
+    // MAIS, si c'est très sec, logiquement on arrose tout de suite.
+    // Proposons d'arroser immédiatement pour être logique.
+    
+    await DatabaseService().updatePlantWatering(plant.id);
     await _reschedule(plant);
     
-    _showSnack(context, "Arrosée ! Je te rappellerai un peu plus tôt la prochaine fois.");
+    _showSnack(context, "Arrosé ! Je te rappellerai un peu plus tôt la prochaine fois.");
     onSuccess();
   }
 
-  // Helper pour reprogrammer
   Future<void> _reschedule(Plant p) async {
-    // Il faut recharger la plante depuis la BDD pour avoir les dates à jour si on vient de modifier
     final plants = await DatabaseService().getPlants();
     final updatedPlant = plants.firstWhere((pl) => pl.id == p.id);
     await NotificationService().scheduleAllNotifications(updatedPlant);
   }
 
   void _showSnack(BuildContext context, String msg) {
-    ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(msg), duration: const Duration(seconds: 2)));
+    ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(msg), duration: const Duration(seconds: 3)));
   }
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.all(16),
-      // On stylise un peu le haut pour faire joli
+      padding: const EdgeInsets.all(24),
       decoration: const BoxDecoration(
         color: Colors.white,
-        borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+        borderRadius: BorderRadius.vertical(top: Radius.circular(24)),
       ),
       child: Column(
-        mainAxisSize: MainAxisSize.min, // Prend juste la place nécessaire
+        mainAxisSize: MainAxisSize.min,
         children: [
-          Container(width: 40, height: 4, decoration: BoxDecoration(color: Colors.grey[300], borderRadius: BorderRadius.circular(2))),
-          const SizedBox(height: 16),
-          Text("Arrosage de ${plant.name}", style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+          const Text("État de la terre", style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
           const SizedBox(height: 8),
-          const Text("Comment est la terre ?", style: TextStyle(color: Colors.grey)),
-          const SizedBox(height: 16),
+          Text("Pour ajuster le cycle de ${plant.name}", style: const TextStyle(color: Colors.grey)),
+          const SizedBox(height: 24),
           
-          // Option 1 : Trop humide
           ListTile(
             leading: const CircleAvatar(backgroundColor: Colors.blueGrey, child: Icon(Icons.cloud_off, color: Colors.white)),
-            title: const Text("Encore humide"),
-            subtitle: const Text("Repousser et arroser moins souvent"),
-            onTap: () => _snoozeAndLearn(context),
+            title: const Text("La terre est encore humide"),
+            subtitle: const Text("→ Repousser et arroser moins souvent"),
+            onTap: () => _tooWet(context),
           ),
-          
-          // Option 2 : Parfait (Standard)
-          Container(
-            decoration: BoxDecoration(color: Theme.of(context).colorScheme.primary.withOpacity(0.1), borderRadius: BorderRadius.circular(12)),
-            child: ListTile(
-              leading: CircleAvatar(backgroundColor: Theme.of(context).colorScheme.primary, child: const Icon(Icons.check, color: Colors.white)),
-              title: const Text("Arroser maintenant"),
-              subtitle: const Text("Cycle normal"),
-              onTap: () => _waterStandard(context),
-            ),
-          ),
-          
-          // Option 3 : Trop sec
+          const Divider(),
           ListTile(
             leading: const CircleAvatar(backgroundColor: Colors.orangeAccent, child: Icon(Icons.wb_sunny, color: Colors.white)),
-            title: const Text("Terre très sèche"),
-            subtitle: const Text("Arroser et augmenter la fréquence"),
-            onTap: () => _waterEarlyAndLearn(context),
+            title: const Text("La terre est très sèche"),
+            subtitle: const Text("→ Arroser maintenant et augmenter la fréquence"),
+            onTap: () => _tooDry(context),
           ),
-          const SizedBox(height: 16),
         ],
       ),
     );
