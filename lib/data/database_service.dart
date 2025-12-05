@@ -2,6 +2,7 @@ import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
 import '../models/plant.dart';
 import '../models/plant_event.dart';
+import '../models/plant_photo.dart';
 
 class DatabaseService {
   // Singleton : on s'assure qu'il n'y a qu'une seule instance de la BDD ouverte
@@ -24,7 +25,7 @@ class DatabaseService {
     // On ouvre la base. Si la version change, on appelle onUpgrade
     return await openDatabase(
       path,
-      version: 4, 
+      version: 5, 
       onCreate: _onCreate,
       onUpgrade: _onUpgrade,
     );
@@ -51,8 +52,11 @@ class DatabaseService {
         repotting_freq INTEGER, -- En mois (ex: 24 pour 2 ans)
         last_repotted TEXT,     -- Date (ou date d'achat par défaut)
         pruning_info TEXT,      -- Conseils de taille
-        date_added TEXT,
-        last_watered TEXT
+        date_added TEXT,        -- Date d'ajout dans l'app
+        last_watered TEXT,    
+        lifecycle_stage TEXT,
+        track_watering INTEGER,
+        track_fertilizer INTEGER
       )
     ''');
 
@@ -62,6 +66,18 @@ class DatabaseService {
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         plant_id TEXT,
         type TEXT,
+        date TEXT,
+        note TEXT,
+        FOREIGN KEY(plant_id) REFERENCES plants(id) ON DELETE CASCADE
+      )
+    ''');
+
+    // Table Photos (Journal)
+    await db.execute('''
+      CREATE TABLE plant_photos(
+        id TEXT PRIMARY KEY,
+        plant_id TEXT,
+        path TEXT,
         date TEXT,
         note TEXT,
         FOREIGN KEY(plant_id) REFERENCES plants(id) ON DELETE CASCADE
@@ -97,6 +113,25 @@ class DatabaseService {
           id INTEGER PRIMARY KEY AUTOINCREMENT,
           plant_id TEXT,
           type TEXT,
+          date TEXT,
+          note TEXT
+        )
+      ''');
+    }
+
+    if (oldVersion < 5) {
+      print("Mise à jour V5 : Potager, Suivi et Photos");
+      // 1. Ajout des colonnes
+      await db.execute("ALTER TABLE plants ADD COLUMN lifecycle_stage TEXT DEFAULT 'planted'");
+      await db.execute("ALTER TABLE plants ADD COLUMN track_watering INTEGER DEFAULT 1");
+      await db.execute("ALTER TABLE plants ADD COLUMN track_fertilizer INTEGER DEFAULT 1");
+      
+      // 2. Création table photos
+      await db.execute('''
+        CREATE TABLE plant_photos(
+          id TEXT PRIMARY KEY,
+          plant_id TEXT,
+          path TEXT,
           date TEXT,
           note TEXT
         )
@@ -271,5 +306,30 @@ class DatabaseService {
       orderBy: 'date DESC', // Du plus récent au plus vieux
     );
     return List.generate(maps.length, (i) => PlantEvent.fromMap(maps[i]));
+  }
+
+  // Méthodes CRUD pour les photos
+  // Ajouter une photo au journal
+  Future<void> addPhoto(PlantPhoto photo) async {
+    final db = await database;
+    await db.insert('plant_photos', photo.toMap());
+  }
+
+  // Récupérer les photos d'une plante (du plus récent au plus vieux)
+  Future<List<PlantPhoto>> getPhotosForPlant(String plantId) async {
+    final db = await database;
+    final maps = await db.query(
+      'plant_photos',
+      where: 'plant_id = ?',
+      whereArgs: [plantId],
+      orderBy: 'date DESC',
+    );
+    return List.generate(maps.length, (i) => PlantPhoto.fromMap(maps[i]));
+  }
+
+  // Supprimer une photo
+  Future<void> deletePhoto(String photoId) async {
+    final db = await database;
+    await db.delete('plant_photos', where: 'id = ?', whereArgs: [photoId]);
   }
 }

@@ -31,6 +31,10 @@ class Plant {
   final DateTime? lastFertilized;
   final DateTime? lastRepotted;  // Date du dernier rempotage (ou achat)
 
+  final String lifecycleStage; // 'seed' (graine), 'seedling' (semis), 'planted' (en place)
+  final bool trackWatering;    // true = on gère, false = on ignore (ex: arbre dehors)
+  final bool trackFertilizer;  // true = on gère
+
   Plant({
     required this.id,
     required this.name,
@@ -51,6 +55,9 @@ class Plant {
     this.lastWatered,
     this.lastFertilized,
     this.lastRepotted,
+    this.lifecycleStage = 'planted', // Par défaut, c'est une plante en pot
+    this.trackWatering = true,       // Par défaut, on veut des notifs
+    this.trackFertilizer = true,
   });
 
    bool get _isWinter {
@@ -153,11 +160,15 @@ class Plant {
       pruningInfo: map['pruning_info'],
       fertilizerFreq: map['fertilizer_freq'] ?? 30,
       repottingFreq: map['repotting_freq'] ?? 24,
-      
+      // Mapping V4
       dateAdded: DateTime.parse(map['date_added']),
       lastWatered: map['last_watered'] != null ? DateTime.parse(map['last_watered']) : null,
       lastFertilized: map['last_fertilized'] != null ? DateTime.parse(map['last_fertilized']) : null,
       lastRepotted: map['last_repotted'] != null ? DateTime.parse(map['last_repotted']) : null,
+      // Mapping V5
+      lifecycleStage: map['lifecycle_stage'] ?? 'planted',
+      trackWatering: map['track_watering'] == 0 ? false : true,
+      trackFertilizer: map['track_fertilizer'] == 0 ? false : true,
     );
   }
 
@@ -179,11 +190,15 @@ class Plant {
       'pruning_info': pruningInfo,
       'fertilizer_freq': fertilizerFreq,
       'repotting_freq': repottingFreq,
-      
+      // Mapping V4
       'date_added': dateAdded.toIso8601String(),
       'last_watered': lastWatered?.toIso8601String(),
       'last_fertilized': lastFertilized?.toIso8601String(),
       'last_repotted': lastRepotted?.toIso8601String(),
+      // Mapping V5
+      'lifecycle_stage': lifecycleStage,
+      'track_watering': trackWatering ? 1 : 0,
+      'track_fertilizer': trackFertilizer ? 1 : 0,
     };
   }
 }
