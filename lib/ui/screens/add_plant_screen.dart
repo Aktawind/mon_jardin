@@ -33,6 +33,7 @@ class _AddPlantScreenState extends State<AddPlantScreen> {
   String _location = 'Intérieur'; 
   int _waterFreqSummer = 7;
   PlantSpeciesData? _foundSpeciesData;
+  String _lifecycleStage = 'planted'; // Valeur par défaut (En terre/pot)
   
   // Pour savoir si on est en mode édition
   bool get _isEditing => widget.plantToEdit != null;
@@ -49,6 +50,7 @@ class _AddPlantScreenState extends State<AddPlantScreen> {
       _selectedImage = p.photoPath;
       _location = p.location;
       _waterFreqSummer = p.waterFrequencySummer;
+      _lifecycleStage = p.lifecycleStage; // On reprend le stade existant
 
       final data = getSpeciesData(p.species);
       if (data != null) _foundSpeciesData = data;
@@ -130,6 +132,9 @@ class _AddPlantScreenState extends State<AddPlantScreen> {
         // 5. Fréquences techniques
         fertilizerFreq: _foundSpeciesData?.fertilizeFreq ?? widget.plantToEdit?.fertilizerFreq ?? 30,
         repottingFreq: _foundSpeciesData?.repotFreq ?? widget.plantToEdit?.repottingFreq ?? 24,
+
+        // 6. Suivi et stade de vie
+        lifecycleStage: _location == 'Potager' ? _lifecycleStage : 'planted', // Sécurité : si pas potager, c'est 'planted'
       );
 
       // 3. Sauvegarde (Update ou Insert)
@@ -315,6 +320,32 @@ class _AddPlantScreenState extends State<AddPlantScreen> {
                   ),
                 ),
                 const SizedBox(height: 24),
+
+                const SizedBox(height: 16),
+
+              // SELECTEUR DE STADE (Uniquement pour Potager)
+              if (_location == 'Potager') ...[
+                const Text("Stade actuel", style: TextStyle(fontWeight: FontWeight.bold)),
+                const SizedBox(height: 8),
+                SegmentedButton<String>(
+                  segments: const [
+                    ButtonSegment(value: 'seed', label: Text('Graine'), icon: Icon(Icons.grain)),
+                    ButtonSegment(value: 'seedling', label: Text('Semis'), icon: Icon(Icons.spa)), // Petite pousse
+                    ButtonSegment(value: 'planted', label: Text('En terre'), icon: Icon(Icons.grass)),
+                  ],
+                  selected: {_lifecycleStage},
+                  onSelectionChanged: (Set<String> newSelection) {
+                    setState(() {
+                      _lifecycleStage = newSelection.first;
+                    });
+                  },
+                  style: ButtonStyle(
+                    visualDensity: VisualDensity.compact,
+                    tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                  ),
+                ),
+                const SizedBox(height: 24),
+              ],
 
                 Container(
                   padding: const EdgeInsets.all(12),

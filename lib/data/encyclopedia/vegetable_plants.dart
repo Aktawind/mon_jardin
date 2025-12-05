@@ -15,6 +15,7 @@ const List<PlantSpeciesData> vegetablePlants = [
     pruningMonths: [6, 7, 8],
     sowingMonths: [2, 3, 4],
     harvestMonths: [7, 8, 9, 10],
+    plantingMonths: [5, 6], // Après les Saints de Glace
   ),
   PlantSpeciesData(
     species: 'Carotte',
@@ -30,13 +31,14 @@ const List<PlantSpeciesData> vegetablePlants = [
     pruningMonths: [4, 5, 6],
     sowingMonths: [3, 4, 5, 6, 7],
     harvestMonths: [7, 8, 9, 10, 11],
+    plantingMonths: [3, 4, 5, 6, 7], // Semis direct
   ),
   PlantSpeciesData(
     species: 'Salade (Laitue)',
     waterSummer: 2,
     waterWinter: 10,
     light: 'Soleil ou mi-ombre.',
-    temp: '15-20°C. Monte en graines si trop chaud.',
+    temp: '15-20°C.',
     humidity: 'Frais.',
     soil: 'Frais et humifère.',
     fertilizeFreq: 30,
@@ -45,6 +47,7 @@ const List<PlantSpeciesData> vegetablePlants = [
     pruningMonths: [],
     sowingMonths: [2, 3, 4, 5, 6, 7, 8, 9],
     harvestMonths: [4, 5, 6, 7, 8, 9, 10],
+    plantingMonths: [3, 4, 5, 6, 7, 8, 9],
   ),
   PlantSpeciesData(
     species: 'Radis',
@@ -52,14 +55,15 @@ const List<PlantSpeciesData> vegetablePlants = [
     waterWinter: 0,
     light: 'Soleil ou mi-ombre.',
     temp: 'Fraicheur préférée.',
-    humidity: 'Constante (sinon piquent).',
-    soil: 'Léger, frais, sans cailloux.',
+    humidity: 'Constante.',
+    soil: 'Léger, frais.',
     fertilizeFreq: 0,
     repotFreq: 0,
     pruning: 'Pas de taille.',
     pruningMonths: [],
     sowingMonths: [3, 4, 5, 6, 7, 8, 9],
     harvestMonths: [4, 5, 6, 7, 8, 9, 10],
+    plantingMonths: [3, 4, 5, 6, 7, 8, 9], // Semis direct
   ),
   PlantSpeciesData(
     species: 'Courgette',
@@ -71,10 +75,11 @@ const List<PlantSpeciesData> vegetablePlants = [
     soil: 'Riche et bien drainé.',
     fertilizeFreq: 20,
     repotFreq: 0,
-    pruning: 'Couper les vieilles feuilles malades.',
+    pruning: 'Couper les vieilles feuilles.',
     pruningMonths: [7, 8],
     sowingMonths: [4, 5, 6],
     harvestMonths: [7, 8, 9, 10],
+    plantingMonths: [5, 6],
   ),
   PlantSpeciesData(
     species: 'Haricot vert',
@@ -84,12 +89,13 @@ const List<PlantSpeciesData> vegetablePlants = [
     temp: 'Chaud (>15°C).',
     humidity: 'Moyenne.',
     soil: 'Léger, pas trop riche.',
-    fertilizeFreq: 0, // Fixe l'azote lui-même
+    fertilizeFreq: 0,
     repotFreq: 0,
     pruning: 'Butter les pieds.',
     pruningMonths: [6],
     sowingMonths: [5, 6, 7, 8],
     harvestMonths: [7, 8, 9, 10],
+    plantingMonths: [5, 6, 7, 8], // Semis direct sol chaud
   ),
   PlantSpeciesData(
     species: 'Poivron',
@@ -101,10 +107,11 @@ const List<PlantSpeciesData> vegetablePlants = [
     soil: 'Riche et drainé.',
     fertilizeFreq: 20,
     repotFreq: 0,
-    pruning: 'Taille facultative (pincer tête).',
+    pruning: 'Taille facultative.',
     pruningMonths: [6, 7],
-    sowingMonths: [2, 3], // Semis au chaud
+    sowingMonths: [2, 3],
     harvestMonths: [7, 8, 9, 10],
+    plantingMonths: [5, 6],
   ),
   PlantSpeciesData(
     species: 'Aubergine',
@@ -118,8 +125,9 @@ const List<PlantSpeciesData> vegetablePlants = [
     repotFreq: 0,
     pruning: 'Pincer la tige principale.',
     pruningMonths: [6, 7],
-    sowingMonths: [2, 3], // Semis au chaud
+    sowingMonths: [2, 3],
     harvestMonths: [7, 8, 9, 10],
+    plantingMonths: [5, 6],
   ),
   PlantSpeciesData(
     species: 'Concombre',
@@ -135,21 +143,23 @@ const List<PlantSpeciesData> vegetablePlants = [
     pruningMonths: [6, 7],
     sowingMonths: [3, 4, 5],
     harvestMonths: [7, 8, 9],
+    plantingMonths: [5, 6],
   ),
   PlantSpeciesData(
     species: 'Épinard',
     waterSummer: 3,
     waterWinter: 10,
     light: 'Mi-ombre.',
-    temp: 'Frais (craint la chaleur).',
+    temp: 'Frais.',
     humidity: 'Frais.',
     soil: 'Frais, argileux.',
     fertilizeFreq: 30,
     repotFreq: 0,
     pruning: 'Pas de taille.',
     pruningMonths: [],
-    sowingMonths: [3, 4, 8, 9], // Printemps et Automne
+    sowingMonths: [3, 4, 8, 9],
     harvestMonths: [4, 5, 10, 11],
+    plantingMonths: [3, 4, 8, 9],
   ),
   PlantSpeciesData(
     species: 'Poireau',
@@ -161,10 +171,11 @@ const List<PlantSpeciesData> vegetablePlants = [
     soil: 'Riche, frais.',
     fertilizeFreq: 30,
     repotFreq: 0,
-    pruning: 'Couper le haut des feuilles à la plantation.',
+    pruning: 'Couper feuilles au repiquage.',
     pruningMonths: [5, 6, 7],
     sowingMonths: [2, 3, 4, 5],
     harvestMonths: [10, 11, 12, 1, 2],
+    plantingMonths: [5, 6, 7], // Repiquage
   ),
   PlantSpeciesData(
     species: 'Oignon',
@@ -172,14 +183,15 @@ const List<PlantSpeciesData> vegetablePlants = [
     waterWinter: 0,
     light: 'Plein soleil.',
     temp: 'Rustique.',
-    humidity: 'Faible (craint pourriture).',
+    humidity: 'Faible.',
     soil: 'Léger, drainé.',
     fertilizeFreq: 60,
     repotFreq: 0,
     pruning: 'Pas de taille.',
     pruningMonths: [],
-    sowingMonths: [2, 3, 4], // ou bulbiers
+    sowingMonths: [2, 3, 4],
     harvestMonths: [7, 8, 9],
+    plantingMonths: [3, 4], // Plantation bulbilles
   ),
   PlantSpeciesData(
     species: 'Ail',
@@ -193,8 +205,9 @@ const List<PlantSpeciesData> vegetablePlants = [
     repotFreq: 0,
     pruning: 'Nouer les tiges en juin.',
     pruningMonths: [6],
-    sowingMonths: [10, 11, 2, 3], // Automne ou Printemps
+    sowingMonths: [10, 11, 2, 3],
     harvestMonths: [6, 7],
+    plantingMonths: [10, 11, 2, 3], // Caïeux
   ),
   PlantSpeciesData(
     species: 'Pomme de terre',
@@ -210,6 +223,7 @@ const List<PlantSpeciesData> vegetablePlants = [
     pruningMonths: [5, 6],
     sowingMonths: [3, 4, 5],
     harvestMonths: [6, 7, 8, 9],
+    plantingMonths: [3, 4, 5], // Plantation tubercules
   ),
   PlantSpeciesData(
     species: 'Betterave',
@@ -221,10 +235,11 @@ const List<PlantSpeciesData> vegetablePlants = [
     soil: 'Frais, profond.',
     fertilizeFreq: 45,
     repotFreq: 0,
-    pruning: 'Éclaircir les plants.',
+    pruning: 'Éclaircir.',
     pruningMonths: [5, 6],
     sowingMonths: [4, 5, 6],
     harvestMonths: [7, 8, 9, 10],
+    plantingMonths: [4, 5, 6],
   ),
   PlantSpeciesData(
     species: 'Chou (Pommé)',
@@ -240,6 +255,7 @@ const List<PlantSpeciesData> vegetablePlants = [
     pruningMonths: [],
     sowingMonths: [3, 4, 5],
     harvestMonths: [10, 11, 12, 1],
+    plantingMonths: [5, 6],
   ),
   PlantSpeciesData(
     species: 'Brocoli',
@@ -251,10 +267,11 @@ const List<PlantSpeciesData> vegetablePlants = [
     soil: 'Frais et ferme.',
     fertilizeFreq: 30,
     repotFreq: 0,
-    pruning: 'Couper la tête principale, puis les rejets.',
+    pruning: 'Couper la tête principale.',
     pruningMonths: [],
     sowingMonths: [4, 5, 6],
     harvestMonths: [8, 9, 10, 11],
+    plantingMonths: [5, 6, 7],
   ),
   PlantSpeciesData(
     species: 'Chou-fleur',
@@ -266,10 +283,11 @@ const List<PlantSpeciesData> vegetablePlants = [
     soil: 'Riche et profond.',
     fertilizeFreq: 25,
     repotFreq: 0,
-    pruning: 'Couvrir la pomme avec les feuilles.',
+    pruning: 'Couvrir la pomme.',
     pruningMonths: [9],
     sowingMonths: [5, 6],
     harvestMonths: [9, 10, 11],
+    plantingMonths: [6, 7],
   ),
   PlantSpeciesData(
     species: 'Pois',
@@ -285,6 +303,7 @@ const List<PlantSpeciesData> vegetablePlants = [
     pruningMonths: [],
     sowingMonths: [2, 3, 4],
     harvestMonths: [5, 6, 7],
+    plantingMonths: [2, 3, 4], // Semis direct
   ),
   PlantSpeciesData(
     species: 'Fève',
@@ -300,6 +319,7 @@ const List<PlantSpeciesData> vegetablePlants = [
     pruningMonths: [5],
     sowingMonths: [2, 3, 10, 11],
     harvestMonths: [5, 6, 7],
+    plantingMonths: [2, 3, 10, 11],
   ),
   PlantSpeciesData(
     species: 'Céleri (Branche/Rave)',
@@ -315,6 +335,7 @@ const List<PlantSpeciesData> vegetablePlants = [
     pruningMonths: [],
     sowingMonths: [3, 4],
     harvestMonths: [8, 9, 10, 11],
+    plantingMonths: [5, 6],
   ),
   PlantSpeciesData(
     species: 'Persil',
@@ -330,6 +351,7 @@ const List<PlantSpeciesData> vegetablePlants = [
     pruningMonths: [5, 6, 7, 8, 9],
     sowingMonths: [3, 4, 5, 6, 7, 8],
     harvestMonths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    plantingMonths: [3, 4, 5, 9],
   ),
   PlantSpeciesData(
     species: 'Ciboulette',
@@ -340,11 +362,12 @@ const List<PlantSpeciesData> vegetablePlants = [
     humidity: 'Moyenne.',
     soil: 'Frais.',
     fertilizeFreq: 60,
-    repotFreq: 24, // Si en pot
-    pruning: 'Couper fleurs pour favoriser feuilles.',
+    repotFreq: 24,
+    pruning: 'Couper fleurs.',
     pruningMonths: [5, 6],
     sowingMonths: [3, 4, 5],
     harvestMonths: [4, 5, 6, 7, 8, 9, 10],
+    plantingMonths: [3, 4, 5, 10],
   ),
   PlantSpeciesData(
     species: 'Basilic',
@@ -360,6 +383,7 @@ const List<PlantSpeciesData> vegetablePlants = [
     pruningMonths: [6, 7, 8],
     sowingMonths: [3, 4],
     harvestMonths: [6, 7, 8, 9, 10],
+    plantingMonths: [5, 6],
   ),
   PlantSpeciesData(
     species: 'Menthe',
@@ -370,11 +394,12 @@ const List<PlantSpeciesData> vegetablePlants = [
     humidity: 'Élevée.',
     soil: 'Humide et riche.',
     fertilizeFreq: 60,
-    repotFreq: 24, // Invasive, souvent en pot
+    repotFreq: 24,
     pruning: 'Rabattre après floraison.',
     pruningMonths: [9],
     sowingMonths: [3, 4, 5],
     harvestMonths: [4, 5, 6, 7, 8, 9, 10],
+    plantingMonths: [3, 4, 9, 10],
   ),
   PlantSpeciesData(
     species: 'Fraise',
@@ -388,8 +413,9 @@ const List<PlantSpeciesData> vegetablePlants = [
     repotFreq: 36,
     pruning: 'Couper les stolons.',
     pruningMonths: [6, 7, 8],
-    sowingMonths: [8, 9], // Plantation
+    sowingMonths: [],
     harvestMonths: [5, 6, 7, 8, 9],
+    plantingMonths: [3, 4, 8, 9], // Printemps ou fin d'été
   ),
   PlantSpeciesData(
     species: 'Framboise',
@@ -403,8 +429,9 @@ const List<PlantSpeciesData> vegetablePlants = [
     repotFreq: 0,
     pruning: 'Tailler cannes sèches en hiver.',
     pruningMonths: [2, 11],
-    sowingMonths: [11, 12, 1, 2, 3], // Plantation
+    sowingMonths: [],
     harvestMonths: [6, 7, 8, 9],
+    plantingMonths: [11, 12, 1, 2, 3], // Repos végétatif
   ),
   PlantSpeciesData(
     species: 'Groseille',
@@ -418,8 +445,9 @@ const List<PlantSpeciesData> vegetablePlants = [
     repotFreq: 0,
     pruning: 'Aérer le centre en hiver.',
     pruningMonths: [2],
-    sowingMonths: [11, 2, 3],
+    sowingMonths: [],
     harvestMonths: [6, 7],
+    plantingMonths: [11, 12, 1, 2, 3],
   ),
   PlantSpeciesData(
     species: 'Cassis',
@@ -433,8 +461,9 @@ const List<PlantSpeciesData> vegetablePlants = [
     repotFreq: 0,
     pruning: 'Supprimer vieux bois en hiver.',
     pruningMonths: [2],
-    sowingMonths: [11, 2, 3],
+    sowingMonths: [],
     harvestMonths: [7],
+    plantingMonths: [11, 12, 1, 2, 3],
   ),
   PlantSpeciesData(
     species: 'Courge (Butternut...)',
@@ -450,6 +479,7 @@ const List<PlantSpeciesData> vegetablePlants = [
     pruningMonths: [6, 7],
     sowingMonths: [4, 5],
     harvestMonths: [9, 10, 11],
+    plantingMonths: [5, 6],
   ),
   PlantSpeciesData(
     species: 'Potiron',
@@ -465,6 +495,7 @@ const List<PlantSpeciesData> vegetablePlants = [
     pruningMonths: [7, 8],
     sowingMonths: [4, 5],
     harvestMonths: [10, 11],
+    plantingMonths: [5, 6],
   ),
   PlantSpeciesData(
     species: 'Maïs doux',
@@ -480,6 +511,7 @@ const List<PlantSpeciesData> vegetablePlants = [
     pruningMonths: [],
     sowingMonths: [4, 5, 6],
     harvestMonths: [8, 9, 10],
+    plantingMonths: [5, 6],
   ),
   PlantSpeciesData(
     species: 'Artichaut',
@@ -493,8 +525,9 @@ const List<PlantSpeciesData> vegetablePlants = [
     repotFreq: 0,
     pruning: 'Rabattre tiges après récolte.',
     pruningMonths: [10],
-    sowingMonths: [3, 4], // Plantation œilletons
+    sowingMonths: [2, 3],
     harvestMonths: [5, 6, 7],
+    plantingMonths: [3, 4, 9, 10], // Oilletons
   ),
   PlantSpeciesData(
     species: 'Asperge',
@@ -508,8 +541,9 @@ const List<PlantSpeciesData> vegetablePlants = [
     repotFreq: 0,
     pruning: 'Couper tiges sèches en automne.',
     pruningMonths: [11],
-    sowingMonths: [3, 4], // Plantation griffes
+    sowingMonths: [],
     harvestMonths: [4, 5, 6],
+    plantingMonths: [3, 4], // Griffes
   ),
   PlantSpeciesData(
     species: 'Rhubarbe',
@@ -523,13 +557,14 @@ const List<PlantSpeciesData> vegetablePlants = [
     repotFreq: 0,
     pruning: 'Couper hampes florales.',
     pruningMonths: [5, 6],
-    sowingMonths: [3, 10], // Plantation éclats
+    sowingMonths: [3, 10],
     harvestMonths: [4, 5, 6, 9],
+    plantingMonths: [3, 4, 10], // Éclats
   ),
   PlantSpeciesData(
     species: 'Panais',
     waterSummer: 7,
-    waterWinter: 0, // Récolté en hiver
+    waterWinter: 0,
     light: 'Soleil.',
     temp: 'Rustique.',
     humidity: 'Moyenne.',
@@ -540,6 +575,7 @@ const List<PlantSpeciesData> vegetablePlants = [
     pruningMonths: [5, 6],
     sowingMonths: [3, 4, 5, 6],
     harvestMonths: [10, 11, 12, 1, 2],
+    plantingMonths: [3, 4, 5, 6],
   ),
   PlantSpeciesData(
     species: 'Topinambour',
@@ -555,6 +591,7 @@ const List<PlantSpeciesData> vegetablePlants = [
     pruningMonths: [11],
     sowingMonths: [2, 3, 4],
     harvestMonths: [11, 12, 1, 2],
+    plantingMonths: [2, 3, 4], // Tubercules
   ),
   PlantSpeciesData(
     species: 'Bette (Blette)',
@@ -570,6 +607,7 @@ const List<PlantSpeciesData> vegetablePlants = [
     pruningMonths: [],
     sowingMonths: [4, 5, 6],
     harvestMonths: [7, 8, 9, 10, 11],
+    plantingMonths: [5, 6],
   ),
   PlantSpeciesData(
     species: 'Roquette',
@@ -585,24 +623,26 @@ const List<PlantSpeciesData> vegetablePlants = [
     pruningMonths: [6, 7],
     sowingMonths: [3, 4, 5, 6, 8, 9],
     harvestMonths: [4, 5, 6, 7, 9, 10],
+    plantingMonths: [3, 4, 5, 6, 8, 9],
   ),
   PlantSpeciesData(
     species: 'Endive',
     waterSummer: 5,
-    waterWinter: 5, // Forçage
+    waterWinter: 5,
     light: 'Obscurité (forçage).',
     temp: 'Frais (15-18°C).',
     humidity: 'Moyenne.',
-    soil: 'Racine au jardin, forçage en cave.',
+    soil: 'Racine au jardin.',
     fertilizeFreq: 0,
     repotFreq: 0,
     pruning: 'Couper feuilles avant forçage.',
     pruningMonths: [10, 11],
     sowingMonths: [5, 6],
     harvestMonths: [11, 12, 1, 2],
+    plantingMonths: [5, 6],
   ),
   PlantSpeciesData(
-    species: 'Chicorée (Frisée/Scarole)',
+    species: 'Chicorée',
     waterSummer: 4,
     waterWinter: 10,
     light: 'Soleil.',
@@ -611,10 +651,11 @@ const List<PlantSpeciesData> vegetablePlants = [
     soil: 'Frais et riche.',
     fertilizeFreq: 30,
     repotFreq: 0,
-    pruning: 'Blanchir (lier feuilles) avant récolte.',
+    pruning: 'Blanchir avant récolte.',
     pruningMonths: [9, 10],
     sowingMonths: [6, 7],
     harvestMonths: [9, 10, 11],
+    plantingMonths: [7, 8],
   ),
   PlantSpeciesData(
     species: 'Navet',
@@ -623,15 +664,15 @@ const List<PlantSpeciesData> vegetablePlants = [
     light: 'Mi-ombre.',
     temp: 'Frais.',
     humidity: 'Moyenne.',
-    soil: 'Frais, léger, non calcaire.',
+    soil: 'Frais, léger.',
     fertilizeFreq: 0,
     repotFreq: 0,
     pruning: 'Pas de taille.',
     pruningMonths: [],
     sowingMonths: [3, 4, 8, 9],
     harvestMonths: [5, 6, 10, 11],
+    plantingMonths: [3, 4, 8, 9],
   ),
-  // Panais supprimé car doublon (voir index 36)
   PlantSpeciesData(
     species: 'Poivron doux',
     waterSummer: 3,
@@ -646,6 +687,7 @@ const List<PlantSpeciesData> vegetablePlants = [
     pruningMonths: [],
     sowingMonths: [2, 3],
     harvestMonths: [7, 8, 9, 10],
+    plantingMonths: [5, 6],
   ),
   PlantSpeciesData(
     species: 'Piment',
@@ -661,6 +703,7 @@ const List<PlantSpeciesData> vegetablePlants = [
     pruningMonths: [6],
     sowingMonths: [2, 3],
     harvestMonths: [7, 8, 9, 10],
+    plantingMonths: [5, 6],
   ),
   PlantSpeciesData(
     species: 'Melon',
@@ -672,10 +715,11 @@ const List<PlantSpeciesData> vegetablePlants = [
     soil: 'Riche, profond, calcaire.',
     fertilizeFreq: 15,
     repotFreq: 0,
-    pruning: 'Taille complexe (pincer après feuilles).',
+    pruning: 'Taille complexe.',
     pruningMonths: [6, 7],
     sowingMonths: [3, 4, 5],
     harvestMonths: [7, 8, 9],
+    plantingMonths: [5, 6],
   ),
   PlantSpeciesData(
     species: 'Pastèque',
@@ -691,6 +735,7 @@ const List<PlantSpeciesData> vegetablePlants = [
     pruningMonths: [6],
     sowingMonths: [3, 4, 5],
     harvestMonths: [8, 9],
+    plantingMonths: [5, 6],
   ),
   PlantSpeciesData(
     species: 'Courge Spaghetti',
@@ -706,6 +751,7 @@ const List<PlantSpeciesData> vegetablePlants = [
     pruningMonths: [],
     sowingMonths: [4, 5],
     harvestMonths: [9, 10],
+    plantingMonths: [5, 6],
   ),
   PlantSpeciesData(
     species: 'Chou de Bruxelles',
@@ -721,6 +767,7 @@ const List<PlantSpeciesData> vegetablePlants = [
     pruningMonths: [10, 11],
     sowingMonths: [3, 4, 5],
     harvestMonths: [11, 12, 1, 2],
+    plantingMonths: [5, 6],
   ),
   PlantSpeciesData(
     species: 'Cardon',
@@ -732,9 +779,10 @@ const List<PlantSpeciesData> vegetablePlants = [
     soil: 'Riche, profond.',
     fertilizeFreq: 30,
     repotFreq: 0,
-    pruning: 'Blanchir (carton) 3 semaines avant récolte.',
+    pruning: 'Blanchir (carton).',
     pruningMonths: [9, 10],
     sowingMonths: [5],
     harvestMonths: [10, 11],
+    plantingMonths: [5, 6],
   ),
 ];

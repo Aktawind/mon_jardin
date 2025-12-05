@@ -12,6 +12,7 @@ class PlantSpeciesData {
 
   // NOUVEAUX CHAMPS (Mois : 1=Janvier ... 12=Décembre)
   final List<int> sowingMonths;    // Semis
+  final List<int> plantingMonths;  // Mise en terre / plantation
   final List<int> harvestMonths;   // Récolte
   final List<int> pruningMonths;   // Période de taille idéale
   final List<int> repottingMonths; // Période de rempotage idéale
@@ -31,6 +32,7 @@ class PlantSpeciesData {
 
     // On met des valeurs par défaut pour ne pas casser l'encyclopédie actuelle
     this.sowingMonths = const [],
+    this.plantingMonths = const [],
     this.harvestMonths = const [],
     this.pruningMonths = const [],
     

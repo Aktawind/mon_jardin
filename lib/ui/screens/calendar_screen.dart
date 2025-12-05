@@ -331,12 +331,25 @@ class _CalendarScreenState extends State<CalendarScreen> {
                     Container(
                       width: 8, height: 8,
                       decoration: BoxDecoration(
-                        color: task.type == TaskType.prune ? Colors.green : Colors.orange,
+                        color: (task.type == TaskType.prune || task.type == TaskType.planting) ? Colors.green : Colors.orange,
                         shape: BoxShape.circle
                       ),
                     ),
                     const SizedBox(width: 8),
-                    Expanded(child: Text("${task.plant.displayName} : ${task.title}")),
+                    Expanded(
+                    child: RichText(
+                      text: TextSpan(
+                        style: DefaultTextStyle.of(context).style,
+                        children: [
+                          TextSpan(text: "${task.plant.displayName} : ", style: const TextStyle(fontWeight: FontWeight.bold)),
+                          TextSpan(text: task.title),
+                          // AJOUT DU SOUS-TITRE (la durée)
+                          if (task.subtitle.isNotEmpty)
+                             TextSpan(text: " (${task.subtitle})", style: TextStyle(color: Colors.grey[600], fontSize: 12)),
+                        ],
+                      ),
+                    ),
+                  ),
                   ],
                 ))
               ],
@@ -389,7 +402,8 @@ class _TaskGroupCardState extends State<_TaskGroupCard> {
       case TaskType.repot: return Colors.orange;
       case TaskType.prune: return Colors.green;
       case TaskType.harvest: return Colors.redAccent;
-      case TaskType.sow: return Colors.brown;
+      case TaskType.planting: return Colors.brown;
+      case TaskType.sow: return Colors.lime[800]!; 
       default: return Colors.grey;
     }
   }
@@ -402,6 +416,7 @@ class _TaskGroupCardState extends State<_TaskGroupCard> {
       case TaskType.prune: return Icons.content_cut;
       case TaskType.harvest: return Icons.shopping_basket;
       case TaskType.sow: return Icons.grass;
+      case TaskType.planting: return Icons.agriculture;
       default: return Icons.info;
     }
   }
@@ -414,6 +429,7 @@ class _TaskGroupCardState extends State<_TaskGroupCard> {
       case TaskType.prune: return "Tailles";
       case TaskType.harvest: return "Récoltes";
       case TaskType.sow: return "Semis";
+      case TaskType.planting: return "Mises en terre";
       default: return "Autres";
     }
   }

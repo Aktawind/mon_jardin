@@ -7,6 +7,7 @@ enum TaskType {
   prune,      // Taille (Encyclopédie)
   sow,        // Semis (Encyclopédie)
   harvest,    // Récolte (Encyclopédie)
+  planting,   // Mise en terre (Encyclopédie)
   wintering,  // Hivernage (Encyclopédie)
 }
 

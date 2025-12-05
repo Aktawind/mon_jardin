@@ -10,6 +10,7 @@ import 'history_screen.dart';
 import '../common/plant_action_menu.dart';
 import '../common/plant_management_menu.dart';
 import 'photo_gallery_screen.dart';
+import '../../models/plant_event.dart';
 
 class PlantDetailScreen extends StatefulWidget {
   final Plant plant;
@@ -119,6 +120,138 @@ class _PlantDetailScreenState extends State<PlantDetailScreen> {
     );
   }
 
+  // Widget pour visualiser et changer le stade
+  Widget _buildLifecycleStepper() {
+    // On n'affiche ça que pour le Potager
+    if (_plant.location != 'Potager') return const SizedBox.shrink();
+
+    int currentStep = 0;
+    if (_plant.lifecycleStage == 'seedling') currentStep = 1;
+    if (_plant.lifecycleStage == 'planted') currentStep = 2;
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        _buildSectionTitle("Cycle de vie"),
+        
+        // On utilise un simple Row avec des icônes colorées
+        Container(
+          padding: const EdgeInsets.symmetric(vertical: 16),
+          decoration: BoxDecoration(
+            color: Colors.grey[100],
+            borderRadius: BorderRadius.circular(12),
+          ),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              _buildStepIcon('seed', Icons.grain, "Graine", currentStep >= 0, currentStep == 0),
+              _buildArrow(),
+              _buildStepIcon('seedling', Icons.spa, "Semis", currentStep >= 1, currentStep == 1),
+              _buildArrow(),
+              _buildStepIcon('planted', Icons.grass, "En terre", currentStep >= 2, currentStep == 2),
+            ],
+          ),
+        ),
+        
+        // Bouton d'action pour avancer
+        if (currentStep < 2)
+          Padding(
+            padding: const EdgeInsets.only(top: 12),
+            child: ElevatedButton.icon(
+              onPressed: _advanceLifecycle,
+              icon: const Icon(Icons.arrow_forward),
+              label: Text(currentStep == 0 ? "J'ai semé (Passer en Semis)" : "J'ai planté (Passer en Terre)"),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.green[100],
+                foregroundColor: Colors.green[900],
+              ),
+            ),
+          ),
+      ],
+    );
+  }
+
+  Widget _buildStepIcon(String stage, IconData icon, String label, bool isReached, bool isCurrent) {
+    return Column(
+      children: [
+        CircleAvatar(
+          backgroundColor: isReached ? (isCurrent ? Colors.green : Colors.green[200]) : Colors.grey[300],
+          radius: 20,
+          child: Icon(icon, color: isReached ? Colors.white : Colors.grey, size: 20),
+        ),
+        const SizedBox(height: 4),
+        Text(
+          label,
+          style: TextStyle(
+            fontSize: 12,
+            fontWeight: isCurrent ? FontWeight.bold : FontWeight.normal,
+            color: isCurrent ? Colors.black : Colors.grey,
+          ),
+        ),
+      ],
+    );
+  }
+
+  Widget _buildArrow() {
+    return const Icon(Icons.chevron_right, color: Colors.grey, size: 20);
+  }
+
+  // Action pour avancer d'une étape
+  Future<void> _advanceLifecycle() async {
+    String nextStage = 'planted';
+    if (_plant.lifecycleStage == 'seed') nextStage = 'seedling';
+    
+    // Mise à jour BDD
+    final db = DatabaseService();
+    // Il nous faut une méthode updatePlantStage ou on update toute la plante
+    // Pour faire simple et propre, on update toute la plante en changeant juste le champ
+    
+    // Copie de la plante avec nouveau stade
+    final updatedPlant = Plant(
+      id: _plant.id,
+      name: _plant.name,
+      species: _plant.species,
+      location: _plant.location,
+      room: _plant.room,
+      photoPath: _plant.photoPath,
+      dateAdded: _plant.dateAdded,
+      lastWatered: _plant.lastWatered,
+      lastFertilized: _plant.lastFertilized,
+      lastRepotted: _plant.lastRepotted,
+      waterFrequencySummer: _plant.waterFrequencySummer,
+      waterFrequencyWinter: _plant.waterFrequencyWinter,
+      lightLevel: _plant.lightLevel,
+      temperatureInfo: _plant.temperatureInfo,
+      humidityPref: _plant.humidityPref,
+      soilType: _plant.soilType,
+      pruningInfo: _plant.pruningInfo,
+      fertilizerFreq: _plant.fertilizerFreq,
+      repottingFreq: _plant.repottingFreq,
+      trackWatering: _plant.trackWatering,
+      trackFertilizer: _plant.trackFertilizer,
+      
+      lifecycleStage: nextStage, // <--- CHANGEMENT ICI
+    );
+
+    await db.updatePlant(updatedPlant);
+    
+    // On logue l'événement dans l'historique
+    // ex: "Semis effectué" ou "Mise en terre"
+    String eventType = nextStage == 'seedling' ? 'sow' : 'repot'; // On utilise 'repot' pour la plantation en terre
+    await db.logEvent(PlantEvent(
+      plantId: _plant.id,
+      type: eventType,
+      date: DateTime.now(),
+      note: "Changement de stade : $nextStage",
+    ));
+
+    setState(() {
+      _plant = updatedPlant;
+    });
+    
+    ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text("Stade mis à jour ! 🌱")));
+  }
+
   @override
   Widget build(BuildContext context) {
     // Calculs pour l'affichage
@@ -200,24 +333,37 @@ class _PlantDetailScreenState extends State<PlantDetailScreen> {
                   
                   const Divider(height: 32),
 
+                  // CYCLE DE VIE
+                  _buildLifecycleStepper(),
+                  const SizedBox(height: 16),
+
+                  // BESOINS ACTUELS
+                  if (_plant.lifecycleStage != 'seed') 
+                     _buildSectionTitle("Besoins actuels"),
+
                   // PLANNING (Prochaines actions)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
-                      _StatusBadge(
-                        label: "Arrosage",
-                        date: nextWater,
-                        icon: Icons.water_drop,
-                        color: Colors.blue[100]!,
-                        // Plus de onTap !
+                      Opacity(
+                        opacity: _plant.lifecycleStage == 'seed' ? 0.3 : 1.0, // <--- Grisé
+                        child: _StatusBadge(
+                          label: "Arrosage",
+                          date: nextWater,
+                          icon: Icons.water_drop,
+                          color: Colors.blue[100]!,
+                        ),
                       ),
                       
                       if(_plant.trackFertilizer && _plant.fertilizerFreq > 0)
-                        _StatusBadge(
-                          label: "Engrais",
-                          date: nextFertilizer,
-                          icon: Icons.science,
-                          color: Colors.purple[100]!,
+                        Opacity(
+                          opacity: _plant.lifecycleStage == 'seed' ? 0.3 : 1.0, // <--- Grisé
+                          child: _StatusBadge(
+                            label: "Engrais",
+                            date: nextFertilizer,
+                            icon: Icons.science,
+                            color: Colors.purple[100]!,
+                          ),
                         ),
                         
                       if(_plant.repottingFreq > 0)
