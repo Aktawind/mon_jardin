@@ -25,7 +25,7 @@ class DatabaseService {
     // On ouvre la base. Si la version change, on appelle onUpgrade
     return await openDatabase(
       path,
-      version: 5, 
+      version: 6, 
       onCreate: _onCreate,
       onUpgrade: _onUpgrade,
     );
@@ -56,6 +56,7 @@ class DatabaseService {
         last_watered TEXT,    
         lifecycle_stage TEXT,
         track_watering INTEGER,
+        track_repotting INTEGER,
         track_fertilizer INTEGER
       )
     ''');
@@ -136,6 +137,10 @@ class DatabaseService {
           note TEXT
         )
       ''');
+    }
+
+    if (oldVersion < 6) {
+      await db.execute("ALTER TABLE plants ADD COLUMN track_repotting INTEGER DEFAULT 1");
     }
   }
 

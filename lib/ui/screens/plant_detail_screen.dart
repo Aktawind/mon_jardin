@@ -5,7 +5,6 @@ import '../../models/plant.dart';
 import '../../data/database_service.dart';
 import '../../services/notification_service.dart';
 import 'add_plant_screen.dart';
-import '../common/smart_watering_sheet.dart';
 import 'history_screen.dart';
 import '../common/plant_action_menu.dart';
 import '../common/plant_management_menu.dart';

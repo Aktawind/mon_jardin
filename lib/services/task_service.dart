@@ -67,7 +67,7 @@ class TaskService {
     
       // Rempotage 
       if (plant.repottingFreq > 0) {
-        if (speciesData.repottingMonths.contains(month)) {
+        if (speciesData.repottingMonths.contains(month) && plant.trackRepotting) {
           // Logique simplifiée : on le propose si c'est la saison
           tasks.add(CalendarTask(
             plant: plant,
@@ -82,7 +82,7 @@ class TaskService {
       
       // Arrosage : On regarde si la prochaine date tombe dans ce mois
       // (C'est approximatif pour la vue Mois, mais utile)
-      if (plant.nextWateringDate.month == month && plant.nextWateringDate.year == year) {
+      if (plant.nextWateringDate.month == month && plant.nextWateringDate.year == year && plant.trackWatering) {
         tasks.add(CalendarTask(
           plant: plant,
           type: TaskType.water,
@@ -93,7 +93,7 @@ class TaskService {
       }
 
       // Engrais : Si c'est pas l'hiver et que c'est le moment
-      if (plant.nextFertilizingDate.month == month && plant.nextFertilizingDate.year == year) {
+      if (plant.nextFertilizingDate.month == month && plant.nextFertilizingDate.year == year && plant.trackFertilizer) {
         if (plant.fertilizerFreq > 0) {
            tasks.add(CalendarTask(
             plant: plant,
@@ -124,24 +124,13 @@ class TaskService {
     for (var plant in myPlants) {
       if (plant.lifecycleStage == 'seed') continue; // Pas d'arrosage si graine
       // Arrosage ce jour là ?
-      if (isSameDay(plant.nextWateringDate, date)) {
+      if (isSameDay(plant.nextWateringDate, date) && plant.trackWatering) {
         tasks.add(CalendarTask(
           plant: plant,
           type: TaskType.water,
           title: "Arrosage",
           subtitle: "Cycle de ${plant.currentFrequency} jours",
           specificDate: plant.nextWateringDate,
-        ));
-      }
-      
-      // On peut aussi ajouter les engrais s'ils tombent ce jour précis
-      if (isSameDay(plant.nextFertilizingDate, date) && plant.fertilizerFreq > 0) {
-        tasks.add(CalendarTask(
-          plant: plant,
-          type: TaskType.fertilizer,
-          title: "Engrais",
-          subtitle: "Jour J !",
-          specificDate: plant.nextFertilizingDate,
         ));
       }
     }
@@ -163,7 +152,7 @@ class TaskService {
       // 1. REMPOTAGE (Seulement le mois de DÉBUT)
       // On vérifie si on doit rempoter cette année (selon la fréquence)
       // Simplification : On affiche la période idéale si elle commence cette année
-      if (plant.repottingFreq > 0 && speciesData.repottingMonths.isNotEmpty) {
+      if (plant.repottingFreq > 0 && speciesData.repottingMonths.isNotEmpty && plant.trackRepotting) {
         // On prend le premier mois de la période idéale
         int startMonth = speciesData.repottingMonths.first;
         int endMonth = speciesData.repottingMonths.last;

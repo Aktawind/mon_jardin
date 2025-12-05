@@ -5,7 +5,6 @@ import 'add_plant_screen.dart';
 import '../../services/notification_service.dart';
 import 'dart:io';
 import 'plant_detail_screen.dart';
-import '../common/smart_watering_sheet.dart';
 import 'settings_screen.dart';
 
 class MyPlantsScreen extends StatefulWidget {
@@ -184,21 +183,6 @@ class _PlantListState extends State<_PlantList> {
             final plant = plants[index];
             final days = plant.daysUntilWatering;
             
-            // Gestion des couleurs et textes selon l'urgence
-            Color statusColor;
-            String statusText;
-            
-            if (days < 0) {
-              statusColor = Colors.redAccent;
-              statusText = "En retard de ${days.abs()} j !";
-            } else if (days == 0) {
-              statusColor = Colors.orange;
-              statusText = "Aujourd'hui !";
-            } else {
-              statusColor = Colors.green;
-              statusText = "Dans $days j";
-            }
-
             return Card(
               margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
               elevation: 2,
@@ -231,31 +215,27 @@ class _PlantListState extends State<_PlantList> {
                 ),
                 
                 // Le bouton d'action rapide
-                trailing: IconButton(
-                  icon: Icon(
-                    days <= 0 ? Icons.water_drop : Icons.check_circle_outline,
-                    color: days <= 0 ? Theme.of(context).colorScheme.primary : Colors.grey,
-                    size: 32,
-                  ),
-                  // ICI : On appelle directement la fonction, pas de showModalBottomSheet
-                  onPressed: () => _waterPlant(plant), 
-                  tooltip: "Marquer comme arrosée",
-                ),
+                trailing: plant.trackWatering 
+                    ? IconButton( // Si suivi activé -> Bouton normal
+                        icon: Icon(
+                          days <= 0 ? Icons.water_drop : Icons.check_circle_outline,
+                          color: days <= 0 ? Theme.of(context).colorScheme.primary : Colors.grey,
+                          size: 32,
+                        ),
+                        onPressed: () => _waterPlant(plant),
+                      )
+                    : const Icon(Icons.nature, color: Colors.grey),
                 
                 onTap: () async {
-                  // Navigation vers le DETAIL
-                  final result = await Navigator.push(
+                  await Navigator.push(
                     context,
                     MaterialPageRoute(
                       builder: (context) => PlantDetailScreen(plant: plant),
                     ),
                   );
-                  
-                  // Si on a fait une action dans le détail (supprimer/arroser), on rafraichit la liste
-                  if (result == true) {
-                    setState(() {});
-                  }
-                },
+                  // On recharge TOUJOURS au retour, comme ça zéro risque.
+                  setState(() {});
+                }
               ),
             );
           },

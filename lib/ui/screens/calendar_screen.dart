@@ -19,7 +19,7 @@ class CalendarScreen extends StatefulWidget {
 
 class _CalendarScreenState extends State<CalendarScreen> {
   // Par défaut sur le MOIS
-  CalendarView _currentView = CalendarView.month;
+  CalendarView _currentView = CalendarView.week;
   
   DateTime _weekDate = DateTime.now();  // Pour la vue Semaine
   DateTime _monthDate = DateTime.now(); // Pour la vue Mois
@@ -96,18 +96,17 @@ class _CalendarScreenState extends State<CalendarScreen> {
           // ALERTE RETARD (Visible seulement s'il y en a)
           if (overdueTasks.isNotEmpty)
             Container(
-              color: Colors.red[50], // Fond rouge très clair
+              color: Colors.deepPurple[50], // Violet très clair
               padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
               child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Row(
                     children: [
-                      const Icon(Icons.warning_amber_rounded, color: Colors.red),
+                      Icon(Icons.watch_later_outlined, color: Colors.deepPurple[300]), // Montre ou Sablier
                       const SizedBox(width: 8),
                       Text(
-                        "${overdueTasks.length} action(s) en retard !",
-                        style: const TextStyle(color: Colors.red, fontWeight: FontWeight.bold),
+                        "${overdueTasks.length} action(s) en attente", // Wording doux
+                        style: TextStyle(color: Colors.deepPurple[900], fontWeight: FontWeight.bold),
                       ),
                     ],
                   ),
@@ -125,11 +124,11 @@ class _CalendarScreenState extends State<CalendarScreen> {
                           child: ActionChip(
                             avatar: CircleAvatar(
                                backgroundImage: task.plant.photoPath != null ? FileImage(File(task.plant.photoPath!)) : null,
-                               backgroundColor: Colors.red[100],
+                               backgroundColor: Colors.deepPurple[100],
                             ),
                             label: Text(task.plant.displayName, style: const TextStyle(fontSize: 12)),
                             backgroundColor: Colors.white,
-                            side: BorderSide(color: Colors.red[200]!),
+                            side: BorderSide(color: Colors.deepPurple[200]!),
                             onPressed: () => _goToDetail(task.plant),
                           ),
                         );
@@ -200,6 +199,14 @@ class _CalendarScreenState extends State<CalendarScreen> {
       itemCount: 7,
       itemBuilder: (context, index) {
         final dayDate = startOfWeek.add(Duration(days: index));
+        // Si c'est avant aujourd'hui, on n'affiche rien
+        final now = DateTime.now();
+        final todayMidnight = DateTime(now.year, now.month, now.day);
+        if (dayDate.isBefore(todayMidnight)) {
+           return const SizedBox.shrink(); // Widget vide
+        }
+
+
         final isToday = TaskService().isSameDay(dayDate, DateTime.now());
         final tasks = TaskService().getTasksForDay(_plants, dayDate);
 
@@ -308,6 +315,11 @@ class _CalendarScreenState extends State<CalendarScreen> {
       itemCount: 12,
       itemBuilder: (context, index) {
         final month = index + 1;
+        // Si l'année affichée est l'année courante ET que le mois est passé -> on cache
+        final now = DateTime.now();
+        if (_yearDate.year == now.year && month < now.month) {
+           return const SizedBox.shrink();
+        }
         final tasks = yearTasks[month] ?? [];
         
         // Si rien ce mois-ci, on affiche juste une ligne discrète ou rien ?

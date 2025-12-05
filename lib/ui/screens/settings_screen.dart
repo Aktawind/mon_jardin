@@ -34,7 +34,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
     final repot = await prefs.getBool(PreferencesService.keyNotifyRepot);
 
     setState(() {
-      _version = "${info.version} (Build ${info.buildNumber})";
+      _version = info.version;
       _notifyWater = water;
       _notifyFertilizer = fert;
       _notifyRepot = repot;

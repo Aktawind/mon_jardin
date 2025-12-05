@@ -34,6 +34,9 @@ class _AddPlantScreenState extends State<AddPlantScreen> {
   int _waterFreqSummer = 7;
   PlantSpeciesData? _foundSpeciesData;
   String _lifecycleStage = 'planted'; // Valeur par défaut (En terre/pot)
+  bool _trackWatering = true;
+  bool _trackFertilizer = true;
+  bool _trackRepotting = true;
   
   // Pour savoir si on est en mode édition
   bool get _isEditing => widget.plantToEdit != null;
@@ -51,6 +54,9 @@ class _AddPlantScreenState extends State<AddPlantScreen> {
       _location = p.location;
       _waterFreqSummer = p.waterFrequencySummer;
       _lifecycleStage = p.lifecycleStage; // On reprend le stade existant
+      _trackWatering = p.trackWatering;
+      _trackFertilizer = p.trackFertilizer;
+      _trackRepotting = p.trackRepotting;
 
       final data = getSpeciesData(p.species);
       if (data != null) _foundSpeciesData = data;
@@ -59,6 +65,16 @@ class _AddPlantScreenState extends State<AddPlantScreen> {
       _nameController = TextEditingController();
       _roomController = TextEditingController();
       _location = widget.initialLocation ?? 'Intérieur';
+
+      if (_location == 'Extérieur' || _location == 'Potager') {
+          _trackWatering = false;   // Dehors, la pluie s'en charge
+          _trackFertilizer = false; // Souvent moins critique
+          _trackRepotting = false;  // Pas de rempotage en pleine terre
+      } else {
+          _trackWatering = true;
+          _trackFertilizer = true;
+          _trackRepotting = true;
+      }
     }
   }
 
@@ -135,6 +151,10 @@ class _AddPlantScreenState extends State<AddPlantScreen> {
 
         // 6. Suivi et stade de vie
         lifecycleStage: _location == 'Potager' ? _lifecycleStage : 'planted', // Sécurité : si pas potager, c'est 'planted'
+
+        trackWatering: _trackWatering,
+        trackFertilizer: _trackFertilizer,
+        trackRepotting: _trackRepotting,
       );
 
       // 3. Sauvegarde (Update ou Insert)
@@ -378,6 +398,26 @@ class _AddPlantScreenState extends State<AddPlantScreen> {
                 ),
 
                 const SizedBox(height: 32),
+
+                const Divider(),
+                const Text("OPTIONS DE SUIVI", style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold, color: Colors.grey)),
+                
+                SwitchListTile(
+                  title: const Text("Suivre l'arrosage"),
+                  value: _trackWatering,
+                  onChanged: (val) => setState(() => _trackWatering = val),
+                ),
+                SwitchListTile(
+                  title: const Text("Suivre l'engrais"),
+                  value: _trackFertilizer,
+                  onChanged: (val) => setState(() => _trackFertilizer = val),
+                ),
+                SwitchListTile(
+                  title: const Text("Suivre le rempotage"),
+                  value: _trackRepotting,
+                  onChanged: (val) => setState(() => _trackRepotting = val),
+                ),
+                const SizedBox(height: 24),
                 
                 ElevatedButton.icon(
                   onPressed: _savePlant,

@@ -33,6 +33,7 @@ class Plant {
 
   final String lifecycleStage; // 'seed' (graine), 'seedling' (semis), 'planted' (en place)
   final bool trackWatering;    // true = on gère, false = on ignore (ex: arbre dehors)
+  final bool trackRepotting;  // true = on gère
   final bool trackFertilizer;  // true = on gère
 
   Plant({
@@ -57,6 +58,7 @@ class Plant {
     this.lastRepotted,
     this.lifecycleStage = 'planted', // Par défaut, c'est une plante en pot
     this.trackWatering = true,       // Par défaut, on veut des notifs
+    this.trackRepotting = true,
     this.trackFertilizer = true,
   });
 
@@ -169,6 +171,7 @@ class Plant {
       lifecycleStage: map['lifecycle_stage'] ?? 'planted',
       trackWatering: map['track_watering'] == 0 ? false : true,
       trackFertilizer: map['track_fertilizer'] == 0 ? false : true,
+      trackRepotting: map['track_repotting'] == 0 ? false : true,
     );
   }
 
@@ -199,6 +202,7 @@ class Plant {
       'lifecycle_stage': lifecycleStage,
       'track_watering': trackWatering ? 1 : 0,
       'track_fertilizer': trackFertilizer ? 1 : 0,
+      'track_repotting': trackRepotting ? 1 : 0,
     };
   }
 }
