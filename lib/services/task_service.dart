@@ -189,7 +189,7 @@ class TaskService {
           plant: plant,
           type: TaskType.prune,
           title: "Taille",
-          subtitle: "Jusqu'en ${_getMonthName(endMonth)})",
+          subtitle: "Jusqu'en ${_getMonthName(endMonth)}",
         ));
       }
       
