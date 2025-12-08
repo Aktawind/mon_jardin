@@ -137,11 +137,8 @@ class Plant {
   // Si le nom est différent de l'espèce (surnom) -> "Pépette (Monstera)"
   // Sinon -> "Monstera"
   String get displayName {
-    if (name == species) {
-      return species;
-    } else {
-      return '$name ($species)';
-    }
+    if (name.isEmpty) return species;
+    return '$name ($species)';
   }
 
   factory Plant.fromMap(Map<String, dynamic> map) {

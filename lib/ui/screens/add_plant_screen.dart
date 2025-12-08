@@ -5,6 +5,7 @@ import '../../models/plant.dart';
 import '../../data/plant_data.dart';
 import '../../services/notification_service.dart';
 import '../common/image_input.dart';
+import 'package:intl/intl.dart';
 
 class AddPlantScreen extends StatefulWidget {
   // Si cette variable est remplie, on est en mode "Édition", sinon "Création"
@@ -37,6 +38,10 @@ class _AddPlantScreenState extends State<AddPlantScreen> {
   bool _trackWatering = true;
   bool _trackFertilizer = true;
   bool _trackRepotting = true;
+
+  DateTime _lastWateredDate = DateTime.now();
+  DateTime? _lastFertilizedDate = DateTime.now();
+  DateTime? _lastRepottedDate = DateTime.now();
   
   // Pour savoir si on est en mode édition
   bool get _isEditing => widget.plantToEdit != null;
@@ -57,6 +62,9 @@ class _AddPlantScreenState extends State<AddPlantScreen> {
       _trackWatering = p.trackWatering;
       _trackFertilizer = p.trackFertilizer;
       _trackRepotting = p.trackRepotting;
+      _lastWateredDate = p.lastWatered ?? DateTime.now();
+      _lastFertilizedDate = p.lastFertilized;
+      _lastRepottedDate = p.lastRepotted;
 
       final data = getSpeciesData(p.species);
       if (data != null) _foundSpeciesData = data;
@@ -112,27 +120,26 @@ class _AddPlantScreenState extends State<AddPlantScreen> {
   Future<void> _savePlant() async {
     if (_formKey.currentState!.validate()) {
       // 1. Définition du nom
-      String finalName = _nameController.text.trim();
-      if (finalName.isEmpty) {
-        finalName = _selectedSpecies.isNotEmpty ? _selectedSpecies : 'Plante inconnue';
-      }
+      String speciesRaw = _selectedSpecies.trim();
+      String speciesClean = speciesRaw.isNotEmpty 
+          ? '${speciesRaw[0].toUpperCase()}${speciesRaw.substring(1)}' 
+          : 'Plante inconnue';
 
       // 2. Création de l'objet (Nouvel ID ou Ancien ID)
       final plant = Plant(
         // 1. Identifiants et infos de base
         id: _isEditing ? widget.plantToEdit!.id : const Uuid().v4(),
-        name: finalName,
-        species: _selectedSpecies,
+        species: speciesClean,
+        name: _nameController.text.trim(),
         location: _location,
         room: _roomController.text.trim(),
         photoPath: _selectedImage,
         
         // 2. Dates
         dateAdded: _isEditing ? widget.plantToEdit!.dateAdded : DateTime.now(),
-        lastWatered: _isEditing ? widget.plantToEdit!.lastWatered : null,
-        // On garde l'historique de fertilisation/rempotage si on édite
-        lastFertilized: _isEditing ? widget.plantToEdit!.lastFertilized : null,
-        lastRepotted: _isEditing ? widget.plantToEdit!.lastRepotted : null,
+        lastWatered: _lastWateredDate,
+        lastFertilized: _lastFertilizedDate,
+        lastRepotted: _lastRepottedDate,
 
         // 3. Arrosage (Priorité : Slider actuel > Données encyclopédie > Valeur par défaut)
         waterFrequencySummer: _waterFreqSummer,
@@ -155,6 +162,7 @@ class _AddPlantScreenState extends State<AddPlantScreen> {
         trackWatering: _trackWatering,
         trackFertilizer: _trackFertilizer,
         trackRepotting: _trackRepotting,
+        
       );
 
       // 3. Sauvegarde (Update ou Insert)
@@ -416,6 +424,79 @@ class _AddPlantScreenState extends State<AddPlantScreen> {
                   title: const Text("Suivre le rempotage"),
                   value: _trackRepotting,
                   onChanged: (val) => setState(() => _trackRepotting = val),
+                ),
+
+                const SizedBox(height: 24),
+                const Divider(),
+                const Text("DERNIERS SOINS (Pour caler le cycle)", style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold, color: Colors.grey)),
+                
+                // 1. ARROSAGE (Date précise)
+                ListTile(
+                  contentPadding: EdgeInsets.zero,
+                  leading: const Icon(Icons.water_drop, color: Colors.blue),
+                  title: const Text("Dernier arrosage"),
+                  subtitle: Text(DateFormat('d MMMM yyyy', 'fr_FR').format(_lastWateredDate)),
+                  trailing: const Icon(Icons.edit_calendar),
+                  onTap: () async {
+                    final picked = await showDatePicker(
+                      context: context,
+                      initialDate: _lastWateredDate,
+                      firstDate: DateTime(2020),
+                      lastDate: DateTime.now(),
+                    );
+                    if (picked != null) setState(() => _lastWateredDate = picked);
+                  },
+                ),
+
+                // 2. FERTILISATION (Mois/Année)
+                // On triche un peu : on stocke le 1er du mois choisi
+                ListTile(
+                  contentPadding: EdgeInsets.zero,
+                  leading: const Icon(Icons.science, color: Colors.purple),
+                  title: const Text("Dernier engrais"),
+                  subtitle: Text(_lastFertilizedDate == null 
+                      ? "Jamais / Je ne sais plus" 
+                      : DateFormat('MMMM yyyy', 'fr_FR').format(_lastFertilizedDate!)),
+                  trailing: _lastFertilizedDate == null ? const Icon(Icons.add) : const Icon(Icons.edit_calendar),
+                  onTap: () async {
+                    // Astuce : un DatePicker classique, mais on ne regarde que le mois
+                    final picked = await showDatePicker(
+                      context: context,
+                      initialDate: _lastFertilizedDate ?? DateTime.now(),
+                      firstDate: DateTime(2020),
+                      lastDate: DateTime.now(),
+                      helpText: "CHOISISSEZ UNE DATE DANS LE MOIS",
+                    );
+                    if (picked != null) setState(() => _lastFertilizedDate = picked);
+                  },
+                  // Petit bouton croix pour effacer si besoin
+                  onLongPress: () => setState(() => _lastFertilizedDate = null),
+                ),
+
+                // 3. REMPOTAGE (Année)
+                // On stocke le 1er Janvier de l'année choisie
+                ListTile(
+                  contentPadding: EdgeInsets.zero,
+                  leading: const Icon(Icons.change_circle, color: Colors.orange),
+                  title: const Text("Dernier rempotage"),
+                  subtitle: Text(_lastRepottedDate == null 
+                      ? "Jamais / Je ne sais plus" 
+                      : DateFormat('yyyy', 'fr_FR').format(_lastRepottedDate!)),
+                  trailing: _lastRepottedDate == null ? const Icon(Icons.add) : const Icon(Icons.edit_calendar),
+                  onTap: () async {
+                    // Pour l'année, on peut faire un simple Dialog avec une liste ou un DatePicker mode année (dispo sur Android récents)
+                    // Faisons simple : DatePicker classique
+                    final picked = await showDatePicker(
+                      context: context,
+                      initialDate: _lastRepottedDate ?? DateTime.now(),
+                      firstDate: DateTime(2015),
+                      lastDate: DateTime.now(),
+                      initialDatePickerMode: DatePickerMode.year, // <--- Mode Année !
+                      helpText: "CHOISISSEZ L'ANNÉE",
+                    );
+                    if (picked != null) setState(() => _lastRepottedDate = picked);
+                  },
+                  onLongPress: () => setState(() => _lastRepottedDate = null),
                 ),
                 const SizedBox(height: 24),
                 
