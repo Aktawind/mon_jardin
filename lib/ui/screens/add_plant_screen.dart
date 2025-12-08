@@ -2,10 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:uuid/uuid.dart';
 import '../../data/database_service.dart';
 import '../../models/plant.dart';
-import '../../data/plant_data.dart';
 import '../../services/notification_service.dart';
 import '../common/image_input.dart';
 import 'package:intl/intl.dart';
+import '../../services/encyclopedia_service.dart';
+import '../../models/enums.dart'; // Pour PlantCategory
+import '../../models/plant_species_data.dart'; // Pour le type
 
 class AddPlantScreen extends StatefulWidget {
   // Si cette variable est remplie, on est en mode "Édition", sinon "Création"
@@ -66,7 +68,7 @@ class _AddPlantScreenState extends State<AddPlantScreen> {
       _lastFertilizedDate = p.lastFertilized;
       _lastRepottedDate = p.lastRepotted;
 
-      final data = getSpeciesData(p.species);
+      final data = EncyclopediaService().getData(p.species);
       if (data != null) _foundSpeciesData = data;
       
     } else {
@@ -97,13 +99,12 @@ class _AddPlantScreenState extends State<AddPlantScreen> {
     setState(() {
       _selectedSpecies = species;
       
-      // On cherche dans la nouvelle encyclopédie
-      final data = getSpeciesData(species);
+      // NOUVEL APPEL AU SERVICE
+      final data = EncyclopediaService().getData(species);
       
       if (data != null) {
-        _foundSpeciesData = data; // On stocke tout (lumière, terre, etc.)
+        _foundSpeciesData = data; 
         
-        // On met à jour la fréquence si on est en création
         if (!_isEditing || _selectedSpecies != widget.plantToEdit?.species) {
           _waterFreqSummer = data.waterSummer;
         }
@@ -146,11 +147,19 @@ class _AddPlantScreenState extends State<AddPlantScreen> {
         waterFrequencyWinter: _foundSpeciesData?.waterWinter ?? (_isEditing ? widget.plantToEdit!.waterFrequencyWinter : _waterFreqSummer * 2),
         
         // 4. Infos Encyclopédiques (Priorité : Encyclopédie > Existant > Null)
-        lightLevel: _foundSpeciesData?.light ?? widget.plantToEdit?.lightLevel,
-        temperatureInfo: _foundSpeciesData?.temp ?? widget.plantToEdit?.temperatureInfo,
-        humidityPref: _foundSpeciesData?.humidity ?? widget.plantToEdit?.humidityPref,
-        soilType: _foundSpeciesData?.soil ?? widget.plantToEdit?.soilType,
-        pruningInfo: _foundSpeciesData?.pruning ?? widget.plantToEdit?.pruningInfo,
+        lightLevel: _foundSpeciesData != null 
+            ? _foundSpeciesData!.light.name // Stocke "direct"
+            : widget.plantToEdit?.lightLevel,
+            
+        temperatureInfo: _foundSpeciesData != null
+            ? _foundSpeciesData!.temperature.name // Stocke "frost_tender"
+            : widget.plantToEdit?.temperatureInfo,
+            
+        humidityPref: _foundSpeciesData != null
+            ? _foundSpeciesData!.humidity.name
+            : widget.plantToEdit?.humidityPref,
+            
+        soilType: _foundSpeciesData?.soilInfo ?? widget.plantToEdit?.soilType,
         
         // 5. Fréquences techniques
         fertilizerFreq: _foundSpeciesData?.fertilizeFreq ?? widget.plantToEdit?.fertilizerFreq ?? 30,
@@ -191,54 +200,12 @@ class _AddPlantScreenState extends State<AddPlantScreen> {
     }
   }
 
-  Future<void> _deletePlant() async {
-    // Fenêtre de confirmation
-    final confirm = await showDialog<bool>(
-      context: context,
-      builder: (ctx) => AlertDialog(
-        title: const Text("Supprimer ?"),
-        content: Text("Voulez-vous vraiment supprimer ${widget.plantToEdit!.name} ?\nCette action est irréversible."),
-        actions: [
-          TextButton(onPressed: () => Navigator.pop(ctx, false), child: const Text("Annuler")),
-          TextButton(
-            onPressed: () => Navigator.pop(ctx, true), 
-            style: TextButton.styleFrom(foregroundColor: Colors.red),
-            child: const Text("Supprimer"),
-          ),
-        ],
-      ),
-    );
-
-    if (confirm == true) {
-      // Suppression BDD
-      await DatabaseService().deletePlant(widget.plantToEdit!.id);
-      
-      // Suppression Notif (Sécurisé)
-      try {
-        await NotificationService().cancelAllNotifications(widget.plantToEdit!);
-      } catch (e) {
-        print("Erreur suppression notif : $e");
-      }
-
-      if (mounted) Navigator.pop(context, true);
-    }
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text(_isEditing ? "Modifier la plante" : "Nouvelle Plante"),
         backgroundColor: Theme.of(context).colorScheme.secondary,
-        actions: [
-          // Icône de suppression visible seulement en mode édition
-          if (_isEditing)
-            IconButton(
-              icon: const Icon(Icons.delete),
-              onPressed: _deletePlant,
-              tooltip: "Supprimer la plante",
-            )
-        ],
       ),
       body: SafeArea( 
         child: SingleChildScrollView(
@@ -281,29 +248,38 @@ class _AddPlantScreenState extends State<AddPlantScreen> {
                 Autocomplete<String>(
                 initialValue: TextEditingValue(text: _selectedSpecies),
                 optionsBuilder: (TextEditingValue textEditingValue) {
-                  // 1. On choisit la bonne liste selon la sélection actuelle
-                  List<PlantSpeciesData> sourceList;
-                  
-                  if (_location == 'Intérieur') {
-                    sourceList = getIndoorSorted();
-                  } else if (_location == 'Extérieur') {
-                    sourceList = getOutdoorSorted();
-                  } else {
-                    sourceList = getVegetablesSorted(); // Potager
-                  }
+                  // 1. Récupération de la liste brute (selon catégorie)
+                  PlantCategory targetCategory;
+                  if (_location == 'Intérieur') targetCategory = PlantCategory.indoor;
+                  else if (_location == 'Potager') targetCategory = PlantCategory.vegetable;
+                  else targetCategory = PlantCategory.outdoor;
 
-                  // 2. Si le champ est vide, on peut tout afficher (ou rien, selon ton goût)
-                  // Ici j'affiche tout pour que l'utilisateur puisse scroller la liste alphabétique
-                  if (textEditingValue.text == '') {
+                  final sourceList = EncyclopediaService().getByCategory(targetCategory);
+                  final input = textEditingValue.text.toLowerCase();
+
+                  // 2. Si vide, on affiche tout (ou rien)
+                  if (input.isEmpty) {
                     return sourceList.map((e) => e.species);
                   }
 
-                  // 3. Sinon on filtre ce que l'utilisateur tape
-                  return sourceList
-                      .map((e) => e.species)
-                      .where((String option) {
-                    return option.toLowerCase().contains(textEditingValue.text.toLowerCase());
+                  // 3. Filtrage intelligent
+                  final filteredList = sourceList.where((data) {
+                    // Match Nom
+                    if (data.species.toLowerCase().contains(input)) return true;
+                    
+                    // Match Synonymes
+                    // (On vérifie que la liste n'est pas vide pour optimiser)
+                    if (data.synonyms.isNotEmpty) {
+                      for (var s in data.synonyms) {
+                        if (s.toLowerCase().contains(input)) return true;
+                      }
+                    }
+                    
+                    return false;
                   });
+
+                  // 4. Retour des noms OFFICIELS
+                  return filteredList.map((e) => e.species);
                 },
                 onSelected: _onSpeciesSelected,
                   fieldViewBuilder: (context, textEditingController, focusNode, onFieldSubmitted) {
@@ -314,6 +290,7 @@ class _AddPlantScreenState extends State<AddPlantScreen> {
                     }
                     return TextFormField(
                       controller: textEditingController,
+                      textCapitalization: TextCapitalization.sentences,
                       focusNode: focusNode,
                       decoration: const InputDecoration(
                         labelText: "Espèce",

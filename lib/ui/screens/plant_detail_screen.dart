@@ -10,6 +10,8 @@ import '../common/plant_action_menu.dart';
 import '../common/plant_management_menu.dart';
 import 'photo_gallery_screen.dart';
 import '../../models/plant_event.dart';
+import '../../services/encyclopedia_service.dart';
+import '../../models/enums.dart';
 
 class PlantDetailScreen extends StatefulWidget {
   final Plant plant;
@@ -257,6 +259,7 @@ class _PlantDetailScreenState extends State<PlantDetailScreen> {
     final nextWater = DateFormat('dd/MM', 'fr_FR').format(_plant.nextWateringDate);
     final nextFertilizer = DateFormat('MMM yyyy', 'fr_FR').format(_plant.nextFertilizingDate);
     final nextRepot = DateFormat('yyyy', 'fr_FR').format(_plant.nextRepottingDate);
+    final speciesData = EncyclopediaService().getData(_plant.species);
 
     return Scaffold(
       body: CustomScrollView(
@@ -385,9 +388,10 @@ class _PlantDetailScreenState extends State<PlantDetailScreen> {
                       padding: const EdgeInsets.all(16.0),
                       child: Column(
                         children: [
-                          _buildInfoRow(Icons.wb_sunny, "Lumière", _plant.lightLevel),
-                          _buildInfoRow(Icons.thermostat, "Température", _plant.temperatureInfo),
-                          _buildInfoRow(Icons.water, "Humidité", _plant.humidityPref),
+                          _buildInfoRow(Icons.wb_sunny, "Lumière", speciesData?.light.label ?? _plant.lightLevel),
+                          _buildInfoRow(Icons.thermostat, "Rusticité", speciesData?.temperature.label ?? _plant.temperatureInfo),
+                          _buildInfoRow(Icons.water, "Humidité", speciesData?.humidity.label ?? _plant.humidityPref),
+                          _buildInfoRow(Icons.pets, "Toxicité", speciesData?.toxicity.label ?? "Inconnu"),
                         ],
                       ),
                     ),

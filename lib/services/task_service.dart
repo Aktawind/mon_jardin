@@ -1,6 +1,6 @@
 import '../models/plant.dart';
 import '../models/calendar_task.dart';
-import '../data/plant_data.dart'; // Pour accéder à getSpeciesData
+import '../services/encyclopedia_service.dart'; // Pour accéder à EncyclopediaService
 
 class TaskService {
   
@@ -10,7 +10,7 @@ class TaskService {
 
     for (var plant in myPlants) {
       // 1. Récupérer les infos encyclopédiques
-      final speciesData = getSpeciesData(plant.species);
+      final speciesData = EncyclopediaService().getData(plant.species);
       if (speciesData == null) continue; // Si pas d'info, on passe
 
       // --- LOGIQUE POTAGER ---
@@ -146,7 +146,7 @@ class TaskService {
     for (int i = 1; i <= 12; i++) yearMap[i] = [];
 
     for (var plant in myPlants) {
-      final speciesData = getSpeciesData(plant.species);
+      final speciesData = EncyclopediaService().getData(plant.species);
       if (speciesData == null) continue;
 
       // 1. REMPOTAGE (Seulement le mois de DÉBUT)

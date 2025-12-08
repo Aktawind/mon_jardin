@@ -3,6 +3,7 @@ import 'data/database_service.dart';
 import 'ui/screens/home_screen.dart';
 import 'services/notification_service.dart';
 import 'package:intl/date_symbol_data_local.dart';
+import 'services/encyclopedia_service.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -15,6 +16,7 @@ void main() async {
   final notifService = NotificationService();
   await notifService.init();
   await notifService.requestPermissions();
+  await EncyclopediaService().load();
 
   runApp(const MyApp());
 }

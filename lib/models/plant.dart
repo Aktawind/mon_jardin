@@ -1,4 +1,4 @@
-import '../data/plant_data.dart'; // Pour accéder à getSpeciesData
+import '../services/encyclopedia_service.dart'; // Pour accéder à EncyclopediaService
 
 class Plant {
   final String id;
@@ -16,7 +16,7 @@ class Plant {
   final String? lightLevel;      // "Faible", "Indirecte", "Vive"
   final String? temperatureInfo; // "15-25°C, craint le gel"
   final String? humidityPref;    // "Normal", "Élevée"
-  final String? soilType;        // "Terreau plante verte", "Spécial cactées"
+  final String? soilType;        // "Terreau plante verte", "Spécial pour cactus"
   final String? pruningInfo;     // "Couper les fleurs fanées"
   
   // Fertilisation
@@ -86,7 +86,7 @@ class Plant {
         : dateAdded.add(const Duration(days: 14));
 
     // 3. Correction selon l'Encyclopédie (Hivernage)
-    final speciesData = getSpeciesData(species);
+    final speciesData = EncyclopediaService().getData(species);
     
     // Si on a des infos sur l'hivernage
     if (speciesData != null && speciesData.winteringMonths.isNotEmpty) {
@@ -111,7 +111,7 @@ class Plant {
     DateTime targetDate = DateTime(baseDate.year, baseDate.month + repottingFreq, baseDate.day);
 
     // 2. Correction selon l'Encyclopédie (Période idéale)
-    final speciesData = getSpeciesData(species);
+    final speciesData = EncyclopediaService().getData(species);
 
     if (speciesData != null && speciesData.repottingMonths.isNotEmpty) {
       // Tant que le mois cible N'EST PAS dans la liste idéale, on avance
