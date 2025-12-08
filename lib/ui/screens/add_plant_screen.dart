@@ -417,6 +417,7 @@ class _AddPlantScreenState extends State<AddPlantScreen> {
                   onTap: () async {
                     final picked = await showDatePicker(
                       context: context,
+                      locale: const Locale("fr", "FR"),
                       initialDate: _lastWateredDate,
                       firstDate: DateTime(2020),
                       lastDate: DateTime.now(),
@@ -439,6 +440,7 @@ class _AddPlantScreenState extends State<AddPlantScreen> {
                     // Astuce : un DatePicker classique, mais on ne regarde que le mois
                     final picked = await showDatePicker(
                       context: context,
+                      locale: const Locale("fr", "FR"),
                       initialDate: _lastFertilizedDate ?? DateTime.now(),
                       firstDate: DateTime(2020),
                       lastDate: DateTime.now(),
@@ -465,6 +467,7 @@ class _AddPlantScreenState extends State<AddPlantScreen> {
                     // Faisons simple : DatePicker classique
                     final picked = await showDatePicker(
                       context: context,
+                      locale: const Locale("fr", "FR"),
                       initialDate: _lastRepottedDate ?? DateTime.now(),
                       firstDate: DateTime(2015),
                       lastDate: DateTime.now(),

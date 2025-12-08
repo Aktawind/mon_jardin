@@ -70,6 +70,10 @@ class Plant {
   int get currentFrequency => _isWinter ? waterFrequencyWinter : waterFrequencySummer;
 
   DateTime get nextWateringDate {
+    // Si la fréquence est 0 (ou négative), on renvoie une date très lointaine
+    // Cela signifie "Pas besoin d'arroser"
+    if (currentFrequency <= 0) return DateTime(2100);
+
     if (lastWatered == null) return dateAdded;
     return lastWatered!.add(Duration(days: currentFrequency));
   }
@@ -130,8 +134,10 @@ class Plant {
   }
 
   // Jours restants
-  int get daysUntilWatering => nextWateringDate.difference(DateTime.now()).inDays;
-  // Note: Pour fertilisation/rempotage, on peut avoir des logiques similaires
+  int get daysUntilWatering {
+    if (currentFrequency <= 0) return 999;
+    return nextWateringDate.difference(DateTime.now()).inDays;
+  }
 
   // LOGIQUE D'AFFICHAGE DU NOM
   // Si le nom est différent de l'espèce (surnom) -> "Pépette (Monstera)"

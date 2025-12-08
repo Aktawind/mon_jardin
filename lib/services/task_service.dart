@@ -152,19 +152,32 @@ class TaskService {
       // 1. REMPOTAGE (Seulement le mois de DÉBUT)
       // On vérifie si on doit rempoter cette année (selon la fréquence)
       // Simplification : On affiche la période idéale si elle commence cette année
-      if (plant.repottingFreq > 0 && speciesData.repottingMonths.isNotEmpty && plant.trackRepotting) {
-        // On prend le premier mois de la période idéale
-        int startMonth = speciesData.repottingMonths.first;
-        int endMonth = speciesData.repottingMonths.last;
-        
-        // On ajoute la tâche SEULEMENT au mois de départ
-        // Et on indique la fin dans le sous-titre
-        yearMap[startMonth]!.add(CalendarTask(
-          plant: plant,
-          type: TaskType.repot,
-          title: "Rempotage", 
-          subtitle: "Jusqu'en ${_getMonthName(endMonth)}",
-        ));
+      if (plant.trackRepotting && plant.repottingFreq > 0) {
+         // On calcule la vraie date cible pour cette plante
+         final nextDate = plant.nextRepottingDate;
+         
+         // On vérifie si ça tombe cette année-là
+         if (nextDate.year == year) {
+            // On récupère le mois idéal de l'encyclopédie pour l'affichage "période"
+            // (Si pas d'encyclo, on prend le mois calculé)
+            int displayMonth = nextDate.month;
+            String subtitle = "";
+
+            if (speciesData.repottingMonths.isNotEmpty) {
+               displayMonth = speciesData.repottingMonths.first;
+               // Petite sécurité : si la date calculée est bien plus tard que le début de période
+               // on peut ajuster, mais gardons la logique "Début de saison"
+               int endMonth = speciesData.repottingMonths.last;
+               subtitle = "Possible jusqu'en ${_getMonthName(endMonth)}";
+            }
+
+            yearMap[displayMonth]!.add(CalendarTask(
+              plant: plant,
+              type: TaskType.repot,
+              title: "Rempotage",
+              subtitle: subtitle,
+            ));
+         }
       }
 
       // 2. TAILLE (Idem, mois de début)

@@ -256,7 +256,12 @@ class _PlantDetailScreenState extends State<PlantDetailScreen> {
   @override
   Widget build(BuildContext context) {
     // Calculs pour l'affichage
-    final nextWater = DateFormat('dd/MM', 'fr_FR').format(_plant.nextWateringDate);
+    String nextWaterText;
+    if (_plant.currentFrequency <= 0) {
+      nextWaterText = "Repos";
+    } else {
+      nextWaterText = DateFormat('dd/MM', 'fr_FR').format(_plant.nextWateringDate);
+    }
     final nextFertilizer = DateFormat('MMM yyyy', 'fr_FR').format(_plant.nextFertilizingDate);
     final nextRepot = DateFormat('yyyy', 'fr_FR').format(_plant.nextRepottingDate);
     final speciesData = EncyclopediaService().getData(_plant.species);
@@ -351,7 +356,7 @@ class _PlantDetailScreenState extends State<PlantDetailScreen> {
                         opacity: _plant.lifecycleStage == 'seed' ? 0.3 : 1.0, // <--- Grisé
                         child: _StatusBadge(
                           label: "Arrosage",
-                          date: nextWater,
+                          date: nextWaterText,
                           icon: Icons.water_drop,
                           color: Colors.blue[100]!,
                         ),

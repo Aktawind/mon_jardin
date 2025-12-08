@@ -4,6 +4,7 @@ import 'ui/screens/home_screen.dart';
 import 'services/notification_service.dart';
 import 'package:intl/date_symbol_data_local.dart';
 import 'services/encyclopedia_service.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -29,6 +30,18 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false, // Enlève le bandeau "Debug"
       title: 'Sève',
+
+      localizationsDelegates: const [
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+      ],
+
+      supportedLocales: const [
+        Locale('en', ''), // Anglais, souvent laissé par défaut
+        Locale('fr', 'FR'), // 🇫🇷 Le Français !
+      ],
+
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
           seedColor: const Color(0xFF00b894), // Vert d'eau
