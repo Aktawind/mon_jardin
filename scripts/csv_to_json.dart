@@ -20,12 +20,12 @@ const tagsJsonPath = "assets/plants_tags.json";
 Future<void> main() async {
   print("🔄 Conversion CSV → JSON...");
 
-  final coreJson = await convertCoreCsv();
-  final careJson = await convertCareCsv();
+  //final coreJson = await convertCoreCsv();
+  //final careJson = await convertCareCsv();
   final tagsJson = await convertTagsCsv();
 
-  await File(coreJsonPath).writeAsString(const JsonEncoder.withIndent('  ').convert(coreJson), encoding: utf8);
-  await File(careJsonPath).writeAsString(const JsonEncoder.withIndent('  ').convert(careJson), encoding: utf8);
+  //await File(coreJsonPath).writeAsString(const JsonEncoder.withIndent('  ').convert(coreJson), encoding: utf8);
+  //await File(careJsonPath).writeAsString(const JsonEncoder.withIndent('  ').convert(careJson), encoding: utf8);
   await File(tagsJsonPath).writeAsString(const JsonEncoder.withIndent('  ').convert(tagsJson), encoding: utf8);
 
   print("✅ Conversion terminée !");
@@ -42,7 +42,7 @@ Future<List<Map<String, dynamic>>> readCsv(String path) async {
     throw Exception("CSV introuvable : $path");
   }
 
-  final content = await file.readAsString(encoding: utf8);
+  final content = await file.readAsString(encoding: latin1);
   final lines = const LineSplitter().convert(content);
 
   final headers = lines.first.split(';');
@@ -122,13 +122,12 @@ Future<Map<String, dynamic>> convertTagsCsv() async {
   final result = <String, dynamic>{};
 
   for (var row in rows) {
-    final id = row["id"]!;
-    final tagsRaw = row["tags"] ?? "";
-    final tags = tagsRaw.isEmpty
-        ? []
-        : tagsRaw.split(',').map((t) => t.trim()).toList();
-
-    result[id] = tags;
+    result[row["id"]!] = {
+      "esthetic": row["esthetic"] ?? "", 
+      "foliage": row["foliage"] ?? "",
+      "type": row["type"] ?? "",
+      "height": row["height"] ?? "",
+    };
   }
   return result;
 }
