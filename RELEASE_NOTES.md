@@ -35,6 +35,10 @@ Ce fichier trace l'historique des évolutions de l'application Sève.
 
 ## ✅ Versions publiées
 
+### v1.4.4 - "Corrections de bugs et améliorations"
+- On peut supprimer une entrée dans l'historique via un appui long
+- Gestion des fuseaux horaires pour que les dates calculées soient correctes
+
 ### v1.4.3 - "Corrections de bug"
 - Les widgets calendriers sont en français.
 - Les plantes qui n'ont pas besoin d'arrosage en hiver (comme les cactus) ne réclament pas d'eau (si l'encyclopédie dit water_winter: 0) et sont marquées en "repos"
