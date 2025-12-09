@@ -6,6 +6,7 @@ import '../../models/plant.dart';
 import '../../models/calendar_task.dart';
 import '../../services/task_service.dart';
 import 'plant_detail_screen.dart';
+import '../common/main_drawer.dart';
 
 // Enum pour savoir sur quelle vue on est
 enum CalendarView { week, month, year }
@@ -59,6 +60,7 @@ class _CalendarScreenState extends State<CalendarScreen> {
     final overdueTasks = TaskService().getOverdueTasks(_plants);
 
     return Scaffold(
+      drawer: const MainDrawer(currentIndex: 1),
       appBar: AppBar(
         title: const Text("Calendrier"),
         backgroundColor: Theme.of(context).colorScheme.primary,

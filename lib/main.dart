@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'data/database_service.dart';
-import 'ui/screens/home_screen.dart';
 import 'services/notification_service.dart';
 import 'package:intl/date_symbol_data_local.dart';
 import 'services/encyclopedia_service.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'ui/screens/my_plants_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -54,7 +54,7 @@ class MyApp extends StatelessWidget {
           titleTextStyle: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
         ),
       ),
-      home: const HomeScreen(), // On lance l'écran d'accueil
+      home: const MyPlantsScreen(), // On lance l'écran d'accueil
     );
   }
 }

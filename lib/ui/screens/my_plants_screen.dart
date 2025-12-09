@@ -6,6 +6,7 @@ import '../../services/notification_service.dart';
 import 'dart:io';
 import 'plant_detail_screen.dart';
 import 'settings_screen.dart';
+import '../common/main_drawer.dart';
 
 class MyPlantsScreen extends StatefulWidget {
   const MyPlantsScreen({super.key});
@@ -37,6 +38,7 @@ class _MyPlantsScreenState extends State<MyPlantsScreen> with SingleTickerProvid
   Widget build(BuildContext context) {
     // On n'utilise plus DefaultTabController ici
     return Scaffold(
+      drawer: const MainDrawer(currentIndex: 0),
       appBar: AppBar(
         title: const Text("Sève"),
         centerTitle: true,
