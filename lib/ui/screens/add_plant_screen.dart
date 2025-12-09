@@ -148,11 +148,11 @@ class _AddPlantScreenState extends State<AddPlantScreen> {
         
         // 4. Infos Encyclopédiques (Priorité : Encyclopédie > Existant > Null)
         lightLevel: _foundSpeciesData != null 
-            ? _foundSpeciesData!.light.name // Stocke "direct"
+            ? _foundSpeciesData!.light.name
             : widget.plantToEdit?.lightLevel,
             
         temperatureInfo: _foundSpeciesData != null
-            ? _foundSpeciesData!.temperature.name // Stocke "frost_tender"
+            ? _foundSpeciesData!.temperature.name 
             : widget.plantToEdit?.temperatureInfo,
             
         humidityPref: _foundSpeciesData != null
@@ -191,7 +191,6 @@ class _AddPlantScreenState extends State<AddPlantScreen> {
         }
         await NotificationService().scheduleAllNotifications(plant); // Programmation
       } catch (e) {
-        print("Erreur lors de la programmation des notifs : $e");
         // On pourrait afficher un petit message discret à l'utilisateur ici
       }
 
@@ -229,7 +228,7 @@ class _AddPlantScreenState extends State<AddPlantScreen> {
 
                 // 2. EMPLACEMENT (On le met AVANT de choisir l'espèce)
                 DropdownButtonFormField<String>(
-                  value: _location,
+                  initialValue: _location,
                   decoration: const InputDecoration(
                     labelText: "Emplacement",
                     border: OutlineInputBorder(),
@@ -250,9 +249,15 @@ class _AddPlantScreenState extends State<AddPlantScreen> {
                 optionsBuilder: (TextEditingValue textEditingValue) {
                   // 1. Récupération de la liste brute (selon catégorie)
                   PlantCategory targetCategory;
-                  if (_location == 'Intérieur') targetCategory = PlantCategory.indoor;
-                  else if (_location == 'Potager') targetCategory = PlantCategory.vegetable;
-                  else targetCategory = PlantCategory.outdoor;
+                  if (_location == 'Intérieur') {
+                    targetCategory = PlantCategory.indoor;
+                  }
+                  else if (_location == 'Potager') {
+                    targetCategory = PlantCategory.vegetable;
+                  }
+                  else {
+                    targetCategory = PlantCategory.outdoor;
+                  }
 
                   final sourceList = EncyclopediaService().getByCategory(targetCategory);
                   final input = textEditingValue.text.toLowerCase();
@@ -355,7 +360,7 @@ class _AddPlantScreenState extends State<AddPlantScreen> {
                 Container(
                   padding: const EdgeInsets.all(12),
                   decoration: BoxDecoration(
-                    color: Theme.of(context).colorScheme.primary.withOpacity(0.1),
+                    color: Theme.of(context).colorScheme.primary.withValues(alpha: 0.1),
                     borderRadius: BorderRadius.circular(12),
                   ),
                   child: Column(

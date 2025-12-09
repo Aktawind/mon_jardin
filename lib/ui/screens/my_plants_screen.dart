@@ -1,3 +1,7 @@
+/*
+* Écran affichant la liste des plantes de l'utilisateur, triées par emplacement.
+*/
+
 import 'package:flutter/material.dart';
 import '../../data/database_service.dart';
 import '../../models/plant.dart';
@@ -24,7 +28,6 @@ class _MyPlantsScreenState extends State<MyPlantsScreen> with SingleTickerProvid
   @override
   void initState() {
     super.initState();
-    // 3 onglets
     _tabController = TabController(length: 3, vsync: this);
   }
 
@@ -53,7 +56,7 @@ class _MyPlantsScreenState extends State<MyPlantsScreen> with SingleTickerProvid
           ),
         ],
         bottom: TabBar(
-          controller: _tabController, // <--- CONNEXION DU CONTROLEUR
+          controller: _tabController,
           indicatorColor: Colors.white,
           labelColor: Colors.white,
           unselectedLabelColor: Colors.white70,
@@ -65,7 +68,7 @@ class _MyPlantsScreenState extends State<MyPlantsScreen> with SingleTickerProvid
         ),
       ),
       body: TabBarView(
-        controller: _tabController, // <--- CONNEXION DU CONTROLEUR
+        controller: _tabController,
         children: [
               // On ajoute le paramètre "key" qui combine le lieu et le trigger
               _PlantList(
@@ -84,7 +87,6 @@ class _MyPlantsScreenState extends State<MyPlantsScreen> with SingleTickerProvid
       ),
       floatingActionButton: FloatingActionButton.extended(
         onPressed: () async {
-          // C'est ici qu'on détermine où on est !
           String currentLocation = 'Intérieur';
           if (_tabController.index == 1) currentLocation = 'Extérieur';
           if (_tabController.index == 2) currentLocation = 'Potager';
@@ -93,7 +95,7 @@ class _MyPlantsScreenState extends State<MyPlantsScreen> with SingleTickerProvid
             context,
             MaterialPageRoute(
               builder: (context) => AddPlantScreen(
-                initialLocation: currentLocation // On passe l'info !
+                initialLocation: currentLocation 
               ),
             ),
           );
@@ -116,7 +118,7 @@ class _MyPlantsScreenState extends State<MyPlantsScreen> with SingleTickerProvid
 class _PlantList extends StatefulWidget {
   final String locationFilter;
 
-  // CORRECTION : On ajoute "super.key" pour accepter la clé qu'on lui envoie
+  // On ajoute "super.key" pour accepter la clé qu'on lui envoie
   const _PlantList({
     super.key, 
     required this.locationFilter

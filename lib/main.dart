@@ -39,13 +39,13 @@ class MyApp extends StatelessWidget {
 
       supportedLocales: const [
         Locale('en', ''), // Anglais, souvent laissé par défaut
-        Locale('fr', 'FR'), // 🇫🇷 Le Français !
+        Locale('fr', 'FR'), // 🇫🇷 Le Français 
       ],
 
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
-          seedColor: const Color(0xFF00b894), // Vert d'eau
-          secondary: const Color(0xFFfab1a0), // Rose pâle
+          seedColor: const Color.fromARGB(255, 69, 187, 163), // Vert d'eau
+          secondary: const Color.fromARGB(255, 247, 181, 167), // Rose pâle
         ),
         useMaterial3: true,
         // On force un peu le style de l'AppBar pour qu'il soit joli

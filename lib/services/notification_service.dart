@@ -1,6 +1,12 @@
+/*
+* Service pour gérer les notifications locales.
+* Utilise le package flutter_local_notifications.
+* Permet de programmer des rappels pour l'entretien des plantes.
+*/
+
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
-import 'package:timezone/data/latest.dart' as tz; // Important : pour charger la base de données des heures
-import 'package:timezone/timezone.dart' as tz;   // Important : pour utiliser les types
+import 'package:timezone/data/latest.dart' as tz;
+import 'package:timezone/timezone.dart' as tz; 
 import '../models/plant.dart';
 import 'preferences_service.dart';
 
@@ -21,7 +27,6 @@ class NotificationService {
     try {
       tz.setLocalLocation(tz.getLocation('Europe/Paris'));
     } catch (e) {
-      print("Erreur fuseau : $e");
       // Fallback par sécurité
       tz.setLocalLocation(tz.getLocation('UTC'));
     }
@@ -66,7 +71,7 @@ class NotificationService {
     await _scheduleSpecific(
       plant: plant,
       typeKey: 'water', // Pour l'ID unique
-      title: 'Soif ! 💧',
+      title: 'Rappel d\'arrosage 💧',
       body: '${plant.name} a besoin d\'eau.',
       date: nextDate,
     );
@@ -86,7 +91,7 @@ class NotificationService {
     await _scheduleSpecific(
       plant: plant,
       typeKey: 'fert',
-      title: 'Miam ! 🧪',
+      title: 'Rappel de fertilisation 🌱',
       body: 'C\'est l\'heure de l\'engrais pour ${plant.name}.',
       date: nextDate,
     );
@@ -105,7 +110,7 @@ class NotificationService {
     await _scheduleSpecific(
       plant: plant,
       typeKey: 'repot',
-      title: 'À l\'étroit ? 🪴',
+      title: 'Rappel de rempotage 🪴',
       body: 'Pensez à rempoter ${plant.name} cette année.',
       date: nextDate,
     );
@@ -141,7 +146,7 @@ class NotificationService {
       scheduledDate,
       const NotificationDetails(
         android: AndroidNotificationDetails(
-          'care_channel', // On peut garder le même canal ou en créer d'autres
+          'care_channel', 
           'Soin des plantes',
           channelDescription: 'Notifications d\'entretien',
           importance: Importance.max,

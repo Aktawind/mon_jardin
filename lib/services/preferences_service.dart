@@ -1,3 +1,8 @@
+/*
+* Service pour gérer les préférences utilisateur.
+* Utilise le package shared_preferences.
+*/
+
 import 'package:shared_preferences/shared_preferences.dart';
 
 class PreferencesService {

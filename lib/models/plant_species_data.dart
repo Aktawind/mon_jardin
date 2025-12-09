@@ -1,3 +1,9 @@
+/*
+* Modèle pour les données spécifiques à une espèce de plante.
+* Contient des informations encyclopédiques et de soin.
+* Utilisé pour enrichir les données des plantes individuelles.
+*/
+
 import 'enums.dart';
 
 class PlantSpeciesData {

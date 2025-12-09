@@ -1,5 +1,10 @@
+/*
+* Service pour gérer l'encyclopédie des plantes.
+* Charge les données depuis un fichier JSON dans les assets.
+*/
+
 import 'dart:convert';
-import 'package:flutter/services.dart'; // Pour rootBundle
+import 'package:flutter/services.dart';
 import '../models/plant_species_data.dart';
 import '../models/enums.dart';
 

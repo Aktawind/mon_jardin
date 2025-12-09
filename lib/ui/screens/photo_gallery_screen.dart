@@ -1,3 +1,9 @@
+/*
+* Écran affichant la galerie photo pour une plante donnée.
+* Permet d'ajouter, voir en grand et supprimer des photos.
+* Utilise le widget ImageInput pour la sélection d'images.
+*/
+
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';

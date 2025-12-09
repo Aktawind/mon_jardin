@@ -1,3 +1,13 @@
+/*
+* Widget pour le menu drawer principal de l'application.
+* Permet de naviguer entre les écrans principaux et d'accéder aux paramètres.
+* Le drawer affiche un en-tête personnalisé avec le logo et le nom de l'application.
+* Chaque élément de menu met en évidence l'écran actuel.
+* La navigation vers les paramètres utilise une pile (push) tandis que la navigation principale remplace l'écran actuel (replacement).
+* Utilise des animations de transition pour une expérience utilisateur fluide.
+* Gère la fermeture du drawer avant la navigation.
+*/
+
 import 'package:flutter/material.dart';
 import '../screens/my_plants_screen.dart';
 import '../screens/calendar_screen.dart';
@@ -24,9 +34,14 @@ class MainDrawer extends StatelessWidget {
       // Cas Navigation Principale : On remplace la page (Replacement)
       // pour ne pas avoir de bouton "Retour" infini
       Widget nextPage;
-      if (index == 0) nextPage = const MyPlantsScreen();
-      else if (index == 1) nextPage = const CalendarScreen();
-      else nextPage = const MyPlantsScreen(); // Fallback
+      if (index == 0) {
+        nextPage = const MyPlantsScreen();
+      }
+      else if (index == 1) {
+        nextPage = const CalendarScreen();
+      } else {
+        nextPage = const MyPlantsScreen(); // Fallback
+      }
 
       // Petite animation de transition fluide (Fade) optionnelle, 
       // sinon MaterialPageRoute classique
@@ -63,7 +78,7 @@ class MainDrawer extends StatelessWidget {
                 end: Alignment.bottomRight,
                 colors: [
                   theme.colorScheme.primary,
-                  theme.colorScheme.primary.withOpacity(0.8),
+                  theme.colorScheme.primary.withValues(alpha: 0.8),
                 ],
               ),
             ),
@@ -90,7 +105,7 @@ class MainDrawer extends StatelessWidget {
                   "Mon compagnon végétal",
                   style: TextStyle(
                     fontSize: 14, 
-                    color: Colors.white.withOpacity(0.9),
+                    color: Colors.white.withValues(alpha: 0.9),
                     fontStyle: FontStyle.italic,
                   ),
                 ),
@@ -137,7 +152,7 @@ class MainDrawer extends StatelessWidget {
     return Container(
       margin: const EdgeInsets.symmetric(horizontal: 8, vertical: 2), // Petit espacement
       decoration: BoxDecoration(
-        color: isSelected ? theme.colorScheme.primary.withOpacity(0.1) : null,
+        color: isSelected ? theme.colorScheme.primary.withValues(alpha: 0.1) : null,
         borderRadius: BorderRadius.circular(8),
       ),
       child: ListTile(

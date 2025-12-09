@@ -1,3 +1,7 @@
+/*
+* Écran affichant l'historique des actions pour une plante donnée.
+*/
+
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import '../../models/plant.dart';
@@ -129,7 +133,7 @@ class _HistoryScreenState extends State<HistoryScreen> {
               final event = events[index];
               return ListTile(
                 leading: CircleAvatar(
-                  backgroundColor: _getColor(event.type).withOpacity(0.2),
+                  backgroundColor: _getColor(event.type).withValues(alpha: 0.2),
                   child: Icon(_getIcon(event.type), color: _getColor(event.type), size: 20),
                 ),
                 title: Text(_getText(event.type), style: const TextStyle(fontWeight: FontWeight.bold)),

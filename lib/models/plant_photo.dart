@@ -1,3 +1,11 @@
+/* 
+* Modèle pour une photo de plante.
+* Chaque photo est associée à une plante via son ID.
+* Le chemin du fichier est stocké pour retrouver la photo sur le téléphone.
+* La date de prise de vue est enregistrée.
+* Une note optionnelle peut être ajoutée pour des commentaires sur la photo.
+*/
+
 class PlantPhoto {
   final String id;        // UUID unique
   final String plantId;   // A qui appartient cette photo

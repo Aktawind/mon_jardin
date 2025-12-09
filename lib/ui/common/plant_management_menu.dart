@@ -1,3 +1,9 @@
+/*
+* Widget pour le menu de gestion d'une plante.
+* Permet d'accéder aux actions principales : modifier, supprimer, voir l'album photo, voir l'historique.
+* Utilise des ListTile pour une interface utilisateur claire.
+*/
+
 import 'package:flutter/material.dart';
 import '../../models/plant.dart';
 
@@ -6,7 +12,7 @@ class PlantManagementMenu extends StatelessWidget {
   final VoidCallback onEdit;
   final VoidCallback onDelete;
   final VoidCallback onHistory;
-  final VoidCallback onAlbum; // Nouveau
+  final VoidCallback onAlbum;
 
   const PlantManagementMenu({
     super.key,

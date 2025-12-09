@@ -1,6 +1,13 @@
+/*
+* Écran détaillé pour une plante spécifique.
+* Affiche les informations, le cycle de vie, les besoins actuels et l'environnement idéal.
+* Permet d'accéder à l'album photo, à l'historique et à la gestion de la plante.
+* Intègre un bouton flottant pour accéder rapidement au menu d'actions (arrosage, fertilisation, etc.).
+*/
+
 import 'dart:io';
 import 'package:flutter/material.dart';
-import 'package:intl/intl.dart'; // Pour formater les dates
+import 'package:intl/intl.dart'; 
 import '../../models/plant.dart';
 import '../../data/database_service.dart';
 import '../../services/notification_service.dart';
@@ -250,6 +257,7 @@ class _PlantDetailScreenState extends State<PlantDetailScreen> {
       _plant = updatedPlant;
     });
     
+    if (!mounted) return;
     ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text("Stade mis à jour ! 🌱")));
   }
 
@@ -280,7 +288,7 @@ class _PlantDetailScreenState extends State<PlantDetailScreen> {
                 child: Container(
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
-                    color: Colors.black.withOpacity(0.3), // Fond sombre semi-transparent
+                    color: Colors.black.withValues(alpha: 0.3), // Fond sombre semi-transparent
                   ),
                   child: IconButton(
                     icon: const Icon(Icons.more_vert, color: Colors.white), // Icône blanche forcée
@@ -393,7 +401,7 @@ class _PlantDetailScreenState extends State<PlantDetailScreen> {
                   _buildSectionTitle("Environnement Idéal"),
                   Card(
                     elevation: 0,
-                    color: Theme.of(context).colorScheme.primary.withOpacity(0.05),
+                    color: Theme.of(context).colorScheme.primary.withValues(alpha: 0.05),
                     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
                     child: Padding(
                       padding: const EdgeInsets.all(16.0),
@@ -477,72 +485,35 @@ class _StatusBadge extends StatelessWidget {
   final String date;
   final IconData icon;
   final Color color;
-  final VoidCallback? onTap; // Si null, pas d'action
 
   const _StatusBadge({
     required this.label,
     required this.date,
     required this.icon,
     required this.color,
-    this.onTap,
   });
 
   @override
   Widget build(BuildContext context) {
-    // Si on a une action (onTap), on affiche différemment
-    final isActionable = onTap != null;
-
-    return InkWell(
-      onTap: onTap,
-      borderRadius: BorderRadius.circular(12),
-      child: Container(
-        padding: const EdgeInsets.all(8),
-        child: Column(
-          children: [
-            // L'icône avec potentiellement un petit badge "+"
-            Stack(
-              children: [
-                Container(
-                  padding: const EdgeInsets.all(12),
-                  decoration: BoxDecoration(
-                    color: color,
-                    shape: BoxShape.circle,
-                    // Une petite ombre si c'est cliquable pour donner du relief
-                    boxShadow: isActionable
-                        ? [BoxShadow(color: Colors.black12, blurRadius: 4, offset: const Offset(0, 2))]
-                        : null,
-                  ),
-                  child: Icon(icon, color: Colors.black54, size: 24),
-                ),
-                
-                // La petite pastille d'action
-                if (isActionable)
-                  Positioned(
-                    bottom: 0,
-                    right: 0,
-                    child: Container(
-                      padding: const EdgeInsets.all(4),
-                      decoration: const BoxDecoration(
-                        color: Colors.white,
-                        shape: BoxShape.circle,
-                        boxShadow: [BoxShadow(color: Colors.black12, blurRadius: 2)],
-                      ),
-                      child: const Icon(Icons.edit, size: 10, color: Colors.black87),
-                    ),
-                  ),
-              ],
+    return Container(
+      padding: const EdgeInsets.all(8),
+      child: Column(
+        children: [
+          Container(
+            padding: const EdgeInsets.all(12),
+            decoration: BoxDecoration(
+              color: color,
+              shape: BoxShape.circle,
             ),
-            const SizedBox(height: 8),
-            Text(label, style: const TextStyle(fontSize: 12, color: Colors.grey)),
-            // On souligne légèrement la date si c'est cliquable
-            Text(
-              date,
-              style: const TextStyle(
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-          ],
-        ),
+            child: Icon(icon, color: Colors.black54, size: 24),
+          ),
+          const SizedBox(height: 8),
+          Text(label, style: const TextStyle(fontSize: 12, color: Colors.grey)),
+          Text(
+            date,
+            style: const TextStyle(fontWeight: FontWeight.bold),
+          ),
+        ],
       ),
     );
   }

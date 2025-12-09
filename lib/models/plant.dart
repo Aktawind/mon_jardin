@@ -1,4 +1,10 @@
-import '../services/encyclopedia_service.dart'; // Pour accéder à EncyclopediaService
+/*
+* Modèle pour une plante individuelle.
+* Contient les informations de base, les fréquences de soin, ainsi que les dates de suivi (dernier arrosage, etc.).
+* Intègre aussi des champs issus de l'encyclopédie pour un meilleur suivi.
+*/
+
+import '../services/encyclopedia_service.dart';
 
 class Plant {
   final String id;
@@ -13,11 +19,11 @@ class Plant {
   final int waterFrequencyWinter;
   
   // Nouveaux champs encyclopédiques
-  final String? lightLevel;      // "Faible", "Indirecte", "Vive"
-  final String? temperatureInfo; // "15-25°C, craint le gel"
-  final String? humidityPref;    // "Normal", "Élevée"
-  final String? soilType;        // "Terreau plante verte", "Spécial pour cactus"
-  final String? pruningInfo;     // "Couper les fleurs fanées"
+  final String? lightLevel;       
+  final String? temperatureInfo;  
+  final String? humidityPref;     
+  final String? soilType;        
+  final String? pruningInfo;     
   
   // Fertilisation
   final int fertilizerFreq;      // Jours (ex: 15 ou 30). 0 si pas besoin.
@@ -31,10 +37,10 @@ class Plant {
   final DateTime? lastFertilized;
   final DateTime? lastRepotted;  // Date du dernier rempotage (ou achat)
 
-  final String lifecycleStage; // 'seed' (graine), 'seedling' (semis), 'planted' (en place)
-  final bool trackWatering;    // true = on gère, false = on ignore (ex: arbre dehors)
-  final bool trackRepotting;  // true = on gère
-  final bool trackFertilizer;  // true = on gère
+  final String lifecycleStage;  // 'seed' (graine), 'seedling' (semis), 'planted' (en place)
+  final bool trackWatering;     // true = on gère, false = on ignore (ex: arbre dehors)
+  final bool trackRepotting;    // true = on gère
+  final bool trackFertilizer;   // true = on gère
 
   Plant({
     required this.id,
@@ -140,7 +146,7 @@ class Plant {
     final now = DateTime.now();
     final today = DateTime(now.year, now.month, now.day);
     
-    // CORRECTION ICI : On convertit en heure locale (.toLocal()) 
+    // On convertit en heure locale (.toLocal()) 
     // AVANT de prendre l'année/mois/jour pour être raccord avec le téléphone
     final nextLocal = nextWateringDate.toLocal(); 
     

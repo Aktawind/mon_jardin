@@ -1,3 +1,9 @@
+/*
+* Écran des paramètres de l'application.
+* Permet de configurer les notifications pour les rappels d'arrosage, fertilisation et rempotage.
+* Affiche aussi des informations sur l'application (version, développeur).
+*/
+
 import 'package:flutter/material.dart';
 import 'package:package_info_plus/package_info_plus.dart';
 import '../../services/preferences_service.dart';

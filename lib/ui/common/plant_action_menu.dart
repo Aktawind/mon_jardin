@@ -1,6 +1,15 @@
+/*
+* Widget pour le menu d'actions rapide sur une plante.
+* Permet d'effectuer des actions comme arroser, fertiliser, tailler, rempoter, récolter.
+* Permet aussi d'ajuster les observations de terre sèche/humide.
+* Utilise des boutons avec icônes pour une interface utilisateur intuitive.
+* Affiche des messages de succès via SnackBar.
+* Met à jour la base de données locale et reprogramme les notifications.
+*/
+
 import 'package:flutter/material.dart';
 import '../../models/plant.dart';
-import '../../models/plant_event.dart'; // Pour les types d'events
+import '../../models/plant_event.dart'; 
 import '../../data/database_service.dart';
 import '../../services/notification_service.dart';
 import 'smart_watering_sheet.dart';
@@ -43,7 +52,8 @@ class PlantActionMenu extends StatelessWidget {
     try {
       await NotificationService().scheduleAllNotifications(updatedPlant);
     } catch (e) {
-      print("Erreur notif: $e");
+      // En cas d'erreur de notif, on l'ignore pour ne pas bloquer l'utilisateur
+      // (ex: permissions refusées)
     }
 
     if (context.mounted) {
@@ -216,17 +226,17 @@ class _ActionButton extends StatelessWidget {
 
     return InkWell(
       onTap: onTap,
-      borderRadius: BorderRadius.circular(12), // Un peu moins rond
+      borderRadius: BorderRadius.circular(12), 
       child: Container(
         width: width,
-        padding: const EdgeInsets.symmetric(vertical: 12), // Réduit de 16 à 12
+        padding: const EdgeInsets.symmetric(vertical: 12), 
         decoration: BoxDecoration(
           color: color,
           borderRadius: BorderRadius.circular(12),
         ),
         child: Column(
           children: [
-            Icon(icon, size: 28, color: iconColor), // Réduit de 32 à 28
+            Icon(icon, size: 28, color: iconColor), 
             const SizedBox(height: 4),
             Text(label, style: TextStyle(color: iconColor, fontWeight: FontWeight.bold, fontSize: 12)),
           ],

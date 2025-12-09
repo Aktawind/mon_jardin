@@ -1,3 +1,8 @@
+/* 
+* Widget personnalisé pour la sélection d'images.
+* Permet de prendre une photo ou de choisir dans la galerie.
+*/
+
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
@@ -6,8 +11,8 @@ import 'package:path_provider/path_provider.dart' as syspaths;
 
 class ImageInput extends StatefulWidget {
   final Function(String) onSelectImage;
-  final String? initialImage; // Nouveau : image de départ
-  final String? heroTag;      // Nouveau : pour l'animation
+  final String? initialImage; 
+  final String? heroTag;     
 
   const ImageInput({
     super.key, 
@@ -55,7 +60,7 @@ class _ImageInputState extends State<ImageInput> {
 void _showPickerOptions() {
     showModalBottomSheet(
       context: context,
-      builder: (ctx) => SafeArea( // <--- AJOUTE CA
+      builder: (ctx) => SafeArea(
         child: Wrap(
           children: [
             ListTile(
@@ -130,7 +135,6 @@ void _showPickerOptions() {
             ),
           ),
         ),
-        // On enlève le bouton "Changer la photo" du bas car on peut cliquer sur l'image maintenant
       ],
     );
   }

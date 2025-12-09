@@ -1,3 +1,13 @@
+/*
+* Modèle pour un événement lié à une plante (arrosage, fertilisation, rempotage, taille)
+* Chaque événement est associé à une plante via son ID. 
+* Le type d'événement est une chaîne de caractères ('water', 'fertilizer', 'repot', 'prune').
+* La date de l'événement est stockée en DateTime.
+* Une note optionnelle peut être ajoutée pour des détails supplémentaires.
+* Utilisé pour l'historique des actions sur les plantes.
+* Chaque événement peut être converti en Map pour stockage dans SQLite et reconverti en objet PlantEvent.
+*/
+
 class PlantEvent {
   final int? id; // Auto-incrementé par SQLite
   final String plantId;

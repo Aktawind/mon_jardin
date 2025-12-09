@@ -1,3 +1,10 @@
+/*
+  * Modèle représentant une tâche dans le calendrier (arrosage, fertilisation, etc.)
+  * Chaque tâche est associée à une plante et à un type de tâche.
+  * Le titre et le sous-titre sont utilisés pour l'affichage dans l'interface utilisateur.
+  * La date spécifique est optionnelle et peut être nulle si la tâche est basée sur le mois uniquement.
+*/
+
 import 'plant.dart';
 
 enum TaskType {

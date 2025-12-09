@@ -1,3 +1,11 @@
+/*
+* Écran principal du calendrier.
+* Affiche les tâches à venir pour les plantes (arrosage, fertilisation, etc
+* Permet de naviguer entre les vues Semaine, Mois et Année.
+* Affiche une alerte pour les tâches en retard.
+*/
+
+
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
@@ -85,9 +93,9 @@ class _CalendarScreenState extends State<CalendarScreen> {
               },
               style: ButtonStyle(
                 visualDensity: VisualDensity.compact,
-                backgroundColor: MaterialStateProperty.resolveWith((states) {
-                  if (states.contains(MaterialState.selected)) {
-                    return Theme.of(context).colorScheme.secondary.withOpacity(0.5);
+                backgroundColor: WidgetStateProperty.resolveWith((states) {
+                  if (states.contains(WidgetState.selected)) {
+                    return Theme.of(context).colorScheme.secondary.withValues(alpha: 0.5);
                   }
                   return null;
                 }),
@@ -168,7 +176,7 @@ class _CalendarScreenState extends State<CalendarScreen> {
     }
 
     return Container(
-      color: Theme.of(context).colorScheme.primary.withOpacity(0.05),
+      color: Theme.of(context).colorScheme.primary.withValues(alpha: 0.05),
       padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 8),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -471,7 +479,7 @@ class _TaskGroupCardState extends State<_TaskGroupCard> {
             child: Container(
               padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 16),
               decoration: BoxDecoration(
-                color: color.withOpacity(0.15),
+                color: color.withValues(alpha: 0.15),
                 // Si fermé, on arrondit aussi le bas, sinon que le haut
                 borderRadius: _isExpanded 
                     ? const BorderRadius.vertical(top: Radius.circular(16))
@@ -486,14 +494,14 @@ class _TaskGroupCardState extends State<_TaskGroupCard> {
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 16,
-                      color: color.withOpacity(0.8),
+                      color: color.withValues(alpha: 0.8),
                     ),
                   ),
                   const Spacer(),
                   // La flèche qui change de sens
                   Icon(
                     _isExpanded ? Icons.expand_less : Icons.expand_more,
-                    color: color.withOpacity(0.8),
+                    color: color.withValues(alpha: 0.8),
                   ),
                 ],
               ),
@@ -514,7 +522,7 @@ class _TaskGroupCardState extends State<_TaskGroupCard> {
                       backgroundImage: task.plant.photoPath != null
                           ? FileImage(File(task.plant.photoPath!))
                           : null,
-                      backgroundColor: color.withOpacity(0.1),
+                      backgroundColor: color.withValues(alpha: 0.1),
                       child: task.plant.photoPath == null 
                           ? Icon(icon, size: 20, color: color) 
                           : null,

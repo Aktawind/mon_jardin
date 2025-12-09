@@ -1,3 +1,10 @@
+/*
+  * Service de gestion de la base de données SQLite
+  * Utilise le package sqflite
+  * Gère la création, les mises à jour et les opérations CRUD sur les plantes, événements et photos de plantes. 
+  * Implémente un singleton pour s'assurer qu'une seule instance de la base de données est ouverte.
+*/
+
 import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
 import '../models/plant.dart';
@@ -43,16 +50,16 @@ class DatabaseService {
         photo_path TEXT,
         water_freq_summer INTEGER,
         water_freq_winter INTEGER,
-        light_level TEXT,       -- Faible, Indirecte, Vive
-        temperature_info TEXT,  -- Texte libre (ex: 18-24°C, éviter courants d'air)
-        humidity_pref TEXT,     -- Normal, Humide (SDB)
-        soil_type TEXT,         -- Drainant, Riche, Terre de bruyère...
-        fertilizer_freq INTEGER,-- En jours (ex: 30 pour 1 mois). 0 = jamais
-        last_fertilized TEXT,   -- Date
-        repotting_freq INTEGER, -- En mois (ex: 24 pour 2 ans)
-        last_repotted TEXT,     -- Date (ou date d'achat par défaut)
-        pruning_info TEXT,      -- Conseils de taille
-        date_added TEXT,        -- Date d'ajout dans l'app
+        light_level TEXT,       
+        temperature_info TEXT,  
+        humidity_pref TEXT,    
+        soil_type TEXT,        
+        fertilizer_freq INTEGER,
+        last_fertilized TEXT,   
+        repotting_freq INTEGER, 
+        last_repotted TEXT,     
+        pruning_info TEXT,      
+        date_added TEXT,        
         last_watered TEXT,    
         lifecycle_stage TEXT,
         track_watering INTEGER,
@@ -89,13 +96,11 @@ class DatabaseService {
   // Gestion des futures mises à jour (ex: passer de V1 à V2)
   Future<void> _onUpgrade(Database db, int oldVersion, int newVersion) async {
     if (oldVersion < 2) {
-      print("Mise à jour de la BDD : Ajout de la colonne 'room'");
       await db.execute("ALTER TABLE plants ADD COLUMN room TEXT");
     }
 
     // Migration V2 -> V3 (La grosse mise à jour)
     if (oldVersion < 3) {
-      print("Mise à jour V3 : Ajout des infos encyclopédiques");
       // SQLite ne permet pas d'ajouter plusieurs colonnes en une seule ligne ALTER, il faut les faire une par une
       await db.execute("ALTER TABLE plants ADD COLUMN light_level TEXT");
       await db.execute("ALTER TABLE plants ADD COLUMN temperature_info TEXT");
@@ -108,7 +113,6 @@ class DatabaseService {
     }
 
     if (oldVersion < 4) {
-      print("Mise à jour V4 : Création de l'historique");
       await db.execute('''
         CREATE TABLE events(
           id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -121,7 +125,6 @@ class DatabaseService {
     }
 
     if (oldVersion < 5) {
-      print("Mise à jour V5 : Potager, Suivi et Photos");
       // 1. Ajout des colonnes
       await db.execute("ALTER TABLE plants ADD COLUMN lifecycle_stage TEXT DEFAULT 'planted'");
       await db.execute("ALTER TABLE plants ADD COLUMN track_watering INTEGER DEFAULT 1");
@@ -145,7 +148,6 @@ class DatabaseService {
   }
 
   // --- Méthodes CRUD de base (Create, Read) ---
-
   Future<void> insertPlant(Plant plant) async {
     final db = await database;
     await db.insert(
@@ -166,7 +168,7 @@ class DatabaseService {
     final db = await database;
     final now = DateTime.now();
 
-    // 1. Mise à jour de la plante (comme avant)
+    // 1. Mise à jour de la plante
     await db.update(
       'plants',
       {'last_watered': now.toIso8601String()},
@@ -196,7 +198,7 @@ class DatabaseService {
 
     await logEvent(PlantEvent(
       plantId: id,
-      type: 'fertilizer', // Correspond à notre code history
+      type: 'fertilizer', 
       date: now,
     ));
   }
@@ -288,7 +290,6 @@ class DatabaseService {
     if (event.type == 'prune') limit = 5;
 
     // 3. NETTOYAGE : On supprime les vieux enregistrements en trop
-    // La requête SQL un peu complexe dit : "Garde les X plus récents, supprime les autres"
     await db.execute('''
       DELETE FROM events 
       WHERE plant_id = ? AND type = ? 

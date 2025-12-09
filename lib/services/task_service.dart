@@ -1,6 +1,11 @@
+/*
+* Service pour gérer les tâches liées aux plantes.
+* Génère les tâches d'entretien basées sur les données encyclopédiques et l'état des plantes.
+*/
+
 import '../models/plant.dart';
 import '../models/calendar_task.dart';
-import '../services/encyclopedia_service.dart'; // Pour accéder à EncyclopediaService
+import '../services/encyclopedia_service.dart';
 
 class TaskService {
   
@@ -143,7 +148,9 @@ class TaskService {
     Map<int, List<CalendarTask>> yearMap = {};
 
     // On initialise la map
-    for (int i = 1; i <= 12; i++) yearMap[i] = [];
+    for (int i = 1; i <= 12; i++) {
+      yearMap[i] = [];
+    }
 
     for (var plant in myPlants) {
       final speciesData = EncyclopediaService().getData(plant.species);

@@ -1,3 +1,10 @@
+/*
+* Widget pour la feuille de dialogue d'arrosage intelligent.
+* Permet à l'utilisateur d'indiquer si la terre est humide ou sèche.
+* Ajuste la fréquence d'arrosage en fonction des retours utilisateur.
+* Met à jour la base de données locale et reprogramme les notifications.
+*/
+
 import 'package:flutter/material.dart';
 import '../../models/plant.dart';
 import '../../data/database_service.dart';
@@ -20,6 +27,7 @@ class SmartWateringSheet extends StatelessWidget {
     // On reprogramme juste la notif avec la nouvelle fréquence
     // Comme la fréquence est plus longue, la prochaine date (lastWatered + freq) va reculer.
     await _reschedule(plant);
+    if (!context.mounted) return;
 
     _showSnack(context, "C'est noté ! Je repousse l'arrosage et je rallonge le cycle.");
     onSuccess();
@@ -40,6 +48,7 @@ class SmartWateringSheet extends StatelessWidget {
     
     await DatabaseService().updatePlantWatering(plant.id);
     await _reschedule(plant);
+    if (!context.mounted) return;
     
     _showSnack(context, "Arrosé ! Je te rappellerai un peu plus tôt la prochaine fois.");
     onSuccess();
