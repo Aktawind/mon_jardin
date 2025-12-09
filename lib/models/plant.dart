@@ -135,8 +135,18 @@ class Plant {
 
   // Jours restants
   int get daysUntilWatering {
-    if (currentFrequency <= 0) return 999;
-    return nextWateringDate.difference(DateTime.now()).inDays;
+    if (currentFrequency <= 0) return 999; 
+    
+    final now = DateTime.now();
+    final today = DateTime(now.year, now.month, now.day);
+    
+    // CORRECTION ICI : On convertit en heure locale (.toLocal()) 
+    // AVANT de prendre l'année/mois/jour pour être raccord avec le téléphone
+    final nextLocal = nextWateringDate.toLocal(); 
+    
+    final next = DateTime(nextLocal.year, nextLocal.month, nextLocal.day);
+    
+    return next.difference(today).inDays;
   }
 
   // LOGIQUE D'AFFICHAGE DU NOM
