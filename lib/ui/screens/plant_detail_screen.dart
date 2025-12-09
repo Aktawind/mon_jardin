@@ -275,27 +275,33 @@ class _PlantDetailScreenState extends State<PlantDetailScreen> {
             pinned: true, // La barre reste visible quand on scrolle
             backgroundColor: Theme.of(context).colorScheme.primary,
             actions: [
-              IconButton(
-                icon: const Icon(Icons.more_vert), // Les 3 points verticaux (Standard)
-                // Ou Icons.menu si tu préfères les barres
-                onPressed: () {
-                  showModalBottomSheet(
-                    context: context,
-                    backgroundColor: Colors.transparent,
-                    builder: (ctx) => PlantManagementMenu(
-                      plant: _plant,
-                      onEdit: _editPlant,
-                      onDelete: _deletePlant,
-                      onHistory: () {
-                         Navigator.push(
-                          context,
-                          MaterialPageRoute(builder: (context) => HistoryScreen(plant: _plant)),
-                        );
-                      },
-                      onAlbum: _openAlbum,
-                    ),
-                  );
-                },
+              Padding(
+                padding: const EdgeInsets.only(right: 8.0),
+                child: Container(
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: Colors.black.withOpacity(0.3), // Fond sombre semi-transparent
+                  ),
+                  child: IconButton(
+                    icon: const Icon(Icons.more_vert, color: Colors.white), // Icône blanche forcée
+                    tooltip: "Gérer la plante",
+                    onPressed: () {
+                      showModalBottomSheet(
+                        context: context,
+                        backgroundColor: Colors.transparent,
+                        builder: (ctx) => PlantManagementMenu(
+                          plant: _plant,
+                          onEdit: _editPlant,
+                          onDelete: _deletePlant,
+                          onHistory: () {
+                             Navigator.push(context, MaterialPageRoute(builder: (context) => HistoryScreen(plant: _plant)));
+                          },
+                          onAlbum: _openAlbum,
+                        ),
+                      );
+                    },
+                  ),
+                ),
               ),
             ],
             flexibleSpace: FlexibleSpaceBar(
