@@ -337,4 +337,10 @@ class DatabaseService {
     final db = await database;
     await db.delete('plant_photos', where: 'id = ?', whereArgs: [photoId]);
   }
+
+  // Supprimer un événement historique
+  Future<void> deleteEvent(int eventId) async {
+    final db = await database;
+    await db.delete('events', where: 'id = ?', whereArgs: [eventId]);
+  }
 }
