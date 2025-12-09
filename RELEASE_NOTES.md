@@ -23,7 +23,11 @@ Ce fichier trace l'historique des évolutions de l'application Sève.
 ## 🚧 En Développement
 
 ### v1.5.0 - "Le Conseiller"
-- **Guide d'Achat (Match-Making) :** Formulaire interactif "Quelle plante est faite pour moi ?" (Critères : Lieu, Lumière, Fréquence d'arrosage). Proposition de plantes adaptées depuis l'encyclopédie.
+- Formulaire interactif "Quelle plante est faite pour moi ?" (Critères : Lieu, Lumière, Fréquence d'arrosage). Proposition de plantes adaptées depuis l'encyclopédie.
+- Grosse phase de Clean Code pour supprimer tous les warnings
+- Refonte complète de la base de données pour séparer les données en trois groupes
+- Création de fichiers csv pour maintenir la base de données plus simplement
+- Ajout de scripts pour convertir les csv en json et inversement
 
 ---
 

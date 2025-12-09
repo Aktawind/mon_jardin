@@ -41,6 +41,7 @@ dependencies:
   package_info_plus: 9.0.0 # Pour obtenir des informations sur le package
   flutter_launcher_icons: ^0.13.1 # Pour générer des icônes d'application
   shared_preferences: ^2.2.2 # Pour stocker des préférences simples
+  csv: ^5.1.1 # Pour exporter des données au format CSV
   
   flutter_localizations: # Nécessaire pour les localisations Material/Widgets
     sdk: flutter
@@ -74,7 +75,9 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/icon.png
-    - assets/plants.json
+    - assets/plants_core.json
+    - assets/plants_care.json
+    - assets/plants_tags.json
 
 flutter_launcher_icons:
   android: "ic_launcher"

@@ -10,22 +10,49 @@ import '../models/enums.dart';
 import 'package:flutter/material.dart';
 
 class EncyclopediaService {
-  // Singleton
   static final EncyclopediaService _instance = EncyclopediaService._internal();
   factory EncyclopediaService() => _instance;
   EncyclopediaService._internal();
 
   List<PlantSpeciesData> _plants = [];
 
-  // Chargement au démarrage
   Future<void> load() async {
     try {
-      final String response = await rootBundle.loadString('assets/plants.json');
-      final List<dynamic> data = json.decode(response);
-      _plants = data.map((json) => PlantSpeciesData.fromJson(json)).toList();
+      // 1. Chargement parallèle
+      final responses = await Future.wait([
+        rootBundle.loadString('assets/plants_core.json'),
+        rootBundle.loadString('assets/plants_care.json'),
+        rootBundle.loadString('assets/plants_tags.json'),
+      ]);
+
+      final coreMap = json.decode(responses[0]) as Map<String, dynamic>;
+      final careMap = json.decode(responses[1]) as Map<String, dynamic>;
+      final tagsMap = json.decode(responses[2]) as Map<String, dynamic>;
+
+      List<PlantSpeciesData> tempList = [];
+
+      // 2. Fusion
+      coreMap.forEach((id, coreData) {
+        final careData = careMap[id] ?? {};
+        final tagsList = (tagsMap[id] as List?)?.map((e) => e.toString()).toList() ?? [];
+
+        try {
+          tempList.add(PlantSpeciesData.fromMergedJson(
+            id: id, // On passe l'ID si on veut le stocker, sinon utile pour debug
+            core: coreData,
+            care: careData,
+            tags: tagsList,
+          ));
+        } catch (e) {
+          debugPrint("Erreur parsing plante $id (${coreData['species']}) : $e");
+        }
+      });
+
+      _plants = tempList;
       debugPrint("Encyclopédie chargée : ${_plants.length} plantes.");
+      
     } catch (e) {
-      debugPrint("Erreur chargement encyclopédie : $e");
+      debugPrint("Erreur fatale chargement encyclopédie : $e");
     }
   }
 
