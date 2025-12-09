@@ -7,6 +7,7 @@ import 'dart:convert';
 import 'package:flutter/services.dart';
 import '../models/plant_species_data.dart';
 import '../models/enums.dart';
+import 'package:flutter/material.dart';
 
 class EncyclopediaService {
   // Singleton
@@ -22,9 +23,9 @@ class EncyclopediaService {
       final String response = await rootBundle.loadString('assets/plants.json');
       final List<dynamic> data = json.decode(response);
       _plants = data.map((json) => PlantSpeciesData.fromJson(json)).toList();
-      print("Encyclopédie chargée : ${_plants.length} plantes.");
+      debugPrint("Encyclopédie chargée : ${_plants.length} plantes.");
     } catch (e) {
-      print("Erreur chargement encyclopédie : $e");
+      debugPrint("Erreur chargement encyclopédie : $e");
     }
   }
 

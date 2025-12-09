@@ -10,6 +10,7 @@ import 'package:path/path.dart';
 import '../models/plant.dart';
 import '../models/plant_event.dart';
 import '../models/plant_photo.dart';
+import 'package:flutter/material.dart';
 
 class DatabaseService {
   // Singleton : on s'assure qu'il n'y a qu'une seule instance de la BDD ouverte
@@ -274,7 +275,7 @@ class DatabaseService {
       whereArgs: [plant.id],
     );
     
-    print("Apprentissage : Plante ${plant.name} ajustée de $currentFreq à $newFreq jours (${isWinter ? 'Hiver' : 'Été'})");
+    debugPrint("Apprentissage : Plante ${plant.name} ajustée de $currentFreq à $newFreq jours (${isWinter ? 'Hiver' : 'Été'})");
   }
 
   Future<void> logEvent(PlantEvent event) async {

@@ -9,6 +9,7 @@ import 'package:timezone/data/latest.dart' as tz;
 import 'package:timezone/timezone.dart' as tz; 
 import '../models/plant.dart';
 import 'preferences_service.dart';
+import 'package:flutter/material.dart';
 
 class NotificationService {
   static final NotificationService _instance = NotificationService._internal();
@@ -159,7 +160,7 @@ class NotificationService {
           UILocalNotificationDateInterpretation.absoluteTime,
     );
     
-    print("PROGRAMMÉ ($typeKey) pour ${plant.name} le $scheduledDate");
+    debugPrint("PROGRAMMÉ ($typeKey) pour ${plant.name} le $scheduledDate");
   }
 
   // Annuler TOUTES les notifs d'une plante (quand on la supprime)
