@@ -12,6 +12,7 @@ import 'package:flutter/material.dart';
 import '../screens/my_plants_screen.dart';
 import '../screens/calendar_screen.dart';
 import '../screens/settings_screen.dart';
+import '../screens/plant_finder_screen.dart';
 
 class MainDrawer extends StatelessWidget {
   final int currentIndex; // 0 = Plantes, 1 = Calendrier
@@ -39,7 +40,11 @@ class MainDrawer extends StatelessWidget {
       }
       else if (index == 1) {
         nextPage = const CalendarScreen();
-      } else {
+      } 
+      else if (index == 2) {
+        nextPage = const PlantFinderScreen();
+      }
+      else {
         nextPage = const MyPlantsScreen(); // Fallback
       }
 
@@ -120,12 +125,12 @@ class MainDrawer extends StatelessWidget {
               children: [
                 _buildNavItem(context, 0, "Mes Plantes", Icons.home_filled),
                 _buildNavItem(context, 1, "Calendrier", Icons.calendar_month),
+                _buildNavItem(context, 2, "Guide d'Achat", Icons.search),
                 
                 const Divider(indent: 16, endIndent: 16),
                 
                 // FUTUR (Décommenter quand prêt)
                 /*
-                _buildNavItem(context, 2, "Guide d'Achat", Icons.search),
                 _buildNavItem(context, 3, "Docteur Plante", Icons.local_hospital),
                 */
               ],

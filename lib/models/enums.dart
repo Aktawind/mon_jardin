@@ -42,10 +42,25 @@ enum Toxicity {
 }
 
 // Type de feuillage (Esthétique)
+enum LeafPersistence {
+  evergreen,    // Persistant (reste vert l'hiver)
+  deciduous,    // Caduc (perd ses feuilles)
+  semiEvergreen // Semi-persistant (perd partiellement ses feuilles)
+}
+
+// Type d'intérêt visuel (Esthétique)
 enum FoliageType {
-  evergreen,   // Persistant (reste vert l'hiver)
-  deciduous,   // Caduc (perd ses feuilles)
-  flowering    // À fleurs
+  foliage,   // Plante verte (intérêt feuilles)
+  flowering, // Plante fleurie
+}
+
+// Type de port / Forme (Suspendu, Arbre...)
+enum PlantHeight {
+  hanging,   // Suspendue / Retombante
+  ground,    // Couvre-sol / Basse
+  shrub,     // Buisson / Plante moyenne (sur table/sol)
+  tree,      // Arbre / Grand format
+  climber    // Grimpante
 }
 
 // Température / Rusticité
@@ -71,7 +86,59 @@ enum PlantCategory {
   herb          // Aromatique
 }
 
+// Sous-catégorie Potager (Type précis)
+enum VegetableType {
+  leaf,      // Légume feuille (Salade, Epinard)
+  fruit,     // Légume fruit (Tomate, Courgette)
+  root,      // Légume racine (Carotte, Radis)
+  herb,      // Aromatique
+  fruitTree  // Petit fruitier (Fraise, Framboise)
+}
+
 // --- EXTENSIONS POUR L'AFFICHAGE ---
+extension LeafPersistenceExtension on LeafPersistence {
+  String get label {
+    switch (this) {
+      case LeafPersistence.evergreen: return "Persistant";
+      case LeafPersistence.deciduous: return "Caduc";
+      case LeafPersistence.semiEvergreen: return "Semi-persistant";
+    }
+  }
+}
+
+extension VegetableTypeExtension on VegetableType {
+  String get label {
+    switch (this) {
+      case VegetableType.leaf: return "Légume feuille";
+      case VegetableType.fruit: return "Légume fruit";
+      case VegetableType.root: return "Légume racine";
+      case VegetableType.herb: return "Aromatique";
+      case VegetableType.fruitTree: return "Petit fruitier";
+    }
+  }
+}
+
+extension PlantHeightExtension on PlantHeight {
+  String get label {
+    switch (this) {
+      case PlantHeight.hanging: return "Suspendue / Retombante";
+      case PlantHeight.ground: return "Basse / Couvre-sol";
+      case PlantHeight.shrub: return "Buisson / En pot";
+      case PlantHeight.tree: return "Arbre / Grand format";
+      case PlantHeight.climber: return "Grimpante";
+    }
+  }
+}
+
+extension FoliageTypeExtension on FoliageType {
+  String get label {
+    switch (this) {
+      case FoliageType.foliage: return "Plante verte";
+      case FoliageType.flowering: return "Plante fleurie";
+    }
+  }
+}
+
 extension LightLevelExtension on LightLevel {
   String get label {
     switch (this) {

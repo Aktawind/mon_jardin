@@ -17,7 +17,12 @@ void main() async {
   final notifService = NotificationService();
   await notifService.init();
   await notifService.requestPermissions();
-  await EncyclopediaService().load();
+  try {
+    await EncyclopediaService().load();
+  } catch (e) {
+    debugPrint("CRITICAL: Impossible de charger l'encyclopédie: $e");
+    // On continue quand même pour lancer l'UI, sinon écran blanc
+  }
 
   runApp(const MyApp());
 }

@@ -79,4 +79,9 @@ class EncyclopediaService {
       return null;
     }
   }
+
+  // Récupération complète
+  List<PlantSpeciesData> getAll() {
+    return _plants;
+  }
 }

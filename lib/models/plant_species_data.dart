@@ -16,6 +16,10 @@ class PlantSpeciesData {
   final HumidityNeed humidity;
   final TemperatureTolerance temperature;
   final Toxicity toxicity;
+  final LeafPersistence leafPersistence;
+  final PlantHeight height;
+  final VegetableType vegetableType;
+  final FoliageType foliageType;
   
   final int waterSummer;
   final int waterWinter;
@@ -42,6 +46,10 @@ class PlantSpeciesData {
     required this.humidity,
     required this.temperature,
     required this.toxicity,
+    required this.leafPersistence,
+    required this.height,
+    required this.vegetableType,
+    required this.foliageType,
     required this.waterSummer,
     required this.waterWinter,
     required this.fertilizeFreq,
@@ -82,6 +90,10 @@ class PlantSpeciesData {
       // Attention à la casse ici (snake_case vs camelCase)
       temperature: _parseEnum(TemperatureTolerance.values, care['temperature']),
       toxicity: _parseEnum(Toxicity.values, care['toxicity']),
+      leafPersistence: _parseEnum(LeafPersistence.values, care['leaf_persistence']),
+      height: _parseEnum(PlantHeight.values, care['height']),
+      vegetableType: _parseEnum(VegetableType.values, care['vegetable_type']),
+      foliageType: _parseEnum(FoliageType.values, care['foliage_type']),
       
       // Valeurs numériques
       waterSummer: care['water_summer'] ?? 7,
