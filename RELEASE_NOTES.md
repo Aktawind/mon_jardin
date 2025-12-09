@@ -23,21 +23,19 @@ Ce fichier trace l'historique des évolutions de l'application Sève.
 ## 🚧 En Développement
 
 ### v1.5.0 - "Le Conseiller"
-**Architecture & Navigation :**
-- **Menu Latéral (Drawer) :** Restructuration de la navigation principale pour accueillir les futures fonctionnalités.
-- **Accès Paramètres :** Ajout d'un accès rapide depuis le Calendrier et le Drawer.
-- **UI Fix :** Amélioration de la visibilité du bouton menu (3 points) sur les photos de couverture (ajout d'un fond contrasté).
-
-**Fonctionnalités :**
 - **Guide d'Achat (Match-Making) :** Formulaire interactif "Quelle plante est faite pour moi ?" (Critères : Lieu, Lumière, Fréquence d'arrosage). Proposition de plantes adaptées depuis l'encyclopédie.
 
 ---
 
 ## ✅ Versions publiées
 
+### v1.4.5 - "Refonte du menu principal"
+- Restructuration de la navigation principale pour accueillir les futures fonctionnalités.
+
 ### v1.4.4 - "Corrections de bugs et améliorations"
 - On peut supprimer une entrée dans l'historique via un appui long
 - Gestion des fuseaux horaires pour que les dates calculées soient correctes
+- Amélioration de la visibilité du bouton menu (3 points) sur les photos de couverture (ajout d'un fond contrasté).
 
 ### v1.4.3 - "Corrections de bug"
 - Les widgets calendriers sont en français.
