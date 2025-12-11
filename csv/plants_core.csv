@@ -94,7 +94,7 @@
 93;Gynura;Plante de velours, Purple Passion;indoor
 94;Solanum Pseudocapsicum;Pommier d'amour, Cerisier de Jérusalem;indoor
 95;Nertera;Plante aux perles, Coral Bead Plant;indoor
-96;Basilic;Ocimum basilicum, Pistou;herb
+96;Basilic;Ocimum basilicum, Pistou;vegetable
 97;Cordyline;Cordyline fruticosa, Ti Plant;indoor
 98;Bonsaï Ulmus;Orme de Chine, Ulmus Parvifolia;indoor
 99;Aspidistra;Langue de belle-mère, Cast Iron Plant, Plante en fonte;indoor
@@ -106,10 +106,10 @@
 105;Hibiscus;Rose de Chine, Hibiscus rosa-sinensis;indoor
 106;Jasmin;Jasminum polyanthum, Jasmin d'hiver;indoor
 107;Azalée;Azalea indica, Rhododendron d'intérieur;indoor
-108;Ciboulette;Allium schoenoprasum, Chives;herb
-109;Persil;Petroselinum crispum, Parsley;herb
-110;Romarin;Rosmarinus officinalis, Herbe aux couronnes;herb
-111;Thym;Thymus vulgaris, Farigoule;herb
+108;Ciboulette;Allium schoenoprasum, Chives;vegetable
+109;Persil;Petroselinum crispum, Parsley;vegetable
+110;Romarin;Rosmarinus officinalis, Herbe aux couronnes;vegetable
+111;Thym;Thymus vulgaris, Farigoule;vegetable
 112;Piment;Capsicum, Chili Pepper, Piment d'ornement;vegetable
 113;Sedum Morganianum;Orpin de Morgane, Queue d'âne, Burro's Tail;indoor
 114;Senecio Peregrinus;Plante dauphin, Dolphin Necklace;indoor
@@ -139,7 +139,7 @@
 138;Gingembre;Zingiber officinale, Ginger;indoor
 139;Passiflore;Fleur de la passion, Passiflora, Fruit de la passion;indoor
 140;Dipladenia;Mandevilla, Jasmin du Brésil;outdoor
-141;Laurier Sauce;Laurus nobilis, Laurier d'Apollon;herb
+141;Laurier Sauce;Laurus nobilis, Laurier d'Apollon;vegetable
 142;Aralia Fabian;Polyscias scutellaria, Aralia prunier;indoor
 143;Clématite;Clematis, Reine des lianes;outdoor
 144;Asplenium Parvati;Fougère dentelle, Mother Fern;indoor
@@ -163,7 +163,7 @@
 162;Pilea Glauca;Silver Sparkle, Pilea libanensis;indoor
 163;Eucalyptus;Gommier, Eucalyptus gunnii;indoor
 164;Chrysanthème;Pomponnette, Chrysanthemum;outdoor
-165;Coriandre;Coriandrum sativum, Persil arabe;herb
+165;Coriandre;Coriandrum sativum, Persil arabe;vegetable
 166;Ananas;Ananas comosus, Pineapple;indoor
 167;Ixora;Géranium de la jungle, Flamme des bois;indoor
 168;Euphorbia Milii;Épine du Christ, Couronne d'épines;indoor
@@ -186,7 +186,7 @@
 185;Epipremnum Neon;Pothos Néon, Golden Pothos Neon;indoor
 186;Tephrocactus;Cactus à épines de papier, Paper Spine Cactus;indoor
 187;Ctenanthe;Ctenanthe burle-marxii, Plante paon;indoor
-188;Stevia;Herbe à sucre, Stevia rebaudiana;herb
+188;Stevia;Herbe à sucre, Stevia rebaudiana;vegetable
 189;Callistemon;Rince-bouteille, Bottlebrush;outdoor
 190;Ferocactus;Cactus baril, Cactus féroce;indoor
 191;Solanum;Pommier d'amour, Solanum pseudocapsicum;indoor
@@ -296,7 +296,7 @@
 295;Coquelicot;Papaver rhoeas, Pavot;outdoor
 296;Tournesol;Helianthus annuus, Grand soleil;outdoor
 297;Muguet;Convallaria majalis;outdoor
-298;Sauge Officinale;Salvia officinalis;herb
+298;Sauge Officinale;Salvia officinalis;vegetable
 299;Sedum;Orpin, Sedum spectabile;outdoor
 300;Joubarbe des toits;Sempervivum tectorum, Artichaut de muraille;outdoor
 301;Yucca Gloriosa;Yucca d'extérieur, Dague espagnole;outdoor
@@ -332,11 +332,11 @@
 331;Scabieuse;Scabiosa, Fleur à papillons;outdoor
 332;Euphorbe des jardins;Euphorbia characias;outdoor
 333;Oreille d'ours;Stachys byzantina, Épiaire laineuse;outdoor
-334;Immortelle d'Italie;Helichrysum italicum, Plante au curry;herb
+334;Immortelle d'Italie;Helichrysum italicum, Plante au curry;vegetable
 335;Santoline;Santolina, Petit cyprès;outdoor
 336;Ciste;Cistus, Ciste des corbières;outdoor
 337;Myrte;Myrtus communis;outdoor
-338;Romarin Rampant;Rosmarinus repens;herb
+338;Romarin Rampant;Rosmarinus repens;vegetable
 339;Ipomée;Ipomoea, Volubilis;outdoor
 340;Pois de Senteur;Lathyrus odoratus;outdoor
 341;Hortensia Grimpant;Hydrangea petiolaris;outdoor
@@ -393,247 +393,220 @@
 392;Cyclamen de Naples;Cyclamen hederifolium;outdoor
 393;Violette Odorante;Viola odorata, Violette de Toulouse;outdoor
 394;Ilex Crenata;Houx crénelé, Houx japonais;outdoor
-395;Agave;Agave americana, Plante centenaire;outdoor
-396;Yucca Filamentosa;Yucca filamenteux;outdoor
-397;Imperata;Imperata cylindrica, Red Baron, Herbe sanglante;outdoor
-398;Ophiopogon;Barbe de serpent, Herbe noire;outdoor
-399;Laurier du Portugal;Prunus lusitanica;outdoor
-400;Troène;Ligustrum, Troène commun;outdoor
-401;Pennisetum;Herbe aux écouvillons, Pennisetum alopecuroides;outdoor
-402;Lys des Incas;Alstroemère, Alstroemeria;outdoor
-403;Aster;Aster d'automne, Vendangeuse;outdoor
-404;Vergerette;Erigeron karvinskianus, Pâquerette des murailles;outdoor
-405;Sauge Arbustive;Salvia microphylla, Sauge de Graham;outdoor
-406;Achillée;Achillea millefolium, Millefeuille;outdoor
-407;Caryopteris;Barbe bleue, Spirée bleue;outdoor
-408;Leucothoe;Leucothoe fontanesiana;outdoor
-409;Phlomis;Sauge de Jérusalem, Phlomis fruticosa;outdoor
-410;Ceratostigma;Dentelaire de Lady Willmott, Plumbago larpentae;outdoor
-411;Gazania;Gazanie;outdoor
-412;Osteospermum;Marguerite du Cap, Dimorphoteca;outdoor
-413;Valériane Rouge;Centranthus ruber, Lilas d'Espagne;outdoor
-414;Nigelle de Damas;Nigella damascena, Cheveux de Vénus;outdoor
-415;Pavot de Californie;Eschscholzia californica;outdoor
-416;Monarde;Monarda, Bergamote;outdoor
-417;Hémérocalle;Hemerocallis, Lys d'un jour;outdoor
-418;Benoîte;Geum, Benoîte des jardins;outdoor
-419;Penstemon;Galane;outdoor
-420;Brunnera;Brunnera macrophylla, Myosotis du Caucase;outdoor
-421;Sceau de Salomon;Polygonatum, Muguet géant;outdoor
-422;Giroflée;Erysimum, Cheiranthus, Giroflée des murailles;outdoor
-423;Monnaie du Pape;Lunaria annua, Lunaire;outdoor
-424;Amour en cage;Physalis alkekengi, Coqueret;outdoor
-425;Liatris;Liatris spicata, Plume du Kansas;outdoor
-426;Véronique Arbustive;Hebe, Véronique;outdoor
-427;Palmier Chanvre;Trachycarpus fortunei, Palmier de Chine;outdoor
-428;Pourpier Vivace;Delosperma cooperi, Ficoïde;outdoor
-429;Griffe de Sorcière;Carpobrotus, Figuier des Hottentots;outdoor
-430;Gazon d'Espagne;Armeria maritima, Armérie;outdoor
-431;Corbeille d'Argent;Iberis sempervirens, Thlaspi;outdoor
-432;Corbeille d'Or;Alyssum saxatile, Alysse;outdoor
-433;Framboisier;Rubus idaeus;vegetable
-434;Cassissier;Ribes nigrum, Groseillier noir;vegetable
-435;Mûrier (Ronce);Rubus fruticosus, Mûre des jardins;vegetable
-436;Kiwi;Actinidia deliciosa;vegetable
-437;Rhubarbe;Rheum rhabarbarum;vegetable
-438;Artichaut;Cynara scolymus;vegetable
-439;Souci;Calendula officinalis;outdoor
-440;Bourrache;Borago officinalis;herb
-441;Ail des Ours;Allium ursinum, Ail sauvage;herb
-442;Hélénie;Helenium, Hélénie d'automne;outdoor
-443;Pâquerette;Bellis perennis, Pomponnette;outdoor
-444;Genévrier;Juniperus, Genévrier rampant;outdoor
-445;Faux Cyprès;Chamaecyparis, Cyprès de Lawson;outdoor
-446;Sauge Officinale;Salvia officinalis;herb
-447;Millepertuis;Hypericum, Millepertuis arbustif;outdoor
-448;Campanule;Campanula, Campanule des murs;outdoor
-449;Myrtillier;Vaccinium corymbosum, Bleuet;vegetable
-450;Groseillier à maquereau;Ribes uva-crispa;vegetable
-451;Kaki;Plaqueminier, Diospyros kaki;vegetable
-452;Amandier;Prunus dulcis;vegetable
-453;Saule Crevette;Salix integra, Hakuro Nishiki;outdoor
-454;Cerisier du Japon;Prunus serrulata, Sakura, Kanzan;outdoor
-455;Prunier Pourpre;Prunus cerasifera, Pissardii;outdoor
-456;Noisetier Tortueux;Corylus avellana contorta;outdoor
-457;Sorbier des oiseleurs;Sorbus aucuparia;outdoor
-458;Mûrier Platane;Morus bombycis, Arbre à parasol;outdoor
-459;Cytise;Laburnum, Pluie d'or;outdoor
-460;Epicéa;Picea abies, Sapin de Noël, Sapin rouge;outdoor
-461;Sapin Bleu;Picea pungens, Sapin du Colorado;outdoor
-462;Pin Mugo;Pinus mugo, Pin des montagnes, Pin nain;outdoor
-463;Mélèze;Larix decidua;outdoor
-464;Araucaria;Désespoir des singes, Araucaria araucana;outdoor
-465;Genévrier Rampant;Juniperus horizontalis, Tapis bleu;outdoor
-466;Faux-Cyprès;Chamaecyparis, Cyprès bleu;outdoor
-467;Cryptomeria;Cèdre du Japon, Cryptomeria japonica;outdoor
-468;Feijoa;Goyavier du Brésil, Acca sellowiana;outdoor
-469;Kumquat;Fortunella;outdoor
-470;Chamaerops;Palmier nain, Chamaerops humilis;outdoor
-471;Genêt;Cytisus, Genêt à balais;outdoor
-472;Laurier du Portugal;Prunus lusitanica;outdoor
-473;Troène;Ligustrum, Troène commun;outdoor
-474;Hortensia à feuilles de chêne;Hydrangea quercifolia;outdoor
-475;Hortensia Annabelle;Hydrangea arborescens;outdoor
-476;Viorne à feuilles ridées;Viburnum rhytidophyllum;outdoor
-477;Cotoneaster Lacteus;Cotonéaster laiteux;outdoor
-478;Céanothe;Lilas de Californie, Ceanothus;outdoor
-479;Abélia;Abelia grandiflora;outdoor
-480;Cornouiller Sanguin;Cornus sanguinea, Bois rouge;outdoor
-481;Arbre à Perruque;Cotinus coggygria;outdoor
-482;Berbéris;Epine-vinette, Berberis thunbergii;outdoor
-483;Symphorine;Symphoricarpos, Arbre aux perles;outdoor
-484;Corête du Japon;Kerria japonica;outdoor
-485;Callune;Calluna vulgaris, Bruyère d'été;outdoor
-486;Sauge Arbustive;Salvia microphylla, Sauge de Graham;outdoor
-487;Caryopteris;Barbe bleue, Spirée bleue;outdoor
-488;Potentille Arbustive;Potentilla fruticosa;outdoor
-489;Perovskia;Sauge de Russie, Lavande d'Afghanistan;outdoor
-490;Leucothoe;Leucothoe fontanesiana;outdoor
-491;Skimmia;Skimmia japonica;outdoor
-492;Andromède;Pieris japonica;outdoor
-493;Prunellier;Prunus spinosa, Épine noire;outdoor
-494;Aubépine;Crataegus, Épine blanche;outdoor
-495;Fusain Panaché;Euonymus fortunei, Fusain rampant;outdoor
-496;Chèvrefeuille arbustif;Lonicera nitida;outdoor
-497;Houx Panaché;Ilex aquifolium 'Argentea';outdoor
-498;Olivier (En Pot);Olea europaea, Olivier en bac;outdoor
-499;Olivier (Pleine terre);Olea europaea, Olivier de jardin;outdoor
-500;Citronnier (En Pot);Citrus limon, Citronnier 4 saisons;outdoor
-501;Citronnier (Pleine terre);Citrus limon;outdoor
-502;Laurier Rose (En Pot);Nerium oleander;outdoor
-503;Laurier Rose (Pleine terre);Nerium oleander;outdoor
-504;Érable du Japon (En Pot);Acer palmatum;outdoor
-505;Érable du Japon (Pleine terre);Acer palmatum;outdoor
-506;Hortensia (En Pot);Hydrangea macrophylla;outdoor
-507;Hortensia (Pleine terre);Hydrangea macrophylla;outdoor
-508;Bambou (En Pot);Phyllostachys, Fargesia;outdoor
-509;Bambou (Pleine terre);Phyllostachys;outdoor
-510;Menthe (En Pot);Mentha, Menthe verte;herb
-511;Menthe (Pleine terre);Mentha;herb
-512;Bougainvillier (En Pot);Bougainvillea;outdoor
-513;Bougainvillier (Pleine terre);Bougainvillea;outdoor
-514;Lavande (En Pot);Lavandula;outdoor
-515;Lavande (Pleine terre);Lavandula;outdoor
-516;Figuier (En Pot);Ficus carica;vegetable
-517;Figuier (Pleine terre);Ficus carica;vegetable
-518;Rosier (Pot);Rosier patio, Rosier miniature;outdoor
-519;Rosier (Pleine terre);Rosier buisson;outdoor
-520;Camélia (En Pot);Camellia japonica;outdoor
-521;Camélia (Pleine terre);Camellia japonica;outdoor
-522;Tomate;Solanum lycopersicum, Tomate rouge;vegetable
-523;Courgette;Cucurbita pepo, Zucchini;vegetable
-524;Concombre;Cucumis sativus;vegetable
-525;Aubergine;Solanum melongena;vegetable
-526;Poivron;Capsicum annuum, Piment doux;vegetable
-527;Haricot Vert;Phaseolus vulgaris, Haricot nain, Haricot à rames;vegetable
-528;Radis;Raphanus sativus, Radis de 18 jours;vegetable
-529;Carotte;Daucus carota;vegetable
-530;Laitue;Lactuca sativa, Salade;vegetable
-531;Pomme de Terre;Solanum tuberosum, Patate;vegetable
-532;Potiron;Citrouille, Cucurbita maxima, Potimarron;vegetable
-533;Courge Butternut;Doubeurre, Cucurbita moschata;vegetable
-534;Melon;Cucumis melo;vegetable
-535;Poireau;Allium porrum;vegetable
-536;Oignon;Allium cepa, Oignon jaune, Oignon rouge;vegetable
-537;Ail;Allium sativum, Ail blanc, Ail violet;vegetable
-538;Échalote;Allium ascalonicum;vegetable
-539;Petit Pois;Pisum sativum;vegetable
-540;Épinard;Spinacia oleracea;vegetable
-541;Mâche;Valerianella locusta, Doucette;vegetable
-542;Blette;Bette, Poirée, Beta vulgaris;vegetable
-543;Betterave;Beta vulgaris, Betterave rouge;vegetable
-544;Chou-Fleur;Brassica oleracea botrytis;vegetable
-545;Brocoli;Chou brocoli;vegetable
-546;Chou Cabus;Chou pommé, Chou vert;vegetable
-547;Chou Kale;Chou frisé, Chou plume;vegetable
-548;Chou de Bruxelles;Brassica oleracea gemmifera;vegetable
-549;Navet;Brassica rapa;vegetable
-550;Céleri-Rave;Apium graveolens;vegetable
-551;Fenouil;Foeniculum vulgare, Fenouil bulbeux;vegetable
-552;Maïs Doux;Zea mays, Maïs sucré;vegetable
-553;Asperge;Asparagus officinalis;vegetable
-554;Fève;Vicia faba;vegetable
-555;Topinambour;Helianthus tuberosus, Artichaut de Jérusalem;vegetable
-556;Panais;Pastinaca sativa;vegetable
-557;Cornichon;Cucumis sativus;vegetable
-558;Oseille;Rumex acetosa;vegetable
-559;Ciboulette;Allium schoenoprasum, Chives;herb
-560;Ciboule;Allium fistulosum, Oignon vert, Cive;herb
-561;Estragon;Artemisia dracunculus;herb
-562;Coriandre;Coriandrum sativum, Persil arabe;herb
-563;Aneth;Anethum graveolens, Faux anis;herb
-564;Cerfeuil;Anthriscus cerefolium;herb
-565;Sauge Officinale;Salvia officinalis;herb
-566;Chicorée Frisée;Cichorium endivia, Frisée;vegetable
-567;Endive;Chicon, Cichorium intybus;vegetable
-568;Patate Douce;Ipomoea batatas;vegetable
-569;Pâtisson;Artichaut d'Espagne, Bonnet de prêtre;vegetable
-570;Tétragone;Tetragonia tetragonioides, Épinard d'été;vegetable
-571;Roquette;Eruca sativa;vegetable
-572;Fraisier des Bois;Fragaria vesca, Fraise sauvage;vegetable
-573;Fraisier (En Pot);Fragaria, Fraise remontante;vegetable
-574;Fraisier (Pleine Terre);Fragaria, Fraise de jardin;vegetable
-575;Tomate Cerise (En Pot);Solanum lycopersicum, Tomate balcon;vegetable
-576;Tomate Cerise (Pleine Terre);Solanum lycopersicum, Tomate grappe;vegetable
-577;Radis (EnPot);Radis de balcon;vegetable
-578;Salade (En Pot);Laitue à couper, Mesclun;vegetable
-579;Verveine Citronnelle;Aloysia citrodora, Verveine odorante;herb
-580;Citronnelle de Madagascar;Cymbopogon, Lemongrass;herb
-581;Mélisse;Melissa officinalis, Citronnelle;herb
-582;Origan;Origanum vulgare, Marjolaine sauvage;herb
-583;Sarriette Vivace;Satureja montana, Poivre d'âne;herb
-584;Laurier Sauce (En Pot);Laurus nobilis;herb
-585;Rutabaga;Chou-navet;vegetable
-586;Crosne du Japon;Stachys affinis;vegetable
-587;Oca du Pérou;Oxalis tuberosa;vegetable
-588;Salsifis;Tragopogon porrifolius;vegetable
-589;Pourpier Doré;Portulaca oleracea;vegetable
-590;Cresson Alénois;Lepidium sativum, Passerage;vegetable
-591;Pissenlit;Taraxacum officinale, Dent de lion;vegetable
-592;Cardon;Cynara cardunculus;vegetable
-593;Lentille;Lens culinaris;vegetable
-594;Coqueret du Pérou;Physalis peruviana, Groseille du Cap;vegetable
-595;Framboisier (Pot / Nain);Rubus idaeus, Framboisier de balcon;vegetable
-596;Canneberge;Vaccinium macrocarpon, Cranberry;vegetable
-597;Baie de Goji;Lycium barbarum;vegetable
-598;Consoude;Symphytum officinale;outdoor
-599;Tanaisie;Tanacetum vulgare;outdoor
-600;Lin Bleu;Linum perenne, Lin vivace;outdoor
-601;Oignon Rocambole;Allium cepa proliferum, Oignon perpétuel;vegetable
-602;Poireau Perpétuel;Allium ampeloprasum;vegetable
-603;Chou Daubenton;Chou perpétuel;vegetable
-604;Raifort;Armoracia rusticana;vegetable
-605;Capucine Tubéreuse;Tropaeolum tuberosum;vegetable
-606;Poire de Terre;Yacon, Smallanthus sonchifolius;vegetable
-607;Claytone de Cuba;Pourpier d'hiver;vegetable
-608;Moutarde de Chine;Feuilles de moutarde;vegetable
-609;Mizuna;Moutarde japonaise;vegetable
-610;Tatsoi;Chou rosette;vegetable
-611;Angélique;Angelica archangelica, Herbe des anges;herb
-612;Camomille Romaine;Chamaemelum nobile, Camomille noble;herb
-613;Bourrache;Borago officinalis;herb
-614;Hysope;Hyssopus officinalis;herb
-615;Kiwaï;Actinidia arguta, Kiwi de Sibérie;vegetable
-616;Mâche;Valerianella locusta, Doucette;vegetable
-617;Arroche;Atriplex hortensis, Épinard géant;vegetable
-618;Scorsonère;Scorzonera hispanica, Salsifis noir;vegetable
-619;Pois Chiche;Cicer arietinum;vegetable
-620;Marjolaine;Origanum majorana, Marjolaine à coquilles, Grand origan;herb
-621;Basilic Thaï;Ocimum basilicum var. thyrsiflora;herb
-622;Ciboulette de Chine;Allium tuberosum, Ail à couper;herb
-623;Sauge Ananas;Salvia elegans;herb
-624;Menthe Chocolat;Mentha x piperita f. citrata 'Chocolate';herb
-625;Oseille Sanguine;Rumex sanguineus, Oseille rouge;herb
-626;Agastache;Agastache foeniculum, Hysope anisée;herb
-627;Shiso;Perilla frutescens, Basilic japonais;herb
-628;Céleri à couper;Apium graveolens secalinum, Céleri chinois;herb
-629;Pimprenelle;Sanguisorba minor, Petite pimprenelle;herb
-630;Basilic (Grand Vert);Ocimum basilicum, Pistou, Basilic Genovese;herb
-631;Persil (En Pot);Petroselinum crispum, Persil plat, Persil frisé;herb
-632;Thym (En Pot);Thymus vulgaris, Farigoule;herb
-633;Romarin (En Pot);Rosmarinus officinalis;herb
-634;Ciboulette (En Pot);Allium schoenoprasum;herb
-635;Sauge Officinale (En Pot);Salvia officinalis;herb
-636;Laurier Sauce (En Pot);Laurus nobilis;herb
-637;Estragon (En Pot);Artemisia dracunculus;herb
-638;Origan (En Pot);Origanum vulgare, Marjolaine vivace;herb
+395;Yucca Filamentosa;Yucca filamenteux;outdoor
+396;Imperata;Imperata cylindrica, Red Baron, Herbe sanglante;outdoor
+397;Ophiopogon;Barbe de serpent, Herbe noire;outdoor
+398;Laurier du Portugal;Prunus lusitanica;outdoor
+399;Troène;Ligustrum, Troène commun;outdoor
+400;Pennisetum;Herbe aux écouvillons, Pennisetum alopecuroides;outdoor
+401;Lys des Incas;Alstroemère, Alstroemeria;outdoor
+402;Aster;Aster d'automne, Vendangeuse;outdoor
+403;Vergerette;Erigeron karvinskianus, Pâquerette des murailles;outdoor
+404;Sauge Arbustive;Salvia microphylla, Sauge de Graham;outdoor
+405;Achillée;Achillea millefolium, Millefeuille;outdoor
+406;Caryopteris;Barbe bleue, Spirée bleue;outdoor
+407;Leucothoe;Leucothoe fontanesiana;outdoor
+408;Phlomis;Sauge de Jérusalem, Phlomis fruticosa;outdoor
+409;Ceratostigma;Dentelaire de Lady Willmott, Plumbago larpentae;outdoor
+410;Gazania;Gazanie;outdoor
+411;Osteospermum;Marguerite du Cap, Dimorphoteca;outdoor
+412;Valériane Rouge;Centranthus ruber, Lilas d'Espagne;outdoor
+413;Nigelle de Damas;Nigella damascena, Cheveux de Vénus;outdoor
+414;Pavot de Californie;Eschscholzia californica;outdoor
+415;Monarde;Monarda, Bergamote;outdoor
+416;Hémérocalle;Hemerocallis, Lys d'un jour;outdoor
+417;Benoîte;Geum, Benoîte des jardins;outdoor
+418;Penstemon;Galane;outdoor
+419;Brunnera;Brunnera macrophylla, Myosotis du Caucase;outdoor
+420;Sceau de Salomon;Polygonatum, Muguet géant;outdoor
+421;Giroflée;Erysimum, Cheiranthus, Giroflée des murailles;outdoor
+422;Monnaie du Pape;Lunaria annua, Lunaire;outdoor
+423;Amour en cage;Physalis alkekengi, Coqueret;outdoor
+424;Liatris;Liatris spicata, Plume du Kansas;outdoor
+425;Véronique Arbustive;Hebe, Véronique;outdoor
+426;Palmier Chanvre;Trachycarpus fortunei, Palmier de Chine;outdoor
+427;Pourpier Vivace;Delosperma cooperi, Ficoïde;outdoor
+428;Griffe de Sorcière;Carpobrotus, Figuier des Hottentots;outdoor
+429;Gazon d'Espagne;Armeria maritima, Armérie;outdoor
+430;Corbeille d'Argent;Iberis sempervirens, Thlaspi;outdoor
+431;Corbeille d'Or;Alyssum saxatile, Alysse;outdoor
+432;Framboisier;Rubus idaeus;vegetable
+433;Cassissier;Ribes nigrum, Groseillier noir;vegetable
+434;Mûrier (Ronce);Rubus fruticosus, Mûre des jardins;vegetable
+435;Kiwi;Actinidia deliciosa;vegetable
+436;Rhubarbe;Rheum rhabarbarum;vegetable
+437;Artichaut;Cynara scolymus;vegetable
+438;Souci;Calendula officinalis;outdoor
+439;Bourrache;Borago officinalis;vegetable
+440;Ail des Ours;Allium ursinum, Ail sauvage;vegetable
+441;Hélénie;Helenium, Hélénie d'automne;outdoor
+442;Pâquerette;Bellis perennis, Pomponnette;outdoor
+443;Genévrier;Juniperus, Genévrier rampant;outdoor
+444;Faux Cyprès;Chamaecyparis, Cyprès de Lawson;outdoor
+445;Myrtillier;Vaccinium corymbosum, Bleuet;vegetable
+446;Groseillier à maquereau;Ribes uva-crispa;vegetable
+447;Kaki;Plaqueminier, Diospyros kaki;vegetable
+448;Amandier;Prunus dulcis;vegetable
+449;Saule Crevette;Salix integra, Hakuro Nishiki;outdoor
+450;Cerisier du Japon;Prunus serrulata, Sakura, Kanzan;outdoor
+451;Prunier Pourpre;Prunus cerasifera, Pissardii;outdoor
+452;Noisetier Tortueux;Corylus avellana contorta;outdoor
+453;Sorbier des oiseleurs;Sorbus aucuparia;outdoor
+454;Mûrier Platane;Morus bombycis, Arbre à parasol;outdoor
+455;Cytise;Laburnum, Pluie d'or;outdoor
+456;Epicéa;Picea abies, Sapin de Noël, Sapin rouge;outdoor
+457;Sapin Bleu;Picea pungens, Sapin du Colorado;outdoor
+458;Pin Mugo;Pinus mugo, Pin des montagnes, Pin nain;outdoor
+459;Mélèze;Larix decidua;outdoor
+460;Genévrier Rampant;Juniperus horizontalis, Tapis bleu;outdoor
+461;Faux-Cyprès;Chamaecyparis, Cyprès bleu;outdoor
+462;Cryptomeria;Cèdre du Japon, Cryptomeria japonica;outdoor
+463;Feijoa;Goyavier du Brésil, Acca sellowiana;outdoor
+464;Kumquat;Fortunella;outdoor
+465;Chamaerops;Palmier nain, Chamaerops humilis;outdoor
+466;Genêt;Cytisus, Genêt à balais;outdoor
+467;Hortensia à feuilles de chêne;Hydrangea quercifolia;outdoor
+468;Hortensia Annabelle;Hydrangea arborescens;outdoor
+469;Viorne à feuilles ridées;Viburnum rhytidophyllum;outdoor
+470;Cotoneaster Lacteus;Cotonéaster laiteux;outdoor
+471;Callune;Calluna vulgaris, Bruyère d'été;outdoor
+472;Perovskia;Sauge de Russie, Lavande d'Afghanistan;outdoor
+473;Prunellier;Prunus spinosa, Épine noire;outdoor
+474;Aubépine;Crataegus, Épine blanche;outdoor
+475;Fusain Panaché;Euonymus fortunei, Fusain rampant;outdoor
+476;Houx Panaché;Ilex aquifolium 'Argentea';outdoor
+477;Olivier (En Pot);Olea europaea, Olivier en bac;outdoor
+478;Olivier (Pleine terre);Olea europaea, Olivier de jardin;outdoor
+479;Citronnier (En Pot);Citrus limon, Citronnier 4 saisons;outdoor
+480;Citronnier (Pleine terre);Citrus limon;outdoor
+481;Laurier Rose (En Pot);Nerium oleander;outdoor
+482;Laurier Rose (Pleine terre);Nerium oleander;outdoor
+483;Érable du Japon (En Pot);Acer palmatum;outdoor
+484;Érable du Japon (Pleine terre);Acer palmatum;outdoor
+485;Hortensia (En Pot);Hydrangea macrophylla;outdoor
+486;Hortensia (Pleine terre);Hydrangea macrophylla;outdoor
+487;Bambou (En Pot);Phyllostachys, Fargesia;outdoor
+488;Bambou (Pleine terre);Phyllostachys;outdoor
+489;Menthe (En Pot);Mentha, Menthe verte;vegetable
+490;Menthe (Pleine terre);Mentha;vegetable
+491;Bougainvillier (En Pot);Bougainvillea;outdoor
+492;Bougainvillier (Pleine terre);Bougainvillea;outdoor
+493;Lavande (En Pot);Lavandula;outdoor
+494;Lavande (Pleine terre);Lavandula;outdoor
+495;Figuier (En Pot);Ficus carica;vegetable
+496;Figuier (Pleine terre);Ficus carica;vegetable
+497;Rosier (Pot);Rosier patio, Rosier miniature;outdoor
+498;Rosier (Pleine terre);Rosier buisson;outdoor
+499;Camélia (En Pot);Camellia japonica;outdoor
+500;Camélia (Pleine terre);Camellia japonica;outdoor
+501;Tomate;Solanum lycopersicum, Tomate rouge;vegetable
+502;Courgette;Cucurbita pepo, Zucchini;vegetable
+503;Concombre;Cucumis sativus;vegetable
+504;Aubergine;Solanum melongena;vegetable
+505;Poivron;Capsicum annuum, Piment doux;vegetable
+506;Haricot Vert;Phaseolus vulgaris, Haricot nain, Haricot à rames;vegetable
+507;Radis;Raphanus sativus, Radis de 18 jours;vegetable
+508;Carotte;Daucus carota;vegetable
+509;Laitue;Lactuca sativa, Salade;vegetable
+510;Pomme de Terre;Solanum tuberosum, Patate;vegetable
+511;Potiron;Citrouille, Cucurbita maxima, Potimarron;vegetable
+512;Courge Butternut;Doubeurre, Cucurbita moschata;vegetable
+513;Melon;Cucumis melo;vegetable
+514;Poireau;Allium porrum;vegetable
+515;Oignon;Allium cepa, Oignon jaune, Oignon rouge;vegetable
+516;Ail;Allium sativum, Ail blanc, Ail violet;vegetable
+517;Échalote;Allium ascalonicum;vegetable
+518;Petit Pois;Pisum sativum;vegetable
+519;Épinard;Spinacia oleracea;vegetable
+520;Mâche;Valerianella locusta, Doucette;vegetable
+521;Blette;Bette, Poirée, Beta vulgaris;vegetable
+522;Betterave;Beta vulgaris, Betterave rouge;vegetable
+523;Chou-Fleur;Brassica oleracea botrytis;vegetable
+524;Brocoli;Chou brocoli;vegetable
+525;Chou Cabus;Chou pommé, Chou vert;vegetable
+526;Chou Kale;Chou frisé, Chou plume;vegetable
+527;Chou de Bruxelles;Brassica oleracea gemmifera;vegetable
+528;Navet;Brassica rapa;vegetable
+529;Céleri-Rave;Apium graveolens;vegetable
+530;Fenouil;Foeniculum vulgare, Fenouil bulbeux;vegetable
+531;Maïs Doux;Zea mays, Maïs sucré;vegetable
+532;Asperge;Asparagus officinalis;vegetable
+533;Fève;Vicia faba;vegetable
+534;Topinambour;Helianthus tuberosus, Artichaut de Jérusalem;vegetable
+535;Panais;Pastinaca sativa;vegetable
+536;Cornichon;Cucumis sativus;vegetable
+537;Oseille;Rumex acetosa;vegetable
+538;Ciboule;Allium fistulosum, Oignon vert, Cive;vegetable
+539;Estragon;Artemisia dracunculus;vegetable
+540;Aneth;Anethum graveolens, Faux anis;vegetable
+541;Cerfeuil;Anthriscus cerefolium;vegetable
+542;Chicorée Frisée;Cichorium endivia, Frisée;vegetable
+543;Endive;Chicon, Cichorium intybus;vegetable
+544;Patate Douce;Ipomoea batatas;vegetable
+545;Pâtisson;Artichaut d'Espagne, Bonnet de prêtre;vegetable
+546;Tétragone;Tetragonia tetragonioides, Épinard d'été;vegetable
+547;Roquette;Eruca sativa;vegetable
+548;Fraisier des Bois;Fragaria vesca, Fraise sauvage;vegetable
+549;Fraisier (En Pot);Fragaria, Fraise remontante;vegetable
+550;Fraisier (Pleine Terre);Fragaria, Fraise de jardin;vegetable
+551;Tomate Cerise (En Pot);Solanum lycopersicum, Tomate balcon;vegetable
+552;Tomate Cerise (Pleine Terre);Solanum lycopersicum, Tomate grappe;vegetable
+553;Radis (EnPot);Radis de balcon;vegetable
+554;Salade (En Pot);Laitue à couper, Mesclun;vegetable
+555;Verveine Citronnelle;Aloysia citrodora, Verveine odorante;vegetable
+556;Citronnelle de Madagascar;Cymbopogon, Lemongrass;vegetable
+557;Mélisse;Melissa officinalis, Citronnelle;vegetable
+558;Origan;Origanum vulgare, Marjolaine sauvage;vegetable
+559;Sarriette Vivace;Satureja montana, Poivre d'âne;vegetable
+560;Laurier Sauce (En Pot);Laurus nobilis;vegetable
+561;Rutabaga;Chou-navet;vegetable
+562;Crosne du Japon;Stachys affinis;vegetable
+563;Oca du Pérou;Oxalis tuberosa;vegetable
+564;Salsifis;Tragopogon porrifolius;vegetable
+565;Pourpier Doré;Portulaca oleracea;vegetable
+566;Cresson Alénois;Lepidium sativum, Passerage;vegetable
+567;Pissenlit;Taraxacum officinale, Dent de lion;vegetable
+568;Cardon;Cynara cardunculus;vegetable
+569;Lentille;Lens culinaris;vegetable
+570;Coqueret du Pérou;Physalis peruviana, Groseille du Cap;vegetable
+571;Framboisier (Pot / Nain);Rubus idaeus, Framboisier de balcon;vegetable
+572;Canneberge;Vaccinium macrocarpon, Cranberry;vegetable
+573;Baie de Goji;Lycium barbarum;vegetable
+574;Consoude;Symphytum officinale;outdoor
+575;Tanaisie;Tanacetum vulgare;outdoor
+576;Lin Bleu;Linum perenne, Lin vivace;outdoor
+577;Oignon Rocambole;Allium cepa proliferum, Oignon perpétuel;vegetable
+578;Poireau Perpétuel;Allium ampeloprasum;vegetable
+579;Chou Daubenton;Chou perpétuel;vegetable
+580;Raifort;Armoracia rusticana;vegetable
+581;Capucine Tubéreuse;Tropaeolum tuberosum;vegetable
+582;Poire de Terre;Yacon, Smallanthus sonchifolius;vegetable
+583;Claytone de Cuba;Pourpier d'hiver;vegetable
+584;Moutarde de Chine;Feuilles de moutarde;vegetable
+585;Mizuna;Moutarde japonaise;vegetable
+586;Tatsoi;Chou rosette;vegetable
+587;Angélique;Angelica archangelica, Herbe des anges;vegetable
+588;Camomille Romaine;Chamaemelum nobile, Camomille noble;vegetable
+589;Hysope;Hyssopus officinalis;vegetable
+590;Kiwaï;Actinidia arguta, Kiwi de Sibérie;vegetable
+591;Arroche;Atriplex hortensis, Épinard géant;vegetable
+592;Scorsonère;Scorzonera hispanica, Salsifis noir;vegetable
+593;Pois Chiche;Cicer arietinum;vegetable
+594;Marjolaine;Origanum majorana, Marjolaine à coquilles, Grand origan;vegetable
+595;Basilic Thaï;Ocimum basilicum var. thyrsiflora;vegetable
+596;Ciboulette de Chine;Allium tuberosum, Ail à couper;vegetable
+597;Sauge Ananas;Salvia elegans;vegetable
+598;Menthe Chocolat;Mentha x piperita f. citrata 'Chocolate';vegetable
+599;Oseille Sanguine;Rumex sanguineus, Oseille rouge;vegetable
+600;Agastache;Agastache foeniculum, Hysope anisée;vegetable
+601;Shiso;Perilla frutescens, Basilic japonais;vegetable
+602;Céleri à couper;Apium graveolens secalinum, Céleri chinois;vegetable
+603;Pimprenelle;Sanguisorba minor, Petite pimprenelle;vegetable
+604;Basilic (Grand Vert);Ocimum basilicum, Pistou, Basilic Genovese;vegetable
+605;Persil (En Pot);Petroselinum crispum, Persil plat, Persil frisé;vegetable
+606;Thym (En Pot);Thymus vulgaris, Farigoule;vegetable
+607;Romarin (En Pot);Rosmarinus officinalis;vegetable
+608;Ciboulette (En Pot);Allium schoenoprasum;vegetable
+609;Sauge Officinale (En Pot);Salvia officinalis;vegetable
+610;Estragon (En Pot);Artemisia dracunculus;vegetable
+611;Origan (En Pot);Origanum vulgare, Marjolaine vivace;vegetable

@@ -94,7 +94,7 @@
 93;Gynura;indoor;foliage;;;hanging
 94;Solanum Pseudocapsicum;indoor;flowering;;;shrub
 95;Nertera;indoor;foliage;;;shrub
-96;Basilic;herb;;;herb;
+96;Basilic;vegetable;;;herb;
 97;Cordyline;indoor;foliage;;;shrub
 98;Bonsaï Ulmus;indoor;foliage;;;shrub
 99;Aspidistra;indoor;foliage;;;shrub
@@ -106,10 +106,10 @@
 105;Hibiscus;indoor;flowering;;;shrub
 106;Jasmin;indoor;flowering;;;hanging
 107;Azalée;indoor;flowering;;;shrub
-108;Ciboulette;herb;;;herb;
-109;Persil;herb;;;herb;
-110;Romarin;herb;;;herb;
-111;Thym;herb;;;herb;
+108;Ciboulette;vegetable;;;herb;
+109;Persil;vegetable;;;herb;
+110;Romarin;vegetable;;;herb;
+111;Thym;vegetable;;;herb;
 112;Piment;vegetable;;;fruit;
 113;Sedum Morganianum;indoor;foliage;;;hanging
 114;Senecio Peregrinus;indoor;foliage;;;hanging
@@ -139,7 +139,7 @@
 138;Gingembre;indoor;foliage;;;shrub
 139;Passiflore;indoor;flowering;;;hanging
 140;Dipladenia;outdoor;flowering;evergreen;;climber
-141;Laurier Sauce;herb;;;herb;
+141;Laurier Sauce;vegetable;;;herb;
 142;Aralia Fabian;indoor;foliage;;;shrub
 143;Clématite;outdoor;flowering;deciduous;;climber
 144;Asplenium Parvati;indoor;foliage;;;shrub
@@ -163,7 +163,7 @@
 162;Pilea Glauca;indoor;foliage;;;hanging
 163;Eucalyptus;indoor;foliage;;;shrub
 164;Chrysanthème;outdoor;flowering;deciduous;;shrub
-165;Coriandre;herb;;;herb;
+165;Coriandre;vegetable;;;herb;
 166;Ananas;indoor;foliage;;;shrub
 167;Ixora;indoor;flowering;;;shrub
 168;Euphorbia Milii;indoor;flowering;;;shrub
@@ -186,7 +186,7 @@
 185;Epipremnum Neon;indoor;foliage;;;hanging
 186;Tephrocactus;indoor;foliage;;;shrub
 187;Ctenanthe;indoor;foliage;;;shrub
-188;Stevia;herb;;;herb;
+188;Stevia;vegetable;;;herb;
 189;Callistemon;outdoor;flowering;evergreen;;shrub
 190;Ferocactus;indoor;foliage;;;shrub
 191;Solanum;indoor;foliage;;;shrub
@@ -296,7 +296,7 @@
 295;Coquelicot;outdoor;flowering;deciduous;;shrub
 296;Tournesol;outdoor;flowering;deciduous;;shrub
 297;Muguet;outdoor;flowering;deciduous;;ground
-298;Sauge Officinale;herb;;;herb;
+298;Sauge Officinale;vegetable;;;herb;
 299;Sedum;outdoor;foliage;evergreen;;ground
 300;Joubarbe des toits;outdoor;foliage;evergreen;;ground
 301;Yucca Gloriosa;outdoor;foliage;evergreen;;shrub
@@ -324,7 +324,7 @@
 323;Pied d'alouette;outdoor;flowering;deciduous;;shrub
 324;Digitale;outdoor;flowering;deciduous;;shrub
 325;Ancolie;outdoor;flowering;deciduous;;shrub
-326;CÅur de Marie;outdoor;#N/A;#N/A;#N/A;#N/A
+326;Coeur de Marie;outdoor;#N/A;#N/A;#N/A;#N/A
 327;Bergénia;outdoor;foliage;evergreen;;ground
 328;Alchémille;outdoor;foliage;deciduous;;ground
 329;Népéta;outdoor;flowering;deciduous;;ground
@@ -332,11 +332,11 @@
 331;Scabieuse;outdoor;flowering;deciduous;;shrub
 332;Euphorbe des jardins;outdoor;foliage;evergreen;;shrub
 333;Oreille d'ours;outdoor;foliage;evergreen;;ground
-334;Immortelle d'Italie;herb;;;herb;
+334;Immortelle d'Italie;vegetable;;;herb;
 335;Santoline;outdoor;foliage;evergreen;;shrub
 336;Ciste;outdoor;flowering;evergreen;;shrub
 337;Myrte;outdoor;foliage;evergreen;;shrub
-338;Romarin Rampant;herb;;;herb;
+338;Romarin Rampant;vegetable;;;herb;
 339;Ipomée;outdoor;flowering;deciduous;;climber
 340;Pois de Senteur;outdoor;flowering;deciduous;;climber
 341;Hortensia Grimpant;outdoor;flowering;deciduous;;climber
@@ -393,247 +393,220 @@
 392;Cyclamen de Naples;outdoor;flowering;deciduous;;ground
 393;Violette Odorante;outdoor;flowering;evergreen;;ground
 394;Ilex Crenata;outdoor;foliage;evergreen;;shrub
-395;Agave;outdoor;foliage;;;shrub
-396;Yucca Filamentosa;outdoor;foliage;evergreen;;shrub
-397;Imperata;outdoor;foliage;deciduous;;ground
-398;Ophiopogon;outdoor;foliage;evergreen;;ground
-399;Laurier du Portugal;outdoor;foliage;evergreen;;shrub
-400;Troène;outdoor;foliage;evergreen;;shrub
-401;Pennisetum;outdoor;foliage;deciduous;;shrub
-402;Lys des Incas;outdoor;flowering;deciduous;;shrub
-403;Aster;outdoor;flowering;deciduous;;shrub
-404;Vergerette;outdoor;flowering;evergreen;;ground
-405;Sauge Arbustive;outdoor;flowering;deciduous;;shrub
-406;Achillée;outdoor;flowering;deciduous;;ground
-407;Caryopteris;outdoor;flowering;deciduous;;shrub
-408;Leucothoe;outdoor;foliage;evergreen;;shrub
-409;Phlomis;outdoor;foliage;evergreen;;shrub
-410;Ceratostigma;outdoor;flowering;deciduous;;shrub
-411;Gazania;outdoor;flowering;deciduous;;ground
-412;Osteospermum;outdoor;flowering;deciduous;;ground
-413;Valériane Rouge;outdoor;flowering;evergreen;;shrub
-414;Nigelle de Damas;outdoor;flowering;deciduous;;shrub
-415;Pavot de Californie;outdoor;flowering;deciduous;;ground
-416;Monarde;outdoor;flowering;deciduous;;shrub
-417;Hémérocalle;outdoor;flowering;deciduous;;shrub
-418;Benoîte;outdoor;flowering;evergreen;;ground
-419;Penstemon;outdoor;flowering;deciduous;;shrub
-420;Brunnera;outdoor;foliage;deciduous;;ground
-421;Sceau de Salomon;outdoor;foliage;deciduous;;ground
-422;Giroflée;outdoor;flowering;evergreen;;shrub
-423;Monnaie du Pape;outdoor;flowering;deciduous;;shrub
-424;Amour en cage;outdoor;foliage;deciduous;;shrub
-425;Liatris;outdoor;flowering;deciduous;;shrub
-426;Véronique Arbustive;outdoor;foliage;evergreen;;shrub
-427;Palmier Chanvre;outdoor;foliage;evergreen;;tree
-428;Pourpier Vivace;outdoor;foliage;evergreen;;ground
-429;Griffe de Sorcière;outdoor;foliage;evergreen;;ground
-430;Gazon d'Espagne;outdoor;flowering;evergreen;;ground
-431;Corbeille d'Argent;outdoor;flowering;evergreen;;ground
-432;Corbeille d'Or;outdoor;flowering;evergreen;;ground
-433;Framboisier;vegetable;;;fruitTree;
-434;Cassissier;vegetable;;;fruitTree;
-435;Mûrier (Ronce);vegetable;;;fruitTree;
-436;Kiwi;vegetable;;;fruit;
-437;Rhubarbe;vegetable;;;fruit;
-438;Artichaut;vegetable;;;fruit;
-439;Souci;outdoor;flowering;deciduous;;shrub
-440;Bourrache;herb;;;herb;
-441;Ail des Ours;herb;;;herb;
-442;Hélénie;outdoor;flowering;deciduous;;shrub
-443;Pâquerette;outdoor;flowering;evergreen;;ground
-444;Genévrier;outdoor;foliage;evergreen;;shrub
-445;Faux Cyprès;outdoor;foliage;evergreen;;tree
-446;Sauge Officinale;herb;;;herb;
-447;Millepertuis;outdoor;flowering;deciduous;;shrub
-448;Campanule;outdoor;flowering;;;hanging
-449;Myrtillier;vegetable;;;fruitTree;
-450;Groseillier à maquereau;vegetable;;;fruitTree;
-451;Kaki;vegetable;;;fruitTree;
-452;Amandier;vegetable;;;fruitTree;
-453;Saule Crevette;outdoor;foliage;deciduous;;shrub
-454;Cerisier du Japon;outdoor;flowering;deciduous;;tree
-455;Prunier Pourpre;outdoor;foliage;deciduous;;tree
-456;Noisetier Tortueux;outdoor;foliage;deciduous;;shrub
-457;Sorbier des oiseleurs;outdoor;flowering;deciduous;;tree
-458;Mûrier Platane;outdoor;foliage;deciduous;;tree
-459;Cytise;outdoor;flowering;deciduous;;tree
-460;Épicéa;outdoor;foliage;evergreen;;tree
-461;Sapin Bleu;outdoor;foliage;evergreen;;tree
-462;Pin Mugo;outdoor;foliage;evergreen;;shrub
-463;Mélèze;outdoor;foliage;deciduous;;tree
-464;Araucaria;outdoor;foliage;;;shrub
-465;Genévrier Rampant;outdoor;foliage;evergreen;;ground
-466;Faux-Cyprès;outdoor;foliage;evergreen;;tree
-467;Cryptomeria;outdoor;foliage;evergreen;;tree
-468;Feijoa;outdoor;foliage;evergreen;;shrub
-469;Kumquat;outdoor;foliage;evergreen;;shrub
-470;Chamaerops;outdoor;foliage;evergreen;;shrub
-471;Genêt;outdoor;flowering;deciduous;;shrub
-472;Laurier du Portugal;outdoor;foliage;evergreen;;shrub
-473;Troène;outdoor;foliage;evergreen;;shrub
-474;Hortensia à feuilles de chêne;outdoor;foliage;deciduous;;shrub
-475;Hortensia Annabelle;outdoor;flowering;deciduous;;shrub
-476;Viorne à feuilles ridées;outdoor;foliage;evergreen;;shrub
-477;Cotoneaster Lacteus;outdoor;foliage;evergreen;;shrub
-478;Céanothe;outdoor;flowering;evergreen;;shrub
-479;Abélia;outdoor;flowering;evergreen;;shrub
-480;Cornouiller Sanguin;outdoor;foliage;deciduous;;shrub
-481;Arbre à Perruque;outdoor;foliage;deciduous;;shrub
-482;Berberis;outdoor;foliage;deciduous;;shrub
-483;Symphorine;outdoor;foliage;deciduous;;shrub
-484;Corête du Japon;outdoor;flowering;deciduous;;shrub
-485;Callune;outdoor;flowering;evergreen;;ground
-486;Sauge Arbustive;outdoor;flowering;deciduous;;shrub
-487;Caryopteris;outdoor;flowering;deciduous;;shrub
-488;Potentille Arbustive;outdoor;flowering;deciduous;;shrub
-489;Perovskia;outdoor;foliage;deciduous;;shrub
-490;Leucothoe;outdoor;foliage;evergreen;;shrub
-491;Skimmia;outdoor;foliage;evergreen;;shrub
-492;Andromède;outdoor;foliage;evergreen;;shrub
-493;Prunellier;outdoor;flowering;deciduous;;shrub
-494;Aubépine;outdoor;flowering;deciduous;;tree
-495;Fusain Panaché;outdoor;foliage;evergreen;;ground
-496;Chèvrefeuille arbustif;outdoor;foliage;evergreen;;shrub
-497;Houx Panaché;outdoor;foliage;evergreen;;shrub
-498;Olivier (En Pot);outdoor;foliage;evergreen;;tree
-499;Olivier (Pleine terre);outdoor;foliage;evergreen;;tree
-500;Citronnier (En Pot);outdoor;foliage;evergreen;;shrub
-501;Citronnier (Pleine terre);outdoor;foliage;evergreen;;shrub
-502;Laurier Rose (En Pot);outdoor;flowering;evergreen;;shrub
-503;Laurier Rose (Pleine terre);outdoor;flowering;evergreen;;shrub
-504;Érable du Japon (En Pot);outdoor;foliage;deciduous;;shrub
-505;Érable du Japon (Pleine terre);outdoor;foliage;deciduous;;shrub
-506;Hortensia (En Pot);outdoor;flowering;deciduous;;shrub
-507;Hortensia (Pleine terre);outdoor;flowering;deciduous;;shrub
-508;Bambou (En Pot);outdoor;foliage;evergreen;;shrub
-509;Bambou (Pleine terre);outdoor;foliage;evergreen;;shrub
-510;Menthe (En Pot);herb;;;herb;
-511;Menthe (Pleine terre);herb;;;herb;
-512;Bougainvillier (En Pot);outdoor;flowering;deciduous;;climber
-513;Bougainvillier (Pleine terre);outdoor;flowering;deciduous;;climber
-514;Lavande (En Pot);outdoor;flowering;evergreen;;shrub
-515;Lavande (Pleine terre);outdoor;flowering;evergreen;;shrub
-516;Figuier (En Pot);vegetable;;;fruitTree;
-517;Figuier (Pleine terre);vegetable;;;fruitTree;
-518;Rosier (Pot);outdoor;flowering;deciduous;;shrub
-519;Rosier (Pleine terre);outdoor;flowering;deciduous;;shrub
-520;Camélia (En Pot);outdoor;flowering;evergreen;;shrub
-521;Camélia (Pleine terre);outdoor;flowering;evergreen;;shrub
-522;Tomate;vegetable;;;fruit;
-523;Courgette;vegetable;;;fruit;
-524;Concombre;vegetable;;;fruit;
-525;Aubergine;vegetable;;;fruit;
-526;Poivron;vegetable;;;fruit;
-527;Haricot Vert;vegetable;;;fruit;
-528;Radis;vegetable;;;root;
-529;Carotte;vegetable;;;root;
-530;Laitue;vegetable;;;leaf;
-531;Pomme de Terre;vegetable;;;root;
-532;Potiron;vegetable;;;fruit;
-533;Courge Butternut;vegetable;;;fruit;
-534;Melon;vegetable;;;fruit;
-535;Poireau;vegetable;;;leaf;
-536;Oignon;vegetable;;;root;
-537;Ail;vegetable;;;root;
-538;Échalote;vegetable;;;root;
-539;Petit Pois;vegetable;;;fruit;
-540;Épinard;vegetable;;;leaf;
-541;Mâche;vegetable;;;leaf;
-542;Blette;vegetable;;;leaf;
-543;Betterave;vegetable;;;root;
-544;Chou-Fleur;vegetable;;;fruit;
-545;Brocoli;vegetable;;;fruit;
-546;Chou Cabus;vegetable;;;leaf;
-547;Chou Kale;vegetable;;;leaf;
-548;Chou de Bruxelles;vegetable;;;leaf;
-549;Navet;vegetable;;;root;
-550;Céleri-Rave;vegetable;;;root;
-551;Fenouil;vegetable;;;leaf;
-552;Maïs Doux;vegetable;;;fruit;
-553;Asperge;vegetable;;;fruit;
-554;Fève;vegetable;;;fruit;
-555;Topinambour;vegetable;;;root;
-556;Panais;vegetable;;;root;
-557;Cornichon;vegetable;;;fruit;
-558;Oseille;vegetable;;;herb;
-559;Ciboulette;herb;;;herb;
-560;Ciboule;herb;;;herb;
-561;Estragon;herb;;;herb;
-562;Coriandre;herb;;;herb;
-563;Aneth;herb;;;herb;
-564;Cerfeuil;herb;;;herb;
-565;Sauge Officinale;herb;;;herb;
-566;Chicorée Frisée;vegetable;;;leaf;
-567;Endive;vegetable;;;leaf;
-568;Patate Douce;vegetable;;;root;
-569;Pâtisson;vegetable;;;fruit;
-570;Tétragone;vegetable;;;leaf;
-571;Roquette;vegetable;;;leaf;
-572;Fraisier des Bois;vegetable;;;fruitTree;
-573;Fraisier (En Pot);vegetable;;;fruitTree;
-574;Fraisier (Pleine Terre);vegetable;;;fruitTree;
-575;Tomate Cerise (En Pot);vegetable;;;fruit;
-576;Tomate Cerise (Pleine Terre);vegetable;;;fruit;
-577;Radis (EnPot);vegetable;;;root;
-578;Salade (En Pot);vegetable;;;leaf;
-579;Verveine Citronnelle;herb;;;herb;
-580;Citronnelle de Madagascar;herb;;;herb;
-581;Mélisse;herb;;;herb;
-582;Origan;herb;;;herb;
-583;Sarriette Vivace;herb;;;herb;
-584;Laurier Sauce (En Pot);herb;;;herb;
-585;Rutabaga;vegetable;;;root;
-586;Crosne du Japon;vegetable;;;root;
-587;Oca du Pérou;vegetable;;;root;
-588;Salsifis;vegetable;;;root;
-589;Pourpier Doré;vegetable;;;leaf;
-590;Cresson Alénois;vegetable;;;leaf;
-591;Pissenlit;vegetable;;;leaf;
-592;Cardon;vegetable;;;leaf;
-593;Lentille;vegetable;;;fruit;
-594;Coqueret du Pérou;vegetable;;;fruit;
-595;Framboisier (Pot / Nain);vegetable;;;fruitTree;
-596;Canneberge;vegetable;;;fruitTree;
-597;Baie de Goji;vegetable;;;fruitTree;
-598;Consoude;outdoor;foliage;deciduous;;ground
-599;Tanaisie;outdoor;foliage;deciduous;;shrub
-600;Lin Bleu;outdoor;flowering;deciduous;;shrub
-601;Oignon Rocambole;vegetable;;;root;
-602;Poireau Perpétuel;vegetable;;;leaf;
-603;Chou Daubenton;vegetable;;;leaf;
-604;Raifort;vegetable;;;root;
-605;Capucine Tubéreuse;vegetable;;;root;
-606;Poire de Terre;vegetable;;;root;
-607;Claytone de Cuba;vegetable;;;leaf;
-608;Moutarde de Chine;vegetable;;;leaf;
-609;Mizuna;vegetable;;;leaf;
-610;Tatsoi;vegetable;;;leaf;
-611;Angélique;herb;;;herb;
-612;Camomille Romaine;herb;;;herb;
-613;Bourrache;herb;;;herb;
-614;Hysope;herb;;;herb;
-615;Kiwaï;vegetable;;;fruit;
-616;Mâche;vegetable;;;leaf;
-617;Arroche;vegetable;;;leaf;
-618;Scorsonère;vegetable;;;root;
-619;Pois Chiche;vegetable;;;fruit;
-620;Marjolaine;herb;;;herb;
-621;Basilic Thaï;herb;;;herb;
-622;Ciboulette de Chine;herb;;;herb;
-623;Sauge Ananas;herb;;;herb;
-624;Menthe Chocolat;herb;;;herb;
-625;Oseille Sanguine;herb;;;herb;
-626;Agastache;herb;;;herb;
-627;Shiso;herb;;;herb;
-628;Céleri à couper;herb;;;leaf;
-629;Pimprenelle;herb;;;herb;
-630;Basilic (Grand Vert);herb;;;herb;
-631;Persil (En Pot);herb;;;herb;
-632;Thym (En Pot);herb;;;herb;
-633;Romarin (En Pot);herb;;;herb;
-634;Ciboulette (En Pot);herb;;;herb;
-635;Sauge Officinale (En Pot);herb;;;herb;
-636;Laurier Sauce (En Pot);herb;;;herb;
-637;Estragon (En Pot);herb;;;herb;
-638;Origan (En Pot);herb;;;herb;
+395;Yucca Filamentosa;outdoor;foliage;evergreen;;shrub
+396;Imperata;outdoor;foliage;deciduous;;ground
+397;Ophiopogon;outdoor;foliage;evergreen;;ground
+398;Laurier du Portugal;outdoor;foliage;evergreen;;shrub
+399;Troène;outdoor;foliage;evergreen;;shrub
+400;Pennisetum;outdoor;foliage;deciduous;;shrub
+401;Lys des Incas;outdoor;flowering;deciduous;;shrub
+402;Aster;outdoor;flowering;deciduous;;shrub
+403;Vergerette;outdoor;flowering;evergreen;;ground
+404;Sauge Arbustive;outdoor;flowering;deciduous;;shrub
+405;Achillée;outdoor;flowering;deciduous;;ground
+406;Caryopteris;outdoor;flowering;deciduous;;shrub
+407;Leucothoe;outdoor;foliage;evergreen;;shrub
+408;Phlomis;outdoor;foliage;evergreen;;shrub
+409;Ceratostigma;outdoor;flowering;deciduous;;shrub
+410;Gazania;outdoor;flowering;deciduous;;ground
+411;Osteospermum;outdoor;flowering;deciduous;;ground
+412;Valériane Rouge;outdoor;flowering;evergreen;;shrub
+413;Nigelle de Damas;outdoor;flowering;deciduous;;shrub
+414;Pavot de Californie;outdoor;flowering;deciduous;;ground
+415;Monarde;outdoor;flowering;deciduous;;shrub
+416;Hémérocalle;outdoor;flowering;deciduous;;shrub
+417;Benoîte;outdoor;flowering;evergreen;;ground
+418;Penstemon;outdoor;flowering;deciduous;;shrub
+419;Brunnera;outdoor;foliage;deciduous;;ground
+420;Sceau de Salomon;outdoor;foliage;deciduous;;ground
+421;Giroflée;outdoor;flowering;evergreen;;shrub
+422;Monnaie du Pape;outdoor;flowering;deciduous;;shrub
+423;Amour en cage;outdoor;foliage;deciduous;;shrub
+424;Liatris;outdoor;flowering;deciduous;;shrub
+425;Véronique Arbustive;outdoor;foliage;evergreen;;shrub
+426;Palmier Chanvre;outdoor;foliage;evergreen;;tree
+427;Pourpier Vivace;outdoor;foliage;evergreen;;ground
+428;Griffe de Sorcière;outdoor;foliage;evergreen;;ground
+429;Gazon d'Espagne;outdoor;flowering;evergreen;;ground
+430;Corbeille d'Argent;outdoor;flowering;evergreen;;ground
+431;Corbeille d'Or;outdoor;flowering;evergreen;;ground
+432;Framboisier;vegetable;;;fruitTree;
+433;Cassissier;vegetable;;;fruitTree;
+434;Mûrier (Ronce);vegetable;;;fruitTree;
+435;Kiwi;vegetable;;;fruit;
+436;Rhubarbe;vegetable;;;fruit;
+437;Artichaut;vegetable;;;fruit;
+438;Souci;outdoor;flowering;deciduous;;shrub
+439;Bourrache;vegetable;;;herb;
+440;Ail des Ours;vegetable;;;herb;
+441;Hélénie;outdoor;flowering;deciduous;;shrub
+442;Pâquerette;outdoor;flowering;evergreen;;ground
+443;Genévrier;outdoor;foliage;evergreen;;shrub
+444;Faux Cyprès;outdoor;foliage;evergreen;;tree
+445;Myrtillier;vegetable;;;fruitTree;
+446;Groseillier à maquereau;vegetable;;;fruitTree;
+447;Kaki;vegetable;;;fruitTree;
+448;Amandier;vegetable;;;fruitTree;
+449;Saule Crevette;outdoor;foliage;deciduous;;shrub
+450;Cerisier du Japon;outdoor;flowering;deciduous;;tree
+451;Prunier Pourpre;outdoor;foliage;deciduous;;tree
+452;Noisetier Tortueux;outdoor;foliage;deciduous;;shrub
+453;Sorbier des oiseleurs;outdoor;flowering;deciduous;;tree
+454;Mûrier Platane;outdoor;foliage;deciduous;;tree
+455;Cytise;outdoor;flowering;deciduous;;tree
+456;Épicéa;outdoor;foliage;evergreen;;tree
+457;Sapin Bleu;outdoor;foliage;evergreen;;tree
+458;Pin Mugo;outdoor;foliage;evergreen;;shrub
+459;Mélèze;outdoor;foliage;deciduous;;tree
+460;Genévrier Rampant;outdoor;foliage;evergreen;;ground
+461;Faux-Cyprès;outdoor;foliage;evergreen;;tree
+462;Cryptomeria;outdoor;foliage;evergreen;;tree
+463;Feijoa;outdoor;foliage;evergreen;;shrub
+464;Kumquat;outdoor;foliage;evergreen;;shrub
+465;Chamaerops;outdoor;foliage;evergreen;;shrub
+466;Genêt;outdoor;flowering;deciduous;;shrub
+467;Hortensia à feuilles de chêne;outdoor;foliage;deciduous;;shrub
+468;Hortensia Annabelle;outdoor;flowering;deciduous;;shrub
+469;Viorne à feuilles ridées;outdoor;foliage;evergreen;;shrub
+470;Cotoneaster Lacteus;outdoor;foliage;evergreen;;shrub
+471;Callune;outdoor;flowering;evergreen;;ground
+472;Perovskia;outdoor;foliage;deciduous;;shrub
+473;Prunellier;outdoor;flowering;deciduous;;shrub
+474;Aubépine;outdoor;flowering;deciduous;;tree
+475;Fusain Panaché;outdoor;foliage;evergreen;;ground
+476;Houx Panaché;outdoor;foliage;evergreen;;shrub
+477;Olivier (En Pot);outdoor;foliage;evergreen;;tree
+478;Olivier (Pleine terre);outdoor;foliage;evergreen;;tree
+479;Citronnier (En Pot);outdoor;foliage;evergreen;;shrub
+480;Citronnier (Pleine terre);outdoor;foliage;evergreen;;shrub
+481;Laurier Rose (En Pot);outdoor;flowering;evergreen;;shrub
+482;Laurier Rose (Pleine terre);outdoor;flowering;evergreen;;shrub
+483;Érable du Japon (En Pot);outdoor;foliage;deciduous;;shrub
+484;Érable du Japon (Pleine terre);outdoor;foliage;deciduous;;shrub
+485;Hortensia (En Pot);outdoor;flowering;deciduous;;shrub
+486;Hortensia (Pleine terre);outdoor;flowering;deciduous;;shrub
+487;Bambou (En Pot);outdoor;foliage;evergreen;;shrub
+488;Bambou (Pleine terre);outdoor;foliage;evergreen;;shrub
+489;Menthe (En Pot);vegetable;;;herb;
+490;Menthe (Pleine terre);vegetable;;;herb;
+491;Bougainvillier (En Pot);outdoor;flowering;deciduous;;climber
+492;Bougainvillier (Pleine terre);outdoor;flowering;deciduous;;climber
+493;Lavande (En Pot);outdoor;flowering;evergreen;;shrub
+494;Lavande (Pleine terre);outdoor;flowering;evergreen;;shrub
+495;Figuier (En Pot);vegetable;;;fruitTree;
+496;Figuier (Pleine terre);vegetable;;;fruitTree;
+497;Rosier (Pot);outdoor;flowering;deciduous;;shrub
+498;Rosier (Pleine terre);outdoor;flowering;deciduous;;shrub
+499;Camélia (En Pot);outdoor;flowering;evergreen;;shrub
+500;Camélia (Pleine terre);outdoor;flowering;evergreen;;shrub
+501;Tomate;vegetable;;;fruit;
+502;Courgette;vegetable;;;fruit;
+503;Concombre;vegetable;;;fruit;
+504;Aubergine;vegetable;;;fruit;
+505;Poivron;vegetable;;;fruit;
+506;Haricot Vert;vegetable;;;fruit;
+507;Radis;vegetable;;;root;
+508;Carotte;vegetable;;;root;
+509;Laitue;vegetable;;;leaf;
+510;Pomme de Terre;vegetable;;;root;
+511;Potiron;vegetable;;;fruit;
+512;Courge Butternut;vegetable;;;fruit;
+513;Melon;vegetable;;;fruit;
+514;Poireau;vegetable;;;leaf;
+515;Oignon;vegetable;;;root;
+516;Ail;vegetable;;;root;
+517;Échalote;vegetable;;;root;
+518;Petit Pois;vegetable;;;fruit;
+519;Épinard;vegetable;;;leaf;
+520;Mâche;vegetable;;;leaf;
+521;Blette;vegetable;;;leaf;
+522;Betterave;vegetable;;;root;
+523;Chou-Fleur;vegetable;;;fruit;
+524;Brocoli;vegetable;;;fruit;
+525;Chou Cabus;vegetable;;;leaf;
+526;Chou Kale;vegetable;;;leaf;
+527;Chou de Bruxelles;vegetable;;;leaf;
+528;Navet;vegetable;;;root;
+529;Céleri-Rave;vegetable;;;root;
+530;Fenouil;vegetable;;;leaf;
+531;Maïs Doux;vegetable;;;fruit;
+532;Asperge;vegetable;;;fruit;
+533;Fève;vegetable;;;fruit;
+534;Topinambour;vegetable;;;root;
+535;Panais;vegetable;;;root;
+536;Cornichon;vegetable;;;fruit;
+537;Oseille;vegetable;;;herb;
+538;Ciboule;vegetable;;;herb;
+539;Estragon;vegetable;;;herb;
+540;Aneth;vegetable;;;herb;
+541;Cerfeuil;vegetable;;;herb;
+542;Chicorée Frisée;vegetable;;;leaf;
+543;Endive;vegetable;;;leaf;
+544;Patate Douce;vegetable;;;root;
+545;Pâtisson;vegetable;;;fruit;
+546;Tétragone;vegetable;;;leaf;
+547;Roquette;vegetable;;;leaf;
+548;Fraisier des Bois;vegetable;;;fruitTree;
+549;Fraisier (En Pot);vegetable;;;fruitTree;
+550;Fraisier (Pleine Terre);vegetable;;;fruitTree;
+551;Tomate Cerise (En Pot);vegetable;;;fruit;
+552;Tomate Cerise (Pleine Terre);vegetable;;;fruit;
+553;Radis (EnPot);vegetable;;;root;
+554;Salade (En Pot);vegetable;;;leaf;
+555;Verveine Citronnelle;vegetable;;;herb;
+556;Citronnelle de Madagascar;vegetable;;;herb;
+557;Mélisse;vegetable;;;herb;
+558;Origan;vegetable;;;herb;
+559;Sarriette Vivace;vegetable;;;herb;
+560;Laurier Sauce (En Pot);vegetable;;;herb;
+561;Rutabaga;vegetable;;;root;
+562;Crosne du Japon;vegetable;;;root;
+563;Oca du Pérou;vegetable;;;root;
+564;Salsifis;vegetable;;;root;
+565;Pourpier Doré;vegetable;;;leaf;
+566;Cresson Alénois;vegetable;;;leaf;
+567;Pissenlit;vegetable;;;leaf;
+568;Cardon;vegetable;;;leaf;
+569;Lentille;vegetable;;;fruit;
+570;Coqueret du Pérou;vegetable;;;fruit;
+571;Framboisier (Pot / Nain);vegetable;;;fruitTree;
+572;Canneberge;vegetable;;;fruitTree;
+573;Baie de Goji;vegetable;;;fruitTree;
+574;Consoude;outdoor;foliage;deciduous;;ground
+575;Tanaisie;outdoor;foliage;deciduous;;shrub
+576;Lin Bleu;outdoor;flowering;deciduous;;shrub
+577;Oignon Rocambole;vegetable;;;root;
+578;Poireau Perpétuel;vegetable;;;leaf;
+579;Chou Daubenton;vegetable;;;leaf;
+580;Raifort;vegetable;;;root;
+581;Capucine Tubéreuse;vegetable;;;root;
+582;Poire de Terre;vegetable;;;root;
+583;Claytone de Cuba;vegetable;;;leaf;
+584;Moutarde de Chine;vegetable;;;leaf;
+585;Mizuna;vegetable;;;leaf;
+586;Tatsoi;vegetable;;;leaf;
+587;Angélique;vegetable;;;herb;
+588;Camomille Romaine;vegetable;;;herb;
+589;Hysope;vegetable;;;herb;
+590;Kiwaï;vegetable;;;fruit;
+591;Arroche;vegetable;;;leaf;
+592;Scorsonère;vegetable;;;root;
+593;Pois Chiche;vegetable;;;fruit;
+594;Marjolaine;vegetable;;;herb;
+595;Basilic Thaï;vegetable;;;herb;
+596;Ciboulette de Chine;vegetable;;;herb;
+597;Sauge Ananas;vegetable;;;herb;
+598;Menthe Chocolat;vegetable;;;herb;
+599;Oseille Sanguine;vegetable;;;herb;
+600;Agastache;vegetable;;;herb;
+601;Shiso;vegetable;;;herb;
+602;Céleri à couper;vegetable;;;leaf;
+603;Pimprenelle;vegetable;;;herb;
+604;Basilic (Grand Vert);vegetable;;;herb;
+605;Persil (En Pot);vegetable;;;herb;
+606;Thym (En Pot);vegetable;;;herb;
+607;Romarin (En Pot);vegetable;;;herb;
+608;Ciboulette (En Pot);vegetable;;;herb;
+609;Sauge Officinale (En Pot);vegetable;;;herb;
+610;Estragon (En Pot);vegetable;;;herb;
+611;Origan (En Pot);vegetable;;;herb;
