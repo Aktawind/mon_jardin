@@ -19,6 +19,7 @@ import 'photo_gallery_screen.dart';
 import '../../models/plant_event.dart';
 import '../../services/encyclopedia_service.dart';
 import '../../models/enums.dart';
+import 'encyclopedia_detail_screen.dart';
 
 class PlantDetailScreen extends StatefulWidget {
   final Plant plant;
@@ -304,6 +305,14 @@ class _PlantDetailScreenState extends State<PlantDetailScreen> {
                           onHistory: () {
                              Navigator.push(context, MaterialPageRoute(builder: (context) => HistoryScreen(plant: _plant)));
                           },
+                          onEncyclopedia: () {
+                            final data = EncyclopediaService().getData(_plant.species);
+                            if (data != null) {
+                              Navigator.push(context, MaterialPageRoute(builder: (_) => EncyclopediaDetailScreen(data: data)));
+                            } else {
+                              ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text("Pas de fiche trouvée pour cette espèce.")));
+                            }
+                          },
                           onAlbum: _openAlbum,
                         ),
                       );
@@ -312,6 +321,19 @@ class _PlantDetailScreenState extends State<PlantDetailScreen> {
                 ),
               ),
             ],
+            leading: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Container(
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: Colors.black.withOpacity(0.3),
+                ),
+                child: IconButton(
+                  icon: const Icon(Icons.arrow_back, color: Colors.white),
+                  onPressed: () => Navigator.pop(context),
+                ),
+              ),
+            ),
             flexibleSpace: FlexibleSpaceBar(
               title: Text(_plant.displayName, 
                 style: const TextStyle(

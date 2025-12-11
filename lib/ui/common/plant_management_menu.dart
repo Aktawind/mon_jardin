@@ -13,6 +13,7 @@ class PlantManagementMenu extends StatelessWidget {
   final VoidCallback onDelete;
   final VoidCallback onHistory;
   final VoidCallback onAlbum;
+  final VoidCallback onEncyclopedia;
 
   const PlantManagementMenu({
     super.key,
@@ -21,6 +22,7 @@ class PlantManagementMenu extends StatelessWidget {
     required this.onDelete,
     required this.onHistory,
     required this.onAlbum,
+    required this.onEncyclopedia,
   });
 
   @override
@@ -34,17 +36,18 @@ class PlantManagementMenu extends StatelessWidget {
       child: SafeArea(
         child: Column(
           mainAxisSize: MainAxisSize.min,
-          children: [
-            Text(
-              "Gérer ${plant.name}",
-              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Theme.of(context).colorScheme.primary),
-            ),
-            const SizedBox(height: 16),
-            
+          children: [          
             ListTile(
-              leading: const Icon(Icons.photo_library, color: Colors.indigo),
+              leading: const Icon(Icons.menu_book, color: Colors.blueGrey),
+              title: const Text("Fiche encyclopédique"),
+              onTap: () {
+                Navigator.pop(context);
+                onEncyclopedia();
+              },
+            ),
+            ListTile(
+              leading: const Icon(Icons.photo_library, color: Colors.blueGrey),
               title: const Text("Album Photo"),
-              subtitle: const Text("Voir la croissance"),
               onTap: () {
                 Navigator.pop(context);
                 onAlbum();
@@ -53,7 +56,6 @@ class PlantManagementMenu extends StatelessWidget {
             ListTile(
               leading: const Icon(Icons.history, color: Colors.blueGrey),
               title: const Text("Journal des actions"),
-              subtitle: const Text("Historique des soins"),
               onTap: () {
                 Navigator.pop(context);
                 onHistory();

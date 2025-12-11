@@ -8,7 +8,7 @@ import '../../models/enums.dart';
 import '../../services/plant_match_maker.dart';
 import '../../models/plant_species_data.dart';
 import '../common/main_drawer.dart';
-import 'add_plant_screen.dart';
+import 'encyclopedia_detail_screen.dart';
 
 class PlantFinderScreen extends StatefulWidget {
   const PlantFinderScreen({super.key});
@@ -370,13 +370,8 @@ class _PlantFinderScreenState extends State<PlantFinderScreen> {
                     icon: const Icon(Icons.add_circle_outline, color: Colors.green),
                     onPressed: () {
                       Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (_) => AddPlantScreen(
-                            initialLocation: _catToString(plantData.category), // Helper à créer
-                            preSelectedSpecies: plantData.species,
-                          ),
-                        ),
+                        context, 
+                        MaterialPageRoute(builder: (_) => EncyclopediaDetailScreen(data: plantData))
                       );
                     },
                   ),
@@ -453,12 +448,6 @@ class _PlantFinderScreenState extends State<PlantFinderScreen> {
         contentPadding: EdgeInsets.zero,
       );
     }
-
-  String _catToString(PlantCategory cat) {
-    if (cat == PlantCategory.indoor) return 'Intérieur';
-    if (cat == PlantCategory.vegetable) return 'Potager';
-    return 'Extérieur';
-  }
 
   Color _stringToColor(String str) {
     int hash = 0;
