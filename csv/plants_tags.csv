@@ -1,4 +1,4 @@
-id;species;category;esthetic;foliage;type;height
+ï»¿id;species;category;esthetic;foliage;type;height
 1;Sansevieria;indoor;foliage;;;shrub
 2;Monstera Deliciosa;indoor;foliage;;;shrub
 3;Pilea Peperomioides;indoor;foliage;;;shrub
@@ -34,7 +34,7 @@ id;species;category;esthetic;foliage;type;height
 33;Peperomia Obtusifolia;indoor;foliage;;;shrub
 34;Ceropegia;indoor;foliage;;;hanging
 35;Senecio Rowleyanus;indoor;foliage;;;hanging
-36;Fougère de Boston;indoor;foliage;;;hanging
+36;FougÃ¨re de Boston;indoor;foliage;;;hanging
 37;Asplenium;indoor;foliage;;;shrub
 38;Schefflera;indoor;foliage;;;shrub
 39;Hedera;indoor;foliage;;;hanging
@@ -96,7 +96,7 @@ id;species;category;esthetic;foliage;type;height
 95;Nertera;indoor;foliage;;;shrub
 96;Basilic;herb;;;herb;
 97;Cordyline;indoor;foliage;;;shrub
-98;Bonsaï Ulmus;indoor;foliage;;;shrub
+98;BonsaÃ¯ Ulmus;indoor;foliage;;;shrub
 99;Aspidistra;indoor;foliage;;;shrub
 100;Lucky Bamboo;indoor;foliage;;;shrub
 101;Scindapsus Pictus;indoor;foliage;;;hanging
@@ -105,7 +105,7 @@ id;species;category;esthetic;foliage;type;height
 104;Begonia Rex;indoor;foliage;;;shrub
 105;Hibiscus;indoor;flowering;;;shrub
 106;Jasmin;indoor;flowering;;;hanging
-107;Azalée;indoor;flowering;;;shrub
+107;AzalÃ©e;indoor;flowering;;;shrub
 108;Ciboulette;herb;;;herb;
 109;Persil;herb;;;herb;
 110;Romarin;herb;;;herb;
@@ -119,7 +119,7 @@ id;species;category;esthetic;foliage;type;height
 118;Coleus;indoor;foliage;;;shrub
 119;Pelargonium;outdoor;flowering;deciduous;;shrub
 120;Campanule;indoor;flowering;;;hanging
-121;Primevère;indoor;flowering;;;shrub
+121;PrimevÃ¨re;indoor;flowering;;;shrub
 122;Gloxinia;indoor;flowering;;;shrub
 123;Nematanthus;indoor;flowering;;;hanging
 124;Saxifraga Stolonifera;indoor;foliage;;;hanging
@@ -141,7 +141,7 @@ id;species;category;esthetic;foliage;type;height
 140;Dipladenia;outdoor;flowering;evergreen;;climber
 141;Laurier Sauce;herb;;;herb;
 142;Aralia Fabian;indoor;foliage;;;shrub
-143;Clématite;outdoor;flowering;deciduous;;climber
+143;ClÃ©matite;outdoor;flowering;deciduous;;climber
 144;Asplenium Parvati;indoor;foliage;;;shrub
 145;Amaryllis;indoor;flowering;;;shrub
 146;Mammillaria;indoor;foliage;;;shrub
@@ -162,7 +162,7 @@ id;species;category;esthetic;foliage;type;height
 161;Blechnum;indoor;foliage;;;shrub
 162;Pilea Glauca;indoor;foliage;;;hanging
 163;Eucalyptus;indoor;foliage;;;shrub
-164;Chrysanthème;outdoor;flowering;deciduous;;shrub
+164;ChrysanthÃ¨me;outdoor;flowering;deciduous;;shrub
 165;Coriandre;herb;;;herb;
 166;Ananas;indoor;foliage;;;shrub
 167;Ixora;indoor;flowering;;;shrub
@@ -199,13 +199,13 @@ id;species;category;esthetic;foliage;type;height
 198;Poirier;vegetable;;;fruitTree;
 199;Cerisier;vegetable;;;fruitTree;
 200;Prunier;vegetable;;;fruitTree;
-201;Pêcher;vegetable;;;fruitTree;
+201;PÃªcher;vegetable;;;fruitTree;
 202;Abricotier;vegetable;;;fruitTree;
 203;Noyer;vegetable;;;fruitTree;
 204;Noisetier;vegetable;;;fruitTree;
 205;Erable du Japon;outdoor;foliage;deciduous;;shrub
 206;Bouleau;outdoor;foliage;deciduous;;tree
-207;Chêne;outdoor;foliage;deciduous;;tree
+207;ChÃªne;outdoor;foliage;deciduous;;tree
 208;Saule Pleureur;outdoor;foliage;deciduous;;tree
 209;Tilleul;outdoor;foliage;deciduous;;tree
 210;Albizia;outdoor;flowering;deciduous;;tree
@@ -215,8 +215,8 @@ id;species;category;esthetic;foliage;type;height
 214;Ginkgo Biloba;outdoor;foliage;deciduous;;tree
 215;Lilas des Indes;outdoor;flowering;deciduous;;shrub
 216;Thuya;outdoor;foliage;evergreen;;tree
-217;Cyprès de Leyland;outdoor;foliage;evergreen;;tree
-218;Sapin de Noël;outdoor;foliage;evergreen;;tree
+217;CyprÃ¨s de Leyland;outdoor;foliage;evergreen;;tree
+218;Sapin de NoÃ«l;outdoor;foliage;evergreen;;tree
 219;Pin Parasol;outdoor;foliage;evergreen;;tree
 220;Photinia;outdoor;foliage;evergreen;;shrub
 221;Laurier Palme;outdoor;foliage;evergreen;;shrub
@@ -226,15 +226,15 @@ id;species;category;esthetic;foliage;type;height
 225;Sureau;outdoor;foliage;deciduous;;shrub
 226;Glycine;outdoor;flowering;deciduous;;climber
 227;Vigne;vegetable;;;fruit;
-228;Cyprès de Provence;outdoor;foliage;evergreen;;tree
-229;Cèdre;outdoor;foliage;evergreen;;tree
+228;CyprÃ¨s de Provence;outdoor;foliage;evergreen;;tree
+229;CÃ¨dre;outdoor;foliage;evergreen;;tree
 230;If;outdoor;foliage;evergreen;;tree
 231;Charme;outdoor;foliage;deciduous;;tree
 232;Marronnier;outdoor;flowering;deciduous;;tree
 233;Platane;outdoor;foliage;deciduous;;tree
-234;Hêtre;outdoor;foliage;deciduous;;tree
+234;HÃªtre;outdoor;foliage;deciduous;;tree
 235;Peuplier;outdoor;foliage;deciduous;;tree
-236;Eucalyptus (Extérieur);outdoor;foliage;evergreen;;tree
+236;Eucalyptus (ExtÃ©rieur);outdoor;foliage;evergreen;;tree
 237;Catalpa;outdoor;foliage;deciduous;;tree
 238;Paulownia;outdoor;flowering;deciduous;;tree
 239;Liquidambar;outdoor;foliage;deciduous;;tree
@@ -247,8 +247,8 @@ id;species;category;esthetic;foliage;type;height
 246;Seringat;outdoor;flowering;deciduous;;shrub
 247;Weigela;outdoor;flowering;deciduous;;shrub
 248;Althea;outdoor;flowering;deciduous;;shrub
-249;Spirée;outdoor;flowering;deciduous;;shrub
-250;Hortensia Paniculé;outdoor;flowering;deciduous;;shrub
+249;SpirÃ©e;outdoor;flowering;deciduous;;shrub
+250;Hortensia PaniculÃ©;outdoor;flowering;deciduous;;shrub
 251;Deutzia;outdoor;flowering;deciduous;;shrub
 252;Pyracantha;outdoor;foliage;evergreen;;shrub
 253;Eleagnus;outdoor;foliage;evergreen;;shrub
@@ -257,41 +257,41 @@ id;species;category;esthetic;foliage;type;height
 256;Mahonia;outdoor;flowering;evergreen;;shrub
 257;Cotoneaster;outdoor;foliage;evergreen;;shrub
 258;Pittosporum;outdoor;foliage;evergreen;;shrub
-259;Chèvrefeuille;outdoor;flowering;deciduous;;climber
-260;Jasmin Étoilé;outdoor;flowering;evergreen;;climber
+259;ChÃ¨vrefeuille;outdoor;flowering;deciduous;;climber
+260;Jasmin Ã‰toilÃ©;outdoor;flowering;evergreen;;climber
 261;Bignone;outdoor;flowering;deciduous;;climber
 262;Vigne Vierge;outdoor;foliage;deciduous;;climber
 263;Pivoine;outdoor;flowering;deciduous;;shrub
-264;Rose Trémière;outdoor;flowering;deciduous;;shrub
+264;Rose TrÃ©miÃ¨re;outdoor;flowering;deciduous;;shrub
 265;Lupin;outdoor;flowering;deciduous;;shrub
 266;Agapanthe;outdoor;flowering;deciduous;;shrub
 267;Hosta;outdoor;foliage;deciduous;;ground
-268;Heuchère;outdoor;foliage;evergreen;;ground
+268;HeuchÃ¨re;outdoor;foliage;evergreen;;ground
 269;Astilbe;outdoor;flowering;deciduous;;shrub
-270;Géranium Vivace;outdoor;flowering;deciduous;;ground
-271;Anémone du Japon;outdoor;flowering;deciduous;;shrub
+270;GÃ©ranium Vivace;outdoor;flowering;deciduous;;ground
+271;AnÃ©mone du Japon;outdoor;flowering;deciduous;;shrub
 272;Millepertuis;outdoor;flowering;deciduous;;shrub
 273;Pervenche;outdoor;foliage;evergreen;;ground
-274;Aubriète;outdoor;flowering;evergreen;;ground
+274;AubriÃ¨te;outdoor;flowering;evergreen;;ground
 275;Campanule des murs;outdoor;flowering;evergreen;;ground
-276;Œillet Mignardise;outdoor;flowering;evergreen;;ground
-277;Bruyère d'hiver;outdoor;flowering;evergreen;;ground
+276;Oeillet Mignardise;outdoor;flowering;evergreen;;ground
+277;BruyÃ¨re d'hiver;outdoor;flowering;evergreen;;ground
 278;Tulipe;outdoor;flowering;deciduous;;ground
 279;Narcisse;outdoor;flowering;deciduous;;ground
 280;Crocus;outdoor;flowering;deciduous;;ground
 281;Dahlia;outdoor;flowering;deciduous;;shrub
 282;Iris;outdoor;flowering;deciduous;;shrub
-283;Glaïeul;outdoor;flowering;deciduous;;shrub
+283;GlaÃ¯eul;outdoor;flowering;deciduous;;shrub
 284;Canna;outdoor;foliage;deciduous;;shrub
-285;Bégonia Annuel;outdoor;flowering;deciduous;;shrub
-286;Pétunia;outdoor;flowering;deciduous;;ground
-287;Œillet d'Inde;outdoor;flowering;deciduous;;shrub
+285;BÃ©gonia Annuel;outdoor;flowering;deciduous;;shrub
+286;PÃ©tunia;outdoor;flowering;deciduous;;ground
+287;Oeillet d'Inde;outdoor;flowering;deciduous;;shrub
 288;Cosmos;outdoor;flowering;deciduous;;shrub
 289;Zinnia;outdoor;flowering;deciduous;;shrub
 290;Capucine;outdoor;flowering;deciduous;;ground
-291;Pensée;outdoor;flowering;deciduous;;ground
+291;PensÃ©e;outdoor;flowering;deciduous;;ground
 292;Gaura;outdoor;flowering;deciduous;;shrub
-293;Fétuque Bleue;outdoor;foliage;evergreen;;ground
+293;FÃ©tuque Bleue;outdoor;foliage;evergreen;;ground
 294;Herbe de la Pampa;outdoor;foliage;evergreen;;shrub
 295;Coquelicot;outdoor;flowering;deciduous;;shrub
 296;Tournesol;outdoor;flowering;deciduous;;shrub
@@ -300,34 +300,34 @@ id;species;category;esthetic;foliage;type;height
 299;Sedum;outdoor;foliage;evergreen;;ground
 300;Joubarbe des toits;outdoor;foliage;evergreen;;ground
 301;Yucca Gloriosa;outdoor;foliage;evergreen;;shrub
-302;Trèfle;outdoor;foliage;evergreen;;ground
-303;Céanothe;outdoor;flowering;evergreen;;shrub
-304;Abélia;outdoor;flowering;evergreen;;shrub
+302;TrÃ¨fle;outdoor;foliage;evergreen;;ground
+303;CÃ©anothe;outdoor;flowering;evergreen;;shrub
+304;AbÃ©lia;outdoor;flowering;evergreen;;shrub
 305;Cornouiller Sanguin;outdoor;foliage;deciduous;;shrub
-306;Arbre à Perruque;outdoor;foliage;deciduous;;shrub
+306;Arbre Ã  Perruque;outdoor;foliage;deciduous;;shrub
 307;Potentille Arbustive;outdoor;flowering;deciduous;;shrub
-308;Berbéris;outdoor;foliage;deciduous;;shrub
-309;Chèvrefeuille Arbustif;outdoor;foliage;evergreen;;shrub
+308;BerbÃ©ris;outdoor;foliage;deciduous;;shrub
+309;ChÃ¨vrefeuille Arbustif;outdoor;foliage;evergreen;;shrub
 310;Osmanthe;outdoor;foliage;evergreen;;shrub
 311;Escallonia;outdoor;flowering;evergreen;;shrub
 312;Symphorine;outdoor;foliage;deciduous;;shrub
-313;Corête du Japon;outdoor;flowering;deciduous;;shrub
+313;CorÃªte du Japon;outdoor;flowering;deciduous;;shrub
 314;Rhododendron;outdoor;flowering;evergreen;;shrub
-315;Andromède;outdoor;foliage;evergreen;;shrub
+315;AndromÃ¨de;outdoor;foliage;evergreen;;shrub
 316;Skimmia;outdoor;foliage;evergreen;;shrub
-317;Bruyère d'été;outdoor;flowering;evergreen;;ground
+317;BruyÃ¨re d'Ã©tÃ©;outdoor;flowering;evergreen;;ground
 318;Sauge de Russie;outdoor;foliage;deciduous;;shrub
-319;Echinacée;outdoor;flowering;deciduous;;shrub
+319;EchinacÃ©e;outdoor;flowering;deciduous;;shrub
 320;Rudbeckia;outdoor;flowering;deciduous;;shrub
-321;Coréopsis;outdoor;flowering;deciduous;;shrub
+321;CorÃ©opsis;outdoor;flowering;deciduous;;shrub
 322;Phlox;outdoor;flowering;deciduous;;ground
 323;Pied d'alouette;outdoor;flowering;deciduous;;shrub
 324;Digitale;outdoor;flowering;deciduous;;shrub
 325;Ancolie;outdoor;flowering;deciduous;;shrub
-326;CÅ“ur de Marie;outdoor;#N/A;#N/A;#N/A;#N/A
-327;Bergénia;outdoor;foliage;evergreen;;ground
-328;Alchémille;outdoor;foliage;deciduous;;ground
-329;Népéta;outdoor;flowering;deciduous;;ground
+326;CÃ…Â“ur de Marie;outdoor;#N/A;#N/A;#N/A;#N/A
+327;BergÃ©nia;outdoor;foliage;evergreen;;ground
+328;AlchÃ©mille;outdoor;foliage;deciduous;;ground
+329;NÃ©pÃ©ta;outdoor;flowering;deciduous;;ground
 330;Verveine de Buenos Aires;outdoor;flowering;deciduous;;shrub
 331;Scabieuse;outdoor;flowering;deciduous;;shrub
 332;Euphorbe des jardins;outdoor;foliage;evergreen;;shrub
@@ -337,34 +337,34 @@ id;species;category;esthetic;foliage;type;height
 336;Ciste;outdoor;flowering;evergreen;;shrub
 337;Myrte;outdoor;foliage;evergreen;;shrub
 338;Romarin Rampant;herb;;;herb;
-339;Ipomée;outdoor;flowering;deciduous;;climber
+339;IpomÃ©e;outdoor;flowering;deciduous;;climber
 340;Pois de Senteur;outdoor;flowering;deciduous;;climber
 341;Hortensia Grimpant;outdoor;flowering;deciduous;;climber
 342;Perce-Neige;outdoor;flowering;deciduous;;ground
 343;Muscari;outdoor;flowering;deciduous;;ground
 344;Ail d'Ornement;outdoor;flowering;deciduous;;shrub
-345;Fritillaire Impériale;outdoor;flowering;deciduous;;shrub
-346;Hélianthe Vivace;outdoor;flowering;deciduous;;shrub
+345;Fritillaire ImpÃ©riale;outdoor;flowering;deciduous;;shrub
+346;HÃ©lianthe Vivace;outdoor;flowering;deciduous;;shrub
 347;Lysimaque;outdoor;flowering;deciduous;;ground
 348;Verge d'Or;outdoor;flowering;deciduous;;shrub
-349;Bambou Sacré;outdoor;foliage;evergreen;;shrub
+349;Bambou SacrÃ©;outdoor;foliage;evergreen;;shrub
 350;Tetrapanax;outdoor;foliage;evergreen;;shrub
 351;Edgeworthia;outdoor;flowering;deciduous;;shrub
 352;Mahonia Charity;outdoor;flowering;evergreen;;shrub
 353;Coronille;outdoor;flowering;evergreen;;shrub
 354;Jasmin d'Hiver;outdoor;flowering;deciduous;;shrub
-355;Hamamélis;outdoor;flowering;deciduous;;shrub
+355;HamamÃ©lis;outdoor;flowering;deciduous;;shrub
 356;Laurier Tin;outdoor;flowering;evergreen;;shrub
 357;Oranger du Mexique;outdoor;foliage;evergreen;;shrub
-358;Hellébore;outdoor;flowering;evergreen;;ground
-359;Daphné;outdoor;flowering;evergreen;;shrub
+358;HellÃ©bore;outdoor;flowering;evergreen;;ground
+359;DaphnÃ©;outdoor;flowering;evergreen;;shrub
 360;Sarcococca;outdoor;foliage;evergreen;;shrub
 361;Callicarpa;outdoor;foliage;deciduous;;shrub
 362;Cognassier du Japon;outdoor;flowering;deciduous;;shrub
-363;Groseillier à fleurs;outdoor;flowering;deciduous;;shrub
-364;Amélanchier;outdoor;flowering;deciduous;;tree
-365;Cornouiller à fleurs;outdoor;flowering;deciduous;;tree
-366;Arbre de Judée;outdoor;flowering;deciduous;;tree
+363;Groseillier Ã  fleurs;outdoor;flowering;deciduous;;shrub
+364;AmÃ©lanchier;outdoor;flowering;deciduous;;tree
+365;Cornouiller Ã  fleurs;outdoor;flowering;deciduous;;tree
+366;Arbre de JudÃ©e;outdoor;flowering;deciduous;;tree
 367;Phormium;outdoor;foliage;evergreen;;shrub
 368;Cordyline Australe;outdoor;foliage;evergreen;;tree
 369;Grevillea;outdoor;foliage;evergreen;;shrub
@@ -374,21 +374,21 @@ id;species;category;esthetic;foliage;type;height
 373;Gunnera;outdoor;foliage;deciduous;;ground
 374;Acanthe;outdoor;foliage;deciduous;;shrub
 375;Kniphofia;outdoor;flowering;evergreen;;shrub
-376;Fusain Ailé;outdoor;foliage;deciduous;;shrub
+376;Fusain AilÃ©;outdoor;foliage;deciduous;;shrub
 377;Gattilier;outdoor;flowering;deciduous;;shrub
-378;Grenadier à fleurs;outdoor;flowering;deciduous;;shrub
+378;Grenadier Ã  fleurs;outdoor;flowering;deciduous;;shrub
 379;Bambou Noir;outdoor;foliage;evergreen;;shrub
-380;Clématite d'Armand;outdoor;flowering;evergreen;;climber
+380;ClÃ©matite d'Armand;outdoor;flowering;evergreen;;climber
 381;Solanum Grimpant;outdoor;flowering;evergreen;;climber
 382;Passiflore Bleue;outdoor;flowering;deciduous;;climber
-383;Houblon Doré;outdoor;foliage;deciduous;;climber
-384;Chèvrefeuille d'Hiver;outdoor;flowering;deciduous;;shrub
-385;Fougère Femelle;outdoor;foliage;deciduous;;ground
+383;Houblon DorÃ©;outdoor;foliage;deciduous;;climber
+384;ChÃ¨vrefeuille d'Hiver;outdoor;flowering;deciduous;;shrub
+385;FougÃ¨re Femelle;outdoor;foliage;deciduous;;ground
 386;Pachysandra;outdoor;foliage;evergreen;;ground
-387;Lavatère;outdoor;flowering;deciduous;;shrub
+387;LavatÃ¨re;outdoor;flowering;deciduous;;shrub
 388;Fuchsia Rustique;outdoor;flowering;deciduous;;shrub
-389;Azalée Japonaise;outdoor;flowering;deciduous;;shrub
-390;Érable à peau de serpent;outdoor;foliage;deciduous;;tree
+389;AzalÃ©e Japonaise;outdoor;flowering;deciduous;;shrub
+390;Ã‰rable Ã  peau de serpent;outdoor;foliage;deciduous;;tree
 391;Chimonanthus;outdoor;flowering;deciduous;;shrub
 392;Cyclamen de Naples;outdoor;flowering;deciduous;;ground
 393;Violette Odorante;outdoor;flowering;evergreen;;ground
@@ -398,57 +398,57 @@ id;species;category;esthetic;foliage;type;height
 397;Imperata;outdoor;foliage;deciduous;;ground
 398;Ophiopogon;outdoor;foliage;evergreen;;ground
 399;Laurier du Portugal;outdoor;foliage;evergreen;;shrub
-400;Troène;outdoor;foliage;evergreen;;shrub
+400;TroÃ¨ne;outdoor;foliage;evergreen;;shrub
 401;Pennisetum;outdoor;foliage;deciduous;;shrub
 402;Lys des Incas;outdoor;flowering;deciduous;;shrub
 403;Aster;outdoor;flowering;deciduous;;shrub
 404;Vergerette;outdoor;flowering;evergreen;;ground
 405;Sauge Arbustive;outdoor;flowering;deciduous;;shrub
-406;Achillée;outdoor;flowering;deciduous;;ground
+406;AchillÃ©e;outdoor;flowering;deciduous;;ground
 407;Caryopteris;outdoor;flowering;deciduous;;shrub
 408;Leucothoe;outdoor;foliage;evergreen;;shrub
 409;Phlomis;outdoor;foliage;evergreen;;shrub
 410;Ceratostigma;outdoor;flowering;deciduous;;shrub
 411;Gazania;outdoor;flowering;deciduous;;ground
 412;Osteospermum;outdoor;flowering;deciduous;;ground
-413;Valériane Rouge;outdoor;flowering;evergreen;;shrub
+413;ValÃ©riane Rouge;outdoor;flowering;evergreen;;shrub
 414;Nigelle de Damas;outdoor;flowering;deciduous;;shrub
 415;Pavot de Californie;outdoor;flowering;deciduous;;ground
 416;Monarde;outdoor;flowering;deciduous;;shrub
-417;Hémérocalle;outdoor;flowering;deciduous;;shrub
-418;Benoîte;outdoor;flowering;evergreen;;ground
+417;HÃ©mÃ©rocalle;outdoor;flowering;deciduous;;shrub
+418;BenoÃ®te;outdoor;flowering;evergreen;;ground
 419;Penstemon;outdoor;flowering;deciduous;;shrub
 420;Brunnera;outdoor;foliage;deciduous;;ground
 421;Sceau de Salomon;outdoor;foliage;deciduous;;ground
-422;Giroflée;outdoor;flowering;evergreen;;shrub
+422;GiroflÃ©e;outdoor;flowering;evergreen;;shrub
 423;Monnaie du Pape;outdoor;flowering;deciduous;;shrub
 424;Amour en cage;outdoor;foliage;deciduous;;shrub
 425;Liatris;outdoor;flowering;deciduous;;shrub
-426;Véronique Arbustive;outdoor;foliage;evergreen;;shrub
+426;VÃ©ronique Arbustive;outdoor;foliage;evergreen;;shrub
 427;Palmier Chanvre;outdoor;foliage;evergreen;;tree
 428;Pourpier Vivace;outdoor;foliage;evergreen;;ground
-429;Griffe de Sorcière;outdoor;foliage;evergreen;;ground
+429;Griffe de SorciÃ¨re;outdoor;foliage;evergreen;;ground
 430;Gazon d'Espagne;outdoor;flowering;evergreen;;ground
 431;Corbeille d'Argent;outdoor;flowering;evergreen;;ground
 432;Corbeille d'Or;outdoor;flowering;evergreen;;ground
 433;Framboisier;vegetable;;;fruitTree;
 434;Cassissier;vegetable;;;fruitTree;
-435;Mûrier (Ronce);vegetable;;;fruitTree;
+435;MÃ»rier (Ronce);vegetable;;;fruitTree;
 436;Kiwi;vegetable;;;fruit;
 437;Rhubarbe;vegetable;;;fruit;
 438;Artichaut;vegetable;;;fruit;
 439;Souci;outdoor;flowering;deciduous;;shrub
 440;Bourrache;herb;;;herb;
 441;Ail des Ours;herb;;;herb;
-442;Hélénie;outdoor;flowering;deciduous;;shrub
-443;Pâquerette;outdoor;flowering;evergreen;;ground
-444;Genévrier;outdoor;foliage;evergreen;;shrub
-445;Faux Cyprès;outdoor;foliage;evergreen;;tree
+442;HÃ©lÃ©nie;outdoor;flowering;deciduous;;shrub
+443;PÃ¢querette;outdoor;flowering;evergreen;;ground
+444;GenÃ©vrier;outdoor;foliage;evergreen;;shrub
+445;Faux CyprÃ¨s;outdoor;foliage;evergreen;;tree
 446;Sauge Officinale;herb;;;herb;
 447;Millepertuis;outdoor;flowering;deciduous;;shrub
 448;Campanule;outdoor;flowering;;;hanging
 449;Myrtillier;vegetable;;;fruitTree;
-450;Groseillier à maquereau;vegetable;;;fruitTree;
+450;Groseillier Ã  maquereau;vegetable;;;fruitTree;
 451;Kaki;vegetable;;;fruitTree;
 452;Amandier;vegetable;;;fruitTree;
 453;Saule Crevette;outdoor;foliage;deciduous;;shrub
@@ -456,33 +456,33 @@ id;species;category;esthetic;foliage;type;height
 455;Prunier Pourpre;outdoor;foliage;deciduous;;tree
 456;Noisetier Tortueux;outdoor;foliage;deciduous;;shrub
 457;Sorbier des oiseleurs;outdoor;flowering;deciduous;;tree
-458;Mûrier Platane;outdoor;foliage;deciduous;;tree
+458;MÃ»rier Platane;outdoor;foliage;deciduous;;tree
 459;Cytise;outdoor;flowering;deciduous;;tree
-460;Épicéa;outdoor;foliage;evergreen;;tree
+460;Ã‰picÃ©a;outdoor;foliage;evergreen;;tree
 461;Sapin Bleu;outdoor;foliage;evergreen;;tree
 462;Pin Mugo;outdoor;foliage;evergreen;;shrub
-463;Mélèze;outdoor;foliage;deciduous;;tree
+463;MÃ©lÃ¨ze;outdoor;foliage;deciduous;;tree
 464;Araucaria;outdoor;foliage;;;shrub
-465;Genévrier Rampant;outdoor;foliage;evergreen;;ground
-466;Faux-Cyprès;outdoor;foliage;evergreen;;tree
+465;GenÃ©vrier Rampant;outdoor;foliage;evergreen;;ground
+466;Faux-CyprÃ¨s;outdoor;foliage;evergreen;;tree
 467;Cryptomeria;outdoor;foliage;evergreen;;tree
 468;Feijoa;outdoor;foliage;evergreen;;shrub
 469;Kumquat;outdoor;foliage;evergreen;;shrub
 470;Chamaerops;outdoor;foliage;evergreen;;shrub
-471;Genêt;outdoor;flowering;deciduous;;shrub
+471;GenÃªt;outdoor;flowering;deciduous;;shrub
 472;Laurier du Portugal;outdoor;foliage;evergreen;;shrub
-473;Troène;outdoor;foliage;evergreen;;shrub
-474;Hortensia à feuilles de chêne;outdoor;foliage;deciduous;;shrub
+473;TroÃ¨ne;outdoor;foliage;evergreen;;shrub
+474;Hortensia Ã  feuilles de chÃªne;outdoor;foliage;deciduous;;shrub
 475;Hortensia Annabelle;outdoor;flowering;deciduous;;shrub
-476;Viorne à feuilles ridées;outdoor;foliage;evergreen;;shrub
+476;Viorne Ã  feuilles ridÃ©es;outdoor;foliage;evergreen;;shrub
 477;Cotoneaster Lacteus;outdoor;foliage;evergreen;;shrub
-478;Céanothe;outdoor;flowering;evergreen;;shrub
-479;Abélia;outdoor;flowering;evergreen;;shrub
+478;CÃ©anothe;outdoor;flowering;evergreen;;shrub
+479;AbÃ©lia;outdoor;flowering;evergreen;;shrub
 480;Cornouiller Sanguin;outdoor;foliage;deciduous;;shrub
-481;Arbre à Perruque;outdoor;foliage;deciduous;;shrub
+481;Arbre Ã  Perruque;outdoor;foliage;deciduous;;shrub
 482;Berberis;outdoor;foliage;deciduous;;shrub
 483;Symphorine;outdoor;foliage;deciduous;;shrub
-484;Corête du Japon;outdoor;flowering;deciduous;;shrub
+484;CorÃªte du Japon;outdoor;flowering;deciduous;;shrub
 485;Callune;outdoor;flowering;evergreen;;ground
 486;Sauge Arbustive;outdoor;flowering;deciduous;;shrub
 487;Caryopteris;outdoor;flowering;deciduous;;shrub
@@ -490,20 +490,20 @@ id;species;category;esthetic;foliage;type;height
 489;Perovskia;outdoor;foliage;deciduous;;shrub
 490;Leucothoe;outdoor;foliage;evergreen;;shrub
 491;Skimmia;outdoor;foliage;evergreen;;shrub
-492;Andromède;outdoor;foliage;evergreen;;shrub
+492;AndromÃ¨de;outdoor;foliage;evergreen;;shrub
 493;Prunellier;outdoor;flowering;deciduous;;shrub
-494;Aubépine;outdoor;flowering;deciduous;;tree
-495;Fusain Panaché;outdoor;foliage;evergreen;;ground
-496;Chèvrefeuille arbustif;outdoor;foliage;evergreen;;shrub
-497;Houx Panaché;outdoor;foliage;evergreen;;shrub
+494;AubÃ©pine;outdoor;flowering;deciduous;;tree
+495;Fusain PanachÃ©;outdoor;foliage;evergreen;;ground
+496;ChÃ¨vrefeuille arbustif;outdoor;foliage;evergreen;;shrub
+497;Houx PanachÃ©;outdoor;foliage;evergreen;;shrub
 498;Olivier (En Pot);outdoor;foliage;evergreen;;tree
 499;Olivier (Pleine terre);outdoor;foliage;evergreen;;tree
 500;Citronnier (En Pot);outdoor;foliage;evergreen;;shrub
 501;Citronnier (Pleine terre);outdoor;foliage;evergreen;;shrub
 502;Laurier Rose (En Pot);outdoor;flowering;evergreen;;shrub
 503;Laurier Rose (Pleine terre);outdoor;flowering;evergreen;;shrub
-504;Érable du Japon (En Pot);outdoor;foliage;deciduous;;shrub
-505;Érable du Japon (Pleine terre);outdoor;foliage;deciduous;;shrub
+504;Ã‰rable du Japon (En Pot);outdoor;foliage;deciduous;;shrub
+505;Ã‰rable du Japon (Pleine terre);outdoor;foliage;deciduous;;shrub
 506;Hortensia (En Pot);outdoor;flowering;deciduous;;shrub
 507;Hortensia (Pleine terre);outdoor;flowering;deciduous;;shrub
 508;Bambou (En Pot);outdoor;foliage;evergreen;;shrub
@@ -518,8 +518,8 @@ id;species;category;esthetic;foliage;type;height
 517;Figuier (Pleine terre);vegetable;;;fruitTree;
 518;Rosier (Pot);outdoor;flowering;deciduous;;shrub
 519;Rosier (Pleine terre);outdoor;flowering;deciduous;;shrub
-520;Camélia (En Pot);outdoor;flowering;evergreen;;shrub
-521;Camélia (Pleine terre);outdoor;flowering;evergreen;;shrub
+520;CamÃ©lia (En Pot);outdoor;flowering;evergreen;;shrub
+521;CamÃ©lia (Pleine terre);outdoor;flowering;evergreen;;shrub
 522;Tomate;vegetable;;;fruit;
 523;Courgette;vegetable;;;fruit;
 524;Concombre;vegetable;;;fruit;
@@ -536,10 +536,10 @@ id;species;category;esthetic;foliage;type;height
 535;Poireau;vegetable;;;leaf;
 536;Oignon;vegetable;;;root;
 537;Ail;vegetable;;;root;
-538;Échalote;vegetable;;;root;
+538;Ã‰chalote;vegetable;;;root;
 539;Petit Pois;vegetable;;;fruit;
-540;Épinard;vegetable;;;leaf;
-541;Mâche;vegetable;;;leaf;
+540;Ã‰pinard;vegetable;;;leaf;
+541;MÃ¢che;vegetable;;;leaf;
 542;Blette;vegetable;;;leaf;
 543;Betterave;vegetable;;;root;
 544;Chou-Fleur;vegetable;;;fruit;
@@ -548,11 +548,11 @@ id;species;category;esthetic;foliage;type;height
 547;Chou Kale;vegetable;;;leaf;
 548;Chou de Bruxelles;vegetable;;;leaf;
 549;Navet;vegetable;;;root;
-550;Céleri-Rave;vegetable;;;root;
+550;CÃ©leri-Rave;vegetable;;;root;
 551;Fenouil;vegetable;;;leaf;
-552;Maïs Doux;vegetable;;;fruit;
+552;MaÃ¯s Doux;vegetable;;;fruit;
 553;Asperge;vegetable;;;fruit;
-554;Fève;vegetable;;;fruit;
+554;FÃ¨ve;vegetable;;;fruit;
 555;Topinambour;vegetable;;;root;
 556;Panais;vegetable;;;root;
 557;Cornichon;vegetable;;;fruit;
@@ -564,11 +564,11 @@ id;species;category;esthetic;foliage;type;height
 563;Aneth;herb;;;herb;
 564;Cerfeuil;herb;;;herb;
 565;Sauge Officinale;herb;;;herb;
-566;Chicorée Frisée;vegetable;;;leaf;
+566;ChicorÃ©e FrisÃ©e;vegetable;;;leaf;
 567;Endive;vegetable;;;leaf;
 568;Patate Douce;vegetable;;;root;
-569;Pâtisson;vegetable;;;fruit;
-570;Tétragone;vegetable;;;leaf;
+569;PÃ¢tisson;vegetable;;;fruit;
+570;TÃ©tragone;vegetable;;;leaf;
 571;Roquette;vegetable;;;leaf;
 572;Fraisier des Bois;vegetable;;;fruitTree;
 573;Fraisier (En Pot);vegetable;;;fruitTree;
@@ -579,20 +579,20 @@ id;species;category;esthetic;foliage;type;height
 578;Salade (En Pot);vegetable;;;leaf;
 579;Verveine Citronnelle;herb;;;herb;
 580;Citronnelle de Madagascar;herb;;;herb;
-581;Mélisse;herb;;;herb;
+581;MÃ©lisse;herb;;;herb;
 582;Origan;herb;;;herb;
 583;Sarriette Vivace;herb;;;herb;
 584;Laurier Sauce (En Pot);herb;;;herb;
 585;Rutabaga;vegetable;;;root;
 586;Crosne du Japon;vegetable;;;root;
-587;Oca du Pérou;vegetable;;;root;
+587;Oca du PÃ©rou;vegetable;;;root;
 588;Salsifis;vegetable;;;root;
-589;Pourpier Doré;vegetable;;;leaf;
-590;Cresson Alénois;vegetable;;;leaf;
+589;Pourpier DorÃ©;vegetable;;;leaf;
+590;Cresson AlÃ©nois;vegetable;;;leaf;
 591;Pissenlit;vegetable;;;leaf;
 592;Cardon;vegetable;;;leaf;
 593;Lentille;vegetable;;;fruit;
-594;Coqueret du Pérou;vegetable;;;fruit;
+594;Coqueret du PÃ©rou;vegetable;;;fruit;
 595;Framboisier (Pot / Nain);vegetable;;;fruitTree;
 596;Canneberge;vegetable;;;fruitTree;
 597;Baie de Goji;vegetable;;;fruitTree;
@@ -600,33 +600,33 @@ id;species;category;esthetic;foliage;type;height
 599;Tanaisie;outdoor;foliage;deciduous;;shrub
 600;Lin Bleu;outdoor;flowering;deciduous;;shrub
 601;Oignon Rocambole;vegetable;;;root;
-602;Poireau Perpétuel;vegetable;;;leaf;
+602;Poireau PerpÃ©tuel;vegetable;;;leaf;
 603;Chou Daubenton;vegetable;;;leaf;
 604;Raifort;vegetable;;;root;
-605;Capucine Tubéreuse;vegetable;;;root;
+605;Capucine TubÃ©reuse;vegetable;;;root;
 606;Poire de Terre;vegetable;;;root;
 607;Claytone de Cuba;vegetable;;;leaf;
 608;Moutarde de Chine;vegetable;;;leaf;
 609;Mizuna;vegetable;;;leaf;
 610;Tatsoi;vegetable;;;leaf;
-611;Angélique;herb;;;herb;
+611;AngÃ©lique;herb;;;herb;
 612;Camomille Romaine;herb;;;herb;
 613;Bourrache;herb;;;herb;
 614;Hysope;herb;;;herb;
-615;Kiwaï;vegetable;;;fruit;
-616;Mâche;vegetable;;;leaf;
+615;KiwaÃ¯;vegetable;;;fruit;
+616;MÃ¢che;vegetable;;;leaf;
 617;Arroche;vegetable;;;leaf;
-618;Scorsonère;vegetable;;;root;
+618;ScorsonÃ¨re;vegetable;;;root;
 619;Pois Chiche;vegetable;;;fruit;
 620;Marjolaine;herb;;;herb;
-621;Basilic Thaï;herb;;;herb;
+621;Basilic ThaÃ¯;herb;;;herb;
 622;Ciboulette de Chine;herb;;;herb;
 623;Sauge Ananas;herb;;;herb;
 624;Menthe Chocolat;herb;;;herb;
 625;Oseille Sanguine;herb;;;herb;
 626;Agastache;herb;;;herb;
 627;Shiso;herb;;;herb;
-628;Céleri à couper;herb;;;leaf;
+628;CÃ©leri Ã  couper;herb;;;leaf;
 629;Pimprenelle;herb;;;herb;
 630;Basilic (Grand Vert);herb;;;herb;
 631;Persil (En Pot);herb;;;herb;

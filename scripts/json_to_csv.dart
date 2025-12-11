@@ -42,6 +42,7 @@ Future<void> main() async {
 
 Future<void> exportCore(Map<String, dynamic> jsonMap) async {
   final buffer = StringBuffer();
+  final bom = '\uFEFF'; // Le caractère magique
   buffer.writeln("id;species;synonyms;category");
 
   jsonMap.forEach((id, data) {
@@ -54,7 +55,7 @@ Future<void> exportCore(Map<String, dynamic> jsonMap) async {
     buffer.writeln("$id;$species;$synonyms;$category");
   });
 
-  await File(coreCsvPath).writeAsString(buffer.toString(), encoding: utf8);
+  await File(coreCsvPath).writeAsString(bom + buffer.toString(), encoding: utf8);
 }
 
 // -----------------------------------------------------
@@ -63,9 +64,10 @@ Future<void> exportCore(Map<String, dynamic> jsonMap) async {
 
 Future<void> exportCare(Map<String, dynamic> jsonMap) async {
   final buffer = StringBuffer();
+  final bom = '\uFEFF'; // Le caractère magique
 
   buffer.writeln(
-      "id;light;difficulty;humidity;temperature;toxicity;cycle;"
+      "id;species;light;difficulty;humidity;temperature;toxicity;cycle;"
       "waterSummer;waterWinter;fertilizeFreq;repotFreq;"
       "sowingMonths;plantingMonths;harvestMonths;repottingMonths;winteringMonths;"
       "soilInfo;pruningInfo"
@@ -75,6 +77,7 @@ Future<void> exportCare(Map<String, dynamic> jsonMap) async {
     String listToCsv(List<dynamic>? list) =>
         list == null ? "" : list.map((e) => e.toString()).join(",");
 
+    final species = data["species"] ?? "";
     final light = data["light"] ?? "";
     final difficulty = data["difficulty"] ?? "";
     final humidity = data["humidity"] ?? "";
@@ -96,14 +99,14 @@ Future<void> exportCare(Map<String, dynamic> jsonMap) async {
     final soilInfo = data["soil"] ?? "";
     final pruningInfo = data["pruning"] ?? "";
 
-    buffer.writeln("$id;"
+    buffer.writeln("$id;$species;"
         "$light;$difficulty;$humidity;$temperature;$toxicity;$cycle;"
         "$waterSummer;$waterWinter;$fertilizeFreq;$repotFreq;"
         "$sow;$plant;$harvest;$repotMonths;$winter;"
         "$soilInfo;$pruningInfo");
   });
 
-  await File(careCsvPath).writeAsString(buffer.toString(), encoding: utf8);
+  await File(careCsvPath).writeAsString(bom + buffer.toString(), encoding: utf8);
 }
 
 // -----------------------------------------------------
@@ -112,13 +115,20 @@ Future<void> exportCare(Map<String, dynamic> jsonMap) async {
 
 Future<void> exportTags(Map<String, dynamic> jsonMap) async {
   final buffer = StringBuffer();
+  final bom = '\uFEFF'; // Le caractère magique
 
-  buffer.writeln("id;tags");
+  buffer.writeln("id;species;category;esthetic;foliage;type;height");
 
   jsonMap.forEach((id, data) {
-    final tags = (data as List<dynamic>? ?? []).map((e) => e.toString()).join(", ");
-    buffer.writeln("$id;$tags");
+    final species = data["species"] ?? "";
+    final category = data["category"] ?? "";
+    final esthetic = data["esthetic"] ?? "";
+    final foliage = data["foliage"] ?? "";
+    final type = data["type"] ?? "";
+    final height = data["height"] ?? "";
+
+    buffer.writeln("$id;$species;$category;$esthetic;$foliage;$type;$height");
   });
 
-  await File(tagsCsvPath).writeAsString(buffer.toString(), encoding: utf8);
+  await File(tagsCsvPath).writeAsString(bom + buffer.toString(), encoding: utf8);
 }

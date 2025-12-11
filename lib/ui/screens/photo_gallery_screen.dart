@@ -34,21 +34,23 @@ class _PhotoGalleryScreenState extends State<PhotoGalleryScreen> {
     await showModalBottomSheet(
       context: context,
       isScrollControlled: true, // Pour prendre toute la hauteur si besoin
-      builder: (ctx) => Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            const Text("Nouvelle photo", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18)),
-            const SizedBox(height: 16),
-            ImageInput(
-              onSelectImage: (path) async {
-                Navigator.pop(ctx); // Ferme le sélecteur
-                await _savePhotoToDb(path);
-              },
-            ),
-            const SizedBox(height: 24),
-          ],
+      builder: (ctx) => SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              const Text("Nouvelle photo", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18)),
+              const SizedBox(height: 16),
+              ImageInput(
+                onSelectImage: (path) async {
+                  Navigator.pop(ctx); // Ferme le sélecteur
+                  await _savePhotoToDb(path);
+                },
+              ),
+              const SizedBox(height: 24),
+            ],
+          ),
         ),
       ),
     );
@@ -86,11 +88,25 @@ class _PhotoGalleryScreenState extends State<PhotoGalleryScreen> {
     }
   }
 
+  Future<void> _updatePhotoDate(PlantPhoto photo, DateTime newDate) async {
+    // On crée une copie de la photo avec la nouvelle date
+    final updatedPhoto = PlantPhoto(
+      id: photo.id,
+      plantId: photo.plantId,
+      path: photo.path,
+      date: newDate, // Nouvelle date
+      note: photo.note,
+    );
+
+    await DatabaseService().updatePhoto(updatedPhoto);
+    setState(() {}); // Rafraichir la galerie pour réordonner
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Album de ${widget.plant.name}"),
+        title: Text("Album de ${widget.plant.displayName}"),
         backgroundColor: Theme.of(context).colorScheme.secondary,
       ),
       body: FutureBuilder<List<PlantPhoto>>(
@@ -133,8 +149,14 @@ class _PhotoGalleryScreenState extends State<PhotoGalleryScreen> {
               final photo = photos[index];
               return GestureDetector(
                 onTap: () {
-                   // Ouvrir en grand (Visionneuse simple)
-                   Navigator.push(context, MaterialPageRoute(builder: (_) => _FullScreenViewer(photo: photo, onDelete: () => _deletePhoto(photo.id))));
+                   Navigator.push(
+                     context, 
+                     MaterialPageRoute(builder: (_) => _FullScreenViewer(
+                       photo: photo, 
+                       onDelete: () => _deletePhoto(photo.id),
+                       onDateChange: (newDate) => _updatePhotoDate(photo, newDate),
+                     ))
+                   );
                 },
                 child: Card(
                   elevation: 2,
@@ -176,11 +198,29 @@ class _PhotoGalleryScreenState extends State<PhotoGalleryScreen> {
 }
 
 // Petit widget pour voir en grand
-class _FullScreenViewer extends StatelessWidget {
+class _FullScreenViewer extends StatefulWidget {
   final PlantPhoto photo;
   final VoidCallback onDelete;
+  final Function(DateTime) onDateChange;
 
-  const _FullScreenViewer({required this.photo, required this.onDelete});
+  const _FullScreenViewer({
+    required this.photo, 
+    required this.onDelete,
+    required this.onDateChange,
+  });
+
+  @override
+  State<_FullScreenViewer> createState() => _FullScreenViewerState();
+}
+
+class _FullScreenViewerState extends State<_FullScreenViewer> {
+  late DateTime _currentDate;
+
+  @override
+  void initState() {
+    super.initState();
+    _currentDate = widget.photo.date;
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -189,18 +229,39 @@ class _FullScreenViewer extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.black,
         foregroundColor: Colors.white,
+        title: Text(DateFormat('d MMMM yyyy', 'fr_FR').format(_currentDate), style: const TextStyle(fontSize: 16)),
         actions: [
+          // BOUTON CALENDRIER
+          IconButton(
+            icon: const Icon(Icons.edit_calendar),
+            tooltip: "Changer la date",
+            onPressed: () async {
+              final picked = await showDatePicker(
+                context: context,
+                initialDate: _currentDate,
+                firstDate: DateTime(2000),
+                lastDate: DateTime.now(),
+                locale: const Locale("fr", "FR"),
+              );
+              if (picked != null) {
+                widget.onDateChange(picked); // Sauvegarde en base (via parent)
+                setState(() {
+                  _currentDate = picked; // Mise à jour visuelle locale
+                });
+              }
+            },
+          ),
           IconButton(
             icon: const Icon(Icons.delete),
             onPressed: () {
-              onDelete();
-              Navigator.pop(context); // Fermer après suppression
+              widget.onDelete();
+              Navigator.pop(context);
             },
           )
         ],
       ),
       body: Center(
-        child: Image.file(File(photo.path)),
+        child: Image.file(File(widget.photo.path)),
       ),
     );
   }

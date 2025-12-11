@@ -362,7 +362,7 @@ class _PlantFinderScreenState extends State<PlantFinderScreen> {
                 child: ListTile(
                   leading: CircleAvatar(
                     child: Text(plantData.species[0]),
-                    backgroundColor: Colors.green[100],
+                    backgroundColor: _stringToColor(plantData.species),
                   ),
                   title: Text(plantData.species, style: const TextStyle(fontWeight: FontWeight.bold)),
                   subtitle: Text(plantData.difficulty.label), // Utilise ton extension .label
@@ -458,5 +458,15 @@ class _PlantFinderScreenState extends State<PlantFinderScreen> {
     if (cat == PlantCategory.indoor) return 'Intérieur';
     if (cat == PlantCategory.vegetable) return 'Potager';
     return 'Extérieur';
+  }
+
+  Color _stringToColor(String str) {
+    int hash = 0;
+    for (int i = 0; i < str.length; i++) {
+      hash = str.codeUnitAt(i) + ((hash << 5) - hash);
+    }
+    // On force des couleurs claires/pastel (Hue aléatoire, Saturation moyenne, Lightness haute)
+    final double hue = (hash % 360).toDouble();
+    return HSLColor.fromAHSL(1.0, hue, 0.6, 0.85).toColor(); 
   }
 }

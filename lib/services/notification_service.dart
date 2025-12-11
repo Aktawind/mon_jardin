@@ -73,7 +73,7 @@ class NotificationService {
       plant: plant,
       typeKey: 'water', // Pour l'ID unique
       title: 'Rappel d\'arrosage 💧',
-      body: '${plant.name} a besoin d\'eau.',
+      body: '${plant.displayName} a besoin d\'eau.',
       date: nextDate,
     );
   }
@@ -93,7 +93,7 @@ class NotificationService {
       plant: plant,
       typeKey: 'fert',
       title: 'Rappel de fertilisation 🌱',
-      body: 'C\'est l\'heure de l\'engrais pour ${plant.name}.',
+      body: 'C\'est l\'heure de l\'engrais pour ${plant.displayName}.',
       date: nextDate,
     );
   }
@@ -112,7 +112,7 @@ class NotificationService {
       plant: plant,
       typeKey: 'repot',
       title: 'Rappel de rempotage 🪴',
-      body: 'Pensez à rempoter ${plant.name} cette année.',
+      body: 'Pensez à rempoter ${plant.displayName} cette année.',
       date: nextDate,
     );
   }

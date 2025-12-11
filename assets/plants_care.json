@@ -1,5 +1,6 @@
 {
   "1": {
+    "species": "Sansevieria",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "low",
@@ -28,6 +29,7 @@
     "pruning": "Couper les feuilles abîmées à la base."
   },
   "2": {
+    "species": "Monstera Deliciosa",
     "light": "brightInd",
     "difficulty": "easy",
     "humidity": "medium",
@@ -56,6 +58,7 @@
     "pruning": "Nettoyer les feuilles à l'éponge humide."
   },
   "3": {
+    "species": "Pilea Peperomioides",
     "light": "brightInd",
     "difficulty": "medium",
     "humidity": "medium",
@@ -83,6 +86,7 @@
     "pruning": "Bouturer les rejets qui poussent au pied."
   },
   "4": {
+    "species": "Pothos",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -111,6 +115,7 @@
     "pruning": "Pincer les tiges pour étoffer la plante."
   },
   "5": {
+    "species": "Zamioculcas",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "low",
@@ -138,6 +143,7 @@
     "pruning": "Aucune, retirer les tiges jaunies."
   },
   "6": {
+    "species": "Ficus Elastica",
     "light": "brightInd",
     "difficulty": "easy",
     "humidity": "medium",
@@ -165,6 +171,7 @@
     "pruning": "Nettoyer les larges feuilles régulièrement."
   },
   "7": {
+    "species": "Ficus Lyrata",
     "light": "brightInd",
     "difficulty": "medium",
     "humidity": "medium",
@@ -192,6 +199,7 @@
     "pruning": "Éviter les courants d'air et les déplacements."
   },
   "8": {
+    "species": "Ficus Benjamina",
     "light": "brightInd",
     "difficulty": "medium",
     "humidity": "medium",
@@ -219,6 +227,7 @@
     "pruning": "Perd ses feuilles s'il est déplacé ou s'il a froid."
   },
   "9": {
+    "species": "Ficus Ginseng",
     "light": "brightInd",
     "difficulty": "easy",
     "humidity": "medium",
@@ -246,6 +255,7 @@
     "pruning": "Tailler pour garder la forme."
   },
   "10": {
+    "species": "Spathiphyllum",
     "light": "low",
     "difficulty": "easy",
     "humidity": "high",
@@ -273,6 +283,7 @@
     "pruning": "Couper les fleurs fanées et les feuilles brunes."
   },
   "11": {
+    "species": "Chlorophytum",
     "light": "brightInd",
     "difficulty": "easy",
     "humidity": "medium",
@@ -301,6 +312,7 @@
     "pruning": "Couper les pointes sèches si besoin."
   },
   "12": {
+    "species": "Anthurium",
     "light": "brightInd",
     "difficulty": "medium",
     "humidity": "high",
@@ -328,6 +340,7 @@
     "pruning": "Vaporiser le feuillage régulièrement."
   },
   "13": {
+    "species": "Dracaena Marginata",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -355,6 +368,7 @@
     "pruning": "Retirer les feuilles basses qui sèchent naturellement."
   },
   "14": {
+    "species": "Dracaena Fragrans",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -382,6 +396,7 @@
     "pruning": "Attention aux cochenilles farineuses."
   },
   "15": {
+    "species": "Yucca",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -409,6 +424,7 @@
     "pruning": "Très résistant à la sécheresse."
   },
   "16": {
+    "species": "Calathea",
     "light": "partial",
     "difficulty": "hard",
     "humidity": "high",
@@ -436,6 +452,7 @@
     "pruning": "Craint le calcaire et l'air sec."
   },
   "17": {
+    "species": "Maranta",
     "light": "partial",
     "difficulty": "medium",
     "humidity": "high",
@@ -463,6 +480,7 @@
     "pruning": "Ses feuilles se redressent le soir."
   },
   "18": {
+    "species": "Alocasia Polly",
     "light": "brightInd",
     "difficulty": "hard",
     "humidity": "high",
@@ -490,6 +508,7 @@
     "pruning": "Peut perdre ses feuilles en hiver (repos)."
   },
   "19": {
+    "species": "Alocasia Zebrina",
     "light": "brightInd",
     "difficulty": "hard",
     "humidity": "high",
@@ -517,6 +536,7 @@
     "pruning": "Attention aux tiges qui pourrissent vite."
   },
   "20": {
+    "species": "Aloe Vera",
     "light": "brightInd",
     "difficulty": "easy",
     "humidity": "low",
@@ -545,6 +565,7 @@
     "pruning": "Laisser sécher complètement entre deux arrosages."
   },
   "21": {
+    "species": "Crassula Ovata",
     "light": "brightInd",
     "difficulty": "easy",
     "humidity": "low",
@@ -573,6 +594,7 @@
     "pruning": "Très facile à bouturer par feuille."
   },
   "22": {
+    "species": "Haworthia",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "low",
@@ -600,6 +622,7 @@
     "pruning": "Idéal pour les petits espaces."
   },
   "23": {
+    "species": "Schlumbergera",
     "light": "brightInd",
     "difficulty": "medium",
     "humidity": "medium",
@@ -625,6 +648,7 @@
     "pruning": "Fleurit en hiver si on réduit l'arrosage en automne."
   },
   "24": {
+    "species": "Phalaenopsis",
     "light": "brightInd",
     "difficulty": "medium",
     "humidity": "high",
@@ -653,6 +677,7 @@
     "pruning": "Baigner les racines 15min puis égoutter."
   },
   "25": {
+    "species": "Areca",
     "light": "brightInd",
     "difficulty": "medium",
     "humidity": "medium",
@@ -680,6 +705,7 @@
     "pruning": "Bonne plante dépolluante."
   },
   "26": {
+    "species": "Kentia",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -707,6 +733,7 @@
     "pruning": "Supporte mieux l'ombre que les autres palmiers."
   },
   "27": {
+    "species": "Chamaedorea",
     "light": "low",
     "difficulty": "easy",
     "humidity": "medium",
@@ -734,6 +761,7 @@
     "pruning": "Idéal pour les coins sombres."
   },
   "28": {
+    "species": "Beaucarnea",
     "light": "brightInd",
     "difficulty": "easy",
     "humidity": "low",
@@ -761,6 +789,7 @@
     "pruning": "Stocke l'eau dans son tronc renflé."
   },
   "29": {
+    "species": "Syngonium",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -788,6 +817,7 @@
     "pruning": "Pincer pour densifier."
   },
   "30": {
+    "species": "Dieffenbachia",
     "light": "partial",
     "difficulty": "medium",
     "humidity": "medium",
@@ -815,6 +845,7 @@
     "pruning": "Sève très irritante, porter des gants."
   },
   "31": {
+    "species": "Aglaonema",
     "light": "low",
     "difficulty": "easy",
     "humidity": "medium",
@@ -842,6 +873,7 @@
     "pruning": "Très robuste et décorative."
   },
   "32": {
+    "species": "Tradescantia Zebrina",
     "light": "brightInd",
     "difficulty": "easy",
     "humidity": "medium",
@@ -869,6 +901,7 @@
     "pruning": "Bouturage inratable dans l'eau."
   },
   "33": {
+    "species": "Peperomia Obtusifolia",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -896,6 +929,7 @@
     "pruning": "Craint l'excès d'eau (feuilles charnues)."
   },
   "34": {
+    "species": "Ceropegia",
     "light": "brightInd",
     "difficulty": "medium",
     "humidity": "low",
@@ -923,6 +957,7 @@
     "pruning": "Plante retombante très graphique."
   },
   "35": {
+    "species": "Senecio Rowleyanus",
     "light": "brightInd",
     "difficulty": "hard",
     "humidity": "low",
@@ -950,6 +985,7 @@
     "pruning": "Arroser par le bas pour éviter de pourrir les perles."
   },
   "36": {
+    "species": "Fougère de Boston",
     "light": "partial",
     "difficulty": "medium",
     "humidity": "high",
@@ -977,6 +1013,7 @@
     "pruning": "Brumiser souvent, déteste l'air sec."
   },
   "37": {
+    "species": "Asplenium",
     "light": "low",
     "difficulty": "easy",
     "humidity": "medium",
@@ -1004,6 +1041,7 @@
     "pruning": "Ne pas arroser le cœur de la rosette."
   },
   "38": {
+    "species": "Schefflera",
     "light": "brightInd",
     "difficulty": "easy",
     "humidity": "medium",
@@ -1031,6 +1069,7 @@
     "pruning": "Croissance rapide, peut devenir grand."
   },
   "39": {
+    "species": "Hedera",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -1058,6 +1097,7 @@
     "pruning": "Attention aux acariens en intérieur chaud."
   },
   "40": {
+    "species": "Begonia Maculata",
     "light": "brightInd",
     "difficulty": "medium",
     "humidity": "medium",
@@ -1085,6 +1125,7 @@
     "pruning": "Feuillage spectaculaire à pois."
   },
   "41": {
+    "species": "Croton",
     "light": "brightInd",
     "difficulty": "hard",
     "humidity": "high",
@@ -1112,6 +1153,7 @@
     "pruning": "Perd ses couleurs s'il manque de lumière."
   },
   "42": {
+    "species": "Fittonia",
     "light": "partial",
     "difficulty": "medium",
     "humidity": "high",
@@ -1139,6 +1181,7 @@
     "pruning": "S'affaisse dramatiquement s'il a soif."
   },
   "43": {
+    "species": "Pachira",
     "light": "brightInd",
     "difficulty": "easy",
     "humidity": "medium",
@@ -1166,6 +1209,7 @@
     "pruning": "Souvent vendu avec le tronc tressé."
   },
   "44": {
+    "species": "Strelitzia",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "medium",
@@ -1193,6 +1237,7 @@
     "pruning": "Demande beaucoup de lumière pour fleurir."
   },
   "45": {
+    "species": "Bananier",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "high",
@@ -1221,6 +1266,7 @@
     "pruning": "Boit énormément d'eau en été."
   },
   "46": {
+    "species": "Cycas Revoluta",
     "light": "brightInd",
     "difficulty": "medium",
     "humidity": "medium",
@@ -1248,6 +1294,7 @@
     "pruning": "Toxique pour les animaux domestiques."
   },
   "47": {
+    "species": "Poinsettia",
     "light": "brightInd",
     "difficulty": "hard",
     "humidity": "medium",
@@ -1274,6 +1321,7 @@
     "pruning": "Difficile à faire refleurir l'année suivante."
   },
   "48": {
+    "species": "Kalanchoe",
     "light": "brightInd",
     "difficulty": "easy",
     "humidity": "low",
@@ -1301,6 +1349,7 @@
     "pruning": "Couper les hampes florales fanées."
   },
   "49": {
+    "species": "Cyclamen",
     "light": "brightInd",
     "difficulty": "medium",
     "humidity": "medium",
@@ -1327,6 +1376,7 @@
     "pruning": "Aime la fraîcheur (15-18°C), dort en été."
   },
   "50": {
+    "species": "Tillandsia",
     "light": "brightInd",
     "difficulty": "medium",
     "humidity": "high",
@@ -1351,6 +1401,7 @@
     "pruning": "Brumiser ou baigner la plante."
   },
   "51": {
+    "species": "Philodendron Scandens",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -1379,6 +1430,7 @@
     "pruning": "Pincer pour éviter qu'il ne se dégarnisse."
   },
   "52": {
+    "species": "Philodendron Birkin",
     "light": "brightInd",
     "difficulty": "medium",
     "humidity": "medium",
@@ -1406,6 +1458,7 @@
     "pruning": "Les stries blanches apparaissent avec la lumière."
   },
   "53": {
+    "species": "Rhaphidophora Tetrasperma",
     "light": "brightInd",
     "difficulty": "easy",
     "humidity": "medium",
@@ -1433,6 +1486,7 @@
     "pruning": "Grimpeur rapide, prévoir un tuteur."
   },
   "54": {
+    "species": "Hoya Kerrii",
     "light": "brightInd",
     "difficulty": "easy",
     "humidity": "low",
@@ -1460,6 +1514,7 @@
     "pruning": "Souvent vendue en feuille unique racinée."
   },
   "55": {
+    "species": "Hoya Carnosa",
     "light": "brightInd",
     "difficulty": "easy",
     "humidity": "medium",
@@ -1487,6 +1542,7 @@
     "pruning": "Ne pas couper les pédoncules (les fleurs reviennent dessus)."
   },
   "56": {
+    "species": "Echeveria",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -1514,6 +1570,7 @@
     "pruning": "L'arrosage sur les feuilles les fait pourrir."
   },
   "57": {
+    "species": "Euphorbia Ingens",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -1541,6 +1598,7 @@
     "pruning": "Latex blanc très toxique, attention aux yeux."
   },
   "58": {
+    "species": "Opuntia",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -1568,6 +1626,7 @@
     "pruning": "Attention aux glochides (minuscules épines)."
   },
   "59": {
+    "species": "Rhipsalis",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -1595,6 +1654,7 @@
     "pruning": "Cactus de forêt, n'aime pas le soleil direct."
   },
   "60": {
+    "species": "Lithops",
     "light": "direct",
     "difficulty": "hard",
     "humidity": "low",
@@ -1622,6 +1682,7 @@
     "pruning": "Ne jamais arroser en hiver (période de mue)."
   },
   "61": {
+    "species": "Dionaea Muscipula",
     "light": "direct",
     "difficulty": "hard",
     "humidity": "high",
@@ -1648,6 +1709,7 @@
     "pruning": "Eau déminéralisée ou de pluie impérative."
   },
   "62": {
+    "species": "Nepenthes",
     "light": "brightInd",
     "difficulty": "hard",
     "humidity": "high",
@@ -1675,6 +1737,7 @@
     "pruning": "Besoin d'humidité très élevée pour former des urnes."
   },
   "63": {
+    "species": "Saintpaulia",
     "light": "brightInd",
     "difficulty": "medium",
     "humidity": "medium",
@@ -1702,6 +1765,7 @@
     "pruning": "Arroser par la soucoupe, ne pas mouiller les feuilles."
   },
   "64": {
+    "species": "Guzmania",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "high",
@@ -1726,6 +1790,7 @@
     "pruning": "Arroser dans le cœur de la rosette (l'entonnoir)."
   },
   "65": {
+    "species": "Vriesea",
     "light": "brightInd",
     "difficulty": "easy",
     "humidity": "medium",
@@ -1750,6 +1815,7 @@
     "pruning": "Meurt après la floraison mais fait des rejets."
   },
   "66": {
+    "species": "Aechmea Fasciata",
     "light": "brightInd",
     "difficulty": "easy",
     "humidity": "medium",
@@ -1777,6 +1843,7 @@
     "pruning": "La fleur rose dure plusieurs mois."
   },
   "67": {
+    "species": "Clivia Miniata",
     "light": "low",
     "difficulty": "easy",
     "humidity": "low",
@@ -1803,6 +1870,7 @@
     "pruning": "Besoin d'une période de froid sec en hiver pour fleurir."
   },
   "68": {
+    "species": "Medinilla Magnifica",
     "light": "brightInd",
     "difficulty": "hard",
     "humidity": "high",
@@ -1830,6 +1898,7 @@
     "pruning": "Fleurs retombantes spectaculaires."
   },
   "69": {
+    "species": "Gardenia",
     "light": "brightInd",
     "difficulty": "hard",
     "humidity": "high",
@@ -1857,6 +1926,7 @@
     "pruning": "Craint le calcaire et les changements de température."
   },
   "70": {
+    "species": "Stephanotis",
     "light": "brightInd",
     "difficulty": "medium",
     "humidity": "medium",
@@ -1884,6 +1954,7 @@
     "pruning": "Parfum très puissant."
   },
   "71": {
+    "species": "Dendrobium",
     "light": "brightInd",
     "difficulty": "medium",
     "humidity": "high",
@@ -1911,6 +1982,7 @@
     "pruning": "A besoin d'écarts de température jour/nuit."
   },
   "72": {
+    "species": "Cymbidium",
     "light": "brightInd",
     "difficulty": "easy",
     "humidity": "medium",
@@ -1938,6 +2010,7 @@
     "pruning": "Aime passer l'été dehors à l'ombre."
   },
   "73": {
+    "species": "Citronnier",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "medium",
@@ -1965,6 +2038,7 @@
     "pruning": "Ne supporte pas la chaleur sèche des radiateurs."
   },
   "74": {
+    "species": "Coffea Arabica",
     "light": "partial",
     "difficulty": "medium",
     "humidity": "medium",
@@ -1992,6 +2066,7 @@
     "pruning": "Feuillage brillant, brumiser régulièrement."
   },
   "75": {
+    "species": "Adiantum",
     "light": "low",
     "difficulty": "hard",
     "humidity": "high",
@@ -2019,6 +2094,7 @@
     "pruning": "Sèche irrémédiablement si on oublie un arrosage."
   },
   "76": {
+    "species": "Platycerium",
     "light": "partial",
     "difficulty": "medium",
     "humidity": "high",
@@ -2046,6 +2122,7 @@
     "pruning": "Arroser par bassinage de la souche."
   },
   "77": {
+    "species": "Asparagus",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -2073,6 +2150,7 @@
     "pruning": "Pas une vraie fougère, plus résistant."
   },
   "78": {
+    "species": "Aeschynanthus",
     "light": "brightInd",
     "difficulty": "medium",
     "humidity": "high",
@@ -2100,6 +2178,7 @@
     "pruning": "Fleurs rouges tubulaires."
   },
   "79": {
+    "species": "Oxalis Triangularis",
     "light": "brightInd",
     "difficulty": "easy",
     "humidity": "medium",
@@ -2127,6 +2206,7 @@
     "pruning": "Les feuilles se ferment la nuit (nyctinastie)."
   },
   "80": {
+    "species": "Mimosa Pudica",
     "light": "brightInd",
     "difficulty": "medium",
     "humidity": "high",
@@ -2154,6 +2234,7 @@
     "pruning": "Ses feuilles se replient instantanément au toucher."
   },
   "81": {
+    "species": "Caladium",
     "light": "partial",
     "difficulty": "hard",
     "humidity": "high",
@@ -2182,6 +2263,7 @@
     "pruning": "Perd toutes ses feuilles en hiver (bulbe en dormance)."
   },
   "82": {
+    "species": "Stromanthe Triostar",
     "light": "partial",
     "difficulty": "medium",
     "humidity": "high",
@@ -2209,6 +2291,7 @@
     "pruning": "Feuillage rose, vert et blanc spectaculaire."
   },
   "83": {
+    "species": "Hypoestes",
     "light": "brightInd",
     "difficulty": "easy",
     "humidity": "medium",
@@ -2236,6 +2319,7 @@
     "pruning": "Pincer souvent pour garder une forme boule."
   },
   "84": {
+    "species": "Araucaria",
     "light": "brightInd",
     "difficulty": "medium",
     "humidity": "medium",
@@ -2263,6 +2347,7 @@
     "pruning": "Aiguilles douces, n'aime pas être déplacé."
   },
   "85": {
+    "species": "Fatsia Japonica",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -2290,6 +2375,7 @@
     "pruning": "Aime les pièces fraîches (entrées, vérandas)."
   },
   "86": {
+    "species": "Peperomia Argyreia",
     "light": "brightInd",
     "difficulty": "medium",
     "humidity": "medium",
@@ -2317,6 +2403,7 @@
     "pruning": "Feuilles ressemblant à la peau d'une pastèque."
   },
   "87": {
+    "species": "Soleirolia",
     "light": "partial",
     "difficulty": "medium",
     "humidity": "high",
@@ -2344,6 +2431,7 @@
     "pruning": "Couvre-sol dense, idéal en terrarium."
   },
   "88": {
+    "species": "Muehlenbeckia",
     "light": "brightInd",
     "difficulty": "easy",
     "humidity": "medium",
@@ -2371,6 +2459,7 @@
     "pruning": "Très graphique et envahissante si on la laisse faire."
   },
   "89": {
+    "species": "Papyrus",
     "light": "brightInd",
     "difficulty": "easy",
     "humidity": "high",
@@ -2398,6 +2487,7 @@
     "pruning": "Laisser la base du pot tremper dans l'eau en permanence."
   },
   "90": {
+    "species": "Cissus",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -2425,6 +2515,7 @@
     "pruning": "Alternative robuste au lierre."
   },
   "91": {
+    "species": "Polyscias",
     "light": "partial",
     "difficulty": "medium",
     "humidity": "high",
@@ -2452,6 +2543,7 @@
     "pruning": "Ressemble à un arbre miniature."
   },
   "92": {
+    "species": "Radermachera",
     "light": "brightInd",
     "difficulty": "medium",
     "humidity": "medium",
@@ -2479,6 +2571,7 @@
     "pruning": "Feuillage très découpé et brillant."
   },
   "93": {
+    "species": "Gynura",
     "light": "brightInd",
     "difficulty": "easy",
     "humidity": "medium",
@@ -2506,6 +2599,7 @@
     "pruning": "Feuilles recouvertes d'un duvet violet."
   },
   "94": {
+    "species": "Solanum Pseudocapsicum",
     "light": "brightInd",
     "difficulty": "medium",
     "humidity": "medium",
@@ -2533,6 +2627,7 @@
     "pruning": "Baies oranges décoratives mais toxiques."
   },
   "95": {
+    "species": "Nertera",
     "light": "brightInd",
     "difficulty": "hard",
     "humidity": "medium",
@@ -2557,6 +2652,7 @@
     "pruning": "Souvent jetée après la disparition des baies oranges."
   },
   "96": {
+    "species": "Basilic",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "medium",
@@ -2576,6 +2672,7 @@
     "pruning": "En pot sur rebord de fenêtre. Ne pas mouiller les feuilles."
   },
   "97": {
+    "species": "Cordyline",
     "light": "brightInd",
     "difficulty": "medium",
     "humidity": "high",
@@ -2603,6 +2700,7 @@
     "pruning": "Souvent confondue avec le Dracaena, aime plus l'humidité."
   },
   "98": {
+    "species": "Bonsaï Ulmus",
     "light": "brightInd",
     "difficulty": "medium",
     "humidity": "medium",
@@ -2630,6 +2728,7 @@
     "pruning": "Le bonsaï le plus facile pour débuter."
   },
   "99": {
+    "species": "Aspidistra",
     "light": "low",
     "difficulty": "easy",
     "humidity": "low",
@@ -2657,6 +2756,7 @@
     "pruning": "Quasi indestructible, tolère l'ombre noire."
   },
   "100": {
+    "species": "Lucky Bamboo",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -2681,6 +2781,7 @@
     "pruning": "Changer l'eau tous les 10 jours s'il est en vase."
   },
   "101": {
+    "species": "Scindapsus Pictus",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -2708,6 +2809,7 @@
     "pruning": "Feuilles veloutées avec des taches argentées."
   },
   "102": {
+    "species": "Philodendron Pink Princess",
     "light": "brightInd",
     "difficulty": "medium",
     "humidity": "medium",
@@ -2735,6 +2837,7 @@
     "pruning": "Besoin de bonne lumière pour garder ses taches roses."
   },
   "103": {
+    "species": "Calathea Orbifolia",
     "light": "partial",
     "difficulty": "hard",
     "humidity": "high",
@@ -2762,6 +2865,7 @@
     "pruning": "Immenses feuilles rondes très décoratives."
   },
   "104": {
+    "species": "Begonia Rex",
     "light": "brightInd",
     "difficulty": "medium",
     "humidity": "high",
@@ -2789,6 +2893,7 @@
     "pruning": "Craint l'oïdium (poudre blanche) si l'air ne circule pas."
   },
   "105": {
+    "species": "Hibiscus",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "high",
@@ -2816,6 +2921,7 @@
     "pruning": "Fleurs éphémères (24h) mais se renouvellent tout l'été."
   },
   "106": {
+    "species": "Jasmin",
     "light": "brightInd",
     "difficulty": "medium",
     "humidity": "medium",
@@ -2843,6 +2949,7 @@
     "pruning": "Plante grimpante au parfum entêtant."
   },
   "107": {
+    "species": "Azalée",
     "light": "partial",
     "difficulty": "hard",
     "humidity": "high",
@@ -2870,6 +2977,7 @@
     "pruning": "Ne supporte pas le calcaire ni la chaleur (>20°C)."
   },
   "108": {
+    "species": "Ciboulette",
     "light": "brightInd",
     "difficulty": "easy",
     "humidity": "medium",
@@ -2897,6 +3005,7 @@
     "pruning": "Couper régulièrement pour stimuler la repousse."
   },
   "109": {
+    "species": "Persil",
     "light": "partial",
     "difficulty": "medium",
     "humidity": "medium",
@@ -2916,6 +3025,7 @@
     "pruning": "Difficile à garder en pot du commerce, mieux vaut semer."
   },
   "110": {
+    "species": "Romarin",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "low",
@@ -2943,6 +3053,7 @@
     "pruning": "Déteste l'humidité stagnante, meurt vite en intérieur sombre."
   },
   "111": {
+    "species": "Thym",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -2970,6 +3081,7 @@
     "pruning": "Parfait pour un balcon plein sud."
   },
   "112": {
+    "species": "Piment",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "medium",
@@ -2989,6 +3101,7 @@
     "pruning": "Besoin de beaucoup de lumière pour faire des fruits."
   },
   "113": {
+    "species": "Sedum Morganianum",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "low",
@@ -3016,6 +3129,7 @@
     "pruning": "Les feuilles tombent au moindre choc, manipuler avec précaution."
   },
   "114": {
+    "species": "Senecio Peregrinus",
     "light": "brightInd",
     "difficulty": "medium",
     "humidity": "low",
@@ -3043,6 +3157,7 @@
     "pruning": "Feuilles étonnantes en forme de dauphin sautant."
   },
   "115": {
+    "species": "Echinocactus",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -3070,6 +3185,7 @@
     "pruning": "Grosse boule épineuse, croissance très lente."
   },
   "116": {
+    "species": "Gymnocalycium",
     "light": "brightInd",
     "difficulty": "medium",
     "humidity": "low",
@@ -3097,6 +3213,7 @@
     "pruning": "C'est un cactus greffé coloré qui vit sur un porte-greffe vert."
   },
   "117": {
+    "species": "Ficus Pumila",
     "light": "partial",
     "difficulty": "medium",
     "humidity": "high",
@@ -3124,6 +3241,7 @@
     "pruning": "Grimpante vigoureuse, idéale pour murs végétaux."
   },
   "118": {
+    "species": "Coleus",
     "light": "brightInd",
     "difficulty": "easy",
     "humidity": "medium",
@@ -3151,6 +3269,7 @@
     "pruning": "Couper les fleurs bleues pour favoriser le feuillage coloré."
   },
   "119": {
+    "species": "Pelargonium",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -3178,6 +3297,7 @@
     "pruning": "La star des balcons. À rentrer hors gel l'hiver."
   },
   "120": {
+    "species": "Campanule",
     "light": "brightInd",
     "difficulty": "medium",
     "humidity": "medium",
@@ -3205,6 +3325,7 @@
     "pruning": "Supprimer les fleurs fanées prolonge la floraison."
   },
   "121": {
+    "species": "Primevère",
     "light": "brightInd",
     "difficulty": "medium",
     "humidity": "medium",
@@ -3220,13 +3341,14 @@
     "harvest_months": [],
     "repotting_months": [
       9,
-      10
+      1
     ],
     "wintering_months": [],
     "soil": "Terreau frais.",
     "pruning": "Plante de saison fraîche, n'aime pas les intérieurs surchauffés."
   },
   "122": {
+    "species": "Gloxinia",
     "light": "brightInd",
     "difficulty": "hard",
     "humidity": "high",
@@ -3253,6 +3375,7 @@
     "pruning": "Grandes fleurs clochettes veloutées."
   },
   "123": {
+    "species": "Nematanthus",
     "light": "brightInd",
     "difficulty": "medium",
     "humidity": "medium",
@@ -3280,6 +3403,7 @@
     "pruning": "Fleurs oranges ressemblant à un poisson."
   },
   "124": {
+    "species": "Saxifraga Stolonifera",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -3307,6 +3431,7 @@
     "pruning": "Produit des stolons (bébés plantes) qui pendent comme des fraisiers."
   },
   "125": {
+    "species": "Pilea Cadierei",
     "light": "partial",
     "difficulty": "medium",
     "humidity": "medium",
@@ -3334,6 +3459,7 @@
     "pruning": "Feuillage vert foncé avec des taches argentées métalliques."
   },
   "126": {
+    "species": "Plectranthus",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -3361,6 +3487,7 @@
     "pruning": "Croissance très rapide en suspension."
   },
   "127": {
+    "species": "Callisia Repens",
     "light": "brightInd",
     "difficulty": "easy",
     "humidity": "medium",
@@ -3388,6 +3515,7 @@
     "pruning": "Adorée des tortues et reptiles comme nourriture."
   },
   "128": {
+    "species": "Tradescantia Nanouk",
     "light": "brightInd",
     "difficulty": "easy",
     "humidity": "medium",
@@ -3415,6 +3543,7 @@
     "pruning": "Variété rose et violette très compacte."
   },
   "129": {
+    "species": "Drosera",
     "light": "direct",
     "difficulty": "hard",
     "humidity": "high",
@@ -3441,6 +3570,7 @@
     "pruning": "Plante carnivore collante, eau de pluie uniquement."
   },
   "130": {
+    "species": "Sarracenia",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "high",
@@ -3467,6 +3597,7 @@
     "pruning": "Pieds dans l'eau en été, repos au frais en hiver."
   },
   "131": {
+    "species": "Phlebodium Aureum",
     "light": "partial",
     "difficulty": "medium",
     "humidity": "high",
@@ -3494,6 +3625,7 @@
     "pruning": "Fougère au feuillage bleuté et rhizomes poilus."
   },
   "132": {
+    "species": "Davallia",
     "light": "partial",
     "difficulty": "medium",
     "humidity": "medium",
@@ -3521,6 +3653,7 @@
     "pruning": "Rhizomes poilus qui rampent hors du pot, ne pas les enterrer."
   },
   "133": {
+    "species": "Caryota",
     "light": "brightInd",
     "difficulty": "medium",
     "humidity": "high",
@@ -3548,6 +3681,7 @@
     "pruning": "Feuilles originales en forme de nageoire."
   },
   "134": {
+    "species": "Livistona Rotundifolia",
     "light": "brightInd",
     "difficulty": "medium",
     "humidity": "high",
@@ -3575,6 +3709,7 @@
     "pruning": "Attention aux épines sur les pétioles."
   },
   "135": {
+    "species": "Washingtonia",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -3602,6 +3737,7 @@
     "pruning": "Croissance rapide, devient vite trop grand pour le salon."
   },
   "136": {
+    "species": "Ceropegia Sandersonii",
     "light": "brightInd",
     "difficulty": "medium",
     "humidity": "low",
@@ -3629,6 +3765,7 @@
     "pruning": "Fleurs spectaculaires en forme de parachute vert."
   },
   "137": {
+    "species": "Curcuma",
     "light": "brightInd",
     "difficulty": "medium",
     "humidity": "high",
@@ -3656,6 +3793,7 @@
     "pruning": "Le rhizome dort en hiver (plus de feuilles)."
   },
   "138": {
+    "species": "Gingembre",
     "light": "partial",
     "difficulty": "medium",
     "humidity": "high",
@@ -3681,6 +3819,7 @@
     "pruning": "Facile à faire pousser à partir d'une racine du commerce."
   },
   "139": {
+    "species": "Passiflore",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "medium",
@@ -3708,6 +3847,7 @@
     "pruning": "Grimpe très vite, fleurs très complexes."
   },
   "140": {
+    "species": "Dipladenia",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -3735,6 +3875,7 @@
     "pruning": "Très florifère tout l'été, stocke l'eau dans ses racines tubéreuses."
   },
   "141": {
+    "species": "Laurier Sauce",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -3762,6 +3903,7 @@
     "pruning": "Arbuste condimentaire, supporte très bien la taille."
   },
   "142": {
+    "species": "Aralia Fabian",
     "light": "brightInd",
     "difficulty": "medium",
     "humidity": "high",
@@ -3789,6 +3931,7 @@
     "pruning": "Tronc épais et feuilles rondes pourpres/vertes."
   },
   "143": {
+    "species": "Clématite",
     "light": "partial",
     "difficulty": "medium",
     "humidity": "medium",
@@ -3817,6 +3960,7 @@
     "pruning": "La tête au soleil, le pied à l'ombre (protéger le pot)."
   },
   "144": {
+    "species": "Asplenium Parvati",
     "light": "partial",
     "difficulty": "medium",
     "humidity": "high",
@@ -3844,6 +3988,7 @@
     "pruning": "Feuillage finement découpé, plus coriace que les autres fougères."
   },
   "145": {
+    "species": "Amaryllis",
     "light": "brightInd",
     "difficulty": "easy",
     "humidity": "medium",
@@ -3869,6 +4014,7 @@
     "pruning": "Spectaculaire floraison d'hiver. Couper la hampe après floraison."
   },
   "146": {
+    "species": "Mammillaria",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -3896,6 +4042,7 @@
     "pruning": "Le cactus le plus courant, fait une couronne de petites fleurs roses."
   },
   "147": {
+    "species": "Epiphyllum Anguliger",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -3923,6 +4070,7 @@
     "pruning": "Cactus de jungle (épiphyte), aime plus l'eau que les cactus du désert."
   },
   "148": {
+    "species": "Pinguicula",
     "light": "brightInd",
     "difficulty": "medium",
     "humidity": "high",
@@ -3949,6 +4097,7 @@
     "pruning": "Carnivore : ses feuilles grasses piègent les moucherons."
   },
   "149": {
+    "species": "Clusia Rosea",
     "light": "brightInd",
     "difficulty": "easy",
     "humidity": "medium",
@@ -3976,6 +4125,7 @@
     "pruning": "Feuilles épaisses quasi indestructibles. On peut 'écrire' dessus."
   },
   "150": {
+    "species": "Euphorbia Trigona",
     "light": "brightInd",
     "difficulty": "easy",
     "humidity": "low",
@@ -4003,6 +4153,7 @@
     "pruning": "Pas un vrai cactus. Perd ses petites feuilles en hiver."
   },
   "151": {
+    "species": "Albuca Spiralis",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "low",
@@ -4028,6 +4179,7 @@
     "pruning": "Pousse en hiver ! Les feuilles frisent s'il y a beaucoup de soleil."
   },
   "152": {
+    "species": "Zantedeschia",
     "light": "brightInd",
     "difficulty": "medium",
     "humidity": "high",
@@ -4055,6 +4207,7 @@
     "pruning": "Élégante fleur en cornet. Très toxique pour les chats."
   },
   "153": {
+    "species": "Aphelandra",
     "light": "brightInd",
     "difficulty": "hard",
     "humidity": "high",
@@ -4082,6 +4235,7 @@
     "pruning": "Feuilles rayées très graphiques et fleur jaune vif."
   },
   "154": {
+    "species": "Cereus",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -4109,6 +4263,7 @@
     "pruning": "Le cactus colonnaire classique des dessins animés."
   },
   "155": {
+    "species": "Ludisia Discolor",
     "light": "partial",
     "difficulty": "medium",
     "humidity": "high",
@@ -4136,6 +4291,7 @@
     "pruning": "Cultivée pour son feuillage pourpre velouté, pas pour ses fleurs."
   },
   "156": {
+    "species": "Astrophytum",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "low",
@@ -4163,6 +4319,7 @@
     "pruning": "Cactus sans épines, forme géométrique parfaite."
   },
   "157": {
+    "species": "Peperomia Caperata",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -4190,6 +4347,7 @@
     "pruning": "Feuilles très texturées, existe en vert, rouge ou gris."
   },
   "158": {
+    "species": "Jacinthe",
     "light": "brightInd",
     "difficulty": "easy",
     "humidity": "medium",
@@ -4205,13 +4363,14 @@
     "harvest_months": [],
     "repotting_months": [
       9,
-      10
+      1
     ],
     "wintering_months": [],
     "soil": "Terreau ou eau (carafe).",
     "pruning": "Parfum très puissant. Après floraison, planter au jardin."
   },
   "159": {
+    "species": "Agave",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -4239,6 +4398,7 @@
     "pruning": "Attention à l'épine terminale très acérée."
   },
   "160": {
+    "species": "Gasteria",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "low",
@@ -4266,6 +4426,7 @@
     "pruning": "Cousine de l'Aloé, supporte beaucoup mieux l'ombre."
   },
   "161": {
+    "species": "Blechnum",
     "light": "partial",
     "difficulty": "medium",
     "humidity": "high",
@@ -4293,6 +4454,7 @@
     "pruning": "Forme un petit tronc avec l'âge."
   },
   "162": {
+    "species": "Pilea Glauca",
     "light": "brightInd",
     "difficulty": "medium",
     "humidity": "medium",
@@ -4320,6 +4482,7 @@
     "pruning": "Cascades de minuscules feuilles gris-argenté."
   },
   "163": {
+    "species": "Eucalyptus",
     "light": "direct",
     "difficulty": "hard",
     "humidity": "medium",
@@ -4347,6 +4510,7 @@
     "pruning": "Difficile en intérieur, sèche vite. Odeur mentholée."
   },
   "164": {
+    "species": "Chrysanthème",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -4374,6 +4538,7 @@
     "pruning": "La star de l'automne, existe en mille couleurs."
   },
   "165": {
+    "species": "Coriandre",
     "light": "partial",
     "difficulty": "medium",
     "humidity": "medium",
@@ -4393,6 +4558,7 @@
     "pruning": "Monte vite en graines s'il fait trop chaud."
   },
   "166": {
+    "species": "Ananas",
     "light": "brightInd",
     "difficulty": "easy",
     "humidity": "medium",
@@ -4420,6 +4586,7 @@
     "pruning": "Le fruit est comestible (mais petit). La plante meurt après, laissant des rejets."
   },
   "167": {
+    "species": "Ixora",
     "light": "brightInd",
     "difficulty": "hard",
     "humidity": "high",
@@ -4447,6 +4614,7 @@
     "pruning": "Arbuste à fleurs magnifiques, demande beaucoup d'humidité."
   },
   "168": {
+    "species": "Euphorbia Milii",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -4474,6 +4642,7 @@
     "pruning": "Fleurit presque toute l'année si elle a du soleil."
   },
   "169": {
+    "species": "Opuntia Microdasys",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -4501,6 +4670,7 @@
     "pruning": "Attention, pas d'épines mais des glochides irritants."
   },
   "170": {
+    "species": "Ledebouria",
     "light": "brightInd",
     "difficulty": "easy",
     "humidity": "medium",
@@ -4528,6 +4698,7 @@
     "pruning": "Plante à bulbe très prolifique, feuilles léopard."
   },
   "171": {
+    "species": "Dischidia",
     "light": "partial",
     "difficulty": "medium",
     "humidity": "medium",
@@ -4555,6 +4726,7 @@
     "pruning": "Cousine des Hoya, feuilles rondes comme des pièces."
   },
   "172": {
+    "species": "Hatiora",
     "light": "brightInd",
     "difficulty": "easy",
     "humidity": "medium",
@@ -4582,6 +4754,7 @@
     "pruning": "Tiges composées de petits segments en forme de bouteille."
   },
   "173": {
+    "species": "Selaginella",
     "light": "low",
     "difficulty": "hard",
     "humidity": "high",
@@ -4609,6 +4782,7 @@
     "pruning": "Idéale en terrarium fermé, déteste l'air sec."
   },
   "174": {
+    "species": "Cyrtomium",
     "light": "low",
     "difficulty": "easy",
     "humidity": "medium",
@@ -4636,6 +4810,7 @@
     "pruning": "Fougère aux feuilles coriaces et brillantes, très robuste."
   },
   "175": {
+    "species": "Pellaea",
     "light": "partial",
     "difficulty": "medium",
     "humidity": "medium",
@@ -4663,6 +4838,7 @@
     "pruning": "Feuilles rondes vert sombre, supporte un peu de sécheresse."
   },
   "176": {
+    "species": "Tolmiea",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -4690,6 +4866,7 @@
     "pruning": "De nouvelles plantes poussent directement sur les feuilles des anciennes."
   },
   "177": {
+    "species": "Sempervivum",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -4717,6 +4894,7 @@
     "pruning": "Plante d'extérieur increvable, meurt en intérieur (manque de froid/lumière)."
   },
   "178": {
+    "species": "Portulacaria Afra",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -4744,6 +4922,7 @@
     "pruning": "Souvent confondue avec l'Arbre de Jade, mais tiges rouges et feuilles plus petites."
   },
   "179": {
+    "species": "Senecio Cephalophorus",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -4771,6 +4950,7 @@
     "pruning": "Feuillage gris-bleu très intense."
   },
   "180": {
+    "species": "Plumeria",
     "light": "direct",
     "difficulty": "hard",
     "humidity": "medium",
@@ -4798,6 +4978,7 @@
     "pruning": "Perd ses feuilles en hiver. Très sensible aux acariens."
   },
   "181": {
+    "species": "Gerbera",
     "light": "brightInd",
     "difficulty": "medium",
     "humidity": "medium",
@@ -4825,6 +5006,7 @@
     "pruning": "Grosses fleurs très colorées, idéales pour égayer une pièce."
   },
   "182": {
+    "species": "Lys",
     "light": "brightInd",
     "difficulty": "medium",
     "humidity": "medium",
@@ -4850,6 +5032,7 @@
     "pruning": "Mortellement toxique pour les chats (le pollen suffit). Bulbille."
   },
   "183": {
+    "species": "Lantana",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -4877,6 +5060,7 @@
     "pruning": "Les fleurs changent de couleur en vieillissant."
   },
   "184": {
+    "species": "Philodendron Xanadu",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -4904,6 +5088,7 @@
     "pruning": "Ne grimpe pas, forme une touffe dense de feuilles découpées."
   },
   "185": {
+    "species": "Epipremnum Neon",
     "light": "brightInd",
     "difficulty": "easy",
     "humidity": "medium",
@@ -4931,6 +5116,7 @@
     "pruning": "Feuillage vert fluo éclatant, demande plus de lumière que le pothos classique."
   },
   "186": {
+    "species": "Tephrocactus",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "low",
@@ -4958,6 +5144,7 @@
     "pruning": "Curieux cactus aux épines plates et flexibles comme du papier."
   },
   "187": {
+    "species": "Ctenanthe",
     "light": "partial",
     "difficulty": "medium",
     "humidity": "high",
@@ -4985,6 +5172,7 @@
     "pruning": "Cousine des Calathea, plus robuste et compacte."
   },
   "188": {
+    "species": "Stevia",
     "light": "brightInd",
     "difficulty": "medium",
     "humidity": "medium",
@@ -5012,6 +5200,7 @@
     "pruning": "Feuilles au goût sucré intense, substitut naturel au sucre."
   },
   "189": {
+    "species": "Callistemon",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "medium",
@@ -5039,6 +5228,7 @@
     "pruning": "Fleurs rouges originales ressemblant à un goupillon."
   },
   "190": {
+    "species": "Ferocactus",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -5066,6 +5256,7 @@
     "pruning": "Grosses épines rouges ou jaunes crochues."
   },
   "191": {
+    "species": "Solanum",
     "light": "brightInd",
     "difficulty": "medium",
     "humidity": "medium",
@@ -5090,6 +5281,7 @@
     "pruning": "Baies oranges décoratives très toxiques. Souvent jeté après Noël."
   },
   "192": {
+    "species": "Rebutia",
     "light": "brightInd",
     "difficulty": "easy",
     "humidity": "low",
@@ -5117,6 +5309,7 @@
     "pruning": "Petit cactus globulaire qui fleurit très facilement (fleurs rouges/oranges)."
   },
   "193": {
+    "species": "Jasmine Sambac",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "medium",
@@ -5144,6 +5337,7 @@
     "pruning": "Le jasmin utilisé pour parfumer le thé. Fleur blanche très odorante."
   },
   "194": {
+    "species": "Kalanchoe Tomentosa",
     "light": "brightInd",
     "difficulty": "easy",
     "humidity": "low",
@@ -5171,6 +5365,7 @@
     "pruning": "Feuilles recouvertes d'un duvet gris très doux avec des pointes marron."
   },
   "195": {
+    "species": "Cactus",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -5199,6 +5394,7 @@
     "pruning": "Cette fiche couvre la majorité des cactus épineux (Mammillaria, Cereus, Echinocactus...). L'ennemi n°1 est l'excès d'eau : stoppez tout arrosage en hiver."
   },
   "196": {
+    "species": "Succulente",
     "light": "brightInd",
     "difficulty": "easy",
     "humidity": "low",
@@ -5226,6 +5422,7 @@
     "pruning": "Concerne les plantes aux feuilles charnues sans épines. Arrosez uniquement quand la terre est totalement sèche. Si les feuilles flétrissent, elle a soif. Si elles deviennent molles/noires, trop d'eau."
   },
   "197": {
+    "species": "Pommier",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "medium",
@@ -5251,6 +5448,7 @@
     "pruning": "Taille de fructification en fin d'hiver, hors gel."
   },
   "198": {
+    "species": "Poirier",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "medium",
@@ -5276,6 +5474,7 @@
     "pruning": "Supprimer les branches qui se croisent au centre."
   },
   "199": {
+    "species": "Cerisier",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -5298,6 +5497,7 @@
     "pruning": "Taille légère après la récolte (été) pour éviter la gommose."
   },
   "200": {
+    "species": "Prunier",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -5323,6 +5523,7 @@
     "pruning": "N'aime pas être taillé sévèrement."
   },
   "201": {
+    "species": "Pêcher",
     "light": "direct",
     "difficulty": "hard",
     "humidity": "medium",
@@ -5346,6 +5547,7 @@
     "pruning": "Sensible à la cloque du pêcher. Tailler juste avant la floraison."
   },
   "202": {
+    "species": "Abricotier",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "low",
@@ -5371,6 +5573,7 @@
     "pruning": "Fleurit tôt, craint les gelées tardives."
   },
   "203": {
+    "species": "Noyer",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -5392,6 +5595,7 @@
     "pruning": "Ne rien faire planter sous un noyer. Tailler en automne pour éviter l'écoulement de sève."
   },
   "204": {
+    "species": "Noisetier",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -5416,6 +5620,7 @@
     "pruning": "Supprimer les vieux bois pour aérer la touffe."
   },
   "205": {
+    "species": "Erable du Japon",
     "light": "partial",
     "difficulty": "medium",
     "humidity": "high",
@@ -5438,6 +5643,7 @@
     "pruning": "Craint le soleil brûlant et le vent sec. Taille très légère."
   },
   "206": {
+    "species": "Bouleau",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -5463,6 +5669,7 @@
     "pruning": "Écorce blanche décorative. Arbre pionnier à croissance rapide."
   },
   "207": {
+    "species": "Chêne",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -5484,6 +5691,7 @@
     "pruning": "Symbole de force. Demande beaucoup d'espace."
   },
   "208": {
+    "species": "Saule Pleureur",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "high",
@@ -5506,6 +5714,7 @@
     "pruning": "Idéal près d'une pièce d'eau. Racines traçantes puissantes."
   },
   "209": {
+    "species": "Tilleul",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -5527,6 +5736,7 @@
     "pruning": "Fleurs parfumées utilisées en infusion."
   },
   "210": {
+    "species": "Albizia",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "medium",
@@ -5550,6 +5760,7 @@
     "pruning": "Fleurs roses plumeuses en été. Feuillage léger qui se ferme la nuit."
   },
   "211": {
+    "species": "Magnolia",
     "light": "partial",
     "difficulty": "medium",
     "humidity": "medium",
@@ -5573,6 +5784,7 @@
     "pruning": "Fleurs spectaculaires. Tailler après la floraison si nécessaire."
   },
   "212": {
+    "species": "Lilas",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -5596,6 +5808,7 @@
     "pruning": "Couper les fleurs fanées juste après la floraison pour garantir celle de l'an prochain."
   },
   "213": {
+    "species": "Mimosa d'hiver",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "low",
@@ -5618,6 +5831,7 @@
     "pruning": "Fleurit en hiver (pompons jaunes). Tailler après la floraison."
   },
   "214": {
+    "species": "Ginkgo Biloba",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -5640,6 +5854,7 @@
     "pruning": "Feuillage jaune d'or superbe en automne. Très résistant à la pollution."
   },
   "215": {
+    "species": "Lilas des Indes",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "medium",
@@ -5665,6 +5880,7 @@
     "pruning": "Fleurit tout l'été. Tailler court en fin d'hiver pour avoir de belles grappes."
   },
   "216": {
+    "species": "Thuya",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -5689,6 +5905,7 @@
     "pruning": "Le classique des haies. Tailler deux fois par an pour garder dense."
   },
   "217": {
+    "species": "Cyprès de Leyland",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -5713,6 +5930,7 @@
     "pruning": "Croissance très rapide (occultant). Attention aux allergies."
   },
   "218": {
+    "species": "Sapin de Noël",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -5735,6 +5953,7 @@
     "pruning": "Ne se taille généralement pas (port naturel pyramidal)."
   },
   "219": {
+    "species": "Pin Parasol",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "low",
@@ -5757,6 +5976,7 @@
     "pruning": "Emblème de la méditerranée. Produit des pignons comestibles."
   },
   "220": {
+    "species": "Photinia",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -5781,6 +6001,7 @@
     "pruning": "Jeunes pousses rouge vif. Idéal en haie."
   },
   "221": {
+    "species": "Laurier Palme",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -5804,6 +6025,7 @@
     "pruning": "Haie dense et persistante. Attention, baies toxiques."
   },
   "222": {
+    "species": "Forsythia",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -5827,6 +6049,7 @@
     "pruning": "Annonce le printemps avec ses fleurs jaunes. Tailler sévèrement juste après la fin des fleurs."
   },
   "223": {
+    "species": "Houx",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -5850,6 +6073,7 @@
     "pruning": "Symbole de l'hiver avec ses boules rouges. Supporte très bien la taille topiaire."
   },
   "224": {
+    "species": "Buis",
     "light": "partial",
     "difficulty": "medium",
     "humidity": "medium",
@@ -5873,6 +6097,7 @@
     "pruning": "Le roi de la topiaire (boules, cônes). Attention à la pyrale du buis (chenille)."
   },
   "225": {
+    "species": "Sureau",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -5894,6 +6119,7 @@
     "pruning": "Les fleurs se cuisinent en beignets ou sirop. Attire les oiseaux."
   },
   "226": {
+    "species": "Glycine",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "medium",
@@ -5916,6 +6142,7 @@
     "pruning": "Liane très vigoureuse (peut tordre les grilles). Tailler court en hiver pour favoriser les fleurs."
   },
   "227": {
+    "species": "Vigne",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "medium",
@@ -5941,6 +6168,7 @@
     "pruning": "Taille complexe mais indispensable pour avoir du raisin."
   },
   "228": {
+    "species": "Cyprès de Provence",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -5965,6 +6193,7 @@
     "pruning": "Forme colonnaire très étroite, typique des paysages toscans."
   },
   "229": {
+    "species": "Cèdre",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -5986,6 +6215,7 @@
     "pruning": "Arbre majestueux nécessitant un grand parc. Ne pas étêter."
   },
   "230": {
+    "species": "If",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -6009,6 +6239,7 @@
     "pruning": "Croissance lente mais vit très vieux. Tout est toxique sauf la chair rouge de la baie."
   },
   "231": {
+    "species": "Charme",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -6030,6 +6261,7 @@
     "pruning": "Ses feuilles sèches restent sur l'arbre en hiver (marcescent). Excellent brise-vue."
   },
   "232": {
+    "species": "Marronnier",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -6051,6 +6283,7 @@
     "pruning": "Arbre d'alignement classique. Le marron n'est pas comestible (contrairement à la châtaigne)."
   },
   "233": {
+    "species": "Platane",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -6072,6 +6305,7 @@
     "pruning": "Supporte les tailles drastiques. Écorce qui pèle par plaques."
   },
   "234": {
+    "species": "Hêtre",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -6093,6 +6327,7 @@
     "pruning": "Grand arbre de forêt à écorce grise lisse."
   },
   "235": {
+    "species": "Peuplier",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "high",
@@ -6114,6 +6349,7 @@
     "pruning": "Croissance très rapide. Système racinaire puissant, à planter loin des maisons."
   },
   "236": {
+    "species": "Eucalyptus (Extérieur)",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "medium",
@@ -6136,6 +6372,7 @@
     "pruning": "Feuillage persistant bleuté très décoratif. Tailler en cépée pour le garder petit."
   },
   "237": {
+    "species": "Catalpa",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -6157,6 +6394,7 @@
     "pruning": "Grandes feuilles en cœur qui font beaucoup d'ombre. Éloigne les moustiques."
   },
   "238": {
+    "species": "Paulownia",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -6179,6 +6417,7 @@
     "pruning": "Croissance la plus rapide au monde. Fleurs violettes spectaculaires au printemps."
   },
   "239": {
+    "species": "Liquidambar",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "medium",
@@ -6200,6 +6439,7 @@
     "pruning": "L'un des plus beaux feuillages rouges d'automne."
   },
   "240": {
+    "species": "Tamaris",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -6222,6 +6462,7 @@
     "pruning": "Idéal en bord de mer. Feuillage vaporeux."
   },
   "241": {
+    "species": "Arbousier",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "low",
@@ -6245,6 +6486,7 @@
     "pruning": "Persistant. Porte ses fruits rouges comestibles et ses fleurs en même temps."
   },
   "242": {
+    "species": "Viorne",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -6268,6 +6510,7 @@
     "pruning": "Floraison blanche spectaculaire au printemps. Attire les pucerons (plante relais)."
   },
   "243": {
+    "species": "Cognassier",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -6290,6 +6533,7 @@
     "pruning": "Rustique et peu sensible aux maladies. Les fruits se consomment cuits."
   },
   "244": {
+    "species": "Rosier Grimpant",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "medium",
@@ -6313,6 +6557,7 @@
     "pruning": "Ne pas tailler les branches charpentières. Courber les tiges pour favoriser la floraison."
   },
   "245": {
+    "species": "Buddleia",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -6336,6 +6581,7 @@
     "pruning": "Attire énormément les papillons. Tailler très court en mars pour le rajeunir."
   },
   "246": {
+    "species": "Seringat",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -6358,6 +6604,7 @@
     "pruning": "Fleurs blanches au parfum enivrant. Tailler juste après la floraison."
   },
   "247": {
+    "species": "Weigela",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -6380,6 +6627,7 @@
     "pruning": "Fleurs en trompettes roses/rouges. Tailler après la floraison pour garder la forme."
   },
   "248": {
+    "species": "Althea",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -6402,6 +6650,7 @@
     "pruning": "Fleurit tout l'été. Très résistant à la sécheresse une fois installé."
   },
   "249": {
+    "species": "Spirée",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -6424,6 +6673,7 @@
     "pruning": "Surnommée 'Neige de printemps' pour sa floraison blanche abondante."
   },
   "250": {
+    "species": "Hortensia Paniculé",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -6446,6 +6696,7 @@
     "pruning": "Supporte le soleil. Tailler court en mars (fleurit sur le bois de l'année)."
   },
   "251": {
+    "species": "Deutzia",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -6468,6 +6719,7 @@
     "pruning": "Nuée de petites fleurs. Très rustique."
   },
   "252": {
+    "species": "Pyracantha",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -6491,6 +6743,7 @@
     "pruning": "Haie défensive redoutable (épines). Baies oranges décoratives en hiver."
   },
   "253": {
+    "species": "Eleagnus",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -6514,6 +6767,7 @@
     "pruning": "La haie persistante par excellence. Parfum subtil en automne."
   },
   "254": {
+    "species": "Aucuba",
     "light": "low",
     "difficulty": "easy",
     "humidity": "medium",
@@ -6537,6 +6791,7 @@
     "pruning": "Feuilles tachetées de jaune. Idéal pour éclairer un coin d'ombre."
   },
   "255": {
+    "species": "Fusain du Japon",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -6560,6 +6815,7 @@
     "pruning": "Souvent panaché jaune ou blanc. Alternative au buis en bord de mer."
   },
   "256": {
+    "species": "Mahonia",
     "light": "low",
     "difficulty": "easy",
     "humidity": "medium",
@@ -6582,6 +6838,7 @@
     "pruning": "Fleurs jaunes en hiver/printemps suivies de baies bleues. Pique un peu."
   },
   "257": {
+    "species": "Cotoneaster",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -6605,6 +6862,7 @@
     "pruning": "Couvre-sol excellent ou haie. Baies rouges persistantes en hiver."
   },
   "258": {
+    "species": "Pittosporum",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "low",
@@ -6630,6 +6888,7 @@
     "pruning": "Feuillage persistant vert sombre. Fleurs sentant la fleur d'oranger."
   },
   "259": {
+    "species": "Chèvrefeuille",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -6653,6 +6912,7 @@
     "pruning": "Grimpante au parfum puissant. Idéal pour couvrir un grillage."
   },
   "260": {
+    "species": "Jasmin Étoilé",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "medium",
@@ -6676,6 +6936,7 @@
     "pruning": "Feuillage persistant (reste vert l'hiver). Fleurs blanches très parfumées."
   },
   "261": {
+    "species": "Bignone",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -6699,6 +6960,7 @@
     "pruning": "Grosse fleurs oranges en trompette. S'accroche seule aux murs."
   },
   "262": {
+    "species": "Vigne Vierge",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -6721,6 +6983,7 @@
     "pruning": "Couvre les façades. Devient rouge flamboyant en automne avant de perdre ses feuilles."
   },
   "263": {
+    "species": "Pivoine",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "medium",
@@ -6736,13 +6999,14 @@
     "harvest_months": [],
     "repotting_months": [
       9,
-      10
+      1
     ],
     "wintering_months": [],
     "soil": "Profond et riche.",
     "pruning": "Déteste être déplacée. Enormes fleurs au printemps."
   },
   "264": {
+    "species": "Rose Trémière",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -6767,6 +7031,7 @@
     "pruning": "La plante des îles (Ré, Oléron). Se ressème toute seule."
   },
   "265": {
+    "species": "Lupin",
     "light": "partial",
     "difficulty": "medium",
     "humidity": "medium",
@@ -6790,6 +7055,7 @@
     "pruning": "Grands épis colorés. Couper la hampe fanée pour une remontée en automne."
   },
   "266": {
+    "species": "Agapanthe",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "low",
@@ -6817,6 +7083,7 @@
     "pruning": "Grosses boules bleues ou blanches. Aime avoir les racines serrées."
   },
   "267": {
+    "species": "Hosta",
     "light": "low",
     "difficulty": "easy",
     "humidity": "high",
@@ -6840,6 +7107,7 @@
     "pruning": "Reine de l'ombre. Attention aux limaces qui dévorent les feuilles."
   },
   "268": {
+    "species": "Heuchère",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -6863,6 +7131,7 @@
     "pruning": "Feuillage persistant coloré (pourpre, caramel, vert pomme)."
   },
   "269": {
+    "species": "Astilbe",
     "light": "partial",
     "difficulty": "medium",
     "humidity": "high",
@@ -6885,6 +7154,7 @@
     "pruning": "Plumets vaporeux pour les zones ombragées et humides."
   },
   "270": {
+    "species": "Géranium Vivace",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -6908,6 +7178,7 @@
     "pruning": "Couvre-sol increvable, différent des géraniums de balcon (Pelargonium)."
   },
   "271": {
+    "species": "Anémone du Japon",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -6930,6 +7201,7 @@
     "pruning": "Fleurit en fin d'été/automne. Envahissante une fois installée."
   },
   "272": {
+    "species": "Millepertuis",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -6953,6 +7225,7 @@
     "pruning": "Couvre-sol à fleurs jaunes. Très robuste, supporte la pollution."
   },
   "273": {
+    "species": "Pervenche",
     "light": "low",
     "difficulty": "easy",
     "humidity": "medium",
@@ -6977,6 +7250,7 @@
     "pruning": "Tapis vert persistant à fleurs bleues. Idéal sous les arbres."
   },
   "274": {
+    "species": "Aubriète",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -7000,6 +7274,7 @@
     "pruning": "Plante de rocaille qui forme des coussins violets au printemps."
   },
   "275": {
+    "species": "Campanule des murs",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "low",
@@ -7023,6 +7298,7 @@
     "pruning": "Pousse dans les interstices de murs et pavés."
   },
   "276": {
+    "species": "Œillet Mignardise",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -7046,6 +7322,7 @@
     "pruning": "Fleurs parfumées, feuillage gris bleuté persistant."
   },
   "277": {
+    "species": "Bruyère d'hiver",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -7069,6 +7346,7 @@
     "pruning": "Fleurit sous la neige. Tailler après la floraison pour garder compact."
   },
   "278": {
+    "species": "Tulipe",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "medium",
@@ -7092,6 +7370,7 @@
     "pruning": "Important : ne couper le feuillage que lorsqu'il est totalement jaune (pour recharger le bulbe)."
   },
   "279": {
+    "species": "Narcisse",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -7115,6 +7394,7 @@
     "pruning": "Se naturalise bien (revient chaque année plus nombreux). Toxique."
   },
   "280": {
+    "species": "Crocus",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -7138,6 +7418,7 @@
     "pruning": "L'un des premiers à fleurir en fin d'hiver. Idéal dans la pelouse."
   },
   "281": {
+    "species": "Dahlia",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "medium",
@@ -7165,6 +7446,7 @@
     "pruning": "Gélif : il faut déterrer les tubercules en novembre et les stocker à la cave."
   },
   "282": {
+    "species": "Iris",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -7187,6 +7469,7 @@
     "pruning": "Planter le rhizome affleurant le sol (dos au soleil). Couper les feuilles en pointe en fin d'été."
   },
   "283": {
+    "species": "Glaïeul",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "medium",
@@ -7214,6 +7497,7 @@
     "pruning": "Fleur à couper majestueuse. Rentrer les bulbes (cormes) en hiver."
   },
   "284": {
+    "species": "Canna",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "high",
@@ -7241,6 +7525,7 @@
     "pruning": "Feuillage tropical géant. Doit être hiverné hors gel."
   },
   "285": {
+    "species": "Bégonia Annuel",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -7262,6 +7547,7 @@
     "pruning": "Utilisé en massif municipal. Craint le gel, souvent jeté en fin de saison."
   },
   "286": {
+    "species": "Pétunia",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "medium",
@@ -7284,6 +7570,7 @@
     "pruning": "La reine des suspensions. Gourmande en eau et engrais."
   },
   "287": {
+    "species": "Œillet d'Inde",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -7306,6 +7593,7 @@
     "pruning": "Compagnon idéal des tomates au potager (éloigne les nématodes)."
   },
   "288": {
+    "species": "Cosmos",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -7328,6 +7616,7 @@
     "pruning": "Fleurs légères qui dansent au vent. Se sème facilement."
   },
   "289": {
+    "species": "Zinnia",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -7349,6 +7638,7 @@
     "pruning": "Couleurs très vives, excellente tenue en vase."
   },
   "290": {
+    "species": "Capucine",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -7371,6 +7661,7 @@
     "pruning": "Tout se mange (fleurs et feuilles au goût poivré). Attire les pucerons loin des autres plantes."
   },
   "291": {
+    "species": "Pensée",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -7394,6 +7685,7 @@
     "pruning": "Fleurit en automne et en hiver quand tout le reste dort."
   },
   "292": {
+    "species": "Gaura",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -7416,6 +7708,7 @@
     "pruning": "Fleurs blanches ou roses ressemblant à des papillons. Rabattre au sol en mars."
   },
   "293": {
+    "species": "Fétuque Bleue",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -7439,6 +7732,7 @@
     "pruning": "Petite graminée en boule bleue très graphique. Peigner pour retirer les feuilles mortes."
   },
   "294": {
+    "species": "Herbe de la Pampa",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -7465,6 +7759,7 @@
     "pruning": "Plumeaux géants. Feuilles coupantes comme des rasoirs, attention. Envahissante."
   },
   "295": {
+    "species": "Coquelicot",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -7484,6 +7779,7 @@
     "pruning": "Symbole de la campagne. Se sème à la volée."
   },
   "296": {
+    "species": "Tournesol",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -7506,6 +7802,7 @@
     "pruning": "Pivote pour suivre le soleil. Les graines nourrissent les oiseaux en hiver."
   },
   "297": {
+    "species": "Muguet",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -7521,13 +7818,14 @@
     "harvest_months": [],
     "repotting_months": [
       9,
-      10
+      1
     ],
     "wintering_months": [],
     "soil": "Frais.",
     "pruning": "Porte-bonheur du 1er mai. Très envahissant (rhizomes) et très toxique."
   },
   "298": {
+    "species": "Sauge Officinale",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -7551,6 +7849,7 @@
     "pruning": "Feuillage gris persistant. 'Qui a de la sauge dans son jardin n'a pas besoin de médecin'."
   },
   "299": {
+    "species": "Sedum",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -7574,6 +7873,7 @@
     "pruning": "Plante grasse d'extérieur. Fleurs roses en automne qui attirent les abeilles."
   },
   "300": {
+    "species": "Joubarbe des toits",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -7596,6 +7896,7 @@
     "pruning": "Pousse sans terre, dans les murs ou sur les toits. Résiste à tout."
   },
   "301": {
+    "species": "Yucca Gloriosa",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -7618,6 +7919,7 @@
     "pruning": "Attention aux pointes très piquantes. Hampes florales blanches spectaculaires."
   },
   "302": {
+    "species": "Trèfle",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -7637,6 +7939,7 @@
     "pruning": "Alternative écologique au gazon. Fixe l'azote dans le sol."
   },
   "303": {
+    "species": "Céanothe",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "low",
@@ -7665,6 +7968,7 @@
     "pruning": "Magnifique floraison bleue. Tailler légèrement après la floraison. Craint les grands froids."
   },
   "304": {
+    "species": "Abélia",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -7688,6 +7992,7 @@
     "pruning": "Fleurit très longtemps (été jusqu'aux gelées). Idéal en haie fleurie."
   },
   "305": {
+    "species": "Cornouiller Sanguin",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -7710,6 +8015,7 @@
     "pruning": "Son bois devient rouge vif en hiver. Tailler court en mars pour stimuler les nouvelles tiges colorées."
   },
   "306": {
+    "species": "Arbre à Perruque",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -7732,6 +8038,7 @@
     "pruning": "Inflorescences vaporeuses et feuillage pourpre spectaculaire."
   },
   "307": {
+    "species": "Potentille Arbustive",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -7755,6 +8062,7 @@
     "pruning": "Petit buisson à fleurs jaunes (ou rouges/blanches) très robuste."
   },
   "308": {
+    "species": "Berbéris",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -7778,6 +8086,7 @@
     "pruning": "Haie défensive très épineuse. Souvent au feuillage pourpre."
   },
   "309": {
+    "species": "Chèvrefeuille Arbustif",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -7801,6 +8110,7 @@
     "pruning": "Excellente alternative au buis pour les petites haies taillées, pousse plus vite."
   },
   "310": {
+    "species": "Osmanthe",
     "light": "partial",
     "difficulty": "medium",
     "humidity": "medium",
@@ -7824,6 +8134,7 @@
     "pruning": "Feuillage persistant et fleurs blanches au parfum de jasmin au printemps."
   },
   "311": {
+    "species": "Escallonia",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -7848,6 +8159,7 @@
     "pruning": "Idéal en bord de mer, résiste aux embruns. Feuillage persistant."
   },
   "312": {
+    "species": "Symphorine",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -7870,6 +8182,7 @@
     "pruning": "Grosses baies blanches ou roses qui éclatent sous le pied. Très rustique."
   },
   "313": {
+    "species": "Corête du Japon",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -7892,6 +8205,7 @@
     "pruning": "Fleurs en pompons jaunes. Tiges restent vertes en hiver."
   },
   "314": {
+    "species": "Rhododendron",
     "light": "partial",
     "difficulty": "medium",
     "humidity": "high",
@@ -7915,6 +8229,7 @@
     "pruning": "Ne pas enterrer le collet à la plantation. Supprimer les fleurs fanées à la main."
   },
   "315": {
+    "species": "Andromède",
     "light": "partial",
     "difficulty": "medium",
     "humidity": "medium",
@@ -7938,6 +8253,7 @@
     "pruning": "Jeunes feuilles rouge feu au printemps. Clochettes blanches."
   },
   "316": {
+    "species": "Skimmia",
     "light": "low",
     "difficulty": "easy",
     "humidity": "medium",
@@ -7962,6 +8278,7 @@
     "pruning": "Idéal pour l'ombre. Boutons floraux rouges décoratifs tout l'hiver."
   },
   "317": {
+    "species": "Bruyère d'été",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -7984,6 +8301,7 @@
     "pruning": "Fleurit en fin d'été/automne. Tailler en boule au printemps."
   },
   "318": {
+    "species": "Sauge de Russie",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -8006,6 +8324,7 @@
     "pruning": "Tiges blanches et fleurs bleues. Rabattre très court (10cm du sol) en mars."
   },
   "319": {
+    "species": "Echinacée",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -8028,6 +8347,7 @@
     "pruning": "Plante médicinale. Le cœur de la fleur ressemble à un petit hérisson."
   },
   "320": {
+    "species": "Rudbeckia",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -8050,6 +8370,7 @@
     "pruning": "Marguerites jaunes très lumineuses en fin d'été."
   },
   "321": {
+    "species": "Coréopsis",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -8072,6 +8393,7 @@
     "pruning": "Floraison jaune ininterrompue tout l'été si on coupe les fleurs fanées."
   },
   "322": {
+    "species": "Phlox",
     "light": "partial",
     "difficulty": "medium",
     "humidity": "medium",
@@ -8095,6 +8417,7 @@
     "pruning": "Parfum agréable, sensible à l'oïdium (poudre blanche sur feuilles)."
   },
   "323": {
+    "species": "Pied d'alouette",
     "light": "direct",
     "difficulty": "hard",
     "humidity": "medium",
@@ -8118,6 +8441,7 @@
     "pruning": "Hampes florales bleues géantes. Tuteurer impérativement contre le vent. Toxique."
   },
   "324": {
+    "species": "Digitale",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -8141,6 +8465,7 @@
     "pruning": "Très toxique (cardiaque). Se ressème toute seule dans les coins ombragés."
   },
   "325": {
+    "species": "Ancolie",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -8164,6 +8489,7 @@
     "pruning": "Fleur complexe et élégante. Durée de vie courte mais se ressème."
   },
   "326": {
+    "species": "Cœur de Marie",
     "light": "partial",
     "difficulty": "medium",
     "humidity": "medium",
@@ -8187,6 +8513,7 @@
     "pruning": "Disparaît complètement en été après la floraison (repos)."
   },
   "327": {
+    "species": "Bergénia",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -8210,6 +8537,7 @@
     "pruning": "Grosses feuilles persistantes coriaces. Fleurs roses en fin d'hiver."
   },
   "328": {
+    "species": "Alchémille",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -8233,6 +8561,7 @@
     "pruning": "Feuillage décoratif qui retient les gouttes de rosée comme des perles."
   },
   "329": {
+    "species": "Népéta",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -8256,6 +8585,7 @@
     "pruning": "Remplace la lavande au nord de la Loire. Rend les chats euphoriques."
   },
   "330": {
+    "species": "Verveine de Buenos Aires",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -8278,6 +8608,7 @@
     "pruning": "Hautes tiges graphiques violettes. Attire les pollinisateurs."
   },
   "331": {
+    "species": "Scabieuse",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -8301,6 +8632,7 @@
     "pruning": "Fleurs légères bleues ou roses en forme de pompon."
   },
   "332": {
+    "species": "Euphorbe des jardins",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -8324,6 +8656,7 @@
     "pruning": "Feuillage persistant bleuté et fleurs vert chartreuse. Latex irritant."
   },
   "333": {
+    "species": "Oreille d'ours",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -8347,6 +8680,7 @@
     "pruning": "Feuilles grises douces comme du velours. Craint l'excès d'eau."
   },
   "334": {
+    "species": "Immortelle d'Italie",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -8369,6 +8703,7 @@
     "pruning": "Feuillage argenté dégageant une forte odeur de curry, surtout après la pluie."
   },
   "335": {
+    "species": "Santoline",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -8391,6 +8726,7 @@
     "pruning": "Plante aromatique à feuillage gris, fleurs jaunes en pompons."
   },
   "336": {
+    "species": "Ciste",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -8414,6 +8750,7 @@
     "pruning": "Fleurs en papier crépon qui ne durent qu'un jour mais se renouvellent sans cesse."
   },
   "337": {
+    "species": "Myrte",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "low",
@@ -8440,6 +8777,7 @@
     "pruning": "Arbuste méditerranéen aromatique. Baies utilisées pour la liqueur."
   },
   "338": {
+    "species": "Romarin Rampant",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -8462,6 +8800,7 @@
     "pruning": "Forme retombante du romarin, idéale pour couvrir un talus ou muret."
   },
   "339": {
+    "species": "Ipomée",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -8484,6 +8823,7 @@
     "pruning": "Grimpante annuelle à croissance ultra-rapide. Fleurs en trompette éphémères."
   },
   "340": {
+    "species": "Pois de Senteur",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -8506,6 +8846,7 @@
     "pruning": "Parfum délicieux. Il faut cueillir les fleurs pour qu'il continue à en produire."
   },
   "341": {
+    "species": "Hortensia Grimpant",
     "light": "low",
     "difficulty": "easy",
     "humidity": "medium",
@@ -8529,6 +8870,7 @@
     "pruning": "Une des rares grimpantes pour mur au Nord (ombre). S'accroche seule."
   },
   "342": {
+    "species": "Perce-Neige",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -8544,13 +8886,14 @@
     "harvest_months": [],
     "repotting_months": [
       9,
-      10
+      1
     ],
     "wintering_months": [],
     "soil": "Frais.",
     "pruning": "Premier bulbe à fleurir en janvier/février."
   },
   "343": {
+    "species": "Muscari",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -8574,6 +8917,7 @@
     "pruning": "Petites grappes bleues. Se naturalise et s'étend rapidement."
   },
   "344": {
+    "species": "Ail d'Ornement",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -8597,6 +8941,7 @@
     "pruning": "Grosses boules violettes au sommet d'une tige nue. Séche sur pied."
   },
   "345": {
+    "species": "Fritillaire Impériale",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "medium",
@@ -8612,13 +8957,14 @@
     "harvest_months": [],
     "repotting_months": [
       9,
-      10
+      1
     ],
     "wintering_months": [],
     "soil": "Riche.",
     "pruning": "Bulbe odorant qui repousse les taupes. Fleurs oranges en clochettes renversées."
   },
   "346": {
+    "species": "Hélianthe Vivace",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -8642,6 +8988,7 @@
     "pruning": "Grandes fleurs jaunes en fin de saison. Peut devenir envahissant."
   },
   "347": {
+    "species": "Lysimaque",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "high",
@@ -8665,6 +9012,7 @@
     "pruning": "Fleurs jaunes en épis. Aime les bords de bassin."
   },
   "348": {
+    "species": "Verge d'Or",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -8688,6 +9036,7 @@
     "pruning": "Panaches jaunes vifs en fin d'été. Très mellifère."
   },
   "349": {
+    "species": "Bambou Sacré",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -8711,6 +9060,7 @@
     "pruning": "Ni un bambou ni sacré, mais superbe. Feuillage persistant qui rougit en hiver."
   },
   "350": {
+    "species": "Tetrapanax",
     "light": "partial",
     "difficulty": "medium",
     "humidity": "medium",
@@ -8733,6 +9083,7 @@
     "pruning": "Feuilles géantes exotiques. Drageonne beaucoup (fait des bébés partout)."
   },
   "351": {
+    "species": "Edgeworthia",
     "light": "partial",
     "difficulty": "medium",
     "humidity": "medium",
@@ -8755,6 +9106,7 @@
     "pruning": "Fleurs jaunes en pompons très parfumées sur bois nu en février."
   },
   "352": {
+    "species": "Mahonia Charity",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -8777,6 +9129,7 @@
     "pruning": "Longues grappes de fleurs jaunes en hiver suivies de baies bleues. Feuilles piquantes."
   },
   "353": {
+    "species": "Coronille",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -8799,6 +9152,7 @@
     "pruning": "Fleurs jaune vif tout l'hiver et début de printemps. Idéal jardin sec."
   },
   "354": {
+    "species": "Jasmin d'Hiver",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -8821,6 +9175,7 @@
     "pruning": "Fleurs jaunes sur tiges nues de décembre à mars. Ne sent pas."
   },
   "355": {
+    "species": "Hamamélis",
     "light": "partial",
     "difficulty": "medium",
     "humidity": "medium",
@@ -8843,6 +9198,7 @@
     "pruning": "Fleurs ébouriffées (comme des araignées) jaunes ou rouges en plein hiver."
   },
   "356": {
+    "species": "Laurier Tin",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -8866,6 +9222,7 @@
     "pruning": "L'indispensable des haies. Boutons roses, fleurs blanches en hiver, baies bleues."
   },
   "357": {
+    "species": "Oranger du Mexique",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -8889,6 +9246,7 @@
     "pruning": "Feuillage persistant aromatique. Floraison blanche parfumée en avril-mai."
   },
   "358": {
+    "species": "Hellébore",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -8912,6 +9270,7 @@
     "pruning": "Fleurit sous la neige. Couper les vieilles feuilles noires pour voir les fleurs."
   },
   "359": {
+    "species": "Daphné",
     "light": "partial",
     "difficulty": "medium",
     "humidity": "medium",
@@ -8934,6 +9293,7 @@
     "pruning": "Un des parfums les plus puissants du jardin en fin d'hiver."
   },
   "360": {
+    "species": "Sarcococca",
     "light": "low",
     "difficulty": "easy",
     "humidity": "medium",
@@ -8957,6 +9317,7 @@
     "pruning": "Fleurs discrètes mais parfum de vanille en janvier/février."
   },
   "361": {
+    "species": "Callicarpa",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -8979,6 +9340,7 @@
     "pruning": "Baies violettes métalliques incroyables en automne sur bois nu."
   },
   "362": {
+    "species": "Cognassier du Japon",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -9002,6 +9364,7 @@
     "pruning": "Fleurs rouges ou roses très précoces (février). Épineux."
   },
   "363": {
+    "species": "Groseillier à fleurs",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -9025,6 +9388,7 @@
     "pruning": "Feuillage odorant (cassis) et grappes de fleurs roses au printemps."
   },
   "364": {
+    "species": "Amélanchier",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -9047,6 +9411,7 @@
     "pruning": "Fleurs blanches étoilées, baies comestibles et feuillage rouge en automne. Le 3 en 1."
   },
   "365": {
+    "species": "Cornouiller à fleurs",
     "light": "partial",
     "difficulty": "medium",
     "humidity": "medium",
@@ -9069,6 +9434,7 @@
     "pruning": "Magnifiques 'fleurs' (bractées) blanches ou roses en mai-juin."
   },
   "366": {
+    "species": "Arbre de Judée",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -9090,6 +9456,7 @@
     "pruning": "Fleurs roses qui poussent directement sur le tronc avant les feuilles."
   },
   "367": {
+    "species": "Phormium",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -9115,6 +9482,7 @@
     "pruning": "Grandes épées graphiques colorées (rouge, bronze, panaché). Très moderne."
   },
   "368": {
+    "species": "Cordyline Australe",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "medium",
@@ -9141,6 +9509,7 @@
     "pruning": "Allure de palmier. Attention au cœur qui pourrit s'il fait froid et humide."
   },
   "369": {
+    "species": "Grevillea",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "low",
@@ -9166,6 +9535,7 @@
     "pruning": "Fleurs rouges exotiques. Ne supporte pas le phosphore (engrais classiques)."
   },
   "370": {
+    "species": "Miscanthus",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -9188,6 +9558,7 @@
     "pruning": "Grande graminée structurante. Rabattre la touffe sèche au ras du sol en mars."
   },
   "371": {
+    "species": "Stipa",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -9211,6 +9582,7 @@
     "pruning": "Graminée blonde très fine qui ondule au vent. Ne pas tailler, juste peigner."
   },
   "372": {
+    "species": "Carex",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -9234,6 +9606,7 @@
     "pruning": "Feuillage persistant coloré (bronze, vert, panaché). Ne se taille pas."
   },
   "373": {
+    "species": "Gunnera",
     "light": "partial",
     "difficulty": "medium",
     "humidity": "high",
@@ -9261,6 +9634,7 @@
     "pruning": "Feuilles immenses (2m). Couvrir la souche avec ses propres feuilles en hiver."
   },
   "374": {
+    "species": "Acanthe",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -9284,6 +9658,7 @@
     "pruning": "Feuilles architecturales (chapiteaux corinthiens). Grandes hampes florales."
   },
   "375": {
+    "species": "Kniphofia",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -9306,6 +9681,7 @@
     "pruning": "Fleurs exotiques orange/jaune. Feuillage persistant qu'il ne faut pas couper court."
   },
   "376": {
+    "species": "Fusain Ailé",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -9329,6 +9705,7 @@
     "pruning": "Devient rouge fluo en automne. Branches avec des 'ailettes' de liège curieuses."
   },
   "377": {
+    "species": "Gattilier",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -9352,6 +9729,7 @@
     "pruning": "Fleurs bleues en fin d'été. Feuillage odorant (poivré)."
   },
   "378": {
+    "species": "Grenadier à fleurs",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "low",
@@ -9378,6 +9756,7 @@
     "pruning": "Fleurs oranges froissées superbes. Ne donne pas de fruits comestibles."
   },
   "379": {
+    "species": "Bambou Noir",
     "light": "partial",
     "difficulty": "medium",
     "humidity": "medium",
@@ -9401,6 +9780,7 @@
     "pruning": "Cannes noires très esthétiques. Attention, c'est un bambou traçant (barrière anti-rhizome obligatoire)."
   },
   "380": {
+    "species": "Clématite d'Armand",
     "light": "partial",
     "difficulty": "medium",
     "humidity": "medium",
@@ -9424,6 +9804,7 @@
     "pruning": "Feuilles persistantes coriaces. Fleurs blanches parfumées en mars."
   },
   "381": {
+    "species": "Solanum Grimpant",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -9450,6 +9831,7 @@
     "pruning": "Croissance très rapide. Fleurs blanches tout l'été."
   },
   "382": {
+    "species": "Passiflore Bleue",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -9472,6 +9854,7 @@
     "pruning": "La seule passiflore vraiment rustique au jardin. Fruits oranges décoratifs."
   },
   "383": {
+    "species": "Houblon Doré",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -9494,6 +9877,7 @@
     "pruning": "Grimpante herbacée (disparaît en hiver, repousse de 6m au printemps). Feuillage jaune."
   },
   "384": {
+    "species": "Chèvrefeuille d'Hiver",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -9516,6 +9900,7 @@
     "pruning": "Arbuste (non grimpant) à floraison hivernale très parfumée."
   },
   "385": {
+    "species": "Fougère Femelle",
     "light": "low",
     "difficulty": "easy",
     "humidity": "high",
@@ -9538,6 +9923,7 @@
     "pruning": "Fougère caduque très élégante pour l'ombre."
   },
   "386": {
+    "species": "Pachysandra",
     "light": "low",
     "difficulty": "easy",
     "humidity": "medium",
@@ -9561,6 +9947,7 @@
     "pruning": "Couvre-sol persistant indispensable pour les coins d'ombre sèche sous les arbres."
   },
   "387": {
+    "species": "Lavatère",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -9583,6 +9970,7 @@
     "pruning": "Pousse très vite. Couverte de fleurs roses tout l'été. Vieillit mal (durée de vie 5-6 ans)."
   },
   "388": {
+    "species": "Fuchsia Rustique",
     "light": "partial",
     "difficulty": "medium",
     "humidity": "medium",
@@ -9608,6 +9996,7 @@
     "pruning": "Le seul fuchsia qui résiste au gel en pleine terre. Rabattre si le bois a gelé."
   },
   "389": {
+    "species": "Azalée Japonaise",
     "light": "partial",
     "difficulty": "medium",
     "humidity": "medium",
@@ -9631,6 +10020,7 @@
     "pruning": "Forme des coussins colorés au printemps. Feuillage persistant."
   },
   "390": {
+    "species": "Erable à peau de serpent",
     "light": "partial",
     "difficulty": "medium",
     "humidity": "medium",
@@ -9653,6 +10043,7 @@
     "pruning": "Écorce rayée verte et blanche superbe en hiver."
   },
   "391": {
+    "species": "Chimonanthus",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "medium",
@@ -9675,6 +10066,7 @@
     "pruning": "Fleurs cireuses jaunes au cœur pourpre en hiver, parfum divin."
   },
   "392": {
+    "species": "Cyclamen de Naples",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -9697,6 +10089,7 @@
     "pruning": "Fleurit en automne, feuilles marbrées en hiver, dort en été. Tapis de sous-bois."
   },
   "393": {
+    "species": "Violette Odorante",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -9720,6 +10113,7 @@
     "pruning": "Se ressème partout. Parfum emblématique."
   },
   "394": {
+    "species": "Ilex Crenata",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -9743,6 +10137,7 @@
     "pruning": "Le remplaçant n°1 du buis (ne craint pas la pyrale). Feuilles minuscules sans piquant."
   },
   "395": {
+    "species": "Agave",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -9769,6 +10164,7 @@
     "pruning": "Énorme rosette succulente. Attention aux pointes dangereuses."
   },
   "396": {
+    "species": "Yucca Filamentosa",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -9791,6 +10187,7 @@
     "pruning": "Plus rustique que le Yucca gloriosa. Fils blancs sur les feuilles."
   },
   "397": {
+    "species": "Imperata",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -9813,6 +10210,7 @@
     "pruning": "Graminée rouge vif spectaculaire à contre-jour."
   },
   "398": {
+    "species": "Ophiopogon",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -9835,6 +10233,7 @@
     "pruning": "Ressemble à une herbe, mais noire. Superbe contraste avec des cailloux blancs."
   },
   "399": {
+    "species": "Laurier du Portugal",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -9858,6 +10257,7 @@
     "pruning": "L'alternative élégante au laurier palme. Feuilles plus fines, pétioles rouges. Haie dense."
   },
   "400": {
+    "species": "Troène",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -9881,6 +10281,7 @@
     "pruning": "Le classique des haies de lotissement. Croissance rapide, supporte toutes les tailles."
   },
   "401": {
+    "species": "Pennisetum",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -9903,6 +10304,7 @@
     "pruning": "Graminée aux épis en forme de goupillons doux. Rabattre la touffe sèche en mars."
   },
   "402": {
+    "species": "Lys des Incas",
     "light": "partial",
     "difficulty": "medium",
     "humidity": "medium",
@@ -9928,6 +10330,7 @@
     "pruning": "Fleurit tout l'été. Tirer sur les tiges pour les cueillir (ne pas couper) stimule la repousse."
   },
   "403": {
+    "species": "Aster",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -9950,6 +10353,7 @@
     "pruning": "Explosion de fleurs mauves ou roses quand les autres plantes fanent (septembre-novembre)."
   },
   "404": {
+    "species": "Vergerette",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -9972,6 +10376,7 @@
     "pruning": "Une nuée de petites fleurs blanches et roses. Pousse dans les joints de murs sans terre."
   },
   "405": {
+    "species": "Sauge Arbustive",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -9994,6 +10399,7 @@
     "pruning": "Feuillage aromatique (cassis/menthe). Fleurit de mai aux gelées sans arrêt."
   },
   "406": {
+    "species": "Achillée",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -10017,6 +10423,7 @@
     "pruning": "Fleurs en plateaux colorés. Adorée des insectes auxiliaires."
   },
   "407": {
+    "species": "Caryopteris",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -10039,6 +10446,7 @@
     "pruning": "Buisson bleu en fin d'été. Rabattre court en mars."
   },
   "408": {
+    "species": "Leucothoe",
     "light": "partial",
     "difficulty": "medium",
     "humidity": "medium",
@@ -10062,6 +10470,7 @@
     "pruning": "Feuillage persistant qui devient rouge/bronze en hiver. Belle alternative aux bruyères."
   },
   "409": {
+    "species": "Phlomis",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -10085,6 +10494,7 @@
     "pruning": "Feuillage gris duveteux, fleurs jaunes en étages. Idéal jardin sec."
   },
   "410": {
+    "species": "Ceratostigma",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -10107,6 +10517,7 @@
     "pruning": "Fleurs bleu intense et feuillage qui rougit en automne. Couvre-sol."
   },
   "411": {
+    "species": "Gazania",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -10132,6 +10543,7 @@
     "pruning": "Fleurs graphiques qui se ferment s'il n'y a pas de soleil. Souvent cultivée en annuelle."
   },
   "412": {
+    "species": "Osteospermum",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -10157,6 +10569,7 @@
     "pruning": "Marguerites violettes, blanches ou oranges. Résiste bien à la sécheresse."
   },
   "413": {
+    "species": "Valériane Rouge",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -10179,6 +10592,7 @@
     "pruning": "Pousse dans les murs et le béton. Couper les fleurs fanées pour une remontée."
   },
   "414": {
+    "species": "Nigelle de Damas",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -10198,6 +10612,7 @@
     "pruning": "Fleurs bleues légères suivies de capsules décoratives. Se ressème seule."
   },
   "415": {
+    "species": "Pavot de Californie",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -10217,6 +10632,7 @@
     "pruning": "Fleurs oranges éclatantes. Idéal pour les zones sans arrosage."
   },
   "416": {
+    "species": "Monarde",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -10239,6 +10655,7 @@
     "pruning": "Fleurs ébouriffées. Feuilles aromatiques utilisées pour le thé Earl Grey."
   },
   "417": {
+    "species": "Hémérocalle",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -10262,6 +10679,7 @@
     "pruning": "Chaque fleur ne dure qu'un jour, mais elles se succèdent tout l'été. Comestible."
   },
   "418": {
+    "species": "Benoîte",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -10285,6 +10703,7 @@
     "pruning": "Fleurs oranges ou rouges sur des tiges fines, très lumineux."
   },
   "419": {
+    "species": "Penstemon",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -10307,6 +10726,7 @@
     "pruning": "Fleurs en clochettes. Ne pas tailler avant la fin de l'hiver pour protéger la souche."
   },
   "420": {
+    "species": "Brunnera",
     "light": "low",
     "difficulty": "easy",
     "humidity": "medium",
@@ -10330,6 +10750,7 @@
     "pruning": "Superbe feuillage argenté en forme de cœur, fleurs bleues au printemps."
   },
   "421": {
+    "species": "Sceau de Salomon",
     "light": "low",
     "difficulty": "easy",
     "humidity": "medium",
@@ -10353,6 +10774,7 @@
     "pruning": "Tiges arquées avec clochettes blanches pendantes."
   },
   "422": {
+    "species": "Giroflée",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -10376,6 +10798,7 @@
     "pruning": "Floraison printanière parfumée (orange, jaune, pourpre). Pousse dans les vieux murs."
   },
   "423": {
+    "species": "Monnaie du Pape",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -10395,6 +10818,7 @@
     "pruning": "Connue pour ses fruits ronds nacrés et secs utilisés en bouquets secs."
   },
   "424": {
+    "species": "Amour en cage",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -10418,6 +10842,7 @@
     "pruning": "Lanternes oranges décoratives. Attention, très envahissant par ses racines."
   },
   "425": {
+    "species": "Liatris",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -10440,6 +10865,7 @@
     "pruning": "Épis violets originaux qui fleurissent du haut vers le bas."
   },
   "426": {
+    "species": "Véronique Arbustive",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "medium",
@@ -10463,6 +10889,7 @@
     "pruning": "Petits épis bleus ou violets, feuillage persistant très graphique."
   },
   "427": {
+    "species": "Palmier Chanvre",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -10485,6 +10912,7 @@
     "pruning": "Le seul palmier qui résiste à -18°C. Tronc poilu typique."
   },
   "428": {
+    "species": "Pourpier Vivace",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -10508,6 +10936,7 @@
     "pruning": "Tapis de fleurs fluo (rose, orange) tout l'été. Craint l'humidité hivernale."
   },
   "429": {
+    "species": "Griffe de Sorcière",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -10533,6 +10962,7 @@
     "pruning": "Plante grasse de bord de mer très envahissante. Fleurs géantes."
   },
   "430": {
+    "species": "Gazon d'Espagne",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -10556,6 +10986,7 @@
     "pruning": "Petits pompons roses sur un coussin d'herbe. Idéal rocaille."
   },
   "431": {
+    "species": "Corbeille d'Argent",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -10579,6 +11010,7 @@
     "pruning": "Couvre-sol blanc immaculé au printemps. Persistant."
   },
   "432": {
+    "species": "Corbeille d'Or",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -10602,6 +11034,7 @@
     "pruning": "Le pendant jaune de la corbeille d'argent. Pousse dans les murets."
   },
   "433": {
+    "species": "Framboisier",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -10626,6 +11059,7 @@
     "pruning": "Tailler au ras du sol les tiges ayant donné des fruits (elles sèchent)."
   },
   "434": {
+    "species": "Cassissier",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -10650,6 +11084,7 @@
     "pruning": "Supprimer le vieux bois (tiges noires) au centre pour aérer."
   },
   "435": {
+    "species": "Mûrier (Ronce)",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -10674,6 +11109,7 @@
     "pruning": "Choisir des variétés sans épines ('Thornless'). Palisser contre un mur."
   },
   "436": {
+    "species": "Kiwi",
     "light": "partial",
     "difficulty": "medium",
     "humidity": "medium",
@@ -10697,6 +11133,7 @@
     "pruning": "Liane vigoureuse. Il faut souvent un pied mâle et un pied femelle."
   },
   "437": {
+    "species": "Rhubarbe",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "high",
@@ -10720,6 +11157,7 @@
     "pruning": "Seules les tiges se mangent, les feuilles sont toxiques. Couper les fleurs dès qu'elles apparaissent."
   },
   "438": {
+    "species": "Artichaut",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "medium",
@@ -10746,6 +11184,7 @@
     "pruning": "Fleur de chardon géante. Protéger le pied du froid en hiver."
   },
   "439": {
+    "species": "Souci",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -10768,6 +11207,7 @@
     "pruning": "Fleurs oranges comestibles et médicinales. Se ressème partout."
   },
   "440": {
+    "species": "Bourrache",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -10787,6 +11227,7 @@
     "pruning": "Fleurs bleues en étoile comestibles (goût d'huître). Très mellifère."
   },
   "441": {
+    "species": "Ail des Ours",
     "light": "low",
     "difficulty": "easy",
     "humidity": "high",
@@ -10802,13 +11243,14 @@
     "harvest_months": [],
     "repotting_months": [
       9,
-      10
+      1
     ],
     "wintering_months": [],
     "soil": "Humide (sous-bois).",
     "pruning": "Délicieux en pesto. Attention à ne pas confondre avec le muguet (toxique) !"
   },
   "442": {
+    "species": "Hélénie",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -10832,6 +11274,7 @@
     "pruning": "Marguerites aux couleurs chaudes (feu, rouge, brun) en fin d'été."
   },
   "443": {
+    "species": "Pâquerette",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -10855,6 +11298,7 @@
     "pruning": "Version cultivée à grosses fleurs de la pâquerette sauvage. Idéale en jardinière d'hiver."
   },
   "444": {
+    "species": "Genévrier",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -10878,6 +11322,7 @@
     "pruning": "Couvre-sol persistant increvable. Les baies de certaines espèces servent à faire le gin."
   },
   "445": {
+    "species": "Faux Cyprès",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -10901,6 +11346,7 @@
     "pruning": "Conifère de rocaille ou de haie, feuillage souvent doré ou bleuté."
   },
   "446": {
+    "species": "Sauge Officinale",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -10924,6 +11370,7 @@
     "pruning": "Feuillage gris persistant. 'Qui a de la sauge dans son jardin n'a pas besoin de médecin'."
   },
   "447": {
+    "species": "Millepertuis",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -10947,6 +11394,7 @@
     "pruning": "Couvre-sol à fleurs jaunes. Très robuste, supporte la pollution."
   },
   "448": {
+    "species": "Campanule",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -10974,6 +11422,7 @@
     "pruning": "Pousse dans les interstices de murs et pavés. Tapis de fleurs bleues."
   },
   "449": {
+    "species": "Myrtillier",
     "light": "partial",
     "difficulty": "medium",
     "humidity": "medium",
@@ -10996,6 +11445,7 @@
     "pruning": "Ne pousse pas du tout en terre calcaire. Délicieuses baies bleues."
   },
   "450": {
+    "species": "Groseillier à maquereau",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -11018,6 +11468,7 @@
     "pruning": "Produit des baies translucides plus grosses que les groseilles. Épineux."
   },
   "451": {
+    "species": "Kaki",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -11040,6 +11491,7 @@
     "pruning": "Fruits oranges qui restent sur l'arbre après la chute des feuilles en hiver."
   },
   "452": {
+    "species": "Amandier",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "low",
@@ -11061,6 +11513,7 @@
     "pruning": "Le premier fruitier à fleurir (février). Sensible au gel tardif."
   },
   "453": {
+    "species": "Saule Crevette",
     "light": "partial",
     "difficulty": "medium",
     "humidity": "high",
@@ -11083,6 +11536,7 @@
     "pruning": "Jeunes pousses roses et blanches magnifiques. A besoin de beaucoup d'eau."
   },
   "454": {
+    "species": "Cerisier du Japon",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -11104,6 +11558,7 @@
     "pruning": "Ne donne pas de fruits, mais une floraison rose spectaculaire en avril."
   },
   "455": {
+    "species": "Prunier Pourpre",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -11125,6 +11580,7 @@
     "pruning": "Feuillage violet très sombre toute la saison. Petites prunes comestibles."
   },
   "456": {
+    "species": "Noisetier Tortueux",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -11147,6 +11603,7 @@
     "pruning": "Branches tordues en tire-bouchon, très décoratives en hiver."
   },
   "457": {
+    "species": "Sorbier des oiseleurs",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -11168,6 +11625,7 @@
     "pruning": "Grappes de baies rouges adorées des oiseaux en automne."
   },
   "458": {
+    "species": "Mûrier Platane",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -11189,6 +11647,7 @@
     "pruning": "L'arbre d'ombrage par excellence pour les terrasses (forme parasol)."
   },
   "459": {
+    "species": "Cytise",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -11211,6 +11670,7 @@
     "pruning": "Grappes de fleurs jaunes pendantes. Attention, les graines sont très toxiques."
   },
   "460": {
+    "species": "Epicéa",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -11233,6 +11693,7 @@
     "pruning": "Le sapin classique des forêts. Perd ses aiguilles en séchant."
   },
   "461": {
+    "species": "Sapin Bleu",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -11255,6 +11716,7 @@
     "pruning": "Aiguilles bleutées très rigides et piquantes."
   },
   "462": {
+    "species": "Pin Mugo",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -11278,6 +11740,7 @@
     "pruning": "Petit conifère en boule, idéal pour les rocailles."
   },
   "463": {
+    "species": "Mélèze",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -11299,6 +11762,7 @@
     "pruning": "Le seul conifère d'Europe qui perd ses aiguilles en hiver (elles jaunissent avant)."
   },
   "464": {
+    "species": "Araucaria",
     "light": "partial",
     "difficulty": "medium",
     "humidity": "medium",
@@ -11321,6 +11785,7 @@
     "pruning": "Conifère très graphique aux écailles piquantes. Croissance lente."
   },
   "465": {
+    "species": "Genévrier Rampant",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -11344,6 +11809,7 @@
     "pruning": "Couvre-sol persistant increvable pour talus."
   },
   "466": {
+    "species": "Faux-Cyprès",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -11367,6 +11833,7 @@
     "pruning": "Souvent utilisé en haie ou en isolé (formes dorées ou bleues)."
   },
   "467": {
+    "species": "Cryptomeria",
     "light": "partial",
     "difficulty": "medium",
     "humidity": "high",
@@ -11389,6 +11856,7 @@
     "pruning": "Son feuillage devient bronze/rougeâtre en hiver."
   },
   "468": {
+    "species": "Feijoa",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "medium",
@@ -11411,6 +11879,7 @@
     "pruning": "Fleurs comestibles et petits fruits verts au goût d'ananas/fraise."
   },
   "469": {
+    "species": "Kumquat",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "medium",
@@ -11438,6 +11907,7 @@
     "pruning": "L'agrume le plus rustique. On mange le fruit avec la peau."
   },
   "470": {
+    "species": "Chamaerops",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -11463,6 +11933,7 @@
     "pruning": "Palmier méditerranéen formant une touffe (plusieurs troncs)."
   },
   "471": {
+    "species": "Genêt",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -11486,6 +11957,7 @@
     "pruning": "Explosion de fleurs jaunes. Ne pas tailler le vieux bois (ne repousse pas)."
   },
   "472": {
+    "species": "Laurier du Portugal",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -11509,6 +11981,7 @@
     "pruning": "Alternative plus élégante au laurier palme. Feuilles fines, pétioles rouges."
   },
   "473": {
+    "species": "Troène",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -11532,6 +12005,7 @@
     "pruning": "Le classique des haies de lotissement. Semi-persistant."
   },
   "474": {
+    "species": "Hortensia à feuilles de chêne",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -11554,6 +12028,7 @@
     "pruning": "Feuilles découpées qui deviennent pourpre en automne. Fleurs coniques blanches."
   },
   "475": {
+    "species": "Hortensia Annabelle",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -11576,6 +12051,7 @@
     "pruning": "Énormes boules blanches. Se taille court chaque printemps (repousse du pied)."
   },
   "476": {
+    "species": "Viorne à feuilles ridées",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -11598,6 +12074,7 @@
     "pruning": "Grosses feuilles persistantes très texturées. Arbuste de fond de massif."
   },
   "477": {
+    "species": "Cotoneaster Lacteus",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -11621,6 +12098,7 @@
     "pruning": "Arbuste de haie persistante. Grappes de fruits rouges tout l'hiver."
   },
   "478": {
+    "species": "Céanothe",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "low",
@@ -11647,6 +12125,7 @@
     "pruning": "Nuée de fleurs bleues au printemps. Durée de vie assez courte (10-15 ans)."
   },
   "479": {
+    "species": "Abélia",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -11670,6 +12149,7 @@
     "pruning": "Fleurit tout l'été jusqu'aux gelées. Feuillage semi-persistant."
   },
   "480": {
+    "species": "Cornouiller Sanguin",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -11692,6 +12172,7 @@
     "pruning": "Son bois devient rouge fluo en hiver. Tailler court en mars pour stimuler la couleur."
   },
   "481": {
+    "species": "Arbre à Perruque",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -11714,6 +12195,7 @@
     "pruning": "Inflorescences roses vaporeuses. Feuillage souvent pourpre."
   },
   "482": {
+    "species": "Berbéris",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -11737,6 +12219,7 @@
     "pruning": "Arbuste très épineux, souvent à feuilles pourpres. Haie défensive."
   },
   "483": {
+    "species": "Symphorine",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -11759,6 +12242,7 @@
     "pruning": "Baies blanches ou roses qui éclatent sous le pied. Très rustique."
   },
   "484": {
+    "species": "Corête du Japon",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -11781,6 +12265,7 @@
     "pruning": "Pompons jaunes vifs au printemps. Bois vert décoratif en hiver."
   },
   "485": {
+    "species": "Callune",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -11803,6 +12288,7 @@
     "pruning": "Fleurit en fin d'été (contrairement à l'Erica d'hiver)."
   },
   "486": {
+    "species": "Sauge Arbustive",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -11825,6 +12311,7 @@
     "pruning": "Petites fleurs (rouges/blanches/roses) de mai à novembre. Feuillage aromatique."
   },
   "487": {
+    "species": "Caryopteris",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -11847,6 +12334,7 @@
     "pruning": "Buisson à fleurs bleues et feuillage gris en fin d'été. Rabattre court en mars."
   },
   "488": {
+    "species": "Potentille Arbustive",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -11870,6 +12358,7 @@
     "pruning": "Fleurs jaunes simples tout l'été. Très robuste au froid."
   },
   "489": {
+    "species": "Perovskia",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -11892,6 +12381,7 @@
     "pruning": "Tiges blanches et fleurs bleues. Remplace la lavande dans les régions froides."
   },
   "490": {
+    "species": "Leucothoe",
     "light": "partial",
     "difficulty": "medium",
     "humidity": "medium",
@@ -11915,6 +12405,7 @@
     "pruning": "Feuillage persistant panaché ou pourpre, excellent couvre-sol d'ombre."
   },
   "491": {
+    "species": "Skimmia",
     "light": "low",
     "difficulty": "easy",
     "humidity": "medium",
@@ -11938,6 +12429,7 @@
     "pruning": "Plante d'ombre. Boutons floraux rouges décoratifs tout l'hiver."
   },
   "492": {
+    "species": "Andromède",
     "light": "partial",
     "difficulty": "medium",
     "humidity": "medium",
@@ -11961,6 +12453,7 @@
     "pruning": "Jeunes pousses rouge feu au printemps. Clochettes blanches type muguet."
   },
   "493": {
+    "species": "Prunellier",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -11982,6 +12475,7 @@
     "pruning": "Arbuste sauvage pour haie champêtre. Floraison blanche précoce. Fruits (prunelles) pour les oiseaux."
   },
   "494": {
+    "species": "Aubépine",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -12003,6 +12497,7 @@
     "pruning": "Indispensable pour la biodiversité (fleurs et baies). Supporte les tailles sévères."
   },
   "495": {
+    "species": "Fusain Panaché",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -12026,6 +12521,7 @@
     "pruning": "Couvre-sol ou grimpant persistant, souvent jaune et vert. Très lumineux."
   },
   "496": {
+    "species": "Chèvrefeuille arbustif",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -12049,6 +12545,7 @@
     "pruning": "Petites feuilles persistantes. Remplace avantageusement le buis (pousse plus vite)."
   },
   "497": {
+    "species": "Houx Panaché",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -12072,6 +12569,7 @@
     "pruning": "Feuilles bordées de blanc ou jaune. Baies rouges en hiver."
   },
   "498": {
+    "species": "Olivier (En Pot)",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "low",
@@ -12099,6 +12597,7 @@
     "pruning": "En pot, il est beaucoup plus sensible au froid (racines) et à la soif. Ne jamais laisser de soucoupe pleine d'eau."
   },
   "499": {
+    "species": "Olivier (Pleine terre)",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -12118,6 +12617,7 @@
     "pruning": "Une fois installé (après 2-3 ans), il devient très résistant à la sécheresse. Tailler pour aérer le centre."
   },
   "500": {
+    "species": "Citronnier (En Pot)",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "medium",
@@ -12145,6 +12645,7 @@
     "pruning": "Doit être rentré hors gel l'hiver (véranda, garage lumineux) mais loin du chauffage. Très gourmand en engrais."
   },
   "501": {
+    "species": "Citronnier (Pleine terre)",
     "light": "direct",
     "difficulty": "hard",
     "humidity": "medium",
@@ -12168,6 +12669,7 @@
     "pruning": "Réservé aux régions à climat doux (Zone de l'oranger, Côte d'Azur). Craint le gel dès -3°C/-4°C."
   },
   "502": {
+    "species": "Laurier Rose (En Pot)",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "medium",
@@ -12195,6 +12697,7 @@
     "pruning": "Contrairement à la pleine terre, en pot il boit énormément en été ! S'il a soif, les feuilles jaunissent et tombent."
   },
   "503": {
+    "species": "Laurier Rose (Pleine terre)",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -12214,6 +12717,7 @@
     "pruning": "Très robuste. Supporte le vent et les embruns. Attention, très toxique."
   },
   "504": {
+    "species": "Érable du Japon (En Pot)",
     "light": "partial",
     "difficulty": "medium",
     "humidity": "high",
@@ -12236,6 +12740,7 @@
     "pruning": "Craint terriblement le vent desséchant et le soleil direct sur le pot (racines qui chauffent)."
   },
   "505": {
+    "species": "Érable du Japon (Pleine terre)",
     "light": "partial",
     "difficulty": "medium",
     "humidity": "high",
@@ -12255,6 +12760,7 @@
     "pruning": "Une fois bien installé à mi-ombre, il vit sa vie. Attention aux sols calcaires qui le tuent."
   },
   "506": {
+    "species": "Hortensia (En Pot)",
     "light": "partial",
     "difficulty": "medium",
     "humidity": "high",
@@ -12277,6 +12783,7 @@
     "pruning": "En pot, c'est une diva de l'eau : il fane immédiatement s'il manque d'eau une journée en été."
   },
   "507": {
+    "species": "Hortensia (Pleine terre)",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "high",
@@ -12296,6 +12803,7 @@
     "pruning": "Beaucoup plus autonome en terre. La couleur bleue dépend de l'acidité du sol (ardoise)."
   },
   "508": {
+    "species": "Bambou (En Pot)",
     "light": "partial",
     "difficulty": "medium",
     "humidity": "medium",
@@ -12318,6 +12826,7 @@
     "pruning": "En pot, le bambou meurt de soif très vite. Il faut l'arroser abondamment, même en hiver s'il ne pleut pas."
   },
   "509": {
+    "species": "Bambou (Pleine terre)",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -12337,6 +12846,7 @@
     "pruning": "ATTENTION : Si c'est un bambou traçant (Phyllostachys), il faut IMPÉRATIVEMENT poser une barrière anti-rhizome, sinon il envahira tout le jardin."
   },
   "510": {
+    "species": "Menthe (En Pot)",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -12359,6 +12869,7 @@
     "pruning": "La meilleure façon de cultiver la menthe. Elle reste sage dans son pot et ne colonise pas le jardin."
   },
   "511": {
+    "species": "Menthe (Pleine terre)",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -12378,6 +12889,7 @@
     "pruning": "ATTENTION : Extrêmement envahissante par ses racines souterraines. À planter dans un seau sans fond enterré pour la limiter."
   },
   "512": {
+    "species": "Bougainvillier (En Pot)",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "low",
@@ -12405,6 +12917,7 @@
     "pruning": "Doit absolument être rentré en hiver (véranda non chauffée ou pièce fraîche) partout sauf sur la Côte d'Azur."
   },
   "513": {
+    "species": "Bougainvillier (Pleine terre)",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -12424,6 +12937,7 @@
     "pruning": "Uniquement pour climats très doux (pas de gel inférieur à -4°C). Devient une liane géante."
   },
   "514": {
+    "species": "Lavande (En Pot)",
     "light": "direct",
     "difficulty": "hard",
     "humidity": "low",
@@ -12446,6 +12960,7 @@
     "pruning": "Difficile en pot : pourrit s'il y a trop d'eau, sèche s'il n'y en a pas assez. Ne jamais mettre de soucoupe."
   },
   "515": {
+    "species": "Lavande (Pleine terre)",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -12465,6 +12980,7 @@
     "pruning": "Increvable une fois installée. Tailler en boule après la floraison."
   },
   "516": {
+    "species": "Figuier (En Pot)",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "medium",
@@ -12490,6 +13006,7 @@
     "pruning": "Prendre une variété naine. Demande beaucoup d'eau en été pour faire grossir les figues."
   },
   "517": {
+    "species": "Figuier (Pleine terre)",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -12509,6 +13026,7 @@
     "pruning": "Ses racines sont très puissantes, ne pas planter près d'une piscine ou d'une maison."
   },
   "518": {
+    "species": "Rosier (Pot)",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "medium",
@@ -12531,6 +13049,7 @@
     "pruning": "Souvent vendus fleuris, ils s'épuisent vite. Nécessitent beaucoup d'engrais liquide."
   },
   "519": {
+    "species": "Rosier (Pleine terre)",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -12550,6 +13069,7 @@
     "pruning": "Beaucoup plus autonome. Un apport de compost au pied en hiver suffit souvent."
   },
   "520": {
+    "species": "Camélia (En Pot)",
     "light": "partial",
     "difficulty": "medium",
     "humidity": "high",
@@ -12572,6 +13092,7 @@
     "pruning": "Arroser uniquement à l'eau de pluie (le calcaire du robinet le tue en pot)."
   },
   "521": {
+    "species": "Camélia (Pleine terre)",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "high",
@@ -12591,6 +13112,7 @@
     "pruning": "Si la terre est naturellement acide (Bretagne), il devient un arbre sans entretien."
   },
   "522": {
+    "species": "Tomate",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "medium",
@@ -12621,6 +13143,7 @@
     "pruning": "Supprimer les gourmands (tiges à l'aisselle des feuilles). Feuilles toxiques."
   },
   "523": {
+    "species": "Courgette",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -12650,6 +13173,7 @@
     "pruning": "Non taillée, mais récolter jeune pour stimuler la production. Attention à l'oïdium."
   },
   "524": {
+    "species": "Concombre",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "high",
@@ -12678,6 +13202,7 @@
     "pruning": "Pincer la tête après 3-4 feuilles. A besoin de beaucoup d'eau mais pas sur les feuilles."
   },
   "525": {
+    "species": "Aubergine",
     "light": "direct",
     "difficulty": "hard",
     "humidity": "medium",
@@ -12706,6 +13231,7 @@
     "pruning": "Demande beaucoup de chaleur. Pincer pour ramifier."
   },
   "526": {
+    "species": "Poivron",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "medium",
@@ -12734,6 +13260,7 @@
     "pruning": "Vert = pas mûr. Rouge/Jaune = mûr et sucré."
   },
   "527": {
+    "species": "Haricot Vert",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -12761,6 +13288,7 @@
     "pruning": "Semer quand la terre est chaude (>15°C). Toxique cru."
   },
   "528": {
+    "species": "Radis",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -12796,6 +13324,7 @@
     "pruning": "Arroser régulièrement sinon ils deviennent piquants."
   },
   "529": {
+    "species": "Carotte",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "medium",
@@ -12826,6 +13355,7 @@
     "pruning": "Éclaircir les semis pour laisser de la place aux racines."
   },
   "530": {
+    "species": "Laitue",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -12865,6 +13395,7 @@
     "pruning": "Attention aux limaces. Monte en graines s'il fait trop chaud."
   },
   "531": {
+    "species": "Pomme de Terre",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -12892,6 +13423,7 @@
     "pruning": "Butter les pieds (ramener de la terre) au fur et à mesure de la croissance."
   },
   "532": {
+    "species": "Potiron",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -12920,6 +13452,7 @@
     "pruning": "Coureuse. Se conserve tout l'hiver."
   },
   "533": {
+    "species": "Courge Butternut",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -12939,7 +13472,7 @@
     ],
     "harvest_months": [
       9,
-      10
+      1
     ],
     "repotting_months": [],
     "wintering_months": [],
@@ -12947,6 +13480,7 @@
     "pruning": "Goût de noisette. Récolter quand le pédoncule est sec."
   },
   "534": {
+    "species": "Melon",
     "light": "direct",
     "difficulty": "hard",
     "humidity": "medium",
@@ -12975,6 +13509,7 @@
     "pruning": "Taille complexe nécessaire pour avoir des fruits au nord de la Loire."
   },
   "535": {
+    "species": "Poireau",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "medium",
@@ -13008,6 +13543,7 @@
     "pruning": "Butter pour avoir plus de blanc. Couper le vert avant de repiquer."
   },
   "536": {
+    "species": "Oignon",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -13036,6 +13572,7 @@
     "pruning": "Coucher les tiges quand elles jaunissent pour faire grossir le bulbe."
   },
   "537": {
+    "species": "Ail",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -13063,6 +13600,7 @@
     "pruning": "Planter les caïeux la pointe vers le haut. Nouer les tiges avant récolte."
   },
   "538": {
+    "species": "Échalote",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -13090,6 +13628,7 @@
     "pruning": "Ne pas arroser avant la récolte pour assurer la conservation."
   },
   "539": {
+    "species": "Petit Pois",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -13117,6 +13656,7 @@
     "pruning": "Prévoir des rames (tuteurs) pour qu'ils grimpent."
   },
   "540": {
+    "species": "Épinard",
     "light": "partial",
     "difficulty": "medium",
     "humidity": "medium",
@@ -13146,6 +13686,7 @@
     "pruning": "Monte en graines s'il fait chaud ou sec. Préférer les semis d'automne."
   },
   "541": {
+    "species": "Mâche",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -13174,6 +13715,7 @@
     "pruning": "La salade d'hiver par excellence."
   },
   "542": {
+    "species": "Blette",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -13204,6 +13746,7 @@
     "pruning": "Couper les côtes extérieures, le cœur repousse. Se mange comme des épinards."
   },
   "543": {
+    "species": "Betterave",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -13232,6 +13775,7 @@
     "pruning": "Se mange crue ou cuite."
   },
   "544": {
+    "species": "Chou-Fleur",
     "light": "direct",
     "difficulty": "hard",
     "humidity": "medium",
@@ -13262,6 +13806,7 @@
     "pruning": "Couvrir la pomme blanche avec les feuilles pour qu'elle ne jaunisse pas au soleil."
   },
   "545": {
+    "species": "Brocoli",
     "light": "partial",
     "difficulty": "medium",
     "humidity": "medium",
@@ -13292,6 +13837,7 @@
     "pruning": "Après la récolte de la tête principale, des petits bouquets repoussent sur les côtés."
   },
   "546": {
+    "species": "Chou Cabus",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "medium",
@@ -13323,6 +13869,7 @@
     "pruning": "Attention aux chenilles (piéride du chou)."
   },
   "547": {
+    "species": "Chou Kale",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -13352,6 +13899,7 @@
     "pruning": "Meilleur après les premières gelées."
   },
   "548": {
+    "species": "Chou de Bruxelles",
     "light": "direct",
     "difficulty": "hard",
     "humidity": "medium",
@@ -13382,6 +13930,7 @@
     "pruning": "Récolter les petites pommes du bas vers le haut tout l'hiver."
   },
   "549": {
+    "species": "Navet",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -13411,6 +13960,7 @@
     "pruning": "Récolter jeune pour qu'il soit tendre."
   },
   "550": {
+    "species": "Céleri-Rave",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "high",
@@ -13440,6 +13990,7 @@
     "pruning": "Couper les feuilles basses et les radicelles latérales pour avoir une belle boule."
   },
   "551": {
+    "species": "Fenouil",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "medium",
@@ -13467,6 +14018,7 @@
     "pruning": "Butter la base pour blanchir le bulbe. Goût anisé."
   },
   "552": {
+    "species": "Maïs Doux",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -13494,6 +14046,7 @@
     "pruning": "Planter en bloc (carré) plutôt qu'en ligne pour une bonne pollinisation par le vent."
   },
   "553": {
+    "species": "Asperge",
     "light": "direct",
     "difficulty": "hard",
     "humidity": "medium",
@@ -13520,6 +14073,7 @@
     "pruning": "Culture longue : on plante les griffes et on ne récolte que la 3ème année."
   },
   "554": {
+    "species": "Fève",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -13547,6 +14101,7 @@
     "pruning": "Pincer la tête après le 6ème étage de fleurs pour éviter les pucerons noirs."
   },
   "555": {
+    "species": "Topinambour",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -13574,6 +14129,7 @@
     "pruning": "Très envahissant (ne jamais laisser un bout de tubercule en terre). Goût d'artichaut."
   },
   "556": {
+    "species": "Panais",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -13602,6 +14158,7 @@
     "pruning": "Racine blanche sucrée. Meilleur après le gel."
   },
   "557": {
+    "species": "Cornichon",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "high",
@@ -13630,6 +14187,7 @@
     "pruning": "Récolter tous les jours, sinon ils grossissent trop."
   },
   "558": {
+    "species": "Oseille",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -13661,6 +14219,7 @@
     "pruning": "Couper les fleurs pour favoriser les feuilles. Goût acide citronné."
   },
   "559": {
+    "species": "Ciboulette",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -13694,6 +14253,7 @@
     "pruning": "Couper régulièrement. Les fleurs mauves se mangent en salade."
   },
   "560": {
+    "species": "Ciboule",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -13726,6 +14286,7 @@
     "pruning": "Plus grosse que la ciboulette, ne forme pas de bulbe. Indispensable en cuisine asiatique."
   },
   "561": {
+    "species": "Estragon",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "low",
@@ -13753,6 +14314,7 @@
     "pruning": "Disparaît en hiver. Goût anisé, essentiel pour la sauce béarnaise."
   },
   "562": {
+    "species": "Coriandre",
     "light": "partial",
     "difficulty": "medium",
     "humidity": "medium",
@@ -13784,6 +14346,7 @@
     "pruning": "Monte très vite en graines s'il fait chaud. Semer régulièrement."
   },
   "563": {
+    "species": "Aneth",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -13812,6 +14375,7 @@
     "pruning": "Compagnon idéal du poisson et des concombres. Se ressème seul."
   },
   "564": {
+    "species": "Cerfeuil",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -13840,6 +14404,7 @@
     "pruning": "Goût délicat. Préfère la fraîcheur du printemps ou de l'automne."
   },
   "565": {
+    "species": "Sauge Officinale",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -13878,6 +14443,7 @@
     "pruning": "Persistant. Goût puissant, utiliser avec parcimonie."
   },
   "566": {
+    "species": "Chicorée Frisée",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -13909,6 +14475,7 @@
     "pruning": "Blanchir le cœur en posant une cloche opaque 10 jours avant récolte pour enlever l'amertume."
   },
   "567": {
+    "species": "Endive",
     "light": "low",
     "difficulty": "hard",
     "humidity": "medium",
@@ -13939,6 +14506,7 @@
     "pruning": "Culture en deux temps : faire grossir la racine au jardin, puis forcer la racine dans le noir et l'humidité (cave) pour obtenir l'endive."
   },
   "568": {
+    "species": "Patate Douce",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "medium",
@@ -13959,7 +14527,7 @@
     ],
     "harvest_months": [
       9,
-      10
+      1
     ],
     "repotting_months": [],
     "wintering_months": [],
@@ -13967,6 +14535,7 @@
     "pruning": "Plante coureuse (c'est une Ipomée). Les feuilles se mangent aussi comme des épinards."
   },
   "569": {
+    "species": "Pâtisson",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -13995,6 +14564,7 @@
     "pruning": "Forme de soucoupe volante. Goût fin d'artichaut. Se mange jeune."
   },
   "570": {
+    "species": "Tétragone",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -14025,6 +14595,7 @@
     "pruning": "Remplace l'épinard en été car ne monte pas en graines avec la chaleur."
   },
   "571": {
+    "species": "Roquette",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -14060,6 +14631,7 @@
     "pruning": "Goût poivré. Pousse très vite. Attention aux altises (petits trous dans les feuilles)."
   },
   "572": {
+    "species": "Fraisier des Bois",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -14088,6 +14660,7 @@
     "pruning": "Couvre-sol d'ombre. Fruits minuscules mais au parfum incomparable. Se ressème seul."
   },
   "573": {
+    "species": "Fraisier (En Pot)",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "medium",
@@ -14117,6 +14690,7 @@
     "pruning": "En pot, le substrat sèche vite : arrosage quasi quotidien en été. Couper les stolons qui épuisent le pied."
   },
   "574": {
+    "species": "Fraisier (Pleine Terre)",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -14144,6 +14718,7 @@
     "pruning": "Pailler le sol (paille ou film) pour éviter que les fruits ne touchent la terre et pourrissent."
   },
   "575": {
+    "species": "Tomate Cerise (En Pot)",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "medium",
@@ -14173,6 +14748,7 @@
     "pruning": "Choisir des variétés buissonnantes qui ne se taillent pas. Attention au manque d'eau qui fait fendre les fruits."
   },
   "576": {
+    "species": "Tomate Cerise (Pleine Terre)",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -14202,6 +14778,7 @@
     "pruning": "Peut devenir géante (2m). Ne pas tailler les gourmands, elle produira plus de fruits mais plus petits."
   },
   "577": {
+    "species": "Radis (EnPot)",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -14233,6 +14810,7 @@
     "pruning": "Idéal pour débuter. Prêt en 3 à 4 semaines. Arroser souvent pour qu'ils ne piquent pas."
   },
   "578": {
+    "species": "Salade (En Pot)",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -14266,6 +14844,7 @@
     "pruning": "Ne pas arracher la racine : couper les feuilles aux ciseaux, elles repoussent 2 à 3 fois."
   },
   "579": {
+    "species": "Verveine Citronnelle",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "medium",
@@ -14292,6 +14871,7 @@
     "pruning": "Arbuste gélif à rentrer l'hiver. Feuilles au parfum de citron intense pour tisanes."
   },
   "580": {
+    "species": "Citronnelle de Madagascar",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "high",
@@ -14318,6 +14898,7 @@
     "pruning": "Graminée tropicale. On consomme la base blanche des tiges (cuisine thaï). Gélive."
   },
   "581": {
+    "species": "Mélisse",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -14350,6 +14931,7 @@
     "pruning": "Aussi envahissante que la menthe. Goût citronné, calmante en infusion."
   },
   "582": {
+    "species": "Origan",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -14380,6 +14962,7 @@
     "pruning": "L'herbe à pizza. Plus il fait sec et chaud, plus il a de goût."
   },
   "583": {
+    "species": "Sarriette Vivace",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -14411,6 +14994,7 @@
     "pruning": "Petit sous-arbrisseau persistant. Indispensable pour digérer les haricots."
   },
   "584": {
+    "species": "Laurier Sauce (En Pot)",
     "light": "partial",
     "difficulty": "medium",
     "humidity": "medium",
@@ -14446,6 +15030,7 @@
     "pruning": "Supporte très bien la taille en boule. Protéger le pot du gel intense."
   },
   "585": {
+    "species": "Rutabaga",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -14474,6 +15059,7 @@
     "pruning": "Légume racine oublié. Goût de noisette, se conserve en terre l'hiver."
   },
   "586": {
+    "species": "Crosne du Japon",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -14501,6 +15087,7 @@
     "pruning": "Petits tubercules blancs en forme de chenille. Goût fin d'artichaut."
   },
   "587": {
+    "species": "Oca du Pérou",
     "light": "partial",
     "difficulty": "medium",
     "humidity": "medium",
@@ -14526,6 +15113,7 @@
     "pruning": "Tubercules colorés (rose, rouge, jaune). Attendre que le feuillage gèle pour récolter."
   },
   "588": {
+    "species": "Salsifis",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "medium",
@@ -14555,6 +15143,7 @@
     "pruning": "La vraie racine blanche (différente de la scorsonère noire). Goût sucré."
   },
   "589": {
+    "species": "Pourpier Doré",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -14584,6 +15173,7 @@
     "pruning": "Salade d'été aux feuilles grasses et croquantes. Riche en Omega-3."
   },
   "590": {
+    "species": "Cresson Alénois",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "high",
@@ -14629,6 +15219,7 @@
     "pruning": "Pousse en 10 jours, même en intérieur sur du coton humide. Goût piquant."
   },
   "591": {
+    "species": "Pissenlit",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -14656,6 +15247,7 @@
     "pruning": "Variétés cultivées améliorées pour la salade. Blanchir les feuilles pour moins d'amertume."
   },
   "592": {
+    "species": "Cardon",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "medium",
@@ -14683,6 +15275,7 @@
     "pruning": "Cousin de l'artichaut, on mange les côtes. Doit être blanchi (emballé dans du carton) avant récolte."
   },
   "593": {
+    "species": "Lentille",
     "light": "partial",
     "difficulty": "medium",
     "humidity": "medium",
@@ -14708,6 +15301,7 @@
     "pruning": "Enrichit le sol en azote. Récolter quand les gousses jaunissent."
   },
   "594": {
+    "species": "Coqueret du Pérou",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "medium",
@@ -14736,6 +15330,7 @@
     "pruning": "Le fruit comestible (baie jaune sucrée), différent de l'Amour en cage décoratif."
   },
   "595": {
+    "species": "Framboisier (Pot / Nain)",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -14762,6 +15357,7 @@
     "pruning": "Variétés compactes sans épines pour terrasses. Ne pas laisser sécher le pot."
   },
   "596": {
+    "species": "Canneberge",
     "light": "partial",
     "difficulty": "hard",
     "humidity": "high",
@@ -14779,7 +15375,7 @@
     ],
     "harvest_months": [
       9,
-      10
+      1
     ],
     "repotting_months": [],
     "wintering_months": [],
@@ -14787,6 +15383,7 @@
     "pruning": "Couvre-sol. Demande un sol constamment humide et acide."
   },
   "597": {
+    "species": "Baie de Goji",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -14814,6 +15411,7 @@
     "pruning": "Arbuste désordonné. Consommer les baies bien mûres (rouges) et séchées."
   },
   "598": {
+    "species": "Consoude",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -14845,6 +15443,7 @@
     "pruning": "Plante engrais : ses feuilles riches en potasse font un purin excellent pour les tomates."
   },
   "599": {
+    "species": "Tanaisie",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -14874,6 +15473,7 @@
     "pruning": "Odeur forte qui repousse les insectes nuisibles (mouches, fourmis) au potager."
   },
   "600": {
+    "species": "Lin Bleu",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -14897,6 +15497,7 @@
     "pruning": "Fleurs d'un bleu céleste qui ne durent qu'un jour. Idéal en prairie fleurie."
   },
   "601": {
+    "species": "Oignon Rocambole",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -14924,6 +15525,7 @@
     "pruning": "Curieux : les bulbilles poussent au sommet des tiges (en l'air) !"
   },
   "602": {
+    "species": "Poireau Perpétuel",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -14955,6 +15557,7 @@
     "pruning": "Plus petit que le poireau classique, on le coupe au ras du sol et il repousse."
   },
   "603": {
+    "species": "Chou Daubenton",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -14991,6 +15594,7 @@
     "pruning": "Ne fait pas de pomme. On récolte les feuilles au fur et à mesure pendant 3-4 ans."
   },
   "604": {
+    "species": "Raifort",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -15018,6 +15622,7 @@
     "pruning": "Racine au goût piquant (wasabi). Très envahissant, à isoler dans un coin."
   },
   "605": {
+    "species": "Capucine Tubéreuse",
     "light": "partial",
     "difficulty": "medium",
     "humidity": "medium",
@@ -15042,6 +15647,7 @@
     "pruning": "Grimpante produisant des tubercules au goût poivré anisé. Récolter après les gelées."
   },
   "606": {
+    "species": "Poire de Terre",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -15066,6 +15672,7 @@
     "pruning": "Tubercules croquants et sucrés comme une poire/melon. Stocker hors gel l'hiver."
   },
   "607": {
+    "species": "Claytone de Cuba",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -15095,6 +15702,7 @@
     "pruning": "Salade d'hiver douce et charnue. Résiste bien au froid."
   },
   "608": {
+    "species": "Moutarde de Chine",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -15124,6 +15732,7 @@
     "pruning": "Feuilles au goût piquant de moutarde. Pousse très vite."
   },
   "609": {
+    "species": "Mizuna",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -15153,6 +15762,7 @@
     "pruning": "Chou japonais à feuilles découpées, goût doux. Idéal en mesclun."
   },
   "610": {
+    "species": "Tatsoi",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -15180,6 +15790,7 @@
     "pruning": "Petites feuilles vert foncé en rosette plate. Très résistant au froid."
   },
   "611": {
+    "species": "Angélique",
     "light": "partial",
     "difficulty": "medium",
     "humidity": "high",
@@ -15208,6 +15819,7 @@
     "pruning": "Plante géante (2m) aromatique utilisée en confiserie. Meurt après la floraison."
   },
   "612": {
+    "species": "Camomille Romaine",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -15237,6 +15849,7 @@
     "pruning": "Fleurs blanches en pompons. Tisane apaisante. Ne pas confondre avec la Matricaire (annuelle)."
   },
   "613": {
+    "species": "Bourrache",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -15264,6 +15877,7 @@
     "pruning": "Fleurs bleues en étoile comestibles (goût d'huître). Mellifère, attire les abeilles."
   },
   "614": {
+    "species": "Hysope",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -15292,6 +15906,7 @@
     "pruning": "Arbrisseau aromatique à fleurs bleues. Plante médicinale ancienne."
   },
   "615": {
+    "species": "Kiwaï",
     "light": "partial",
     "difficulty": "medium",
     "humidity": "medium",
@@ -15309,7 +15924,7 @@
     ],
     "harvest_months": [
       9,
-      10
+      1
     ],
     "repotting_months": [],
     "wintering_months": [],
@@ -15317,6 +15932,7 @@
     "pruning": "Mini kiwi à peau lisse qui se mange entier. Très résistant au froid."
   },
   "616": {
+    "species": "Mâche",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -15345,6 +15961,7 @@
     "pruning": "La salade d'hiver par excellence. Riche en vitamines."
   },
   "617": {
+    "species": "Arroche",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -15374,6 +15991,7 @@
     "pruning": "Grande plante aux feuilles rouges ou vertes, alternative à l'épinard. Monte vite en graines."
   },
   "618": {
+    "species": "Scorsonère",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -15404,6 +16022,7 @@
     "pruning": "Racine à peau noire et chair blanche. Plus fine que le salsifis."
   },
   "619": {
+    "species": "Pois Chiche",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -15430,6 +16049,7 @@
     "pruning": "Plante méditerranéenne qui déteste l'humidité. 2 pois par gousse."
   },
   "620": {
+    "species": "Marjolaine",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "low",
@@ -15460,6 +16080,7 @@
     "pruning": "Souvent confondue avec l'Origan, mais elle craint le gel ! À rentrer l'hiver ou ressemer chaque année."
   },
   "621": {
+    "species": "Basilic Thaï",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "medium",
@@ -15489,6 +16110,7 @@
     "pruning": "Tiges pourpres et goût épicé (anis/estragon). Indispensable pour les currys et soupes asiatiques."
   },
   "622": {
+    "species": "Ciboulette de Chine",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -15521,6 +16143,7 @@
     "pruning": "Différente de la ciboulette classique : feuilles plates, fleurs blanches et goût d'ail prononcé."
   },
   "623": {
+    "species": "Sauge Ananas",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -15549,6 +16172,7 @@
     "pruning": "Feuillage qui sent incroyablement l'ananas frais. Fleurs rouges comestibles en automne. À rentrer l'hiver."
   },
   "624": {
+    "species": "Menthe Chocolat",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -15578,6 +16202,7 @@
     "pruning": "Tiges foncées, goût rappelant les 'After Eight'. Parfaite en pot pour ne pas envahir le jardin."
   },
   "625": {
+    "species": "Oseille Sanguine",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -15610,6 +16235,7 @@
     "pruning": "Magnifique plante décorative (veines rouges) et comestible (jeunes feuilles en salade)."
   },
   "626": {
+    "species": "Agastache",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -15640,6 +16266,7 @@
     "pruning": "Goût anisé/réglisse. Épis mauves très appréciés des abeilles. Superbe en potée fleurie."
   },
   "627": {
+    "species": "Shiso",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "medium",
@@ -15668,6 +16295,7 @@
     "pruning": "Existe en vert ou pourpre. Goût unique (cumin/cannelle/menthe), star des sushis et sashimis."
   },
   "628": {
+    "species": "Céleri à couper",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "high",
@@ -15699,6 +16327,7 @@
     "pruning": "Beaucoup plus facile en pot que le céleri-rave. On coupe les feuilles pour aromatiser les soupes."
   },
   "629": {
+    "species": "Pimprenelle",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -15738,6 +16367,7 @@
     "pruning": "Joli feuillage dentelé persistant. Goût surprenant de concombre frais."
   },
   "630": {
+    "species": "Basilic (Grand Vert)",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "medium",
@@ -15769,6 +16399,7 @@
     "pruning": "En pot, il faut l'arroser souvent (le matin) sans jamais mouiller les feuilles. Pincer les fleurs dès leur apparition."
   },
   "631": {
+    "species": "Persil (En Pot)",
     "light": "partial",
     "difficulty": "medium",
     "humidity": "medium",
@@ -15813,6 +16444,7 @@
     "pruning": "A une racine pivot (longue) : il lui faut un pot profond, pas une jardinière plate. Tient bien l'hiver."
   },
   "632": {
+    "species": "Thym (En Pot)",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "low",
@@ -15853,6 +16485,7 @@
     "pruning": "En pot, l'ennemi est l'eau stagnante : pas de soucoupe ! Tailler après la floraison pour qu'il reste compact."
   },
   "633": {
+    "species": "Romarin (En Pot)",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "low",
@@ -15890,6 +16523,7 @@
     "pruning": "Préférer un pot en terre cuite pour que les racines respirent. Tailler le bois vert, jamais le vieux bois sec."
   },
   "634": {
+    "species": "Ciboulette (En Pot)",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -15923,6 +16557,7 @@
     "pruning": "Couper régulièrement aux ciseaux pour stimuler la repousse. Disparaît en hiver pour mieux revenir."
   },
   "635": {
+    "species": "Sauge Officinale (En Pot)",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -15961,6 +16596,7 @@
     "pruning": "Feuillage persistant. En pot, elle vieillit vite (3-4 ans) et devient ligneuse (bois sec)."
   },
   "636": {
+    "species": "Laurier Sauce (En Pot)",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -15996,6 +16632,7 @@
     "pruning": "Très décoratif sur un balcon. Protéger le pot avec un voile en hiver si la température descend sous -5°C."
   },
   "637": {
+    "species": "Estragon (En Pot)",
     "light": "partial",
     "difficulty": "medium",
     "humidity": "medium",
@@ -16024,6 +16661,7 @@
     "pruning": "Il rentre en dormance l'hiver (plus de feuilles). Attention à ne pas jeter le pot, il repart au printemps !"
   },
   "638": {
+    "species": "Origan (En Pot)",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",

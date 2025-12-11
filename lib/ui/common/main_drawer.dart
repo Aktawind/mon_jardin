@@ -139,12 +139,15 @@ class MainDrawer extends StatelessWidget {
 
           // PIED DE PAGE (Paramètres)
           const Divider(),
-          ListTile(
-            leading: const Icon(Icons.settings),
-            title: const Text("Paramètres"),
-            onTap: () => _navigateTo(context, 99),
+           SafeArea(
+            top: false, 
+            child: ListTile(
+              leading: const Icon(Icons.settings),
+              title: const Text("Paramètres"),
+              onTap: () => _navigateTo(context, 99),
+            ),
           ),
-          const SizedBox(height: 16), // Marge bas pour éviter la barre système
+          const SizedBox(height: 16), 
         ],
       ),
     );

@@ -345,4 +345,15 @@ class DatabaseService {
     final db = await database;
     await db.delete('events', where: 'id = ?', whereArgs: [eventId]);
   }
+
+  // Mettre à jour une photo (ex: changer la date)
+  Future<void> updatePhoto(PlantPhoto photo) async {
+    final db = await database;
+    await db.update(
+      'plant_photos',
+      photo.toMap(),
+      where: 'id = ?',
+      whereArgs: [photo.id],
+    );
+  }
 }
