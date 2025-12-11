@@ -106,7 +106,7 @@ class _MyPlantsScreenState extends State<MyPlantsScreen> with SingleTickerProvid
               });
             }
         },
-        label: const Text("Ajouter"),
+        label: const Text("Ajouter une plante"),
         icon: const Icon(Icons.add),
         backgroundColor: Theme.of(context).colorScheme.secondary,
       ),

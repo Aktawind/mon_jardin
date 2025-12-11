@@ -47,18 +47,40 @@ class _PlantFinderScreenState extends State<PlantFinderScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text("Guide d'Achat"),
-        backgroundColor: Theme.of(context).colorScheme.primary,
-        foregroundColor: Colors.white,
-        actions: [
-          if (_hasSearched)
-            IconButton(icon: const Icon(Icons.refresh), onPressed: _reset)
-        ],
-      ),
-      drawer: const MainDrawer(currentIndex: 2),
-      body: _hasSearched ? _buildResults() : _buildForm(),
+    // INTERCEPTION DU BOUTON RETOUR
+    return PopScope(
+      canPop: !_hasSearched, // Si on n'a pas cherché, on peut sortir normalement.
+      onPopInvoked: (didPop) {
+        if (didPop) return; // Si le système a déjà géré le retour, on ne fait rien.
+
+        // Si on est dans les résultats (_hasSearched est true), on revient au formulaire
+        if (_hasSearched) {
+          setState(() {
+            _hasSearched = false;
+            _results = null;
+          });
+        }
+      },
+      child: Scaffold(
+        appBar: AppBar(
+          title: const Text("Guide d'Achat"),
+          backgroundColor: Theme.of(context).colorScheme.primary,
+          foregroundColor: Colors.white,
+          leading: _hasSearched 
+              ? IconButton(
+                  icon: const Icon(Icons.arrow_back),
+                  onPressed: () {
+                    setState(() {
+                      _hasSearched = false;
+                      _results = null;
+                    });
+                  },
+                )
+              : null, // Si null, le bouton Drawer s'affiche automatiquement
+        ),
+        drawer: const MainDrawer(currentIndex: 2),
+        body: _hasSearched ? _buildResults() : _buildForm(),
+      )
     );
   }
 
@@ -68,7 +90,7 @@ class _PlantFinderScreenState extends State<PlantFinderScreen> {
       padding: const EdgeInsets.all(16),
       children: [
         const Text(
-          "Trouvons votre plante idéale 🌱",
+          "Trouvons la plante idéale",
           style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
           textAlign: TextAlign.center,
         ),
@@ -80,9 +102,9 @@ class _PlantFinderScreenState extends State<PlantFinderScreen> {
           icon: Icons.place,
           child: Column(
             children: [
-              _buildRadioTile("Intérieur (Salon, Chambre...)", PlantCategory.indoor, (v) => _criteria.category = v),
-              _buildRadioTile("Extérieur (Jardin, Balcon)", PlantCategory.outdoor, (v) => _criteria.category = v),
-              _buildRadioTile("Potager (Légumes, Fruits)", PlantCategory.vegetable, (v) => _criteria.category = v),
+              _buildRadioTile("Intérieur", PlantCategory.indoor, (v) => _criteria.category = v),
+              _buildRadioTile("Extérieur", PlantCategory.outdoor, (v) => _criteria.category = v),
+              _buildRadioTile("Potager", PlantCategory.vegetable, (v) => _criteria.category = v),
             ],
           ),
         ),
@@ -138,8 +160,8 @@ class _PlantFinderScreenState extends State<PlantFinderScreen> {
           icon: Icons.palette,
           child: Column(
             children: [
-              _buildRadioTileGeneric("Plante Verte (Feuillage)", FoliageType.foliage, _criteria.aesthetic, (v) => _criteria.aesthetic = v),
-              _buildRadioTileGeneric("Plante Fleurie", FoliageType.flowering, _criteria.aesthetic, (v) => _criteria.aesthetic = v),
+              _buildRadioTileGeneric("Plante Verte", FoliageType.foliage, _criteria.aesthetic, (v) => _criteria.aesthetic = v),
+              _buildRadioTileGeneric("Plante à Fleurs", FoliageType.flowering, _criteria.aesthetic, (v) => _criteria.aesthetic = v),
             ],
           ),
         ),
@@ -224,8 +246,8 @@ class _PlantFinderScreenState extends State<PlantFinderScreen> {
           icon: Icons.palette,
           child: Column(
             children: [
-              _buildRadioTileGeneric("Plante Verte (Feuillage)", FoliageType.foliage, _criteria.aesthetic, (v) => _criteria.aesthetic = v),
-              _buildRadioTileGeneric("Plante Fleurie", FoliageType.flowering, _criteria.aesthetic, (v) => _criteria.aesthetic = v),
+              _buildRadioTileGeneric("Plante Verte", FoliageType.foliage, _criteria.aesthetic, (v) => _criteria.aesthetic = v),
+              _buildRadioTileGeneric("Plante à Fleurs", FoliageType.flowering, _criteria.aesthetic, (v) => _criteria.aesthetic = v),
             ],
           ),
         ),
@@ -304,13 +326,15 @@ class _PlantFinderScreenState extends State<PlantFinderScreen> {
           child: Column(
             children: [
               SwitchListTile(
-                title: const Text("Débutant (Facile à réussir)"),
+                title: const Text("Débutant"),
+                subtitle: const Text("Facile à réussir"),
                 value: _criteria.lowMaintenance ?? false, // On réutilise ce champ pour "Facile"
                 onChanged: (v) => setState(() => _criteria.lowMaintenance = v),
               ),
             ],
           ),
         ),
+
         // Type
         _buildQuestionCard(
           title: "Type de légume",
@@ -319,9 +343,9 @@ class _PlantFinderScreenState extends State<PlantFinderScreen> {
             children: [
               _buildRadioTileGeneric("Légume feuille", VegetableType.leaf, _criteria.vegType, (v) => _criteria.vegType = v),
               _buildRadioTileGeneric("Légume racine", VegetableType.root, _criteria.vegType, (v) => _criteria.vegType = v),
-              _buildRadioTileGeneric("Fruits comestibles", VegetableType.fruit, _criteria.vegType, (v) => _criteria.vegType = v),
-              _buildRadioTileGeneric("Herbes aromatiques", VegetableType.herb, _criteria.vegType, (v) => _criteria.vegType = v),
-              _buildRadioTileGeneric("Petit fruitier", VegetableType.fruitTree, _criteria.vegType, (v) => _criteria.vegType = v),
+              _buildRadioTileGeneric("Légume fruit", VegetableType.fruit, _criteria.vegType, (v) => _criteria.vegType = v),
+              _buildRadioTileGeneric("Aromatiques", VegetableType.herb, _criteria.vegType, (v) => _criteria.vegType = v),
+              _buildRadioTileGeneric("Arbre fruitier", VegetableType.fruitTree, _criteria.vegType, (v) => _criteria.vegType = v),
             ],
           ),
         ),
@@ -338,7 +362,7 @@ class _PlantFinderScreenState extends State<PlantFinderScreen> {
           children: [
             const Icon(Icons.search_off, size: 64, color: Colors.grey),
             const SizedBox(height: 16),
-            const Text("Aucune plante ne correspond exactement...", style: TextStyle(fontSize: 16)),
+            const Text("Aucune plante ne correspond...", style: TextStyle(fontSize: 16)),
             const SizedBox(height: 8),
             TextButton(onPressed: _reset, child: const Text("Essayer d'autres critères"))
           ],
@@ -350,7 +374,7 @@ class _PlantFinderScreenState extends State<PlantFinderScreen> {
       children: [
         Padding(
           padding: const EdgeInsets.all(16.0),
-          child: Text("${_results!.length} plantes trouvées !", style: TextStyle(color: Theme.of(context).colorScheme.primary, fontWeight: FontWeight.bold)),
+          child: Text("${_results!.length} plantes trouvées", style: TextStyle(color: Theme.of(context).colorScheme.primary, fontWeight: FontWeight.bold)),
         ),
         Expanded(
           child: ListView.builder(
@@ -366,15 +390,14 @@ class _PlantFinderScreenState extends State<PlantFinderScreen> {
                   ),
                   title: Text(plantData.species, style: const TextStyle(fontWeight: FontWeight.bold)),
                   subtitle: Text(plantData.difficulty.label), // Utilise ton extension .label
-                  trailing: IconButton(
-                    icon: const Icon(Icons.add_circle_outline, color: Colors.green),
-                    onPressed: () {
-                      Navigator.push(
-                        context, 
-                        MaterialPageRoute(builder: (_) => EncyclopediaDetailScreen(data: plantData))
-                      );
-                    },
-                  ),
+                  trailing: const Icon(Icons.chevron_right, color: Colors.grey),
+
+                  onTap: () {
+                    Navigator.push(
+                      context, 
+                      MaterialPageRoute(builder: (_) => EncyclopediaDetailScreen(data: plantData))
+                    );
+                  },
                 ),
               );
             },

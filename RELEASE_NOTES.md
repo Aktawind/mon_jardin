@@ -33,6 +33,23 @@ Ce fichier trace l'historique des évolutions de l'application Sève.
 
 ## ✅ Versions publiées
 
+### v1.6.0 - "Encyclopédie"
+**Ajout de l'écran de l'encyclopédie**
+Accessible via le Drawer.
+Une liste simple de toutes les plantes triée alphabétiquement.
+Une barre de recherche en haut pour trouver rapidement.
+Des filtres rapides : Intérieur / Extérieur / Potager.
+
+**L'Écran de Détail**
+Affichage propre de TOUTES les données du JSON
+Sections : Identité, Besoins (Eau/Lumière), Sol & Culture, Calendrier théorique, Bonus (Toxicité, Rusticité...).
+Bouton flottant : "Ajouter cette plante".
+
+**Connexions**
+Depuis le Drawer -> Ouvre la Liste.
+Depuis le Guide d'Achat (résultat) -> Ouvre le Détail Encyclopédie.
+Depuis "Ma Plante" (Menu Gestion) -> Ouvre le Détail Encyclopédie correspondant.
+
 ### v1.5.0 - "Guide d'achat + Refonte base de données"
 **Le Guide d'Achat :**
 - **Match-Making Végétal :** Un assistant interactif pour trouver la plante idéale selon vos critères (Intérieur/Extérieur, Lumière, Animaux, Facilité...).

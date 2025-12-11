@@ -50,7 +50,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
           seedColor: const Color.fromARGB(255, 69, 187, 163), // Vert d'eau
-          secondary: const Color.fromARGB(255, 247, 181, 167), // Rose pâle
+          secondary: const Color.fromARGB(255, 243, 190, 179), // Rose pâle
         ),
         useMaterial3: true,
         // On force un peu le style de l'AppBar pour qu'il soit joli
