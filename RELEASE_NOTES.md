@@ -33,6 +33,17 @@ Ce fichier trace l'historique des évolutions de l'application Sève.
 
 ## ✅ Versions publiées
 
+### v1.5.0 - "Guide d'achat + Refonte base de données"
+**Le Guide d'Achat :**
+- **Match-Making Végétal :** Un assistant interactif pour trouver la plante idéale selon vos critères (Intérieur/Extérieur, Lumière, Animaux, Facilité...).
+- **Filtres Avancés :** Recherche par esthétique (Fleur/Feuillage), forme (Suspendue/Arbre) et type de potager (Légume racine, fruitier...).
+- **Résultats enrichis :** Affichage coloré et ajout direct des plantes trouvées.
+
+**Architecture de Données (Refonte Majeure) :**
+- **Base de données relationnelle JSON :** Migration vers une structure à 3 fichiers (`core`, `care`, `tags`) générés depuis des CSV maîtres. Plus robuste et facile à maintenir.
+- **Enums Standardisés :** Toutes les données (Lumière, Rusticité, Cycle...) sont maintenant typées pour permettre des filtres précis.
+- **Encyclopédie étendue :** Capacité d'accueil de milliers de plantes avec gestion des synonymes.
+
 ### v1.4.5 - "Refonte du menu principal"
 - Restructuration de la navigation principale pour accueillir les futures fonctionnalités.
 
