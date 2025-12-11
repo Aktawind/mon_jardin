@@ -809,7 +809,7 @@
       "Ocimum basilicum",
       "Pistou"
     ],
-    "category": "herb"
+    "category": "vegetable"
   },
   "97": {
     "species": "Cordyline",
@@ -907,7 +907,7 @@
       "Allium schoenoprasum",
       "Chives"
     ],
-    "category": "herb"
+    "category": "vegetable"
   },
   "109": {
     "species": "Persil",
@@ -915,7 +915,7 @@
       "Petroselinum crispum",
       "Parsley"
     ],
-    "category": "herb"
+    "category": "vegetable"
   },
   "110": {
     "species": "Romarin",
@@ -923,7 +923,7 @@
       "Rosmarinus officinalis",
       "Herbe aux couronnes"
     ],
-    "category": "herb"
+    "category": "vegetable"
   },
   "111": {
     "species": "Thym",
@@ -931,7 +931,7 @@
       "Thymus vulgaris",
       "Farigoule"
     ],
-    "category": "herb"
+    "category": "vegetable"
   },
   "112": {
     "species": "Piment",
@@ -1179,7 +1179,7 @@
       "Laurus nobilis",
       "Laurier d'Apollon"
     ],
-    "category": "herb"
+    "category": "vegetable"
   },
   "142": {
     "species": "Aralia Fabian",
@@ -1377,7 +1377,7 @@
       "Coriandrum sativum",
       "Persil arabe"
     ],
-    "category": "herb"
+    "category": "vegetable"
   },
   "166": {
     "species": "Ananas",
@@ -1568,7 +1568,7 @@
       "Herbe à sucre",
       "Stevia rebaudiana"
     ],
-    "category": "herb"
+    "category": "vegetable"
   },
   "189": {
     "species": "Callistemon",
@@ -2416,7 +2416,7 @@
     "synonyms": [
       "Salvia officinalis"
     ],
-    "category": "herb"
+    "category": "vegetable"
   },
   "299": {
     "species": "Sedum",
@@ -2690,7 +2690,7 @@
       "Helichrysum italicum",
       "Plante au curry"
     ],
-    "category": "herb"
+    "category": "vegetable"
   },
   "335": {
     "species": "Santoline",
@@ -2720,7 +2720,7 @@
     "synonyms": [
       "Rosmarinus repens"
     ],
-    "category": "herb"
+    "category": "vegetable"
   },
   "339": {
     "species": "Ipomée",
@@ -3160,21 +3160,13 @@
     "category": "outdoor"
   },
   "395": {
-    "species": "Agave",
-    "synonyms": [
-      "Agave americana",
-      "Plante centenaire"
-    ],
-    "category": "outdoor"
-  },
-  "396": {
     "species": "Yucca Filamentosa",
     "synonyms": [
       "Yucca filamenteux"
     ],
     "category": "outdoor"
   },
-  "397": {
+  "396": {
     "species": "Imperata",
     "synonyms": [
       "Imperata cylindrica",
@@ -3183,7 +3175,7 @@
     ],
     "category": "outdoor"
   },
-  "398": {
+  "397": {
     "species": "Ophiopogon",
     "synonyms": [
       "Barbe de serpent",
@@ -3191,14 +3183,14 @@
     ],
     "category": "outdoor"
   },
-  "399": {
+  "398": {
     "species": "Laurier du Portugal",
     "synonyms": [
       "Prunus lusitanica"
     ],
     "category": "outdoor"
   },
-  "400": {
+  "399": {
     "species": "Troène",
     "synonyms": [
       "Ligustrum",
@@ -3206,7 +3198,7 @@
     ],
     "category": "outdoor"
   },
-  "401": {
+  "400": {
     "species": "Pennisetum",
     "synonyms": [
       "Herbe aux écouvillons",
@@ -3214,7 +3206,7 @@
     ],
     "category": "outdoor"
   },
-  "402": {
+  "401": {
     "species": "Lys des Incas",
     "synonyms": [
       "Alstroemère",
@@ -3222,7 +3214,7 @@
     ],
     "category": "outdoor"
   },
-  "403": {
+  "402": {
     "species": "Aster",
     "synonyms": [
       "Aster d'automne",
@@ -3230,7 +3222,7 @@
     ],
     "category": "outdoor"
   },
-  "404": {
+  "403": {
     "species": "Vergerette",
     "synonyms": [
       "Erigeron karvinskianus",
@@ -3238,7 +3230,7 @@
     ],
     "category": "outdoor"
   },
-  "405": {
+  "404": {
     "species": "Sauge Arbustive",
     "synonyms": [
       "Salvia microphylla",
@@ -3246,7 +3238,7 @@
     ],
     "category": "outdoor"
   },
-  "406": {
+  "405": {
     "species": "Achillée",
     "synonyms": [
       "Achillea millefolium",
@@ -3254,7 +3246,7 @@
     ],
     "category": "outdoor"
   },
-  "407": {
+  "406": {
     "species": "Caryopteris",
     "synonyms": [
       "Barbe bleue",
@@ -3262,14 +3254,14 @@
     ],
     "category": "outdoor"
   },
-  "408": {
+  "407": {
     "species": "Leucothoe",
     "synonyms": [
       "Leucothoe fontanesiana"
     ],
     "category": "outdoor"
   },
-  "409": {
+  "408": {
     "species": "Phlomis",
     "synonyms": [
       "Sauge de Jérusalem",
@@ -3277,7 +3269,7 @@
     ],
     "category": "outdoor"
   },
-  "410": {
+  "409": {
     "species": "Ceratostigma",
     "synonyms": [
       "Dentelaire de Lady Willmott",
@@ -3285,14 +3277,14 @@
     ],
     "category": "outdoor"
   },
-  "411": {
+  "410": {
     "species": "Gazania",
     "synonyms": [
       "Gazanie"
     ],
     "category": "outdoor"
   },
-  "412": {
+  "411": {
     "species": "Osteospermum",
     "synonyms": [
       "Marguerite du Cap",
@@ -3300,7 +3292,7 @@
     ],
     "category": "outdoor"
   },
-  "413": {
+  "412": {
     "species": "Valériane Rouge",
     "synonyms": [
       "Centranthus ruber",
@@ -3308,7 +3300,7 @@
     ],
     "category": "outdoor"
   },
-  "414": {
+  "413": {
     "species": "Nigelle de Damas",
     "synonyms": [
       "Nigella damascena",
@@ -3316,14 +3308,14 @@
     ],
     "category": "outdoor"
   },
-  "415": {
+  "414": {
     "species": "Pavot de Californie",
     "synonyms": [
       "Eschscholzia californica"
     ],
     "category": "outdoor"
   },
-  "416": {
+  "415": {
     "species": "Monarde",
     "synonyms": [
       "Monarda",
@@ -3331,7 +3323,7 @@
     ],
     "category": "outdoor"
   },
-  "417": {
+  "416": {
     "species": "Hémérocalle",
     "synonyms": [
       "Hemerocallis",
@@ -3339,7 +3331,7 @@
     ],
     "category": "outdoor"
   },
-  "418": {
+  "417": {
     "species": "Benoîte",
     "synonyms": [
       "Geum",
@@ -3347,14 +3339,14 @@
     ],
     "category": "outdoor"
   },
-  "419": {
+  "418": {
     "species": "Penstemon",
     "synonyms": [
       "Galane"
     ],
     "category": "outdoor"
   },
-  "420": {
+  "419": {
     "species": "Brunnera",
     "synonyms": [
       "Brunnera macrophylla",
@@ -3362,7 +3354,7 @@
     ],
     "category": "outdoor"
   },
-  "421": {
+  "420": {
     "species": "Sceau de Salomon",
     "synonyms": [
       "Polygonatum",
@@ -3370,7 +3362,7 @@
     ],
     "category": "outdoor"
   },
-  "422": {
+  "421": {
     "species": "Giroflée",
     "synonyms": [
       "Erysimum",
@@ -3379,7 +3371,7 @@
     ],
     "category": "outdoor"
   },
-  "423": {
+  "422": {
     "species": "Monnaie du Pape",
     "synonyms": [
       "Lunaria annua",
@@ -3387,7 +3379,7 @@
     ],
     "category": "outdoor"
   },
-  "424": {
+  "423": {
     "species": "Amour en cage",
     "synonyms": [
       "Physalis alkekengi",
@@ -3395,7 +3387,7 @@
     ],
     "category": "outdoor"
   },
-  "425": {
+  "424": {
     "species": "Liatris",
     "synonyms": [
       "Liatris spicata",
@@ -3403,7 +3395,7 @@
     ],
     "category": "outdoor"
   },
-  "426": {
+  "425": {
     "species": "Véronique Arbustive",
     "synonyms": [
       "Hebe",
@@ -3411,7 +3403,7 @@
     ],
     "category": "outdoor"
   },
-  "427": {
+  "426": {
     "species": "Palmier Chanvre",
     "synonyms": [
       "Trachycarpus fortunei",
@@ -3419,7 +3411,7 @@
     ],
     "category": "outdoor"
   },
-  "428": {
+  "427": {
     "species": "Pourpier Vivace",
     "synonyms": [
       "Delosperma cooperi",
@@ -3427,7 +3419,7 @@
     ],
     "category": "outdoor"
   },
-  "429": {
+  "428": {
     "species": "Griffe de Sorcière",
     "synonyms": [
       "Carpobrotus",
@@ -3435,7 +3427,7 @@
     ],
     "category": "outdoor"
   },
-  "430": {
+  "429": {
     "species": "Gazon d'Espagne",
     "synonyms": [
       "Armeria maritima",
@@ -3443,7 +3435,7 @@
     ],
     "category": "outdoor"
   },
-  "431": {
+  "430": {
     "species": "Corbeille d'Argent",
     "synonyms": [
       "Iberis sempervirens",
@@ -3451,7 +3443,7 @@
     ],
     "category": "outdoor"
   },
-  "432": {
+  "431": {
     "species": "Corbeille d'Or",
     "synonyms": [
       "Alyssum saxatile",
@@ -3459,14 +3451,14 @@
     ],
     "category": "outdoor"
   },
-  "433": {
+  "432": {
     "species": "Framboisier",
     "synonyms": [
       "Rubus idaeus"
     ],
     "category": "vegetable"
   },
-  "434": {
+  "433": {
     "species": "Cassissier",
     "synonyms": [
       "Ribes nigrum",
@@ -3474,7 +3466,7 @@
     ],
     "category": "vegetable"
   },
-  "435": {
+  "434": {
     "species": "Mûrier (Ronce)",
     "synonyms": [
       "Rubus fruticosus",
@@ -3482,50 +3474,50 @@
     ],
     "category": "vegetable"
   },
-  "436": {
+  "435": {
     "species": "Kiwi",
     "synonyms": [
       "Actinidia deliciosa"
     ],
     "category": "vegetable"
   },
-  "437": {
+  "436": {
     "species": "Rhubarbe",
     "synonyms": [
       "Rheum rhabarbarum"
     ],
     "category": "vegetable"
   },
-  "438": {
+  "437": {
     "species": "Artichaut",
     "synonyms": [
       "Cynara scolymus"
     ],
     "category": "vegetable"
   },
-  "439": {
+  "438": {
     "species": "Souci",
     "synonyms": [
       "Calendula officinalis"
     ],
     "category": "outdoor"
   },
-  "440": {
+  "439": {
     "species": "Bourrache",
     "synonyms": [
       "Borago officinalis"
     ],
-    "category": "herb"
+    "category": "vegetable"
   },
-  "441": {
+  "440": {
     "species": "Ail des Ours",
     "synonyms": [
       "Allium ursinum",
       "Ail sauvage"
     ],
-    "category": "herb"
+    "category": "vegetable"
   },
-  "442": {
+  "441": {
     "species": "Hélénie",
     "synonyms": [
       "Helenium",
@@ -3533,7 +3525,7 @@
     ],
     "category": "outdoor"
   },
-  "443": {
+  "442": {
     "species": "Pâquerette",
     "synonyms": [
       "Bellis perennis",
@@ -3541,7 +3533,7 @@
     ],
     "category": "outdoor"
   },
-  "444": {
+  "443": {
     "species": "Genévrier",
     "synonyms": [
       "Juniperus",
@@ -3549,7 +3541,7 @@
     ],
     "category": "outdoor"
   },
-  "445": {
+  "444": {
     "species": "Faux Cyprès",
     "synonyms": [
       "Chamaecyparis",
@@ -3557,30 +3549,7 @@
     ],
     "category": "outdoor"
   },
-  "446": {
-    "species": "Sauge Officinale",
-    "synonyms": [
-      "Salvia officinalis"
-    ],
-    "category": "herb"
-  },
-  "447": {
-    "species": "Millepertuis",
-    "synonyms": [
-      "Hypericum",
-      "Millepertuis arbustif"
-    ],
-    "category": "outdoor"
-  },
-  "448": {
-    "species": "Campanule",
-    "synonyms": [
-      "Campanula",
-      "Campanule des murs"
-    ],
-    "category": "outdoor"
-  },
-  "449": {
+  "445": {
     "species": "Myrtillier",
     "synonyms": [
       "Vaccinium corymbosum",
@@ -3588,14 +3557,14 @@
     ],
     "category": "vegetable"
   },
-  "450": {
+  "446": {
     "species": "Groseillier à maquereau",
     "synonyms": [
       "Ribes uva-crispa"
     ],
     "category": "vegetable"
   },
-  "451": {
+  "447": {
     "species": "Kaki",
     "synonyms": [
       "Plaqueminier",
@@ -3603,14 +3572,14 @@
     ],
     "category": "vegetable"
   },
-  "452": {
+  "448": {
     "species": "Amandier",
     "synonyms": [
       "Prunus dulcis"
     ],
     "category": "vegetable"
   },
-  "453": {
+  "449": {
     "species": "Saule Crevette",
     "synonyms": [
       "Salix integra",
@@ -3618,7 +3587,7 @@
     ],
     "category": "outdoor"
   },
-  "454": {
+  "450": {
     "species": "Cerisier du Japon",
     "synonyms": [
       "Prunus serrulata",
@@ -3627,7 +3596,7 @@
     ],
     "category": "outdoor"
   },
-  "455": {
+  "451": {
     "species": "Prunier Pourpre",
     "synonyms": [
       "Prunus cerasifera",
@@ -3635,21 +3604,21 @@
     ],
     "category": "outdoor"
   },
-  "456": {
+  "452": {
     "species": "Noisetier Tortueux",
     "synonyms": [
       "Corylus avellana contorta"
     ],
     "category": "outdoor"
   },
-  "457": {
+  "453": {
     "species": "Sorbier des oiseleurs",
     "synonyms": [
       "Sorbus aucuparia"
     ],
     "category": "outdoor"
   },
-  "458": {
+  "454": {
     "species": "Mûrier Platane",
     "synonyms": [
       "Morus bombycis",
@@ -3657,7 +3626,7 @@
     ],
     "category": "outdoor"
   },
-  "459": {
+  "455": {
     "species": "Cytise",
     "synonyms": [
       "Laburnum",
@@ -3665,7 +3634,7 @@
     ],
     "category": "outdoor"
   },
-  "460": {
+  "456": {
     "species": "Epicéa",
     "synonyms": [
       "Picea abies",
@@ -3674,7 +3643,7 @@
     ],
     "category": "outdoor"
   },
-  "461": {
+  "457": {
     "species": "Sapin Bleu",
     "synonyms": [
       "Picea pungens",
@@ -3682,7 +3651,7 @@
     ],
     "category": "outdoor"
   },
-  "462": {
+  "458": {
     "species": "Pin Mugo",
     "synonyms": [
       "Pinus mugo",
@@ -3691,22 +3660,14 @@
     ],
     "category": "outdoor"
   },
-  "463": {
+  "459": {
     "species": "Mélèze",
     "synonyms": [
       "Larix decidua"
     ],
     "category": "outdoor"
   },
-  "464": {
-    "species": "Araucaria",
-    "synonyms": [
-      "Désespoir des singes",
-      "Araucaria araucana"
-    ],
-    "category": "outdoor"
-  },
-  "465": {
+  "460": {
     "species": "Genévrier Rampant",
     "synonyms": [
       "Juniperus horizontalis",
@@ -3714,7 +3675,7 @@
     ],
     "category": "outdoor"
   },
-  "466": {
+  "461": {
     "species": "Faux-Cyprès",
     "synonyms": [
       "Chamaecyparis",
@@ -3722,7 +3683,7 @@
     ],
     "category": "outdoor"
   },
-  "467": {
+  "462": {
     "species": "Cryptomeria",
     "synonyms": [
       "Cèdre du Japon",
@@ -3730,7 +3691,7 @@
     ],
     "category": "outdoor"
   },
-  "468": {
+  "463": {
     "species": "Feijoa",
     "synonyms": [
       "Goyavier du Brésil",
@@ -3738,14 +3699,14 @@
     ],
     "category": "outdoor"
   },
-  "469": {
+  "464": {
     "species": "Kumquat",
     "synonyms": [
       "Fortunella"
     ],
     "category": "outdoor"
   },
-  "470": {
+  "465": {
     "species": "Chamaerops",
     "synonyms": [
       "Palmier nain",
@@ -3753,7 +3714,7 @@
     ],
     "category": "outdoor"
   },
-  "471": {
+  "466": {
     "species": "Genêt",
     "synonyms": [
       "Cytisus",
@@ -3761,103 +3722,35 @@
     ],
     "category": "outdoor"
   },
-  "472": {
-    "species": "Laurier du Portugal",
-    "synonyms": [
-      "Prunus lusitanica"
-    ],
-    "category": "outdoor"
-  },
-  "473": {
-    "species": "Troène",
-    "synonyms": [
-      "Ligustrum",
-      "Troène commun"
-    ],
-    "category": "outdoor"
-  },
-  "474": {
+  "467": {
     "species": "Hortensia à feuilles de chêne",
     "synonyms": [
       "Hydrangea quercifolia"
     ],
     "category": "outdoor"
   },
-  "475": {
+  "468": {
     "species": "Hortensia Annabelle",
     "synonyms": [
       "Hydrangea arborescens"
     ],
     "category": "outdoor"
   },
-  "476": {
+  "469": {
     "species": "Viorne à feuilles ridées",
     "synonyms": [
       "Viburnum rhytidophyllum"
     ],
     "category": "outdoor"
   },
-  "477": {
+  "470": {
     "species": "Cotoneaster Lacteus",
     "synonyms": [
       "Cotonéaster laiteux"
     ],
     "category": "outdoor"
   },
-  "478": {
-    "species": "Céanothe",
-    "synonyms": [
-      "Lilas de Californie",
-      "Ceanothus"
-    ],
-    "category": "outdoor"
-  },
-  "479": {
-    "species": "Abélia",
-    "synonyms": [
-      "Abelia grandiflora"
-    ],
-    "category": "outdoor"
-  },
-  "480": {
-    "species": "Cornouiller Sanguin",
-    "synonyms": [
-      "Cornus sanguinea",
-      "Bois rouge"
-    ],
-    "category": "outdoor"
-  },
-  "481": {
-    "species": "Arbre à Perruque",
-    "synonyms": [
-      "Cotinus coggygria"
-    ],
-    "category": "outdoor"
-  },
-  "482": {
-    "species": "Berbéris",
-    "synonyms": [
-      "Epine-vinette",
-      "Berberis thunbergii"
-    ],
-    "category": "outdoor"
-  },
-  "483": {
-    "species": "Symphorine",
-    "synonyms": [
-      "Symphoricarpos",
-      "Arbre aux perles"
-    ],
-    "category": "outdoor"
-  },
-  "484": {
-    "species": "Corête du Japon",
-    "synonyms": [
-      "Kerria japonica"
-    ],
-    "category": "outdoor"
-  },
-  "485": {
+  "471": {
     "species": "Callune",
     "synonyms": [
       "Calluna vulgaris",
@@ -3865,30 +3758,7 @@
     ],
     "category": "outdoor"
   },
-  "486": {
-    "species": "Sauge Arbustive",
-    "synonyms": [
-      "Salvia microphylla",
-      "Sauge de Graham"
-    ],
-    "category": "outdoor"
-  },
-  "487": {
-    "species": "Caryopteris",
-    "synonyms": [
-      "Barbe bleue",
-      "Spirée bleue"
-    ],
-    "category": "outdoor"
-  },
-  "488": {
-    "species": "Potentille Arbustive",
-    "synonyms": [
-      "Potentilla fruticosa"
-    ],
-    "category": "outdoor"
-  },
-  "489": {
+  "472": {
     "species": "Perovskia",
     "synonyms": [
       "Sauge de Russie",
@@ -3896,28 +3766,7 @@
     ],
     "category": "outdoor"
   },
-  "490": {
-    "species": "Leucothoe",
-    "synonyms": [
-      "Leucothoe fontanesiana"
-    ],
-    "category": "outdoor"
-  },
-  "491": {
-    "species": "Skimmia",
-    "synonyms": [
-      "Skimmia japonica"
-    ],
-    "category": "outdoor"
-  },
-  "492": {
-    "species": "Andromède",
-    "synonyms": [
-      "Pieris japonica"
-    ],
-    "category": "outdoor"
-  },
-  "493": {
+  "473": {
     "species": "Prunellier",
     "synonyms": [
       "Prunus spinosa",
@@ -3925,7 +3774,7 @@
     ],
     "category": "outdoor"
   },
-  "494": {
+  "474": {
     "species": "Aubépine",
     "synonyms": [
       "Crataegus",
@@ -3933,7 +3782,7 @@
     ],
     "category": "outdoor"
   },
-  "495": {
+  "475": {
     "species": "Fusain Panaché",
     "synonyms": [
       "Euonymus fortunei",
@@ -3941,21 +3790,14 @@
     ],
     "category": "outdoor"
   },
-  "496": {
-    "species": "Chèvrefeuille arbustif",
-    "synonyms": [
-      "Lonicera nitida"
-    ],
-    "category": "outdoor"
-  },
-  "497": {
+  "476": {
     "species": "Houx Panaché",
     "synonyms": [
       "Ilex aquifolium 'Argentea'"
     ],
     "category": "outdoor"
   },
-  "498": {
+  "477": {
     "species": "Olivier (En Pot)",
     "synonyms": [
       "Olea europaea",
@@ -3963,7 +3805,7 @@
     ],
     "category": "outdoor"
   },
-  "499": {
+  "478": {
     "species": "Olivier (Pleine terre)",
     "synonyms": [
       "Olea europaea",
@@ -3971,7 +3813,7 @@
     ],
     "category": "outdoor"
   },
-  "500": {
+  "479": {
     "species": "Citronnier (En Pot)",
     "synonyms": [
       "Citrus limon",
@@ -3979,56 +3821,56 @@
     ],
     "category": "outdoor"
   },
-  "501": {
+  "480": {
     "species": "Citronnier (Pleine terre)",
     "synonyms": [
       "Citrus limon"
     ],
     "category": "outdoor"
   },
-  "502": {
+  "481": {
     "species": "Laurier Rose (En Pot)",
     "synonyms": [
       "Nerium oleander"
     ],
     "category": "outdoor"
   },
-  "503": {
+  "482": {
     "species": "Laurier Rose (Pleine terre)",
     "synonyms": [
       "Nerium oleander"
     ],
     "category": "outdoor"
   },
-  "504": {
+  "483": {
     "species": "Érable du Japon (En Pot)",
     "synonyms": [
       "Acer palmatum"
     ],
     "category": "outdoor"
   },
-  "505": {
+  "484": {
     "species": "Érable du Japon (Pleine terre)",
     "synonyms": [
       "Acer palmatum"
     ],
     "category": "outdoor"
   },
-  "506": {
+  "485": {
     "species": "Hortensia (En Pot)",
     "synonyms": [
       "Hydrangea macrophylla"
     ],
     "category": "outdoor"
   },
-  "507": {
+  "486": {
     "species": "Hortensia (Pleine terre)",
     "synonyms": [
       "Hydrangea macrophylla"
     ],
     "category": "outdoor"
   },
-  "508": {
+  "487": {
     "species": "Bambou (En Pot)",
     "synonyms": [
       "Phyllostachys",
@@ -4036,71 +3878,71 @@
     ],
     "category": "outdoor"
   },
-  "509": {
+  "488": {
     "species": "Bambou (Pleine terre)",
     "synonyms": [
       "Phyllostachys"
     ],
     "category": "outdoor"
   },
-  "510": {
+  "489": {
     "species": "Menthe (En Pot)",
     "synonyms": [
       "Mentha",
       "Menthe verte"
     ],
-    "category": "herb"
+    "category": "vegetable"
   },
-  "511": {
+  "490": {
     "species": "Menthe (Pleine terre)",
     "synonyms": [
       "Mentha"
     ],
-    "category": "herb"
+    "category": "vegetable"
   },
-  "512": {
+  "491": {
     "species": "Bougainvillier (En Pot)",
     "synonyms": [
       "Bougainvillea"
     ],
     "category": "outdoor"
   },
-  "513": {
+  "492": {
     "species": "Bougainvillier (Pleine terre)",
     "synonyms": [
       "Bougainvillea"
     ],
     "category": "outdoor"
   },
-  "514": {
+  "493": {
     "species": "Lavande (En Pot)",
     "synonyms": [
       "Lavandula"
     ],
     "category": "outdoor"
   },
-  "515": {
+  "494": {
     "species": "Lavande (Pleine terre)",
     "synonyms": [
       "Lavandula"
     ],
     "category": "outdoor"
   },
-  "516": {
+  "495": {
     "species": "Figuier (En Pot)",
     "synonyms": [
       "Ficus carica"
     ],
     "category": "vegetable"
   },
-  "517": {
+  "496": {
     "species": "Figuier (Pleine terre)",
     "synonyms": [
       "Ficus carica"
     ],
     "category": "vegetable"
   },
-  "518": {
+  "497": {
     "species": "Rosier (Pot)",
     "synonyms": [
       "Rosier patio",
@@ -4108,28 +3950,28 @@
     ],
     "category": "outdoor"
   },
-  "519": {
+  "498": {
     "species": "Rosier (Pleine terre)",
     "synonyms": [
       "Rosier buisson"
     ],
     "category": "outdoor"
   },
-  "520": {
+  "499": {
     "species": "Camélia (En Pot)",
     "synonyms": [
       "Camellia japonica"
     ],
     "category": "outdoor"
   },
-  "521": {
+  "500": {
     "species": "Camélia (Pleine terre)",
     "synonyms": [
       "Camellia japonica"
     ],
     "category": "outdoor"
   },
-  "522": {
+  "501": {
     "species": "Tomate",
     "synonyms": [
       "Solanum lycopersicum",
@@ -4137,7 +3979,7 @@
     ],
     "category": "vegetable"
   },
-  "523": {
+  "502": {
     "species": "Courgette",
     "synonyms": [
       "Cucurbita pepo",
@@ -4145,21 +3987,21 @@
     ],
     "category": "vegetable"
   },
-  "524": {
+  "503": {
     "species": "Concombre",
     "synonyms": [
       "Cucumis sativus"
     ],
     "category": "vegetable"
   },
-  "525": {
+  "504": {
     "species": "Aubergine",
     "synonyms": [
       "Solanum melongena"
     ],
     "category": "vegetable"
   },
-  "526": {
+  "505": {
     "species": "Poivron",
     "synonyms": [
       "Capsicum annuum",
@@ -4167,7 +4009,7 @@
     ],
     "category": "vegetable"
   },
-  "527": {
+  "506": {
     "species": "Haricot Vert",
     "synonyms": [
       "Phaseolus vulgaris",
@@ -4176,7 +4018,7 @@
     ],
     "category": "vegetable"
   },
-  "528": {
+  "507": {
     "species": "Radis",
     "synonyms": [
       "Raphanus sativus",
@@ -4184,14 +4026,14 @@
     ],
     "category": "vegetable"
   },
-  "529": {
+  "508": {
     "species": "Carotte",
     "synonyms": [
       "Daucus carota"
     ],
     "category": "vegetable"
   },
-  "530": {
+  "509": {
     "species": "Laitue",
     "synonyms": [
       "Lactuca sativa",
@@ -4199,7 +4041,7 @@
     ],
     "category": "vegetable"
   },
-  "531": {
+  "510": {
     "species": "Pomme de Terre",
     "synonyms": [
       "Solanum tuberosum",
@@ -4207,7 +4049,7 @@
     ],
     "category": "vegetable"
   },
-  "532": {
+  "511": {
     "species": "Potiron",
     "synonyms": [
       "Citrouille",
@@ -4216,7 +4058,7 @@
     ],
     "category": "vegetable"
   },
-  "533": {
+  "512": {
     "species": "Courge Butternut",
     "synonyms": [
       "Doubeurre",
@@ -4224,21 +4066,21 @@
     ],
     "category": "vegetable"
   },
-  "534": {
+  "513": {
     "species": "Melon",
     "synonyms": [
       "Cucumis melo"
     ],
     "category": "vegetable"
   },
-  "535": {
+  "514": {
     "species": "Poireau",
     "synonyms": [
       "Allium porrum"
     ],
     "category": "vegetable"
   },
-  "536": {
+  "515": {
     "species": "Oignon",
     "synonyms": [
       "Allium cepa",
@@ -4247,7 +4089,7 @@
     ],
     "category": "vegetable"
   },
-  "537": {
+  "516": {
     "species": "Ail",
     "synonyms": [
       "Allium sativum",
@@ -4256,28 +4098,28 @@
     ],
     "category": "vegetable"
   },
-  "538": {
+  "517": {
     "species": "Échalote",
     "synonyms": [
       "Allium ascalonicum"
     ],
     "category": "vegetable"
   },
-  "539": {
+  "518": {
     "species": "Petit Pois",
     "synonyms": [
       "Pisum sativum"
     ],
     "category": "vegetable"
   },
-  "540": {
+  "519": {
     "species": "Épinard",
     "synonyms": [
       "Spinacia oleracea"
     ],
     "category": "vegetable"
   },
-  "541": {
+  "520": {
     "species": "Mâche",
     "synonyms": [
       "Valerianella locusta",
@@ -4285,7 +4127,7 @@
     ],
     "category": "vegetable"
   },
-  "542": {
+  "521": {
     "species": "Blette",
     "synonyms": [
       "Bette",
@@ -4294,7 +4136,7 @@
     ],
     "category": "vegetable"
   },
-  "543": {
+  "522": {
     "species": "Betterave",
     "synonyms": [
       "Beta vulgaris",
@@ -4302,21 +4144,21 @@
     ],
     "category": "vegetable"
   },
-  "544": {
+  "523": {
     "species": "Chou-Fleur",
     "synonyms": [
       "Brassica oleracea botrytis"
     ],
     "category": "vegetable"
   },
-  "545": {
+  "524": {
     "species": "Brocoli",
     "synonyms": [
       "Chou brocoli"
     ],
     "category": "vegetable"
   },
-  "546": {
+  "525": {
     "species": "Chou Cabus",
     "synonyms": [
       "Chou pommé",
@@ -4324,7 +4166,7 @@
     ],
     "category": "vegetable"
   },
-  "547": {
+  "526": {
     "species": "Chou Kale",
     "synonyms": [
       "Chou frisé",
@@ -4332,28 +4174,28 @@
     ],
     "category": "vegetable"
   },
-  "548": {
+  "527": {
     "species": "Chou de Bruxelles",
     "synonyms": [
       "Brassica oleracea gemmifera"
     ],
     "category": "vegetable"
   },
-  "549": {
+  "528": {
     "species": "Navet",
     "synonyms": [
       "Brassica rapa"
     ],
     "category": "vegetable"
   },
-  "550": {
+  "529": {
     "species": "Céleri-Rave",
     "synonyms": [
       "Apium graveolens"
     ],
     "category": "vegetable"
   },
-  "551": {
+  "530": {
     "species": "Fenouil",
     "synonyms": [
       "Foeniculum vulgare",
@@ -4361,7 +4203,7 @@
     ],
     "category": "vegetable"
   },
-  "552": {
+  "531": {
     "species": "Maïs Doux",
     "synonyms": [
       "Zea mays",
@@ -4369,21 +4211,21 @@
     ],
     "category": "vegetable"
   },
-  "553": {
+  "532": {
     "species": "Asperge",
     "synonyms": [
       "Asparagus officinalis"
     ],
     "category": "vegetable"
   },
-  "554": {
+  "533": {
     "species": "Fève",
     "synonyms": [
       "Vicia faba"
     ],
     "category": "vegetable"
   },
-  "555": {
+  "534": {
     "species": "Topinambour",
     "synonyms": [
       "Helianthus tuberosus",
@@ -4391,82 +4233,59 @@
     ],
     "category": "vegetable"
   },
-  "556": {
+  "535": {
     "species": "Panais",
     "synonyms": [
       "Pastinaca sativa"
     ],
     "category": "vegetable"
   },
-  "557": {
+  "536": {
     "species": "Cornichon",
     "synonyms": [
       "Cucumis sativus"
     ],
     "category": "vegetable"
   },
-  "558": {
+  "537": {
     "species": "Oseille",
     "synonyms": [
       "Rumex acetosa"
     ],
     "category": "vegetable"
   },
-  "559": {
-    "species": "Ciboulette",
-    "synonyms": [
-      "Allium schoenoprasum",
-      "Chives"
-    ],
-    "category": "herb"
-  },
-  "560": {
+  "538": {
     "species": "Ciboule",
     "synonyms": [
       "Allium fistulosum",
       "Oignon vert",
       "Cive"
     ],
-    "category": "herb"
+    "category": "vegetable"
   },
-  "561": {
+  "539": {
     "species": "Estragon",
     "synonyms": [
       "Artemisia dracunculus"
     ],
-    "category": "herb"
+    "category": "vegetable"
   },
-  "562": {
-    "species": "Coriandre",
-    "synonyms": [
-      "Coriandrum sativum",
-      "Persil arabe"
-    ],
-    "category": "herb"
-  },
-  "563": {
+  "540": {
     "species": "Aneth",
     "synonyms": [
       "Anethum graveolens",
       "Faux anis"
     ],
-    "category": "herb"
+    "category": "vegetable"
   },
-  "564": {
+  "541": {
     "species": "Cerfeuil",
     "synonyms": [
       "Anthriscus cerefolium"
     ],
-    "category": "herb"
+    "category": "vegetable"
   },
-  "565": {
-    "species": "Sauge Officinale",
-    "synonyms": [
-      "Salvia officinalis"
-    ],
-    "category": "herb"
-  },
-  "566": {
+  "542": {
     "species": "Chicorée Frisée",
     "synonyms": [
       "Cichorium endivia",
@@ -4474,7 +4293,7 @@
     ],
     "category": "vegetable"
   },
-  "567": {
+  "543": {
     "species": "Endive",
     "synonyms": [
       "Chicon",
@@ -4482,14 +4301,14 @@
     ],
     "category": "vegetable"
   },
-  "568": {
+  "544": {
     "species": "Patate Douce",
     "synonyms": [
       "Ipomoea batatas"
     ],
     "category": "vegetable"
   },
-  "569": {
+  "545": {
     "species": "Pâtisson",
     "synonyms": [
       "Artichaut d'Espagne",
@@ -4497,7 +4316,7 @@
     ],
     "category": "vegetable"
   },
-  "570": {
+  "546": {
     "species": "Tétragone",
     "synonyms": [
       "Tetragonia tetragonioides",
@@ -4505,14 +4324,14 @@
     ],
     "category": "vegetable"
   },
-  "571": {
+  "547": {
     "species": "Roquette",
     "synonyms": [
       "Eruca sativa"
     ],
     "category": "vegetable"
   },
-  "572": {
+  "548": {
     "species": "Fraisier des Bois",
     "synonyms": [
       "Fragaria vesca",
@@ -4520,7 +4339,7 @@
     ],
     "category": "vegetable"
   },
-  "573": {
+  "549": {
     "species": "Fraisier (En Pot)",
     "synonyms": [
       "Fragaria",
@@ -4528,7 +4347,7 @@
     ],
     "category": "vegetable"
   },
-  "574": {
+  "550": {
     "species": "Fraisier (Pleine Terre)",
     "synonyms": [
       "Fragaria",
@@ -4536,7 +4355,7 @@
     ],
     "category": "vegetable"
   },
-  "575": {
+  "551": {
     "species": "Tomate Cerise (En Pot)",
     "synonyms": [
       "Solanum lycopersicum",
@@ -4544,7 +4363,7 @@
     ],
     "category": "vegetable"
   },
-  "576": {
+  "552": {
     "species": "Tomate Cerise (Pleine Terre)",
     "synonyms": [
       "Solanum lycopersicum",
@@ -4552,14 +4371,14 @@
     ],
     "category": "vegetable"
   },
-  "577": {
+  "553": {
     "species": "Radis (EnPot)",
     "synonyms": [
       "Radis de balcon"
     ],
     "category": "vegetable"
   },
-  "578": {
+  "554": {
     "species": "Salade (En Pot)",
     "synonyms": [
       "Laitue à couper",
@@ -4567,89 +4386,89 @@
     ],
     "category": "vegetable"
   },
-  "579": {
+  "555": {
     "species": "Verveine Citronnelle",
     "synonyms": [
       "Aloysia citrodora",
       "Verveine odorante"
     ],
-    "category": "herb"
+    "category": "vegetable"
   },
-  "580": {
+  "556": {
     "species": "Citronnelle de Madagascar",
     "synonyms": [
       "Cymbopogon",
       "Lemongrass"
     ],
-    "category": "herb"
+    "category": "vegetable"
   },
-  "581": {
+  "557": {
     "species": "Mélisse",
     "synonyms": [
       "Melissa officinalis",
       "Citronnelle"
     ],
-    "category": "herb"
+    "category": "vegetable"
   },
-  "582": {
+  "558": {
     "species": "Origan",
     "synonyms": [
       "Origanum vulgare",
       "Marjolaine sauvage"
     ],
-    "category": "herb"
+    "category": "vegetable"
   },
-  "583": {
+  "559": {
     "species": "Sarriette Vivace",
     "synonyms": [
       "Satureja montana",
       "Poivre d'âne"
     ],
-    "category": "herb"
+    "category": "vegetable"
   },
-  "584": {
+  "560": {
     "species": "Laurier Sauce (En Pot)",
     "synonyms": [
       "Laurus nobilis"
     ],
-    "category": "herb"
+    "category": "vegetable"
   },
-  "585": {
+  "561": {
     "species": "Rutabaga",
     "synonyms": [
       "Chou-navet"
     ],
     "category": "vegetable"
   },
-  "586": {
+  "562": {
     "species": "Crosne du Japon",
     "synonyms": [
       "Stachys affinis"
     ],
     "category": "vegetable"
   },
-  "587": {
+  "563": {
     "species": "Oca du Pérou",
     "synonyms": [
       "Oxalis tuberosa"
     ],
     "category": "vegetable"
   },
-  "588": {
+  "564": {
     "species": "Salsifis",
     "synonyms": [
       "Tragopogon porrifolius"
     ],
     "category": "vegetable"
   },
-  "589": {
+  "565": {
     "species": "Pourpier Doré",
     "synonyms": [
       "Portulaca oleracea"
     ],
     "category": "vegetable"
   },
-  "590": {
+  "566": {
     "species": "Cresson Alénois",
     "synonyms": [
       "Lepidium sativum",
@@ -4657,7 +4476,7 @@
     ],
     "category": "vegetable"
   },
-  "591": {
+  "567": {
     "species": "Pissenlit",
     "synonyms": [
       "Taraxacum officinale",
@@ -4665,21 +4484,21 @@
     ],
     "category": "vegetable"
   },
-  "592": {
+  "568": {
     "species": "Cardon",
     "synonyms": [
       "Cynara cardunculus"
     ],
     "category": "vegetable"
   },
-  "593": {
+  "569": {
     "species": "Lentille",
     "synonyms": [
       "Lens culinaris"
     ],
     "category": "vegetable"
   },
-  "594": {
+  "570": {
     "species": "Coqueret du Pérou",
     "synonyms": [
       "Physalis peruviana",
@@ -4687,7 +4506,7 @@
     ],
     "category": "vegetable"
   },
-  "595": {
+  "571": {
     "species": "Framboisier (Pot / Nain)",
     "synonyms": [
       "Rubus idaeus",
@@ -4695,7 +4514,7 @@
     ],
     "category": "vegetable"
   },
-  "596": {
+  "572": {
     "species": "Canneberge",
     "synonyms": [
       "Vaccinium macrocarpon",
@@ -4703,28 +4522,28 @@
     ],
     "category": "vegetable"
   },
-  "597": {
+  "573": {
     "species": "Baie de Goji",
     "synonyms": [
       "Lycium barbarum"
     ],
     "category": "vegetable"
   },
-  "598": {
+  "574": {
     "species": "Consoude",
     "synonyms": [
       "Symphytum officinale"
     ],
     "category": "outdoor"
   },
-  "599": {
+  "575": {
     "species": "Tanaisie",
     "synonyms": [
       "Tanacetum vulgare"
     ],
     "category": "outdoor"
   },
-  "600": {
+  "576": {
     "species": "Lin Bleu",
     "synonyms": [
       "Linum perenne",
@@ -4732,7 +4551,7 @@
     ],
     "category": "outdoor"
   },
-  "601": {
+  "577": {
     "species": "Oignon Rocambole",
     "synonyms": [
       "Allium cepa proliferum",
@@ -4740,35 +4559,35 @@
     ],
     "category": "vegetable"
   },
-  "602": {
+  "578": {
     "species": "Poireau Perpétuel",
     "synonyms": [
       "Allium ampeloprasum"
     ],
     "category": "vegetable"
   },
-  "603": {
+  "579": {
     "species": "Chou Daubenton",
     "synonyms": [
       "Chou perpétuel"
     ],
     "category": "vegetable"
   },
-  "604": {
+  "580": {
     "species": "Raifort",
     "synonyms": [
       "Armoracia rusticana"
     ],
     "category": "vegetable"
   },
-  "605": {
+  "581": {
     "species": "Capucine Tubéreuse",
     "synonyms": [
       "Tropaeolum tuberosum"
     ],
     "category": "vegetable"
   },
-  "606": {
+  "582": {
     "species": "Poire de Terre",
     "synonyms": [
       "Yacon",
@@ -4776,65 +4595,58 @@
     ],
     "category": "vegetable"
   },
-  "607": {
+  "583": {
     "species": "Claytone de Cuba",
     "synonyms": [
       "Pourpier d'hiver"
     ],
     "category": "vegetable"
   },
-  "608": {
+  "584": {
     "species": "Moutarde de Chine",
     "synonyms": [
       "Feuilles de moutarde"
     ],
     "category": "vegetable"
   },
-  "609": {
+  "585": {
     "species": "Mizuna",
     "synonyms": [
       "Moutarde japonaise"
     ],
     "category": "vegetable"
   },
-  "610": {
+  "586": {
     "species": "Tatsoi",
     "synonyms": [
       "Chou rosette"
     ],
     "category": "vegetable"
   },
-  "611": {
+  "587": {
     "species": "Angélique",
     "synonyms": [
       "Angelica archangelica",
       "Herbe des anges"
     ],
-    "category": "herb"
+    "category": "vegetable"
   },
-  "612": {
+  "588": {
     "species": "Camomille Romaine",
     "synonyms": [
       "Chamaemelum nobile",
       "Camomille noble"
     ],
-    "category": "herb"
+    "category": "vegetable"
   },
-  "613": {
-    "species": "Bourrache",
-    "synonyms": [
-      "Borago officinalis"
-    ],
-    "category": "herb"
-  },
-  "614": {
+  "589": {
     "species": "Hysope",
     "synonyms": [
       "Hyssopus officinalis"
     ],
-    "category": "herb"
+    "category": "vegetable"
   },
-  "615": {
+  "590": {
     "species": "Kiwaï",
     "synonyms": [
       "Actinidia arguta",
@@ -4842,15 +4654,7 @@
     ],
     "category": "vegetable"
   },
-  "616": {
-    "species": "Mâche",
-    "synonyms": [
-      "Valerianella locusta",
-      "Doucette"
-    ],
-    "category": "vegetable"
-  },
-  "617": {
+  "591": {
     "species": "Arroche",
     "synonyms": [
       "Atriplex hortensis",
@@ -4858,7 +4662,7 @@
     ],
     "category": "vegetable"
   },
-  "618": {
+  "592": {
     "species": "Scorsonère",
     "synonyms": [
       "Scorzonera hispanica",
@@ -4866,158 +4670,151 @@
     ],
     "category": "vegetable"
   },
-  "619": {
+  "593": {
     "species": "Pois Chiche",
     "synonyms": [
       "Cicer arietinum"
     ],
     "category": "vegetable"
   },
-  "620": {
+  "594": {
     "species": "Marjolaine",
     "synonyms": [
       "Origanum majorana",
       "Marjolaine à coquilles",
       "Grand origan"
     ],
-    "category": "herb"
+    "category": "vegetable"
   },
-  "621": {
+  "595": {
     "species": "Basilic Thaï",
     "synonyms": [
       "Ocimum basilicum var. thyrsiflora"
     ],
-    "category": "herb"
+    "category": "vegetable"
   },
-  "622": {
+  "596": {
     "species": "Ciboulette de Chine",
     "synonyms": [
       "Allium tuberosum",
       "Ail à couper"
     ],
-    "category": "herb"
+    "category": "vegetable"
   },
-  "623": {
+  "597": {
     "species": "Sauge Ananas",
     "synonyms": [
       "Salvia elegans"
     ],
-    "category": "herb"
+    "category": "vegetable"
   },
-  "624": {
+  "598": {
     "species": "Menthe Chocolat",
     "synonyms": [
       "Mentha x piperita f. citrata 'Chocolate'"
     ],
-    "category": "herb"
+    "category": "vegetable"
   },
-  "625": {
+  "599": {
     "species": "Oseille Sanguine",
     "synonyms": [
       "Rumex sanguineus",
       "Oseille rouge"
     ],
-    "category": "herb"
+    "category": "vegetable"
   },
-  "626": {
+  "600": {
     "species": "Agastache",
     "synonyms": [
       "Agastache foeniculum",
       "Hysope anisée"
     ],
-    "category": "herb"
+    "category": "vegetable"
   },
-  "627": {
+  "601": {
     "species": "Shiso",
     "synonyms": [
       "Perilla frutescens",
       "Basilic japonais"
     ],
-    "category": "herb"
+    "category": "vegetable"
   },
-  "628": {
+  "602": {
     "species": "Céleri à couper",
     "synonyms": [
       "Apium graveolens secalinum",
       "Céleri chinois"
     ],
-    "category": "herb"
+    "category": "vegetable"
   },
-  "629": {
+  "603": {
     "species": "Pimprenelle",
     "synonyms": [
       "Sanguisorba minor",
       "Petite pimprenelle"
     ],
-    "category": "herb"
+    "category": "vegetable"
   },
-  "630": {
+  "604": {
     "species": "Basilic (Grand Vert)",
     "synonyms": [
       "Ocimum basilicum",
       "Pistou",
       "Basilic Genovese"
     ],
-    "category": "herb"
+    "category": "vegetable"
   },
-  "631": {
+  "605": {
     "species": "Persil (En Pot)",
     "synonyms": [
       "Petroselinum crispum",
       "Persil plat",
       "Persil frisé"
     ],
-    "category": "herb"
+    "category": "vegetable"
   },
-  "632": {
+  "606": {
     "species": "Thym (En Pot)",
     "synonyms": [
       "Thymus vulgaris",
       "Farigoule"
     ],
-    "category": "herb"
+    "category": "vegetable"
   },
-  "633": {
+  "607": {
     "species": "Romarin (En Pot)",
     "synonyms": [
       "Rosmarinus officinalis"
     ],
-    "category": "herb"
+    "category": "vegetable"
   },
-  "634": {
+  "608": {
     "species": "Ciboulette (En Pot)",
     "synonyms": [
       "Allium schoenoprasum"
     ],
-    "category": "herb"
+    "category": "vegetable"
   },
-  "635": {
+  "609": {
     "species": "Sauge Officinale (En Pot)",
     "synonyms": [
       "Salvia officinalis"
     ],
-    "category": "herb"
+    "category": "vegetable"
   },
-  "636": {
-    "species": "Laurier Sauce (En Pot)",
-    "synonyms": [
-      "Laurus nobilis"
-    ],
-    "category": "herb"
-  },
-  "637": {
+  "610": {
     "species": "Estragon (En Pot)",
     "synonyms": [
       "Artemisia dracunculus"
     ],
-    "category": "herb"
+    "category": "vegetable"
   },
-  "638": {
+  "611": {
     "species": "Origan (En Pot)",
     "synonyms": [
       "Origanum vulgare",
       "Marjolaine vivace"
     ],
-    "category": "herb"
+    "category": "vegetable"
   }
 }
