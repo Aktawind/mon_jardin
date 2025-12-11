@@ -17,7 +17,7 @@ class PlantMatchCriteria {
   TemperatureTolerance? minTemp; // Pour l'extérieur (Rusticité)
   FoliageType? aesthetic;   // Fleur ou Vert
   PlantHeight? shape;       // Suspendu ou Sol
-  LeafPersistence? leafPersistence; // Type de feuillage
+  LeafPersistence? persistence; // Type de feuillage
   VegetableType? vegType;   // Type potager
   
   // Constructeur vide par défaut
@@ -71,16 +71,16 @@ class PlantMatchMaker {
     }
 
     // 6. Esthétique (FoliageType)
-    if (c.aesthetic != null && p.foliageType != c.aesthetic) return false;
+    if (c.aesthetic != null && p.foliage != c.aesthetic) return false;
 
     // 7. Forme (PlantHeight)
     if (c.shape != null && p.height != c.shape) return false;
 
     // 8. Feuillage (LeafPersistence)
-    if (c.leafPersistence != null && p.leafPersistence != c.leafPersistence) return false;
+    if (c.persistence != null && p.persistence != c.persistence) return false;
 
     // 9. Type potager (VegetableType)
-    if (c.vegType != null && p.vegetableType != c.vegType) return false;
+    if (c.vegType != null && p.vegType != c.vegType) return false;
 
     return true;
   }

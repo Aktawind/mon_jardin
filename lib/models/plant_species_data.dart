@@ -6,6 +6,7 @@
 
 import 'enums.dart';
 
+
 class PlantSpeciesData {
   final String species;
   final List<String> synonyms;
@@ -16,10 +17,10 @@ class PlantSpeciesData {
   final HumidityNeed humidity;
   final TemperatureTolerance temperature;
   final Toxicity toxicity;
-  final LeafPersistence leafPersistence;
-  final PlantHeight height;
-  final VegetableType vegetableType;
-  final FoliageType foliageType;
+  final VegetableType? vegType;
+  final LeafPersistence? persistence;
+  final FoliageType? foliage;
+  final PlantHeight? height;
   
   final int waterSummer;
   final int waterWinter;
@@ -46,10 +47,10 @@ class PlantSpeciesData {
     required this.humidity,
     required this.temperature,
     required this.toxicity,
-    required this.leafPersistence,
-    required this.height,
-    required this.vegetableType,
-    required this.foliageType,
+    this.persistence,
+    this.height,
+    this.vegType,
+    this.foliage,
     required this.waterSummer,
     required this.waterWinter,
     required this.fertilizeFreq,
@@ -69,7 +70,7 @@ class PlantSpeciesData {
     required String id,
     required Map<String, dynamic> core,
     required Map<String, dynamic> care,
-    required List<String> tags,
+    required Map<String, dynamic> tags,
   }) {
     // Note : On n'a plus besoin de parser 'info' ou 'calendar' séparément
     // car tu as tout mis à plat dans 'care' (ce qui est très bien).
@@ -79,7 +80,7 @@ class PlantSpeciesData {
       // Gestion des synonymes (Liste de String)
       synonyms: (core['synonyms'] as List?)?.map((e) => e.toString()).toList() ?? [],
       
-      // Enums (Core)
+      // Enums (Core)     
       category: _parseEnum(PlantCategory.values, core['category']),
       
       // Enums (Care)
@@ -90,10 +91,10 @@ class PlantSpeciesData {
       // Attention à la casse ici (snake_case vs camelCase)
       temperature: _parseEnum(TemperatureTolerance.values, care['temperature']),
       toxicity: _parseEnum(Toxicity.values, care['toxicity']),
-      leafPersistence: _parseEnum(LeafPersistence.values, care['leaf_persistence']),
-      height: _parseEnum(PlantHeight.values, care['height']),
-      vegetableType: _parseEnum(VegetableType.values, care['vegetable_type']),
-      foliageType: _parseEnum(FoliageType.values, care['foliage_type']),
+      vegType: _parseEnumNullable(VegetableType.values, tags['type']),
+      persistence: _parseEnumNullable(LeafPersistence.values, tags['foliage']),
+      foliage: _parseEnumNullable(FoliageType.values, tags['esthetic']),
+      height: _parseEnumNullable(PlantHeight.values, tags['height']),
       
       // Valeurs numériques
       waterSummer: care['water_summer'] ?? 7,
@@ -124,5 +125,18 @@ class PlantSpeciesData {
       (e) => e.toString().split('.').last == str,
       orElse: () => values.first, // Fallback si erreur
     );
+  }
+
+  static T? _parseEnumNullable<T>(List<T> values, String? str) {
+    if (str == null || str.isEmpty) return null; // Si vide, on renvoie null proprement
+    
+    final cleanStr = str.trim().toLowerCase();
+    try {
+      return values.firstWhere(
+        (e) => e.toString().split('.').last.toLowerCase() == cleanStr,
+      );
+    } catch (e) {
+      return null; // Si pas trouvé, on renvoie null au lieu de planter
+    }
   }
 }

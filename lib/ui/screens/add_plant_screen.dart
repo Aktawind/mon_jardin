@@ -13,11 +13,14 @@ class AddPlantScreen extends StatefulWidget {
   // Si cette variable est remplie, on est en mode "Édition", sinon "Création"
   final Plant? plantToEdit;
   final String? initialLocation;
+  final String? preSelectedSpecies;
 
   const AddPlantScreen({
     super.key, 
     this.plantToEdit, 
-    this.initialLocation // <--- AJOUT
+    this.initialLocation, 
+    this.preSelectedSpecies,
+    
   });
 
   @override
@@ -85,6 +88,12 @@ class _AddPlantScreenState extends State<AddPlantScreen> {
           _trackFertilizer = true;
           _trackRepotting = true;
       }
+    }
+    if (widget.preSelectedSpecies != null) {
+      _selectedSpecies = widget.preSelectedSpecies!;
+      // On charge les infos tout de suite
+      final data = EncyclopediaService().getData(_selectedSpecies);
+      if (data != null) _foundSpeciesData = data;
     }
   }
 

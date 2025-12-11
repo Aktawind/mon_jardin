@@ -34,14 +34,14 @@ class EncyclopediaService {
       // 2. Fusion
       coreMap.forEach((id, coreData) {
         final careData = careMap[id] ?? {};
-        final tagsList = (tagsMap[id] as List?)?.map((e) => e.toString()).toList() ?? [];
+        final tagsData = tagsMap[id] ?? {};
 
         try {
           tempList.add(PlantSpeciesData.fromMergedJson(
             id: id, // On passe l'ID si on veut le stocker, sinon utile pour debug
             core: coreData,
             care: careData,
-            tags: tagsList,
+            tags: tagsData,
           ));
         } catch (e) {
           debugPrint("Erreur parsing plante $id (${coreData['species']}) : $e");

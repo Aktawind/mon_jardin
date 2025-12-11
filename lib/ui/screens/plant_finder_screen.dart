@@ -8,6 +8,7 @@ import '../../models/enums.dart';
 import '../../services/plant_match_maker.dart';
 import '../../models/plant_species_data.dart';
 import '../common/main_drawer.dart';
+import 'add_plant_screen.dart';
 
 class PlantFinderScreen extends StatefulWidget {
   const PlantFinderScreen({super.key});
@@ -27,6 +28,7 @@ class _PlantFinderScreenState extends State<PlantFinderScreen> {
   void _search() {
     setState(() {
       _results = PlantMatchMaker().findMatches(_criteria);
+      _results!.sort((a, b) => a.species.compareTo(b.species));
       _hasSearched = true;
     });
   }
@@ -136,8 +138,8 @@ class _PlantFinderScreenState extends State<PlantFinderScreen> {
           icon: Icons.palette,
           child: Column(
             children: [
-              _buildRadioTileGeneric("Plante Verte (Feuillage)", FoliageType.foliage, (v) => _criteria.aesthetic = v),
-              _buildRadioTileGeneric("Plante Fleurie", FoliageType.flowering, (v) => _criteria.aesthetic = v),
+              _buildRadioTileGeneric("Plante Verte (Feuillage)", FoliageType.foliage, _criteria.aesthetic, (v) => _criteria.aesthetic = v),
+              _buildRadioTileGeneric("Plante Fleurie", FoliageType.flowering, _criteria.aesthetic, (v) => _criteria.aesthetic = v),
             ],
           ),
         ),
@@ -146,8 +148,8 @@ class _PlantFinderScreenState extends State<PlantFinderScreen> {
           icon: Icons.format_shapes,
           child: Column(
             children: [
-              _buildRadioTileGeneric("Suspendue / Etagère haute", PlantHeight.hanging, (v) => _criteria.shape = v),
-              _buildRadioTileGeneric("Au sol / Sur table", PlantHeight.shrub, (v) => _criteria.shape = v),
+              _buildRadioTileGeneric("Suspendue / Etagère haute", PlantHeight.hanging, _criteria.shape, (v) => _criteria.shape = v),
+              _buildRadioTileGeneric("Au sol / Sur table", PlantHeight.shrub, _criteria.shape, (v) => _criteria.shape = v),
             ],
           ),
         ),
@@ -222,8 +224,8 @@ class _PlantFinderScreenState extends State<PlantFinderScreen> {
           icon: Icons.palette,
           child: Column(
             children: [
-              _buildRadioTileGeneric("Plante Verte (Feuillage)", FoliageType.foliage, (v) => _criteria.aesthetic = v),
-              _buildRadioTileGeneric("Plante Fleurie", FoliageType.flowering, (v) => _criteria.aesthetic = v),
+              _buildRadioTileGeneric("Plante Verte (Feuillage)", FoliageType.foliage, _criteria.aesthetic, (v) => _criteria.aesthetic = v),
+              _buildRadioTileGeneric("Plante Fleurie", FoliageType.flowering, _criteria.aesthetic, (v) => _criteria.aesthetic = v),
             ],
           ),
         ),
@@ -233,8 +235,8 @@ class _PlantFinderScreenState extends State<PlantFinderScreen> {
           icon: Icons.filter_vintage,
           child: Column(
             children: [
-              _buildRadioTileGeneric("Feuillage persistant", LeafPersistence.evergreen, (v) => _criteria.leafPersistence = v),
-              _buildRadioTileGeneric("Feuillage caduc", LeafPersistence.deciduous, (v) => _criteria.leafPersistence = v),
+              _buildRadioTileGeneric("Feuillage persistant", LeafPersistence.evergreen, _criteria.persistence, (v) => _criteria.persistence = v),
+              _buildRadioTileGeneric("Feuillage caduc", LeafPersistence.deciduous, _criteria.persistence, (v) => _criteria.persistence = v),
             ],
           ),
         ),
@@ -244,10 +246,10 @@ class _PlantFinderScreenState extends State<PlantFinderScreen> {
           icon: Icons.account_tree,
           child: Column(
             children: [
-              _buildRadioTileGeneric("Plante basse / Couvre-sol", PlantHeight.ground, (v) => _criteria.shape = v),
-              _buildRadioTileGeneric("Plante moyenne / Arbuste", PlantHeight.shrub, (v) => _criteria.shape = v),
-              _buildRadioTileGeneric("Arbre / Grand format", PlantHeight.tree, (v) => _criteria.shape = v),
-              _buildRadioTileGeneric("Plante grimpante", PlantHeight.climber, (v) => _criteria.shape = v),
+              _buildRadioTileGeneric("Plante basse / Couvre-sol", PlantHeight.ground, _criteria.shape, (v) => _criteria.shape = v),
+              _buildRadioTileGeneric("Plante moyenne / Arbuste", PlantHeight.shrub, _criteria.shape, (v) => _criteria.shape = v),
+              _buildRadioTileGeneric("Arbre / Grand format", PlantHeight.tree, _criteria.shape, (v) => _criteria.shape = v),
+              _buildRadioTileGeneric("Plante grimpante", PlantHeight.climber, _criteria.shape, (v) => _criteria.shape = v),
             ],
           ),
         ),
@@ -315,11 +317,11 @@ class _PlantFinderScreenState extends State<PlantFinderScreen> {
           icon: Icons.restaurant,
           child: Column(
             children: [
-              _buildRadioTileGeneric("Légume feuille", VegetableType.leaf, (v) => _criteria.vegType = v),
-              _buildRadioTileGeneric("Légume racine", VegetableType.root, (v) => _criteria.vegType = v),
-              _buildRadioTileGeneric("Fruits comestibles", VegetableType.fruit, (v) => _criteria.vegType = v),
-              _buildRadioTileGeneric("Herbes aromatiques", VegetableType.herb, (v) => _criteria.vegType = v),
-              _buildRadioTileGeneric("Petit fruitier", VegetableType.fruitTree, (v) => _criteria.vegType = v),
+              _buildRadioTileGeneric("Légume feuille", VegetableType.leaf, _criteria.vegType, (v) => _criteria.vegType = v),
+              _buildRadioTileGeneric("Légume racine", VegetableType.root, _criteria.vegType, (v) => _criteria.vegType = v),
+              _buildRadioTileGeneric("Fruits comestibles", VegetableType.fruit, _criteria.vegType, (v) => _criteria.vegType = v),
+              _buildRadioTileGeneric("Herbes aromatiques", VegetableType.herb, _criteria.vegType, (v) => _criteria.vegType = v),
+              _buildRadioTileGeneric("Petit fruitier", VegetableType.fruitTree, _criteria.vegType, (v) => _criteria.vegType = v),
             ],
           ),
         ),
@@ -364,19 +366,20 @@ class _PlantFinderScreenState extends State<PlantFinderScreen> {
                   ),
                   title: Text(plantData.species, style: const TextStyle(fontWeight: FontWeight.bold)),
                   subtitle: Text(plantData.difficulty.label), // Utilise ton extension .label
-                  trailing: const Icon(Icons.add_circle_outline, color: Colors.green),
-                  onTap: () {
-                    // Magie : On va vers l'ajout avec la plante pré-sélectionnée !
-                    // Il faudra modifier AddPlantScreen pour accepter une 'preSelectedSpecies'
-                    // Pour l'instant, on peut juste copier le nom dans le presse-papier ou afficher un détail
-                    
-                    // Idéalement :
-                    /*
-                    Navigator.push(context, MaterialPageRoute(builder: (_) => 
-                      AddPlantScreen(initialLocation: _catToString(_criteria.category!), preSelectedSpecies: plantData.species)
-                    ));
-                    */
-                  },
+                  trailing: IconButton(
+                    icon: const Icon(Icons.add_circle_outline, color: Colors.green),
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (_) => AddPlantScreen(
+                            initialLocation: _catToString(plantData.category), // Helper à créer
+                            preSelectedSpecies: plantData.species,
+                          ),
+                        ),
+                      );
+                    },
+                  ),
                 ),
               );
             },
@@ -439,21 +442,21 @@ class _PlantFinderScreenState extends State<PlantFinderScreen> {
     );
   }
 
-  Widget _buildRadioTileGeneric<T>(String title, T val, Function(T) onChanged) {
-    T? groupValue;
-    if (T == FoliageType) {
-      groupValue = _criteria.aesthetic as T?;
-    } else if (T == VegetableType) {
-      groupValue = _criteria.vegType as T?;
+  Widget _buildRadioTileGeneric<T>(String title, T val, T? currentValue, Function(T) onChanged) {
+      return RadioListTile<T>(
+        title: Text(title),
+        value: val,
+        groupValue: currentValue, // On utilise la valeur passée
+        onChanged: (v) => setState(() {
+          onChanged(v!);
+        }),
+        contentPadding: EdgeInsets.zero,
+      );
     }
-    return RadioListTile<T>(
-      title: Text(title),
-      value: val,
-      groupValue: groupValue,
-      onChanged: (v) => setState(() {
-        onChanged(v!);
-      }),
-      contentPadding: EdgeInsets.zero,
-    );
+
+  String _catToString(PlantCategory cat) {
+    if (cat == PlantCategory.indoor) return 'Intérieur';
+    if (cat == PlantCategory.vegetable) return 'Potager';
+    return 'Extérieur';
   }
 }
