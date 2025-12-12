@@ -4,6 +4,7 @@ import '../../models/plant_species_data.dart';
 import '../../models/enums.dart';
 import '../common/main_drawer.dart'; // Pour le menu
 import 'encyclopedia_detail_screen.dart';
+import '../common/ui_helpers.dart';
 
 class EncyclopediaListScreen extends StatefulWidget {
   const EncyclopediaListScreen({super.key});
@@ -122,8 +123,8 @@ class _EncyclopediaListScreenState extends State<EncyclopediaListScreen> {
                 final plant = _filteredPlants[index];
                 return ListTile(
                   leading: CircleAvatar(
-                    backgroundColor: Colors.green[100],
-                    child: Text(plant.species[0], style: TextStyle(color: Colors.green[800])),
+                    backgroundColor: Theme.of(context).colorScheme.secondary.withValues(alpha: 0.2),
+                    child: Icon(getPlantIcon(plant), color:Theme.of(context).colorScheme.primary.withValues(alpha: 0.7)),
                   ),
                   title: Text(plant.species, style: const TextStyle(fontWeight: FontWeight.bold)),
                   subtitle: Text(plant.difficulty.label),

@@ -9,6 +9,7 @@ import '../../services/plant_match_maker.dart';
 import '../../models/plant_species_data.dart';
 import '../common/main_drawer.dart';
 import 'encyclopedia_detail_screen.dart';
+import '../common/ui_helpers.dart';
 
 class PlantFinderScreen extends StatefulWidget {
   const PlantFinderScreen({super.key});
@@ -385,8 +386,8 @@ class _PlantFinderScreenState extends State<PlantFinderScreen> {
                 margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                 child: ListTile(
                   leading: CircleAvatar(
-                    child: Text(plantData.species[0]),
-                    backgroundColor: _stringToColor(plantData.species),
+                    backgroundColor: Theme.of(context).colorScheme.secondary.withValues(alpha: 0.2),
+                    child: Icon(getPlantIcon(plantData), color:Theme.of(context).colorScheme.primary.withValues(alpha: 0.7)),
                   ),
                   title: Text(plantData.species, style: const TextStyle(fontWeight: FontWeight.bold)),
                   subtitle: Text(plantData.difficulty.label), // Utilise ton extension .label
@@ -471,14 +472,4 @@ class _PlantFinderScreenState extends State<PlantFinderScreen> {
         contentPadding: EdgeInsets.zero,
       );
     }
-
-  Color _stringToColor(String str) {
-    int hash = 0;
-    for (int i = 0; i < str.length; i++) {
-      hash = str.codeUnitAt(i) + ((hash << 5) - hash);
-    }
-    // On force des couleurs claires/pastel (Hue aléatoire, Saturation moyenne, Lightness haute)
-    final double hue = (hash % 360).toDouble();
-    return HSLColor.fromAHSL(1.0, hue, 0.6, 0.85).toColor(); 
-  }
 }

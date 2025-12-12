@@ -9,6 +9,7 @@ import 'package:flutter/material.dart';
 import '../../models/plant_species_data.dart';
 import '../../models/enums.dart'; // Pour les labels
 import 'add_plant_screen.dart'; // Pour le bouton ajouter
+import '../common/ui_helpers.dart';
 
 class EncyclopediaDetailScreen extends StatelessWidget {
   final PlantSpeciesData data;
@@ -33,11 +34,8 @@ class EncyclopediaDetailScreen extends StatelessWidget {
             Center(
               child: CircleAvatar(
                 radius: 40,
-                backgroundColor: Theme.of(context).colorScheme.primary.withOpacity(0.2),
-                child: Text(
-                  data.species[0],
-                  style: TextStyle(fontSize: 40, color: Theme.of(context).colorScheme.primary),
-                ),
+                backgroundColor: Theme.of(context).colorScheme.secondary.withValues(alpha: 0.2),
+                child: Icon(getPlantIcon(data), size: 40, color:Theme.of(context).colorScheme.primary.withValues(alpha: 0.7)),
               ),
             ),
             const SizedBox(height: 16),
