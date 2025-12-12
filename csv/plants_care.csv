@@ -106,11 +106,11 @@
 105;Hibiscus;indoor;direct;medium;high;frostTender;none;perennial;3;10;15;12;;;;3,4;;11,12,1,2;Terreau riche.;Fleurs éphémères (24h) mais se renouvellent tout l'été.
 106;Jasmin;indoor;brightInd;medium;medium;semiHardy;none;perennial;3;7;30;24;;;;4,5;;11,12,1,2;Terreau ordinaire.;Plante grimpante au parfum entêtant.
 107;Azalée;indoor;partial;hard;high;semiHardy;high;perennial;3;5;30;24;;;;4,5;;11,12,1,2;Terre de bruyère pure.;Ne supporte pas le calcaire ni la chaleur (>20°C).
-108;Ciboulette;vegetable;brightInd;easy;medium;hardy;low;perennial;3;7;30;12;;;;3,4;;11,12,1,2;Terreau riche.;Couper régulièrement pour stimuler la repousse.
+108;Ciboulette;vegetable;brightInd;easy;medium;hardy;low;perennial;3;7;30;12;;;;3,4;5, 8;11,12,1,2;Terreau riche.;Couper régulièrement pour stimuler la repousse.
 109;Persil;vegetable;partial;medium;medium;hardy;low;biennial;3;7;30;0;;;;;;;Terreau riche.;Difficile à garder en pot du commerce, mieux vaut semer.
-110;Romarin;vegetable;direct;medium;low;hardy;none;perennial;7;15;60;24;;;;3,4;;11,12,1,2;Drainant et calcaire.;Déteste l'humidité stagnante, meurt vite en intérieur sombre.
-111;Thym;vegetable;direct;easy;low;hardy;none;perennial;7;20;90;24;;;;3,4;;11,12,1,2;Sec et pauvre.;Parfait pour un balcon plein sud.
-112;Piment;vegetable;direct;medium;medium;frostTender;low;annual;2;7;15;0;;;;;;;Terreau potager.;Besoin de beaucoup de lumière pour faire des fruits.
+110;Romarin;vegetable;direct;medium;low;hardy;none;perennial;7;15;60;24;;;;3,4;4, 9;11,12,1,2;Drainant et calcaire.;Déteste l'humidité stagnante, meurt vite en intérieur sombre.
+111;Thym;vegetable;direct;easy;low;hardy;none;perennial;7;20;90;24;;;;3,4;4, 9;11,12,1,2;Sec et pauvre.;Parfait pour un balcon plein sud.
+112;Piment;vegetable;direct;medium;medium;frostTender;low;annual;2;7;15;0;;;;;3, 7;;Terreau potager.;Besoin de beaucoup de lumière pour faire des fruits.
 113;Sedum Morganianum;indoor;direct;medium;low;semiHardy;none;perennial;10;30;60;24;;;;3,4;;11,12,1,2;Terreau pour cactus.;Les feuilles tombent au moindre choc, manipuler avec précaution.
 114;Senecio Peregrinus;indoor;brightInd;medium;low;frostTender;low;perennial;10;30;60;24;;;;3,4;;11,12,1,2;Drainant.;Feuilles étonnantes en forme de dauphin sautant.
 115;Echinocactus;indoor;direct;easy;low;semiHardy;none;perennial;20;0;60;48;;;;4,5;;11,12,1,2;Minéral.;Grosse boule épineuse, croissance très lente.
@@ -139,7 +139,7 @@
 138;Gingembre;indoor;partial;medium;high;frostTender;none;perennial;3;10;30;12;;;;2,3;;12,1;Riche.;Facile à faire pousser à partir d'une racine du commerce.
 139;Passiflore;indoor;direct;medium;medium;semiHardy;low;perennial;3;10;15;24;;;;3,4;;11,12,1,2;Drainant.;Grimpe très vite, fleurs très complexes.
 140;Dipladenia;outdoor;direct;easy;medium;frostTender;low;perennial;3;10;15;12;;;;3,4;3;11,12,1,2;Terreau géranium.;Très florifère tout l'été, stocke l'eau dans ses racines tubéreuses.
-141;Laurier Sauce;vegetable;direct;easy;medium;hardy;none;perennial;7;15;60;24;;;;3,4;;11,12,1,2;Ordinaire.;Arbuste condimentaire, supporte très bien la taille.
+141;Laurier Sauce;vegetable;direct;easy;medium;hardy;none;perennial;7;15;60;24;;;;3,4;3, 9;11,12,1,2;Ordinaire.;Arbuste condimentaire, supporte très bien la taille.
 142;Aralia Fabian;indoor;brightInd;medium;high;frostTender;low;perennial;5;10;30;24;;;;3,4;;11,12,1,2;Drainant.;Tronc épais et feuilles rondes pourpres/vertes.
 143;Clématite;outdoor;partial;medium;medium;hardy;low;perennial;3;10;30;24;;;;3,4,10;2,3,6,9;11,12,1,2;Frais et riche.;La tête au soleil, le pied à l'ombre (protéger le pot).
 144;Asplenium Parvati;indoor;partial;medium;high;frostTender;none;perennial;4;7;30;24;;;;3,4;;11,12,1,2;Terreau léger.;Feuillage finement découpé, plus coriace que les autres fougères.
@@ -175,7 +175,7 @@
 174;Cyrtomium;indoor;low;easy;medium;hardy;none;perennial;5;10;30;24;;;;3,4;;11,12,1,2;Terreau ordinaire.;Fougère aux feuilles coriaces et brillantes, très robuste.
 175;Pellaea;indoor;partial;medium;medium;semiHardy;none;perennial;5;10;30;24;;;;3,4;;11,12,1,2;Drainant.;Feuilles rondes vert sombre, supporte un peu de sécheresse.
 176;Tolmiea;indoor;partial;easy;medium;hardy;none;perennial;4;8;30;24;;;;3,4;;11,12,1,2;Frais.;De nouvelles plantes poussent directement sur les feuilles des anciennes.
-177;Sempervivum;outdoor;direct;easy;low;veryHardy;none;perennial;10;0;90;36;;;;3,4;5,6,2009;11,12,1,2;Rocailleux.;Plante d'extérieur increvable, meurt en intérieur (manque de froid/lumière).
+177;Sempervivum;outdoor;direct;easy;low;veryHardy;none;perennial;10;0;90;36;;;;3,4;5,6,9;11,12,1,2;Rocailleux.;Plante d'extérieur increvable, meurt en intérieur (manque de froid/lumière).
 178;Portulacaria Afra;indoor;direct;easy;low;frostTender;none;perennial;10;25;60;24;;;;3,4;;11,12,1,2;Drainant.;Souvent confondue avec l'Arbre de Jade, mais tiges rouges et feuilles plus petites.
 179;Senecio Cephalophorus;indoor;direct;easy;low;frostTender;low;perennial;15;40;60;24;;;;3,4;;11,12,1,2;Terreau pour cactus.;Feuillage gris-bleu très intense.
 180;Plumeria;indoor;direct;hard;medium;frostTender;low;perennial;5;30;15;24;;;;3,4;;11,12,1,2;Drainant.;Perd ses feuilles en hiver. Très sensible aux acariens.
@@ -186,7 +186,7 @@
 185;Epipremnum Neon;indoor;brightInd;easy;medium;frostTender;low;perennial;7;14;30;24;;;;3,4;;11,12,1,2;Universel.;Feuillage vert fluo éclatant, demande plus de lumière que le pothos classique.
 186;Tephrocactus;indoor;direct;medium;low;semiHardy;none;perennial;15;45;60;36;;;;3,4;;11,12,1,2;Minéral.;Curieux cactus aux épines plates et flexibles comme du papier.
 187;Ctenanthe;indoor;partial;medium;high;frostTender;none;perennial;4;8;30;24;;;;3,4;;11,12,1,2;Humide et léger.;Cousine des Calathea, plus robuste et compacte.
-188;Stevia;vegetable;brightInd;medium;medium;frostTender;none;perennial;2;7;30;12;;;;3,4;;11,12,1,2;Léger.;Feuilles au goût sucré intense, substitut naturel au sucre.
+188;Stevia;vegetable;brightInd;medium;medium;frostTender;none;perennial;2;7;30;12;;;;3,4;4;11,12,1,2;Léger.;Feuilles au goût sucré intense, substitut naturel au sucre.
 189;Callistemon;outdoor;direct;medium;medium;semiHardy;none;perennial;3;10;30;24;;;;3,4;4,9;11,12,1,2;Non calcaire.;Fleurs rouges originales ressemblant à un goupillon.
 190;Ferocactus;indoor;direct;easy;low;semiHardy;none;perennial;20;0;60;48;;;;3,4;;11,12,1,2;Minéral.;Grosses épines rouges ou jaunes crochues.
 191;Solanum;indoor;brightInd;medium;medium;frostTender;high;annual;3;7;15;0;;;;3;;11,12;Riche.;Baies oranges décoratives très toxiques. Souvent jeté après Noël.
@@ -195,14 +195,14 @@
 194;Kalanchoe Tomentosa;indoor;brightInd;easy;low;frostTender;low;perennial;10;25;60;24;;;;3,4;;11,12,1,2;Drainant.;Feuilles recouvertes d'un duvet gris très doux avec des pointes marron.
 195;Cactus;indoor;direct;easy;low;semiHardy;low;perennial;15;0;60;36;;;;3,4,5;;11,12,1,2;Terreau pour cactus (très sableux).;Cette fiche couvre la majorité des cactus épineux (Mammillaria, Cereus, Echinocactus...). L'ennemi n°1 est l'excès d'eau : stoppez tout arrosage en hiver.
 196;Succulente;indoor;brightInd;easy;low;frostTender;low;perennial;10;30;60;24;;;;3,4;;11,12,1,2;Terreau pour cactus et succulentes.;Concerne les plantes aux feuilles charnues sans épines. Arrosez uniquement quand la terre est totalement sèche. Si les feuilles flétrissent, elle a soif. Si elles deviennent molles/noires, trop d'eau.
-197;Pommier;vegetable;direct;medium;medium;veryHardy;none;perennial;15;0;365;0;;;;11,12,1,2,3;;;Terre profonde et argileuse.;Taille de fructification en fin d'hiver, hors gel.
-198;Poirier;vegetable;direct;medium;medium;veryHardy;none;perennial;15;0;365;0;;;;11,12,1,2,3;;;Terre riche et profonde.;Supprimer les branches qui se croisent au centre.
-199;Cerisier;vegetable;direct;easy;medium;hardy;none;perennial;20;0;365;0;;;;11,12;;;Tout type de sol, même calcaire.;Taille légère après la récolte (été) pour éviter la gommose.
-200;Prunier;vegetable;direct;easy;medium;veryHardy;none;perennial;15;0;365;0;;;;11,12,1,2,3;;;Sols légers et profonds.;N'aime pas être taillé sévèrement.
-201;Pêcher;vegetable;direct;hard;medium;semiHardy;none;perennial;25;0;180;0;;;;11,2,3;;;Léger et drainant, craint le calcaire.;Sensible à la cloque du pêcher. Tailler juste avant la floraison.
-202;Abricotier;vegetable;direct;medium;low;hardy;none;perennial;15;0;365;0;;;;11,12,1,2,3;;;Drainant et chaud.;Fleurit tôt, craint les gelées tardives.
-203;Noyer;vegetable;direct;easy;medium;veryHardy;none;perennial;10;0;0;0;;;;11;;;Profond.;Ne rien faire planter sous un noyer. Tailler en automne pour éviter l'écoulement de sève.
-204;Noisetier;vegetable;partial;easy;medium;veryHardy;none;perennial;10;0;0;0;;;;11,12,1,2;;;Ordinaire.;Supprimer les vieux bois pour aérer la touffe.
+197;Pommier;vegetable;direct;medium;medium;veryHardy;none;perennial;15;0;365;0;;;;11,12,1,2,3;12, 1, 2;;Terre profonde et argileuse.;Taille de fructification en fin d'hiver, hors gel.
+198;Poirier;vegetable;direct;medium;medium;veryHardy;none;perennial;15;0;365;0;;;;11,12,1,2,3;12, 1, 2;;Terre riche et profonde.;Supprimer les branches qui se croisent au centre.
+199;Cerisier;vegetable;direct;easy;medium;hardy;none;perennial;20;0;365;0;;;;11,12;7, 8;;Tout type de sol, même calcaire.;Taille légère après la récolte (été) pour éviter la gommose.
+200;Prunier;vegetable;direct;easy;medium;veryHardy;none;perennial;15;0;365;0;;;;11,12,1,2,3;7, 8;;Sols légers et profonds.;N'aime pas être taillé sévèrement.
+201;Pêcher;vegetable;direct;hard;medium;semiHardy;none;perennial;25;0;180;0;;;;11,2,3;2, 3;;Léger et drainant, craint le calcaire.;Sensible à la cloque du pêcher. Tailler juste avant la floraison.
+202;Abricotier;vegetable;direct;medium;low;hardy;none;perennial;15;0;365;0;;;;11,12,1,2,3;7, 8;;Drainant et chaud.;Fleurit tôt, craint les gelées tardives.
+203;Noyer;vegetable;direct;easy;medium;veryHardy;none;perennial;10;0;0;0;;;;11;7, 8, 12;;Profond.;Ne rien faire planter sous un noyer. Tailler en automne pour éviter l'écoulement de sève.
+204;Noisetier;vegetable;partial;easy;medium;veryHardy;none;perennial;10;0;0;0;;;;11,12,1,2;12, 1, 2;;Ordinaire.;Supprimer les vieux bois pour aérer la touffe.
 205;Erable du Japon;outdoor;partial;medium;high;hardy;none;perennial;15;5;180;36;;;;11,3;11,12;;Terre de bruyère (acide).;Craint le soleil brûlant et le vent sec. Taille très légère.
 206;Bouleau;outdoor;direct;easy;medium;veryHardy;none;perennial;10;0;0;0;;;;11,12,1,2,3;7,8;;Pauvre et sableux.;Écorce blanche décorative. Arbre pionnier à croissance rapide.
 207;Chêne;outdoor;direct;easy;medium;veryHardy;none;perennial;10;0;0;0;;;;11;11,12;;Profond.;Symbole de force. Demande beaucoup d'espace.
@@ -218,17 +218,17 @@
 217;Cyprès de Leyland;outdoor;direct;easy;medium;veryHardy;low;perennial;15;5;180;0;;;;10,11,3,4;4,9;;Tout sol.;Croissance très rapide (occultant). Attention aux allergies.
 218;Sapin de Noël;outdoor;partial;easy;medium;veryHardy;none;perennial;10;0;0;0;;;;11,12;12;;Frais et acide.;Ne se taille généralement pas (port naturel pyramidal).
 219;Pin Parasol;outdoor;direct;medium;low;semiHardy;none;perennial;5;0;0;0;;;;10,11;11,12;;Sableux et sec.;Emblème de la méditerranée. Produit des pignons comestibles.
-220;Photinia;outdoor;direct;easy;medium;hardy;none;perennial;15;0;180;0;;;;10,11,3,4;3,6,2009;;Ordinaire.;Jeunes pousses rouge vif. Idéal en haie.
+220;Photinia;outdoor;direct;easy;medium;hardy;none;perennial;15;0;180;0;;;;10,11,3,4;3,6,9;;Ordinaire.;Jeunes pousses rouge vif. Idéal en haie.
 221;Laurier Palme;outdoor;partial;easy;medium;veryHardy;high;perennial;10;0;0;0;;;;10,11,3;4,9;;Ordinaire.;Haie dense et persistante. Attention, baies toxiques.
 222;Forsythia;outdoor;direct;easy;medium;veryHardy;none;perennial;10;0;365;0;;;;10,11,3;4,5;;Ordinaire.;Annonce le printemps avec ses fleurs jaunes. Tailler sévèrement juste après la fin des fleurs.
 223;Houx;outdoor;partial;easy;medium;veryHardy;low;perennial;10;0;0;0;;;;10,11,3;3,9;;Frais.;Symbole de l'hiver avec ses boules rouges. Supporte très bien la taille topiaire.
-224;Buis;outdoor;partial;medium;medium;veryHardy;low;perennial;10;0;180;0;;;;10,11,3;4,6,2009;;Calcaire.;Le roi de la topiaire (boules, cônes). Attention à la pyrale du buis (chenille).
+224;Buis;outdoor;partial;medium;medium;veryHardy;low;perennial;10;0;180;0;;;;10,11,3;4,6,9;;Calcaire.;Le roi de la topiaire (boules, cônes). Attention à la pyrale du buis (chenille).
 225;Sureau;outdoor;partial;easy;medium;veryHardy;low;perennial;10;0;0;0;;;;11;2,3;;Riche.;Les fleurs se cuisinent en beignets ou sirop. Attire les oiseaux.
-226;Glycine;outdoor;direct;medium;medium;hardy;low;perennial;10;0;365;0;;;;11,3;2,7,2008;;Pauvre et sableux.;Liane très vigoureuse (peut tordre les grilles). Tailler court en hiver pour favoriser les fleurs.
-227;Vigne;vegetable;direct;medium;medium;hardy;none;perennial;10;0;365;0;;;;11,12,1,2,3;;;Calcaire et caillouteux.;Taille complexe mais indispensable pour avoir du raisin.
+226;Glycine;outdoor;direct;medium;medium;hardy;low;perennial;10;0;365;0;;;;11,3;2,7,8;;Pauvre et sableux.;Liane très vigoureuse (peut tordre les grilles). Tailler court en hiver pour favoriser les fleurs.
+227;Vigne;vegetable;direct;medium;medium;hardy;none;perennial;10;0;365;0;;;;11,12,1,2,3;11, 12, 1, 2, 7;;Calcaire et caillouteux.;Taille complexe mais indispensable pour avoir du raisin.
 228;Cyprès de Provence;outdoor;direct;easy;low;semiHardy;none;perennial;5;0;0;0;;;;10,11,3,4;4,9;;Sec et pauvre.;Forme colonnaire très étroite, typique des paysages toscans.
 229;Cèdre;outdoor;direct;easy;medium;hardy;none;perennial;10;0;0;0;;;;11;11,12;;Profond.;Arbre majestueux nécessitant un grand parc. Ne pas étêter.
-230;If;outdoor;partial;easy;medium;veryHardy;high;perennial;10;0;0;0;;;;10,11,3;3,4,2009;;Calcaire.;Croissance lente mais vit très vieux. Tout est toxique sauf la chair rouge de la baie.
+230;If;outdoor;partial;easy;medium;veryHardy;high;perennial;10;0;0;0;;;;10,11,3;3,4,9;;Calcaire.;Croissance lente mais vit très vieux. Tout est toxique sauf la chair rouge de la baie.
 231;Charme;outdoor;partial;easy;medium;veryHardy;none;perennial;10;0;0;0;;;;11;2,3,7,8;;Frais.;Ses feuilles sèches restent sur l'arbre en hiver (marcescent). Excellent brise-vue.
 232;Marronnier;outdoor;direct;easy;medium;veryHardy;low;perennial;15;0;0;0;;;;11;11,12;;Profond.;Arbre d'alignement classique. Le marron n'est pas comestible (contrairement à la châtaigne).
 233;Platane;outdoor;direct;easy;medium;veryHardy;none;perennial;15;0;0;0;;;;11;11,12;;Tout sol.;Supporte les tailles drastiques. Écorce qui pèle par plaques.
@@ -239,9 +239,9 @@
 238;Paulownia;outdoor;direct;easy;medium;hardy;none;perennial;20;0;0;0;;;;11,3;11,12;;Ordinaire.;Croissance la plus rapide au monde. Fleurs violettes spectaculaires au printemps.
 239;Liquidambar;outdoor;direct;medium;medium;hardy;none;perennial;15;0;0;0;;;;11;11,12;;Non calcaire et profond.;L'un des plus beaux feuillages rouges d'automne.
 240;Tamaris;outdoor;direct;easy;medium;hardy;none;perennial;10;0;0;0;;;;11,3;3,4;;Sableux, supporte le sel.;Idéal en bord de mer. Feuillage vaporeux.
-241;Arbousier;vegetable;direct;medium;low;semiHardy;none;perennial;10;0;0;0;;;;10,11,3;;;Drainant.;Persistant. Porte ses fruits rouges comestibles et ses fleurs en même temps.
+241;Arbousier;vegetable;direct;medium;low;semiHardy;none;perennial;10;0;0;0;;;;10,11,3;3, 4;;Drainant.;Persistant. Porte ses fruits rouges comestibles et ses fleurs en même temps.
 242;Viorne;outdoor;partial;easy;medium;veryHardy;low;perennial;15;0;365;0;;;;10,11,3;4;;Frais.;Floraison blanche spectaculaire au printemps. Attire les pucerons (plante relais).
-243;Cognassier;vegetable;direct;easy;medium;veryHardy;none;perennial;10;0;365;0;;;;11,12;;;Tout sol.;Rustique et peu sensible aux maladies. Les fruits se consomment cuits.
+243;Cognassier;vegetable;direct;easy;medium;veryHardy;none;perennial;10;0;365;0;;;;11,12;12, 1, 2;;Tout sol.;Rustique et peu sensible aux maladies. Les fruits se consomment cuits.
 244;Rosier Grimpant;outdoor;direct;medium;medium;veryHardy;none;perennial;10;0;90;0;;;;11,2,3;2,3,7,8;;Riche.;Ne pas tailler les branches charpentières. Courber les tiges pour favoriser la floraison.
 245;Buddleia;outdoor;direct;easy;low;hardy;none;perennial;5;0;0;0;;;;10,11,3;3,4;;Pauvre et caillouteux.;Attire énormément les papillons. Tailler très court en mars pour le rajeunir.
 246;Seringat;outdoor;partial;easy;medium;veryHardy;none;perennial;10;0;365;0;;;;11,3;5,6;;Ordinaire.;Fleurs blanches au parfum enivrant. Tailler juste après la floraison.
@@ -253,12 +253,12 @@
 252;Pyracantha;outdoor;partial;easy;medium;veryHardy;medium;perennial;5;0;0;0;;;;10,11,3;3,9;;Ordinaire.;Haie défensive redoutable (épines). Baies oranges décoratives en hiver.
 253;Eleagnus;outdoor;partial;easy;medium;hardy;none;perennial;5;0;0;0;;;;10,11,3;3,9;;Pauvre et sec.;La haie persistante par excellence. Parfum subtil en automne.
 254;Aucuba;outdoor;low;easy;medium;veryHardy;low;perennial;10;0;0;0;;;;10,11,3;3,9;;Ordinaire.;Feuilles tachetées de jaune. Idéal pour éclairer un coin d'ombre.
-255;Fusain du Japon;outdoor;partial;easy;medium;hardy;low;perennial;10;0;180;0;;;;10,11,3;3,4,2009;;Ordinaire.;Souvent panaché jaune ou blanc. Alternative au buis en bord de mer.
+255;Fusain du Japon;outdoor;partial;easy;medium;hardy;low;perennial;10;0;180;0;;;;10,11,3;3,4,9;;Ordinaire.;Souvent panaché jaune ou blanc. Alternative au buis en bord de mer.
 256;Mahonia;outdoor;low;easy;medium;veryHardy;low;perennial;5;0;0;0;;;;10,11;4;;Ordinaire.;Fleurs jaunes en hiver/printemps suivies de baies bleues. Pique un peu.
 257;Cotoneaster;outdoor;direct;easy;low;veryHardy;low;perennial;5;0;0;0;;;;10,11,3;3,4;;Pauvre.;Couvre-sol excellent ou haie. Baies rouges persistantes en hiver.
 258;Pittosporum;outdoor;direct;medium;low;semiHardy;none;perennial;10;0;0;0;;;;3,4;3,9;12,1;Drainant.;Feuillage persistant vert sombre. Fleurs sentant la fleur d'oranger.
 259;Chèvrefeuille;outdoor;partial;easy;medium;veryHardy;low;perennial;10;0;0;0;;;;10,11,3;3,9;;Frais.;Grimpante au parfum puissant. Idéal pour couvrir un grillage.
-260;Jasmin Étoilé;outdoor;direct;medium;medium;semiHardy;low;perennial;15;0;180;0;;;;3,4,5;3,4,2009;;Drainant.;Feuillage persistant (reste vert l'hiver). Fleurs blanches très parfumées.
+260;Jasmin Étoilé;outdoor;direct;medium;medium;semiHardy;low;perennial;15;0;180;0;;;;3,4,5;3,4,9;;Drainant.;Feuillage persistant (reste vert l'hiver). Fleurs blanches très parfumées.
 261;Bignone;outdoor;direct;easy;low;hardy;low;perennial;10;0;0;0;;;;10,11,3;3,4;;Tout sol.;Grosse fleurs oranges en trompette. S'accroche seule aux murs.
 262;Vigne Vierge;outdoor;partial;easy;medium;veryHardy;low;perennial;5;0;0;0;;;;10,11;11,12;;Ordinaire.;Couvre les façades. Devient rouge flamboyant en automne avant de perdre ses feuilles.
 263;Pivoine;outdoor;direct;medium;medium;veryHardy;low;perennial;10;0;90;0;;;;9,1;9,1;;Profond et riche.;Déteste être déplacée. Enormes fleurs au printemps.
@@ -296,7 +296,7 @@
 295;Coquelicot;outdoor;direct;easy;low;hardy;low;annual;0;0;0;0;;;;;6;;Tout sol remué.;Symbole de la campagne. Se sème à la volée.
 296;Tournesol;outdoor;direct;easy;medium;frostTender;none;annual;15;0;15;0;;;;4,5;6,7;;Riche.;Pivote pour suivre le soleil. Les graines nourrissent les oiseaux en hiver.
 297;Muguet;outdoor;partial;easy;medium;veryHardy;high;perennial;5;0;0;0;;;;9,1;11;;Frais.;Porte-bonheur du 1er mai. Très envahissant (rhizomes) et très toxique.
-298;Sauge Officinale;vegetable;direct;easy;low;hardy;none;perennial;5;0;0;0;;;;3,4,9;;;Sec et calcaire.;Feuillage gris persistant. 'Qui a de la sauge dans son jardin n'a pas besoin de médecin'.
+298;Sauge Officinale;vegetable;direct;easy;low;hardy;none;perennial;5;0;0;0;;;;3,4,9;4, 9;;Sec et calcaire.;Feuillage gris persistant. 'Qui a de la sauge dans son jardin n'a pas besoin de médecin'.
 299;Sedum;outdoor;direct;easy;low;veryHardy;none;perennial;0;0;0;0;;;;3,4,9;3,4;;Pauvre et sec.;Plante grasse d'extérieur. Fleurs roses en automne qui attirent les abeilles.
 300;Joubarbe des toits;outdoor;direct;easy;low;veryHardy;none;perennial;0;0;0;0;;;;3,4;5,6;;Rocaille.;Pousse sans terre, dans les murs ou sur les toits. Résiste à tout.
 301;Yucca Gloriosa;outdoor;direct;easy;low;hardy;low;perennial;0;0;0;0;;;;3,4;3,4;;Drainant.;Attention aux pointes très piquantes. Hampes florales blanches spectaculaires.
@@ -306,7 +306,7 @@
 305;Cornouiller Sanguin;outdoor;partial;easy;medium;veryHardy;low;perennial;10;0;0;0;;;;11,3;2,3;;Tout sol.;Son bois devient rouge vif en hiver. Tailler court en mars pour stimuler les nouvelles tiges colorées.
 306;Arbre à Perruque;outdoor;direct;easy;low;veryHardy;none;perennial;5;0;0;0;;;;11,3;3;;Drainant.;Inflorescences vaporeuses et feuillage pourpre spectaculaire.
 307;Potentille Arbustive;outdoor;direct;easy;medium;veryHardy;none;perennial;5;0;0;0;;;;10,11,3;3,4;;Pauvre.;Petit buisson à fleurs jaunes (ou rouges/blanches) très robuste.
-308;Berbéris;outdoor;direct;easy;low;veryHardy;low;perennial;5;0;0;0;;;;10,11,3;3,4,2009;;Tout sol.;Haie défensive très épineuse. Souvent au feuillage pourpre.
+308;Berbéris;outdoor;direct;easy;low;veryHardy;low;perennial;5;0;0;0;;;;10,11,3;3,4,9;;Tout sol.;Haie défensive très épineuse. Souvent au feuillage pourpre.
 309;Chèvrefeuille Arbustif;outdoor;partial;easy;medium;veryHardy;low;perennial;10;0;0;0;;;;10,11,3;3,9;;Tout sol.;Excellente alternative au buis pour les petites haies taillées, pousse plus vite.
 310;Osmanthe;outdoor;partial;medium;medium;hardy;none;perennial;10;0;0;0;;;;10,11,3;3,9;;Ordinaire.;Feuillage persistant et fleurs blanches au parfum de jasmin au printemps.
 311;Escallonia;outdoor;direct;easy;medium;semiHardy;none;perennial;10;0;0;0;;;;3,4,9,10;3,9;;Drainant.;Idéal en bord de mer, résiste aux embruns. Feuillage persistant.
@@ -332,11 +332,11 @@
 331;Scabieuse;outdoor;direct;easy;low;hardy;none;perennial;5;0;0;0;;;;3,4,9;6,7;;Calcaire.;Fleurs légères bleues ou roses en forme de pompon.
 332;Euphorbe des jardins;outdoor;direct;easy;low;semiHardy;high;perennial;0;0;0;0;;;;3,4,9;4;;Sec et caillouteux.;Feuillage persistant bleuté et fleurs vert chartreuse. Latex irritant.
 333;Oreille d'ours;outdoor;direct;easy;low;veryHardy;none;perennial;0;0;0;0;;;;3,4,9;4,9;;Pauvre.;Feuilles grises douces comme du velours. Craint l'excès d'eau.
-334;Immortelle d'Italie;vegetable;direct;easy;low;semiHardy;none;perennial;0;0;0;0;;;;3,4;;;Sec.;Feuillage argenté dégageant une forte odeur de curry, surtout après la pluie.
+334;Immortelle d'Italie;vegetable;direct;easy;low;semiHardy;none;perennial;0;0;0;0;;;;3,4;4, 9;;Sec.;Feuillage argenté dégageant une forte odeur de curry, surtout après la pluie.
 335;Santoline;outdoor;direct;easy;low;hardy;none;perennial;0;0;0;0;;;;3,4;3,9;;Sec.;Plante aromatique à feuillage gris, fleurs jaunes en pompons.
 336;Ciste;outdoor;direct;easy;low;semiHardy;none;perennial;0;0;0;0;;;;3,4,9;4,5;;Sec et pauvre.;Fleurs en papier crépon qui ne durent qu'un jour mais se renouvellent sans cesse.
 337;Myrte;outdoor;direct;medium;low;semiHardy;none;perennial;5;0;0;0;;;;3,4;3,4;11,12,1;Drainant.;Arbuste méditerranéen aromatique. Baies utilisées pour la liqueur.
-338;Romarin Rampant;vegetable;direct;easy;low;hardy;none;perennial;0;0;0;0;;;;3,4;;;Sec.;Forme retombante du romarin, idéale pour couvrir un talus ou muret.
+338;Romarin Rampant;vegetable;direct;easy;low;hardy;none;perennial;0;0;0;0;;;;3,4;4, 9;;Sec.;Forme retombante du romarin, idéale pour couvrir un talus ou muret.
 339;Ipomée;outdoor;direct;easy;medium;frostTender;low;annual;15;0;15;0;;;;4,5;4;;Riche.;Grimpante annuelle à croissance ultra-rapide. Fleurs en trompette éphémères.
 340;Pois de Senteur;outdoor;direct;easy;medium;hardy;low;annual;10;0;15;0;;;;3,4;6,7;;Riche.;Parfum délicieux. Il faut cueillir les fleurs pour qu'il continue à en produire.
 341;Hortensia Grimpant;outdoor;low;easy;medium;veryHardy;low;perennial;10;0;0;0;;;;10,11,3;4;;Acide.;Une des rares grimpantes pour mur au Nord (ombre). S'accroche seule.
@@ -347,7 +347,7 @@
 346;Hélianthe Vivace;outdoor;direct;easy;medium;veryHardy;none;perennial;10;0;0;0;;;;3,4,10;3,4,11;;Ordinaire.;Grandes fleurs jaunes en fin de saison. Peut devenir envahissant.
 347;Lysimaque;outdoor;partial;easy;high;veryHardy;none;perennial;15;0;0;0;;;;3,4,10;6,7;;Humide.;Fleurs jaunes en épis. Aime les bords de bassin.
 348;Verge d'Or;outdoor;direct;easy;medium;veryHardy;none;perennial;5;0;0;0;;;;3,4,10;6,7;;Pauvre.;Panaches jaunes vifs en fin d'été. Très mellifère.
-349;Bambou Sacré;outdoor;partial;easy;medium;hardy;low;perennial;10;0;0;0;;;;3,4,9;3,4,2009;;Ordinaire.;Ni un bambou ni sacré, mais superbe. Feuillage persistant qui rougit en hiver.
+349;Bambou Sacré;outdoor;partial;easy;medium;hardy;low;perennial;10;0;0;0;;;;3,4,9;3,4,9;;Ordinaire.;Ni un bambou ni sacré, mais superbe. Feuillage persistant qui rougit en hiver.
 350;Tetrapanax;outdoor;partial;medium;medium;semiHardy;low;perennial;20;0;0;0;;;;4,5;3,4;;Riche et drainant.;Feuilles géantes exotiques. Drageonne beaucoup (fait des bébés partout).
 351;Edgeworthia;outdoor;partial;medium;medium;hardy;none;perennial;15;0;0;0;;;;10,11;3,4;;Acide et humifère.;Fleurs jaunes en pompons très parfumées sur bois nu en février.
 352;Mahonia Charity;outdoor;partial;easy;medium;veryHardy;none;perennial;5;0;0;0;;;;10,11;4,5;;Ordinaire.;Longues grappes de fleurs jaunes en hiver suivies de baies bleues. Feuilles piquantes.
@@ -377,9 +377,9 @@
 376;Fusain Ailé;outdoor;partial;easy;medium;veryHardy;low;perennial;10;0;0;0;;;;10,11,3;11,12;;Ordinaire.;Devient rouge fluo en automne. Branches avec des 'ailettes' de liège curieuses.
 377;Gattilier;outdoor;direct;easy;low;hardy;none;perennial;5;0;0;0;;;;10,11,3;3,4;;Drainant.;Fleurs bleues en fin d'été. Feuillage odorant (poivré).
 378;Grenadier à fleurs;outdoor;direct;medium;low;semiHardy;none;perennial;10;0;0;0;;;;3,4;3;11,12,1;Drainant.;Fleurs oranges froissées superbes. Ne donne pas de fruits comestibles.
-379;Bambou Noir;outdoor;partial;medium;medium;veryHardy;none;perennial;20;0;90;0;;;;3,4,9;3,4,2009;;Riche.;Cannes noires très esthétiques. Attention, c'est un bambou traçant (barrière anti-rhizome obligatoire).
+379;Bambou Noir;outdoor;partial;medium;medium;veryHardy;none;perennial;20;0;90;0;;;;3,4,9;3,4,9;;Riche.;Cannes noires très esthétiques. Attention, c'est un bambou traçant (barrière anti-rhizome obligatoire).
 380;Clématite d'Armand;outdoor;partial;medium;medium;semiHardy;low;perennial;10;0;0;0;;;;3,4,9;4,5;;Riche et frais.;Feuilles persistantes coriaces. Fleurs blanches parfumées en mars.
-381;Solanum Grimpant;outdoor;direct;easy;medium;semiHardy;medium;perennial;15;0;0;0;;;;3,4;3,4,2009;11,12,1;Riche.;Croissance très rapide. Fleurs blanches tout l'été.
+381;Solanum Grimpant;outdoor;direct;easy;medium;semiHardy;medium;perennial;15;0;0;0;;;;3,4;3,4,9;11,12,1;Riche.;Croissance très rapide. Fleurs blanches tout l'été.
 382;Passiflore Bleue;outdoor;direct;easy;medium;hardy;low;perennial;15;0;0;0;;;;3,4;3,4;;Drainant.;La seule passiflore vraiment rustique au jardin. Fruits oranges décoratifs.
 383;Houblon Doré;outdoor;partial;easy;medium;veryHardy;low;perennial;15;0;0;0;;;;3,4;3,4;;Riche.;Grimpante herbacée (disparaît en hiver, repousse de 6m au printemps). Feuillage jaune.
 384;Chèvrefeuille d'Hiver;outdoor;partial;easy;medium;veryHardy;low;perennial;10;0;0;0;;;;10,11;3,4;;Ordinaire.;Arbuste (non grimpant) à floraison hivernale très parfumée.
@@ -402,7 +402,7 @@
 401;Lys des Incas;outdoor;partial;medium;medium;semiHardy;low;perennial;15;0;30;0;;;;3,4;6,7;11,12;Riche et profond.;Fleurit tout l'été. Tirer sur les tiges pour les cueillir (ne pas couper) stimule la repousse.
 402;Aster;outdoor;direct;easy;medium;veryHardy;none;perennial;10;0;0;0;;;;3,4;6,7;;Ordinaire.;Explosion de fleurs mauves ou roses quand les autres plantes fanent (septembre-novembre).
 403;Vergerette;outdoor;direct;easy;low;hardy;none;perennial;5;0;0;0;;;;3,4;6,7;;Sec et pauvre.;Une nuée de petites fleurs blanches et roses. Pousse dans les joints de murs sans terre.
-404;Sauge Arbustive;outdoor;direct;easy;low;semiHardy;none;perennial;5;0;0;0;;;;3,4;3,4,2009;;Sec.;Feuillage aromatique (cassis/menthe). Fleurit de mai aux gelées sans arrêt.
+404;Sauge Arbustive;outdoor;direct;easy;low;semiHardy;none;perennial;5;0;0;0;;;;3,4;3,4,9;;Sec.;Feuillage aromatique (cassis/menthe). Fleurit de mai aux gelées sans arrêt.
 405;Achillée;outdoor;direct;easy;low;veryHardy;none;perennial;5;0;0;0;;;;3,4,10;6,7;;Sec.;Fleurs en plateaux colorés. Adorée des insectes auxiliaires.
 406;Caryopteris;outdoor;direct;easy;low;hardy;none;perennial;5;0;0;0;;;;3,4;3,4;;Drainant.;Buisson bleu en fin d'été. Rabattre court en mars.
 407;Leucothoe;outdoor;partial;medium;medium;veryHardy;low;perennial;10;0;0;0;;;;3,4,10;4;;Acide (terre de bruyère).;Feuillage persistant qui devient rouge/bronze en hiver. Belle alternative aux bruyères.
@@ -424,18 +424,18 @@
 423;Amour en cage;outdoor;partial;easy;medium;veryHardy;low;perennial;5;0;0;0;;;;3,4,9;6,7;;Ordinaire.;Lanternes oranges décoratives. Attention, très envahissant par ses racines.
 424;Liatris;outdoor;direct;easy;medium;veryHardy;none;perennial;10;0;0;0;;;;3,4;6,7;;Frais.;Épis violets originaux qui fleurissent du haut vers le bas.
 425;Véronique Arbustive;outdoor;direct;medium;medium;semiHardy;none;perennial;10;0;0;0;;;;3,4,9;4,9;;Drainant.;Petits épis bleus ou violets, feuillage persistant très graphique.
-426;Palmier Chanvre;outdoor;partial;easy;medium;veryHardy;none;perennial;15;0;60;0;;;;4,5;3,4,2009;;Riche.;Le seul palmier qui résiste à -18°C. Tronc poilu typique.
+426;Palmier Chanvre;outdoor;partial;easy;medium;veryHardy;none;perennial;15;0;60;0;;;;4,5;3,4,9;;Riche.;Le seul palmier qui résiste à -18°C. Tronc poilu typique.
 427;Pourpier Vivace;outdoor;direct;easy;low;semiHardy;none;perennial;0;0;0;0;;;;3,4,5;4,9;;Sec.;Tapis de fleurs fluo (rose, orange) tout l'été. Craint l'humidité hivernale.
 428;Griffe de Sorcière;outdoor;direct;easy;low;frostTender;none;perennial;0;0;0;0;;;;3,4;4,9;11,12;Sableux.;Plante grasse de bord de mer très envahissante. Fleurs géantes.
 429;Gazon d'Espagne;outdoor;direct;easy;low;veryHardy;none;perennial;0;0;0;0;;;;3,4,9;4,5;;Pauvre et salé.;Petits pompons roses sur un coussin d'herbe. Idéal rocaille.
 430;Corbeille d'Argent;outdoor;direct;easy;low;veryHardy;none;perennial;5;0;0;0;;;;3,4,9;4,5;;Calcaire.;Couvre-sol blanc immaculé au printemps. Persistant.
 431;Corbeille d'Or;outdoor;direct;easy;low;veryHardy;none;perennial;0;0;0;0;;;;3,4,9;4,5;;Sec.;Le pendant jaune de la corbeille d'argent. Pousse dans les murets.
-432;Framboisier;vegetable;partial;easy;medium;veryHardy;none;perennial;15;0;90;0;;;;11,12,1,2;;;Riche.;Tailler au ras du sol les tiges ayant donné des fruits (elles sèchent).
-433;Cassissier;vegetable;partial;easy;medium;veryHardy;none;perennial;10;0;90;0;;;;11,12,1,2;;;Frais.;Supprimer le vieux bois (tiges noires) au centre pour aérer.
-434;Mûrier (Ronce);vegetable;partial;easy;medium;veryHardy;none;perennial;10;0;90;0;;;;11,12,1,2;;;Ordinaire.;Choisir des variétés sans épines ('Thornless'). Palisser contre un mur.
-435;Kiwi;vegetable;partial;medium;medium;hardy;none;perennial;20;0;90;0;;;;11,2,3;;;Riche et non calcaire.;Liane vigoureuse. Il faut souvent un pied mâle et un pied femelle.
+432;Framboisier;vegetable;partial;easy;medium;veryHardy;none;perennial;15;0;90;0;;;;11,12,1,2;2, 6, 11;;Riche.;Tailler au ras du sol les tiges ayant donné des fruits (elles sèchent).
+433;Cassissier;vegetable;partial;easy;medium;veryHardy;none;perennial;10;0;90;0;;;;11,12,1,2;11, 12, 1, 2;;Frais.;Supprimer le vieux bois (tiges noires) au centre pour aérer.
+434;Mûrier (Ronce);vegetable;partial;easy;medium;veryHardy;none;perennial;10;0;90;0;;;;11,12,1,2;2, 7;;Ordinaire.;Choisir des variétés sans épines ('Thornless'). Palisser contre un mur.
+435;Kiwi;vegetable;partial;medium;medium;hardy;none;perennial;20;0;90;0;;;;11,2,3;12, 1, 6;;Riche et non calcaire.;Liane vigoureuse. Il faut souvent un pied mâle et un pied femelle.
 436;Rhubarbe;vegetable;partial;easy;high;veryHardy;high;perennial;20;0;90;0;;;;3,4,10;;;Profond et riche.;Seules les tiges se mangent, les feuilles sont toxiques. Couper les fleurs dès qu'elles apparaissent.
-437;Artichaut;vegetable;direct;medium;medium;semiHardy;none;perennial;15;0;90;0;;;;3,4;;11,12,1;Riche.;Fleur de chardon géante. Protéger le pied du froid en hiver.
+437;Artichaut;vegetable;direct;medium;medium;semiHardy;none;perennial;15;0;90;0;;;;3,4;11;11,12,1;Riche.;Fleur de chardon géante. Protéger le pied du froid en hiver.
 438;Souci;outdoor;direct;easy;medium;frostTender;none;annual;5;0;0;0;;;;4,5;6,7;;Ordinaire.;Fleurs oranges comestibles et médicinales. Se ressème partout.
 439;Bourrache;vegetable;direct;easy;medium;frostTender;none;annual;0;0;0;0;;;;;;;Ordinaire.;Fleurs bleues en étoile comestibles (goût d'huître). Très mellifère.
 440;Ail des Ours;vegetable;low;easy;high;veryHardy;none;perennial;10;0;0;0;;;;9,1;;;Humide (sous-bois).;Délicieux en pesto. Attention à ne pas confondre avec le muguet (toxique) !
@@ -443,10 +443,10 @@
 442;Pâquerette;outdoor;direct;easy;medium;veryHardy;none;biennial;5;0;0;0;;;;9,10,3;4,9;;Frais.;Version cultivée à grosses fleurs de la pâquerette sauvage. Idéale en jardinière d'hiver.
 443;Genévrier;outdoor;direct;easy;low;veryHardy;low;perennial;5;0;0;0;;;;10,11,3;4,9;;Pauvre.;Couvre-sol persistant increvable. Les baies de certaines espèces servent à faire le gin.
 444;Faux Cyprès;outdoor;partial;easy;medium;veryHardy;low;perennial;10;0;0;0;;;;10,11,3;4,9;;Ordinaire.;Conifère de rocaille ou de haie, feuillage souvent doré ou bleuté.
-445;Myrtillier;vegetable;partial;medium;medium;veryHardy;none;perennial;15;0;90;0;;;;11,3;;;Terre de bruyère pure (Acide).;Ne pousse pas du tout en terre calcaire. Délicieuses baies bleues.
-446;Groseillier à maquereau;vegetable;partial;easy;medium;veryHardy;none;perennial;10;0;90;0;;;;11,3;;;Frais.;Produit des baies translucides plus grosses que les groseilles. Épineux.
-447;Kaki;vegetable;direct;easy;medium;hardy;none;perennial;10;0;365;0;;;;11,3;;;Profond.;Fruits oranges qui restent sur l'arbre après la chute des feuilles en hiver.
-448;Amandier;vegetable;direct;medium;low;semiHardy;none;perennial;5;0;365;0;;;;11;;;Calcaire et sec.;Le premier fruitier à fleurir (février). Sensible au gel tardif.
+445;Myrtillier;vegetable;partial;medium;medium;veryHardy;none;perennial;15;0;90;0;;;;11,3;12, 1, 2;;Terre de bruyère pure (Acide).;Ne pousse pas du tout en terre calcaire. Délicieuses baies bleues.
+446;Groseillier à maquereau;vegetable;partial;easy;medium;veryHardy;none;perennial;10;0;90;0;;;;11,3;11, 12, 1, 2;;Frais.;Produit des baies translucides plus grosses que les groseilles. Épineux.
+447;Kaki;vegetable;direct;easy;medium;hardy;none;perennial;10;0;365;0;;;;11,3;12, 1, 2;;Profond.;Fruits oranges qui restent sur l'arbre après la chute des feuilles en hiver.
+448;Amandier;vegetable;direct;medium;low;semiHardy;none;perennial;5;0;365;0;;;;11;7, 8;;Calcaire et sec.;Le premier fruitier à fleurir (février). Sensible au gel tardif.
 449;Saule Crevette;outdoor;partial;medium;high;veryHardy;none;perennial;20;5;0;0;;;;11,3;2,3;;Humide.;Jeunes pousses roses et blanches magnifiques. A besoin de beaucoup d'eau.
 450;Cerisier du Japon;outdoor;direct;easy;medium;veryHardy;none;perennial;10;0;0;0;;;;11;11,12;;Ordinaire.;Ne donne pas de fruits, mais une floraison rose spectaculaire en avril.
 451;Prunier Pourpre;outdoor;direct;easy;medium;veryHardy;none;perennial;10;0;0;0;;;;11;11,12;;Tout sol.;Feuillage violet très sombre toute la saison. Petites prunes comestibles.
@@ -463,7 +463,7 @@
 462;Cryptomeria;outdoor;partial;medium;high;hardy;none;perennial;15;0;0;0;;;;10,11;4,9;;Acide et profond.;Son feuillage devient bronze/rougeâtre en hiver.
 463;Feijoa;outdoor;direct;medium;medium;semiHardy;none;perennial;10;0;0;0;;;;3,4;3,4;;Drainant.;Fleurs comestibles et petits fruits verts au goût d'ananas/fraise.
 464;Kumquat;outdoor;direct;medium;medium;semiHardy;none;perennial;15;5;30;24;;;;3,4;3,4;11,12,1,2;Terreau agrumes.;L'agrume le plus rustique. On mange le fruit avec la peau.
-465;Chamaerops;outdoor;direct;easy;low;semiHardy;none;perennial;10;0;0;0;;;;4,5;3,4,2009;12,1;Sec.;Palmier méditerranéen formant une touffe (plusieurs troncs).
+465;Chamaerops;outdoor;direct;easy;low;semiHardy;none;perennial;10;0;0;0;;;;4,5;3,4,9;12,1;Sec.;Palmier méditerranéen formant une touffe (plusieurs troncs).
 466;Genêt;outdoor;direct;easy;low;veryHardy;low;perennial;0;0;0;0;;;;10,11,3;4,5;;Pauvre et acide.;Explosion de fleurs jaunes. Ne pas tailler le vieux bois (ne repousse pas).
 467;Hortensia à feuilles de chêne;outdoor;partial;easy;medium;veryHardy;low;perennial;15;0;0;0;;;;11,3;2,3;;Frais.;Feuilles découpées qui deviennent pourpre en automne. Fleurs coniques blanches.
 468;Hortensia Annabelle;outdoor;partial;easy;medium;veryHardy;low;perennial;20;0;0;0;;;;11,3;2,3;;Frais.;Énormes boules blanches. Se taille court chaque printemps (repousse du pied).
@@ -475,8 +475,8 @@
 474;Aubépine;outdoor;direct;easy;medium;veryHardy;low;perennial;0;0;0;0;;;;11;11,12;;Tout sol.;Indispensable pour la biodiversité (fleurs et baies). Supporte les tailles sévères.
 475;Fusain Panaché;outdoor;partial;easy;medium;veryHardy;low;perennial;5;0;0;0;;;;10,11,3;4,9;;Ordinaire.;Couvre-sol ou grimpant persistant, souvent jaune et vert. Très lumineux.
 476;Houx Panaché;outdoor;partial;easy;medium;veryHardy;low;perennial;10;0;0;0;;;;10,11,3;3,9;;Frais.;Feuilles bordées de blanc ou jaune. Baies rouges en hiver.
-477;Olivier (En Pot);outdoor;direct;medium;low;frostTender;none;perennial;3;15;30;36;;;;3,4;3,4,2009;11,12,1,2;Terreau agrumes ou méditerranéen.;En pot, il est beaucoup plus sensible au froid (racines) et à la soif. Ne jamais laisser de soucoupe pleine d'eau.
-478;Olivier (Pleine terre);outdoor;direct;easy;low;semiHardy;none;perennial;15;0;0;0;;;;;3,4,2009;;Tout sol drainant (craint l'argile humide).;Une fois installé (après 2-3 ans), il devient très résistant à la sécheresse. Tailler pour aérer le centre.
+477;Olivier (En Pot);outdoor;direct;medium;low;frostTender;none;perennial;3;15;30;36;;;;3,4;3,4,9;11,12,1,2;Terreau agrumes ou méditerranéen.;En pot, il est beaucoup plus sensible au froid (racines) et à la soif. Ne jamais laisser de soucoupe pleine d'eau.
+478;Olivier (Pleine terre);outdoor;direct;easy;low;semiHardy;none;perennial;15;0;0;0;;;;;3,4,9;;Tout sol drainant (craint l'argile humide).;Une fois installé (après 2-3 ans), il devient très résistant à la sécheresse. Tailler pour aérer le centre.
 479;Citronnier (En Pot);outdoor;direct;medium;medium;frostTender;low;perennial;2;10;15;24;;;;3,4;3,4;11,12,1,2;Spécial agrumes.;Doit être rentré hors gel l'hiver (véranda, garage lumineux) mais loin du chauffage. Très gourmand en engrais.
 480;Citronnier (Pleine terre);outdoor;direct;hard;medium;frostTender;low;perennial;7;0;90;0;;;;;3,4;12,1,2;Non calcaire et drainant.;Réservé aux régions à climat doux (Zone de l'oranger, Côte d'Azur). Craint le gel dès -3°C/-4°C.
 481;Laurier Rose (En Pot);outdoor;direct;medium;medium;frostTender;high;perennial;2;15;15;24;;;;3,4;3;11,12,1,2;Riche.;Contrairement à la pleine terre, en pot il boit énormément en été ! S'il a soif, les feuilles jaunissent et tombent.
@@ -485,33 +485,33 @@
 484;Érable du Japon (Pleine terre);outdoor;partial;medium;high;hardy;none;perennial;15;0;0;0;;;;;11,12;;Acide et frais.;Une fois bien installé à mi-ombre, il vit sa vie. Attention aux sols calcaires qui le tuent.
 485;Hortensia (En Pot);outdoor;partial;medium;high;hardy;low;perennial;1;10;15;24;;;;3,4;2,3;;Terre de bruyère.;En pot, c'est une diva de l'eau : il fane immédiatement s'il manque d'eau une journée en été.
 486;Hortensia (Pleine terre);outdoor;partial;easy;high;veryHardy;low;perennial;7;0;90;0;;;;;2,3;;Acide et frais.;Beaucoup plus autonome en terre. La couleur bleue dépend de l'acidité du sol (ardoise).
-487;Bambou (En Pot);outdoor;partial;medium;medium;veryHardy;none;perennial;2;10;30;24;;;;3,4;3,4,2009;;Riche et frais.;En pot, le bambou meurt de soif très vite. Il faut l'arroser abondamment, même en hiver s'il ne pleut pas.
-488;Bambou (Pleine terre);outdoor;partial;easy;medium;veryHardy;none;perennial;10;0;180;0;;;;;3,4,2009;;Tout sol.;ATTENTION : Si c'est un bambou traçant (Phyllostachys), il faut IMPÉRATIVEMENT poser une barrière anti-rhizome, sinon il envahira tout le jardin.
-489;Menthe (En Pot);vegetable;partial;easy;medium;veryHardy;none;perennial;2;10;30;12;;;;3,4;;;Terreau ordinaire.;La meilleure façon de cultiver la menthe. Elle reste sage dans son pot et ne colonise pas le jardin.
-490;Menthe (Pleine terre);vegetable;partial;easy;medium;veryHardy;none;perennial;10;0;0;0;;;;;;;Frais.;ATTENTION : Extrêmement envahissante par ses racines souterraines. À planter dans un seau sans fond enterré pour la limiter.
+487;Bambou (En Pot);outdoor;partial;medium;medium;veryHardy;none;perennial;2;10;30;24;;;;3,4;3,4,9;;Riche et frais.;En pot, le bambou meurt de soif très vite. Il faut l'arroser abondamment, même en hiver s'il ne pleut pas.
+488;Bambou (Pleine terre);outdoor;partial;easy;medium;veryHardy;none;perennial;10;0;180;0;;;;;3,4,9;;Tout sol.;ATTENTION : Si c'est un bambou traçant (Phyllostachys), il faut IMPÉRATIVEMENT poser une barrière anti-rhizome, sinon il envahira tout le jardin.
+489;Menthe (En Pot);vegetable;partial;easy;medium;veryHardy;none;perennial;2;10;30;12;;;;3,4;5, 8;;Terreau ordinaire.;La meilleure façon de cultiver la menthe. Elle reste sage dans son pot et ne colonise pas le jardin.
+490;Menthe (Pleine terre);vegetable;partial;easy;medium;veryHardy;none;perennial;10;0;0;0;;;;;5, 8;;Frais.;ATTENTION : Extrêmement envahissante par ses racines souterraines. À planter dans un seau sans fond enterré pour la limiter.
 491;Bougainvillier (En Pot);outdoor;direct;medium;low;frostTender;low;perennial;3;15;15;24;;;;3,4;3,9;11,12,1,2;Drainant.;Doit absolument être rentré en hiver (véranda non chauffée ou pièce fraîche) partout sauf sur la Côte d'Azur.
 492;Bougainvillier (Pleine terre);outdoor;direct;easy;low;semiHardy;low;perennial;15;0;90;0;;;;;3,9;;Sec et drainant.;Uniquement pour climats très doux (pas de gel inférieur à -4°C). Devient une liane géante.
 493;Lavande (En Pot);outdoor;direct;hard;low;hardy;low;perennial;5;20;0;24;;;;3,4;4,9;;Très drainant (mélanger avec du sable).;Difficile en pot : pourrit s'il y a trop d'eau, sèche s'il n'y en a pas assez. Ne jamais mettre de soucoupe.
 494;Lavande (Pleine terre);outdoor;direct;easy;low;veryHardy;low;perennial;0;0;0;0;;;;;4,9;;Pauvre, calcaire et sec.;Increvable une fois installée. Tailler en boule après la floraison.
-495;Figuier (En Pot);vegetable;direct;medium;medium;hardy;low;perennial;2;10;30;24;;;;11,3;;11,12;Riche.;Prendre une variété naine. Demande beaucoup d'eau en été pour faire grossir les figues.
-496;Figuier (Pleine terre);vegetable;direct;easy;medium;semiHardy;low;perennial;20;0;0;0;;;;;;;Tout sol.;Ses racines sont très puissantes, ne pas planter près d'une piscine ou d'une maison.
+495;Figuier (En Pot);vegetable;direct;medium;medium;hardy;low;perennial;2;10;30;24;;;;11,3;11, 12, 3;11,12;Riche.;Prendre une variété naine. Demande beaucoup d'eau en été pour faire grossir les figues.
+496;Figuier (Pleine terre);vegetable;direct;easy;medium;semiHardy;low;perennial;20;0;0;0;;;;;11, 12, 3;;Tout sol.;Ses racines sont très puissantes, ne pas planter près d'une piscine ou d'une maison.
 497;Rosier (Pot);outdoor;direct;medium;medium;hardy;none;perennial;2;10;15;12;;;;11,3;2,3,7,8;;Terreau rosiers.;Souvent vendus fleuris, ils s'épuisent vite. Nécessitent beaucoup d'engrais liquide.
 498;Rosier (Pleine terre);outdoor;direct;easy;medium;veryHardy;none;perennial;10;0;90;0;;;;;2,3,7,8;;Argileux.;Beaucoup plus autonome. Un apport de compost au pied en hiver suffit souvent.
 499;Camélia (En Pot);outdoor;partial;medium;high;hardy;none;perennial;3;10;30;24;;;;4,5;4,5;;Terre de bruyère.;Arroser uniquement à l'eau de pluie (le calcaire du robinet le tue en pot).
 500;Camélia (Pleine terre);outdoor;partial;easy;high;hardy;none;perennial;15;0;0;0;;;;;4,5;;Acide et frais.;Si la terre est naturellement acide (Bretagne), il devient un arbre sans entretien.
-501;Tomate;vegetable;direct;medium;medium;frostTender;low;annual;3;0;15;0;2,3,4;5;7,8,9,10;;;;Riche et profond.;Supprimer les gourmands (tiges à l'aisselle des feuilles). Feuilles toxiques.
-502;Courgette;vegetable;direct;easy;medium;frostTender;none;annual;2;0;30;0;4,5;5;6,7,8,9;;;;Très riche (compost).;Non taillée, mais récolter jeune pour stimuler la production. Attention à l'oïdium.
-503;Concombre;vegetable;direct;medium;high;frostTender;none;annual;2;0;15;0;3,4;5;7,8,9;;;;Riche et frais.;Pincer la tête après 3-4 feuilles. A besoin de beaucoup d'eau mais pas sur les feuilles.
-504;Aubergine;vegetable;direct;hard;medium;frostTender;low;annual;3;0;15;0;2,3;5;7,8,9;;;;Riche.;Demande beaucoup de chaleur. Pincer pour ramifier.
-505;Poivron;vegetable;direct;medium;medium;frostTender;low;annual;3;0;15;0;2,3;5;7,8,9;;;;Riche.;Vert = pas mûr. Rouge/Jaune = mûr et sucré.
+501;Tomate;vegetable;direct;medium;medium;frostTender;low;annual;3;0;15;0;2,3,4;5;7,8,9,10;;5, 6, 7, 8;;Riche et profond.;Supprimer les gourmands (tiges à l'aisselle des feuilles). Feuilles toxiques.
+502;Courgette;vegetable;direct;easy;medium;frostTender;none;annual;2;0;30;0;4,5;5;6,7,8,9;;6, 7, 8;;Très riche (compost).;Non taillée, mais récolter jeune pour stimuler la production. Attention à l'oïdium.
+503;Concombre;vegetable;direct;medium;high;frostTender;none;annual;2;0;15;0;3,4;5;7,8,9;;6, 7, 8;;Riche et frais.;Pincer la tête après 3-4 feuilles. A besoin de beaucoup d'eau mais pas sur les feuilles.
+504;Aubergine;vegetable;direct;hard;medium;frostTender;low;annual;3;0;15;0;2,3;5;7,8,9;;5, 6, 7, 8;;Riche.;Demande beaucoup de chaleur. Pincer pour ramifier.
+505;Poivron;vegetable;direct;medium;medium;frostTender;low;annual;3;0;15;0;2,3;5;7,8,9;;5, 6, 7, 8;;Riche.;Vert = pas mûr. Rouge/Jaune = mûr et sucré.
 506;Haricot Vert;vegetable;direct;easy;medium;frostTender;low;annual;4;0;0;0;5,6,7;;7,8,9;;;;Léger, réchauffé.;Semer quand la terre est chaude (>15°C). Toxique cru.
 507;Radis;vegetable;partial;easy;medium;hardy;none;annual;2;0;0;0;3,4,5,6,7,8,9;;4,5,6,7,8,9,10;;;;Léger.;Arroser régulièrement sinon ils deviennent piquants.
 508;Carotte;vegetable;direct;medium;medium;hardy;none;biennial;5;0;0;0;3,4,5,6;;7,8,9,10,11;;;;Sableux, sans cailloux.;Éclaircir les semis pour laisser de la place aux racines.
 509;Laitue;vegetable;partial;easy;medium;hardy;none;annual;3;0;0;0;3,4,5,6,7,8;4,5,6,7,8;5,6,7,8,9,10;;;;Frais.;Attention aux limaces. Monte en graines s'il fait trop chaud.
 510;Pomme de Terre;vegetable;direct;easy;medium;frostTender;low;annual;7;0;0;0;;3,4,5;7,8,9;;;;Léger et riche.;Butter les pieds (ramener de la terre) au fur et à mesure de la croissance.
-511;Potiron;vegetable;direct;easy;medium;frostTender;none;annual;3;0;30;0;4,5;5;9,10,11;;;;Très riche (tas de compost).;Coureuse. Se conserve tout l'hiver.
-512;Courge Butternut;vegetable;direct;easy;medium;frostTender;none;annual;3;0;30;0;4,5;5;9,1;;;;Riche.;Goût de noisette. Récolter quand le pédoncule est sec.
-513;Melon;vegetable;direct;hard;medium;frostTender;none;annual;3;0;15;0;3,4;5;7,8,9;;;;Riche.;Taille complexe nécessaire pour avoir des fruits au nord de la Loire.
+511;Potiron;vegetable;direct;easy;medium;frostTender;none;annual;3;0;30;0;4,5;5;9,10,11;;6, 7, 8;;Très riche (tas de compost).;Coureuse. Se conserve tout l'hiver.
+512;Courge Butternut;vegetable;direct;easy;medium;frostTender;none;annual;3;0;30;0;4,5;5;9,1;;6, 7, 8;;Riche.;Goût de noisette. Récolter quand le pédoncule est sec.
+513;Melon;vegetable;direct;hard;medium;frostTender;none;annual;3;0;15;0;3,4;5;7,8,9;;6, 7;;Riche.;Taille complexe nécessaire pour avoir des fruits au nord de la Loire.
 514;Poireau;vegetable;direct;medium;medium;veryHardy;none;biennial;5;0;30;0;2,3,4;5,6,7;10,11,12,1,2;;;;Riche.;Butter pour avoir plus de blanc. Couper le vert avant de repiquer.
 515;Oignon;vegetable;direct;easy;low;hardy;low;biennial;5;0;0;0;2,3;3,4;7,8;;;;Léger, ne supporte pas l'humidité stagnante.;Coucher les tiges quand elles jaunissent pour faire grossir le bulbe.
 516;Ail;vegetable;direct;easy;low;veryHardy;low;annual;5;0;0;0;;10,11,2,3;6,7;;;;Drainant.;Planter les caïeux la pointe vers le haut. Nouer les tiges avant récolte.
@@ -530,35 +530,35 @@
 529;Céleri-Rave;vegetable;direct;medium;high;semiHardy;none;biennial;5;0;15;0;2,3,4;5,6;10,11;;;;Riche.;Couper les feuilles basses et les radicelles latérales pour avoir une belle boule.
 530;Fenouil;vegetable;direct;medium;medium;semiHardy;none;perennial;5;0;0;0;4,5,6;;8,9,10;;;;Léger.;Butter la base pour blanchir le bulbe. Goût anisé.
 531;Maïs Doux;vegetable;direct;easy;medium;frostTender;none;annual;7;0;30;0;4,5;5;8,9;;;;Riche.;Planter en bloc (carré) plutôt qu'en ligne pour une bonne pollinisation par le vent.
-532;Asperge;vegetable;direct;hard;medium;veryHardy;low;perennial;5;0;30;0;;3,4;4,5,6;;;;Sableux.;Culture longue : on plante les griffes et on ne récolte que la 3ème année.
-533;Fève;vegetable;direct;easy;medium;hardy;none;annual;5;0;0;0;10,11,2,3;;5,6;;;;Lourd.;Pincer la tête après le 6ème étage de fleurs pour éviter les pucerons noirs.
+532;Asperge;vegetable;direct;hard;medium;veryHardy;low;perennial;5;0;30;0;;3,4;4,5,6;;11, 12;;Sableux.;Culture longue : on plante les griffes et on ne récolte que la 3ème année.
+533;Fève;vegetable;direct;easy;medium;hardy;none;annual;5;0;0;0;10,11,2,3;;5,6;;5;;Lourd.;Pincer la tête après le 6ème étage de fleurs pour éviter les pucerons noirs.
 534;Topinambour;vegetable;direct;easy;low;veryHardy;none;perennial;0;0;0;0;;3,4;11,12,1,2;;;;Pauvre.;Très envahissant (ne jamais laisser un bout de tubercule en terre). Goût d'artichaut.
 535;Panais;vegetable;direct;easy;medium;veryHardy;low;biennial;5;0;0;0;3,4,5;;10,11,12,1;;;;Profond.;Racine blanche sucrée. Meilleur après le gel.
-536;Cornichon;vegetable;direct;medium;high;frostTender;none;annual;3;0;15;0;4,5;5;7,8,9;;;;Riche.;Récolter tous les jours, sinon ils grossissent trop.
-537;Oseille;vegetable;partial;easy;medium;veryHardy;low;perennial;5;0;0;0;3,4;4,5;5,6,7,8,9;;;;Acide.;Couper les fleurs pour favoriser les feuilles. Goût acide citronné.
-538;Ciboule;vegetable;direct;easy;medium;veryHardy;low;perennial;5;0;0;0;3,4;3,4;5,6,7,8,9,10;;;;Ordinaire.;Plus grosse que la ciboulette, ne forme pas de bulbe. Indispensable en cuisine asiatique.
-539;Estragon;vegetable;direct;medium;low;hardy;none;perennial;2;0;0;0;;4,5;6,7,8,9;;;;Léger.;Disparaît en hiver. Goût anisé, essentiel pour la sauce béarnaise.
+536;Cornichon;vegetable;direct;medium;high;frostTender;none;annual;3;0;15;0;4,5;5;7,8,9;;6, 7, 8;;Riche.;Récolter tous les jours, sinon ils grossissent trop.
+537;Oseille;vegetable;partial;easy;medium;veryHardy;low;perennial;5;0;0;0;3,4;4,5;5,6,7,8,9;;5, 8;;Acide.;Couper les fleurs pour favoriser les feuilles. Goût acide citronné.
+538;Ciboule;vegetable;direct;easy;medium;veryHardy;low;perennial;5;0;0;0;3,4;3,4;5,6,7,8,9,10;;5, 8;;Ordinaire.;Plus grosse que la ciboulette, ne forme pas de bulbe. Indispensable en cuisine asiatique.
+539;Estragon;vegetable;direct;medium;low;hardy;none;perennial;2;0;0;0;;4,5;6,7,8,9;;4, 9;;Léger.;Disparaît en hiver. Goût anisé, essentiel pour la sauce béarnaise.
 540;Aneth;vegetable;direct;easy;medium;frostTender;none;annual;5;0;0;0;4,5,6;;6,7,8,9;;;;Léger.;Compagnon idéal du poisson et des concombres. Se ressème seul.
 541;Cerfeuil;vegetable;partial;easy;medium;hardy;none;annual;5;0;0;0;3,4,9;;4,5,10,11;;;;Frais.;Goût délicat. Préfère la fraîcheur du printemps ou de l'automne.
 542;Chicorée Frisée;vegetable;partial;easy;medium;semiHardy;none;annual;5;0;0;0;5,6,7;6,7,8;9,10,11;;;;Ordinaire.;Blanchir le cœur en posant une cloche opaque 10 jours avant récolte pour enlever l'amertume.
 543;Endive;vegetable;low;hard;medium;hardy;none;biennial;5;0;0;0;5,6;10,11;12,1,2,3;;;;Profond.;Culture en deux temps : faire grossir la racine au jardin, puis forcer la racine dans le noir et l'humidité (cave) pour obtenir l'endive.
 544;Patate Douce;vegetable;direct;medium;medium;frostTender;none;annual;5;0;15;0;2,3;5,6;9,1;;;;Léger et chaud.;Plante coureuse (c'est une Ipomée). Les feuilles se mangent aussi comme des épinards.
-545;Pâtisson;vegetable;direct;easy;medium;frostTender;none;annual;3;0;30;0;4,5;5;7,8,9;;;;Riche.;Forme de soucoupe volante. Goût fin d'artichaut. Se mange jeune.
+545;Pâtisson;vegetable;direct;easy;medium;frostTender;none;annual;3;0;30;0;4,5;5;7,8,9;;6, 7, 8;;Riche.;Forme de soucoupe volante. Goût fin d'artichaut. Se mange jeune.
 546;Tétragone;vegetable;direct;easy;medium;frostTender;none;annual;3;0;0;0;4,5;5;6,7,8,9,10;;;;Riche.;Remplace l'épinard en été car ne monte pas en graines avec la chaleur.
 547;Roquette;vegetable;partial;easy;medium;hardy;none;annual;3;0;0;0;3,4,5,6,7,8,9;;5,6,7,8,9,10,11;;;;Ordinaire.;Goût poivré. Pousse très vite. Attention aux altises (petits trous dans les feuilles).
-548;Fraisier des Bois;vegetable;partial;easy;medium;veryHardy;none;perennial;5;0;0;0;;3,4,9,10;5,6,7;;;;Humifère (sous-bois).;Couvre-sol d'ombre. Fruits minuscules mais au parfum incomparable. Se ressème seul.
-549;Fraisier (En Pot);vegetable;direct;medium;medium;veryHardy;none;perennial;7;2;15;24;;3,4,8,9;6,7,8,9;;;;Terreau enrichi.;En pot, le substrat sèche vite : arrosage quasi quotidien en été. Couper les stolons qui épuisent le pied.
-550;Fraisier (Pleine Terre);vegetable;direct;easy;medium;veryHardy;none;perennial;3;0;90;0;;3,4,8,9;5,6;;;;Riche et paillé.;Pailler le sol (paille ou film) pour éviter que les fruits ne touchent la terre et pourrissent.
-551;Tomate Cerise (En Pot);vegetable;direct;medium;medium;frostTender;low;annual;7;0;15;0;3,4;5;7,8,9,10;;;;Terreau potager riche.;Choisir des variétés buissonnantes qui ne se taillent pas. Attention au manque d'eau qui fait fendre les fruits.
-552;Tomate Cerise (Pleine Terre);vegetable;direct;easy;medium;frostTender;low;annual;2;0;30;0;3,4;5;7,8,9,10;;;;Riche.;Peut devenir géante (2m). Ne pas tailler les gourmands, elle produira plus de fruits mais plus petits.
+548;Fraisier des Bois;vegetable;partial;easy;medium;veryHardy;none;perennial;5;0;0;0;;3,4,9,10;5,6,7;;7, 8;;Humifère (sous-bois).;Couvre-sol d'ombre. Fruits minuscules mais au parfum incomparable. Se ressème seul.
+549;Fraisier (En Pot);vegetable;direct;medium;medium;veryHardy;none;perennial;7;2;15;24;;3,4,8,9;6,7,8,9;;7, 8;;Terreau enrichi.;En pot, le substrat sèche vite : arrosage quasi quotidien en été. Couper les stolons qui épuisent le pied.
+550;Fraisier (Pleine Terre);vegetable;direct;easy;medium;veryHardy;none;perennial;3;0;90;0;;3,4,8,9;5,6;;7, 8;;Riche et paillé.;Pailler le sol (paille ou film) pour éviter que les fruits ne touchent la terre et pourrissent.
+551;Tomate Cerise (En Pot);vegetable;direct;medium;medium;frostTender;low;annual;7;0;15;0;3,4;5;7,8,9,10;;5, 6, 7, 8;;Terreau potager riche.;Choisir des variétés buissonnantes qui ne se taillent pas. Attention au manque d'eau qui fait fendre les fruits.
+552;Tomate Cerise (Pleine Terre);vegetable;direct;easy;medium;frostTender;low;annual;2;0;30;0;3,4;5;7,8,9,10;;5, 6, 7, 8;;Riche.;Peut devenir géante (2m). Ne pas tailler les gourmands, elle produira plus de fruits mais plus petits.
 553;Radis (EnPot);vegetable;partial;easy;medium;hardy;none;annual;5;0;0;0;3,4,5,6,9;;4,5,6,7,10;;;;Terreau fin.;Idéal pour débuter. Prêt en 3 à 4 semaines. Arroser souvent pour qu'ils ne piquent pas.
 554;Salade (En Pot);vegetable;partial;easy;medium;hardy;none;annual;5;0;15;0;3,4,5,6,7,8;;4,5,6,7,8,9;;;;Terreau universel.;Ne pas arracher la racine : couper les feuilles aux ciseaux, elles repoussent 2 à 3 fois.
-555;Verveine Citronnelle;vegetable;direct;medium;medium;frostTender;none;perennial;5;1;30;24;;5;6,7,8,9;;;;Drainant.;Arbuste gélif à rentrer l'hiver. Feuilles au parfum de citron intense pour tisanes.
+555;Verveine Citronnelle;vegetable;direct;medium;medium;frostTender;none;perennial;5;1;30;24;;5;6,7,8,9;;3, 4;;Drainant.;Arbuste gélif à rentrer l'hiver. Feuilles au parfum de citron intense pour tisanes.
 556;Citronnelle de Madagascar;vegetable;direct;medium;high;frostTender;none;perennial;10;2;15;24;;5;6,7,8,9;;;;Riche.;Graminée tropicale. On consomme la base blanche des tiges (cuisine thaï). Gélive.
-557;Mélisse;vegetable;partial;easy;medium;veryHardy;none;perennial;5;0;0;0;3,4;3,4,9;5,6,7,8,9;;;;Frais.;Aussi envahissante que la menthe. Goût citronné, calmante en infusion.
-558;Origan;vegetable;direct;easy;low;veryHardy;none;perennial;2;0;0;0;3,4;3,4;6,7,8,9;;;;Sec et calcaire.;L'herbe à pizza. Plus il fait sec et chaud, plus il a de goût.
-559;Sarriette Vivace;vegetable;direct;easy;low;veryHardy;none;perennial;2;0;0;0;4,5;3,4;5,6,7,8,9;;;;Pauvre et caillouteux.;Petit sous-arbrisseau persistant. Indispensable pour digérer les haricots.
-560;Laurier Sauce (En Pot);vegetable;partial;medium;medium;semiHardy;none;perennial;5;2;30;24;;3,4;1,2,3,4,5,6,7,8,9,10,11,12;;;;Ordinaire.;Supporte très bien la taille en boule. Protéger le pot du gel intense.
+557;Mélisse;vegetable;partial;easy;medium;veryHardy;none;perennial;5;0;0;0;3,4;3,4,9;5,6,7,8,9;;5, 8;;Frais.;Aussi envahissante que la menthe. Goût citronné, calmante en infusion.
+558;Origan;vegetable;direct;easy;low;veryHardy;none;perennial;2;0;0;0;3,4;3,4;6,7,8,9;;4, 9;;Sec et calcaire.;L'herbe à pizza. Plus il fait sec et chaud, plus il a de goût.
+559;Sarriette Vivace;vegetable;direct;easy;low;veryHardy;none;perennial;2;0;0;0;4,5;3,4;5,6,7,8,9;;4, 9;;Pauvre et caillouteux.;Petit sous-arbrisseau persistant. Indispensable pour digérer les haricots.
+560;Laurier Sauce (En Pot);vegetable;partial;medium;medium;semiHardy;none;perennial;5;2;30;24;;3,4;1,2,3,4,5,6,7,8,9,10,11,12;;3, 9;;Ordinaire.;Supporte très bien la taille en boule. Protéger le pot du gel intense.
 561;Rutabaga;vegetable;partial;easy;medium;veryHardy;none;biennial;5;0;0;0;5,6;7;10,11,12;;;;Frais.;Légume racine oublié. Goût de noisette, se conserve en terre l'hiver.
 562;Crosne du Japon;vegetable;direct;easy;medium;veryHardy;none;perennial;5;0;0;0;;3,4;11,12,1,2;;;;Léger.;Petits tubercules blancs en forme de chenille. Goût fin d'artichaut.
 563;Oca du Pérou;vegetable;partial;medium;medium;frostTender;none;annual;5;0;0;0;;4,5;11,12;;;;Léger.;Tubercules colorés (rose, rouge, jaune). Attendre que le feuillage gèle pour récolter.
@@ -566,18 +566,18 @@
 565;Pourpier Doré;vegetable;direct;easy;low;frostTender;none;annual;2;0;0;0;5,6,7,8;;6,7,8,9;;;;Léger.;Salade d'été aux feuilles grasses et croquantes. Riche en Omega-3.
 566;Cresson Alénois;vegetable;partial;easy;high;hardy;none;annual;10;5;0;0;1,2,3,4,5,6,7,8,9,10,11,12;;1,2,3,4,5,6,7,8,9,10,11,12;;;;Humide (ou coton).;Pousse en 10 jours, même en intérieur sur du coton humide. Goût piquant.
 567;Pissenlit;vegetable;direct;easy;medium;veryHardy;none;perennial;0;0;0;0;3,4,5;;3,4,11;;;;Ordinaire.;Variétés cultivées améliorées pour la salade. Blanchir les feuilles pour moins d'amertume.
-568;Cardon;vegetable;direct;medium;medium;semiHardy;none;perennial;10;0;15;0;4,5;5;10,11;;;;Riche.;Cousin de l'artichaut, on mange les côtes. Doit être blanchi (emballé dans du carton) avant récolte.
+568;Cardon;vegetable;direct;medium;medium;semiHardy;none;perennial;10;0;15;0;4,5;5;10,11;;11;;Riche.;Cousin de l'artichaut, on mange les côtes. Doit être blanchi (emballé dans du carton) avant récolte.
 569;Lentille;vegetable;partial;medium;medium;hardy;none;annual;2;0;0;0;3,4;;7,8;;;;Pauvre et léger.;Enrichit le sol en azote. Récolter quand les gousses jaunissent.
-570;Coqueret du Pérou;vegetable;direct;medium;medium;frostTender;none;annual;5;0;15;0;3,4;5;9,10,11;;;;Riche.;Le fruit comestible (baie jaune sucrée), différent de l'Amour en cage décoratif.
-571;Framboisier (Pot / Nain);vegetable;partial;easy;medium;veryHardy;none;perennial;10;0;30;24;;11,3;6,8,9;;;;Riche.;Variétés compactes sans épines pour terrasses. Ne pas laisser sécher le pot.
-572;Canneberge;vegetable;partial;hard;high;veryHardy;none;perennial;15;5;0;0;;3,4;9,1;;;;Tourbe pure (très acide) et gorgé d'eau.;Couvre-sol. Demande un sol constamment humide et acide.
-573;Baie de Goji;vegetable;direct;easy;low;veryHardy;none;perennial;5;0;0;0;;3,4,10;8,9,10;;;;Calcaire et sec.;Arbuste désordonné. Consommer les baies bien mûres (rouges) et séchées.
+570;Coqueret du Pérou;vegetable;direct;medium;medium;frostTender;none;annual;5;0;15;0;3,4;5;9,10,11;;6, 7, 8;;Riche.;Le fruit comestible (baie jaune sucrée), différent de l'Amour en cage décoratif.
+571;Framboisier (Pot / Nain);vegetable;partial;easy;medium;veryHardy;none;perennial;10;0;30;24;;11,3;6,8,9;;2, 6, 11;;Riche.;Variétés compactes sans épines pour terrasses. Ne pas laisser sécher le pot.
+572;Canneberge;vegetable;partial;hard;high;veryHardy;none;perennial;15;5;0;0;;3,4;9,1;;3, 4;;Tourbe pure (très acide) et gorgé d'eau.;Couvre-sol. Demande un sol constamment humide et acide.
+573;Baie de Goji;vegetable;direct;easy;low;veryHardy;none;perennial;5;0;0;0;;3,4,10;8,9,10;;12, 1, 2;;Calcaire et sec.;Arbuste désordonné. Consommer les baies bien mûres (rouges) et séchées.
 574;Consoude;outdoor;partial;easy;medium;veryHardy;low;perennial;5;0;0;0;3,4;3,4,10;5,6,7,8;;6,7;;Riche et humide.;Plante engrais : ses feuilles riches en potasse font un purin excellent pour les tomates.
-575;Tanaisie;outdoor;direct;easy;low;veryHardy;low;perennial;2;0;0;0;3,4;3,4;7,8,9;;3,4,2009;;Ordinaire.;Odeur forte qui repousse les insectes nuisibles (mouches, fourmis) au potager.
+575;Tanaisie;outdoor;direct;easy;low;veryHardy;low;perennial;2;0;0;0;3,4;3,4;7,8,9;;3,4,9;;Ordinaire.;Odeur forte qui repousse les insectes nuisibles (mouches, fourmis) au potager.
 576;Lin Bleu;outdoor;direct;easy;low;veryHardy;none;perennial;0;0;0;0;3,4,5;;;;6,7;;Sec.;Fleurs d'un bleu céleste qui ne durent qu'un jour. Idéal en prairie fleurie.
 577;Oignon Rocambole;vegetable;direct;easy;medium;veryHardy;low;perennial;5;0;0;0;;3,4,10;7,8,9;;;;Léger.;Curieux : les bulbilles poussent au sommet des tiges (en l'air) !
-578;Poireau Perpétuel;vegetable;direct;easy;medium;veryHardy;none;perennial;0;0;0;0;;8,9;10,11,12,1,2,3,4,5;;;;Ordinaire.;Plus petit que le poireau classique, on le coupe au ras du sol et il repousse.
-579;Chou Daubenton;vegetable;partial;easy;medium;veryHardy;none;perennial;5;0;15;0;;3,4,9;1,2,3,4,5,6,7,8,9,10,11,12;;;;Riche.;Ne fait pas de pomme. On récolte les feuilles au fur et à mesure pendant 3-4 ans.
+578;Poireau Perpétuel;vegetable;direct;easy;medium;veryHardy;none;perennial;0;0;0;0;;8,9;10,11,12,1,2,3,4,5;;5, 8;;Ordinaire.;Plus petit que le poireau classique, on le coupe au ras du sol et il repousse.
+579;Chou Daubenton;vegetable;partial;easy;medium;veryHardy;none;perennial;5;0;15;0;;3,4,9;1,2,3,4,5,6,7,8,9,10,11,12;;5, 8;;Riche.;Ne fait pas de pomme. On récolte les feuilles au fur et à mesure pendant 3-4 ans.
 580;Raifort;vegetable;partial;easy;medium;veryHardy;low;perennial;5;0;0;0;;3,4;9,10,11,12;;;;Profond.;Racine au goût piquant (wasabi). Très envahissant, à isoler dans un coin.
 581;Capucine Tubéreuse;vegetable;partial;medium;medium;frostTender;none;annual;10;0;0;0;;4,5;11;;;;Léger.;Grimpante produisant des tubercules au goût poivré anisé. Récolter après les gelées.
 582;Poire de Terre;vegetable;partial;easy;medium;frostTender;none;perennial;10;0;0;0;;4,5;11;;;;Riche.;Tubercules croquants et sucrés comme une poire/melon. Stocker hors gel l'hiver.
@@ -585,28 +585,28 @@
 584;Moutarde de Chine;vegetable;direct;easy;medium;hardy;none;annual;5;0;0;0;3,4,8,9;;5,6,10,11;;;;Frais.;Feuilles au goût piquant de moutarde. Pousse très vite.
 585;Mizuna;vegetable;partial;easy;medium;hardy;none;annual;5;0;0;0;3,4,8,9;;5,6,10,11;;;;Frais.;Chou japonais à feuilles découpées, goût doux. Idéal en mesclun.
 586;Tatsoi;vegetable;partial;easy;medium;veryHardy;none;annual;5;0;0;0;8,9;;10,11,12,1;;;;Frais.;Petites feuilles vert foncé en rosette plate. Très résistant au froid.
-587;Angélique;vegetable;partial;medium;high;veryHardy;none;biennial;10;0;0;0;7,8;3,4;5,6;;;;Humide et profond.;Plante géante (2m) aromatique utilisée en confiserie. Meurt après la floraison.
-588;Camomille Romaine;vegetable;direct;easy;low;veryHardy;none;perennial;5;0;0;0;3,4;3,4;6,7,8;;;;Léger.;Fleurs blanches en pompons. Tisane apaisante. Ne pas confondre avec la Matricaire (annuelle).
-589;Hysope;vegetable;direct;easy;low;veryHardy;none;perennial;2;0;0;0;4;3,4,9;7,8;;;;Sec et caillouteux.;Arbrisseau aromatique à fleurs bleues. Plante médicinale ancienne.
-590;Kiwaï;vegetable;partial;medium;medium;veryHardy;none;perennial;10;0;30;0;;11,3;9,1;;;;Riche.;Mini kiwi à peau lisse qui se mange entier. Très résistant au froid.
+587;Angélique;vegetable;partial;medium;high;veryHardy;none;biennial;10;0;0;0;7,8;3,4;5,6;;9;;Humide et profond.;Plante géante (2m) aromatique utilisée en confiserie. Meurt après la floraison.
+588;Camomille Romaine;vegetable;direct;easy;low;veryHardy;none;perennial;5;0;0;0;3,4;3,4;6,7,8;;4, 9;;Léger.;Fleurs blanches en pompons. Tisane apaisante. Ne pas confondre avec la Matricaire (annuelle).
+589;Hysope;vegetable;direct;easy;low;veryHardy;none;perennial;2;0;0;0;4;3,4,9;7,8;;3, 9;;Sec et caillouteux.;Arbrisseau aromatique à fleurs bleues. Plante médicinale ancienne.
+590;Kiwaï;vegetable;partial;medium;medium;veryHardy;none;perennial;10;0;30;0;;11,3;9,1;;12, 1, 6;;Riche.;Mini kiwi à peau lisse qui se mange entier. Très résistant au froid.
 591;Arroche;vegetable;partial;easy;medium;hardy;none;annual;5;0;0;0;3,4,5,6;;5,6,7,8;;;;Frais.;Grande plante aux feuilles rouges ou vertes, alternative à l'épinard. Monte vite en graines.
 592;Scorsonère;vegetable;direct;easy;medium;veryHardy;none;perennial;5;0;0;0;3,4,5;;10,11,12,1,2,3;;;;Profond.;Racine à peau noire et chair blanche. Plus fine que le salsifis.
 593;Pois Chiche;vegetable;direct;easy;low;semiHardy;none;annual;0;0;0;0;3,4,5;;7,8;;;;Sec et pauvre.;Plante méditerranéenne qui déteste l'humidité. 2 pois par gousse.
-594;Marjolaine;vegetable;direct;medium;low;frostTender;none;annual;5;0;0;0;3,4,5;5;6,7,8,9;;;;Sec et drainant.;Souvent confondue avec l'Origan, mais elle craint le gel ! À rentrer l'hiver ou ressemer chaque année.
+594;Marjolaine;vegetable;direct;medium;low;frostTender;none;annual;5;0;0;0;3,4,5;5;6,7,8,9;;4, 9;;Sec et drainant.;Souvent confondue avec l'Origan, mais elle craint le gel ! À rentrer l'hiver ou ressemer chaque année.
 595;Basilic Thaï;vegetable;direct;medium;medium;frostTender;none;annual;3;0;15;0;3,4;5;6,7,8,9;;;;Riche et frais.;Tiges pourpres et goût épicé (anis/estragon). Indispensable pour les currys et soupes asiatiques.
-596;Ciboulette de Chine;vegetable;partial;easy;medium;veryHardy;none;perennial;5;0;0;0;3,4;3,4;5,6,7,8,9,10;;;;Frais.;Différente de la ciboulette classique : feuilles plates, fleurs blanches et goût d'ail prononcé.
-597;Sauge Ananas;vegetable;partial;easy;medium;frostTender;none;perennial;3;10;30;12;;5;6,7,8,9,10,11;;;;Riche.;Feuillage qui sent incroyablement l'ananas frais. Fleurs rouges comestibles en automne. À rentrer l'hiver.
-598;Menthe Chocolat;vegetable;partial;easy;medium;veryHardy;none;perennial;3;10;30;12;;3,4;4,5,6,7,8,9;;;;Frais.;Tiges foncées, goût rappelant les 'After Eight'. Parfaite en pot pour ne pas envahir le jardin.
-599;Oseille Sanguine;vegetable;partial;easy;medium;veryHardy;low;perennial;5;0;0;0;3,4;3,4;4,5,6,7,8,9;;;;Humifère.;Magnifique plante décorative (veines rouges) et comestible (jeunes feuilles en salade).
-600;Agastache;vegetable;direct;easy;medium;hardy;none;perennial;5;0;0;0;3,4;4,5;6,7,8,9;;;;Drainant.;Goût anisé/réglisse. Épis mauves très appréciés des abeilles. Superbe en potée fleurie.
+596;Ciboulette de Chine;vegetable;partial;easy;medium;veryHardy;none;perennial;5;0;0;0;3,4;3,4;5,6,7,8,9,10;;5, 8;;Frais.;Différente de la ciboulette classique : feuilles plates, fleurs blanches et goût d'ail prononcé.
+597;Sauge Ananas;vegetable;partial;easy;medium;frostTender;none;perennial;3;10;30;12;;5;6,7,8,9,10,11;;4, 9;;Riche.;Feuillage qui sent incroyablement l'ananas frais. Fleurs rouges comestibles en automne. À rentrer l'hiver.
+598;Menthe Chocolat;vegetable;partial;easy;medium;veryHardy;none;perennial;3;10;30;12;;3,4;4,5,6,7,8,9;;5, 8;;Frais.;Tiges foncées, goût rappelant les 'After Eight'. Parfaite en pot pour ne pas envahir le jardin.
+599;Oseille Sanguine;vegetable;partial;easy;medium;veryHardy;low;perennial;5;0;0;0;3,4;3,4;4,5,6,7,8,9;;5, 8;;Humifère.;Magnifique plante décorative (veines rouges) et comestible (jeunes feuilles en salade).
+600;Agastache;vegetable;direct;easy;medium;hardy;none;perennial;5;0;0;0;3,4;4,5;6,7,8,9;;3, 9;;Drainant.;Goût anisé/réglisse. Épis mauves très appréciés des abeilles. Superbe en potée fleurie.
 601;Shiso;vegetable;direct;medium;medium;frostTender;none;annual;3;0;15;0;4,5;5;7,8,9;;;;Riche.;Existe en vert ou pourpre. Goût unique (cumin/cannelle/menthe), star des sushis et sashimis.
 602;Céleri à couper;vegetable;partial;easy;high;hardy;none;biennial;3;0;15;0;4,5;5;6,7,8,9,10,11;;;;Riche et humide.;Beaucoup plus facile en pot que le céleri-rave. On coupe les feuilles pour aromatiser les soupes.
-603;Pimprenelle;vegetable;direct;easy;low;veryHardy;none;perennial;5;0;0;0;3,4;3,4,9;1,2,3,4,5,6,7,8,9,10,11,12;;;;Calcaire et sec.;Joli feuillage dentelé persistant. Goût surprenant de concombre frais.
+603;Pimprenelle;vegetable;direct;easy;low;veryHardy;none;perennial;5;0;0;0;3,4;3,4,9;1,2,3,4,5,6,7,8,9,10,11,12;;5, 8;;Calcaire et sec.;Joli feuillage dentelé persistant. Goût surprenant de concombre frais.
 604;Basilic (Grand Vert);vegetable;direct;medium;medium;frostTender;none;annual;2;0;15;0;3,4,5;5,6;6,7,8,9;;;;Riche et drainant.;En pot, il faut l'arroser souvent (le matin) sans jamais mouiller les feuilles. Pincer les fleurs dès leur apparition.
 605;Persil (En Pot);vegetable;partial;medium;medium;hardy;low;biennial;3;10;30;0;3,4,5,6,7,8,9;3,4,5;1,2,3,4,5,6,7,8,9,10,11,12;;;;Riche.;A une racine pivot (longue) : il lui faut un pot profond, pas une jardinière plate. Tient bien l'hiver.
-606;Thym (En Pot);vegetable;direct;medium;low;veryHardy;none;perennial;5;20;0;24;4,5;3,4,9,10;1,2,3,4,5,6,7,8,9,10,11,12;;;;Très drainant (Sable/Terreau).;En pot, l'ennemi est l'eau stagnante : pas de soucoupe ! Tailler après la floraison pour qu'il reste compact.
-607;Romarin (En Pot);vegetable;direct;medium;low;hardy;none;perennial;5;20;0;24;;3,4,9,10;1,2,3,4,5,6,7,8,9,10,11,12;;;;Calcaire et drainant.;Préférer un pot en terre cuite pour que les racines respirent. Tailler le bois vert, jamais le vieux bois sec.
-608;Ciboulette (En Pot);vegetable;partial;easy;medium;veryHardy;none;perennial;3;10;30;12;3,4;3,4;4,5,6,7,8,9,10;;;;Frais.;Couper régulièrement aux ciseaux pour stimuler la repousse. Disparaît en hiver pour mieux revenir.
-609;Sauge Officinale (En Pot);vegetable;direct;easy;low;veryHardy;none;perennial;5;20;0;24;4;3,4,9;1,2,3,4,5,6,7,8,9,10,11,12;;;;Drainant.;Feuillage persistant. En pot, elle vieillit vite (3-4 ans) et devient ligneuse (bois sec).
-610;Estragon (En Pot);vegetable;partial;medium;medium;hardy;none;perennial;3;0;30;24;;4,5;5,6,7,8,9;;;;Léger.;Il rentre en dormance l'hiver (plus de feuilles). Attention à ne pas jeter le pot, il repart au printemps !
-611;Origan (En Pot);vegetable;direct;easy;low;veryHardy;none;perennial;5;20;0;24;3,4;3,4;6,7,8,9,10;;;;Sec et drainant.;Parfait pour les balcons plein sud. Les fleurs attirent les abeilles.
+606;Thym (En Pot);vegetable;direct;medium;low;veryHardy;none;perennial;5;20;0;24;4,5;3,4,9,10;1,2,3,4,5,6,7,8,9,10,11,12;;4, 9;;Très drainant (Sable/Terreau).;En pot, l'ennemi est l'eau stagnante : pas de soucoupe ! Tailler après la floraison pour qu'il reste compact.
+607;Romarin (En Pot);vegetable;direct;medium;low;hardy;none;perennial;5;20;0;24;;3,4,9,10;1,2,3,4,5,6,7,8,9,10,11,12;;4, 9;;Calcaire et drainant.;Préférer un pot en terre cuite pour que les racines respirent. Tailler le bois vert, jamais le vieux bois sec.
+608;Ciboulette (En Pot);vegetable;partial;easy;medium;veryHardy;none;perennial;3;10;30;12;3,4;3,4;4,5,6,7,8,9,10;;5, 8;;Frais.;Couper régulièrement aux ciseaux pour stimuler la repousse. Disparaît en hiver pour mieux revenir.
+609;Sauge Officinale (En Pot);vegetable;direct;easy;low;veryHardy;none;perennial;5;20;0;24;4;3,4,9;1,2,3,4,5,6,7,8,9,10,11,12;;4, 9;;Drainant.;Feuillage persistant. En pot, elle vieillit vite (3-4 ans) et devient ligneuse (bois sec).
+610;Estragon (En Pot);vegetable;partial;medium;medium;hardy;none;perennial;3;0;30;24;;4,5;5,6,7,8,9;;4, 9;;Léger.;Il rentre en dormance l'hiver (plus de feuilles). Attention à ne pas jeter le pot, il repart au printemps !
+611;Origan (En Pot);vegetable;direct;easy;low;veryHardy;none;perennial;5;20;0;24;3,4;3,4;6,7,8,9,10;;4, 9;;Sec et drainant.;Parfait pour les balcons plein sud. Les fleurs attirent les abeilles.

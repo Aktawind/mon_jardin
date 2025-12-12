@@ -3210,7 +3210,10 @@
       3,
       4
     ],
-    "pruning_months": [],
+    "pruning_months": [
+      5,
+      8
+    ],
     "wintering_months": [
       11,
       12,
@@ -3262,7 +3265,10 @@
       3,
       4
     ],
-    "pruning_months": [],
+    "pruning_months": [
+      4,
+      9
+    ],
     "wintering_months": [
       11,
       12,
@@ -3292,7 +3298,10 @@
       3,
       4
     ],
-    "pruning_months": [],
+    "pruning_months": [
+      4,
+      9
+    ],
     "wintering_months": [
       11,
       12,
@@ -3319,7 +3328,10 @@
     "planting_months": [],
     "harvest_months": [],
     "repotting_months": [],
-    "pruning_months": [],
+    "pruning_months": [
+      3,
+      7
+    ],
     "wintering_months": [],
     "soil": "Terreau potager.",
     "pruning": "Besoin de beaucoup de lumière pour faire des fruits."
@@ -4180,7 +4192,10 @@
       3,
       4
     ],
-    "pruning_months": [],
+    "pruning_months": [
+      3,
+      9
+    ],
     "wintering_months": [
       11,
       12,
@@ -5254,7 +5269,7 @@
     "pruning_months": [
       5,
       6,
-      2009
+      9
     ],
     "wintering_months": [
       11,
@@ -5586,7 +5601,9 @@
       3,
       4
     ],
-    "pruning_months": [],
+    "pruning_months": [
+      4
+    ],
     "wintering_months": [
       11,
       12,
@@ -5860,7 +5877,11 @@
       2,
       3
     ],
-    "pruning_months": [],
+    "pruning_months": [
+      12,
+      1,
+      2
+    ],
     "wintering_months": [],
     "soil": "Terre profonde et argileuse.",
     "pruning": "Taille de fructification en fin d'hiver, hors gel."
@@ -5888,7 +5909,11 @@
       2,
       3
     ],
-    "pruning_months": [],
+    "pruning_months": [
+      12,
+      1,
+      2
+    ],
     "wintering_months": [],
     "soil": "Terre riche et profonde.",
     "pruning": "Supprimer les branches qui se croisent au centre."
@@ -5913,7 +5938,10 @@
       11,
       12
     ],
-    "pruning_months": [],
+    "pruning_months": [
+      7,
+      8
+    ],
     "wintering_months": [],
     "soil": "Tout type de sol, même calcaire.",
     "pruning": "Taille légère après la récolte (été) pour éviter la gommose."
@@ -5941,7 +5969,10 @@
       2,
       3
     ],
-    "pruning_months": [],
+    "pruning_months": [
+      7,
+      8
+    ],
     "wintering_months": [],
     "soil": "Sols légers et profonds.",
     "pruning": "N'aime pas être taillé sévèrement."
@@ -5967,7 +5998,10 @@
       2,
       3
     ],
-    "pruning_months": [],
+    "pruning_months": [
+      2,
+      3
+    ],
     "wintering_months": [],
     "soil": "Léger et drainant, craint le calcaire.",
     "pruning": "Sensible à la cloque du pêcher. Tailler juste avant la floraison."
@@ -5995,7 +6029,10 @@
       2,
       3
     ],
-    "pruning_months": [],
+    "pruning_months": [
+      7,
+      8
+    ],
     "wintering_months": [],
     "soil": "Drainant et chaud.",
     "pruning": "Fleurit tôt, craint les gelées tardives."
@@ -6019,7 +6056,11 @@
     "repotting_months": [
       11
     ],
-    "pruning_months": [],
+    "pruning_months": [
+      7,
+      8,
+      12
+    ],
     "wintering_months": [],
     "soil": "Profond.",
     "pruning": "Ne rien faire planter sous un noyer. Tailler en automne pour éviter l'écoulement de sève."
@@ -6046,7 +6087,11 @@
       1,
       2
     ],
-    "pruning_months": [],
+    "pruning_months": [
+      12,
+      1,
+      2
+    ],
     "wintering_months": [],
     "soil": "Ordinaire.",
     "pruning": "Supprimer les vieux bois pour aérer la touffe."
@@ -6505,7 +6550,7 @@
     "pruning_months": [
       3,
       6,
-      2009
+      9
     ],
     "wintering_months": [],
     "soil": "Ordinaire.",
@@ -6622,7 +6667,7 @@
     "pruning_months": [
       4,
       6,
-      2009
+      9
     ],
     "wintering_months": [],
     "soil": "Calcaire.",
@@ -6678,7 +6723,7 @@
     "pruning_months": [
       2,
       7,
-      2008
+      8
     ],
     "wintering_months": [],
     "soil": "Pauvre et sableux.",
@@ -6707,7 +6752,13 @@
       2,
       3
     ],
-    "pruning_months": [],
+    "pruning_months": [
+      11,
+      12,
+      1,
+      2,
+      7
+    ],
     "wintering_months": [],
     "soil": "Calcaire et caillouteux.",
     "pruning": "Taille complexe mais indispensable pour avoir du raisin."
@@ -6793,7 +6844,7 @@
     "pruning_months": [
       3,
       4,
-      2009
+      9
     ],
     "wintering_months": [],
     "soil": "Calcaire.",
@@ -7097,7 +7148,10 @@
       11,
       3
     ],
-    "pruning_months": [],
+    "pruning_months": [
+      3,
+      4
+    ],
     "wintering_months": [],
     "soil": "Drainant.",
     "pruning": "Persistant. Porte ses fruits rouges comestibles et ses fleurs en même temps."
@@ -7150,7 +7204,11 @@
       11,
       12
     ],
-    "pruning_months": [],
+    "pruning_months": [
+      12,
+      1,
+      2
+    ],
     "wintering_months": [],
     "soil": "Tout sol.",
     "pruning": "Rustique et peu sensible aux maladies. Les fruits se consomment cuits."
@@ -7494,7 +7552,7 @@
     "pruning_months": [
       3,
       4,
-      2009
+      9
     ],
     "wintering_months": [],
     "soil": "Ordinaire.",
@@ -7640,7 +7698,7 @@
     "pruning_months": [
       3,
       4,
-      2009
+      9
     ],
     "wintering_months": [],
     "soil": "Drainant.",
@@ -8730,7 +8788,10 @@
       4,
       9
     ],
-    "pruning_months": [],
+    "pruning_months": [
+      4,
+      9
+    ],
     "wintering_months": [],
     "soil": "Sec et calcaire.",
     "pruning": "Feuillage gris persistant. 'Qui a de la sauge dans son jardin n'a pas besoin de médecin'."
@@ -9015,7 +9076,7 @@
     "pruning_months": [
       3,
       4,
-      2009
+      9
     ],
     "wintering_months": [],
     "soil": "Tout sol.",
@@ -9760,7 +9821,10 @@
       3,
       4
     ],
-    "pruning_months": [],
+    "pruning_months": [
+      4,
+      9
+    ],
     "wintering_months": [],
     "soil": "Sec.",
     "pruning": "Feuillage argenté dégageant une forte odeur de curry, surtout après la pluie."
@@ -9874,7 +9938,10 @@
       3,
       4
     ],
-    "pruning_months": [],
+    "pruning_months": [
+      4,
+      9
+    ],
     "wintering_months": [],
     "soil": "Sec.",
     "pruning": "Forme retombante du romarin, idéale pour couvrir un talus ou muret."
@@ -10185,7 +10252,7 @@
     "pruning_months": [
       3,
       4,
-      2009
+      9
     ],
     "wintering_months": [],
     "soil": "Ordinaire.",
@@ -11050,7 +11117,7 @@
     "pruning_months": [
       3,
       4,
-      2009
+      9
     ],
     "wintering_months": [],
     "soil": "Riche.",
@@ -11108,7 +11175,7 @@
     "pruning_months": [
       3,
       4,
-      2009
+      9
     ],
     "wintering_months": [
       11,
@@ -11768,7 +11835,7 @@
     "pruning_months": [
       3,
       4,
-      2009
+      9
     ],
     "wintering_months": [],
     "soil": "Sec.",
@@ -12390,7 +12457,7 @@
     "pruning_months": [
       3,
       4,
-      2009
+      9
     ],
     "wintering_months": [],
     "soil": "Riche.",
@@ -12565,7 +12632,11 @@
       1,
       2
     ],
-    "pruning_months": [],
+    "pruning_months": [
+      2,
+      6,
+      11
+    ],
     "wintering_months": [],
     "soil": "Riche.",
     "pruning": "Tailler au ras du sol les tiges ayant donné des fruits (elles sèchent)."
@@ -12592,7 +12663,12 @@
       1,
       2
     ],
-    "pruning_months": [],
+    "pruning_months": [
+      11,
+      12,
+      1,
+      2
+    ],
     "wintering_months": [],
     "soil": "Frais.",
     "pruning": "Supprimer le vieux bois (tiges noires) au centre pour aérer."
@@ -12619,7 +12695,10 @@
       1,
       2
     ],
-    "pruning_months": [],
+    "pruning_months": [
+      2,
+      7
+    ],
     "wintering_months": [],
     "soil": "Ordinaire.",
     "pruning": "Choisir des variétés sans épines ('Thornless'). Palisser contre un mur."
@@ -12645,7 +12724,11 @@
       2,
       3
     ],
-    "pruning_months": [],
+    "pruning_months": [
+      12,
+      1,
+      6
+    ],
     "wintering_months": [],
     "soil": "Riche et non calcaire.",
     "pruning": "Liane vigoureuse. Il faut souvent un pied mâle et un pied femelle."
@@ -12696,7 +12779,9 @@
       3,
       4
     ],
-    "pruning_months": [],
+    "pruning_months": [
+      11
+    ],
     "wintering_months": [
       11,
       12,
@@ -12916,7 +13001,11 @@
       11,
       3
     ],
-    "pruning_months": [],
+    "pruning_months": [
+      12,
+      1,
+      2
+    ],
     "wintering_months": [],
     "soil": "Terre de bruyère pure (Acide).",
     "pruning": "Ne pousse pas du tout en terre calcaire. Délicieuses baies bleues."
@@ -12941,7 +13030,12 @@
       11,
       3
     ],
-    "pruning_months": [],
+    "pruning_months": [
+      11,
+      12,
+      1,
+      2
+    ],
     "wintering_months": [],
     "soil": "Frais.",
     "pruning": "Produit des baies translucides plus grosses que les groseilles. Épineux."
@@ -12966,7 +13060,11 @@
       11,
       3
     ],
-    "pruning_months": [],
+    "pruning_months": [
+      12,
+      1,
+      2
+    ],
     "wintering_months": [],
     "soil": "Profond.",
     "pruning": "Fruits oranges qui restent sur l'arbre après la chute des feuilles en hiver."
@@ -12990,7 +13088,10 @@
     "repotting_months": [
       11
     ],
-    "pruning_months": [],
+    "pruning_months": [
+      7,
+      8
+    ],
     "wintering_months": [],
     "soil": "Calcaire et sec.",
     "pruning": "Le premier fruitier à fleurir (février). Sensible au gel tardif."
@@ -13468,7 +13569,7 @@
     "pruning_months": [
       3,
       4,
-      2009
+      9
     ],
     "wintering_months": [
       12,
@@ -13808,7 +13909,7 @@
     "pruning_months": [
       3,
       4,
-      2009
+      9
     ],
     "wintering_months": [
       11,
@@ -13839,7 +13940,7 @@
     "pruning_months": [
       3,
       4,
-      2009
+      9
     ],
     "wintering_months": [],
     "soil": "Tout sol drainant (craint l'argile humide).",
@@ -14092,7 +14193,7 @@
     "pruning_months": [
       3,
       4,
-      2009
+      9
     ],
     "wintering_months": [],
     "soil": "Riche et frais.",
@@ -14118,7 +14219,7 @@
     "pruning_months": [
       3,
       4,
-      2009
+      9
     ],
     "wintering_months": [],
     "soil": "Tout sol.",
@@ -14144,7 +14245,10 @@
       3,
       4
     ],
-    "pruning_months": [],
+    "pruning_months": [
+      5,
+      8
+    ],
     "wintering_months": [],
     "soil": "Terreau ordinaire.",
     "pruning": "La meilleure façon de cultiver la menthe. Elle reste sage dans son pot et ne colonise pas le jardin."
@@ -14166,7 +14270,10 @@
     "planting_months": [],
     "harvest_months": [],
     "repotting_months": [],
-    "pruning_months": [],
+    "pruning_months": [
+      5,
+      8
+    ],
     "wintering_months": [],
     "soil": "Frais.",
     "pruning": "ATTENTION : Extrêmement envahissante par ses racines souterraines. À planter dans un seau sans fond enterré pour la limiter."
@@ -14302,7 +14409,11 @@
       11,
       3
     ],
-    "pruning_months": [],
+    "pruning_months": [
+      11,
+      12,
+      3
+    ],
     "wintering_months": [
       11,
       12
@@ -14327,7 +14438,11 @@
     "planting_months": [],
     "harvest_months": [],
     "repotting_months": [],
-    "pruning_months": [],
+    "pruning_months": [
+      11,
+      12,
+      3
+    ],
     "wintering_months": [],
     "soil": "Tout sol.",
     "pruning": "Ses racines sont très puissantes, ne pas planter près d'une piscine ou d'une maison."
@@ -14470,7 +14585,12 @@
       10
     ],
     "repotting_months": [],
-    "pruning_months": [],
+    "pruning_months": [
+      5,
+      6,
+      7,
+      8
+    ],
     "wintering_months": [],
     "soil": "Riche et profond.",
     "pruning": "Supprimer les gourmands (tiges à l'aisselle des feuilles). Feuilles toxiques."
@@ -14502,7 +14622,11 @@
       9
     ],
     "repotting_months": [],
-    "pruning_months": [],
+    "pruning_months": [
+      6,
+      7,
+      8
+    ],
     "wintering_months": [],
     "soil": "Très riche (compost).",
     "pruning": "Non taillée, mais récolter jeune pour stimuler la production. Attention à l'oïdium."
@@ -14533,7 +14657,11 @@
       9
     ],
     "repotting_months": [],
-    "pruning_months": [],
+    "pruning_months": [
+      6,
+      7,
+      8
+    ],
     "wintering_months": [],
     "soil": "Riche et frais.",
     "pruning": "Pincer la tête après 3-4 feuilles. A besoin de beaucoup d'eau mais pas sur les feuilles."
@@ -14564,7 +14692,12 @@
       9
     ],
     "repotting_months": [],
-    "pruning_months": [],
+    "pruning_months": [
+      5,
+      6,
+      7,
+      8
+    ],
     "wintering_months": [],
     "soil": "Riche.",
     "pruning": "Demande beaucoup de chaleur. Pincer pour ramifier."
@@ -14595,7 +14728,12 @@
       9
     ],
     "repotting_months": [],
-    "pruning_months": [],
+    "pruning_months": [
+      5,
+      6,
+      7,
+      8
+    ],
     "wintering_months": [],
     "soil": "Riche.",
     "pruning": "Vert = pas mûr. Rouge/Jaune = mûr et sucré."
@@ -14799,7 +14937,11 @@
       11
     ],
     "repotting_months": [],
-    "pruning_months": [],
+    "pruning_months": [
+      6,
+      7,
+      8
+    ],
     "wintering_months": [],
     "soil": "Très riche (tas de compost).",
     "pruning": "Coureuse. Se conserve tout l'hiver."
@@ -14829,7 +14971,11 @@
       1
     ],
     "repotting_months": [],
-    "pruning_months": [],
+    "pruning_months": [
+      6,
+      7,
+      8
+    ],
     "wintering_months": [],
     "soil": "Riche.",
     "pruning": "Goût de noisette. Récolter quand le pédoncule est sec."
@@ -14860,7 +15006,10 @@
       9
     ],
     "repotting_months": [],
-    "pruning_months": [],
+    "pruning_months": [
+      6,
+      7
+    ],
     "wintering_months": [],
     "soil": "Riche.",
     "pruning": "Taille complexe nécessaire pour avoir des fruits au nord de la Loire."
@@ -15462,7 +15611,10 @@
       6
     ],
     "repotting_months": [],
-    "pruning_months": [],
+    "pruning_months": [
+      11,
+      12
+    ],
     "wintering_months": [],
     "soil": "Sableux.",
     "pruning": "Culture longue : on plante les griffes et on ne récolte que la 3ème année."
@@ -15492,7 +15644,9 @@
       6
     ],
     "repotting_months": [],
-    "pruning_months": [],
+    "pruning_months": [
+      5
+    ],
     "wintering_months": [],
     "soil": "Lourd.",
     "pruning": "Pincer la tête après le 6ème étage de fleurs pour éviter les pucerons noirs."
@@ -15584,7 +15738,11 @@
       9
     ],
     "repotting_months": [],
-    "pruning_months": [],
+    "pruning_months": [
+      6,
+      7,
+      8
+    ],
     "wintering_months": [],
     "soil": "Riche.",
     "pruning": "Récolter tous les jours, sinon ils grossissent trop."
@@ -15618,7 +15776,10 @@
       9
     ],
     "repotting_months": [],
-    "pruning_months": [],
+    "pruning_months": [
+      5,
+      8
+    ],
     "wintering_months": [],
     "soil": "Acide.",
     "pruning": "Couper les fleurs pour favoriser les feuilles. Goût acide citronné."
@@ -15653,7 +15814,10 @@
       10
     ],
     "repotting_months": [],
-    "pruning_months": [],
+    "pruning_months": [
+      5,
+      8
+    ],
     "wintering_months": [],
     "soil": "Ordinaire.",
     "pruning": "Plus grosse que la ciboulette, ne forme pas de bulbe. Indispensable en cuisine asiatique."
@@ -15683,7 +15847,10 @@
       9
     ],
     "repotting_months": [],
-    "pruning_months": [],
+    "pruning_months": [
+      4,
+      9
+    ],
     "wintering_months": [],
     "soil": "Léger.",
     "pruning": "Disparaît en hiver. Goût anisé, essentiel pour la sauce béarnaise."
@@ -15874,7 +16041,11 @@
       9
     ],
     "repotting_months": [],
-    "pruning_months": [],
+    "pruning_months": [
+      6,
+      7,
+      8
+    ],
     "wintering_months": [],
     "soil": "Riche.",
     "pruning": "Forme de soucoupe volante. Goût fin d'artichaut. Se mange jeune."
@@ -15976,7 +16147,10 @@
       7
     ],
     "repotting_months": [],
-    "pruning_months": [],
+    "pruning_months": [
+      7,
+      8
+    ],
     "wintering_months": [],
     "soil": "Humifère (sous-bois).",
     "pruning": "Couvre-sol d'ombre. Fruits minuscules mais au parfum incomparable. Se ressème seul."
@@ -16008,7 +16182,10 @@
       9
     ],
     "repotting_months": [],
-    "pruning_months": [],
+    "pruning_months": [
+      7,
+      8
+    ],
     "wintering_months": [],
     "soil": "Terreau enrichi.",
     "pruning": "En pot, le substrat sèche vite : arrosage quasi quotidien en été. Couper les stolons qui épuisent le pied."
@@ -16038,7 +16215,10 @@
       6
     ],
     "repotting_months": [],
-    "pruning_months": [],
+    "pruning_months": [
+      7,
+      8
+    ],
     "wintering_months": [],
     "soil": "Riche et paillé.",
     "pruning": "Pailler le sol (paille ou film) pour éviter que les fruits ne touchent la terre et pourrissent."
@@ -16070,7 +16250,12 @@
       10
     ],
     "repotting_months": [],
-    "pruning_months": [],
+    "pruning_months": [
+      5,
+      6,
+      7,
+      8
+    ],
     "wintering_months": [],
     "soil": "Terreau potager riche.",
     "pruning": "Choisir des variétés buissonnantes qui ne se taillent pas. Attention au manque d'eau qui fait fendre les fruits."
@@ -16102,7 +16287,12 @@
       10
     ],
     "repotting_months": [],
-    "pruning_months": [],
+    "pruning_months": [
+      5,
+      6,
+      7,
+      8
+    ],
     "wintering_months": [],
     "soil": "Riche.",
     "pruning": "Peut devenir géante (2m). Ne pas tailler les gourmands, elle produira plus de fruits mais plus petits."
@@ -16201,7 +16391,10 @@
       9
     ],
     "repotting_months": [],
-    "pruning_months": [],
+    "pruning_months": [
+      3,
+      4
+    ],
     "wintering_months": [],
     "soil": "Drainant.",
     "pruning": "Arbuste gélif à rentrer l'hiver. Feuilles au parfum de citron intense pour tisanes."
@@ -16265,7 +16458,10 @@
       9
     ],
     "repotting_months": [],
-    "pruning_months": [],
+    "pruning_months": [
+      5,
+      8
+    ],
     "wintering_months": [],
     "soil": "Frais.",
     "pruning": "Aussi envahissante que la menthe. Goût citronné, calmante en infusion."
@@ -16298,7 +16494,10 @@
       9
     ],
     "repotting_months": [],
-    "pruning_months": [],
+    "pruning_months": [
+      4,
+      9
+    ],
     "wintering_months": [],
     "soil": "Sec et calcaire.",
     "pruning": "L'herbe à pizza. Plus il fait sec et chaud, plus il a de goût."
@@ -16332,7 +16531,10 @@
       9
     ],
     "repotting_months": [],
-    "pruning_months": [],
+    "pruning_months": [
+      4,
+      9
+    ],
     "wintering_months": [],
     "soil": "Pauvre et caillouteux.",
     "pruning": "Petit sous-arbrisseau persistant. Indispensable pour digérer les haricots."
@@ -16370,7 +16572,10 @@
       12
     ],
     "repotting_months": [],
-    "pruning_months": [],
+    "pruning_months": [
+      3,
+      9
+    ],
     "wintering_months": [],
     "soil": "Ordinaire.",
     "pruning": "Supporte très bien la taille en boule. Protéger le pot du gel intense."
@@ -16631,7 +16836,9 @@
       11
     ],
     "repotting_months": [],
-    "pruning_months": [],
+    "pruning_months": [
+      11
+    ],
     "wintering_months": [],
     "soil": "Riche.",
     "pruning": "Cousin de l'artichaut, on mange les côtes. Doit être blanchi (emballé dans du carton) avant récolte."
@@ -16690,7 +16897,11 @@
       11
     ],
     "repotting_months": [],
-    "pruning_months": [],
+    "pruning_months": [
+      6,
+      7,
+      8
+    ],
     "wintering_months": [],
     "soil": "Riche.",
     "pruning": "Le fruit comestible (baie jaune sucrée), différent de l'Amour en cage décoratif."
@@ -16719,7 +16930,11 @@
       9
     ],
     "repotting_months": [],
-    "pruning_months": [],
+    "pruning_months": [
+      2,
+      6,
+      11
+    ],
     "wintering_months": [],
     "soil": "Riche.",
     "pruning": "Variétés compactes sans épines pour terrasses. Ne pas laisser sécher le pot."
@@ -16747,7 +16962,10 @@
       1
     ],
     "repotting_months": [],
-    "pruning_months": [],
+    "pruning_months": [
+      3,
+      4
+    ],
     "wintering_months": [],
     "soil": "Tourbe pure (très acide) et gorgé d'eau.",
     "pruning": "Couvre-sol. Demande un sol constamment humide et acide."
@@ -16777,7 +16995,11 @@
       10
     ],
     "repotting_months": [],
-    "pruning_months": [],
+    "pruning_months": [
+      12,
+      1,
+      2
+    ],
     "wintering_months": [],
     "soil": "Calcaire et sec.",
     "pruning": "Arbuste désordonné. Consommer les baies bien mûres (rouges) et séchées."
@@ -16849,7 +17071,7 @@
     "pruning_months": [
       3,
       4,
-      2009
+      9
     ],
     "wintering_months": [],
     "soil": "Ordinaire.",
@@ -16943,7 +17165,10 @@
       5
     ],
     "repotting_months": [],
-    "pruning_months": [],
+    "pruning_months": [
+      5,
+      8
+    ],
     "wintering_months": [],
     "soil": "Ordinaire.",
     "pruning": "Plus petit que le poireau classique, on le coupe au ras du sol et il repousse."
@@ -16982,7 +17207,10 @@
       12
     ],
     "repotting_months": [],
-    "pruning_months": [],
+    "pruning_months": [
+      5,
+      8
+    ],
     "wintering_months": [],
     "soil": "Riche.",
     "pruning": "Ne fait pas de pomme. On récolte les feuilles au fur et à mesure pendant 3-4 ans."
@@ -17223,7 +17451,9 @@
       6
     ],
     "repotting_months": [],
-    "pruning_months": [],
+    "pruning_months": [
+      9
+    ],
     "wintering_months": [],
     "soil": "Humide et profond.",
     "pruning": "Plante géante (2m) aromatique utilisée en confiserie. Meurt après la floraison."
@@ -17255,7 +17485,10 @@
       8
     ],
     "repotting_months": [],
-    "pruning_months": [],
+    "pruning_months": [
+      4,
+      9
+    ],
     "wintering_months": [],
     "soil": "Léger.",
     "pruning": "Fleurs blanches en pompons. Tisane apaisante. Ne pas confondre avec la Matricaire (annuelle)."
@@ -17286,7 +17519,10 @@
       8
     ],
     "repotting_months": [],
-    "pruning_months": [],
+    "pruning_months": [
+      3,
+      9
+    ],
     "wintering_months": [],
     "soil": "Sec et caillouteux.",
     "pruning": "Arbrisseau aromatique à fleurs bleues. Plante médicinale ancienne."
@@ -17314,7 +17550,11 @@
       1
     ],
     "repotting_months": [],
-    "pruning_months": [],
+    "pruning_months": [
+      12,
+      1,
+      6
+    ],
     "wintering_months": [],
     "soil": "Riche.",
     "pruning": "Mini kiwi à peau lisse qui se mange entier. Très résistant au froid."
@@ -17441,7 +17681,10 @@
       9
     ],
     "repotting_months": [],
-    "pruning_months": [],
+    "pruning_months": [
+      4,
+      9
+    ],
     "wintering_months": [],
     "soil": "Sec et drainant.",
     "pruning": "Souvent confondue avec l'Origan, mais elle craint le gel ! À rentrer l'hiver ou ressemer chaque année."
@@ -17508,7 +17751,10 @@
       10
     ],
     "repotting_months": [],
-    "pruning_months": [],
+    "pruning_months": [
+      5,
+      8
+    ],
     "wintering_months": [],
     "soil": "Frais.",
     "pruning": "Différente de la ciboulette classique : feuilles plates, fleurs blanches et goût d'ail prononcé."
@@ -17539,7 +17785,10 @@
       11
     ],
     "repotting_months": [],
-    "pruning_months": [],
+    "pruning_months": [
+      4,
+      9
+    ],
     "wintering_months": [],
     "soil": "Riche.",
     "pruning": "Feuillage qui sent incroyablement l'ananas frais. Fleurs rouges comestibles en automne. À rentrer l'hiver."
@@ -17571,7 +17820,10 @@
       9
     ],
     "repotting_months": [],
-    "pruning_months": [],
+    "pruning_months": [
+      5,
+      8
+    ],
     "wintering_months": [],
     "soil": "Frais.",
     "pruning": "Tiges foncées, goût rappelant les 'After Eight'. Parfaite en pot pour ne pas envahir le jardin."
@@ -17606,7 +17858,10 @@
       9
     ],
     "repotting_months": [],
-    "pruning_months": [],
+    "pruning_months": [
+      5,
+      8
+    ],
     "wintering_months": [],
     "soil": "Humifère.",
     "pruning": "Magnifique plante décorative (veines rouges) et comestible (jeunes feuilles en salade)."
@@ -17639,7 +17894,10 @@
       9
     ],
     "repotting_months": [],
-    "pruning_months": [],
+    "pruning_months": [
+      3,
+      9
+    ],
     "wintering_months": [],
     "soil": "Drainant.",
     "pruning": "Goût anisé/réglisse. Épis mauves très appréciés des abeilles. Superbe en potée fleurie."
@@ -17746,7 +18004,10 @@
       12
     ],
     "repotting_months": [],
-    "pruning_months": [],
+    "pruning_months": [
+      5,
+      8
+    ],
     "wintering_months": [],
     "soil": "Calcaire et sec.",
     "pruning": "Joli feuillage dentelé persistant. Goût surprenant de concombre frais."
@@ -17870,7 +18131,10 @@
       12
     ],
     "repotting_months": [],
-    "pruning_months": [],
+    "pruning_months": [
+      4,
+      9
+    ],
     "wintering_months": [],
     "soil": "Très drainant (Sable/Terreau).",
     "pruning": "En pot, l'ennemi est l'eau stagnante : pas de soucoupe ! Tailler après la floraison pour qu'il reste compact."
@@ -17910,7 +18174,10 @@
       12
     ],
     "repotting_months": [],
-    "pruning_months": [],
+    "pruning_months": [
+      4,
+      9
+    ],
     "wintering_months": [],
     "soil": "Calcaire et drainant.",
     "pruning": "Préférer un pot en terre cuite pour que les racines respirent. Tailler le bois vert, jamais le vieux bois sec."
@@ -17946,7 +18213,10 @@
       10
     ],
     "repotting_months": [],
-    "pruning_months": [],
+    "pruning_months": [
+      5,
+      8
+    ],
     "wintering_months": [],
     "soil": "Frais.",
     "pruning": "Couper régulièrement aux ciseaux pour stimuler la repousse. Disparaît en hiver pour mieux revenir."
@@ -17987,7 +18257,10 @@
       12
     ],
     "repotting_months": [],
-    "pruning_months": [],
+    "pruning_months": [
+      4,
+      9
+    ],
     "wintering_months": [],
     "soil": "Drainant.",
     "pruning": "Feuillage persistant. En pot, elle vieillit vite (3-4 ans) et devient ligneuse (bois sec)."
@@ -18018,7 +18291,10 @@
       9
     ],
     "repotting_months": [],
-    "pruning_months": [],
+    "pruning_months": [
+      4,
+      9
+    ],
     "wintering_months": [],
     "soil": "Léger.",
     "pruning": "Il rentre en dormance l'hiver (plus de feuilles). Attention à ne pas jeter le pot, il repart au printemps !"
@@ -18052,7 +18328,10 @@
       10
     ],
     "repotting_months": [],
-    "pruning_months": [],
+    "pruning_months": [
+      4,
+      9
+    ],
     "wintering_months": [],
     "soil": "Sec et drainant.",
     "pruning": "Parfait pour les balcons plein sud. Les fleurs attirent les abeilles."

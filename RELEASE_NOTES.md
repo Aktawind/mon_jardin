@@ -27,6 +27,9 @@ Ce fichier trace l'historique des évolutions de l'application Sève.
 
 ## ✅ Versions publiées
 
+### v1.6.3 - "Correctif"
+Correction regression, le pruning_months avait disparu aussi pour les fruitiers
+
 ### v1.6.2 - "Interface UI + correctif"
 Correction regression, le pruning_months avait disparu
 On n'affiche pas de section Calendirer vide
