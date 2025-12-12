@@ -1,5 +1,6 @@
 import 'dart:io';
 import 'dart:convert';
+import 'package:flutter/foundation.dart';
 
 // -------------------------
 // CONFIG
@@ -18,7 +19,7 @@ const tagsCsvPath = "csv/plants_tags.csv";
 // -------------------------
 
 Future<void> main() async {
-  print("🔄 Conversion JSON → CSV...");
+  debugPrint("🔄 Conversion JSON → CSV...");
 
   final coreJson = json.decode(await File(coreJsonPath).readAsString(encoding: utf8))
       as Map<String, dynamic>;
@@ -33,7 +34,7 @@ Future<void> main() async {
   await exportCare(careJson);
   await exportTags(tagsJson);
 
-  print("✅ Conversion terminée !");
+  debugPrint("✅ Conversion terminée !");
 }
 
 // -----------------------------------------------------

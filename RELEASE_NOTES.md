@@ -27,6 +27,9 @@ Ce fichier trace l'historique des évolutions de l'application Sève.
 
 ## ✅ Versions publiées
 
+### v1.6.1 - "Interface UI"
+Amélioration des CircleAvatar avec des icônes plutôt que des lettres
+
 ### v1.6.0 - "Encyclopédie"
 **Ajout de l'écran de l'encyclopédie**
 Accessible via le Drawer.

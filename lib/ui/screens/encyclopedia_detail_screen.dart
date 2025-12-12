@@ -59,7 +59,7 @@ class EncyclopediaDetailScreen extends StatelessWidget {
               ),
             
             const SizedBox(height: 16),
-            Divider(color: Theme.of(context).colorScheme.primary.withOpacity(0.3)),
+            Divider(color: Theme.of(context).colorScheme.primary.withValues(alpha: 0.3)),
             const SizedBox(height: 16),
 
             // 1. CARTE D'IDENTITÉ

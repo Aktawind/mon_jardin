@@ -76,7 +76,7 @@ class _EncyclopediaListScreenState extends State<EncyclopediaListScreen> {
           // BARRE DE RECHERCHE & FILTRES
           Container(
             padding: const EdgeInsets.all(16),
-            color: Theme.of(context).colorScheme.primary.withOpacity(0.05),
+            color: Theme.of(context).colorScheme.primary.withValues(alpha: 0.05),
             child: Column(
               children: [
                 // Champ Texte

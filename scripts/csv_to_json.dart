@@ -1,5 +1,6 @@
 import 'dart:io';
 import 'dart:convert';
+import 'package:flutter/foundation.dart';
 
 // ---------------------
 // CONFIG
@@ -18,7 +19,7 @@ const tagsJsonPath = "assets/plants_tags.json";
 // ---------------------
 
 Future<void> main() async {
-  print("🔄 Conversion CSV → JSON...");
+  debugPrint("🔄 Conversion CSV → JSON...");
 
   final coreJson = await convertCoreCsv();
   final careJson = await convertCareCsv();
@@ -28,7 +29,7 @@ Future<void> main() async {
   await File(careJsonPath).writeAsString(const JsonEncoder.withIndent('  ').convert(careJson), encoding: utf8);
   await File(tagsJsonPath).writeAsString(const JsonEncoder.withIndent('  ').convert(tagsJson), encoding: utf8);
 
-  print("✅ Conversion terminée !");
+  debugPrint("✅ Conversion terminée !");
 }
 
 // ---------------------
