@@ -1,6 +1,5 @@
 import 'dart:io';
 import 'dart:convert';
-import 'package:flutter/foundation.dart';
 
 // -------------------------
 // CONFIG
@@ -19,7 +18,7 @@ const tagsCsvPath = "csv/plants_tags.csv";
 // -------------------------
 
 Future<void> main() async {
-  debugPrint("🔄 Conversion JSON → CSV...");
+  print("🔄 Conversion JSON → CSV...");
 
   final coreJson = json.decode(await File(coreJsonPath).readAsString(encoding: utf8))
       as Map<String, dynamic>;
@@ -34,7 +33,7 @@ Future<void> main() async {
   await exportCare(careJson);
   await exportTags(tagsJson);
 
-  debugPrint("✅ Conversion terminée !");
+  print("✅ Conversion terminée !");
 }
 
 // -----------------------------------------------------
@@ -70,7 +69,7 @@ Future<void> exportCare(Map<String, dynamic> jsonMap) async {
   buffer.writeln(
       "id;species;light;difficulty;humidity;temperature;toxicity;cycle;"
       "waterSummer;waterWinter;fertilizeFreq;repotFreq;"
-      "sowingMonths;plantingMonths;harvestMonths;repottingMonths;winteringMonths;"
+      "sowingMonths;plantingMonths;harvestMonths;repottingMonths;pruningMonths;winteringMonths;"
       "soilInfo;pruningInfo"
   );
 
@@ -95,6 +94,7 @@ Future<void> exportCare(Map<String, dynamic> jsonMap) async {
     final plant = listToCsv(data["planting_months"]);
     final harvest = listToCsv(data["harvest_months"]);
     final repotMonths = listToCsv(data["repotting_months"]);
+    final pruningMonths = listToCsv(data["pruning_months"]);
     final winter = listToCsv(data["wintering_months"]);
 
     final soilInfo = data["soil"] ?? "";
@@ -103,7 +103,7 @@ Future<void> exportCare(Map<String, dynamic> jsonMap) async {
     buffer.writeln("$id;$species;"
         "$light;$difficulty;$humidity;$temperature;$toxicity;$cycle;"
         "$waterSummer;$waterWinter;$fertilizeFreq;$repotFreq;"
-        "$sow;$plant;$harvest;$repotMonths;$winter;"
+        "$sow;$plant;$harvest;$repotMonths;$pruningMonths;$winter;"
         "$soilInfo;$pruningInfo");
   });
 

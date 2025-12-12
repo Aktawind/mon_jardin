@@ -1,6 +1,5 @@
 import 'dart:io';
 import 'dart:convert';
-import 'package:flutter/foundation.dart';
 
 // ---------------------
 // CONFIG
@@ -19,7 +18,7 @@ const tagsJsonPath = "assets/plants_tags.json";
 // ---------------------
 
 Future<void> main() async {
-  debugPrint("🔄 Conversion CSV → JSON...");
+  print("🔄 Conversion CSV → JSON...");
 
   final coreJson = await convertCoreCsv();
   final careJson = await convertCareCsv();
@@ -29,7 +28,7 @@ Future<void> main() async {
   await File(careJsonPath).writeAsString(const JsonEncoder.withIndent('  ').convert(careJson), encoding: utf8);
   await File(tagsJsonPath).writeAsString(const JsonEncoder.withIndent('  ').convert(tagsJson), encoding: utf8);
 
-  debugPrint("✅ Conversion terminée !");
+  print("✅ Conversion terminée !");
 }
 
 // ---------------------
@@ -88,6 +87,7 @@ Future<Map<String, dynamic>> convertCareCsv() async {
   for (var row in rows) {
     result[row["id"]!] = {
       "species": row["species"] ?? "",
+      "category": row["category"] ?? "",
       "light": row["light"],
       "difficulty": row["difficulty"],
       "humidity": row["humidity"],
@@ -102,6 +102,7 @@ Future<Map<String, dynamic>> convertCareCsv() async {
       "planting_months": _listOrEmpty(row["plantingMonths"]),
       "harvest_months": _listOrEmpty(row["harvestMonths"]),
       "repotting_months": _listOrEmpty(row["repottingMonths"]),
+      "pruning_months": _listOrEmpty(row["pruningMonths"]),
       "wintering_months": _listOrEmpty(row["winteringMonths"]),
       "soil": row["soilInfo"],
       "pruning": row["pruningInfo"],
