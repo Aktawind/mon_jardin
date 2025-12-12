@@ -18,6 +18,13 @@ class EncyclopediaDetailScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
+    bool hasCalendarData = data.sowingMonths.isNotEmpty ||
+                data.plantingMonths.isNotEmpty ||
+                data.harvestMonths.isNotEmpty ||
+                data.pruningMonths.isNotEmpty ||
+                data.repottingMonths.isNotEmpty;
+
     return Scaffold(
       backgroundColor: Colors.green[50], // Fond légèrement coloré pour distinguer
       appBar: AppBar(
@@ -92,23 +99,25 @@ class EncyclopediaDetailScreen extends StatelessWidget {
             ),
 
             // 3. CALENDRIER THEORIQUE
-            _buildSectionTitle("Calendrier de culture"),
-            Card(
-              child: Column(
-                children: [
-                  if (data.sowingMonths.isNotEmpty)
-                    _buildCalendarRow(Icons.grain, "Semis", data.sowingMonths),
-                  if (data.plantingMonths.isNotEmpty)
-                    _buildCalendarRow(Icons.agriculture, "Plantation", data.plantingMonths),
-                  if (data.harvestMonths.isNotEmpty)
-                    _buildCalendarRow(Icons.shopping_basket, "Récolte", data.harvestMonths),
-                  if (data.pruningMonths.isNotEmpty)
-                    _buildCalendarRow(Icons.content_cut, "Taille", data.pruningMonths),
-                  if (data.repottingMonths.isNotEmpty)
-                    _buildCalendarRow(Icons.change_circle, "Rempotage", data.repottingMonths),
-                ],
+            if (hasCalendarData) ...[
+              _buildSectionTitle("Calendrier"),
+              Card(
+                child: Column(
+                  children: [
+                    if (data.sowingMonths.isNotEmpty)
+                      _buildCalendarRow(Icons.grain, "Semis", data.sowingMonths),
+                    if (data.plantingMonths.isNotEmpty)
+                      _buildCalendarRow(Icons.agriculture, "Plantation", data.plantingMonths),
+                    if (data.harvestMonths.isNotEmpty)
+                      _buildCalendarRow(Icons.shopping_basket, "Récolte", data.harvestMonths),
+                    if (data.pruningMonths.isNotEmpty)
+                      _buildCalendarRow(Icons.content_cut, "Taille", data.pruningMonths),
+                    if (data.repottingMonths.isNotEmpty)
+                      _buildCalendarRow(Icons.change_circle, "Rempotage", data.repottingMonths),
+                  ],
+                ),
               ),
-            ),
+            ],
 
             // 4. INFOS SUPPLEMENTAIRES
             _buildSectionTitle("Bon à savoir"),
@@ -117,7 +126,7 @@ class EncyclopediaDetailScreen extends StatelessWidget {
                 children: [
                   _buildRow(Icons.pets, "Toxicité", data.toxicity.label),
                   if (data.pruningInfo.isNotEmpty)
-                    _buildRow(Icons.info_outline, "Conseil taille", data.pruningInfo),
+                    _buildRow(Icons.info_outline, "Entretien", data.pruningInfo),
                 ],
               ),
             ),
