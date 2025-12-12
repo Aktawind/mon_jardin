@@ -27,6 +27,10 @@ Ce fichier trace l'historique des évolutions de l'application Sève.
 
 ## ✅ Versions publiées
 
+### v1.6.2 - "Interface UI + correctif"
+Correction regression, le pruning_months avait disparu
+On n'affiche pas de section Calendirer vide
+
 ### v1.6.1 - "Interface UI"
 Amélioration des CircleAvatar avec des icônes plutôt que des lettres
 
