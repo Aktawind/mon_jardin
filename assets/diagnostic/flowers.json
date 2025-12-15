@@ -1,36 +1,117 @@
 {
   "nodes": {
     "start": {
-      "question": "Quel est le souci ?",
+      "question": "Quel problème concerne la floraison ou les fruits ?",
       "choices": [
-        {"label": "Pas de fleurs / Pas de fruits", "target_node": "no_flower"},
-        {"label": "Les fleurs/fruits tombent", "target_node": "drop"},
-        {"label": "Fruits pourris ou tachés", "target_node": "rot"}
+        {"label": "Pas de fleurs ou de fruits (Absence de production)", "target_node": "bloom_none"},
+        {"label": "Les fleurs/boutons tombent avant d'ouvrir (Chute des bourgeons)", "target_node": "bloom_drop"},
+        {"label": "Les fruits sont déformés ou pourrissent (Qualité des fruits)", "target_node": "fruit_quality"}
       ]
     },
 
-    "no_flower": {
-      "type": "solution",
-      "title": "Excès d'Azote ou Manque de Soleil",
-      "description": "L'azote fait du feuillage, le potassium fait des fleurs.",
-      "advice": "Changez d'engrais (Spécial Fleurs/Tomates) et augmentez l'exposition lumineuse.",
-      "severity": "medium"
-    },
-
-    "rot": {
-      "question": "Est-ce le 'cul' de la tomate qui est noir ?",
+    "bloom_none": {
+      "question": "Votre plante est-elle bien exposée et reçoit-elle assez de lumière (6+ heures pour beaucoup) ?",
       "choices": [
-        {"label": "Oui (Tache noire ronde)", "target_node": "calcium"},
-        {"label": "Non, c'est moisi partout", "target_node": "fungus"}
+        {"label": "Non, manque de lumière", "target_node": "bloom_light_advice"},
+        {"label": "Oui, bonne lumière", "target_node": "bloom_nutrient_check"}
       ]
     },
 
-    "calcium": {
+    "bloom_light_advice": {
       "type": "solution",
-      "title": "Nécrose Apicale (Cul noir)",
-      "description": "Carence en calcium souvent due à un arrosage irrégulier.",
-      "advice": "Arrosez très régulièrement (paillage). Ajoutez du calcium.",
+      "title": "Manque de Lumière",
+      "description": "La lumière est l'énergie principale nécessaire pour initier la floraison et la fructification.",
+      "advice": "Déplacez la plante dans un endroit plus ensoleillé. Pour le potager, assurez un plein soleil (6 à 8h).",
       "severity": "medium"
+    },
+    
+    "bloom_nutrient_check": {
+      "question": "Quel type d'engrais utilisez-vous le plus ?",
+      "choices": [
+        {"label": "Engrais riche en Azote (N) (pour les feuilles)", "target_node": "bloom_nitrogen_excess"},
+        {"label": "Engrais équilibré ou riche en P & K", "target_node": "bloom_dormancy_check"}
+      ]
+    },
+    
+    "bloom_nitrogen_excess": {
+      "type": "solution",
+      "title": "Excès d'Azote (N)",
+      "description": "Trop d'Azote favorise la croissance des feuilles ('tout en vert') au détriment de la production de fleurs et fruits.",
+      "advice": "Stoppez l'engrais Azoté. Passez à un engrais riche en Phosphore (P) et Potasse (K) pour stimuler la floraison.",
+      "severity": "medium"
+    },
+    
+    "bloom_dormancy_check": {
+      "type": "solution",
+      "title": "Manque de Phosphore (P) ou Potasse (K) / Dormance",
+      "description": "Si la plante est en période de croissance et bien nourrie en N, le manque de P ou K peut bloquer la floraison. Alternativement, la plante n'est pas encore mature ou est en dormance.",
+      "advice": "Assurez-vous qu'elle a passé sa période de dormance si besoin. Sinon, administrez un engrais 'Floraison' (riche en P et K).",
+      "severity": "medium"
+    },
+    
+    "bloom_drop": {
+      "question": "Quand les bourgeons tombent-ils ? (Vérifiez l'humidité du sol)",
+      "choices": [
+        {"label": "Chute après un changement de température/vent ou sol trop sec", "target_node": "drop_stress"},
+        {"label": "Chute même si l'arrosage est bon", "target_node": "drop_pollination_check"}
+      ]
+    },
+    
+    "drop_stress": {
+      "type": "solution",
+      "title": "Stress Hydrique ou Thermique",
+      "description": "Les fleurs et bourgeons sont les premières victimes d'un stress (manque d'eau, chaleur/froid soudain).",
+      "advice": "Stabilisez l'arrosage et assurez-vous que la plante est à l'abri des variations extrêmes de température et des courants d'air.",
+      "severity": "medium"
+    },
+    
+    "drop_pollination_check": {
+      "question": "S'agit-il d'une plante d'intérieur ou d'une plante qui nécessite une pollinisation croisée ?",
+      "choices": [
+        {"label": "Oui, plante à l'intérieur ou isolée", "target_node": "drop_no_pollinators"},
+        {"label": "Non, elle est à l'extérieur et visitée par des insectes", "target_node": "drop_stress"}
+      ]
+    },
+    
+    "drop_no_pollinators": {
+      "type": "solution",
+      "title": "Absence de Pollinisation",
+      "description": "Si la fleur n'est pas pollinisée, elle tombe souvent avant de se transformer en fruit (particulièrement vrai pour les cucurbitacées, agrumes en intérieur).",
+      "advice": "Pollinisez manuellement les fleurs (avec un pinceau) en transportant le pollen d'une fleur mâle à une fleur femelle, ou secouez doucement la plante pour l'autofécondation.",
+      "severity": "low"
+    },
+    
+    "fruit_quality": {
+      "question": "Le problème est-il une déformation/tache sèche ou une pourriture molle ?",
+      "choices": [
+        {"label": "Tache noire/sèche sur l'extrémité du fruit (tomates/poivrons)", "target_node": "fruit_calcium"},
+        {"label": "Déformation étrange ou mauvaise formation des graines", "target_node": "fruit_poor_pollination"},
+        {"label": "Pourriture molle, grise ou foncée", "target_node": "fruit_fungal"}
+      ]
+    },
+    
+    "fruit_calcium": {
+      "type": "solution",
+      "title": "Carence en Calcium (Nécrose Apicale)",
+      "description": "Fréquent sur les fruits et légumes à croissance rapide (tomates, courges, poivrons). Ce n'est pas un manque de Calcium dans le sol, mais un problème de transport dû à un arrosage irrégulier.",
+      "advice": "Stabilisez l'arrosage (irrégularité = blocage du Calcium). Si le problème persiste, administrez un engrais riche en Calcium. Retirez les fruits atteints.",
+      "severity": "medium"
+    },
+    
+    "fruit_poor_pollination": {
+      "type": "solution",
+      "title": "Mauvaise Pollinisation",
+      "description": "Le fruit se développe mal ou de manière asymétrique car seules certaines parties de la fleur ont été fécondées.",
+      "advice": "Améliorez la présence de pollinisateurs (fleurs, hôtels à insectes) ou pratiquez la pollinisation manuelle.",
+      "severity": "low"
+    },
+
+    "fruit_fungal": {
+      "type": "solution",
+      "title": "Maladie Fongique des Fruits (Pourriture Grise, etc.)",
+      "description": "Le fruit est attaqué par un champignon (souvent *Botrytis*) favorisé par l'humidité et le manque d'aération.",
+      "advice": "Retirez et détruisez les fruits pourris. Améliorez la circulation de l'air. Réduisez l'arrosage du feuillage. Traitement ciblé antifongique si nécessaire.",
+      "severity": "high"
     }
   }
 }

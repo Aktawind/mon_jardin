@@ -1,36 +1,119 @@
 {
   "nodes": {
     "start": {
-      "question": "Qu'avez-vous vu ?",
+      "question": "Quel type de nuisible observez-vous ?",
       "choices": [
-        {"label": "Petits insectes qui bougent", "target_node": "insects"},
-        {"label": "Duvet blanc / Coton", "target_node": "mealybugs"},
-        {"label": "Toiles d'araignée", "target_node": "mites"},
-        {"label": "Trous dans les feuilles", "target_node": "holes"}
+        {"label": "Petits insectes (visibles à l'œil nu)", "target_node": "pests_suckers_check"},
+        {"label": "Fines toiles ou feuilles pointillées (très petits points)", "target_node": "pests_mites"},
+        {"label": "Trous/morsures dans les feuilles (ou traces de bave)", "target_node": "pests_eaters"},
+        {"label": "Poudre, duvet, ou taches en relief", "target_node": "pests_fungal"}
       ]
     },
 
-    "mealybugs": {
+    "pests_suckers_check": {
+      "question": "Comment décririez-vous ces insectes ?",
+      "choices": [
+        {"label": "Petits, verts/noirs, regroupés sur les jeunes pousses, collant", "target_node": "pests_aphids"},
+        {"label": "Petits boucliers bruns/blancs, aspect cotonneux/cireux", "target_node": "pests_mealybugs"},
+        {"label": "Petites mouches blanches s'envolant quand on touche la feuille", "target_node": "pests_whitefly"}
+      ]
+    },
+
+    "pests_aphids": {
       "type": "solution",
-      "title": "Cochenilles Farineuses",
-      "description": "Elles sucent la sève et affaiblissent la plante.",
-      "advice": "Nettoyez avec un coton tige imbibé d'alcool ou d'eau savonneuse (Savon noir). Isolez la plante.",
+      "title": "Infestation de Pucerons",
+      "description": "Ils sucent la sève, causant des déformations et laissant du miellat collant.",
+      "advice": "Pulvérisez de l'eau savonneuse (savon noir) sur les zones touchées. Retirez manuellement les colonies si possible. Isolez la plante.",
       "severity": "high"
     },
 
-    "holes": {
-      "question": "Est-ce au potager ou dehors ?",
+    "pests_mealybugs": {
+      "type": "solution",
+      "title": "Infestation de Cochenilles",
+      "description": "Elles sont protégées par une coque cireuse ou cotonneuse et sont difficiles à éliminer.",
+      "advice": "Tamponnez chaque insecte avec un coton-tige imbibé d'alcool à friction (70%). Traitez avec de l'huile horticole ou du savon noir.",
+      "severity": "high"
+    },
+
+    "pests_whitefly": {
+      "type": "solution",
+      "title": "Infestation de Mouches Blanches (Aleurodes)",
+      "description": "Elles se cachent sous les feuilles et se reproduisent très vite, souvent au potager ou en serre.",
+      "advice": "Utilisez des bandes adhésives jaunes. Aspirez les adultes. Traitez régulièrement le dessous des feuilles avec du savon noir.",
+      "severity": "high"
+    },
+
+    "pests_mites": {
+      "type": "solution",
+      "title": "Acariens / Tétranyques (Spider Mites)",
+      "description": "Ces arachnides invisibles à l'œil nu (ou de petits points) laissent des toiles. Ils aiment l'air sec.",
+      "advice": "Augmentez l'humidité (pulvérisations fréquentes). Lavez les feuilles. Utilisez un acaricide ou du savon noir. Isolez immédiatement.",
+      "severity": "high"
+    },
+
+    "pests_eaters": {
+      "question": "Le problème est-il lié à des trous dans les feuilles ou à la base de la plante ?",
       "choices": [
-        {"label": "Oui (Traces de bave ?)", "target_node": "slugs"},
-        {"label": "Non / Pas de bave", "target_node": "caterpillars"}
+        {"label": "Grands trous irréguliers et traces de bave la nuit", "target_node": "pests_slugs"},
+        {"label": "Feuilles rongées ou coupées (potager)", "target_node": "pests_caterpillars"},
+        {"label": "Feuilles mâchées, dégâts sur les racines (insectes terrestres)", "target_node": "pests_weevils"}
       ]
     },
 
-    "slugs": {
+    "pests_slugs": {
       "type": "solution",
-      "title": "Limaces / Escargots",
-      "description": "Les gourmands nocturnes.",
-      "advice": "Sortez la nuit pour les retirer. Utilisez des barrières (cendre, coquilles d'oeuf) ou des pièges.",
+      "title": "Limaces et Escargots",
+      "description": "Nuisibles nocturnes, surtout en extérieur ou au potager, reconnaissables aux traces de bave.",
+      "advice": "Ramassage manuel le soir. Posez des barrières (coquilles d'œuf, cendre) ou des pièges à bière. Utilisez des granulés anti-limaces (avec modération).",
+      "severity": "medium"
+    },
+
+    "pests_caterpillars": {
+      "type": "solution",
+      "title": "Chenilles / Insectes Mangeurs",
+      "description": "Les larves ou insectes adultes mâchent le tissu végétal.",
+      "advice": "Ramassage manuel. Pour le potager, utilisez le *Bacillus thuringiensis* (Bt) qui est une bactérie biologique sélective contre les chenilles.",
+      "severity": "medium"
+    },
+
+    "pests_weevils": {
+      "type": "solution",
+      "title": "Charançons / Otiorhynques",
+      "description": "Les adultes rongent le bord des feuilles (encoches) ; les larves (blanches) sont plus dangereuses, elles dévorent les racines.",
+      "advice": "Traitez les larves avec des nématodes auxiliaires (micro-organismes) dans le sol. Ramassez les adultes la nuit.",
+      "severity": "high"
+    },
+
+    "pests_fungal": {
+      "question": "Comment se manifeste le problème fongique ?",
+      "choices": [
+        {"label": "Poudre blanche/grise sur les feuilles/tiges", "target_node": "fungal_powdery_mildew"},
+        {"label": "Taches et duvet gris-blanc sous les feuilles (Potager/Extérieur)", "target_node": "fungal_downy_mildew"},
+        {"label": "Pustules orangées/rouges sous les feuilles", "target_node": "fungal_rust"}
+      ]
+    },
+
+    "fungal_powdery_mildew": {
+      "type": "solution",
+      "title": "Oïdium (Mildiou Poudreux)",
+      "description": "Maladie courante par temps sec et chaud, laissant un dépôt blanc farineux.",
+      "advice": "Retirez les parties atteintes. Pulvérisez une solution de bicarbonate de soude ou de soufre. Améliorez la circulation de l'air.",
+      "severity": "medium"
+    },
+
+    "fungal_downy_mildew": {
+      "type": "solution",
+      "title": "Mildiou",
+      "description": "Champignon qui aime l'humidité. Se manifeste par des taches jaunes sur le dessus et un duvet sous la feuille.",
+      "advice": "Retirez les feuilles infectées. Évitez d'arroser le feuillage. Traitez préventivement ou curativement avec de la Bouillie Bordelaise (cuivre).",
+      "severity": "high"
+    },
+
+    "fungal_rust": {
+      "type": "solution",
+      "title": "Rouille",
+      "description": "Maladie fongique qui crée des pustules de couleur rouille sur la face inférieure des feuilles.",
+      "advice": "Éliminez les feuilles contaminées. Évitez l'humidité sur le feuillage. Un traitement à base de soufre peut être efficace.",
       "severity": "medium"
     }
   }

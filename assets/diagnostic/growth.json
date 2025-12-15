@@ -1,12 +1,13 @@
 {
   "nodes": {
-    "start_growth": {
+    "start": {
       "question": "Quel problème de croissance votre plante rencontre-t-elle ?",
       "choices": [
         {"label": "Croissance Lente ou Stoppée", "target_node": "growth_slow"},
         {"label": "Tiges Étiolées (longues et fines)", "target_node": "growth_leggy"},
         {"label": "Chute Excessive de Feuilles", "target_node": "growth_drop"},
-        {"label": "Pourriture (Racines ou Collet)", "target_node": "growth_rot"}
+        {"label": "Pourriture (Racines ou Collet)", "target_node": "growth_rot"},
+        {"label": "Racines Sortant du Pot", "target_node": "growth_rootbound"}
       ]
     },
 
@@ -79,6 +80,127 @@
       "title": "Croissance Stoppée - Autres Causes",
       "description": "Si toutes les causes ont été éliminées, la croissance lente peut être due à la qualité du substrat (trop compact), ou à une maladie non-visuelle.",
       "advice": "Rempotez avec un substrat frais et aéré. Surveillez les signes de parasites invisibles (acariens).",
+      "severity": "low"
+    },
+
+    "growth_leggy": {
+      "question": "Les tiges sont-elles longues, faibles, avec de grands espaces entre les feuilles ?",
+      "choices": [
+        {"label": "Oui, c'est le cas", "target_node": "leggy_advice"},
+        {"label": "Non, mais la plante est faible et petite", "target_node": "growth_slow"}
+      ]
+    },
+    
+    "leggy_advice": {
+      "type": "solution",
+      "title": "Manque Sévère de Lumière",
+      "description": "L'étiolement est la tentative de la plante de trouver de la lumière en allongeant ses tiges au maximum, au détriment de leur robustesse et de l'épaisseur du feuillage. C'est le problème le plus fréquent des plantes d'intérieur.",
+      "advice": "Déplacez la plante vers la source de lumière la plus brillante possible (une fenêtre exposée Sud/Ouest). Les parties déjà étirées ne se rétracteront pas et devront être taillées pour encourager une nouvelle croissance plus compacte.",
+      "severity": "medium"
+    },
+
+    "growth_drop": {
+      "question": "Quel type de feuille tombe et quelle est la cause la plus probable ?",
+      "choices": [
+        {"label": "Feuilles du bas, jaunies ou sèches (chute lente)", "target_node": "yellow_bottom_natural"},
+        {"label": "Toutes les feuilles, soudainement, après un changement (déplacement/courant d'air)", "target_node": "drop_shock"},
+        {"label": "Toutes les feuilles, après arrosage très irrégulier (trop ou pas assez)", "target_node": "drop_water_check"}
+      ]
+    },
+
+    "drop_shock": {
+      "type": "solution",
+      "title": "Choc de Déplacement / Courant d'Air",
+      "description": "Les plantes sont sensibles aux changements d'environnement (température, luminosité, vent). La chute est une réaction de stress temporaire.",
+      "advice": "Laissez la plante s'adapter. Évitez les courants d'air froids et stabilisez la température. Ne rempotez pas immédiatement.",
+      "severity": "medium"
+    },
+
+    "drop_water_check": {
+      "question": "Quel est l'état du sol APRÈS la chute des feuilles ?",
+      "choices": [
+        {"label": "Sol très sec et cassant", "target_node": "drop_under_water"},
+        {"label": "Sol constamment humide ou détrempé", "target_node": "drop_over_water"}
+      ]
+    },
+
+    "drop_under_water": {
+      "type": "solution",
+      "title": "Manque d'Eau / Arrosage Irrégulier",
+      "description": "Le manque d'eau sévère force la plante à larguer son feuillage pour économiser l'eau restante.",
+      "advice": "Arrosez abondamment (par immersion si le sol est compacté). Établissez un calendrier d'arrosage régulier.",
+      "severity": "high"
+    },
+
+    "drop_over_water": {
+      "type": "solution",
+      "title": "Excès d'Eau / Pourriture",
+      "description": "Les racines sont endommagées et la plante réagit en jetant ses feuilles. Cela peut aussi être des feuilles jaunies avant de tomber (voir 'yellow_water').",
+      "advice": "Stoppez l'arrosage. Laissez sécher la terre. Vérifiez le drainage du pot. Si les symptômes persistent, rempotez après avoir inspecté les racines.",
+      "severity": "high"
+    },
+
+    "growth_rot": {
+      "question": "Où se situe le problème et quel est l'état du sol ?",
+      "choices": [
+        {"label": "Base de la tige ramollie, sombre, odeur de moisi", "target_node": "rot_collet"},
+        {"label": "Toute la plante flétrit, terre constamment mouillée", "target_node": "rot_root_check"}
+      ]
+    },
+
+    "rot_collet": {
+      "type": "solution",
+      "title": "Pourriture du Collet",
+      "description": "Causée par un champignon ou une bactérie due à l'humidité stagnante au niveau de la base de la plante. C'est souvent irréversible, surtout pour les jeunes plantes.",
+      "advice": "Si la pourriture n'est pas généralisée, retirez délicatement la terre autour du collet pour le laisser sécher. Ne plus arroser la base, mais par capillarité. Si la pourriture est avancée, la plante est perdue.",
+      "severity": "high"
+    },
+
+    "rot_root_check": {
+      "question": "L'eau stagne-t-elle dans la soucoupe ou le pot est-il sans trou de drainage ?",
+      "choices": [
+        {"label": "Oui, eau stagnante ou pas de drainage", "target_node": "rot_drainage_advice"},
+        {"label": "Non, bon drainage, mais la terre reste mouillée longtemps", "target_node": "rot_root_advice"}
+      ]
+    },
+
+    "rot_drainage_advice": {
+      "type": "solution",
+      "title": "Mauvais Drainage et Excès d'Eau",
+      "description": "Le manque d'évacuation empêche l'oxygène d'atteindre les racines, favorisant les pathogènes fongiques.",
+      "advice": "Videz immédiatement toute soucoupe. Si le pot n'a pas de trou, rempotez dans un pot percé. Utilisez un substrat plus drainant (perlite, sable).",
+      "severity": "high"
+    },
+
+    "rot_root_advice": {
+      "type": "solution",
+      "title": "Pourriture Racinaire (Asphyxie et Champignons)",
+      "description": "L'excès d'eau constant a tué les racines. La plante ne peut plus s'alimenter, d'où le flétrissement et le jaunissement.",
+      "advice": "Sortez la plante. Coupez toutes les racines molles, noires ou sentant le moisi. Laissez sécher les racines saines, puis rempotez dans un substrat sec et neuf. N'arrosez qu'une semaine après.",
+      "severity": "high"
+    },
+
+    "growth_rootbound": {
+      "question": "Les racines sortent-elles par les trous de drainage et forment-elles un chignon serré lorsque vous sortez la motte ?",
+      "choices": [
+        {"label": "Oui, les racines sont très serrées", "target_node": "rootbound_advice"},
+        {"label": "Non, c'est juste quelques racines qui dépassent", "target_node": "rootbound_minor"}
+      ]
+    },
+
+    "rootbound_advice": {
+      "type": "solution",
+      "title": "Rempotage Nécessaire (Racines à l'Étroit)",
+      "description": "La plante est 'à l'étroit' et le substrat ne retient plus assez d'eau ou de nutriments. Ceci ralentit la croissance (voir 'growth_pot_size').",
+      "advice": "Rempotez immédiatement dans un pot d'une taille supérieure (2 à 5 cm de plus en diamètre). Décompactez délicatement le chignon de racines avant de rempoter.",
+      "severity": "medium"
+    },
+
+    "rootbound_minor": {
+      "type": "solution",
+      "title": "Signe d'Activité Racinaire Normale",
+      "description": "Quelques racines cherchant l'humidité et sortant du pot peuvent être normales, surtout si la plante a été arrosée récemment.",
+      "advice": "Surveillez la croissance et la rapidité du séchage du sol. Si la croissance ralentit ou que l'arrosage devient trop fréquent, rempotez.",
       "severity": "low"
     }
   }

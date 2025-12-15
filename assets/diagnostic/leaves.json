@@ -353,7 +353,7 @@
       "title": "Attaque Virale (Virus de la Mosaïque)",
       "description": "Le virus ne peut être guéri et est très contagieux pour les plantes voisines (transmis souvent par les insectes).",
       "advice": "Isolez ou détruisez la plante pour éviter la propagation aux autres cultures. Désinfectez les outils. C'est malheureusement irréversible.",
-      "severity": "critical"
+      "severity": "high"
     },
 
     "twisted_pests_check": {
