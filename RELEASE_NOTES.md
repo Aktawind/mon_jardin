@@ -24,6 +24,9 @@ Ce fichier trace l'historique des évolutions de l'application Sève.
 
 ## 🚧 En Développement
 
+### v1.8.0 - "Docteur Plante" (Aide & Diagnostic)
+Assistant de diagnostic interactif simple (Chatbot à choix multiples).
+Identifier les problèmes courants (Feuilles jaunes, taches, nuisibles) et proposer des solutions rassurantes.
 ---
 
 ## ✅ Versions publiées

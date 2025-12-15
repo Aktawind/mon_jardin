@@ -1,0 +1,37 @@
+{
+  "nodes": {
+    "start": {
+      "question": "Qu'avez-vous vu ?",
+      "choices": [
+        {"label": "Petits insectes qui bougent", "target_node": "insects"},
+        {"label": "Duvet blanc / Coton", "target_node": "mealybugs"},
+        {"label": "Toiles d'araignée", "target_node": "mites"},
+        {"label": "Trous dans les feuilles", "target_node": "holes"}
+      ]
+    },
+
+    "mealybugs": {
+      "type": "solution",
+      "title": "Cochenilles Farineuses",
+      "description": "Elles sucent la sève et affaiblissent la plante.",
+      "advice": "Nettoyez avec un coton tige imbibé d'alcool ou d'eau savonneuse (Savon noir). Isolez la plante.",
+      "severity": "high"
+    },
+
+    "holes": {
+      "question": "Est-ce au potager ou dehors ?",
+      "choices": [
+        {"label": "Oui (Traces de bave ?)", "target_node": "slugs"},
+        {"label": "Non / Pas de bave", "target_node": "caterpillars"}
+      ]
+    },
+
+    "slugs": {
+      "type": "solution",
+      "title": "Limaces / Escargots",
+      "description": "Les gourmands nocturnes.",
+      "advice": "Sortez la nuit pour les retirer. Utilisez des barrières (cendre, coquilles d'oeuf) ou des pièges.",
+      "severity": "medium"
+    }
+  }
+}

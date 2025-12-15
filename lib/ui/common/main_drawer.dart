@@ -14,6 +14,7 @@ import '../screens/calendar_screen.dart';
 import '../screens/settings_screen.dart';
 import '../screens/plant_finder_screen.dart';
 import '../screens/encyclopedia_list_screen.dart';
+import '../screens/doctor_plant_screen.dart';
 
 class MainDrawer extends StatelessWidget {
   final int currentIndex; // 0 = Plantes, 1 = Calendrier
@@ -47,6 +48,9 @@ class MainDrawer extends StatelessWidget {
       }
       else if (index == 3) {
         nextPage = const EncyclopediaListScreen();
+      }
+      else if (index == 4) {
+        nextPage = const DoctorPlantScreen();
       }
       else {
         nextPage = const MyPlantsScreen(); // Fallback
@@ -131,6 +135,7 @@ class MainDrawer extends StatelessWidget {
                 _buildNavItem(context, 1, "Calendrier", Icons.calendar_month),
                 _buildNavItem(context, 2, "Guide d'Achat", Icons.search),
                 _buildNavItem(context, 3, "Encyclopédie", Icons.menu_book),
+                _buildNavItem(context, 4, "Docteur Plante", Icons.local_hospital),
                 
                 const Divider(indent: 16, endIndent: 16),
                 

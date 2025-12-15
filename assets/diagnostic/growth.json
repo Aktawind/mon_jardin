@@ -1,0 +1,85 @@
+{
+  "nodes": {
+    "start_growth": {
+      "question": "Quel problème de croissance votre plante rencontre-t-elle ?",
+      "choices": [
+        {"label": "Croissance Lente ou Stoppée", "target_node": "growth_slow"},
+        {"label": "Tiges Étiolées (longues et fines)", "target_node": "growth_leggy"},
+        {"label": "Chute Excessive de Feuilles", "target_node": "growth_drop"},
+        {"label": "Pourriture (Racines ou Collet)", "target_node": "growth_rot"}
+      ]
+    },
+
+    "growth_slow": {
+      "question": "Depuis combien de temps la croissance est-elle lente et à quelle période de l'année ?",
+      "choices": [
+        {"label": "Symptôme en hiver / Période froide", "target_node": "growth_dormancy"},
+        {"label": "Symptôme toute l'année / en période de croissance", "target_node": "growth_light_check"}
+      ]
+    },
+
+    "growth_dormancy": {
+      "type": "solution",
+      "title": "Dormance Naturelle",
+      "description": "La plupart des plantes ralentissent ou stoppent leur croissance en hiver, lorsque la lumière et la température diminuent.",
+      "advice": "C'est normal. Réduisez l'arrosage et stoppez l'engrais jusqu'au printemps. Ne pas stimuler la croissance en dormance.",
+      "severity": "low"
+    },
+
+    "growth_light_check": {
+      "question": "La plante est-elle dans un endroit sombre ou peu éclairé ?",
+      "choices": [
+        {"label": "Oui, elle manque de lumière", "target_node": "growth_light_advice"},
+        {"label": "Non, elle reçoit beaucoup de lumière", "target_node": "growth_pot_check"}
+      ]
+    },
+
+    "growth_light_advice": {
+      "type": "solution",
+      "title": "Lumière Insuffisante",
+      "description": "Le manque de lumière inhibe la photosynthèse, moteur de la croissance.",
+      "advice": "Déplacez la plante dans un endroit plus lumineux. Si ce n'est pas possible, utilisez une lampe de croissance.",
+      "severity": "medium"
+    },
+
+    "growth_pot_check": {
+      "question": "Voyez-vous des racines sortir des trous de drainage ou la terre sèche-t-elle très vite ?",
+      "choices": [
+        {"label": "Oui, des racines sortent ou le sol est très sec", "target_node": "growth_pot_size"},
+        {"label": "Non, les racines ont de la place", "target_node": "growth_nutrient_check"}
+      ]
+    },
+
+    "growth_pot_size": {
+      "type": "solution",
+      "title": "Pot Trop Petit / Racines à l'Étroit",
+      "description": "La plante n'a plus d'espace pour développer de nouvelles racines, ce qui stoppe la croissance aérienne (racines 'cercueil').",
+      "advice": "Rempotez la plante dans un pot de 2 à 5 cm de plus grand diamètre. Profitez-en pour renouveler le substrat.",
+      "severity": "medium"
+    },
+
+    "growth_nutrient_check": {
+      "question": "Avez-vous fertilisé la plante au cours des 4 derniers mois ?",
+      "choices": [
+        {"label": "Non ou très peu", "target_node": "growth_nutrient_advice"},
+        {"label": "Oui, régulièrement", "target_node": "growth_other_check"}
+      ]
+    },
+
+    "growth_nutrient_advice": {
+      "type": "solution",
+      "title": "Carence en Azote (N) ou Phosphore (P)",
+      "description": "Le manque d'Azote (N) affecte la croissance générale, le manque de Phosphore (P) affecte le développement des racines et l'énergie.",
+      "advice": "Reprenez un programme de fertilisation régulier avec un engrais équilibré. Pour les carences, un engrais soluble agit plus vite.",
+      "severity": "medium"
+    },
+    
+    "growth_other_check": {
+      "type": "solution",
+      "title": "Croissance Stoppée - Autres Causes",
+      "description": "Si toutes les causes ont été éliminées, la croissance lente peut être due à la qualité du substrat (trop compact), ou à une maladie non-visuelle.",
+      "advice": "Rempotez avec un substrat frais et aéré. Surveillez les signes de parasites invisibles (acariens).",
+      "severity": "low"
+    }
+  }
+}

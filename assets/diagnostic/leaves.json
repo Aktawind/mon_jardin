@@ -1,0 +1,375 @@
+{
+  "nodes": {
+    "start": {
+      "question": "Quel est le symptôme principal ?",
+      "choices": [
+        {"label": "Feuilles Jaunes", "target_node": "yellow"},
+        {"label": "Taches Brunes/Noires", "target_node": "spots"},
+        {"label": "Feuilles Molles / Flétries", "target_node": "soft"},
+        {"label": "Feuilles Recroquevillées / Crispées", "target_node": "curled"},
+        {"label": "Feuilles Sèches / Bords brûlés", "target_node": "dry_edges"},
+        {"label": "Feuilles Pâles ou Blanches", "target_node": "pale_white"},
+        {"label": "Feuilles Tordues / Déformées", "target_node": "twisted_deformed"}
+      ]
+    },
+
+    "yellow": {
+      "question": "Où se situe le jaunissement ?",
+      "choices": [
+        {"label": "Feuilles du bas uniquement", "target_node": "yellow_bottom_check"},
+        {"label": "Toute la plante + Terre humide", "target_node": "yellow_water"},
+        {"label": "Jeunes pousses pâles (Nervures vertes)", "target_node": "chlorosis_iron"},
+        {"label": "Jaunissement entre les nervures (en 'V')", "target_node": "chlorosis_magnesium"}
+      ]
+    },
+
+    "yellow_bottom_check": {
+      "question": "Les feuilles du bas tombent-elles d'elles-mêmes ?",
+      "choices": [
+        {"label": "Oui, il y a de nouvelles pousses", "target_node": "yellow_bottom_natural"},
+        {"label": "Non, elles restent ou la croissance est faible", "target_node": "yellow_nitrogen_advice"}
+      ]
+    },
+
+    "yellow_bottom_natural": {
+      "type": "solution",
+      "title": "Vieillissement Naturel / Choc léger",
+      "description": "Les feuilles les plus anciennes meurent. C'est le cycle de la vie.",
+      "advice": "Coupez les feuilles. Si la plante pousse bien, c'est normal.",
+      "severity": "low"
+    },
+
+    "yellow_nitrogen_advice": {
+      "question": "La plante est-elle bien exposée à la lumière (4h/jour) ?",
+      "choices": [
+        {"label": "Non, elle est à l'ombre", "target_node": "yellow_light_advice"},
+        {"label": "Oui, bien éclairée", "target_node": "yellow_nitrogen_cause"}
+      ]
+    },
+
+    "yellow_nitrogen_cause": {
+      "type": "solution",
+      "title": "Carence en Azote (N)",
+      "description": "La plante déplace l'Azote des vieilles feuilles vers les nouvelles.",
+      "advice": "Ajoutez un engrais riche en azote. Rempotez si le substrat est épuisé.",
+      "severity": "medium"
+    },
+
+    "yellow_light_advice": {
+      "type": "solution",
+      "title": "Manque de Lumière",
+      "description": "Sans assez de lumière, la plante ne peut maintenir ses feuilles.",
+      "advice": "Déplacez la plante près d'une fenêtre (lumière indirecte) ou utilisez une lampe de croissance.",
+      "severity": "medium"
+    },
+
+    "yellow_water": {
+      "type": "solution",
+      "title": "Excès d'eau (Asphyxie)",
+      "description": "Les racines étouffent et pourrissent. C'est grave.",
+      "advice": "Stoppez l'arrosage. Videz la soucoupe. Rempotez dans un substrat sec si ça sent le moisi (coupez les racines noires).",
+      "severity": "high"
+    },
+
+    "chlorosis_iron": {
+      "type": "solution",
+      "title": "Carence en Fer (Fe)",
+      "description": "Surtout sur les jeunes pousses. Souvent dû à un sol trop calcaire.",
+      "advice": "Utilisez un engrais chélaté de Fer. Arrosez avec de l'eau non calcaire.",
+      "severity": "medium"
+    },
+
+    "chlorosis_magnesium": {
+      "type": "solution",
+      "title": "Carence en Magnésium (Mg)",
+      "description": "Le jaunissement commence souvent par les bords ou entre les nervures des vieilles feuilles.",
+      "advice": "Appliquez du sel d'Epsom (sulfate de magnésium) dilué dans l'eau.",
+      "severity": "medium"
+    },
+
+    "spots": {
+      "question": "Comment décririez-vous ces taches ?",
+      "choices": [
+        {"label": "Taches petites et nombreuses, bord noir", "target_node": "spots_fungal_check"},
+        {"label": "Grandes zones brunes", "target_node": "spots_sunburn_check"},
+        {"label": "Taches en périphérie, bord des feuilles", "target_node": "spots_chemical"}
+      ]
+    },
+
+    "spots_fungal_check": {
+      "question": "Voyez-vous des filaments, de la poudre ou des cercles concentriques sur/sous la feuille ?",
+      "choices": [
+        {"label": "Oui, présence d'un duvet/poudre ou de cercles", "target_node": "spots_fungal_advice"},
+        {"label": "Non, ce sont juste des taches séchées/brûlées", "target_node": "spots_irrigation_check"}
+      ]
+    },
+
+    "spots_fungal_advice": {
+      "type": "solution",
+      "title": "Maladie Fongique (Taches, Rouille, Mildiou)",
+      "description": "Les champignons prolifèrent souvent en milieu humide (air ou feuillage mouillé).",
+      "advice": "Retirez les feuilles infectées. Améliorez l'aération et stoppez l'arrosage direct du feuillage. Traitez avec un fongicide naturel (soufre ou cuivre).",
+      "severity": "high"
+    },
+
+    "spots_irrigation_check": {
+      "question": "Est-ce que l'eau stagne souvent sur les feuilles après l'arrosage ?",
+      "choices": [
+        {"label": "Oui, j'arrose souvent le feuillage", "target_node": "spots_irrigation_solution"},
+        {"label": "Non, l'arrosage se fait au pied", "target_node": "spots_minor_damage"}
+      ]
+    },
+
+    "spots_irrigation_solution": {
+      "type": "solution",
+      "title": "Arrosage direct des feuilles (Brûlure/Champignon)",
+      "description": "L'eau sur le feuillage agit comme une loupe au soleil (brûlure) ou favorise les maladies.",
+      "advice": "Arrosez uniquement au pied de la plante et améliorez la circulation de l'air.",
+      "severity": "low"
+    },
+
+    "spots_minor_damage": {
+      "type": "solution",
+      "title": "Dommage Physique Mineur",
+      "description": "Les taches sont localisées et ne s'étendent pas. Souvent, une simple blessure ou une goutte qui a séché.",
+      "advice": "Surveillez que les taches ne s'étendent pas. Si la croissance est bonne, ne faites rien.",
+      "severity": "low"
+    },
+    
+    "spots_sunburn_check": {
+      "question": "La plante a-t-elle été récemment déplacée de l'intérieur/ombre au soleil direct ?",
+      "choices": [
+        {"label": "Oui, changement brusque d'exposition", "target_node": "spots_sunburn_advice"},
+        {"label": "Non, exposition stable", "target_node": "spots_chemical"} 
+      ]
+    },
+
+    "spots_sunburn_advice": {
+      "type": "solution",
+      "title": "Coup de Soleil",
+      "description": "Le tissu foliaire a été brûlé par une exposition soudaine ou intense. Les dégâts sont permanents.",
+      "advice": "Retirez les feuilles très atteintes. Déplacez la plante à un endroit où la transition vers le soleil est graduelle. N'arrosez pas les feuilles en plein soleil.",
+      "severity": "medium"
+    },
+    
+    "spots_chemical": {
+      "type": "solution",
+      "title": "Brûlure Chimique (Engrais Excessif)",
+      "description": "Trop d'engrais, ou l'engrais a touché directement le feuillage. Les sels minéraux ont brûlé le tissu.",
+      "advice": "Rincez le substrat abondamment à l'eau claire pour éliminer l'excès de sel (lessivage). Cessez la fertilisation pendant 1 mois.",
+      "severity": "medium"
+    },
+
+    "soft": {
+      "question": "Quel est l'état du substrat (la terre) ?",
+      "choices": [
+        {"label": "Sec et dur (ou léger)", "target_node": "soft_dry"},
+        {"label": "Très humide et lourd (ou détrempé)", "target_node": "soft_wet"},
+        {"label": "Humide, mais la plante flétrit quand même", "target_node": "soft_temp_check"}
+      ]
+    },
+
+    "soft_dry": {
+      "type": "solution",
+      "title": "Manque d'Eau Sévère (Déshydratation)",
+      "description": "La plante ne trouve plus d'eau pour maintenir la pression de sève (turgidité).",
+      "advice": "Arrosez abondamment (par immersion si le sol est très sec) jusqu'à ce que l'eau s'écoule. Les plantes devraient se redresser en quelques heures.",
+      "severity": "high"
+    },
+
+    "soft_wet": {
+      "type": "solution",
+      "title": "Excès d'Eau (Pourriture des Racines)",
+      "description": "Les racines pourries ne peuvent plus absorber l'eau, même en présence d'humidité. Le flétrissement est un signe d'asphyxie des racines. ",
+      "advice": "Stoppez l'arrosage. Videz la soucoupe. Si le flétrissement persiste, il faut rempoter dans un sol sec et couper les racines noires/molles.",
+      "severity": "high"
+    },
+
+    "soft_temp_check": {
+      "question": "La température a-t-elle changé drastiquement récemment (chaleur ou froid extrême) ?",
+      "choices": [
+        {"label": "Oui, forte chaleur ou exposition au gel", "target_node": "soft_temp_shock"},
+        {"label": "Non, température stable et normale", "target_node": "soft_wet"}
+      ]
+    },
+
+    "soft_temp_shock": {
+      "type": "solution",
+      "title": "Choc Thermique (Chaleur Extrême / Gel)",
+      "description": "Le froid endommage les cellules (gel), la chaleur excessive fait évaporer l'eau plus vite que les racines ne peuvent la fournir.",
+      "advice": "Déplacez la plante dans une zone à température stable et modérée. En cas de gel, coupez les parties noircies. En cas de chaleur, augmentez l'humidité de l'air.",
+      "severity": "medium"
+    },
+
+    "curled": {
+      "question": "Le recroquevillement est-il sur les jeunes pousses, ou bien les feuilles adultes ?",
+      "choices": [
+        {"label": "Jeunes pousses déformées, collantes", "target_node": "curled_pests_check"},
+        {"label": "Feuilles sèches et cassantes", "target_node": "curled_dehydration"},
+        {"label": "Feuilles simplement repliées vers l'intérieur", "target_node": "curled_heat_check"}
+      ]
+    },
+
+    "curled_dehydration": {
+      "type": "solution",
+      "title": "Déshydratation / Manque d'Eau",
+      "description": "La plante essaie de réduire sa surface pour minimiser l'évaporation (transpiration).",
+      "advice": "Arrosez abondamment immédiatement (par immersion si nécessaire). Vérifiez l'état du sol plus régulièrement.",
+      "severity": "medium"
+    },
+
+    "curled_heat_check": {
+      "question": "La plante est-elle près d'une source de chaleur ou un vent sec (près d'un radiateur, fenêtre) ?",
+      "choices": [
+        {"label": "Oui, source de chaleur/vent à proximité", "target_node": "curled_heat"},
+        {"label": "Non, environnement stable et frais", "target_node": "curled_pests_check"}
+      ]
+    },
+
+    "curled_heat": {
+      "type": "solution",
+      "title": "Excès de Chaleur ou Vent Sec",
+      "description": "La chaleur excessive pousse la plante à se refermer pour survivre à la forte évaporation. ",
+      "advice": "Éloignez la plante des sources de chaleur ou des courants d'air. Augmentez l'humidité ambiante autour de la plante (humidificateur, plateau de billes d'argile).",
+      "severity": "medium"
+    },
+
+    "curled_pests_check": {
+      "question": "Voyez-vous de petits insectes, des résidus collants (miellat) ou de fines toiles sous les feuilles déformées ?",
+      "choices": [
+        {"label": "Oui, présence d'insectes ou de miellat", "target_node": "curled_pests_advice"},
+        {"label": "Non, rien de visible", "target_node": "curled_water_stress"}
+      ]
+    },
+
+    "curled_pests_advice": {
+      "type": "solution",
+      "title": "Infestation de Pucerons ou Acariens",
+      "description": "Les nuisibles suceurs de sève injectent des toxines et aspirent les nutriments, ce qui déforme les nouvelles feuilles. ",
+      "advice": "Nettoyez les zones atteintes avec de l'eau savonneuse (savon noir). Traitez avec un insecticide biologique ou introduisez des coccinelles.",
+      "severity": "high"
+    },
+    
+    "curled_water_stress": {
+      "type": "solution",
+      "title": "Stress Hydrique Inconnu",
+      "description": "Le recroquevillement peut aussi être un signe de sol trop compact, empêchant l'absorption de l'eau, même si le sol est humide.",
+      "advice": "Aérez légèrement la terre avec une pique en bois. Surveillez l'arrosage et assurez-vous que l'eau ne stagne jamais dans le pot.",
+      "severity": "low"
+    },
+
+    "dry_edges": {
+      "question": "Le problème touche-t-il les pointes et les bords ?",
+      "choices": [
+        {"label": "Oui, les bords sont brûlés et je vois du blanc sur la terre/pot", "target_node": "dry_edges_salt"},
+        {"label": "Non, les bords sont bruns/secs et l'air est chaud ou sec", "target_node": "dry_edges_humidity_check"},
+        {"label": "C'est sur toute la feuille, avec une mauvaise odeur", "target_node": "soft_wet"} 
+      ]
+    },
+
+    "dry_edges_salt": {
+      "type": "solution",
+      "title": "Excès de Sels / Brûlure par Engrais",
+      "description": "L'accumulation excessive de sels minéraux et d'engrais (ou une mauvaise qualité de l'eau) concentre les toxines aux extrémités des feuilles.",
+      "advice": "Rincez abondamment le substrat ('lessivage') pendant 5 minutes. N'utilisez pas d'engrais pendant 1 mois. Utilisez de l'eau de pluie ou déminéralisée si possible.",
+      "severity": "medium"
+    },
+
+    "dry_edges_humidity_check": {
+      "question": "L'air ambiant est-il très sec ou y a-t-il un vent fort (courant d'air, chauffage, climatisation) ?",
+      "choices": [
+        {"label": "Oui, l'air est sec ou il y a du vent", "target_node": "dry_edges_air"},
+        {"label": "Non, l'environnement est humide et stable", "target_node": "dry_edges_salt"}
+      ]
+    },
+
+    "dry_edges_air": {
+      "type": "solution",
+      "title": "Air Trop Sec ou Vent Fort et Sec",
+      "description": "L'air sec ou le vent augmente l'évaporation, que la plante ne peut compenser, brûlant les bords.",
+      "advice": "Augmentez l'humidité (humidificateur, plateau de billes d'argile). Éloignez la plante des courants d'air (chauffage ou fenêtre ouverte).",
+      "severity": "medium"
+    },
+
+    "pale_white": {
+      "question": "Le pâlissement est-il sur la feuille entière ou est-il localisé ?",
+      "choices": [
+        {"label": "Pâlissement uniforme ou avec nervures vertes", "target_node": "pale_iron_check"},
+        {"label": "Blanchiment dans les zones les plus exposées", "target_node": "pale_sun_bleaching"}
+      ]
+    },
+
+    "pale_iron_check": {
+      "question": "Le pâlissement concerne-t-il surtout les jeunes pousses, tandis que les nervures restent bien vertes ?",
+      "choices": [
+        {"label": "Oui, jeunes pousses touchées et nervures vertes", "target_node": "pale_iron_advice"},
+        {"label": "Non, pâlissement uniforme sur toutes les feuilles", "target_node": "pale_general_nitrogen"}
+      ]
+    },
+
+    "pale_iron_advice": {
+      "type": "solution",
+      "title": "Carence Sévère en Fer (Fe)",
+      "description": "Ceci est la chlorose ferrique. Le Fer est moins disponible, souvent à cause d'un pH du sol trop élevé (calcaire). ",
+      "advice": "Utilisez un engrais à base de Fer chélaté pour une absorption rapide. Arrosez avec de l'eau non calcaire.",
+      "severity": "medium"
+    },
+
+    "pale_general_nitrogen": {
+      "type": "solution",
+      "title": "Carence en Azote (N) ou Lumière Insuffisante",
+      "description": "Un manque d'Azote ou de lumière peut faire pâlir uniformément toutes les feuilles de la plante.",
+      "advice": "Si la plante est à l'ombre, déplacez-la. Sinon, administrez un engrais équilibré ou riche en azote. (Voir aussi les solutions 'yellow_nitrogen_cause').",
+      "severity": "medium"
+    },
+
+    "pale_sun_bleaching": {
+      "type": "solution",
+      "title": "Excès de Lumière / Blanchissement Solaire",
+      "description": "La plante est exposée à un soleil trop direct ou intense. Elle produit moins de chlorophylle pour se protéger.",
+      "advice": "Éloignez la plante du soleil direct ou filtrez la lumière avec un voilage. Si c'est une plante d'extérieur, créez une zone d'ombre l'après-midi.",
+      "severity": "medium"
+    },
+
+    "twisted_deformed": {
+      "question": "Le problème est-il accompagné d'un motif de taches jaunes/vertes (mosaïque) ou de signes de nuisibles ?",
+      "choices": [
+        {"label": "Torsion + fines toiles rouges/jaunes sous la feuille", "target_node": "twisted_mites"},
+        {"label": "Torsion + motif de mosaïque jaune sur les feuilles", "target_node": "twisted_virus"},
+        {"label": "Torsion seule (sans nuisible ni mosaïque)", "target_node": "twisted_pests_check"}
+      ]
+    },
+
+    "twisted_mites": {
+      "type": "solution",
+      "title": "Dommages Causés par les Acariens (Tétranyques)",
+      "description": "Les acariens sucent la sève, causant des piqûres jaunes (pointillés) et une déformation. Ils laissent souvent de très fines toiles d'araignées. ",
+      "advice": "Isolez la plante immédiatement. Traitez avec un acaricide ou pulvérisez régulièrement de l'eau savonneuse (savon noir), surtout sous les feuilles. Augmentez l'humidité.",
+      "severity": "high"
+    },
+
+    "twisted_virus": {
+      "type": "solution",
+      "title": "Attaque Virale (Virus de la Mosaïque)",
+      "description": "Le virus ne peut être guéri et est très contagieux pour les plantes voisines (transmis souvent par les insectes).",
+      "advice": "Isolez ou détruisez la plante pour éviter la propagation aux autres cultures. Désinfectez les outils. C'est malheureusement irréversible.",
+      "severity": "critical"
+    },
+
+    "twisted_pests_check": {
+      "question": "Avez-vous vérifié la présence d'autres petits parasites sur les jeunes pousses ?",
+      "choices": [
+        {"label": "Oui, présence de nuisibles visibles", "target_node": "curled_pests_advice"},
+        {"label": "Non, je ne vois rien", "target_node": "twisted_other_causes"}
+      ]
+    },
+    
+    "twisted_other_causes": {
+      "type": "solution",
+      "title": "Causes Environnementales / Défaut de Croissance",
+      "description": "La déformation peut être due à une toxicité (surdosage d'hormones/pesticides) ou une anomalie génétique passagère.",
+      "advice": "Rincez le substrat (lessivage) pour éliminer les résidus chimiques. Coupez la feuille déformée et surveillez la prochaine pousse.",
+      "severity": "low"
+    }
+  }
+}

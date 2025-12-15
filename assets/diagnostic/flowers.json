@@ -1,0 +1,36 @@
+{
+  "nodes": {
+    "start": {
+      "question": "Quel est le souci ?",
+      "choices": [
+        {"label": "Pas de fleurs / Pas de fruits", "target_node": "no_flower"},
+        {"label": "Les fleurs/fruits tombent", "target_node": "drop"},
+        {"label": "Fruits pourris ou tachés", "target_node": "rot"}
+      ]
+    },
+
+    "no_flower": {
+      "type": "solution",
+      "title": "Excès d'Azote ou Manque de Soleil",
+      "description": "L'azote fait du feuillage, le potassium fait des fleurs.",
+      "advice": "Changez d'engrais (Spécial Fleurs/Tomates) et augmentez l'exposition lumineuse.",
+      "severity": "medium"
+    },
+
+    "rot": {
+      "question": "Est-ce le 'cul' de la tomate qui est noir ?",
+      "choices": [
+        {"label": "Oui (Tache noire ronde)", "target_node": "calcium"},
+        {"label": "Non, c'est moisi partout", "target_node": "fungus"}
+      ]
+    },
+
+    "calcium": {
+      "type": "solution",
+      "title": "Nécrose Apicale (Cul noir)",
+      "description": "Carence en calcium souvent due à un arrosage irrégulier.",
+      "advice": "Arrosez très régulièrement (paillage). Ajoutez du calcium.",
+      "severity": "medium"
+    }
+  }
+}

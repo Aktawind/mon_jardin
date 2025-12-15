@@ -1,0 +1,29 @@
+{
+  "nodes": {
+    "start": {
+      "question": "Bonjour ! Je suis le Dr. Chlorofeel. Qu'est-ce qui vous inquiète ?",
+      "choices": [
+        {
+          "label": "L'apparence des feuilles 🍂",
+          "target_file": "leaves",
+          "target_node": "start"
+        },
+        {
+          "label": "La croissance 📉",
+          "target_file": "growth",
+          "target_node": "start"
+        },
+        {
+          "label": "Des petites bêtes ou taches bizarres 🐛",
+          "target_file": "pests",
+          "target_node": "start"
+        },
+        {
+          "label": "Problème de Fleurs ou Fruits 🌸",
+          "target_file": "flowers",
+          "target_node": "start"
+        }
+      ]
+    }
+  }
+}
