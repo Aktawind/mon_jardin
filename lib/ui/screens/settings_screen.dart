@@ -7,6 +7,8 @@
 import 'package:flutter/material.dart';
 import 'package:package_info_plus/package_info_plus.dart';
 import '../../services/preferences_service.dart';
+import '../../services/backup_service.dart';
+import 'package:file_picker/file_picker.dart';
 
 class SettingsScreen extends StatefulWidget {
   const SettingsScreen({super.key});
@@ -93,6 +95,132 @@ class _SettingsScreenState extends State<SettingsScreen> {
           ),
 
           const Divider(height: 32),
+
+          _buildSectionTitle("Données"),
+
+          // BOUTON SAUVEGARDER
+          ListTile(
+            leading: const Icon(Icons.upload_file, color: Colors.blue),
+            title: const Text("Sauvegarder mes données"),
+            subtitle: const Text("Export (Zip)"),
+            onTap: () async {
+              // On demande à l'utilisateur ce qu'il préfère
+              final choice = await showModalBottomSheet<String>(
+                context: context,
+                builder: (ctx) => SafeArea(
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      ListTile(
+                        leading: const Icon(Icons.share),
+                        title: const Text("Envoyer / Partager"),
+                        subtitle: const Text("Via Email, Drive, WhatsApp..."),
+                        onTap: () => Navigator.pop(ctx, 'share'),
+                      ),
+                      ListTile(
+                        leading: const Icon(Icons.save_alt),
+                        title: const Text("Enregistrer sur le téléphone"),
+                        subtitle: const Text("Dans Téléchargements ou autre"),
+                        onTap: () => Navigator.pop(ctx, 'save'),
+                      ),
+                    ],
+                  ),
+                ),
+              );
+
+              if (choice == null) return; // Annulé
+
+              if (context.mounted) {
+                ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text("Préparation...")));
+              }
+
+              try {
+                if (choice == 'share') {
+                  await BackupService().exportViaShare();
+                } else {
+                  final success = await BackupService().exportToDevice();
+                  if (success) {
+                    if (context.mounted) {
+                      ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text("Sauvegarde enregistrée avec succès ! ✅")));
+                    }
+                  }
+                }
+              } catch (e) {
+                if (context.mounted) {
+                  ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Erreur : $e"), backgroundColor: Colors.red));
+                }
+              }
+            },
+          ),
+
+          // BOUTON RESTAURER
+          ListTile(
+            leading: const Icon(Icons.restore, color: Colors.orange),
+            title: const Text("Restaurer une sauvegarde"),
+            subtitle: const Text("Importer un fichier .zip"),
+            onTap: () async {
+              // 1. Avertissement avant d'écraser
+              final confirm = await showDialog<bool>(
+                context: context,
+                builder: (ctx) => AlertDialog(
+                  title: const Text("Attention"),
+                  content: const Text("La restauration va REMPLACER toutes vos données actuelles par celles du fichier.\n\nVoulez-vous continuer ?"),
+                  actions: [
+                    TextButton(onPressed: () => Navigator.pop(ctx, false), child: const Text("Annuler")),
+                    TextButton(onPressed: () => Navigator.pop(ctx, true), child: const Text("Continuer", style: TextStyle(color: Colors.red))),
+                  ],
+                ),
+              );
+
+              if (confirm != true) return;
+
+              // 2. Sélection du fichier
+              try {
+                FilePickerResult? result = await FilePicker.platform.pickFiles(
+                  type: FileType.custom,
+                  allowedExtensions: ['zip'], // On filtre pour n'accepter que les zips
+                );
+
+                if (result != null) {
+                  final path = result.files.single.path!;
+                  
+                  // 3. Import
+                  if (context.mounted) {
+                    ScaffoldMessenger.of(context).showSnackBar(
+                    const SnackBar(content: Text("Restauration en cours...")),
+                  );
+                  }
+                  
+                  await BackupService().importData(path);
+                  
+                  // 4. Succès
+                  // Idéalement, on pourrait redémarrer l'appli ou recharger les providers, 
+                  // mais un message clair suffit pour l'instant.
+                  if (context.mounted) {
+                    showDialog(
+                      context: context,
+                      barrierDismissible: false,
+                      builder: (ctx) => AlertDialog(
+                        title: const Text("Succès !"),
+                        content: const Text("Vos données ont été restaurées.\n\nVeuillez redémarrer l'application pour voir les changements."),
+                        actions: [
+                          TextButton(onPressed: () => Navigator.pop(ctx), child: const Text("OK")),
+                        ],
+                      ),
+                    );
+                  }
+                }
+              } catch (e) {
+                if (context.mounted) {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(content: Text("Erreur lors de l'import : $e"), backgroundColor: Colors.red),
+                  );
+                }
+              }
+            },
+          ),
+          const Divider(height: 32),
+
           _buildSectionTitle("Application"),
 
           ListTile(

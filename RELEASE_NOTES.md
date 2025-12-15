@@ -6,14 +6,15 @@ Ce fichier trace l'historique des évolutions de l'application Sève.
 
 ## 🔮 À Venir (Roadmap)
 
-### v1.8.1 - "Souvenirs" (Esthétique)
-- **Filtres Photo 📸 :** Application automatique d'un filtre "Éclat" (Vignettage + Saturation douce) lors de l'ajout d'une photo.
+### v2.0.0 - "Synchronisation Cloud"
 
-### v1.8.0 - "L'Esprit Tranquille" (Mode Vacances)
+### v1.9.1 - Ajout des photo dans l'encyclopédie
+
+### v1.9.0 - "L'Esprit Tranquille" (Mode Vacances)
 - **Mode Vacances 🏖️ :** Sélecteur de dates de départ et de retour.
 - **Générateur d'instructions :** Création automatique d'une liste "Avant de partir" (Baigner, déplacer à l'ombre...) et d'une "Fiche Nounou" pour la personne qui vient arroser.
 
-### v1.7.0 - "Docteur Plante" (Aide & Diagnostic)
+### v1.8.0 - "Docteur Plante" (Aide & Diagnostic)
 - **SOS Plante 🚑 :** Assistant de diagnostic interactif simple (Chatbot à choix multiples).
 - **Arbre de décision :** Identifier les problèmes courants (Feuilles jaunes, taches, nuisibles) et proposer des solutions rassurantes.
 
@@ -26,6 +27,11 @@ Ce fichier trace l'historique des évolutions de l'application Sève.
 ---
 
 ## ✅ Versions publiées
+
+### v1.7.0 - "Sauvegarde et restauration"
+Export de toutes vos plantes, historiques, calendriers et albums photos dans un fichier unique sécurisé (`.zip`).
+Enregistrez votre sauvegarde sur votre téléphone ou envoyez-la sur votre Drive/Mail.
+Changez de téléphone sans perdre une seule feuille ! La restauration remet tout en place à l'identique.
 
 ### v1.6.3 - "Correctif"
 Correction regression, le pruning_months avait disparu aussi pour les fruitiers

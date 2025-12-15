@@ -16,7 +16,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 # https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
 # In Windows, build-name is used as the major, minor, and patch parts
 # of the product and file versions while build-number is used as the build suffix.
-version: 1.6.3+16
+version: 1.7.0+17
 
 environment:
   sdk: ^3.10.0
@@ -42,6 +42,10 @@ dependencies:
   flutter_launcher_icons: ^0.13.1 # Pour générer des icônes d'application
   shared_preferences: ^2.2.2 # Pour stocker des préférences simples
   csv: ^5.1.1 # Pour exporter des données au format CSV
+  share_plus: ^7.2.1 # Pour partager du contenu avec d'autres applications
+  file_picker: ^8.0.0 # Pour sélectionner des fichiers dans le système de fichiers
+  flutter_file_dialog: ^3.0.2 # Pour ouvrir des dialogues de fichiers natifs
+  archive: ^3.3.7 # Pour compresser et décompresser des fichiers ZIP
   
   flutter_localizations: # Nécessaire pour les localisations Material/Widgets
     sdk: flutter

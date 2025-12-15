@@ -356,4 +356,10 @@ class DatabaseService {
       whereArgs: [photo.id],
     );
   }
+
+  Future<void> close() async {
+    final db = await database;
+    await db.close();
+    _database = null; // Important pour forcer la réouverture après
+  }
 }
