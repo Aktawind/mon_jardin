@@ -23,13 +23,22 @@ class SmartWateringSheet extends StatelessWidget {
     // On apprend : +1 jour au cycle (le cycle était trop court)
     await DatabaseService().adjustPlantFrequency(plant, 1);
     
-    // ON NE MARQUE PAS COMME ARROSÉ (puisque c'est humide)
-    // On reprogramme juste la notif avec la nouvelle fréquence
-    // Comme la fréquence est plus longue, la prochaine date (lastWatered + freq) va reculer.
-    await _reschedule(plant);
-    if (!context.mounted) return;
+    final newFreq = plant.currentFrequency + 1; // La fréquence vient d'augmenter
+    // On veut le prochain rappel dans 2 jours (arbitraire mais logique si humide)
+    final daysAgo = newFreq - 2; 
+    final fakeLastWater = DateTime.now().subtract(Duration(days: daysAgo));
+    
+    // On met à jour la date sans logger l'événement (ce n'est pas un vrai arrosage)
+    final db = DatabaseService();
+    await db.database.then((d) => d.update(
+      'plants',
+      {'last_watered': fakeLastWater.toIso8601String()},
+      where: 'id = ?',
+      whereArgs: [plant.id],
+    ));
 
-    _showSnack(context, "C'est noté ! Je repousse l'arrosage et je rallonge le cycle.");
+    await _reschedule(plant);
+    _showSnack(context, "C'est noté ! Je vous rappelle dans 2 jours.");
     onSuccess();
   }
 
