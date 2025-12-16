@@ -3,14 +3,14 @@
     "start": {
       "question": "Quel problème concerne la floraison ou les fruits ?",
       "choices": [
-        {"label": "Pas de fleurs ou de fruits (Absence de production)", "target_node": "bloom_none"},
-        {"label": "Les fleurs/boutons tombent avant d'ouvrir (Chute des bourgeons)", "target_node": "bloom_drop"},
-        {"label": "Les fruits sont déformés ou pourrissent (Qualité des fruits)", "target_node": "fruit_quality"}
+        {"label": "Pas de fleurs ou de fruits", "target_node": "bloom_none"},
+        {"label": "Les fleurs/boutons tombent avant d'ouvrir", "target_node": "bloom_drop"},
+        {"label": "Les fruits sont déformés ou pourrissent", "target_node": "fruit_quality"}
       ]
     },
 
     "bloom_none": {
-      "question": "Votre plante est-elle bien exposée et reçoit-elle assez de lumière (6+ heures pour beaucoup) ?",
+      "question": "Votre plante est-elle bien exposée et reçoit-elle assez de lumière (au moins 6 heures) ?",
       "choices": [
         {"label": "Non, manque de lumière", "target_node": "bloom_light_advice"},
         {"label": "Oui, bonne lumière", "target_node": "bloom_nutrient_check"}
@@ -50,10 +50,10 @@
     },
     
     "bloom_drop": {
-      "question": "Quand les bourgeons tombent-ils ? (Vérifiez l'humidité du sol)",
+      "question": "Est-ce que la plante a subi un stress récent (changement d'arrosage, température, courants d'air) ?",
       "choices": [
-        {"label": "Chute après un changement de température/vent ou sol trop sec", "target_node": "drop_stress"},
-        {"label": "Chute même si l'arrosage est bon", "target_node": "drop_pollination_check"}
+        {"label": "Oui, les conditions ont changé", "target_node": "drop_stress"},
+        {"label": "Non, les conditions sont stables", "target_node": "drop_pollination_check"}
       ]
     },
     
@@ -66,7 +66,7 @@
     },
     
     "drop_pollination_check": {
-      "question": "S'agit-il d'une plante d'intérieur ou d'une plante qui nécessite une pollinisation croisée ?",
+      "question": "S'agit-il d'une plante d'intérieur ou seule ?",
       "choices": [
         {"label": "Oui, plante à l'intérieur ou isolée", "target_node": "drop_no_pollinators"},
         {"label": "Non, elle est à l'extérieur et visitée par des insectes", "target_node": "drop_stress"}
@@ -82,10 +82,10 @@
     },
     
     "fruit_quality": {
-      "question": "Le problème est-il une déformation/tache sèche ou une pourriture molle ?",
+      "question": "Le problème est-il une déformation/tâche sèche ou une pourriture molle ?",
       "choices": [
-        {"label": "Tache noire/sèche sur l'extrémité du fruit (tomates/poivrons)", "target_node": "fruit_calcium"},
-        {"label": "Déformation étrange ou mauvaise formation des graines", "target_node": "fruit_poor_pollination"},
+        {"label": "Tache noire/sèche sur l'extrémité du fruit", "target_node": "fruit_calcium"},
+        {"label": "Déformation étrange ou malformation des graines", "target_node": "fruit_poor_pollination"},
         {"label": "Pourriture molle, grise ou foncée", "target_node": "fruit_fungal"}
       ]
     },

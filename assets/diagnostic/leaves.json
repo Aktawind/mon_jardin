@@ -261,9 +261,9 @@
     "dry_edges": {
       "question": "Le problème touche-t-il les pointes et les bords ?",
       "choices": [
-        {"label": "Oui, les bords sont brûlés et je vois du blanc sur la terre/pot", "target_node": "dry_edges_salt"},
-        {"label": "Non, les bords sont bruns/secs et l'air est chaud ou sec", "target_node": "dry_edges_humidity_check"},
-        {"label": "C'est sur toute la feuille, avec une mauvaise odeur", "target_node": "soft_wet"} 
+        {"label": "Oui, bords brûlés avec du blanc sur la terre/pot", "target_node": "dry_edges_salt"},
+        {"label": "Non, bords bruns/secs et l'air est chaud ou sec", "target_node": "dry_edges_humidity_check"},
+        {"label": "Sur toute la feuille, avec une mauvaise odeur", "target_node": "soft_wet"} 
       ]
     },
 
@@ -334,9 +334,9 @@
     "twisted_deformed": {
       "question": "Le problème est-il accompagné d'un motif de taches jaunes/vertes (mosaïque) ou de signes de nuisibles ?",
       "choices": [
-        {"label": "Torsion + fines toiles rouges/jaunes sous la feuille", "target_node": "twisted_mites"},
+        {"label": "Torsion + toiles rouges/jaunes sous la feuille", "target_node": "twisted_mites"},
         {"label": "Torsion + motif de mosaïque jaune sur les feuilles", "target_node": "twisted_virus"},
-        {"label": "Torsion seule (sans nuisible ni mosaïque)", "target_node": "twisted_pests_check"}
+        {"label": "Torsion seule (sans toiles ni mosaïque)", "target_node": "twisted_pests_check"}
       ]
     },
 

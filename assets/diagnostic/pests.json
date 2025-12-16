@@ -13,9 +13,9 @@
     "pests_suckers_check": {
       "question": "Comment décririez-vous ces insectes ?",
       "choices": [
-        {"label": "Petits, verts/noirs, regroupés sur les jeunes pousses, collant", "target_node": "pests_aphids"},
-        {"label": "Petits boucliers bruns/blancs, aspect cotonneux/cireux", "target_node": "pests_mealybugs"},
-        {"label": "Petites mouches blanches s'envolant quand on touche la feuille", "target_node": "pests_whitefly"}
+        {"label": "Petits, verts/noirs, sur les pousses, collant", "target_node": "pests_aphids"},
+        {"label": "Petits, bruns/blancs, aspect cotonneux/cireux", "target_node": "pests_mealybugs"},
+        {"label": "Petites mouches blanches volantes", "target_node": "pests_whitefly"}
       ]
     },
 
@@ -55,8 +55,8 @@
       "question": "Le problème est-il lié à des trous dans les feuilles ou à la base de la plante ?",
       "choices": [
         {"label": "Grands trous irréguliers et traces de bave la nuit", "target_node": "pests_slugs"},
-        {"label": "Feuilles rongées ou coupées (potager)", "target_node": "pests_caterpillars"},
-        {"label": "Feuilles mâchées, dégâts sur les racines (insectes terrestres)", "target_node": "pests_weevils"}
+        {"label": "Feuilles rongées ou coupées", "target_node": "pests_caterpillars"},
+        {"label": "Feuilles mâchées, dégâts sur les racines", "target_node": "pests_weevils"}
       ]
     },
 
@@ -88,7 +88,7 @@
       "question": "Comment se manifeste le problème fongique ?",
       "choices": [
         {"label": "Poudre blanche/grise sur les feuilles/tiges", "target_node": "fungal_powdery_mildew"},
-        {"label": "Taches et duvet gris-blanc sous les feuilles (Potager/Extérieur)", "target_node": "fungal_downy_mildew"},
+        {"label": "Taches et duvet gris-blanc sous les feuilles", "target_node": "fungal_downy_mildew"},
         {"label": "Pustules orangées/rouges sous les feuilles", "target_node": "fungal_rust"}
       ]
     },

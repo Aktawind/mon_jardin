@@ -14,7 +14,7 @@
     "growth_slow": {
       "question": "Depuis combien de temps la croissance est-elle lente et à quelle période de l'année ?",
       "choices": [
-        {"label": "Symptôme en hiver / Période froide", "target_node": "growth_dormancy"},
+        {"label": "Symptôme en hiver", "target_node": "growth_dormancy"},
         {"label": "Symptôme toute l'année / en période de croissance", "target_node": "growth_light_check"}
       ]
     },
@@ -47,7 +47,7 @@
       "question": "Voyez-vous des racines sortir des trous de drainage ou la terre sèche-t-elle très vite ?",
       "choices": [
         {"label": "Oui, des racines sortent ou le sol est très sec", "target_node": "growth_pot_size"},
-        {"label": "Non, les racines ont de la place", "target_node": "growth_nutrient_check"}
+        {"label": "Non, les racines ont de la place et le sol est bon", "target_node": "growth_nutrient_check"}
       ]
     },
 
@@ -62,7 +62,7 @@
     "growth_nutrient_check": {
       "question": "Avez-vous fertilisé la plante au cours des 4 derniers mois ?",
       "choices": [
-        {"label": "Non ou très peu", "target_node": "growth_nutrient_advice"},
+        {"label": "Non ou pas suffisamment", "target_node": "growth_nutrient_advice"},
         {"label": "Oui, régulièrement", "target_node": "growth_other_check"}
       ]
     },
@@ -100,11 +100,18 @@
     },
 
     "growth_drop": {
-      "question": "Quel type de feuille tombe et quelle est la cause la plus probable ?",
+      "question": "Quel type de feuille tombe ?",
       "choices": [
-        {"label": "Feuilles du bas, jaunies ou sèches (chute lente)", "target_node": "yellow_bottom_natural"},
-        {"label": "Toutes les feuilles, soudainement, après un changement (déplacement/courant d'air)", "target_node": "drop_shock"},
-        {"label": "Toutes les feuilles, après arrosage très irrégulier (trop ou pas assez)", "target_node": "drop_water_check"}
+        {"label": "Feuilles du bas, jaunies ou sèches", "target_node": "yellow_bottom_natural"},
+        {"label": "Toutes les feuilles", "target_node": "all_drop"}
+      ]
+    },
+
+    "all_drop": {
+      "question": "Y a t-il eu un stress récent ?",
+      "choices": [
+        {"label": "Oui, il y a eu un changement (déplacement/vent)", "target_node": "drop_shock"},
+        {"label": "Oui, un arrosage très irrégulier", "target_node": "drop_water_check"}
       ]
     },
 
@@ -160,7 +167,7 @@
       "question": "L'eau stagne-t-elle dans la soucoupe ou le pot est-il sans trou de drainage ?",
       "choices": [
         {"label": "Oui, eau stagnante ou pas de drainage", "target_node": "rot_drainage_advice"},
-        {"label": "Non, bon drainage, mais la terre reste mouillée longtemps", "target_node": "rot_root_advice"}
+        {"label": "Non, bon drainage, mais la terre reste mouillée", "target_node": "rot_root_advice"}
       ]
     },
 
