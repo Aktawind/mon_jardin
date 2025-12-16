@@ -10,6 +10,7 @@ import 'package:timezone/timezone.dart' as tz;
 import '../models/plant.dart';
 import 'preferences_service.dart';
 import 'package:flutter/material.dart';
+import '../data/database_service.dart';
 
 class NotificationService {
   static final NotificationService _instance = NotificationService._internal();
@@ -130,6 +131,8 @@ class NotificationService {
     // ex: "uuid-de-la-plante_water" -> HashCode 12345
     // ex: "uuid-de-la-plante_fert"  -> HashCode 67890
     final uniqueId = '${plant.id}_$typeKey'.hashCode;
+    final time = await PreferencesService().getNotificationTime();
+
 
     // On fixe l'heure à 9h00 du matin
     var scheduledDate = tz.TZDateTime(
@@ -137,7 +140,8 @@ class NotificationService {
       date.year,
       date.month,
       date.day,
-      9, 0,
+      time.hour, 
+      time.minute,
     );
 
     await flutterLocalNotificationsPlugin.zonedSchedule(
@@ -172,5 +176,18 @@ class NotificationService {
 
   bool _isDateInPast(DateTime date) {
     return date.isBefore(DateTime.now());
+  }
+
+  // Reprogramme TOUTES les plantes (lourd mais nécessaire après un changement d'heure)
+  Future<void> rescheduleAll() async {
+    final plants = await DatabaseService().getPlants();
+    
+    // On annule tout d'abord pour être propre
+    await flutterLocalNotificationsPlugin.cancelAll();
+
+    for (var plant in plants) {
+      await scheduleAllNotifications(plant);
+    }
+    debugPrint("Toutes les notifications ont été reprogrammées.");
   }
 }

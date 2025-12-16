@@ -9,6 +9,7 @@ import 'package:package_info_plus/package_info_plus.dart';
 import '../../services/preferences_service.dart';
 import '../../services/backup_service.dart';
 import 'package:file_picker/file_picker.dart';
+import '../../services/notification_service.dart';
 
 class SettingsScreen extends StatefulWidget {
   const SettingsScreen({super.key});
@@ -24,6 +25,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
   bool _notifyWater = true;
   bool _notifyFertilizer = true;
   bool _notifyRepot = true;
+  TimeOfDay _notifTime = const TimeOfDay(hour: 9, minute: 0);
 
   @override
   void initState() {
@@ -40,12 +42,14 @@ class _SettingsScreenState extends State<SettingsScreen> {
     final water = await prefs.getBool(PreferencesService.keyNotifyWater);
     final fert = await prefs.getBool(PreferencesService.keyNotifyFertilizer);
     final repot = await prefs.getBool(PreferencesService.keyNotifyRepot);
+    final time = await prefs.getNotificationTime();
 
     setState(() {
       _version = info.version;
       _notifyWater = water;
       _notifyFertilizer = fert;
       _notifyRepot = repot;
+      _notifTime = time;
     });
   }
 
@@ -95,6 +99,28 @@ class _SettingsScreenState extends State<SettingsScreen> {
           ),
 
           const Divider(height: 32),
+
+          ListTile(
+            leading: const Icon(Icons.access_time),
+            title: const Text("Heure des rappels"),
+            subtitle: Text(_notifTime.format(context)), // Variable à créer dans le State
+            onTap: () async {
+              final picked = await showTimePicker(
+                context: context,
+                initialTime: _notifTime,
+              );
+              if (picked != null) {
+                await PreferencesService().setNotificationTime(picked);
+                setState(() => _notifTime = picked);
+                
+                // Petit feedback + Action lourde
+                if (context.mounted) {
+                  ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text("Reprogrammation des rappels...")));
+                }
+                await NotificationService().rescheduleAll();
+              }
+            },
+          ),
 
           _buildSectionTitle("Données"),
 
