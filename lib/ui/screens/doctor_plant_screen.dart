@@ -90,7 +90,7 @@ class _DoctorPlantScreenState extends State<DoctorPlantScreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Dr. Chlorofeel 🌱"),
-        backgroundColor: Colors.teal,
+        backgroundColor: Theme.of(context).colorScheme.primary,
         foregroundColor: Colors.white,
         actions: [
           IconButton(
@@ -150,7 +150,7 @@ class _DoctorPlantScreenState extends State<DoctorPlantScreen> {
                     onPressed: () => _onChoiceSelected(choice),
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.white,
-                      foregroundColor: Colors.teal,
+                      foregroundColor: Theme.of(context).colorScheme.primary,
                       padding: const EdgeInsets.symmetric(vertical: 12),
                       side: const BorderSide(color: Colors.teal),
                     ),
@@ -175,7 +175,7 @@ class _DoctorPlantScreenState extends State<DoctorPlantScreen> {
                  }, 
                  icon: const Icon(Icons.refresh), 
                  label: const Text("Nouveau diagnostic"),
-                 style: ElevatedButton.styleFrom(backgroundColor: Colors.teal, foregroundColor: Colors.white),
+                 style: ElevatedButton.styleFrom(backgroundColor: Theme.of(context).colorScheme.primary, foregroundColor: Colors.white),
                ),
              ),
         ],

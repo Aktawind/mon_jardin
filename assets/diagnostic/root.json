@@ -1,7 +1,7 @@
 {
   "nodes": {
     "start": {
-      "question": "Bonjour ! Je suis le Dr. Chlorofeel. Qu'est-ce qui vous inquiète ?",
+      "question": "Bonjour ! Je suis le Dr. Chlorofeel. \nQu'est-ce qui vous inquiète ?",
       "choices": [
         {
           "label": "L'apparence des feuilles 🍂",

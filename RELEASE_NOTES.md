@@ -10,26 +10,27 @@ Ce fichier trace l'historique des évolutions de l'application Sève.
 
 ### v1.9.1 - Ajout des photo dans l'encyclopédie
 
-### v1.9.0 - "L'Esprit Tranquille" (Mode Vacances)
-- **Mode Vacances 🏖️ :** Sélecteur de dates de départ et de retour.
-- **Générateur d'instructions :** Création automatique d'une liste "Avant de partir" (Baigner, déplacer à l'ombre...) et d'une "Fiche Nounou" pour la personne qui vient arroser.
-
-### v1.8.0 - "Docteur Plante" (Aide & Diagnostic)
-- **SOS Plante 🚑 :** Assistant de diagnostic interactif simple (Chatbot à choix multiples).
-- **Arbre de décision :** Identifier les problèmes courants (Feuilles jaunes, taches, nuisibles) et proposer des solutions rassurantes.
-
 
 
 ---
 
 ## 🚧 En Développement
 
-### v1.8.0 - "Docteur Plante" (Aide & Diagnostic)
-Assistant de diagnostic interactif simple (Chatbot à choix multiples).
-Identifier les problèmes courants (Feuilles jaunes, taches, nuisibles) et proposer des solutions rassurantes.
+
 ---
 
 ## ✅ Versions publiées
+
+### v1.9.0 - "L'Esprit Tranquille" (Mode Vacances)
+Sélecteur de dates de départ et de retour.
+Création automatique d'une liste "Avant de partir" et d'une "Fiche Nounou" pour la personne qui vient arroser.
+
+### v1.8.0 - "Docteur Plante" (Aide & Diagnostic)
+Assistant de diagnostic interactif simple (Chatbot à choix multiples).
+Identifier les problèmes courants (Feuilles jaunes, taches, nuisibles) et proposer des solutions rassurantes.
+Pouvoir choisir l'heure des notifications dans les paramètres
+Repousser si terre humide en prenant le potentiel retard d'arrosage en compte
+Le Bouton "ajouter à mon jardin" se trouvait par dessus la section entretien dans l'encyclopédie
 
 ### v1.7.0 - "Sauvegarde et restauration"
 Export de toutes vos plantes, historiques, calendriers et albums photos dans un fichier unique sécurisé (`.zip`).
