@@ -12,10 +12,10 @@
     },
 
     "growth_slow": {
-      "question": "Depuis combien de temps la croissance est-elle lente et à quelle période de l'année ?",
+      "question": "Quand le symptôme apparaît-il ?",
       "choices": [
-        {"label": "Symptôme en hiver", "target_node": "growth_dormancy"},
-        {"label": "Symptôme toute l'année / en période de croissance", "target_node": "growth_light_check"}
+        {"label": "En hiver", "target_node": "growth_dormancy"},
+        {"label": "Toute l'année", "target_node": "growth_light_check"}
       ]
     },
 
@@ -46,7 +46,8 @@
     "growth_pot_check": {
       "question": "Voyez-vous des racines sortir des trous de drainage ou la terre sèche-t-elle très vite ?",
       "choices": [
-        {"label": "Oui, des racines sortent ou le sol est très sec", "target_node": "growth_pot_size"},
+        {"label": "Oui, les racines sortent du pot", "target_node": "growth_pot_size"},
+        {"label": "Oui, le sol est souvent très sec", "target_node": "growth_pot_size"},
         {"label": "Non, les racines ont de la place et le sol est bon", "target_node": "growth_nutrient_check"}
       ]
     },
@@ -124,7 +125,7 @@
     },
 
     "drop_water_check": {
-      "question": "Quel est l'état du sol APRÈS la chute des feuilles ?",
+      "question": "Quel est l'état du sol après la chute des feuilles ?",
       "choices": [
         {"label": "Sol très sec et cassant", "target_node": "drop_under_water"},
         {"label": "Sol constamment humide ou détrempé", "target_node": "drop_over_water"}
@@ -148,7 +149,7 @@
     },
 
     "growth_rot": {
-      "question": "Où se situe le problème et quel est l'état du sol ?",
+      "question": "Où se situe le symptôme ?",
       "choices": [
         {"label": "Base de la tige ramollie, sombre, odeur de moisi", "target_node": "rot_collet"},
         {"label": "Toute la plante flétrit, terre constamment mouillée", "target_node": "rot_root_check"}

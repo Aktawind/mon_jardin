@@ -28,8 +28,8 @@
     "bloom_nutrient_check": {
       "question": "Quel type d'engrais utilisez-vous le plus ?",
       "choices": [
-        {"label": "Engrais riche en Azote (N) (pour les feuilles)", "target_node": "bloom_nitrogen_excess"},
-        {"label": "Engrais équilibré ou riche en P & K", "target_node": "bloom_dormancy_check"}
+        {"label": "Engrais riche en Azote", "target_node": "bloom_nitrogen_excess"},
+        {"label": "Engrais équilibré", "target_node": "bloom_dormancy_check"}
       ]
     },
     
@@ -66,10 +66,10 @@
     },
     
     "drop_pollination_check": {
-      "question": "S'agit-il d'une plante d'intérieur ou seule ?",
+      "question": "S'agit-il d'une plante d'intérieur ou isolée ?",
       "choices": [
         {"label": "Oui, plante à l'intérieur ou isolée", "target_node": "drop_no_pollinators"},
-        {"label": "Non, elle est à l'extérieur et visitée par des insectes", "target_node": "drop_stress"}
+        {"label": "Non, plante à l'extérieur visitée par des insectes", "target_node": "drop_stress"}
       ]
     },
     

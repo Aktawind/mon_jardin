@@ -17,7 +17,7 @@
       "question": "Où se situe le jaunissement ?",
       "choices": [
         {"label": "Feuilles du bas uniquement", "target_node": "yellow_bottom_check"},
-        {"label": "Toute la plante + Terre humide", "target_node": "yellow_water"},
+        {"label": "Toute la plante + terre humide", "target_node": "yellow_water"},
         {"label": "Jeunes pousses pâles (Nervures vertes)", "target_node": "chlorosis_iron"},
         {"label": "Jaunissement entre les nervures (en 'V')", "target_node": "chlorosis_magnesium"}
       ]
@@ -27,7 +27,7 @@
       "question": "Les feuilles du bas tombent-elles d'elles-mêmes ?",
       "choices": [
         {"label": "Oui, il y a de nouvelles pousses", "target_node": "yellow_bottom_natural"},
-        {"label": "Non, elles restent ou la croissance est faible", "target_node": "yellow_nitrogen_advice"}
+        {"label": "Non, elles restent", "target_node": "yellow_nitrogen_advice"}
       ]
     },
 
@@ -40,10 +40,10 @@
     },
 
     "yellow_nitrogen_advice": {
-      "question": "La plante est-elle bien exposée à la lumière (4h/jour) ?",
+      "question": "La plante est-elle bien exposée à la lumière (au moins 4h par jour) ?",
       "choices": [
-        {"label": "Non, elle est à l'ombre", "target_node": "yellow_light_advice"},
-        {"label": "Oui, bien éclairée", "target_node": "yellow_nitrogen_cause"}
+        {"label": "Non, elle est plutôt à l'ombre", "target_node": "yellow_light_advice"},
+        {"label": "Oui, elle est bien éclairée", "target_node": "yellow_nitrogen_cause"}
       ]
     },
 
@@ -88,19 +88,19 @@
     },
 
     "spots": {
-      "question": "Comment décririez-vous ces taches ?",
+      "question": "Comment décririez-vous ces tâches ?",
       "choices": [
-        {"label": "Taches petites et nombreuses, bord noir", "target_node": "spots_fungal_check"},
+        {"label": "Tâches petites et nombreuses, bord noir", "target_node": "spots_fungal_check"},
         {"label": "Grandes zones brunes", "target_node": "spots_sunburn_check"},
-        {"label": "Taches en périphérie, bord des feuilles", "target_node": "spots_chemical"}
+        {"label": "Tâches en périphérie, au bord des feuilles", "target_node": "spots_chemical"}
       ]
     },
 
     "spots_fungal_check": {
       "question": "Voyez-vous des filaments, de la poudre ou des cercles concentriques sur/sous la feuille ?",
       "choices": [
-        {"label": "Oui, présence d'un duvet/poudre ou de cercles", "target_node": "spots_fungal_advice"},
-        {"label": "Non, ce sont juste des taches séchées/brûlées", "target_node": "spots_irrigation_check"}
+        {"label": "Oui, présence d'un duvet ou de cercles", "target_node": "spots_fungal_advice"},
+        {"label": "Non, ce sont juste des tâches séchées/brûlées", "target_node": "spots_irrigation_check"}
       ]
     },
 
@@ -113,7 +113,7 @@
     },
 
     "spots_irrigation_check": {
-      "question": "Est-ce que l'eau stagne souvent sur les feuilles après l'arrosage ?",
+      "question": "Avez-vous tendance à mouiller les feuilles pendant l'arrosage ?",
       "choices": [
         {"label": "Oui, j'arrose souvent le feuillage", "target_node": "spots_irrigation_solution"},
         {"label": "Non, l'arrosage se fait au pied", "target_node": "spots_minor_damage"}
@@ -137,10 +137,10 @@
     },
     
     "spots_sunburn_check": {
-      "question": "La plante a-t-elle été récemment déplacée de l'intérieur/ombre au soleil direct ?",
+      "question": "La plante a-t-elle été récemment déplacée de l'ombre au soleil direct ?",
       "choices": [
         {"label": "Oui, changement brusque d'exposition", "target_node": "spots_sunburn_advice"},
-        {"label": "Non, exposition stable", "target_node": "spots_chemical"} 
+        {"label": "Non, pas de changement d'exposition", "target_node": "spots_chemical"} 
       ]
     },
 
@@ -161,11 +161,11 @@
     },
 
     "soft": {
-      "question": "Quel est l'état du substrat (la terre) ?",
+      "question": "Quel est l'état de la terre ?",
       "choices": [
-        {"label": "Sec et dur (ou léger)", "target_node": "soft_dry"},
-        {"label": "Très humide et lourd (ou détrempé)", "target_node": "soft_wet"},
-        {"label": "Humide, mais la plante flétrit quand même", "target_node": "soft_temp_check"}
+        {"label": "Sec", "target_node": "soft_dry"},
+        {"label": "Très humide voire détrempé", "target_node": "soft_wet"},
+        {"label": "Normalement humide", "target_node": "soft_temp_check"}
       ]
     },
 
@@ -186,7 +186,7 @@
     },
 
     "soft_temp_check": {
-      "question": "La température a-t-elle changé drastiquement récemment (chaleur ou froid extrême) ?",
+      "question": "La température a-t-elle changé drastiquement récemment (forte chaleur ou froid extrême) ?",
       "choices": [
         {"label": "Oui, forte chaleur ou exposition au gel", "target_node": "soft_temp_shock"},
         {"label": "Non, température stable et normale", "target_node": "soft_wet"}
@@ -205,8 +205,8 @@
       "question": "Le recroquevillement est-il sur les jeunes pousses, ou bien les feuilles adultes ?",
       "choices": [
         {"label": "Jeunes pousses déformées, collantes", "target_node": "curled_pests_check"},
-        {"label": "Feuilles sèches et cassantes", "target_node": "curled_dehydration"},
-        {"label": "Feuilles simplement repliées vers l'intérieur", "target_node": "curled_heat_check"}
+        {"label": "Feuilles adultes sèches et cassantes", "target_node": "curled_dehydration"},
+        {"label": "Feuilles adultes repliées vers l'intérieur", "target_node": "curled_heat_check"}
       ]
     },
 
@@ -219,10 +219,10 @@
     },
 
     "curled_heat_check": {
-      "question": "La plante est-elle près d'une source de chaleur ou un vent sec (près d'un radiateur, fenêtre) ?",
+      "question": "La plante est-elle près d'une source de chaleur ou en courant d'air (près d'un radiateur, fenêtre) ?",
       "choices": [
         {"label": "Oui, source de chaleur/vent à proximité", "target_node": "curled_heat"},
-        {"label": "Non, environnement stable et frais", "target_node": "curled_pests_check"}
+        {"label": "Non, environnement stable et normal", "target_node": "curled_pests_check"}
       ]
     },
 
@@ -262,7 +262,7 @@
       "question": "Le problème touche-t-il les pointes et les bords ?",
       "choices": [
         {"label": "Oui, bords brûlés avec du blanc sur la terre/pot", "target_node": "dry_edges_salt"},
-        {"label": "Non, bords bruns/secs et l'air est chaud ou sec", "target_node": "dry_edges_humidity_check"},
+        {"label": "Oui, bords bruns ou secs", "target_node": "dry_edges_humidity_check"},
         {"label": "Sur toute la feuille, avec une mauvaise odeur", "target_node": "soft_wet"} 
       ]
     },
@@ -276,10 +276,10 @@
     },
 
     "dry_edges_humidity_check": {
-      "question": "L'air ambiant est-il très sec ou y a-t-il un vent fort (courant d'air, chauffage, climatisation) ?",
+      "question": "L'air ambiant est-il très sec ou y a-t-il des courants d'air ?",
       "choices": [
         {"label": "Oui, l'air est sec ou il y a du vent", "target_node": "dry_edges_air"},
-        {"label": "Non, l'environnement est humide et stable", "target_node": "dry_edges_salt"}
+        {"label": "Non, l'environnement est normal et stable", "target_node": "dry_edges_salt"}
       ]
     },
 
@@ -294,16 +294,16 @@
     "pale_white": {
       "question": "Le pâlissement est-il sur la feuille entière ou est-il localisé ?",
       "choices": [
-        {"label": "Pâlissement uniforme ou avec nervures vertes", "target_node": "pale_iron_check"},
-        {"label": "Blanchiment dans les zones les plus exposées", "target_node": "pale_sun_bleaching"}
+        {"label": "Sur toute la feuille", "target_node": "pale_iron_check"},
+        {"label": "Sur certaines zones seulement", "target_node": "pale_sun_bleaching"}
       ]
     },
 
     "pale_iron_check": {
-      "question": "Le pâlissement concerne-t-il surtout les jeunes pousses, tandis que les nervures restent bien vertes ?",
+      "question": "Le pâlissement concerne-t-il surtout les jeunes pousses ?",
       "choices": [
-        {"label": "Oui, jeunes pousses touchées et nervures vertes", "target_node": "pale_iron_advice"},
-        {"label": "Non, pâlissement uniforme sur toutes les feuilles", "target_node": "pale_general_nitrogen"}
+        {"label": "Oui, les jeunes pousses sont touchées", "target_node": "pale_iron_advice"},
+        {"label": "Non, le pâlissement est sur toutes les feuilles", "target_node": "pale_general_nitrogen"}
       ]
     },
 
@@ -332,7 +332,7 @@
     },
 
     "twisted_deformed": {
-      "question": "Le problème est-il accompagné d'un motif de taches jaunes/vertes (mosaïque) ou de signes de nuisibles ?",
+      "question": "Le problème est-il accompagné d'un motif de tâches jaunes/vertes (mosaïque) ou de signes de nuisibles ?",
       "choices": [
         {"label": "Torsion + toiles rouges/jaunes sous la feuille", "target_node": "twisted_mites"},
         {"label": "Torsion + motif de mosaïque jaune sur les feuilles", "target_node": "twisted_virus"},
