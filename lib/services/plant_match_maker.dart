@@ -36,19 +36,36 @@ class PlantMatchMaker {
   }
 
   bool _matches(PlantSpeciesData p, PlantMatchCriteria c) {
+
+    if (p.species == "Rhododendron") {
+  print("RHODO DEBUG:");
+  print("- Cat: ${p.category} vs ${c.category}");
+  print("- Light: ${p.light} vs ${c.light}");
+  print("- Temp: ${p.temperature} vs ${c.minTemp}"); // C'est souvent lui le coupable !
+  print("- Esthetic: ${p.foliage} vs ${c.aesthetic}"); // Attention à la confusion foliage/aesthetic
+}
     // 1. Catégorie (Filtrage strict)
     if (c.category != null && p.category != c.category) return false;
 
     // 2. Lumière (Filtrage souple)
     // Si j'ai "Plein soleil", je peux accepter "Mi-ombre" ? Disons strict pour commencer.
     // Si l'utilisateur dit "Ombre" (low), on ne propose pas "Plein soleil" (direct).
-    if (c.light != null) {
-       // Logique simple : exact match
-       if (p.light != c.light) return false;
+    // Scénario A : Je veux du soleil.
+       if (c.light == LightLevel.direct) {
+          // On accepte direct OU brightInd (car brightInd c'est déjà très lumineux)
+          if (p.light != LightLevel.direct && p.light != LightLevel.brightInd) return false;
+       }
        
-       // Logique avancée possible : si j'ai "bright_ind", j'accepte "partial" ? 
-       // À affiner selon tes retours.
-    }
+       // Scénario B : Je veux de l'ombre (Low).
+       else if (c.light == LightLevel.low) {
+          // On accepte low OU partial
+          if (p.light != LightLevel.low && p.light != LightLevel.partial) return false;
+       }
+       
+       // Scénario C : Cas exact pour les autres
+       else {
+          if (p.light != c.light) return false;
+       }
 
     // 3. Facilité / Arrosage (Low Maintenance)
     if (c.lowMaintenance == true) {

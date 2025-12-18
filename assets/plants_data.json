@@ -1,0 +1,7985 @@
+{
+  "1": {
+    "species": "Monstera Deliciosa",
+    "category": "indoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "high",
+    "temperature": "semiHardy",
+    "toxicity": "low",
+    "cycle": "perennial",
+    "water_summer": 7,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 12,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [
+      3,
+      4,
+      5
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Riche, drainé (type terreau pour plantes vertes ou, à défaut, terreau de rempotage). En extérieur, terre de jardin mélangée à du terreau.",
+    "pruning": "Aucune taille n'est nécessaire, vous pouvez éventuellement supprimer les racines aériennes les plus gênantes mais préservez-les cependant au maximum, car elles contribuent au bon développement de la plante.",
+    "esthetic": "foliage",
+    "foliage": "evergreen",
+    "height": "climber",
+    "vegType": ""
+  },
+  "2": {
+    "species": "Sansevieria",
+    "category": "indoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "low",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 7,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 12,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [
+      3
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Bien drainé (terreau + sable grossier)",
+    "pruning": "Rempotage au printemps. Uniquement lorsque les racines sont très à l'étroit dans le pot.",
+    "esthetic": "foliage",
+    "foliage": "evergreen",
+    "height": "ground",
+    "vegType": ""
+  },
+  "3": {
+    "species": "Zamioculcas",
+    "category": "indoor",
+    "light": "low",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 7,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [
+      3
+    ],
+    "harvest_months": [],
+    "repotting_months": [
+      3
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Terreau pour plantes vertes (prévoir une couche de drainage au fond du pot)",
+    "pruning": "Un dépoussiérage du feuillage à l'aide d'une éponge humide permet à la plante de conserver son aspect vernissé.",
+    "esthetic": "foliage",
+    "foliage": "evergreen",
+    "height": "shrub",
+    "vegType": ""
+  },
+  "4": {
+    "species": "Pothos",
+    "category": "indoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "high",
+    "temperature": "semiHardy",
+    "toxicity": "low",
+    "cycle": "perennial",
+    "water_summer": 7,
+    "water_winter": 14,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [
+      3,
+      4,
+      5
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "",
+    "pruning": "",
+    "esthetic": "foliage",
+    "foliage": "evergreen",
+    "height": "climber",
+    "vegType": ""
+  },
+  "5": {
+    "species": "Chlorophytum",
+    "category": "indoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "low",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [
+      3
+    ],
+    "harvest_months": [],
+    "repotting_months": [
+      3
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Léger, humifère (terreau + terre de jardin)",
+    "pruning": "Rabattre la touffe avant les gelées et effectuer un paillage du pied pour protéger les racines du gel",
+    "esthetic": "foliage",
+    "foliage": "evergreen",
+    "height": "hanging",
+    "vegType": ""
+  },
+  "6": {
+    "species": "Crassula",
+    "category": "indoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "low",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 15,
+    "water_winter": 30,
+    "fertilize_freq": 365,
+    "repot_freq": 48,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [
+      3,
+      4
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Sableux, terreau, terre de jardin",
+    "pruning": "Taille de forme pour bonsaï, enlever feuilles abîmées",
+    "esthetic": "foliage",
+    "foliage": "evergreen",
+    "height": "shrub",
+    "vegType": ""
+  },
+  "7": {
+    "species": "Aloe Vera",
+    "category": "indoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "low",
+    "temperature": "semiHardy",
+    "toxicity": "low",
+    "cycle": "perennial",
+    "water_summer": 7,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [
+      3,
+      4,
+      5
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "bien drainé",
+    "pruning": "éventuelle suppression des hampes florales et des feuilles fanées",
+    "esthetic": "foliage",
+    "foliage": "evergreen",
+    "height": "shrub",
+    "vegType": ""
+  },
+  "8": {
+    "species": "Ficus Elastica",
+    "category": "indoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "low",
+    "cycle": "perennial",
+    "water_summer": 3,
+    "water_winter": 15,
+    "fertilize_freq": 21,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [
+      3,
+      4,
+      5
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Bien drainé et très fertile",
+    "pruning": "Couper les fleurs fanées",
+    "esthetic": "foliage",
+    "foliage": "evergreen",
+    "height": "tree",
+    "vegType": ""
+  },
+  "9": {
+    "species": "Ficus Benjamina",
+    "category": "indoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 7,
+    "water_winter": 15,
+    "fertilize_freq": 15,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [
+      4,
+      5
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Drainant, sableux",
+    "pruning": "Couper les fleurs fanées",
+    "esthetic": "foliage",
+    "foliage": "evergreen",
+    "height": "tree",
+    "vegType": ""
+  },
+  "10": {
+    "species": "Ficus Lyrata",
+    "category": "indoor",
+    "light": "brightInd",
+    "difficulty": "medium",
+    "humidity": "high",
+    "temperature": "semiHardy",
+    "toxicity": "high",
+    "cycle": "perennial",
+    "water_summer": 7,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [
+      3
+    ],
+    "pruning_months": [
+      2,
+      8
+    ],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Terreau riche, drainant, sableux",
+    "pruning": "Taille légère, régulière, 1 à 2 fois par an en fin d'hiver et en fin d'été",
+    "esthetic": "foliage",
+    "foliage": "evergreen",
+    "height": "tree",
+    "vegType": ""
+  },
+  "11": {
+    "species": "Dracaena Marginata",
+    "category": "indoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "low",
+    "cycle": "perennial",
+    "water_summer": 7,
+    "water_winter": 14,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [
+      3
+    ],
+    "harvest_months": [],
+    "repotting_months": [],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Fertile",
+    "pruning": "Taille au printemps ou début de l'été",
+    "esthetic": "foliage",
+    "foliage": "evergreen",
+    "height": "shrub",
+    "vegType": ""
+  },
+  "12": {
+    "species": "Yucca",
+    "category": "indoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 3,
+    "water_winter": 10,
+    "fertilize_freq": 14,
+    "repot_freq": 12,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [
+      3
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Sableux, tourbe, terre de jardin",
+    "pruning": "Laisser sécher les feuilles jaunies avant de les arracher",
+    "esthetic": "foliage",
+    "foliage": "evergreen",
+    "height": "tree",
+    "vegType": ""
+  },
+  "13": {
+    "species": "Schefflera",
+    "category": "indoor",
+    "light": "partial",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "low",
+    "cycle": "perennial",
+    "water_summer": 7,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [
+      3,
+      4,
+      5
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Substrat léger et riche composé d'un tiers de tourbe, un tiers de terreau et un tiers de sable",
+    "pruning": "Tailler en pinçant la tige principale pour favoriser la ramification",
+    "esthetic": "foliage",
+    "foliage": "evergreen",
+    "height": "shrub",
+    "vegType": ""
+  },
+  "14": {
+    "species": "Spathiphyllum",
+    "category": "indoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "high",
+    "temperature": "semiHardy",
+    "toxicity": "low",
+    "cycle": "perennial",
+    "water_summer": 3,
+    "water_winter": 15,
+    "fertilize_freq": 15,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [
+      3
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Terre fertile, fraîche et drainée",
+    "pruning": "Coupez les fleurs fanées à leur base",
+    "esthetic": "flowering",
+    "foliage": "evergreen",
+    "height": "shrub",
+    "vegType": ""
+  },
+  "15": {
+    "species": "Anthurium",
+    "category": "indoor",
+    "light": "partial",
+    "difficulty": "easy",
+    "humidity": "high",
+    "temperature": "semiHardy",
+    "toxicity": "low",
+    "cycle": "perennial",
+    "water_summer": 2,
+    "water_winter": 7,
+    "fertilize_freq": 10,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [
+      3,
+      4,
+      5
+    ],
+    "harvest_months": [],
+    "repotting_months": [],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Terre de bruyère, sable, terreau",
+    "pruning": "Supprimer les fleurs fanées pour stimuler la floraison",
+    "esthetic": "flowering",
+    "foliage": "evergreen",
+    "height": "ground",
+    "vegType": ""
+  },
+  "16": {
+    "species": "Calathea",
+    "category": "indoor",
+    "light": "low",
+    "difficulty": "medium",
+    "humidity": "high",
+    "temperature": "semiHardy",
+    "toxicity": "low",
+    "cycle": "perennial",
+    "water_summer": 3,
+    "water_winter": 7,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [
+      3
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Sol humifère, légèrement acide et drainé",
+    "pruning": "Nettoyez les feuilles avec une éponge humide. Rempotez tous les deux ans.",
+    "esthetic": "foliage",
+    "foliage": "evergreen",
+    "height": "ground",
+    "vegType": ""
+  },
+  "17": {
+    "species": "Alocasia",
+    "category": "indoor",
+    "light": "brightInd",
+    "difficulty": "medium",
+    "humidity": "high",
+    "temperature": "semiHardy",
+    "toxicity": "low",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 7,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [
+      3
+    ],
+    "harvest_months": [],
+    "repotting_months": [
+      3
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Drainé, frais, humifère",
+    "pruning": "Rempotez les sujets en pot lorsqu'ils sont à l'étroit, au printemps.",
+    "esthetic": "foliage",
+    "foliage": "evergreen",
+    "height": "shrub",
+    "vegType": ""
+  },
+  "18": {
+    "species": "Pilea Peperomioides",
+    "category": "indoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 3,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [
+      3,
+      4,
+      5
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Drainé, léger",
+    "pruning": "Couper les fleurs fanées",
+    "esthetic": "foliage",
+    "foliage": "evergreen",
+    "height": "shrub",
+    "vegType": ""
+  },
+  "19": {
+    "species": "Maranta",
+    "category": "indoor",
+    "light": "brightInd",
+    "difficulty": "medium",
+    "humidity": "high",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 3,
+    "water_winter": 7,
+    "fertilize_freq": 15,
+    "repot_freq": 12,
+    "sowing_months": [],
+    "planting_months": [
+      3
+    ],
+    "harvest_months": [],
+    "repotting_months": [
+      3
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Drainant, terre de bruyère, tourbe, perlite, sable",
+    "pruning": "Pas de taille spécifique",
+    "esthetic": "foliage",
+    "foliage": "evergreen",
+    "height": "ground",
+    "vegType": ""
+  },
+  "20": {
+    "species": "Begonia Maculata",
+    "category": "indoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "low",
+    "cycle": "perennial",
+    "water_summer": 3,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 36,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [
+      3
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Léger, bien drainé et riche",
+    "pruning": "Tailler en hiver pour maintenir une forme compacte",
+    "esthetic": "flowering",
+    "foliage": "evergreen",
+    "height": "shrub",
+    "vegType": ""
+  },
+  "21": {
+    "species": "Strelitzia reginae",
+    "category": "indoor",
+    "light": "brightInd",
+    "difficulty": "medium",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "low",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 12,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [
+      3,
+      4,
+      5
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Fertile, bien drainé",
+    "pruning": "La division des touffes se pratique au printemps. La multiplication par semis demande beaucoup de patience.",
+    "esthetic": "flowering",
+    "foliage": "evergreen",
+    "height": "shrub",
+    "vegType": ""
+  },
+  "22": {
+    "species": "Orchidée",
+    "category": "indoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "high",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "Perennial",
+    "water_summer": 7,
+    "water_winter": 15,
+    "fertilize_freq": 14,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [
+      3,
+      4,
+      5
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "",
+    "pruning": "Couper les fleurs fanées",
+    "esthetic": "flowering",
+    "foliage": "evergreen",
+    "height": "hanging",
+    "vegType": ""
+  },
+  "23": {
+    "species": "Kalanchoe",
+    "category": "indoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "low",
+    "temperature": "semiHardy",
+    "toxicity": "low",
+    "cycle": "perennial",
+    "water_summer": 7,
+    "water_winter": 21,
+    "fertilize_freq": null,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [
+      5
+    ],
+    "harvest_months": [],
+    "repotting_months": [],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Sol sablonneux, pierreux, pauvre et calcaire",
+    "pruning": "Supprimer la hampe de fleurs fanées, ôter les feuilles jaunies à la base, tailler la tige si nécessaire",
+    "esthetic": "foliage",
+    "foliage": "evergreen",
+    "height": "shrub",
+    "vegType": ""
+  },
+  "24": {
+    "species": "Cyclamen",
+    "category": "outdoor",
+    "light": "partial",
+    "difficulty": "easy",
+    "humidity": "high",
+    "temperature": "hardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [
+      7,
+      8,
+      9
+    ],
+    "harvest_months": [],
+    "repotting_months": [
+      3,
+      4,
+      5
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Léger, drainant, pas trop sec à frais, neutre",
+    "pruning": "Après la disparition du feuillage, laissez les cormes en terre. Apportez du compost à l'automne.",
+    "esthetic": "flowering",
+    "foliage": "semi_evergreen",
+    "height": "ground",
+    "vegType": ""
+  },
+  "25": {
+    "species": "Azalée",
+    "category": "indoor",
+    "light": "brightInd",
+    "difficulty": "medium",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 15,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [
+      3,
+      4,
+      5
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Terre de bruyère",
+    "pruning": "Après la floraison, tailler les pousses qui contrarient la compacité du buisson.",
+    "esthetic": "flowering",
+    "foliage": "evergreen",
+    "height": "shrub",
+    "vegType": ""
+  },
+  "26": {
+    "species": "Echeveria",
+    "category": "indoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "low",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 7,
+    "water_winter": 30,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [
+      5
+    ],
+    "harvest_months": [],
+    "repotting_months": [],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Drainé, sableux",
+    "pruning": "Couper les fleurs fanées",
+    "esthetic": "foliage",
+    "foliage": "evergreen",
+    "height": "ground",
+    "vegType": ""
+  },
+  "27": {
+    "species": "Haworthia",
+    "category": "indoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 7,
+    "water_winter": 30,
+    "fertilize_freq": 15,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [
+      4,
+      5
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "drainé, légèrement alcalin",
+    "pruning": "Couper les fleurs fanées",
+    "esthetic": "foliage",
+    "foliage": "evergreen",
+    "height": "ground",
+    "vegType": ""
+  },
+  "28": {
+    "species": "Cactus de Noël",
+    "category": "indoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 7,
+    "water_winter": 15,
+    "fertilize_freq": 15,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [
+      3,
+      4,
+      5
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Léger et drainé, mélange de sable et de terreau",
+    "pruning": "Pincer légèrement les tiges pour conserver un port compact ou encourager la ramification",
+    "esthetic": "flowering",
+    "foliage": "evergreen",
+    "height": "hanging",
+    "vegType": ""
+  },
+  "29": {
+    "species": "Sedum",
+    "category": "indoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "low",
+    "temperature": "frostTender",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 10,
+    "water_winter": 30,
+    "fertilize_freq": null,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [
+      3
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Drainé, sec",
+    "pruning": "Couper les fleurs fanées",
+    "esthetic": "foliage",
+    "foliage": "evergreen",
+    "height": "hanging",
+    "vegType": ""
+  },
+  "30": {
+    "species": "Kentia",
+    "category": "indoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "high",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 15,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [
+      3,
+      4,
+      5
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Fertile, bien drainé",
+    "pruning": "Pas de taille spécifique nécessaire",
+    "esthetic": "foliage",
+    "foliage": "evergreen",
+    "height": "tree",
+    "vegType": ""
+  },
+  "31": {
+    "species": "Pachira",
+    "category": "indoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "high",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 7,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 12,
+    "sowing_months": [],
+    "planting_months": [
+      3
+    ],
+    "harvest_months": [],
+    "repotting_months": [
+      3
+    ],
+    "pruning_months": [
+      3
+    ],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Terreau. Prévoir une couche de drainage au fond du pot.",
+    "pruning": "La taille n'est pas indispensable, cependant, vous pouvez rabattre les sujets jeunes au printemps pour favoriser la ramification.",
+    "esthetic": "foliage",
+    "foliage": "evergreen",
+    "height": "tree",
+    "vegType": ""
+  },
+  "32": {
+    "species": "Fittonia",
+    "category": "indoor",
+    "light": "low",
+    "difficulty": "easy",
+    "humidity": "high",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 14,
+    "repot_freq": 36,
+    "sowing_months": [],
+    "planting_months": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "harvest_months": [],
+    "repotting_months": [
+      3
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Sol léger, neutre, humide",
+    "pruning": "Pincer régulièrement les bourgeons terminaux des tiges",
+    "esthetic": "foliage",
+    "foliage": "evergreen",
+    "height": "ground",
+    "vegType": ""
+  },
+  "33": {
+    "species": "Coffea arabica",
+    "category": "indoor",
+    "light": "brightInd",
+    "difficulty": "medium",
+    "humidity": "high",
+    "temperature": "semiHardy",
+    "toxicity": "low",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 7,
+    "fertilize_freq": 15,
+    "repot_freq": 12,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [
+      3
+    ],
+    "pruning_months": [
+      5
+    ],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Drainé, acide, fertile",
+    "pruning": "Pincement des nouvelles pousses pour maintenir un port compact",
+    "esthetic": "foliage",
+    "foliage": "evergreen",
+    "height": "shrub",
+    "vegType": ""
+  },
+  "34": {
+    "species": "Poinsettia",
+    "category": "indoor",
+    "light": "brightInd",
+    "difficulty": "medium",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "low",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 15,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [
+      3,
+      4,
+      5
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Terreau ordinaire, bien drainé",
+    "pruning": "Rabattez les tiges lorsqu'elles sont dépouillées (période de repos)",
+    "esthetic": "foliage",
+    "foliage": "deciduous",
+    "height": "shrub",
+    "vegType": ""
+  },
+  "35": {
+    "species": "Peperomia Obtusifolia",
+    "category": "indoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "high",
+    "temperature": "semiHardy",
+    "toxicity": "low",
+    "cycle": "perennial",
+    "water_summer": 7,
+    "water_winter": 14,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [
+      3,
+      4,
+      5
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "",
+    "pruning": "",
+    "esthetic": "foliage",
+    "foliage": "evergreen",
+    "height": "shrub",
+    "vegType": ""
+  },
+  "36": {
+    "species": "Beaucarnea",
+    "category": "indoor",
+    "light": "low",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "Perennial",
+    "water_summer": 7,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": null,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [],
+    "pruning_months": [],
+    "wintering_months": [],
+    "soil": "",
+    "pruning": "",
+    "esthetic": "foliage",
+    "foliage": "evergreen",
+    "height": "tree",
+    "vegType": ""
+  },
+  "37": {
+    "species": "Fougère de Boston",
+    "category": "indoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "high",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [
+      3,
+      4,
+      5
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Riche en humus, bien drainé, neutre à acide",
+    "pruning": "Couper les frondes fanées",
+    "esthetic": "foliage",
+    "foliage": "evergreen",
+    "height": "ground",
+    "vegType": ""
+  },
+  "38": {
+    "species": "Areca",
+    "category": "indoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [
+      3,
+      4,
+      5
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Bien drainé, riche et frais (terreau ordinaire + sable)",
+    "pruning": "Rempotez tous les 2 ou 3 ans, au printemps, en prévoyant un grand pot car l'areca a besoin de place.",
+    "esthetic": "foliage",
+    "foliage": "evergreen",
+    "height": "tree",
+    "vegType": ""
+  },
+  "39": {
+    "species": "Chaîne de cœurs",
+    "category": "indoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 10,
+    "water_winter": 30,
+    "fertilize_freq": 30,
+    "repot_freq": null,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [
+      3
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Drainé, sec",
+    "pruning": "Couper les fleurs fanées",
+    "esthetic": "foliage",
+    "foliage": "evergreen",
+    "height": "hanging",
+    "vegType": ""
+  },
+  "40": {
+    "species": "Misère",
+    "category": "indoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 15,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [
+      3,
+      4,
+      5
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Type terreau allégé d'un quart de sable de rivière",
+    "pruning": "Coupez juste au-dessus d'une belle feuille les tiges devenues trop longues, afin d'encourager l'apparition de nouvelles ramifications.",
+    "esthetic": "foliage",
+    "foliage": "evergreen",
+    "height": "hanging",
+    "vegType": ""
+  },
+  "41": {
+    "species": "Dieffenbachia",
+    "category": "indoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "high",
+    "temperature": "semiHardy",
+    "toxicity": "high",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 15,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [
+      3,
+      4,
+      5
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Fertile",
+    "pruning": "Taillez les feuilles inférieures au fur et à mesure pour garder un bel aspect à la plante.",
+    "esthetic": "foliage",
+    "foliage": "evergreen",
+    "height": "shrub",
+    "vegType": ""
+  },
+  "42": {
+    "species": "Croton",
+    "category": "indoor",
+    "light": "brightInd",
+    "difficulty": "medium",
+    "humidity": "high",
+    "temperature": "semiHardy",
+    "toxicity": "high",
+    "cycle": "perennial",
+    "water_summer": 3,
+    "water_winter": 15,
+    "fertilize_freq": 15,
+    "repot_freq": 12,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [
+      4,
+      5,
+      6
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Terreau et terre franche, bon drainage",
+    "pruning": "Couper les fleurs fanées",
+    "esthetic": "foliage",
+    "foliage": "evergreen",
+    "height": "shrub",
+    "vegType": ""
+  },
+  "43": {
+    "species": "Tomate",
+    "category": "vegetable",
+    "light": "brightInd",
+    "difficulty": "medium",
+    "humidity": "high",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "annual",
+    "water_summer": 3,
+    "water_winter": null,
+    "fertilize_freq": 30,
+    "repot_freq": null,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [],
+    "pruning_months": [],
+    "wintering_months": [],
+    "soil": "Sol acide",
+    "pruning": "Couper les fleurs fanées",
+    "esthetic": "foliage",
+    "foliage": "deciduous",
+    "height": "shrub",
+    "vegType": "fruit"
+  },
+  "44": {
+    "species": "Courgette",
+    "category": "vegetable",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "frostTender",
+    "toxicity": "none",
+    "cycle": "annual",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": null,
+    "sowing_months": [
+      4,
+      5,
+      6
+    ],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Tous les sols conviennent, ou à peu près, à condition que le drainage soit suffisant.",
+    "pruning": "Quand les plants atteignent 8 cm de haut, il faut éclaircir pour ne conserver que les plus vigoureux.",
+    "esthetic": "fruit",
+    "foliage": "deciduous",
+    "height": "ground",
+    "vegType": "fruit"
+  },
+  "45": {
+    "species": "Aubergine",
+    "category": "vegetable",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "annual",
+    "water_summer": 1,
+    "water_winter": null,
+    "fertilize_freq": 7,
+    "repot_freq": null,
+    "sowing_months": [
+      1,
+      2,
+      3
+    ],
+    "planting_months": [
+      4,
+      5,
+      6
+    ],
+    "harvest_months": [
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "repotting_months": [],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Riche et bien drainée",
+    "pruning": "Eliminez les pousses latérales, pincez au-dessus de la 2ème fleur",
+    "esthetic": "fruit",
+    "foliage": "deciduous",
+    "height": "shrub",
+    "vegType": "fruit"
+  },
+  "46": {
+    "species": "Poivron",
+    "category": "vegetable",
+    "light": "brightInd",
+    "difficulty": "medium",
+    "humidity": "medium",
+    "temperature": "frostTender",
+    "toxicity": "none",
+    "cycle": "annual",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [
+      3
+    ],
+    "planting_months": [
+      5
+    ],
+    "harvest_months": [
+      7
+    ],
+    "repotting_months": [
+      3,
+      4,
+      5
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "30 cm de profondeur minimum, drainant, sableux",
+    "pruning": "Coupez l'extrémité des tiges lorsque le pied porte une dizaine de poivrons, ils seront de meilleur calibre et parviendront plus facilement à maturité.",
+    "esthetic": "fruit",
+    "foliage": "deciduous",
+    "height": "shrub",
+    "vegType": "fruit"
+  },
+  "47": {
+    "species": "Piment",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "frostTender",
+    "toxicity": "none",
+    "cycle": "annual",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 10,
+    "repot_freq": 24,
+    "sowing_months": [
+      2,
+      3
+    ],
+    "planting_months": [
+      5
+    ],
+    "harvest_months": [
+      9,
+      10
+    ],
+    "repotting_months": [],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Terreau spécial semis",
+    "pruning": "Aucune taille nécessaire",
+    "esthetic": "fruit",
+    "foliage": "deciduous",
+    "height": "shrub",
+    "vegType": ""
+  },
+  "48": {
+    "species": "Concombre",
+    "category": "vegetable",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "annual",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": null,
+    "sowing_months": [
+      5,
+      6,
+      7
+    ],
+    "planting_months": [
+      5,
+      6,
+      7
+    ],
+    "harvest_months": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "repotting_months": [],
+    "pruning_months": [],
+    "wintering_months": [],
+    "soil": "Drainant, sableux",
+    "pruning": "Couper les fleurs fanées",
+    "esthetic": "fruit",
+    "foliage": "deciduous",
+    "height": "climber",
+    "vegType": "fruit"
+  },
+  "49": {
+    "species": "Fraisier",
+    "category": "outdoor",
+    "light": "partial",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "hardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 48,
+    "sowing_months": [],
+    "planting_months": [
+      10
+    ],
+    "harvest_months": [],
+    "repotting_months": [
+      3,
+      4,
+      5
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Drainé, riche",
+    "pruning": "Couper les inflorescences et les feuilles fanées",
+    "esthetic": "foliage",
+    "foliage": "semi_evergreen",
+    "height": "ground",
+    "vegType": ""
+  },
+  "50": {
+    "species": "Framboisier",
+    "category": "vegetable",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [
+      3,
+      4,
+      5
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Sol drainant",
+    "pruning": "Taille sévère pour des tiges vigoureuses et productives",
+    "esthetic": "fruit",
+    "foliage": "deciduous",
+    "height": "shrub",
+    "vegType": "fruit"
+  },
+  "51": {
+    "species": "Carotte",
+    "category": "indoor",
+    "light": "partial",
+    "difficulty": "easy",
+    "humidity": "high",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 3,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [
+      5
+    ],
+    "harvest_months": [],
+    "repotting_months": [
+      3,
+      4,
+      5
+    ],
+    "pruning_months": [
+      3
+    ],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Drainé, acide, humifère",
+    "pruning": "Tailler les frondes sèches à la base en mars",
+    "esthetic": "foliage",
+    "foliage": "semi_evergreen",
+    "height": "ground",
+    "vegType": ""
+  },
+  "52": {
+    "species": "Radis",
+    "category": "vegetable",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "annual",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": null,
+    "sowing_months": [
+      2,
+      3,
+      10
+    ],
+    "planting_months": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "harvest_months": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "repotting_months": [],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Drainant, sableux",
+    "pruning": "Couper les fleurs fanées",
+    "esthetic": "foliage",
+    "foliage": "deciduous",
+    "height": "ground",
+    "vegType": "root"
+  },
+  "53": {
+    "species": "Pomme de terre",
+    "category": "vegetable",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "annual",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": null,
+    "sowing_months": [
+      1
+    ],
+    "planting_months": [
+      2,
+      3,
+      4
+    ],
+    "harvest_months": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "repotting_months": [],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Terres profondes et riches",
+    "pruning": "Butter les plants de pomme de terre pour favoriser la formation des tubercules",
+    "esthetic": "fruit",
+    "foliage": "deciduous",
+    "height": "ground",
+    "vegType": "root"
+  },
+  "54": {
+    "species": "Betterave",
+    "category": "vegetable",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "annual",
+    "water_summer": 3,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [
+      3,
+      4,
+      5,
+      6
+    ],
+    "planting_months": [
+      3,
+      4,
+      5,
+      6
+    ],
+    "harvest_months": [
+      7,
+      8,
+      9,
+      10
+    ],
+    "repotting_months": [],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Sol léger, frais, profond et riche en humus",
+    "pruning": "Pas de taille spécifique mentionnée",
+    "esthetic": "foliage",
+    "foliage": "deciduous",
+    "height": "ground",
+    "vegType": "root"
+  },
+  "55": {
+    "species": "Ail",
+    "category": "outdoor",
+    "light": "partial",
+    "difficulty": "easy",
+    "humidity": "high",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 3,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [
+      10
+    ],
+    "harvest_months": [],
+    "repotting_months": [],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Riche, frais, drainé, neutre à calcaire",
+    "pruning": "Pas de taille spécifique",
+    "esthetic": "foliage",
+    "foliage": "deciduous",
+    "height": "ground",
+    "vegType": ""
+  },
+  "56": {
+    "species": "Oignon",
+    "category": "vegetable",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "biennial",
+    "water_summer": 3,
+    "water_winter": null,
+    "fertilize_freq": 30,
+    "repot_freq": null,
+    "sowing_months": [
+      6
+    ],
+    "planting_months": [],
+    "harvest_months": [
+      4,
+      5,
+      6
+    ],
+    "repotting_months": [],
+    "pruning_months": [],
+    "wintering_months": [],
+    "soil": "Drainant, sableux",
+    "pruning": "Couper les fleurs fanées",
+    "esthetic": "foliage",
+    "foliage": "deciduous",
+    "height": "ground",
+    "vegType": "leaf"
+  },
+  "57": {
+    "species": "Echalote",
+    "category": "vegetable",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": null,
+    "sowing_months": [
+      3,
+      4
+    ],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Sols sableux et légers",
+    "pruning": "Aucune taille nécessaire",
+    "esthetic": "foliage",
+    "foliage": "deciduous",
+    "height": "ground",
+    "vegType": "root"
+  },
+  "58": {
+    "species": "Salade",
+    "category": "vegetable",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "high",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "annual",
+    "water_summer": 1,
+    "water_winter": 3,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [
+      3,
+      4,
+      5,
+      8,
+      9,
+      10
+    ],
+    "planting_months": [
+      3,
+      4,
+      5,
+      8,
+      9,
+      10
+    ],
+    "harvest_months": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "repotting_months": [
+      3,
+      4,
+      5
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Drainant, sableux",
+    "pruning": "Couper les feuilles externes au fur et à mesure de la croissance.",
+    "esthetic": "foliage",
+    "foliage": "deciduous",
+    "height": "ground",
+    "vegType": "leaf"
+  },
+  "59": {
+    "species": "Epinard",
+    "category": "vegetable",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "annual",
+    "water_summer": 1,
+    "water_winter": null,
+    "fertilize_freq": null,
+    "repot_freq": null,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [],
+    "pruning_months": [],
+    "wintering_months": [],
+    "soil": "",
+    "pruning": "",
+    "esthetic": "foliage",
+    "foliage": "deciduous",
+    "height": "ground",
+    "vegType": "leaf"
+  },
+  "60": {
+    "species": "Mâche",
+    "category": "vegetable",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "biennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": null,
+    "sowing_months": [
+      8
+    ],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Aucune exigence sur la qualité du sol",
+    "pruning": "Pas de taille spécifique mentionnée",
+    "esthetic": "foliage",
+    "foliage": "deciduous",
+    "height": "ground",
+    "vegType": "leaf"
+  },
+  "61": {
+    "species": "Basilic",
+    "category": "vegetable",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "annual",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": null,
+    "repot_freq": null,
+    "sowing_months": [
+      3,
+      4
+    ],
+    "planting_months": [],
+    "harvest_months": [
+      6,
+      7,
+      8
+    ],
+    "repotting_months": [],
+    "pruning_months": [
+      9
+    ],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Drainant, sableux",
+    "pruning": "Couper les fleurs fanées",
+    "esthetic": "foliage",
+    "foliage": "deciduous",
+    "height": "ground",
+    "vegType": "herb"
+  },
+  "62": {
+    "species": "Menthe",
+    "category": "vegetable",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "high",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 12,
+    "sowing_months": [],
+    "planting_months": [
+      4
+    ],
+    "harvest_months": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "repotting_months": [
+      4,
+      10
+    ],
+    "pruning_months": [
+      7
+    ],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Sol riche et frais",
+    "pruning": "Taille après la floraison",
+    "esthetic": "foliage",
+    "foliage": "evergreen",
+    "height": "ground",
+    "vegType": "herb"
+  },
+  "63": {
+    "species": "Persil",
+    "category": "vegetable",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "biennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "planting_months": [],
+    "harvest_months": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "repotting_months": [],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Terres légères, fraîches et riches en humus",
+    "pruning": "Couper souvent les tiges pour encourager la croissance",
+    "esthetic": "foliage",
+    "foliage": "deciduous",
+    "height": "ground",
+    "vegType": "herb"
+  },
+  "64": {
+    "species": "Ciboulette",
+    "category": "vegetable",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [
+      2,
+      3
+    ],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [
+      3,
+      4,
+      5
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Frais, drainant",
+    "pruning": "Couper les fleurs fanées",
+    "esthetic": "foliage",
+    "foliage": "semi_evergreen",
+    "height": "ground",
+    "vegType": "herb"
+  },
+  "65": {
+    "species": "Thym",
+    "category": "vegetable",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "low",
+    "temperature": "hardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [
+      3,
+      4,
+      5
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Drainé, calcaire",
+    "pruning": "Taille des tiges non lignifiées en début de printemps",
+    "esthetic": "foliage",
+    "foliage": "evergreen",
+    "height": "ground",
+    "vegType": ""
+  },
+  "66": {
+    "species": "Romarin",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "low",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 3,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "harvest_months": [],
+    "repotting_months": [],
+    "pruning_months": [
+      3,
+      4
+    ],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Peu exigeant, drainé",
+    "pruning": "Tailler après floraison pour éliminer les branches mortes",
+    "esthetic": "foliage",
+    "foliage": "evergreen",
+    "height": "shrub",
+    "vegType": ""
+  },
+  "67": {
+    "species": "Coriandre",
+    "category": "vegetable",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "annual",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": null,
+    "repot_freq": null,
+    "sowing_months": [
+      9
+    ],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [],
+    "pruning_months": [],
+    "wintering_months": [],
+    "soil": "",
+    "pruning": "Couper les feuilles jaunies et les branches mortes en automne.",
+    "esthetic": "foliage",
+    "foliage": "deciduous",
+    "height": "ground",
+    "vegType": "herb"
+  },
+  "68": {
+    "species": "Sauge",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "low",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [
+      3,
+      4,
+      5
+    ],
+    "harvest_months": [],
+    "repotting_months": [],
+    "pruning_months": [
+      3
+    ],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Sol calcaire, bien drainé",
+    "pruning": "Rabattre les espèces arbustives en mars, tailler à ras du sol les espèces herbacées",
+    "esthetic": "flowering",
+    "foliage": "deciduous",
+    "height": "shrub",
+    "vegType": ""
+  },
+  "69": {
+    "species": "Laurier Sauce",
+    "category": "vegetable",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 365,
+    "repot_freq": 24,
+    "sowing_months": [
+      9
+    ],
+    "planting_months": [
+      9
+    ],
+    "harvest_months": [],
+    "repotting_months": [
+      9
+    ],
+    "pruning_months": [
+      2
+    ],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Riche, léger et sablonneux. Acide à calcaire. Bien drainé.",
+    "pruning": "Taille en fin d'hiver si nécessaire pour conserver une forme particulière à l'arbre.",
+    "esthetic": "foliage",
+    "foliage": "evergreen",
+    "height": "tree",
+    "vegType": ""
+  },
+  "70": {
+    "species": "Haricot vert",
+    "category": "vegetable",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "annual",
+    "water_summer": 3,
+    "water_winter": null,
+    "fertilize_freq": 30,
+    "repot_freq": null,
+    "sowing_months": [
+      6,
+      7
+    ],
+    "planting_months": [
+      6,
+      7
+    ],
+    "harvest_months": [
+      7,
+      8
+    ],
+    "repotting_months": [],
+    "pruning_months": [],
+    "wintering_months": [],
+    "soil": "Drainant, sableux",
+    "pruning": "Couper les fleurs fanées",
+    "esthetic": "foliage",
+    "foliage": "deciduous",
+    "height": "shrub",
+    "vegType": "leaf"
+  },
+  "71": {
+    "species": "Petit pois",
+    "category": "vegetable",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "annual",
+    "water_summer": 3,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [
+      3,
+      4,
+      5
+    ],
+    "planting_months": [
+      3,
+      4,
+      5
+    ],
+    "harvest_months": [
+      6,
+      7,
+      8
+    ],
+    "repotting_months": [],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Drainant, sableux",
+    "pruning": "",
+    "esthetic": "fruit",
+    "foliage": "deciduous",
+    "height": "ground",
+    "vegType": "fruit"
+  },
+  "72": {
+    "species": "Poireau",
+    "category": "vegetable",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "high",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "biennial",
+    "water_summer": 1,
+    "water_winter": null,
+    "fertilize_freq": 30,
+    "repot_freq": null,
+    "sowing_months": [
+      4
+    ],
+    "planting_months": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "harvest_months": [
+      8
+    ],
+    "repotting_months": [],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Terre ameublie et amendée avec du compost",
+    "pruning": "Rabattre les racines et supprimer un tiers du feuillage avant plantation",
+    "esthetic": "foliage",
+    "foliage": "deciduous",
+    "height": "ground",
+    "vegType": "leaf"
+  },
+  "73": {
+    "species": "Chou",
+    "category": "vegetable",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "annual",
+    "water_summer": 3,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "planting_months": [
+      5,
+      6,
+      7
+    ],
+    "harvest_months": [
+      10,
+      11,
+      12,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "repotting_months": [],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Sol meuble (type argileux) et profond",
+    "pruning": "Pas de taille spécifique",
+    "esthetic": "foliage",
+    "foliage": "deciduous",
+    "height": "ground",
+    "vegType": "leaf"
+  },
+  "74": {
+    "species": "Citrouille",
+    "category": "vegetable",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "annual",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": null,
+    "sowing_months": [
+      5
+    ],
+    "planting_months": [
+      5
+    ],
+    "harvest_months": [
+      10
+    ],
+    "repotting_months": [],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Sols riches, profonds, humifères et drainés",
+    "pruning": "La taille des tiges n'est pas obligatoire, mais elle permet, entre autres, de limiter l'étalement des plants et d'obtenir des fruits plus gros.",
+    "esthetic": "fruit",
+    "foliage": "deciduous",
+    "height": "ground",
+    "vegType": "fruit"
+  },
+  "75": {
+    "species": "Melon",
+    "category": "vegetable",
+    "light": "brightInd",
+    "difficulty": "medium",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "annual",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [
+      2,
+      3,
+      4
+    ],
+    "planting_months": [
+      5
+    ],
+    "harvest_months": [
+      4
+    ],
+    "repotting_months": [],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Terre souple, fraîche et riche",
+    "pruning": "\"La méthode de taille varie selon les jardiniers : certains pratiquent le \"\"laissez-faire\"\", d'autres suppriment les gourmands ou ne conservent qu'une seule tige.\"",
+    "esthetic": "fruit",
+    "foliage": "deciduous",
+    "height": "shrub",
+    "vegType": "fruit"
+  },
+  "76": {
+    "species": "Rhubarbe",
+    "category": "vegetable",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "hardy",
+    "toxicity": "low",
+    "cycle": "perennial",
+    "water_summer": 3,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [
+      3,
+      4,
+      5
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Drainant, sableux",
+    "pruning": "Couper les fleurs fanées",
+    "esthetic": "foliage",
+    "foliage": "deciduous",
+    "height": "shrub",
+    "vegType": "leaf"
+  },
+  "77": {
+    "species": "Asperge",
+    "category": "indoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 3,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [
+      3,
+      4,
+      5
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Frais, riche en humus, drainé",
+    "pruning": "Couper les tiges trop longues ou dégarnies à leur base",
+    "esthetic": "foliage",
+    "foliage": "evergreen",
+    "height": "shrub",
+    "vegType": ""
+  },
+  "78": {
+    "species": "Artichaut",
+    "category": "vegetable",
+    "light": "brightInd",
+    "difficulty": "medium",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "biennial",
+    "water_summer": 3,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": null,
+    "sowing_months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "planting_months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "harvest_months": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "repotting_months": [],
+    "pruning_months": [
+      11
+    ],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Drainant, sableux",
+    "pruning": "Couper les fleurs fanées",
+    "esthetic": "foliage",
+    "foliage": "deciduous",
+    "height": "shrub",
+    "vegType": "leaf"
+  },
+  "79": {
+    "species": "Géranium",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 15,
+    "repot_freq": 12,
+    "sowing_months": [],
+    "planting_months": [
+      3
+    ],
+    "harvest_months": [],
+    "repotting_months": [
+      3
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Riche et léger, par exemple un terreau pour plantes fleuries éventuellement additionné de sable.",
+    "pruning": "Taillez assez court avant l'hivernage (local éclairé, aéré et non chauffé : température d'environ 5°C).",
+    "esthetic": "flowering",
+    "foliage": "evergreen",
+    "height": "shrub",
+    "vegType": ""
+  },
+  "80": {
+    "species": "Pétunia",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "annual",
+    "water_summer": 1,
+    "water_winter": null,
+    "fertilize_freq": 15,
+    "repot_freq": null,
+    "sowing_months": [
+      1,
+      2,
+      3
+    ],
+    "planting_months": [
+      4,
+      5,
+      6
+    ],
+    "harvest_months": [],
+    "repotting_months": [],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12
+    ],
+    "soil": "Drainant, sableux",
+    "pruning": "Couper les fleurs fanées",
+    "esthetic": "flowering",
+    "foliage": "deciduous",
+    "height": "ground",
+    "vegType": ""
+  },
+  "81": {
+    "species": "Oeillet d'Inde",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "low",
+    "cycle": "annual",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": null,
+    "sowing_months": [
+      2,
+      3
+    ],
+    "planting_months": [
+      4,
+      5
+    ],
+    "harvest_months": [],
+    "repotting_months": [],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Ordinaire",
+    "pruning": "Suppression des fleurs fanées. Pincer les jeunes plants pour favoriser la ramification.",
+    "esthetic": "flowering",
+    "foliage": "deciduous",
+    "height": "ground",
+    "vegType": ""
+  },
+  "82": {
+    "species": "Lavande",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "low",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 7,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": null,
+    "sowing_months": [
+      3,
+      4
+    ],
+    "planting_months": [
+      3,
+      4
+    ],
+    "harvest_months": [],
+    "repotting_months": [],
+    "pruning_months": [
+      3,
+      4
+    ],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Légère, drainée, moyennement fertile, calcaire",
+    "pruning": "Rabattre les pousses défleuries à 2 ou 3 cm de leur point de naissance",
+    "esthetic": "flowering",
+    "foliage": "evergreen",
+    "height": "shrub",
+    "vegType": ""
+  },
+  "83": {
+    "species": "Hortensia",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 365,
+    "repot_freq": 36,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [
+      10
+    ],
+    "pruning_months": [
+      3
+    ],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Terre légère, drainée, consistante",
+    "pruning": "Coupez les fleurs après la floraison et taillez votre hortensia tous les ans",
+    "esthetic": "flowering",
+    "foliage": "semi_evergreen",
+    "height": "shrub",
+    "vegType": ""
+  },
+  "84": {
+    "species": "Pivoine",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "medium",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "Perennial",
+    "water_summer": 7,
+    "water_winter": null,
+    "fertilize_freq": 180,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [
+      10,
+      3
+    ],
+    "harvest_months": [],
+    "repotting_months": [
+      3,
+      4,
+      5
+    ],
+    "pruning_months": [
+      9
+    ],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Terre riche avec compost et fumure",
+    "pruning": "Couper les fleurs fanées",
+    "esthetic": "flowering",
+    "foliage": "deciduous",
+    "height": "shrub",
+    "vegType": ""
+  },
+  "85": {
+    "species": "Tulipe",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": null,
+    "sowing_months": [],
+    "planting_months": [
+      10,
+      11,
+      12
+    ],
+    "harvest_months": [],
+    "repotting_months": [],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Léger, riche, drainé",
+    "pruning": "Après la floraison, supprimez les fleurs fanées en conservant la tige, et laissez les feuilles sécher complètement avant de les couper. Vous pouvez ensuite déterrer les bulbes pour les replanter à l'automne suivant.",
+    "esthetic": "flowering",
+    "foliage": "deciduous",
+    "height": "ground",
+    "vegType": ""
+  },
+  "86": {
+    "species": "Narcisse",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "high",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": null,
+    "sowing_months": [],
+    "planting_months": [
+      9,
+      10
+    ],
+    "harvest_months": [],
+    "repotting_months": [],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Frais, drainé",
+    "pruning": "Coupez les fleurs fanées en conservant la tige, laissez le feuillage sécher complètement après la floraison",
+    "esthetic": "flowering",
+    "foliage": "deciduous",
+    "height": "ground",
+    "vegType": ""
+  },
+  "87": {
+    "species": "Jacinthe",
+    "category": "indoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [
+      9,
+      10,
+      11,
+      12,
+      1
+    ],
+    "harvest_months": [],
+    "repotting_months": [
+      3,
+      4,
+      5
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Léger, humifère, drainé",
+    "pruning": "Couper la hampe florale lorsque la fleur fane, conserver les feuilles pour reconstituer les réserves du bulbe",
+    "esthetic": "flowering",
+    "foliage": "deciduous",
+    "height": "ground",
+    "vegType": ""
+  },
+  "88": {
+    "species": "Dahlia",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "medium",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [
+      4
+    ],
+    "harvest_months": [],
+    "repotting_months": [
+      3
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Sol frais, riche en humus et bien drainé",
+    "pruning": "Couper les fleurs fanées au fur et à mesure",
+    "esthetic": "flowering",
+    "foliage": "deciduous",
+    "height": "shrub",
+    "vegType": ""
+  },
+  "89": {
+    "species": "Cosmos",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "annual",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [
+      3,
+      4,
+      5
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "",
+    "pruning": "",
+    "esthetic": "flowering",
+    "foliage": "deciduous",
+    "height": "shrub",
+    "vegType": ""
+  },
+  "90": {
+    "species": "Tournesol",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "annual",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": null,
+    "sowing_months": [
+      4
+    ],
+    "planting_months": [
+      5
+    ],
+    "harvest_months": [],
+    "repotting_months": [],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Drainé, sableux",
+    "pruning": "Pas de taille spécifique",
+    "esthetic": "flowering",
+    "foliage": "deciduous",
+    "height": "shrub",
+    "vegType": ""
+  },
+  "91": {
+    "species": "Laurier Rose",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "medium",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "high",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [
+      10,
+      11,
+      12,
+      1,
+      2,
+      3,
+      4
+    ],
+    "harvest_months": [],
+    "repotting_months": [],
+    "pruning_months": [
+      3,
+      4
+    ],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Bien drainé et riche",
+    "pruning": "Rabattre de moitié les rameaux vigoureux",
+    "esthetic": "flowering",
+    "foliage": "evergreen",
+    "height": "shrub",
+    "vegType": ""
+  },
+  "92": {
+    "species": "Laurier Palme",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "hardy",
+    "toxicity": "high",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": null,
+    "sowing_months": [],
+    "planting_months": [
+      9,
+      10,
+      3,
+      4,
+      5
+    ],
+    "harvest_months": [],
+    "repotting_months": [],
+    "pruning_months": [
+      3,
+      4,
+      5,
+      9,
+      10
+    ],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Pas trop calcaire",
+    "pruning": "Taille franche au printemps et à l'automne",
+    "esthetic": "foliage",
+    "foliage": "evergreen",
+    "height": "shrub",
+    "vegType": ""
+  },
+  "93": {
+    "species": "Photinia",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": null,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [
+      3,
+      4,
+      5
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Terre de jardin bien ameublie, même un peu calcaire",
+    "pruning": "Taillez le photinia courant juillet, après la floraison, afin de stimuler une nouvelle repousse avec des feuilles qui apparaîtront rouge-bronze dès le début du mois de septembre.",
+    "esthetic": "foliage",
+    "foliage": "evergreen",
+    "height": "shrub",
+    "vegType": ""
+  },
+  "94": {
+    "species": "Thuya",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "hardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": null,
+    "sowing_months": [],
+    "planting_months": [
+      3,
+      4,
+      5,
+      9,
+      10
+    ],
+    "harvest_months": [],
+    "repotting_months": [],
+    "pruning_months": [
+      5,
+      6,
+      9,
+      10
+    ],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Drainant, riches, profonds et légers",
+    "pruning": "Tailles fréquentes pour les contenir dans les proportions souhaitées",
+    "esthetic": "foliage",
+    "foliage": "evergreen",
+    "height": "tree",
+    "vegType": ""
+  },
+  "95": {
+    "species": "Buis",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "hardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [
+      10,
+      4
+    ],
+    "harvest_months": [],
+    "repotting_months": [
+      3,
+      4,
+      5
+    ],
+    "pruning_months": [
+      4,
+      5
+    ],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Sol ordinaire, supporte le calcaire",
+    "pruning": "Taille après la floraison (avril-mai), une deuxième taille possible à l'automne",
+    "esthetic": "foliage",
+    "foliage": "evergreen",
+    "height": "shrub",
+    "vegType": ""
+  },
+  "96": {
+    "species": "Forsythia",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 3,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [
+      9,
+      3
+    ],
+    "harvest_months": [],
+    "repotting_months": [
+      3,
+      4,
+      5
+    ],
+    "pruning_months": [
+      4
+    ],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Tous sols drainés",
+    "pruning": "Effectuez la taille juste après la floraison (avril) : supprimez les tiges dirigées vers l’intérieur et celles qui sont abîmées. Rabattez les tiges d'un tiers de leur longueur si nécessaire.",
+    "esthetic": "flowering",
+    "foliage": "deciduous",
+    "height": "shrub",
+    "vegType": ""
+  },
+  "97": {
+    "species": "Lilas",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 7,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": null,
+    "sowing_months": [],
+    "planting_months": [
+      3,
+      4
+    ],
+    "harvest_months": [],
+    "repotting_months": [],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Terreau bien drainé",
+    "pruning": "Taille après la floraison en enlevant les branches mortes, cassées ou malades",
+    "esthetic": "flowering",
+    "foliage": "deciduous",
+    "height": "shrub",
+    "vegType": ""
+  },
+  "98": {
+    "species": "Hibiscus",
+    "category": "indoor",
+    "light": "brightInd",
+    "difficulty": "medium",
+    "humidity": "high",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [
+      3,
+      4,
+      5
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Drainant, sableux",
+    "pruning": "Couper les fleurs fanées",
+    "esthetic": "flowering",
+    "foliage": "evergreen",
+    "height": "shrub",
+    "vegType": ""
+  },
+  "99": {
+    "species": "Buddleia",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      3,
+      4,
+      5
+    ],
+    "soil": "Calcaire, caillouteux",
+    "pruning": "Taille entre novembre et mars en supprimant les rameaux de l'année passée à 5 cm du vieux bois",
+    "esthetic": "flowering",
+    "foliage": "deciduous",
+    "height": "shrub",
+    "vegType": ""
+  },
+  "100": {
+    "species": "Clématite",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "hardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 365,
+    "repot_freq": null,
+    "sowing_months": [],
+    "planting_months": [
+      3,
+      4,
+      5,
+      9,
+      10
+    ],
+    "harvest_months": [],
+    "repotting_months": [],
+    "pruning_months": [
+      2
+    ],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "frais, drainé, riche, non calcaire",
+    "pruning": "Taille fin février en rabattant les tiges à 30-40cm du sol",
+    "esthetic": "flowering",
+    "foliage": "deciduous",
+    "height": "climber",
+    "vegType": ""
+  },
+  "101": {
+    "species": "Glycine",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "medium",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 7,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": null,
+    "sowing_months": [
+      4
+    ],
+    "planting_months": [
+      4,
+      5,
+      6
+    ],
+    "harvest_months": [],
+    "repotting_months": [],
+    "pruning_months": [
+      1
+    ],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "sableux, non calcaire",
+    "pruning": "Taillez les nouvelles pousses pour favoriser la multiplication des boutons floraux. En hiver, taillez les pousses latérales en ne laissant que deux yeux.",
+    "esthetic": "flowering",
+    "foliage": "deciduous",
+    "height": "climber",
+    "vegType": ""
+  },
+  "102": {
+    "species": "Chèvrefeuille",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "veryHardy",
+    "toxicity": "high",
+    "cycle": "perennial",
+    "water_summer": 7,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [
+      10
+    ],
+    "harvest_months": [],
+    "repotting_months": [
+      3
+    ],
+    "pruning_months": [
+      10
+    ],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Tous types de sols",
+    "pruning": "Inutile de tailler cet arbuste excepté pour ôter le bois mort et éventuellement rectifier sa silhouette.",
+    "esthetic": "flowering",
+    "foliage": "deciduous",
+    "height": "shrub",
+    "vegType": ""
+  },
+  "103": {
+    "species": "Jasmin étoilé",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 3,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [
+      3,
+      4,
+      5
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Sols légers assez riches, ni trop calcaires ni trop acides",
+    "pruning": "Raccourcir légèrement les tiges à la cisaille pour les égaliser et donner à la plante une silhouette équilibrée. Supprimer les rameaux morts ou secs.",
+    "esthetic": "flowering",
+    "foliage": "evergreen",
+    "height": "climber",
+    "vegType": ""
+  },
+  "104": {
+    "species": "Lierre",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "low",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [
+      3,
+      4,
+      5
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Légèrement calcaire et frais",
+    "pruning": "Tailler régulièrement pour maîtriser sa propagation, en automne",
+    "esthetic": "foliage",
+    "foliage": "evergreen",
+    "height": "climber",
+    "vegType": ""
+  },
+  "105": {
+    "species": "Olivier",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "medium",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 7,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": null,
+    "sowing_months": [],
+    "planting_months": [
+      3,
+      4
+    ],
+    "harvest_months": [],
+    "repotting_months": [],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Drainant, sableux",
+    "pruning": "Couper les fleurs fanées",
+    "esthetic": "fruit",
+    "foliage": "evergreen",
+    "height": "tree",
+    "vegType": ""
+  },
+  "106": {
+    "species": "Erable du Japon",
+    "category": "indoor",
+    "light": "partial",
+    "difficulty": "medium",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 3,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [
+      2
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Bon terreau, compost, terre de bruyère",
+    "pruning": "Ôter le bois mort, redonner une belle silhouette en hiver",
+    "esthetic": "foliage",
+    "foliage": "deciduous",
+    "height": "tree",
+    "vegType": ""
+  },
+  "107": {
+    "species": "Palmier",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [
+      5,
+      6
+    ],
+    "harvest_months": [],
+    "repotting_months": [
+      3,
+      4,
+      5
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Tous types de sols drainés",
+    "pruning": "Les plus vieilles feuilles sèchent et restent accrochées plusieurs années, pendant le long du stipe. Il est possible de les laisser ou bien de les couper le printemps venu (elles servent de protection contre le froid durant l'hiver).",
+    "esthetic": "foliage",
+    "foliage": "evergreen",
+    "height": "tree",
+    "vegType": ""
+  },
+  "108": {
+    "species": "Citronnier",
+    "category": "indoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [
+      5
+    ],
+    "harvest_months": [],
+    "repotting_months": [
+      3
+    ],
+    "pruning_months": [
+      2
+    ],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Drainant, non calcaire",
+    "pruning": "Supprimer le bois mort en fin d'hiver",
+    "esthetic": "fruit",
+    "foliage": "evergreen",
+    "height": "tree",
+    "vegType": ""
+  },
+  "109": {
+    "species": "Mimosa",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "medium",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [
+      3,
+      4,
+      5
+    ],
+    "harvest_months": [],
+    "repotting_months": [
+      3,
+      4,
+      5
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Sols sablonneux, bien drainés",
+    "pruning": "Taille après la floraison",
+    "esthetic": "flowering",
+    "foliage": "evergreen",
+    "height": "tree",
+    "vegType": ""
+  },
+  "110": {
+    "species": "Pommier",
+    "category": "vegetable",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": null,
+    "sowing_months": [],
+    "planting_months": [
+      10
+    ],
+    "harvest_months": [
+      7,
+      8,
+      9,
+      10
+    ],
+    "repotting_months": [],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Sols profonds, argilo-calcaires ou silico-argileux",
+    "pruning": "Taille pour obtenir de gros fruits",
+    "esthetic": "fruit",
+    "foliage": "deciduous",
+    "height": "tree",
+    "vegType": ""
+  },
+  "111": {
+    "species": "Poirier",
+    "category": "vegetable",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 3,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": null,
+    "sowing_months": [],
+    "planting_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "harvest_months": [
+      7,
+      8,
+      9,
+      10
+    ],
+    "repotting_months": [],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Sol profond, drainé, frais et non calcaire",
+    "pruning": "Taille régulière nécessaire",
+    "esthetic": "fruit",
+    "foliage": "deciduous",
+    "height": "tree",
+    "vegType": ""
+  },
+  "112": {
+    "species": "Cerisier",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "hardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": null,
+    "sowing_months": [],
+    "planting_months": [
+      10,
+      11,
+      12
+    ],
+    "harvest_months": [],
+    "repotting_months": [],
+    "pruning_months": [
+      2
+    ],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Sols neutres et frais",
+    "pruning": "Taille d'entretien au sortir de l'hiver pour supprimer le bois mort, les branches malades ou qui se croisent",
+    "esthetic": "flowering",
+    "foliage": "deciduous",
+    "height": "tree",
+    "vegType": ""
+  },
+  "113": {
+    "species": "Prunier",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "hardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [
+      9,
+      3
+    ],
+    "harvest_months": [],
+    "repotting_months": [
+      3,
+      4,
+      5
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Sols riches, légers, frais et drainés",
+    "pruning": "Pas besoin de taille sauf pour l'équilibrer esthétiquement",
+    "esthetic": "foliage",
+    "foliage": "deciduous",
+    "height": "shrub",
+    "vegType": ""
+  },
+  "114": {
+    "species": "Pêcher",
+    "category": "vegetable",
+    "light": "brightInd",
+    "difficulty": "medium",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [
+      11
+    ],
+    "harvest_months": [
+      7,
+      8,
+      9
+    ],
+    "repotting_months": [],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Ordinaire",
+    "pruning": "Taille en vert",
+    "esthetic": "fruit",
+    "foliage": "deciduous",
+    "height": "tree",
+    "vegType": "fruit"
+  },
+  "115": {
+    "species": "Abricotier",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "hardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": null,
+    "sowing_months": [],
+    "planting_months": [
+      12
+    ],
+    "harvest_months": [
+      6,
+      7,
+      8
+    ],
+    "repotting_months": [],
+    "pruning_months": [
+      2,
+      11
+    ],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Drainant, sableux",
+    "pruning": "Taille de fructification en février, taille en automne après la chute des feuilles",
+    "esthetic": "fruit",
+    "foliage": "deciduous",
+    "height": "tree",
+    "vegType": ""
+  },
+  "116": {
+    "species": "Figuier",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": null,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Drainant, sableux",
+    "pruning": "Couper les fleurs fanées",
+    "esthetic": "fruit",
+    "foliage": "deciduous",
+    "height": "tree",
+    "vegType": ""
+  },
+  "117": {
+    "species": "Noisetier",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "hardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": null,
+    "sowing_months": [],
+    "planting_months": [
+      10,
+      11
+    ],
+    "harvest_months": [
+      9,
+      10
+    ],
+    "repotting_months": [],
+    "pruning_months": [
+      11
+    ],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Tous les sols, même calcaires, peuvent convenir, à condition d'être drainants",
+    "pruning": "Pour tailler le noisetier, pratiquez au besoin un éclaircissage du pied, et éventuellement une taille plus sévère, tous les 3 ans, à l'automne, pour conserver les proportions souhaitées",
+    "esthetic": "fruit",
+    "foliage": "deciduous",
+    "height": "tree",
+    "vegType": ""
+  },
+  "118": {
+    "species": "Noyer",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "medium",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 3,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [
+      3,
+      4,
+      5
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "",
+    "pruning": "",
+    "esthetic": "fruit",
+    "foliage": "deciduous",
+    "height": "tree",
+    "vegType": ""
+  },
+  "119": {
+    "species": "Vigne",
+    "category": "vegetable",
+    "light": "brightInd",
+    "difficulty": "medium",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 7,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": null,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [
+      3,
+      4,
+      5
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Drainant, sableux",
+    "pruning": "Couper les fleurs fanées",
+    "esthetic": "fruit",
+    "foliage": "deciduous",
+    "height": "climber",
+    "vegType": ""
+  },
+  "120": {
+    "species": "Kiwi",
+    "category": "vegetable",
+    "light": "brightInd",
+    "difficulty": "medium",
+    "humidity": "high",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 3,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [
+      3,
+      4,
+      5
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "",
+    "pruning": "",
+    "esthetic": "fruit",
+    "foliage": "deciduous",
+    "height": "climber",
+    "vegType": "fruit"
+  },
+  "121": {
+    "species": "Oranger",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "medium",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 7,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 48,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [
+      11,
+      12,
+      1,
+      2,
+      3,
+      4
+    ],
+    "repotting_months": [
+      3,
+      4,
+      5
+    ],
+    "pruning_months": [
+      3,
+      4
+    ],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Sol léger non calcaire",
+    "pruning": "Avant la floraison, supprimez quelques branches âgées ou peu productives, le bois mort et les gourmands en surnombre. Pincez les rameaux secondaires et les gourmands tout au long de la saison.",
+    "esthetic": "fruit",
+    "foliage": "evergreen",
+    "height": "tree",
+    "vegType": ""
+  },
+  "122": {
+    "species": "Mandarinier",
+    "category": "vegetable",
+    "light": "brightInd",
+    "difficulty": "medium",
+    "humidity": "high",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "Perennial",
+    "water_summer": 3,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": null,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "",
+    "pruning": "Couper les fleurs fanées",
+    "esthetic": "fruit",
+    "foliage": "evergreen",
+    "height": "tree",
+    "vegType": ""
+  },
+  "123": {
+    "species": "Kumquat",
+    "category": "indoor",
+    "light": "brightInd",
+    "difficulty": "medium",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 7,
+    "water_winter": 15,
+    "fertilize_freq": 60,
+    "repot_freq": null,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [],
+    "pruning_months": [],
+    "wintering_months": [],
+    "soil": "",
+    "pruning": "",
+    "esthetic": "fruit",
+    "foliage": "evergreen",
+    "height": "tree",
+    "vegType": ""
+  },
+  "124": {
+    "species": "Catalpa",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "hardy",
+    "toxicity": "low",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": null,
+    "sowing_months": [
+      3
+    ],
+    "planting_months": [
+      3
+    ],
+    "harvest_months": [],
+    "repotting_months": [],
+    "pruning_months": [
+      1,
+      2
+    ],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Tous, bien drainé",
+    "pruning": "Suppression des branches basses ou surnuméraires, ou raccourcissement des branches aux 2/3 de leur hauteur",
+    "esthetic": "foliage",
+    "foliage": "deciduous",
+    "height": "tree",
+    "vegType": ""
+  },
+  "125": {
+    "species": "Hêtre",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "hardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 7,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": null,
+    "sowing_months": [],
+    "planting_months": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2
+    ],
+    "harvest_months": [],
+    "repotting_months": [],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Sol profond, riche, frais, drainé et acide",
+    "pruning": "Laisser la plante se développer pendant 5 ou 6 ans et opérer, au printemps, une taille franche en rabattant de 2/3 la plus belle pousse et en éliminant les autres",
+    "esthetic": "foliage",
+    "foliage": "deciduous",
+    "height": "tree",
+    "vegType": ""
+  },
+  "126": {
+    "species": "Frêne",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "hardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": null,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [
+      3,
+      4,
+      5
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Terres riches, profondes et fraîches, neutres, acides ou calcaires",
+    "pruning": "La taille est superflue, supprimer les drageons et les semis spontanés",
+    "esthetic": "foliage",
+    "foliage": "deciduous",
+    "height": "tree",
+    "vegType": ""
+  },
+  "127": {
+    "species": "Erable",
+    "category": "indoor",
+    "light": "partial",
+    "difficulty": "medium",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 3,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [
+      2
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Bon terreau, compost, terre de bruyère",
+    "pruning": "Ôter le bois mort, redonner une belle silhouette en hiver",
+    "esthetic": "foliage",
+    "foliage": "deciduous",
+    "height": "tree",
+    "vegType": ""
+  },
+  "128": {
+    "species": "Tilleul",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "hardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": null,
+    "sowing_months": [],
+    "planting_months": [
+      10
+    ],
+    "harvest_months": [],
+    "repotting_months": [],
+    "pruning_months": [
+      12
+    ],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Sols riches et frais",
+    "pruning": "Taille possible en hiver, hors période de gel",
+    "esthetic": "foliage",
+    "foliage": "deciduous",
+    "height": "tree",
+    "vegType": ""
+  },
+  "129": {
+    "species": "Millepertuis",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "hardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": null,
+    "fertilize_freq": 30,
+    "repot_freq": null,
+    "sowing_months": [],
+    "planting_months": [
+      4,
+      5,
+      10,
+      11,
+      12
+    ],
+    "harvest_months": [],
+    "repotting_months": [],
+    "pruning_months": [
+      3,
+      4
+    ],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Riche et drainé",
+    "pruning": "Taillez en mars-avril ou en octobre-novembre",
+    "esthetic": "flowering",
+    "foliage": "semi_evergreen",
+    "height": "shrub",
+    "vegType": ""
+  },
+  "130": {
+    "species": "Bambou",
+    "category": "indoor",
+    "light": "brightInd",
+    "difficulty": "medium",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 7,
+    "water_winter": 15,
+    "fertilize_freq": 15,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [
+      3,
+      4,
+      5
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "40% de tourbe, 50% de sable, 10% de perlite",
+    "pruning": "Couper les cannes desséchées ou ridées si plus de six, en garder au moins 4",
+    "esthetic": "flowering",
+    "foliage": "semi_evergreen",
+    "height": "shrub",
+    "vegType": ""
+  },
+  "131": {
+    "species": "Rhododendron",
+    "category": "outdoor",
+    "light": "partial",
+    "difficulty": "medium",
+    "humidity": "high",
+    "temperature": "semiHardy",
+    "toxicity": "high",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": null,
+    "sowing_months": [],
+    "planting_months": [
+      3,
+      4
+    ],
+    "harvest_months": [],
+    "repotting_months": [],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Acide, humifère, frais et drainé",
+    "pruning": "Pas nécessaire, sauf taille de formation au printemps",
+    "esthetic": "flowering",
+    "foliage": "evergreen",
+    "height": "shrub",
+    "vegType": ""
+  },
+  "132": {
+    "species": "Mahonia",
+    "category": "outdoor",
+    "light": "partial",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "low",
+    "cycle": "perennial",
+    "water_summer": 3,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [
+      10,
+      11,
+      12,
+      1,
+      2,
+      3,
+      4
+    ],
+    "harvest_months": [],
+    "repotting_months": [],
+    "pruning_months": [
+      4
+    ],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Sableux, légèrement acide ou neutre",
+    "pruning": "Tailler après la floraison pour encourager la ramification",
+    "esthetic": "foliage",
+    "foliage": "evergreen",
+    "height": "shrub",
+    "vegType": ""
+  },
+  "133": {
+    "species": "Jasmin d'hiver",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "hardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [
+      3,
+      4,
+      5
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Tous les types de sols, même calcaire",
+    "pruning": "Tailler pour éclaircir la touffe et supprimer les pousses les plus âgées",
+    "esthetic": "flowering",
+    "foliage": "deciduous",
+    "height": "climber",
+    "vegType": ""
+  },
+  "134": {
+    "species": "Arbre à papier",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 3,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": null,
+    "sowing_months": [],
+    "planting_months": [
+      3,
+      10
+    ],
+    "harvest_months": [],
+    "repotting_months": [
+      3,
+      4,
+      5
+    ],
+    "pruning_months": [
+      12
+    ],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Humifère, drainé, plutôt sec",
+    "pruning": "Taillez les jeunes pousses en fin d'hiver pour garder un port harmonieux",
+    "esthetic": "foliage",
+    "foliage": "deciduous",
+    "height": "tree",
+    "vegType": ""
+  },
+  "135": {
+    "species": "Myrte commune",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "medium",
+    "humidity": "high",
+    "temperature": "semiHardy",
+    "toxicity": "low",
+    "cycle": "perennial",
+    "water_summer": 7,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [
+      3,
+      4,
+      5
+    ],
+    "harvest_months": [],
+    "repotting_months": [
+      3,
+      4,
+      5
+    ],
+    "pruning_months": [
+      2
+    ],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Sol meuble, profond, frais et drainé",
+    "pruning": "Taille en fin d'hiver pour conserver son port naturel",
+    "esthetic": "foliage",
+    "foliage": "evergreen",
+    "height": "shrub",
+    "vegType": ""
+  },
+  "136": {
+    "species": "Agapanthe",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 30,
+    "fertilize_freq": null,
+    "repot_freq": null,
+    "sowing_months": [],
+    "planting_months": [
+      3,
+      4
+    ],
+    "harvest_months": [],
+    "repotting_months": [],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Préférence léger et humifère. Drainé.",
+    "pruning": "Suppression des fleurs fanées au fur et à mesure.",
+    "esthetic": "flowering",
+    "foliage": "semi_evergreen",
+    "height": "ground",
+    "vegType": ""
+  },
+  "137": {
+    "species": "Bambou sacré",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "low",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [
+      3,
+      4,
+      5
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Terres fraîches mais bien drainées",
+    "pruning": "Éliminer les pousses faibles pour aérer la touffe",
+    "esthetic": "foliage",
+    "foliage": "evergreen",
+    "height": "shrub",
+    "vegType": ""
+  },
+  "138": {
+    "species": "Camélia Japonais",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [
+      3,
+      4
+    ],
+    "harvest_months": [],
+    "repotting_months": [
+      3,
+      4,
+      5
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Un terreau forestier légèrement acide ou un sol argilo-siliceux bien drainé et enrichi en humus",
+    "pruning": "La taille s'effectue juste après la floraison, car le camélia forme ses boutons durant l'été sur le bois de l'année.",
+    "esthetic": "flowering",
+    "foliage": "evergreen",
+    "height": "tree",
+    "vegType": ""
+  },
+  "139": {
+    "species": "Ciste des corbières",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "low",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": null,
+    "fertilize_freq": null,
+    "repot_freq": null,
+    "sowing_months": [],
+    "planting_months": [
+      4,
+      5
+    ],
+    "harvest_months": [],
+    "repotting_months": [],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Sol neutre et bien drainé, voire terre sèche et pauvre",
+    "pruning": "Après la floraison, pour conserver à votre arbuste un port touffu. Supprimez les extrémités des rameaux sans rabattre trop court.",
+    "esthetic": "flowering",
+    "foliage": "evergreen",
+    "height": "shrub",
+    "vegType": ""
+  },
+  "140": {
+    "species": "Céanothe",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 3,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [
+      3
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Sol drainé, riche",
+    "pruning": "Taille en mars",
+    "esthetic": "flowering",
+    "foliage": "deciduous",
+    "height": "shrub",
+    "vegType": ""
+  },
+  "141": {
+    "species": "Gaura",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [
+      4
+    ],
+    "planting_months": [
+      4,
+      5,
+      6
+    ],
+    "harvest_months": [],
+    "repotting_months": [
+      3,
+      4,
+      5
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Assez fertile et drainé",
+    "pruning": "Rabattre d'un quart après la première floraison pour favoriser de nouvelles pousses",
+    "esthetic": "flowering",
+    "foliage": "deciduous",
+    "height": "shrub",
+    "vegType": ""
+  },
+  "142": {
+    "species": "Fleur de Lys",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [
+      10
+    ],
+    "harvest_months": [],
+    "repotting_months": [
+      3
+    ],
+    "pruning_months": [
+      7
+    ],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Bien drainée",
+    "pruning": "Taillez les tiges juste sous les fleurs après la floraison",
+    "esthetic": "flowering",
+    "foliage": "deciduous",
+    "height": "shrub",
+    "vegType": ""
+  },
+  "143": {
+    "species": "Saule Pleureur",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "hardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": null,
+    "sowing_months": [],
+    "planting_months": [
+      10
+    ],
+    "harvest_months": [],
+    "repotting_months": [],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Ordinaire, frais à humide",
+    "pruning": "Raccourcir les rameaux atteignant le sol",
+    "esthetic": "foliage",
+    "foliage": "deciduous",
+    "height": "tree",
+    "vegType": ""
+  },
+  "144": {
+    "species": "Bouleau",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "hardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 7,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": null,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "",
+    "pruning": "",
+    "esthetic": "foliage",
+    "foliage": "deciduous",
+    "height": "tree",
+    "vegType": ""
+  },
+  "145": {
+    "species": "Chêne",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "low",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 7,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": null,
+    "sowing_months": [
+      10
+    ],
+    "planting_months": [
+      10
+    ],
+    "harvest_months": [],
+    "repotting_months": [],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Drainé, calcaire ou neutre",
+    "pruning": "Inutile de tailler ce bel arbre au port naturellement arrondi",
+    "esthetic": "foliage",
+    "foliage": "evergreen",
+    "height": "tree",
+    "vegType": ""
+  },
+  "146": {
+    "species": "Pin",
+    "category": "outdoor",
+    "light": "partial",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": null,
+    "sowing_months": [],
+    "planting_months": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "harvest_months": [],
+    "repotting_months": [
+      3,
+      4,
+      5
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Sols frais, riches et bien drainés, sableux à tendance acide",
+    "pruning": "Taille de formation en douceur sur plusieurs années",
+    "esthetic": "foliage",
+    "foliage": "evergreen",
+    "height": "tree",
+    "vegType": ""
+  },
+  "147": {
+    "species": "Sapin",
+    "category": "indoor",
+    "light": "brightInd",
+    "difficulty": "medium",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 7,
+    "water_winter": null,
+    "fertilize_freq": null,
+    "repot_freq": 36,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [
+      3,
+      4,
+      5
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Terre de jardin à tendance acide et compost",
+    "pruning": "Rempoter tous les 3 ans dans un mélange riche",
+    "esthetic": "foliage",
+    "foliage": "evergreen",
+    "height": "tree",
+    "vegType": ""
+  },
+  "148": {
+    "species": "Ginkgo Biloba",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "medium",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "low",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [
+      3,
+      4,
+      5
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Drainant, sableux",
+    "pruning": "Couper les fleurs fanées",
+    "esthetic": "foliage",
+    "foliage": "deciduous",
+    "height": "tree",
+    "vegType": ""
+  },
+  "149": {
+    "species": "Magnolia",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "medium",
+    "humidity": "high",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 365,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [
+      3,
+      4
+    ],
+    "harvest_months": [],
+    "repotting_months": [
+      2,
+      3
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Humifère, bien drainé, frais",
+    "pruning": "La taille des magnolias persistants n'est pas nécessaire.",
+    "esthetic": "flowering",
+    "foliage": "evergreen",
+    "height": "tree",
+    "vegType": ""
+  },
+  "150": {
+    "species": "Yucca",
+    "category": "indoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "low",
+    "temperature": "semiHardy",
+    "toxicity": "low",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 30,
+    "fertilize_freq": null,
+    "repot_freq": null,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [
+      3,
+      4,
+      5
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Parfaitement drainé",
+    "pruning": "Suppression des feuilles sèches et des tiges florales fanées",
+    "esthetic": "foliage",
+    "foliage": "evergreen",
+    "height": "shrub",
+    "vegType": ""
+  },
+  "151": {
+    "species": "Passiflore",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "medium",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [
+      3
+    ],
+    "planting_months": [
+      3
+    ],
+    "harvest_months": [],
+    "repotting_months": [
+      3
+    ],
+    "pruning_months": [
+      3
+    ],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Presque tous les sols conviennent à la culture de la passiflore, à condition qu'ils soient bien drainés.",
+    "pruning": "Prévoir une petite taille de nettoyage au printemps (suppression des rameaux morts ou mal placés).",
+    "esthetic": "flowering",
+    "foliage": "evergreen",
+    "height": "climber",
+    "vegType": ""
+  },
+  "152": {
+    "species": "Bignone",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": null,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [
+      3,
+      4,
+      5
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Bien drainé, sols calcaires supportés",
+    "pruning": "Taille de printemps recommandée",
+    "esthetic": "flowering",
+    "foliage": "deciduous",
+    "height": "climber",
+    "vegType": ""
+  },
+  "153": {
+    "species": "Rosier Grimpant",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "hardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 365,
+    "repot_freq": null,
+    "sowing_months": [],
+    "planting_months": [
+      11,
+      12,
+      1,
+      2,
+      3
+    ],
+    "harvest_months": [],
+    "repotting_months": [],
+    "pruning_months": [
+      2
+    ],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Sols profonds, fertiles, frais et drainés",
+    "pruning": "Taille en fin d'hiver pour les rosiers remontants, et après la floraison pour les rosiers non remontants",
+    "esthetic": "flowering",
+    "foliage": "deciduous",
+    "height": "climber",
+    "vegType": ""
+  },
+  "154": {
+    "species": "Rosier Buisson",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "hardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 365,
+    "repot_freq": null,
+    "sowing_months": [],
+    "planting_months": [
+      11,
+      12,
+      1,
+      2,
+      3
+    ],
+    "harvest_months": [],
+    "repotting_months": [],
+    "pruning_months": [
+      2
+    ],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Sols profonds, fertiles, frais et drainés",
+    "pruning": "Taille en fin d'hiver pour les rosiers remontants, et après la floraison pour les rosiers non remontants",
+    "esthetic": "flowering",
+    "foliage": "deciduous",
+    "height": "shrub",
+    "vegType": ""
+  },
+  "155": {
+    "species": "Iris",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "veryHardy",
+    "toxicity": "none",
+    "cycle": "Perennial",
+    "water_summer": 7,
+    "water_winter": null,
+    "fertilize_freq": null,
+    "repot_freq": null,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [],
+    "pruning_months": [],
+    "wintering_months": [],
+    "soil": "Très secs et très pauvres",
+    "pruning": "Rabattre les tiges à 10 cm du sol après la floraison",
+    "esthetic": "flowering",
+    "foliage": "deciduous",
+    "height": "ground",
+    "vegType": ""
+  },
+  "156": {
+    "species": "Glaïeul",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "medium",
+    "humidity": "high",
+    "temperature": "hardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [
+      10
+    ],
+    "harvest_months": [],
+    "repotting_months": [
+      6
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Sol frais et bien drainé de pH neutre",
+    "pruning": "Ôtez le feuillage desséché et les inflorescences fanées",
+    "esthetic": "flowering",
+    "foliage": "deciduous",
+    "height": "ground",
+    "vegType": ""
+  },
+  "157": {
+    "species": "Muguet",
+    "category": "outdoor",
+    "light": "partial",
+    "difficulty": "easy",
+    "humidity": "high",
+    "temperature": "semiHardy",
+    "toxicity": "high",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [
+      10
+    ],
+    "harvest_months": [],
+    "repotting_months": [
+      10
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Riche, frais, meuble",
+    "pruning": "Pas de taille spécifique",
+    "esthetic": "flowering",
+    "foliage": "deciduous",
+    "height": "ground",
+    "vegType": ""
+  },
+  "158": {
+    "species": "Primevère",
+    "category": "indoor",
+    "light": "brightInd",
+    "difficulty": "medium",
+    "humidity": "high",
+    "temperature": "semiHardy",
+    "toxicity": "low",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 15,
+    "repot_freq": 12,
+    "sowing_months": [],
+    "planting_months": [
+      3,
+      4,
+      5
+    ],
+    "harvest_months": [],
+    "repotting_months": [
+      4
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Drainant, fertile",
+    "pruning": "Couper les fleurs fanées",
+    "esthetic": "flowering",
+    "foliage": "evergreen",
+    "height": "ground",
+    "vegType": ""
+  },
+  "159": {
+    "species": "Pensée",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "biennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": null,
+    "sowing_months": [
+      2,
+      6,
+      8
+    ],
+    "planting_months": [
+      10,
+      3
+    ],
+    "harvest_months": [],
+    "repotting_months": [
+      3
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Léger, humifère (terreau)",
+    "pruning": "Supprimez les fleurs fanées au fur et à mesure.",
+    "esthetic": "flowering",
+    "foliage": "deciduous",
+    "height": "ground",
+    "vegType": ""
+  },
+  "160": {
+    "species": "Anémone",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 7,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": null,
+    "sowing_months": [],
+    "planting_months": [
+      3
+    ],
+    "harvest_months": [],
+    "repotting_months": [
+      8
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Léger, drainé, riche en humus",
+    "pruning": "Apport de compost chaque année au printemps, arrosage en cas de sécheresse",
+    "esthetic": "flowering",
+    "foliage": "deciduous",
+    "height": "ground",
+    "vegType": ""
+  },
+  "161": {
+    "species": "Renoncule",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "high",
+    "temperature": "hardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": null,
+    "sowing_months": [],
+    "planting_months": [
+      3,
+      4,
+      5,
+      9,
+      10
+    ],
+    "harvest_months": [],
+    "repotting_months": [],
+    "pruning_months": [
+      10
+    ],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Argileux, riche, vaseux",
+    "pruning": "Coupez une partie du feuillage en automne si la plante devient trop envahissante",
+    "esthetic": "flowering",
+    "foliage": "semi_evergreen",
+    "height": "ground",
+    "vegType": ""
+  },
+  "162": {
+    "species": "Capucine",
+    "category": "outdoor",
+    "light": "partial",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [
+      10
+    ],
+    "planting_months": [
+      7,
+      8,
+      9
+    ],
+    "harvest_months": [],
+    "repotting_months": [
+      7,
+      8,
+      9
+    ],
+    "pruning_months": [
+      3
+    ],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Profond, riche, drainant, acide à neutre",
+    "pruning": "Couper les fleurs fanées",
+    "esthetic": "flowering",
+    "foliage": "deciduous",
+    "height": "climber",
+    "vegType": ""
+  },
+  "163": {
+    "species": "Coquelicot",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "low",
+    "cycle": "annual",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [
+      10,
+      3
+    ],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Tout type de sol bien drainé",
+    "pruning": "Maintenir le sol propre jusqu'à la levée des plants, éclaircir le semis à 20 cm en tout sens",
+    "esthetic": "flowering",
+    "foliage": "deciduous",
+    "height": "ground",
+    "vegType": ""
+  },
+  "164": {
+    "species": "Bleuet",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [
+      10,
+      3
+    ],
+    "harvest_months": [],
+    "repotting_months": [
+      10,
+      3
+    ],
+    "pruning_months": [
+      10,
+      3
+    ],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Léger et drainant",
+    "pruning": "Supprimez les fleurs fanées pour stimuler l'apparition de nouvelles fleurs. Après la floraison, rabattez les tiges sèches.",
+    "esthetic": "flowering",
+    "foliage": "evergreen",
+    "height": "shrub",
+    "vegType": ""
+  },
+  "165": {
+    "species": "Zinnia",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "annual",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": null,
+    "sowing_months": [
+      3,
+      4
+    ],
+    "planting_months": [
+      5
+    ],
+    "harvest_months": [],
+    "repotting_months": [],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Riche, humifère, bien drainé",
+    "pruning": "Coupez les fleurs fanées pour favoriser le développement de nouvelles fleurs",
+    "esthetic": "flowering",
+    "foliage": "deciduous",
+    "height": "ground",
+    "vegType": ""
+  },
+  "166": {
+    "species": "Ananas",
+    "category": "indoor",
+    "light": "brightInd",
+    "difficulty": "medium",
+    "humidity": "high",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [
+      3,
+      4,
+      5
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Léger, aéré, humifère et fibreux, plutôt acide",
+    "pruning": "Rabattre après la floraison si nécessaire",
+    "esthetic": "foliage",
+    "foliage": "evergreen",
+    "height": "hanging",
+    "vegType": ""
+  },
+  "167": {
+    "species": "Avocatier",
+    "category": "indoor",
+    "light": "brightInd",
+    "difficulty": "medium",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "repotting_months": [
+      3,
+      4,
+      5
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Neutre ou légèrement acide, drainé, riche et profond",
+    "pruning": "Couper les fleurs fanées",
+    "esthetic": "fruit",
+    "foliage": "deciduous",
+    "height": "tree",
+    "vegType": "fruit"
+  },
+  "168": {
+    "species": "Manguier",
+    "category": "indoor",
+    "light": "brightInd",
+    "difficulty": "medium",
+    "humidity": "high",
+    "temperature": "frostTender",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [
+      1,
+      2
+    ],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [
+      3,
+      4,
+      5
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Terreau humide et riche en éléments nutritifs",
+    "pruning": "Pas spécifique",
+    "esthetic": "fruit",
+    "foliage": "evergreen",
+    "height": "tree",
+    "vegType": ""
+  },
+  "169": {
+    "species": "Bananier",
+    "category": "indoor",
+    "light": "brightInd",
+    "difficulty": "medium",
+    "humidity": "high",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "harvest_months": [],
+    "repotting_months": [
+      2,
+      3
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Terre de jardin, terreau, fumier composté et sable grossier",
+    "pruning": "Pas de taille spécifique mentionnée",
+    "esthetic": "foliage",
+    "foliage": "deciduous",
+    "height": "tree",
+    "vegType": ""
+  },
+  "170": {
+    "species": "Fuchsia",
+    "category": "indoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "high",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "Perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": null,
+    "repot_freq": null,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [
+      3,
+      4,
+      5
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Terreau spécial boutures et semis, mélange de sable et de tourbe",
+    "pruning": "Supprimer les feuilles du bas des boutures",
+    "esthetic": "flowering",
+    "foliage": "deciduous",
+    "height": "shrub",
+    "vegType": ""
+  },
+  "171": {
+    "species": "Begonia",
+    "category": "indoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 3,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 36,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [
+      3
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Léger, bien drainé et riche",
+    "pruning": "Tailler en hiver pour maintenir une forme compacte",
+    "esthetic": "flowering",
+    "foliage": "evergreen",
+    "height": "shrub",
+    "vegType": ""
+  },
+  "172": {
+    "species": "Impatiens",
+    "category": "outdoor",
+    "light": "partial",
+    "difficulty": "easy",
+    "humidity": "high",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 12,
+    "sowing_months": [
+      2
+    ],
+    "planting_months": [
+      3,
+      4
+    ],
+    "harvest_months": [],
+    "repotting_months": [
+      3
+    ],
+    "pruning_months": [
+      3
+    ],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Frais, drainant",
+    "pruning": "Rabattre au printemps pour conserver un port compact",
+    "esthetic": "flowering",
+    "foliage": "deciduous",
+    "height": "ground",
+    "vegType": ""
+  },
+  "173": {
+    "species": "Bruyère",
+    "category": "outdoor",
+    "light": "partial",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [
+      3,
+      4,
+      5
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Acide, léger, drainant (terre de bruyère)",
+    "pruning": "Taille légère après la floraison pour harmoniser la forme de la touffe et supprimer le bois mort. Apporter de l'engrais pour rhododendron ou hortensia au printemps. Rempoter les sujets en pots tous les 2 ans au printemps. Arroser avec une eau de préférence non calcaire si le sol est très sec.",
+    "esthetic": "flowering",
+    "foliage": "evergreen",
+    "height": "shrub",
+    "vegType": ""
+  },
+  "174": {
+    "species": "Chrysanthème",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [
+      3,
+      4,
+      5
+    ],
+    "harvest_months": [],
+    "repotting_months": [],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Éviter les sols très acides ou très calcaires",
+    "pruning": "Supprimer les jeunes pousses latérales et les boutons floraux secondaires",
+    "esthetic": "flowering",
+    "foliage": "deciduous",
+    "height": "shrub",
+    "vegType": ""
+  },
+  "175": {
+    "species": "Aster",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "low",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 7,
+    "water_winter": null,
+    "fertilize_freq": null,
+    "repot_freq": null,
+    "sowing_months": [],
+    "planting_months": [
+      3
+    ],
+    "harvest_months": [],
+    "repotting_months": [],
+    "pruning_months": [
+      4
+    ],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Drainée",
+    "pruning": "Pincer les jeunes pousses pour une meilleure ramification",
+    "esthetic": "flowering",
+    "foliage": "evergreen",
+    "height": "ground",
+    "vegType": ""
+  },
+  "176": {
+    "species": "Aubriète",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 3,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [
+      3,
+      4,
+      5
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Sols légers, riches en humus, frais et bien drainés",
+    "pruning": "Rabattre les tiges au niveau du sol en novembre",
+    "esthetic": "flowering",
+    "foliage": "deciduous",
+    "height": "shrub",
+    "vegType": ""
+  },
+  "177": {
+    "species": "Campanule",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [
+      4
+    ],
+    "planting_months": [
+      4,
+      10
+    ],
+    "harvest_months": [],
+    "repotting_months": [
+      3,
+      4,
+      5
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Riche, frais et bien drainé",
+    "pruning": "Supprimez les fleurs fanées pour stimuler le développement de nouvelles fleurs",
+    "esthetic": "flowering",
+    "foliage": "semi_evergreen",
+    "height": "shrub",
+    "vegType": ""
+  },
+  "178": {
+    "species": "Digitale",
+    "category": "outdoor",
+    "light": "partial",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": null,
+    "sowing_months": [
+      3
+    ],
+    "planting_months": [
+      3,
+      4,
+      5,
+      8,
+      9,
+      10,
+      11
+    ],
+    "harvest_months": [],
+    "repotting_months": [],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Ordinaire, frais, drainé et sec en hiver",
+    "pruning": "Supprimez les fleurs fanées en début de saison pour une longue floraison",
+    "esthetic": "flowering",
+    "foliage": "semi_evergreen",
+    "height": "ground",
+    "vegType": ""
+  },
+  "179": {
+    "species": "Lupinus",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 3,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [
+      2,
+      3,
+      4,
+      5,
+      9,
+      10
+    ],
+    "planting_months": [
+      2,
+      3,
+      4,
+      5,
+      9,
+      10
+    ],
+    "harvest_months": [],
+    "repotting_months": [
+      2,
+      3,
+      4,
+      5,
+      9,
+      10
+    ],
+    "pruning_months": [
+      8
+    ],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Sol bien drainé et fertile",
+    "pruning": "Supprimer les fleurs fanées pour encourager une floraison continue. Tailler les tiges en fin de saison.",
+    "esthetic": "flowering",
+    "foliage": "deciduous",
+    "height": "shrub",
+    "vegType": ""
+  },
+  "180": {
+    "species": "Delphinium",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "medium",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "high",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": null,
+    "sowing_months": [
+      5
+    ],
+    "planting_months": [
+      5,
+      9
+    ],
+    "harvest_months": [],
+    "repotting_months": [],
+    "pruning_months": [
+      9,
+      10
+    ],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Sol profond, fertile, riche en humus et bien drainé",
+    "pruning": "Rabattre les tiges florales après la floraison pour une remontée en septembre-octobre",
+    "esthetic": "flowering",
+    "foliage": "deciduous",
+    "height": "shrub",
+    "vegType": ""
+  },
+  "181": {
+    "species": "Hosta",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 48,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [
+      3,
+      4,
+      5
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Sols légers, riches en humus, frais et bien drainés",
+    "pruning": "Rabattre les tiges au niveau du sol en novembre",
+    "esthetic": "flowering",
+    "foliage": "deciduous",
+    "height": "shrub",
+    "vegType": ""
+  },
+  "182": {
+    "species": "Heuchère",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "hardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [
+      4
+    ],
+    "planting_months": [
+      4,
+      10
+    ],
+    "harvest_months": [],
+    "repotting_months": [
+      3,
+      4
+    ],
+    "pruning_months": [
+      2
+    ],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Frais, humifère",
+    "pruning": "Rabattre la touffe en fin d'hiver pour favoriser le renouvellement du feuillage",
+    "esthetic": "foliage",
+    "foliage": "evergreen",
+    "height": "ground",
+    "vegType": ""
+  },
+  "183": {
+    "species": "Fétuque bleue",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "hardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": null,
+    "sowing_months": [],
+    "planting_months": [
+      10,
+      4
+    ],
+    "harvest_months": [],
+    "repotting_months": [
+      4
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Ordinaire (de préférence pas trop riche, et sec)",
+    "pruning": "Suppression des feuilles sèches du pourtour de la touffe et des épis fanés",
+    "esthetic": "foliage",
+    "foliage": "evergreen",
+    "height": "ground",
+    "vegType": ""
+  },
+  "184": {
+    "species": "Herbe de la pampa",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "low",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [
+      5,
+      6,
+      7
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Profond et frais",
+    "pruning": "Couper les inflorescences et les feuilles desséchées",
+    "esthetic": "flowering",
+    "foliage": "evergreen",
+    "height": "shrub",
+    "vegType": ""
+  },
+  "185": {
+    "species": "Charme",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "low",
+    "cycle": "perennial",
+    "water_summer": 7,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": null,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [
+      3,
+      4,
+      5
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Sol drainant",
+    "pruning": "Conseil taille",
+    "esthetic": "foliage",
+    "foliage": "deciduous",
+    "height": "tree",
+    "vegType": ""
+  },
+  "186": {
+    "species": "Troène",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "veryHardy",
+    "toxicity": "high",
+    "cycle": "perennial",
+    "water_summer": 3,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": null,
+    "sowing_months": [],
+    "planting_months": [
+      10,
+      3,
+      4
+    ],
+    "harvest_months": [],
+    "repotting_months": [],
+    "pruning_months": [
+      8,
+      9
+    ],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Riche, frais, bien drainé",
+    "pruning": "Taille printemps et fin d'été pour conserver la forme",
+    "esthetic": "foliage",
+    "foliage": "semi_evergreen",
+    "height": "shrub",
+    "vegType": ""
+  },
+  "187": {
+    "species": "Cyprès de Leyland",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": null,
+    "sowing_months": [],
+    "planting_months": [
+      10,
+      11,
+      0,
+      1,
+      2
+    ],
+    "harvest_months": [],
+    "repotting_months": [],
+    "pruning_months": [
+      3,
+      8
+    ],
+    "wintering_months": [
+      10,
+      11,
+      0,
+      1
+    ],
+    "soil": "Indifférent, même calcaire",
+    "pruning": "Le cyprès supporte bien les coupes (attention de ne pas tailler dans le vieux bois) et repousse plutôt vite. Il est donc généralement nécessaire d'intervenir une à deux fois l'an (avril et septembre) pour le contenir.",
+    "esthetic": "foliage",
+    "foliage": "evergreen",
+    "height": "tree",
+    "vegType": ""
+  },
+  "188": {
+    "species": "Cotoneaster",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 15,
+    "water_winter": 30,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [
+      3,
+      4,
+      9,
+      10
+    ],
+    "harvest_months": [],
+    "repotting_months": [],
+    "pruning_months": [
+      8,
+      9
+    ],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Plutôt caillouteux, drainé et sec",
+    "pruning": "Tailler en août-septembre en égalisant les rameaux disgracieux ou qui dépassent.",
+    "esthetic": "foliage",
+    "foliage": "semi_evergreen",
+    "height": "shrub",
+    "vegType": ""
+  },
+  "189": {
+    "species": "Pyracantha",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "high",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": null,
+    "sowing_months": [],
+    "planting_months": [
+      3,
+      4,
+      5,
+      9,
+      10
+    ],
+    "harvest_months": [],
+    "repotting_months": [],
+    "pruning_months": [
+      1,
+      2,
+      6,
+      7,
+      8,
+      12
+    ],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Neutre, calcaire, fertile et drainant",
+    "pruning": "Taillez en hiver, après la floraison ou en début d'été",
+    "esthetic": "foliage",
+    "foliage": "evergreen",
+    "height": "shrub",
+    "vegType": ""
+  },
+  "190": {
+    "species": "Houx",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "hardy",
+    "toxicity": "low",
+    "cycle": "perennial",
+    "water_summer": 3,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [
+      3,
+      4,
+      10
+    ],
+    "harvest_months": [],
+    "repotting_months": [
+      3,
+      4,
+      5
+    ],
+    "pruning_months": [
+      2
+    ],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Acide, neutre, frais, drainé",
+    "pruning": "Taillez le bois mort et libérez le centre pour donner une belle silhouette à l'arbuste en fin d'hiver",
+    "esthetic": "foliage",
+    "foliage": "deciduous",
+    "height": "shrub",
+    "vegType": ""
+  },
+  "191": {
+    "species": "Viorne",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 7,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": null,
+    "sowing_months": [],
+    "planting_months": [
+      10,
+      3
+    ],
+    "harvest_months": [],
+    "repotting_months": [],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Sol riche et restant frais en été",
+    "pruning": "La taille n'est pas nécessaire, si besoin, coupez les branches gênantes après la floraison.",
+    "esthetic": "flowering",
+    "foliage": "deciduous",
+    "height": "shrub",
+    "vegType": ""
+  },
+  "192": {
+    "species": "Seringat",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "hardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 21,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [
+      9,
+      10
+    ],
+    "harvest_months": [],
+    "repotting_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "pruning_months": [
+      7
+    ],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Riche, acide, calcaire, argileux",
+    "pruning": "Taille après floraison pour supprimer les vieilles tiges et raccourcir les rameaux ayant fleuri",
+    "esthetic": "flowering",
+    "foliage": "deciduous",
+    "height": "shrub",
+    "vegType": ""
+  },
+  "193": {
+    "species": "Weigelia",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": null,
+    "sowing_months": [],
+    "planting_months": [
+      3
+    ],
+    "harvest_months": [],
+    "repotting_months": [],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Léger, drainé, pauvre",
+    "pruning": "Taille légère après la floraison",
+    "esthetic": "flowering",
+    "foliage": "semi_evergreen",
+    "height": "shrub",
+    "vegType": ""
+  },
+  "194": {
+    "species": "Spirée",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "high",
+    "temperature": "veryHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [
+      3,
+      4,
+      5
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Sol humide tout au long de l'année",
+    "pruning": "Taillez les inflorescences une fois fanées et supprimez le feuillage desséché si nécessaire.",
+    "esthetic": "foliage",
+    "foliage": "evergreen",
+    "height": "ground",
+    "vegType": ""
+  },
+  "195": {
+    "species": "Cornouiller",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "hardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [
+      3,
+      4,
+      5
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Tous les types de sols sont acceptés, même pauvres, secs ou calcaires",
+    "pruning": "Les cornouillers formant des tiges colorées sont rabattus sévèrement chaque année vers la fin mars.",
+    "esthetic": "foliage",
+    "foliage": "deciduous",
+    "height": "shrub",
+    "vegType": ""
+  },
+  "196": {
+    "species": "Tamaris",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": null,
+    "sowing_months": [],
+    "planting_months": [
+      3
+    ],
+    "harvest_months": [
+      9,
+      10,
+      11
+    ],
+    "repotting_months": [],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Bien drainé, profond et légèrement acide",
+    "pruning": "La taille n'est pas nécessaire, si ce n'est la suppression des branches qui se touchent ou abîmées",
+    "esthetic": "fruit",
+    "foliage": "evergreen",
+    "height": "tree",
+    "vegType": ""
+  },
+  "197": {
+    "species": "Albizia",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "low",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [
+      3,
+      4,
+      5
+    ],
+    "planting_months": [
+      3,
+      4,
+      5
+    ],
+    "harvest_months": [],
+    "repotting_months": [
+      3,
+      4,
+      5
+    ],
+    "pruning_months": [
+      11
+    ],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Profond, bien drainé",
+    "pruning": "Supprimer les branches basses gênantes, tailler durant les premières années pour favoriser une bonne ramification",
+    "esthetic": "flowering",
+    "foliage": "deciduous",
+    "height": "tree",
+    "vegType": ""
+  },
+  "198": {
+    "species": "Marronnier",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "medium",
+    "humidity": "medium",
+    "temperature": "hardy",
+    "toxicity": "high",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": null,
+    "sowing_months": [],
+    "planting_months": [
+      10,
+      11
+    ],
+    "harvest_months": [],
+    "repotting_months": [],
+    "pruning_months": [
+      2
+    ],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Drainé, fertile et frais",
+    "pruning": "Couper les fleurs fanées",
+    "esthetic": "flowering",
+    "foliage": "deciduous",
+    "height": "tree",
+    "vegType": ""
+  },
+  "199": {
+    "species": "Platane",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 7,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": null,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [
+      3,
+      4,
+      5
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Drainant, sableux",
+    "pruning": "Couper les fleurs fanées",
+    "esthetic": "foliage",
+    "foliage": "deciduous",
+    "height": "tree",
+    "vegType": ""
+  },
+  "200": {
+    "species": "Peuplier",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "hardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": null,
+    "sowing_months": [],
+    "planting_months": [
+      10,
+      3
+    ],
+    "harvest_months": [],
+    "repotting_months": [],
+    "pruning_months": [
+      2
+    ],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Peu exigeant, sol frais et bien drainé",
+    "pruning": "Aucune taille nécessaire, éventuellement en hiver (février/mars)",
+    "esthetic": "foliage",
+    "foliage": "deciduous",
+    "height": "tree",
+    "vegType": ""
+  },
+  "201": {
+    "species": "Groseillier",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [
+      3,
+      4
+    ],
+    "harvest_months": [],
+    "repotting_months": [
+      3,
+      4,
+      5
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Riche, frais, drainé",
+    "pruning": "Taille après la floraison",
+    "esthetic": "flowering",
+    "foliage": "deciduous",
+    "height": "shrub",
+    "vegType": ""
+  },
+  "202": {
+    "species": "Cassis",
+    "category": "outdoor",
+    "light": "partial",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 365,
+    "repot_freq": null,
+    "sowing_months": [],
+    "planting_months": [
+      11,
+      12,
+      1,
+      2,
+      3
+    ],
+    "harvest_months": [
+      6,
+      7
+    ],
+    "repotting_months": [],
+    "pruning_months": [
+      12
+    ],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Presque tous les sols (sauf très calcaires), pourvu qu'ils soient drainés.",
+    "pruning": "En matière de taille d'entretien, rabattez l'arbuste en hiver : coupez les vieilles branches à ras et les jeunes branches à 50 cm.",
+    "esthetic": "fruit",
+    "foliage": "deciduous",
+    "height": "shrub",
+    "vegType": ""
+  },
+  "203": {
+    "species": "Mûrier",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": null,
+    "sowing_months": [
+      4,
+      5
+    ],
+    "planting_months": [
+      10
+    ],
+    "harvest_months": [
+      6,
+      7
+    ],
+    "repotting_months": [],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Tous les sols conviennent, mais préfère les sols légers, sablonneux, bien drainés",
+    "pruning": "Le mûrier est un arbre à croissance lente qui ne nécessite pas de taille, mais peut être taillé comme un pommier si nécessaire",
+    "esthetic": "foliage",
+    "foliage": "deciduous",
+    "height": "tree",
+    "vegType": ""
+  },
+  "204": {
+    "species": "Mûrier Platane",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": null,
+    "sowing_months": [
+      4,
+      5
+    ],
+    "planting_months": [
+      10
+    ],
+    "harvest_months": [
+      6,
+      7
+    ],
+    "repotting_months": [],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Sols légers, sablonneux, bien drainés",
+    "pruning": "Pas de taille nécessaire, peut être taillé comme un pommier",
+    "esthetic": "fruit",
+    "foliage": "deciduous",
+    "height": "tree",
+    "vegType": ""
+  },
+  "205": {
+    "species": "Cognassier",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "hardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 7,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": null,
+    "sowing_months": [],
+    "planting_months": [
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ],
+    "harvest_months": [
+      10,
+      11
+    ],
+    "repotting_months": [],
+    "pruning_months": [
+      1,
+      2
+    ],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Neutre ou légèrement acide, fertile et restant frais",
+    "pruning": "Supprimer le bois mort et tailler les branches inutiles ou mal placées",
+    "esthetic": "flowering",
+    "foliage": "deciduous",
+    "height": "tree",
+    "vegType": ""
+  },
+  "206": {
+    "species": "Kaki",
+    "category": "vegetable",
+    "light": "brightInd",
+    "difficulty": "medium",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 3,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [
+      3,
+      4,
+      5
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "",
+    "pruning": "",
+    "esthetic": "fruit",
+    "foliage": "deciduous",
+    "height": "tree",
+    "vegType": ""
+  },
+  "207": {
+    "species": "Grenadier",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [
+      1,
+      2,
+      3,
+      4,
+      8,
+      9,
+      10,
+      11
+    ],
+    "harvest_months": [
+      10
+    ],
+    "repotting_months": [
+      3,
+      4,
+      5
+    ],
+    "pruning_months": [
+      8,
+      9
+    ],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Tolérant aux sols calcaires ou salins",
+    "pruning": "Supprimer le bois mort et les branches mal orientées",
+    "esthetic": "fruit",
+    "foliage": "deciduous",
+    "height": "shrub",
+    "vegType": ""
+  },
+  "208": {
+    "species": "Feijoa",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 3,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [
+      10,
+      11
+    ],
+    "repotting_months": [
+      3
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Neutre à légèrement acide, bien drainé",
+    "pruning": "Pas de taille nécessaire pour une haie, taille de mise en forme en fin d'hiver si sur tige",
+    "esthetic": "fruit",
+    "foliage": "evergreen",
+    "height": "shrub",
+    "vegType": ""
+  },
+  "209": {
+    "species": "Amandier",
+    "category": "outdoor",
+    "light": "brightInd",
+    "difficulty": "medium",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "low",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": null,
+    "sowing_months": [
+      10
+    ],
+    "planting_months": [
+      10,
+      11
+    ],
+    "harvest_months": [
+      5,
+      6,
+      9,
+      10
+    ],
+    "repotting_months": [],
+    "pruning_months": [
+      1
+    ],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Terres pauvres, sablonneuses, un peu calcaires",
+    "pruning": "Taille en janvier pour supprimer le bois mort et les branches qui s'entrecroisent",
+    "esthetic": "fruit",
+    "foliage": "deciduous",
+    "height": "tree",
+    "vegType": ""
+  },
+  "210": {
+    "species": "Oseille",
+    "category": "vegetable",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "low",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [
+      3,
+      4,
+      5
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Drainant, sableux",
+    "pruning": "Couper les fleurs fanées",
+    "esthetic": "foliage",
+    "foliage": "deciduous",
+    "height": "ground",
+    "vegType": "leaf"
+  },
+  "211": {
+    "species": "Céleri branche",
+    "category": "vegetable",
+    "light": "brightInd",
+    "difficulty": "medium",
+    "humidity": "high",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "biennial",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [
+      3
+    ],
+    "planting_months": [
+      5
+    ],
+    "harvest_months": [
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "repotting_months": [],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Sol meuble, riche et humide",
+    "pruning": "Supprimer les pousses latérales et blanchir les tiges pour des côtes tendres",
+    "esthetic": "foliage",
+    "foliage": "deciduous",
+    "height": "ground",
+    "vegType": "leaf"
+  },
+  "212": {
+    "species": "Navet",
+    "category": "vegetable",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "biennial",
+    "water_summer": 3,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [
+      6,
+      7,
+      8
+    ],
+    "planting_months": [
+      6,
+      7,
+      8
+    ],
+    "harvest_months": [
+      10,
+      11,
+      12
+    ],
+    "repotting_months": [],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Drainant, sableux",
+    "pruning": "Couper les fleurs fanées",
+    "esthetic": "foliage",
+    "foliage": "deciduous",
+    "height": "ground",
+    "vegType": "root"
+  },
+  "213": {
+    "species": "Panais",
+    "category": "outdoor",
+    "light": "partial",
+    "difficulty": "medium",
+    "humidity": "high",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 1,
+    "water_winter": null,
+    "fertilize_freq": null,
+    "repot_freq": 12,
+    "sowing_months": [],
+    "planting_months": [
+      12
+    ],
+    "harvest_months": [],
+    "repotting_months": [
+      11
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      1,
+      2
+    ],
+    "soil": "Drainant, sableux",
+    "pruning": "Couper les fleurs fanées",
+    "esthetic": "flowering",
+    "foliage": "evergreen",
+    "height": "ground",
+    "vegType": ""
+  },
+  "214": {
+    "species": "Fève",
+    "category": "vegetable",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "annual",
+    "water_summer": 1,
+    "water_winter": 15,
+    "fertilize_freq": 30,
+    "repot_freq": 24,
+    "sowing_months": [
+      3
+    ],
+    "planting_months": [
+      3
+    ],
+    "harvest_months": [
+      6,
+      7,
+      8
+    ],
+    "repotting_months": [],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Sols profonds et frais, à exposition ensoleillée",
+    "pruning": "Pincement des extrémités des tiges pour favoriser le développement des gousses et éviter les attaques de pucerons",
+    "esthetic": "foliage",
+    "foliage": "deciduous",
+    "height": "shrub",
+    "vegType": "fruit"
+  },
+  "215": {
+    "species": "Topinambour",
+    "category": "vegetable",
+    "light": "brightInd",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
+    "toxicity": "none",
+    "cycle": "perennial",
+    "water_summer": 3,
+    "water_winter": null,
+    "fertilize_freq": null,
+    "repot_freq": null,
+    "sowing_months": [],
+    "planting_months": [],
+    "harvest_months": [],
+    "repotting_months": [
+      3,
+      4,
+      5
+    ],
+    "pruning_months": [],
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Drainant, sableux",
+    "pruning": "Couper les fleurs fanées",
+    "esthetic": "foliage",
+    "foliage": "deciduous",
+    "height": "ground",
+    "vegType": "root"
+  }
+}

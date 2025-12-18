@@ -5,13 +5,8 @@ import 'dart:convert';
 // CONFIG
 // ---------------------
 
-const coreCsvPath = "csv/plants_core.csv";
-const careCsvPath = "csv/plants_care.csv";
-const tagsCsvPath = "csv/plants_tags.csv";
-
-const coreJsonPath = "assets/plants_core.json";
-const careJsonPath = "assets/plants_care.json";
-const tagsJsonPath = "assets/plants_tags.json";
+const coreCsvPath = "csv/plants_data.csv";
+const coreJsonPath = "assets/plants_data.json";
 
 // ---------------------
 // MAIN
@@ -21,12 +16,7 @@ Future<void> main() async {
   print("🔄 Conversion CSV → JSON...");
 
   final coreJson = await convertCoreCsv();
-  final careJson = await convertCareCsv();
-  final tagsJson = await convertTagsCsv();
-
   await File(coreJsonPath).writeAsString(const JsonEncoder.withIndent('  ').convert(coreJson), encoding: utf8);
-  await File(careJsonPath).writeAsString(const JsonEncoder.withIndent('  ').convert(careJson), encoding: utf8);
-  await File(tagsJsonPath).writeAsString(const JsonEncoder.withIndent('  ').convert(tagsJson), encoding: utf8);
 
   print("✅ Conversion terminée !");
 }
@@ -59,29 +49,11 @@ Future<List<Map<String, dynamic>>> readCsv(String path) async {
 }
 
 // ---------------------
-// CONVERSION CORE
+// CONVERSION DATA
 // ---------------------
 
 Future<Map<String, dynamic>> convertCoreCsv() async {
   final rows = await readCsv(coreCsvPath);
-  final result = <String, dynamic>{};
-
-  for (var row in rows) {
-    result[row["id"]!] = {
-      "species": row["species"] ?? "",
-      "synonyms": row["synonyms"]?.split(",").map((e) => e.trim()).toList() ?? [],
-      "category": row["category"] ?? "",
-    };
-  }
-  return result;
-}
-
-// ---------------------
-// CONVERSION CARE
-// ---------------------
-
-Future<Map<String, dynamic>> convertCareCsv() async {
-  final rows = await readCsv(careCsvPath);
   final result = <String, dynamic>{};
 
   for (var row in rows) {
@@ -106,6 +78,10 @@ Future<Map<String, dynamic>> convertCareCsv() async {
       "wintering_months": _listOrEmpty(row["winteringMonths"]),
       "soil": row["soilInfo"],
       "pruning": row["pruningInfo"],
+      "esthetic": row["esthetic"] ?? "", 
+      "foliage": row["foliage"] ?? "",
+      "height": row["height"] ?? "",
+      "vegType": row["vegType"] ?? "",
     };
   }
   return result;
@@ -113,26 +89,14 @@ Future<Map<String, dynamic>> convertCareCsv() async {
 
 List<int> _listOrEmpty(String? raw) {
   if (raw == null || raw.trim().isEmpty) return [];
-  return raw.split(',').map((e) => int.tryParse(e.trim()) ?? 0).toList();
-}
-
-// ---------------------
-// CONVERSION TAGS
-// ---------------------
-
-Future<Map<String, dynamic>> convertTagsCsv() async {
-  final rows = await readCsv(tagsCsvPath);
-  final result = <String, dynamic>{};
-
-  for (var row in rows) {
-    result[row["id"]!] = {
-      "species": row["species"] ?? "",
-      "category": row["category"] ?? "",
-      "esthetic": row["esthetic"] ?? "", 
-      "foliage": row["foliage"] ?? "",
-      "type": row["type"] ?? "",
-      "height": row["height"] ?? "",
-    };
-  }
-  return result;
+  
+  // 1. On enlève les crochets et les guillemets potentiels
+  String clean = raw.replaceAll('[', '').replaceAll(']', '').replaceAll('"', '');
+  
+  // 2. On split et on parse
+  return clean.split(',')
+      .map((e) => e.trim())
+      .where((e) => e.isNotEmpty) // Sécurité si "11, 12,"
+      .map((e) => int.tryParse(e) ?? 0)
+      .toList(); // On peut ajouter .where((e) => e != 0) pour être sûr
 }

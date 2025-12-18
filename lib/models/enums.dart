@@ -52,6 +52,7 @@ enum LeafPersistence {
 enum FoliageType {
   foliage,   // Plante verte (intérêt feuilles)
   flowering, // Plante fleurie
+  fruit      // Plante fruitière
 }
 
 // Type de port / Forme (Suspendu, Arbre...)
@@ -135,6 +136,7 @@ extension FoliageTypeExtension on FoliageType {
     switch (this) {
       case FoliageType.foliage: return "Plante verte";
       case FoliageType.flowering: return "Plante fleurie";
+      case FoliageType.fruit: return "Plante fruitière";
     }
   }
 }

@@ -18,39 +18,17 @@ class EncyclopediaService {
 
   Future<void> load() async {
     try {
-      // 1. Chargement parallèle
-      final responses = await Future.wait([
-        rootBundle.loadString('assets/plants_core.json'),
-        rootBundle.loadString('assets/plants_care.json'),
-        rootBundle.loadString('assets/plants_tags.json'),
-      ]);
+      final String response = await rootBundle.loadString('assets/plants_data.json');
+      final dynamic data = json.decode(response);
 
-      final coreMap = json.decode(responses[0]) as Map<String, dynamic>;
-      final careMap = json.decode(responses[1]) as Map<String, dynamic>;
-      final tagsMap = json.decode(responses[2]) as Map<String, dynamic>;
+      _plants = [];
+        data.forEach((key, value) {
+          // Si l'ID n'est pas dans l'objet, on peut l'injecter si besoin, 
+          // mais PlantSpeciesData n'a pas forcément de champ 'id', juste 'species'.
+          _plants.add(PlantSpeciesData.fromJson(value));
+        });
 
-      List<PlantSpeciesData> tempList = [];
-
-      // 2. Fusion
-      coreMap.forEach((id, coreData) {
-        final careData = careMap[id] ?? {};
-        final tagsData = tagsMap[id] ?? {};
-
-        try {
-          tempList.add(PlantSpeciesData.fromMergedJson(
-            id: id, // On passe l'ID si on veut le stocker, sinon utile pour debug
-            core: coreData,
-            care: careData,
-            tags: tagsData,
-          ));
-        } catch (e) {
-          debugPrint("Erreur parsing plante $id (${coreData['species']}) : $e");
-        }
-      });
-
-      _plants = tempList;
       debugPrint("Encyclopédie chargée : ${_plants.length} plantes.");
-      
     } catch (e) {
       debugPrint("Erreur fatale chargement encyclopédie : $e");
     }
