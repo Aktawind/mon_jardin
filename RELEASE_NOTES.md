@@ -6,10 +6,8 @@ Ce fichier trace l'historique des évolutions de l'application Sève.
 
 ## 🔮 À Venir (Roadmap)
 
-### v2.0.0 - "Synchronisation Cloud"
-
-### v1.9.1 - Ajout des photo dans l'encyclopédie
-
+### "Synchronisation Cloud"
+### "Nettoyage code"
 
 
 ---
@@ -20,6 +18,23 @@ Ce fichier trace l'historique des évolutions de l'application Sève.
 ---
 
 ## ✅ Versions publiées
+
+### v2.0.0 - "La Nouvelle Encyclopédie"
+
+**Une refonte complète du cœur de l'application pour des conseils plus fiables et précis.**
+
+**Architecture & Données :**
+Sève sépare désormais vos données (vos plantes, vos photos) des données botaniques. Résultat : une application plus légère et des conseils mis à jour instantanément.
+Migration vers une source de données unique et optimisée.
+Intégration de 215 plantes courantes (Intérieur, Jardin, Potager) avec des données croisées et vérifiées.
+Ajout des périodes de floraison, des conseils de soins détaillés et d'informations générales pour chaque espèce.
+
+**Améliorations :**
+Suppression de la catégorie "Aromatique" (fusionnée avec le Potager pour plus de clarté).
+Le nom de la plante s'affiche désormais correctement dans les notifications de rappel.
+
+**⚠️ Note importante pour la mise à jour :**
+En raison du changement de base de données, certaines de vos plantes peuvent perdre leurs "conseils automatiques". Si c'est le cas, ouvrez simplement la fiche de la plante, cliquez sur **Modifier**, et resélectionnez l'espèce dans la liste. Vos photos et historiques sont conservés en sécurité.
 
 ### v1.9.0 - "L'Esprit Tranquille" (Mode Vacances)
 Sélecteur de dates de départ et de retour.
