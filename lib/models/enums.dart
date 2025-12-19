@@ -84,7 +84,6 @@ enum PlantCategory {
   indoor,       // Plante verte / Intérieur
   vegetable,    // Potager / Fruitier
   outdoor,      // Ornemental Extérieur (Arbre, Arbuste, Fleur)
-  herb          // Aromatique
 }
 
 // Sous-catégorie Potager (Type précis)

@@ -86,7 +86,7 @@ class SmartWateringSheet extends StatelessWidget {
         children: [
           const Text("État de la terre", style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
           const SizedBox(height: 8),
-          Text("Pour ajuster le cycle de ${plant.name}", style: const TextStyle(color: Colors.grey)),
+          Text("Pour ajuster le cycle de ${plant.displayName}", style: const TextStyle(color: Colors.grey)),
           const SizedBox(height: 24),
           
           ListTile(

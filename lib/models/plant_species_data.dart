@@ -30,12 +30,15 @@ class PlantSpeciesData {
   final List<int> sowingMonths;
   final List<int> plantingMonths;
   final List<int> harvestMonths;
+  final List<int> floweringMonths;
   final List<int> pruningMonths;
   final List<int> repottingMonths;
   final List<int> winteringMonths;
   
   final String soilInfo;
   final String pruningInfo;
+  final String careInfo;
+  final String generalInfo;
 
   const PlantSpeciesData({
     required this.species,
@@ -58,11 +61,14 @@ class PlantSpeciesData {
     this.sowingMonths = const [],
     this.plantingMonths = const [],
     this.harvestMonths = const [],
+    this.floweringMonths = const [],
     this.pruningMonths = const [],
     this.repottingMonths = const [],
     this.winteringMonths = const [],
     required this.soilInfo,
     required this.pruningInfo,
+    required this.careInfo,
+    required this.generalInfo,
   });
 
   // Factory pour créer depuis le JSON
@@ -94,6 +100,7 @@ factory PlantSpeciesData.fromJson(Map<String, dynamic> json) {
       sowingMonths: List<int>.from(json['sowing_months'] ?? []),
       plantingMonths: List<int>.from(json['planting_months'] ?? []),
       harvestMonths: List<int>.from(json['harvest_months'] ?? []),
+      floweringMonths: List<int>.from(json['flowering_months'] ?? []),
       pruningMonths: List<int>.from(json['pruning_months'] ?? []),
       repottingMonths: List<int>.from(json['repotting_months'] ?? [3, 4, 5]),
       winteringMonths: List<int>.from(json['wintering_months'] ?? [11, 12, 1, 2]),
@@ -101,7 +108,8 @@ factory PlantSpeciesData.fromJson(Map<String, dynamic> json) {
       // Textes
       soilInfo: json['soil'] ?? '',
       pruningInfo: json['pruning'] ?? '',
-      
+      careInfo: json['care'] ?? '',
+      generalInfo: json['general'] ?? '',
 
     );
   }

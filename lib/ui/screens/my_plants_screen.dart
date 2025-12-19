@@ -144,7 +144,7 @@ class _PlantListState extends State<_PlantList> {
     if (mounted) {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
-          content: Text("${plant.name} a été arrosée ! 💧"),
+          content: Text("${plant.displayName} a été arrosée ! 💧"),
           backgroundColor: Theme.of(context).colorScheme.secondary,
         ),
       );

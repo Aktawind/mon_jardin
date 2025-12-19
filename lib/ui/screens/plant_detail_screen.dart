@@ -218,7 +218,7 @@ class _PlantDetailScreenState extends State<PlantDetailScreen> {
     // Copie de la plante avec nouveau stade
     final updatedPlant = Plant(
       id: _plant.id,
-      name: _plant.name,
+      name: _plant.displayName,
       species: _plant.species,
       location: _plant.location,
       room: _plant.room,
@@ -234,6 +234,8 @@ class _PlantDetailScreenState extends State<PlantDetailScreen> {
       humidityPref: _plant.humidityPref,
       soilType: _plant.soilType,
       pruningInfo: _plant.pruningInfo,
+      careInfo: _plant.careInfo,
+      generalInfo: _plant.generalInfo,
       fertilizerFreq: _plant.fertilizerFreq,
       repottingFreq: _plant.repottingFreq,
       trackWatering: _plant.trackWatering,
@@ -442,6 +444,8 @@ class _PlantDetailScreenState extends State<PlantDetailScreen> {
                   _buildSectionTitle("Soins & Entretien"),
                   _buildInfoRow(Icons.grass, "Terreau recommandé", _plant.soilType),
                   _buildInfoRow(Icons.content_cut, "Taille", _plant.pruningInfo),
+                  _buildInfoRow(Icons.volunteer_activism, "Conseils de soin", _plant.careInfo),
+                  _buildInfoRow(Icons.info_outline, "Informations générales", _plant.generalInfo),
                   
                   // Info technique (fréquence)
                   const SizedBox(height: 16),

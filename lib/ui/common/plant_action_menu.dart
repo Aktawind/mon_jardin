@@ -122,7 +122,7 @@ class PlantActionMenu extends StatelessWidget {
             const SizedBox(height: 16),
             
             Text(
-              "Prendre soin de ${plant.name}",
+              "Prendre soin de ${plant.displayName}",
               style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Theme.of(context).colorScheme.primary),
               textAlign: TextAlign.center,
             ),

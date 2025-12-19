@@ -5,13 +5,8 @@ import 'dart:convert';
 // CONFIG
 // -------------------------
 
-const coreJsonPath = "assets/plants_core.json";
-const careJsonPath = "assets/plants_care.json";
-const tagsJsonPath = "assets/plants_tags.json";
-
-const coreCsvPath = "csv/plants_core.csv";
-const careCsvPath = "csv/plants_care.csv";
-const tagsCsvPath = "csv/plants_tags.csv";
+const coreJsonPath = "assets/plants_data.json";
+const coreCsvPath = "csv/plants_data_copie.csv";
 
 // -------------------------
 // MAIN
@@ -23,15 +18,7 @@ Future<void> main() async {
   final coreJson = json.decode(await File(coreJsonPath).readAsString(encoding: utf8))
       as Map<String, dynamic>;
 
-  final careJson = json.decode(await File(careJsonPath).readAsString(encoding: utf8))
-      as Map<String, dynamic>;
-
-  final tagsJson = json.decode(await File(tagsJsonPath).readAsString(encoding: utf8))
-      as Map<String, dynamic>;
-
   await exportCore(coreJson);
-  await exportCare(careJson);
-  await exportTags(tagsJson);
 
   print("✅ Conversion terminée !");
 }
@@ -40,37 +27,19 @@ Future<void> main() async {
 //                EXPORT CORE
 // -----------------------------------------------------
 
-Future<void> exportCore(Map<String, dynamic> jsonMap) async {
-  final buffer = StringBuffer();
-  final bom = '\uFEFF'; // Le caractère magique
-  buffer.writeln("id;species;synonyms;category");
-
-  jsonMap.forEach((id, data) {
-    final species = data["species"] ?? "";
-    final category = data["category"] ?? "";
-    final synonyms = (data["synonyms"] as List<dynamic>? ?? [])
-        .map((e) => e.toString())
-        .join(", ");
-
-    buffer.writeln("$id;$species;$synonyms;$category");
-  });
-
-  await File(coreCsvPath).writeAsString(bom + buffer.toString(), encoding: utf8);
-}
-
 // -----------------------------------------------------
 //                EXPORT CARE
 // -----------------------------------------------------
 
-Future<void> exportCare(Map<String, dynamic> jsonMap) async {
+Future<void> exportCore(Map<String, dynamic> jsonMap) async {
   final buffer = StringBuffer();
   final bom = '\uFEFF'; // Le caractère magique
 
   buffer.writeln(
       "id;species;light;difficulty;humidity;temperature;toxicity;cycle;"
       "waterSummer;waterWinter;fertilizeFreq;repotFreq;"
-      "sowingMonths;plantingMonths;harvestMonths;repottingMonths;pruningMonths;winteringMonths;"
-      "soilInfo;pruningInfo"
+      "sowingMonths;plantingMonths;harvestMonths;floweringMonths;repottingMonths;pruningMonths;winteringMonths;"
+      "soilInfo;pruningInfo;careInfo;generalInfo"
   );
 
   jsonMap.forEach((id, data) {
@@ -93,43 +62,22 @@ Future<void> exportCare(Map<String, dynamic> jsonMap) async {
     final sow = listToCsv(data["sowing_months"]);
     final plant = listToCsv(data["planting_months"]);
     final harvest = listToCsv(data["harvest_months"]);
+    final flowering = listToCsv(data["flowering_months"]);
     final repotMonths = listToCsv(data["repotting_months"]);
     final pruningMonths = listToCsv(data["pruning_months"]);
     final winter = listToCsv(data["wintering_months"]);
 
     final soilInfo = data["soil"] ?? "";
     final pruningInfo = data["pruning"] ?? "";
+    final careInfo = data["care"] ?? "";
+    final generalInfo = data["general"] ?? "";
 
     buffer.writeln("$id;$species;"
         "$light;$difficulty;$humidity;$temperature;$toxicity;$cycle;"
         "$waterSummer;$waterWinter;$fertilizeFreq;$repotFreq;"
-        "$sow;$plant;$harvest;$repotMonths;$pruningMonths;$winter;"
-        "$soilInfo;$pruningInfo");
+        "$sow;$plant;$harvest;$flowering;$repotMonths;$pruningMonths;$winter;"
+        "$soilInfo;$pruningInfo;$careInfo;$generalInfo");
   });
 
-  await File(careCsvPath).writeAsString(bom + buffer.toString(), encoding: utf8);
-}
-
-// -----------------------------------------------------
-//                EXPORT TAGS
-// -----------------------------------------------------
-
-Future<void> exportTags(Map<String, dynamic> jsonMap) async {
-  final buffer = StringBuffer();
-  final bom = '\uFEFF'; // Le caractère magique
-
-  buffer.writeln("id;species;category;esthetic;foliage;type;height");
-
-  jsonMap.forEach((id, data) {
-    final species = data["species"] ?? "";
-    final category = data["category"] ?? "";
-    final esthetic = data["esthetic"] ?? "";
-    final foliage = data["foliage"] ?? "";
-    final type = data["type"] ?? "";
-    final height = data["height"] ?? "";
-
-    buffer.writeln("$id;$species;$category;$esthetic;$foliage;$type;$height");
-  });
-
-  await File(tagsCsvPath).writeAsString(bom + buffer.toString(), encoding: utf8);
+  await File(coreCsvPath).writeAsString(bom + buffer.toString(), encoding: utf8);
 }

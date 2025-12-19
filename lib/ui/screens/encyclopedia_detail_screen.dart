@@ -22,6 +22,7 @@ class EncyclopediaDetailScreen extends StatelessWidget {
     bool hasCalendarData = data.sowingMonths.isNotEmpty ||
                 data.plantingMonths.isNotEmpty ||
                 data.harvestMonths.isNotEmpty ||
+                data.floweringMonths.isNotEmpty ||
                 data.pruningMonths.isNotEmpty ||
                 data.repottingMonths.isNotEmpty;
 
@@ -53,17 +54,6 @@ class EncyclopediaDetailScreen extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
             ),
-            if (data.synonyms.isNotEmpty)
-              Padding(
-                padding: const EdgeInsets.only(top: 8),
-                child: Center(
-                  child: Text(
-                    "Aussi appelée : ${data.synonyms.join(', ')}",
-                    style: const TextStyle(fontStyle: FontStyle.italic, color: Colors.grey),
-                    textAlign: TextAlign.center,
-                  ),
-                ),
-              ),
             
             const SizedBox(height: 16),
             Divider(color: Theme.of(context).colorScheme.primary.withValues(alpha: 0.3)),
@@ -110,6 +100,8 @@ class EncyclopediaDetailScreen extends StatelessWidget {
                       _buildCalendarRow(Icons.agriculture, "Plantation", data.plantingMonths),
                     if (data.harvestMonths.isNotEmpty)
                       _buildCalendarRow(Icons.shopping_basket, "Récolte", data.harvestMonths),
+                    if (data.floweringMonths.isNotEmpty)
+                      _buildCalendarRow(Icons.local_florist, "Floraison", data.floweringMonths),
                     if (data.pruningMonths.isNotEmpty)
                       _buildCalendarRow(Icons.content_cut, "Taille", data.pruningMonths),
                     if (data.repottingMonths.isNotEmpty)
@@ -127,6 +119,10 @@ class EncyclopediaDetailScreen extends StatelessWidget {
                   _buildRow(Icons.pets, "Toxicité", data.toxicity.label),
                   if (data.pruningInfo.isNotEmpty)
                     _buildRow(Icons.info_outline, "Entretien", data.pruningInfo),
+                  if (data.careInfo.isNotEmpty)
+                    _buildRow(Icons.local_hospital, "Soins", data.careInfo),
+                  if (data.generalInfo.isNotEmpty)
+                    _buildRow(Icons.menu_book, "Généralités", data.generalInfo),
                 ],
               ),
             ),
@@ -193,7 +189,6 @@ class EncyclopediaDetailScreen extends StatelessWidget {
       case PlantCategory.indoor: return "Intérieur";
       case PlantCategory.outdoor: return "Extérieur";
       case PlantCategory.vegetable: return "Potager";
-      case PlantCategory.herb: return "Aromatique";
     }
   }
   
@@ -206,16 +201,16 @@ class EncyclopediaDetailScreen extends StatelessWidget {
   }
 
   String _waterNeedToString(int freq) {
-    if (freq < 3) return "Très élevé (Tous les jours)";
-    if (freq < 7) return "Élevé (2-3 fois/semaine)";
+    if (freq < 3) return "Très élevé (Tous les 2 jours)";
+    if (freq < 7) return "Élevé (2 à 3 fois/semaine)";
     if (freq < 14) return "Moyen (1 fois/semaine)";
     return "Faible (Laisser sécher)";
   }
 
   String _fertilizerToString(int freq) {
     if (freq <= 0) return "Aucun besoin particulier";
-    if (freq <= 15) return "Tous les 15 jours (Croissance)";
-    if (freq <= 30) return "Mensuel (Croissance)";
+    if (freq <= 15) return "Tous les 15 jours";
+    if (freq <= 30) return "Mensuel";
     return "Tous les $freq jours";
   }
 }

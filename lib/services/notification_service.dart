@@ -164,7 +164,7 @@ class NotificationService {
           UILocalNotificationDateInterpretation.absoluteTime,
     );
     
-    debugPrint("PROGRAMMÉ ($typeKey) pour ${plant.name} le $scheduledDate");
+    debugPrint("PROGRAMMÉ ($typeKey) pour ${plant.displayName} le $scheduledDate");
   }
 
   // Annuler TOUTES les notifs d'une plante (quand on la supprime)

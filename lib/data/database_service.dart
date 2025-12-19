@@ -33,7 +33,7 @@ class DatabaseService {
     // On ouvre la base. Si la version change, on appelle onUpgrade
     return await openDatabase(
       path,
-      version: 6, 
+      version: 7, 
       onCreate: _onCreate,
       onUpgrade: _onUpgrade,
     );
@@ -60,6 +60,8 @@ class DatabaseService {
         repotting_freq INTEGER, 
         last_repotted TEXT,     
         pruning_info TEXT,      
+        care_info TEXT,
+        general_info TEXT,
         date_added TEXT,        
         last_watered TEXT,    
         lifecycle_stage TEXT,
@@ -145,6 +147,11 @@ class DatabaseService {
 
     if (oldVersion < 6) {
       await db.execute("ALTER TABLE plants ADD COLUMN track_repotting INTEGER DEFAULT 1");
+    }
+
+    if (oldVersion < 7) {
+      await db.execute("ALTER TABLE plants ADD COLUMN care_info TEXT");
+      await db.execute("ALTER TABLE plants ADD COLUMN general_info TEXT");
     }
   }
 
@@ -274,8 +281,8 @@ class DatabaseService {
       where: 'id = ?',
       whereArgs: [plant.id],
     );
-    
-    debugPrint("Apprentissage : Plante ${plant.name} ajustée de $currentFreq à $newFreq jours (${isWinter ? 'Hiver' : 'Été'})");
+
+    debugPrint("Apprentissage : Plante ${plant.displayName} ajustée de $currentFreq à $newFreq jours (${isWinter ? 'Hiver' : 'Été'})");
   }
 
   Future<void> logEvent(PlantEvent event) async {

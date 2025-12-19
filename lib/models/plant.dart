@@ -24,6 +24,8 @@ class Plant {
   final String? humidityPref;     
   final String? soilType;        
   final String? pruningInfo;     
+  final String? careInfo;
+  final String? generalInfo;
   
   // Fertilisation
   final int fertilizerFreq;      // Jours (ex: 15 ou 30). 0 si pas besoin.
@@ -56,6 +58,8 @@ class Plant {
     this.humidityPref,
     this.soilType,
     this.pruningInfo,
+    this.careInfo,
+    this.generalInfo,
     this.fertilizerFreq = 30, // Par défaut 1 mois
     this.repottingFreq = 24,  // Par défaut 2 ans
     required this.dateAdded,
@@ -191,6 +195,9 @@ class Plant {
       trackWatering: map['track_watering'] == 0 ? false : true,
       trackFertilizer: map['track_fertilizer'] == 0 ? false : true,
       trackRepotting: map['track_repotting'] == 0 ? false : true,
+      //Mapping V6
+      careInfo: map['care_info'],
+      generalInfo: map['general_info'],
     );
   }
 
@@ -210,6 +217,8 @@ class Plant {
       'humidity_pref': humidityPref,
       'soil_type': soilType,
       'pruning_info': pruningInfo,
+      'care_info': careInfo,
+      'general_info': generalInfo,
       'fertilizer_freq': fertilizerFreq,
       'repotting_freq': repottingFreq,
       // Mapping V4
