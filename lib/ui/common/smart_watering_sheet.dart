@@ -23,7 +23,7 @@ class SmartWateringSheet extends StatelessWidget {
     // On apprend : +1 jour au cycle (le cycle était trop court)
     await DatabaseService().adjustPlantFrequency(plant, 1);
     
-    final newFreq = plant.currentFrequency + 1; // La fréquence vient d'augmenter
+    final newFreq = plant.effectiveWaterFrequency + 1; // La fréquence vient d'augmenter
     // On veut le prochain rappel dans 2 jours (arbitraire mais logique si humide)
     final daysAgo = newFreq - 2; 
     final fakeLastWater = DateTime.now().subtract(Duration(days: daysAgo));

@@ -218,7 +218,7 @@ class _PlantDetailScreenState extends State<PlantDetailScreen> {
     // Copie de la plante avec nouveau stade
     final updatedPlant = Plant(
       id: _plant.id,
-      name: _plant.displayName,
+      name: _plant.name,
       species: _plant.species,
       location: _plant.location,
       room: _plant.room,
@@ -268,7 +268,7 @@ class _PlantDetailScreenState extends State<PlantDetailScreen> {
   Widget build(BuildContext context) {
     // Calculs pour l'affichage
     String nextWaterText;
-    if (_plant.currentFrequency <= 0) {
+    if (_plant.effectiveWaterFrequency <= 0) {
       nextWaterText = "Repos";
     } else {
       nextWaterText = DateFormat('dd/MM', 'fr_FR').format(_plant.nextWateringDate);
@@ -431,10 +431,10 @@ class _PlantDetailScreenState extends State<PlantDetailScreen> {
                       padding: const EdgeInsets.all(16.0),
                       child: Column(
                         children: [
-                          _buildInfoRow(Icons.wb_sunny, "Lumière", speciesData?.light.label ?? _plant.lightLevel),
-                          _buildInfoRow(Icons.thermostat, "Rusticité", speciesData?.temperature.label ?? _plant.temperatureInfo),
-                          _buildInfoRow(Icons.water, "Humidité", speciesData?.humidity.label ?? _plant.humidityPref),
-                          _buildInfoRow(Icons.pets, "Toxicité", speciesData?.toxicity.label ?? "Inconnu"),
+                          _buildInfoRow(Icons.wb_sunny, "Lumière", speciesData?.light.label ?? "Non renseigné"),
+                          _buildInfoRow(Icons.thermostat, "Rusticité", speciesData?.temperature.label ?? "Non renseigné"),
+                          _buildInfoRow(Icons.water, "Humidité", speciesData?.humidity.label ?? "Non renseigné"),
+                          _buildInfoRow(Icons.pets, "Toxicité", speciesData?.toxicity.label ?? "Non renseigné"),
                         ],
                       ),
                     ),
@@ -442,10 +442,10 @@ class _PlantDetailScreenState extends State<PlantDetailScreen> {
 
                   // ENTRETIEN
                   _buildSectionTitle("Soins & Entretien"),
-                  _buildInfoRow(Icons.grass, "Terreau recommandé", _plant.soilType),
-                  _buildInfoRow(Icons.content_cut, "Taille", _plant.pruningInfo),
-                  _buildInfoRow(Icons.volunteer_activism, "Conseils de soin", _plant.careInfo),
-                  _buildInfoRow(Icons.info_outline, "Informations générales", _plant.generalInfo),
+                  _buildInfoRow(Icons.grass, "Terreau recommandé", speciesData?.soilInfo ?? "Non renseigné"),
+                  _buildInfoRow(Icons.content_cut, "Taille", speciesData?.pruningInfo ?? "Non renseigné"),
+                  _buildInfoRow(Icons.volunteer_activism, "Conseils de soin", speciesData?.careInfo ?? "Non renseigné"),
+                  _buildInfoRow(Icons.info_outline, "Informations générales", speciesData?.generalInfo ?? "Non renseigné"),
                   
                   // Info technique (fréquence)
                   const SizedBox(height: 16),

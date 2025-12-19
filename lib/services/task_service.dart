@@ -134,7 +134,7 @@ class TaskService {
           plant: plant,
           type: TaskType.water,
           title: "Arrosage",
-          subtitle: "Cycle de ${plant.currentFrequency} jours",
+          subtitle: "Cycle de ${plant.effectiveWaterFrequency} jours",
           specificDate: plant.nextWateringDate,
         ));
       }

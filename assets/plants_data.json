@@ -1,10 +1,10 @@
 {
   "1": {
-    "species": " Monstera Deliciosa",
+    "species": "Monstera Deliciosa",
     "category": "indoor",
-    "light": "partial",
+    "light": "brightInd",
     "difficulty": "easy",
-    "humidity": "medium",
+    "humidity": "high",
     "temperature": "frostTender",
     "toxicity": "low",
     "cycle": "perennial",
@@ -36,20 +36,20 @@
     "general": "Le Monstera est une plante tropicale grimpante, très appréciée pour son feuillage décoratif perforé et sa croissance rapide.",
     "esthetic": "foliage",
     "foliage": "evergreen",
-    "height": "",
+    "height": "climber",
     "vegType": ""
   },
   "2": {
-    "species": " Sansevieria",
+    "species": "Sansevieria",
     "category": "indoor",
     "light": "brightInd",
     "difficulty": "easy",
-    "humidity": "medium",
+    "humidity": "low",
     "temperature": "frostTender",
     "toxicity": "low",
     "cycle": "perennial",
-    "water_summer": 7,
-    "water_winter": 15,
+    "water_summer": 15,
+    "water_winter": 30,
     "fertilize_freq": 30,
     "repot_freq": 60,
     "sowing_months": [],
@@ -77,11 +77,11 @@
     "general": "La sansevière est une plante vivace, résistante et peu sensible aux maladies.",
     "esthetic": "foliage",
     "foliage": "evergreen",
-    "height": "",
+    "height": "ground",
     "vegType": ""
   },
   "3": {
-    "species": " Zamioculcas",
+    "species": "Zamioculcas",
     "category": "indoor",
     "light": "partial",
     "difficulty": "easy",
@@ -89,8 +89,8 @@
     "temperature": "frostTender",
     "toxicity": "low",
     "cycle": "perennial",
-    "water_summer": 7,
-    "water_winter": 15,
+    "water_summer": 15,
+    "water_winter": 30,
     "fertilize_freq": 30,
     "repot_freq": 12,
     "sowing_months": [],
@@ -117,11 +117,11 @@
     "general": "Le zamioculcas est une plante verte d'intérieur, esthétique et facile à entretenir.",
     "esthetic": "foliage",
     "foliage": "evergreen",
-    "height": "",
+    "height": "shrub",
     "vegType": ""
   },
   "4": {
-    "species": " Pothos",
+    "species": "Pothos",
     "category": "indoor",
     "light": "partial",
     "difficulty": "easy",
@@ -131,7 +131,7 @@
     "cycle": "perennial",
     "water_summer": 7,
     "water_winter": 15,
-    "fertilize_freq": 0,
+    "fertilize_freq": 30,
     "repot_freq": 24,
     "sowing_months": [],
     "planting_months": [],
@@ -157,17 +157,17 @@
     "general": "Le pothos est une plante d'intérieur facile à cultiver, appréciée pour son feuillage décoratif.",
     "esthetic": "foliage",
     "foliage": "evergreen",
-    "height": "",
+    "height": "hanging",
     "vegType": ""
   },
   "5": {
-    "species": " Chlorophytum",
+    "species": "Chlorophytum",
     "category": "indoor",
     "light": "brightInd",
     "difficulty": "easy",
     "humidity": "medium",
     "temperature": "frostTender",
-    "toxicity": "low",
+    "toxicity": "none",
     "cycle": "perennial",
     "water_summer": 7,
     "water_winter": 15,
@@ -188,17 +188,17 @@
       1,
       2
     ],
-    "soil": "terreau léger et bien drainé",
+    "soil": "Terreau léger et bien drainé",
     "pruning": "Supprimez les feuilles mortes et fanées au fur et à mesure.",
     "care": "Maintenez le terreau légèrement humide et brumisez le feuillage.",
     "general": "Le chlorophytum est une plante d'intérieur appréciée pour son feuillage décoratif et sa facilité d'entretien.",
     "esthetic": "foliage",
     "foliage": "evergreen",
-    "height": "",
+    "height": "hanging",
     "vegType": ""
   },
   "6": {
-    "species": " Crassula",
+    "species": "Crassula",
     "category": "indoor",
     "light": "partial",
     "difficulty": "easy",
@@ -236,11 +236,11 @@
     "general": "Plante succulente originaire d'Afrique du Sud, facile à cultiver et peu exigeante.",
     "esthetic": "foliage",
     "foliage": "evergreen",
-    "height": "",
+    "height": "shrub",
     "vegType": ""
   },
   "7": {
-    "species": " Aloe Vera",
+    "species": "Aloe Vera",
     "category": "indoor",
     "light": "brightInd",
     "difficulty": "easy",
@@ -248,14 +248,16 @@
     "temperature": "frostTender",
     "toxicity": "low",
     "cycle": "perennial",
-    "water_summer": 7,
+    "water_summer": 14,
     "water_winter": 21,
-    "fertilize_freq": 0,
+    "fertilize_freq": 182,
     "repot_freq": 24,
     "sowing_months": [],
     "planting_months": [],
     "harvest_months": [],
     "flowering_months": [
+      1,
+      2,
       3
     ],
     "repotting_months": [
@@ -274,17 +276,17 @@
     "general": "Plante d'intérieur décorative, facile d'entretien et frugale en eau.",
     "esthetic": "foliage",
     "foliage": "evergreen",
-    "height": "",
+    "height": "ground",
     "vegType": ""
   },
   "8": {
-    "species": " Ficus Elastica",
+    "species": "Ficus Elastica",
     "category": "indoor",
     "light": "brightInd",
     "difficulty": "medium",
     "humidity": "high",
     "temperature": "frostTender",
-    "toxicity": "high",
+    "toxicity": "low",
     "cycle": "perennial",
     "water_summer": 7,
     "water_winter": 15,
@@ -309,17 +311,17 @@
       1,
       2
     ],
-    "soil": "terreau pour plantes vertes, léger et drainant",
+    "soil": "Terreau pour plantes vertes, léger et drainant",
     "pruning": "Aucune taille n’est indispensable, mais vous pouvez tailler 1 à 2 fois par an pour maîtriser sa hauteur.",
     "care": "Arrosez lorsque la terre est sèche en surface, sans excès.",
     "general": "Le ficus elastica est une plante d’intérieur appréciée pour son feuillage épais et brillant, originaire d’Asie du Sud-Est.",
     "esthetic": "foliage",
     "foliage": "evergreen",
-    "height": "",
+    "height": "tree",
     "vegType": ""
   },
   "9": {
-    "species": " Ficus Benjamina",
+    "species": "Ficus Benjamina",
     "category": "indoor",
     "light": "brightInd",
     "difficulty": "medium",
@@ -357,17 +359,17 @@
     "general": "Le Ficus benjamina est une plante d'intérieur populaire, appréciée pour son feuillage décoratif.",
     "esthetic": "foliage",
     "foliage": "evergreen",
-    "height": "",
+    "height": "tree",
     "vegType": ""
   },
   "10": {
-    "species": " Ficus Lyrata",
+    "species": "Ficus Lyrata",
     "category": "indoor",
     "light": "brightInd",
     "difficulty": "medium",
     "humidity": "high",
     "temperature": "frostTender",
-    "toxicity": "high",
+    "toxicity": "low",
     "cycle": "perennial",
     "water_summer": 7,
     "water_winter": 15,
@@ -398,11 +400,11 @@
     "general": "Le ficus lyrata est une plante d’intérieur appréciée pour son feuillage vert, coriace et brillant, et il a besoin d'humidité ambiante.",
     "esthetic": "foliage",
     "foliage": "evergreen",
-    "height": "",
+    "height": "tree",
     "vegType": ""
   },
   "11": {
-    "species": " Dracaena Marginata",
+    "species": "Dracaena Marginata",
     "category": "indoor",
     "light": "brightInd",
     "difficulty": "easy",
@@ -438,15 +440,15 @@
     "general": "Plante d’intérieur graphique et robuste, le dragonnier s’adapte très bien aux logements contemporains.",
     "esthetic": "foliage",
     "foliage": "evergreen",
-    "height": "",
+    "height": "tree",
     "vegType": ""
   },
   "12": {
-    "species": " Yucca",
+    "species": "Yucca elephantipes",
     "category": "indoor",
     "light": "brightInd",
     "difficulty": "easy",
-    "humidity": "medium",
+    "humidity": "low",
     "temperature": "frostTender",
     "toxicity": "high",
     "cycle": "perennial",
@@ -473,17 +475,17 @@
       1,
       2
     ],
-    "soil": "mélange drainant (terreau plantes vertes + sable/billes d’argile)",
+    "soil": "Mélange drainant (terreau plantes vertes + sable/billes d’argile)",
     "pruning": "Coupez idéalement juste au-dessus d’un départ de feuilles.",
     "care": "Laissez sécher la surface du terreau entre deux apports.",
     "general": "Le yucca est une plante appréciée pour son allure exotique et sa facilité d’entretien.",
     "esthetic": "foliage",
     "foliage": "evergreen",
-    "height": "",
+    "height": "tree",
     "vegType": ""
   },
   "13": {
-    "species": " Schefflera",
+    "species": "Schefflera",
     "category": "indoor",
     "light": "brightInd",
     "difficulty": "easy",
@@ -520,11 +522,11 @@
     "general": "Le Schefflera est apprécié pour son feuillage et sa robustesse, s'adaptant bien aux intérieurs.",
     "esthetic": "foliage",
     "foliage": "evergreen",
-    "height": "",
+    "height": "tree",
     "vegType": ""
   },
   "14": {
-    "species": " Spathiphyllum",
+    "species": "Spathiphyllum",
     "category": "indoor",
     "light": "partial",
     "difficulty": "easy",
@@ -532,8 +534,8 @@
     "temperature": "frostTender",
     "toxicity": "low",
     "cycle": "perennial",
-    "water_summer": 7,
-    "water_winter": 15,
+    "water_summer": 5,
+    "water_winter": 10,
     "fertilize_freq": 14,
     "repot_freq": 24,
     "sowing_months": [],
@@ -576,11 +578,11 @@
     "general": "Plante d'intérieur appréciée pour son feuillage élégant et sa floraison graphique.",
     "esthetic": "flowering",
     "foliage": "evergreen",
-    "height": "",
+    "height": "ground",
     "vegType": ""
   },
   "15": {
-    "species": " Anthurium",
+    "species": "Anthurium",
     "category": "indoor",
     "light": "brightInd",
     "difficulty": "medium",
@@ -588,8 +590,8 @@
     "temperature": "frostTender",
     "toxicity": "low",
     "cycle": "perennial",
-    "water_summer": 7,
-    "water_winter": 15,
+    "water_summer": 5,
+    "water_winter": 10,
     "fertilize_freq": 15,
     "repot_freq": 24,
     "sowing_months": [],
@@ -610,26 +612,26 @@
       1,
       2
     ],
-    "soil": "substrat légèrement humide, drainant",
+    "soil": "Substrat légèrement humide, drainant",
     "pruning": "Supprimez les fleurs fanées au fur et à mesure.",
     "care": "Vaporisez régulièrement de l'eau sur les feuilles pour recréer une atmosphère humide.",
     "general": "L'anthurium est une plante épiphyte qui nécessite une humidité élevée et une lumière vive sans soleil direct.",
     "esthetic": "flowering",
     "foliage": "evergreen",
-    "height": "",
+    "height": "shrub",
     "vegType": ""
   },
   "16": {
-    "species": " Calathea",
+    "species": "Calathea",
     "category": "indoor",
-    "light": "brightInd",
+    "light": "partial",
     "difficulty": "medium",
     "humidity": "high",
     "temperature": "frostTender",
     "toxicity": "none",
     "cycle": "perennial",
-    "water_summer": 7,
-    "water_winter": 15,
+    "water_summer": 5,
+    "water_winter": 10,
     "fertilize_freq": 30,
     "repot_freq": 24,
     "sowing_months": [],
@@ -652,13 +654,13 @@
     "general": "Plante décorative au feuillage graphique, sensible à l'air sec",
     "esthetic": "foliage",
     "foliage": "evergreen",
-    "height": "",
+    "height": "ground",
     "vegType": ""
   },
   "17": {
-    "species": " Alocasia",
+    "species": "Alocasia",
     "category": "indoor",
-    "light": "partial",
+    "light": "brightInd",
     "difficulty": "medium",
     "humidity": "high",
     "temperature": "frostTender",
@@ -697,11 +699,11 @@
     "general": "L'alocasia est une plante tropicale décorative, sensible à l'air sec et au froid.",
     "esthetic": "foliage",
     "foliage": "evergreen",
-    "height": "",
+    "height": "shrub",
     "vegType": ""
   },
   "18": {
-    "species": " Pilea Peperomioides",
+    "species": "Pilea Peperomioides",
     "category": "indoor",
     "light": "brightInd",
     "difficulty": "easy",
@@ -711,7 +713,7 @@
     "cycle": "perennial",
     "water_summer": 7,
     "water_winter": 15,
-    "fertilize_freq": 0,
+    "fertilize_freq": 30,
     "repot_freq": 12,
     "sowing_months": [],
     "planting_months": [],
@@ -727,19 +729,19 @@
       1,
       2
     ],
-    "soil": "substrat léger et drainant",
+    "soil": "Substrat léger et drainant",
     "pruning": "Couper les feuilles jaunies/sèches.",
     "care": "Les arrosages sont réguliers mais l'eau ne doit pas stagner.",
     "general": "Pilea peperomioides est une plante grasse d'appartement originale, facile à cultiver et à multiplier.",
     "esthetic": "foliage",
     "foliage": "evergreen",
-    "height": "",
+    "height": "ground",
     "vegType": ""
   },
   "19": {
-    "species": " Maranta",
+    "species": "Maranta",
     "category": "indoor",
-    "light": "brightInd",
+    "light": "partial",
     "difficulty": "easy",
     "humidity": "high",
     "temperature": "frostTender",
@@ -765,21 +767,21 @@
       1,
       2
     ],
-    "soil": "terreau pour plantes vertes",
+    "soil": "Terreau pour plantes vertes",
     "pruning": "Couper les feuilles jaunies/sèches.",
     "care": "Facile à entretenir, idéal pour purifier l'air.",
     "general": "Maranta est une plante d'intérieur appréciée pour son feuillage décoratif.",
     "esthetic": "foliage",
     "foliage": "evergreen",
-    "height": "",
+    "height": "ground",
     "vegType": ""
   },
   "20": {
-    "species": " Begonia Maculata",
+    "species": "Begonia Maculata",
     "category": "indoor",
     "light": "brightInd",
-    "difficulty": "easy",
-    "humidity": "medium",
+    "difficulty": "medium",
+    "humidity": "high",
     "temperature": "frostTender",
     "toxicity": "high",
     "cycle": "perennial",
@@ -814,13 +816,13 @@
     "general": "Le Tamaya est une forme cultivée de Begonia maculata, avec un feuillage spectaculaire et une floraison généreuse.",
     "esthetic": "flowering",
     "foliage": "evergreen",
-    "height": "",
+    "height": "shrub",
     "vegType": ""
   },
   "21": {
-    "species": " Strelitzia reginae",
+    "species": "Strelitzia reginae",
     "category": "indoor",
-    "light": "partial",
+    "light": "brightInd",
     "difficulty": "medium",
     "humidity": "medium",
     "temperature": "frostTender",
@@ -860,19 +862,19 @@
     "general": "Plante vivace originaire d'Afrique du Sud, connue pour ses grandes fleurs colorées en forme d'oiseau exotique.",
     "esthetic": "flowering",
     "foliage": "evergreen",
-    "height": "",
+    "height": "shrub",
     "vegType": ""
   },
   "22": {
-    "species": " Orchidée",
+    "species": "Orchidée",
     "category": "indoor",
     "light": "partial",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "humidity": "high",
     "temperature": "frostTender",
     "toxicity": "low",
     "cycle": "perennial",
-    "water_summer": 3,
+    "water_summer": 7,
     "water_winter": 15,
     "fertilize_freq": 14,
     "repot_freq": 24,
@@ -894,9 +896,9 @@
       12
     ],
     "repotting_months": [
-      3,
       4,
-      5
+      5,
+      6
     ],
     "pruning_months": [
       1,
@@ -924,11 +926,11 @@
     "general": "L’orchidée phalaenopsis est une jolie fleur d’intérieur avec de longues floraisons possibles toute l’année.",
     "esthetic": "flowering",
     "foliage": "evergreen",
-    "height": "",
+    "height": "ground",
     "vegType": ""
   },
   "23": {
-    "species": " Kalanchoe",
+    "species": "Kalanchoe",
     "category": "indoor",
     "light": "brightInd",
     "difficulty": "easy",
@@ -965,11 +967,11 @@
     "general": "Le kalanchoé est une plante grasse d'intérieur, facile et colorée, très florifère.",
     "esthetic": "flowering",
     "foliage": "evergreen",
-    "height": "",
+    "height": "ground",
     "vegType": ""
   },
   "24": {
-    "species": " Cyclamen",
+    "species": "Cyclamen",
     "category": "indoor",
     "light": "partial",
     "difficulty": "medium",
@@ -979,7 +981,7 @@
     "cycle": "perennial",
     "water_summer": 5,
     "water_winter": 15,
-    "fertilize_freq": 7,
+    "fertilize_freq": 15,
     "repot_freq": 24,
     "sowing_months": [
       8,
@@ -1003,29 +1005,24 @@
       5
     ],
     "pruning_months": [],
-    "wintering_months": [
-      11,
-      12,
-      1,
-      2
-    ],
-    "soil": "mélange léger et bien drainé",
+    "wintering_months": [],
+    "soil": "Mélange léger et bien drainé",
     "pruning": "Ôtez régulièrement fleurs et feuilles fanées.",
     "care": "Arrosez régulièrement mais avec parcimonie pour conserver une motte légèrement humide.",
     "general": "Le cyclamen est une plante d'intérieur qui fleurit de novembre à mars et apprécie la fraîcheur.",
     "esthetic": "flowering",
     "foliage": "deciduous",
-    "height": "",
+    "height": "ground",
     "vegType": ""
   },
   "25": {
-    "species": " Azalée",
+    "species": "Azalée",
     "category": "indoor",
     "light": "partial",
     "difficulty": "medium",
     "humidity": "high",
     "temperature": "frostTender",
-    "toxicity": "none",
+    "toxicity": "high",
     "cycle": "perennial",
     "water_summer": 7,
     "water_winter": 15,
@@ -1051,7 +1048,8 @@
       5
     ],
     "pruning_months": [
-      3
+      5,
+      6
     ],
     "wintering_months": [
       11,
@@ -1065,11 +1063,11 @@
     "general": "L’azalée d’intérieur est un rhododendron à petites fleurs, sensible à l'humidité et à la chaleur sèche.",
     "esthetic": "flowering",
     "foliage": "evergreen",
-    "height": "",
+    "height": "shrub",
     "vegType": ""
   },
   "26": {
-    "species": " Echeveria",
+    "species": "Echeveria",
     "category": "indoor",
     "light": "brightInd",
     "difficulty": "easy",
@@ -1111,11 +1109,11 @@
     "general": "L'Echeveria est une succulente résistante à la sécheresse, idéale pour les intérieurs lumineux.",
     "esthetic": "flowering",
     "foliage": "evergreen",
-    "height": "",
+    "height": "ground",
     "vegType": ""
   },
   "27": {
-    "species": " Haworthia",
+    "species": "Haworthia",
     "category": "indoor",
     "light": "brightInd",
     "difficulty": "easy",
@@ -1149,11 +1147,11 @@
     "general": "Le Haworthia est une plante grasse qui se plaît dans des conditions lumineuses et nécessite peu d'entretien.",
     "esthetic": "foliage",
     "foliage": "evergreen",
-    "height": "",
+    "height": "ground",
     "vegType": ""
   },
   "28": {
-    "species": " Cactus de Noël",
+    "species": "Cactus de Noël",
     "category": "indoor",
     "light": "brightInd",
     "difficulty": "easy",
@@ -1172,28 +1170,24 @@
       12
     ],
     "repotting_months": [
+      2,
       3
     ],
     "pruning_months": [
       1
     ],
-    "wintering_months": [
-      11,
-      12,
-      1,
-      2
-    ],
+    "wintering_months": [],
     "soil": "Utiliser un terreau léger comme ceux préconisés pour les plantes cactées.",
     "pruning": "Pincer les tiges après la floraison pour garder un port compact.",
     "care": "Laisser sécher le terreau entre 2 arrosages et éviter l'eau stagnante.",
     "general": "Le cactus de Noël fleurit entre novembre et janvier et nécessite des nuits longues pour initier ses boutons.",
     "esthetic": "flowering",
     "foliage": "evergreen",
-    "height": "",
+    "height": "hanging",
     "vegType": ""
   },
   "29": {
-    "species": " Sedum",
+    "species": "Sedum",
     "category": "outdoor",
     "light": "direct",
     "difficulty": "easy",
@@ -1231,11 +1225,11 @@
     "general": "Sedum spurium est une plante vivace résistante à la sécheresse, idéale comme couvre-sol.",
     "esthetic": "foliage",
     "foliage": "semi_evergreen",
-    "height": "",
+    "height": "ground",
     "vegType": ""
   },
   "30": {
-    "species": " Kentia",
+    "species": "Kentia",
     "category": "indoor",
     "light": "partial",
     "difficulty": "easy",
@@ -1276,17 +1270,17 @@
       1,
       2
     ],
-    "soil": "terreau de qualité pour plantes d’intérieur, drainant",
+    "soil": "Terreau de qualité pour plantes d’intérieur, drainant",
     "pruning": "Retirez les feuilles jaunes ou très abîmées.",
     "care": "Arrosages réguliers mais sans excès, humidité ambiante.",
     "general": "Le Kentia est un palmier d’intérieur robuste, adapté à des conditions de vie modérées.",
     "esthetic": "foliage",
     "foliage": "evergreen",
-    "height": "",
+    "height": "tree",
     "vegType": ""
   },
   "31": {
-    "species": " Pachira",
+    "species": "Pachira",
     "category": "indoor",
     "light": "brightInd",
     "difficulty": "easy",
@@ -1316,25 +1310,25 @@
       1,
       2
     ],
-    "soil": "terreau riche & drainant",
+    "soil": "Terreau riche & drainant",
     "pruning": "Pincez les extrémités au printemps pour un port compact.",
     "care": "Arrosez quand les 2–3 cm supérieurs sont secs, ne laissez jamais d'eau stagnante.",
     "general": "Le pachira est une plante d'intérieur facile, graphique et dépolluante.",
     "esthetic": "foliage",
     "foliage": "evergreen",
-    "height": "",
+    "height": "tree",
     "vegType": ""
   },
   "32": {
-    "species": " Fittonia",
+    "species": "Fittonia",
     "category": "indoor",
     "light": "partial",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "humidity": "high",
     "temperature": "frostTender",
     "toxicity": "none",
     "cycle": "perennial",
-    "water_summer": 7,
+    "water_summer": 3,
     "water_winter": 15,
     "fertilize_freq": 15,
     "repot_freq": 24,
@@ -1358,17 +1352,17 @@
       1,
       2
     ],
-    "soil": "terreau riche, léger, drainant",
+    "soil": "Terreau riche, léger, drainant",
     "pruning": "Pincez régulièrement l’extrémité des tiges pour garder une plante compacte.",
     "care": "Arrosez régulièrement, mais modérément, en maintenant le terreau légèrement humide.",
     "general": "Le fittonia est une plante d'intérieur tropicale appréciée pour son feuillage décoratif et sa capacité à s'adapter à des conditions de lumière tamisée.",
     "esthetic": "foliage",
     "foliage": "evergreen",
-    "height": "",
+    "height": "ground",
     "vegType": ""
   },
   "33": {
-    "species": " Coffea arabica",
+    "species": "Coffea arabica",
     "category": "indoor",
     "light": "partial",
     "difficulty": "medium",
@@ -1411,30 +1405,33 @@
     "general": "Coffea arabica est un arbuste ornemental d'intérieur, originaire d'Afrique de l'Est, qui peut produire des cerises contenant des grains de café.",
     "esthetic": "flowering",
     "foliage": "evergreen",
-    "height": "",
+    "height": "shrub",
     "vegType": ""
   },
   "34": {
-    "species": " Poinsettia",
+    "species": "Poinsettia",
     "category": "indoor",
-    "light": "",
+    "light": "partial",
     "difficulty": "medium",
-    "humidity": "",
+    "humidity": "medium",
     "temperature": "frostTender",
     "toxicity": "low",
-    "cycle": "",
+    "cycle": "perennial",
     "water_summer": 7,
     "water_winter": 15,
-    "fertilize_freq": 30,
+    "fertilize_freq": 15,
     "repot_freq": 0,
     "sowing_months": [],
     "planting_months": [],
     "harvest_months": [],
-    "flowering_months": [],
+    "flowering_months": [
+      10,
+      11,
+      12
+    ],
     "repotting_months": [
-      3,
-      4,
-      5
+      5,
+      6
     ],
     "pruning_months": [],
     "wintering_months": [
@@ -1443,17 +1440,17 @@
       1,
       2
     ],
-    "soil": "Terreau pour plantes d'intérieur",
-    "pruning": "Couper les feuilles jaunies/sèches.",
-    "care": "Arroser modérément et éviter l'excès d'eau.",
-    "general": "Le Poinsettia, aussi connu sous le nom d'étoile de Noël, est une plante d'intérieur populaire pendant les fêtes.",
-    "esthetic": "flowering",
-    "foliage": "",
-    "height": "",
+    "soil": "Terreau ordinaire, bien drainé.",
+    "pruning": "Rabattez les tiges lorsqu'elles sont dépouillées.",
+    "care": "Arrosez régulièrement en laissant le substrat sécher entre deux arrosages.",
+    "general": "Le poinsettia est une plante d'intérieur populaire pendant les fêtes, connue pour ses bractées colorées.",
+    "esthetic": "foliage",
+    "foliage": "deciduous",
+    "height": "shrub",
     "vegType": ""
   },
   "35": {
-    "species": " Peperomia Obtusifolia",
+    "species": "Peperomia Obtusifolia",
     "category": "indoor",
     "light": "brightInd",
     "difficulty": "easy",
@@ -1481,17 +1478,17 @@
       1,
       2
     ],
-    "soil": "terreau pour plantes vertes",
+    "soil": "Terreau pour plantes vertes",
     "pruning": "Couper les feuilles jaunies/sèches.",
     "care": "Arroser modérément, laisser sécher entre les arrosages.",
     "general": "Peperomia obtusifolia est une plante d'intérieur appréciée pour son feuillage décoratif.",
     "esthetic": "foliage",
     "foliage": "evergreen",
-    "height": "",
+    "height": "ground",
     "vegType": ""
   },
   "36": {
-    "species": " Beaucarnea",
+    "species": "Beaucarnea",
     "category": "indoor",
     "light": "brightInd",
     "difficulty": "easy",
@@ -1526,11 +1523,11 @@
     "general": "Le beaucarnea est une plante graphique et très résistante, originaire du Mexique.",
     "esthetic": "foliage",
     "foliage": "evergreen",
-    "height": "",
+    "height": "tree",
     "vegType": ""
   },
   "37": {
-    "species": " Fougère de Boston",
+    "species": "Fougère de Boston",
     "category": "indoor",
     "light": "partial",
     "difficulty": "easy",
@@ -1539,7 +1536,7 @@
     "toxicity": "none",
     "cycle": "perennial",
     "water_summer": 5,
-    "water_winter": 15,
+    "water_winter": 10,
     "fertilize_freq": 30,
     "repot_freq": 24,
     "sowing_months": [],
@@ -1568,15 +1565,15 @@
     "general": "La fougère de Boston est une plante tropicale appréciée pour son feuillage décoratif et son rôle dépolluant.",
     "esthetic": "foliage",
     "foliage": "evergreen",
-    "height": "",
+    "height": "hanging",
     "vegType": ""
   },
   "38": {
-    "species": " Areca",
+    "species": "Areca",
     "category": "indoor",
     "light": "brightInd",
     "difficulty": "easy",
-    "humidity": "medium",
+    "humidity": "high",
     "temperature": "frostTender",
     "toxicity": "none",
     "cycle": "perennial",
@@ -1619,11 +1616,11 @@
     "general": "L'Areca est un palmier d'intérieur facile, exotique et design, apprécié pour son élégance.",
     "esthetic": "foliage",
     "foliage": "evergreen",
-    "height": "",
+    "height": "shrub",
     "vegType": ""
   },
   "39": {
-    "species": " Chaîne de cœurs",
+    "species": "Chaîne de cœurs",
     "category": "indoor",
     "light": "brightInd",
     "difficulty": "easy",
@@ -1659,61 +1656,49 @@
     "general": "Ceropegia woodii est une plante vivace originaire d'Afrique du Sud, appréciée pour son feuillage léger et sa forme graphique.",
     "esthetic": "foliage",
     "foliage": "evergreen",
-    "height": "",
+    "height": "hanging",
     "vegType": ""
   },
   "40": {
-    "species": " Misère",
-    "category": "outdoor",
+    "species": "Misère",
+    "category": "indoor",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
-    "temperature": "hardy",
+    "temperature": "frostTender",
     "toxicity": "none",
     "cycle": "perennial",
-    "water_summer": 5,
+    "water_summer": 7,
     "water_winter": 15,
-    "fertilize_freq": 30,
-    "repot_freq": 0,
+    "fertilize_freq": 15,
+    "repot_freq": 24,
     "sowing_months": [],
-    "planting_months": [
-      9,
-      10,
-      11
-    ],
+    "planting_months": [],
     "harvest_months": [],
     "flowering_months": [
-      6,
-      7,
-      8,
-      9,
-      10
+      4
     ],
     "repotting_months": [
-      3,
-      4,
-      5
+      3
     ],
-    "pruning_months": [
-      10
-    ],
+    "pruning_months": [],
     "wintering_months": [
       11,
       12,
       1,
       2
     ],
-    "soil": "Ordinaire à riche, frais, bien drainé",
-    "pruning": "Rabattez la touffe à ras lorsque le feuillage jaunit totalement.",
-    "care": "Paillez pour conserver la fraîcheur du sol. Arrosez uniquement en cas de sécheresse prolongée.",
-    "general": "Plante vivace herbacée appréciée pour sa floraison estivale généreuse et sa rusticité.",
-    "esthetic": "flowering",
-    "foliage": "deciduous",
-    "height": "",
+    "soil": "préférer les sols légers (type terreau allégé d'un quart de sable de rivière) mais frais",
+    "pruning": "coupez juste au-dessus d'une belle feuille les tiges devenues trop longues",
+    "care": "arrosez régulièrement de manière à maintenir le substrat humide",
+    "general": "plante décorative très répandue, robuste et peu exigeante, s'adapte à tous les milieux",
+    "esthetic": "foliage",
+    "foliage": "evergreen",
+    "height": "hanging",
     "vegType": ""
   },
   "41": {
-    "species": " Dieffenbachia",
+    "species": "Dieffenbachia",
     "category": "indoor",
     "light": "brightInd",
     "difficulty": "medium",
@@ -1760,11 +1745,11 @@
     "general": "Le dieffenbachia est une plante d’intérieur très appréciée pour son feuillage spectaculaire.",
     "esthetic": "foliage",
     "foliage": "evergreen",
-    "height": "",
+    "height": "shrub",
     "vegType": ""
   },
   "42": {
-    "species": " Croton",
+    "species": "Croton",
     "category": "indoor",
     "light": "brightInd",
     "difficulty": "medium",
@@ -1800,11 +1785,11 @@
     "general": "Le croton est une plante d'intérieur tropicale avec un feuillage éclatant et coloré.",
     "esthetic": "foliage",
     "foliage": "evergreen",
-    "height": "",
+    "height": "shrub",
     "vegType": ""
   },
   "43": {
-    "species": " Tomate",
+    "species": "Tomate",
     "category": "vegetable",
     "light": "direct",
     "difficulty": "easy",
@@ -1813,14 +1798,15 @@
     "toxicity": "none",
     "cycle": "annual",
     "water_summer": 3,
-    "water_winter": 15,
-    "fertilize_freq": 30,
+    "water_winter": 0,
+    "fertilize_freq": 15,
     "repot_freq": 0,
     "sowing_months": [
       2,
       3
     ],
     "planting_months": [
+      4,
       5
     ],
     "harvest_months": [
@@ -1830,32 +1816,23 @@
       9
     ],
     "flowering_months": [],
-    "repotting_months": [
-      3,
-      4,
-      5
-    ],
+    "repotting_months": [],
     "pruning_months": [
       6,
       7
     ],
-    "wintering_months": [
-      11,
-      12,
-      1,
-      2
-    ],
+    "wintering_months": [],
     "soil": "Léger, assez riche",
     "pruning": "Supprimez les gourmands et taillez la tête en laissant 4 ou 5 groupes de feuilles.",
     "care": "Arrosage régulier sans mouiller le feuillage.",
     "general": "La tomate est un légume-fruit très cultivé, riche en vitamines et minéraux.",
     "esthetic": "fruit",
     "foliage": "deciduous",
-    "height": "",
+    "height": "shrub",
     "vegType": "fruit"
   },
   "44": {
-    "species": " Courgette",
+    "species": "Courgette",
     "category": "vegetable",
     "light": "direct",
     "difficulty": "easy",
@@ -1881,35 +1858,26 @@
       8
     ],
     "flowering_months": [],
-    "repotting_months": [
-      3,
-      4,
-      5
-    ],
+    "repotting_months": [],
     "pruning_months": [
       6,
       7,
       8
     ],
-    "wintering_months": [
-      11,
-      12,
-      1,
-      2
-    ],
+    "wintering_months": [],
     "soil": "Plutôt léger et bien drainé",
     "pruning": "Retirer uniquement les feuilles abîmées ou malades.",
     "care": "Arroser régulièrement, surtout au début, pour favoriser l’enracinement.",
     "general": "La courgette est un légume/fruit incontournable du potager, apprécié pour sa culture facile et sa généreuse production tout l’été.",
     "esthetic": "fruit",
     "foliage": "deciduous",
-    "height": "",
+    "height": "ground",
     "vegType": "fruit"
   },
   "45": {
-    "species": " Aubergine",
+    "species": "Aubergine",
     "category": "vegetable",
-    "light": "brightInd",
+    "light": "direct",
     "difficulty": "medium",
     "humidity": "medium",
     "temperature": "frostTender",
@@ -1924,6 +1892,7 @@
       3
     ],
     "planting_months": [
+      4,
       5,
       6
     ],
@@ -1932,33 +1901,24 @@
       8
     ],
     "flowering_months": [],
-    "repotting_months": [
-      3,
-      4,
-      5
-    ],
+    "repotting_months": [],
     "pruning_months": [
       6,
       7,
       8
     ],
-    "wintering_months": [
-      11,
-      12,
-      1,
-      2
-    ],
+    "wintering_months": [],
     "soil": "Terreau riche et bien drainé.",
     "pruning": "Supprimez les gourmands et coupez la tige principale au-dessus de la deuxième fleur.",
     "care": "Arrosez régulièrement, surtout en période de chaleur, et fertilisez tous les 15 jours.",
     "general": "L'aubergine est un légume-fruit apprécié pour sa saveur et sa polyvalence en cuisine.",
     "esthetic": "fruit",
     "foliage": "deciduous",
-    "height": "",
+    "height": "shrub",
     "vegType": "fruit"
   },
   "46": {
-    "species": " Poivron",
+    "species": "Poivron",
     "category": "vegetable",
     "light": "direct",
     "difficulty": "medium",
@@ -1967,13 +1927,14 @@
     "toxicity": "none",
     "cycle": "annual",
     "water_summer": 3,
-    "water_winter": 15,
+    "water_winter": 0,
     "fertilize_freq": 14,
     "repot_freq": 0,
     "sowing_months": [
       2
     ],
     "planting_months": [
+      4,
       5
     ],
     "harvest_months": [
@@ -1982,11 +1943,7 @@
       9
     ],
     "flowering_months": [],
-    "repotting_months": [
-      3,
-      4,
-      5
-    ],
+    "repotting_months": [],
     "pruning_months": [],
     "wintering_months": [],
     "soil": "Terreau pour légumes, bien drainant.",
@@ -1995,11 +1952,11 @@
     "general": "Le poivron est une plante potagère gourmande, riche en vitamine C.",
     "esthetic": "fruit",
     "foliage": "deciduous",
-    "height": "",
+    "height": "shrub",
     "vegType": "fruit"
   },
   "47": {
-    "species": " Piment",
+    "species": "Piment",
     "category": "vegetable",
     "light": "direct",
     "difficulty": "easy",
@@ -2008,7 +1965,7 @@
     "toxicity": "none",
     "cycle": "annual",
     "water_summer": 3,
-    "water_winter": 10,
+    "water_winter": 0,
     "fertilize_freq": 15,
     "repot_freq": 0,
     "sowing_months": [
@@ -2016,6 +1973,7 @@
       2
     ],
     "planting_months": [
+      4,
       5
     ],
     "harvest_months": [
@@ -2032,23 +1990,18 @@
       5
     ],
     "pruning_months": [],
-    "wintering_months": [
-      11,
-      12,
-      1,
-      2
-    ],
+    "wintering_months": [],
     "soil": "Terreau premium pour plantes potagères, bien drainant.",
     "pruning": "Couper les feuilles jaunies/sèches.",
     "care": "Arrosages fréquents mais modérés, maintenir le substrat frais.",
     "general": "Le piment est un légume condimentaire qui s’adapte bien à la culture en pot.",
     "esthetic": "fruit",
     "foliage": "deciduous",
-    "height": "",
+    "height": "shrub",
     "vegType": "fruit"
   },
   "48": {
-    "species": " Concombre",
+    "species": "Concombre",
     "category": "vegetable",
     "light": "direct",
     "difficulty": "easy",
@@ -2090,11 +2043,11 @@
     "general": "Le concombre est un légume-fruit de la famille des cucurbitacées, facile à cultiver et apprécié pour sa chair croquante.",
     "esthetic": "fruit",
     "foliage": "deciduous",
-    "height": "",
+    "height": "climber",
     "vegType": "fruit"
   },
   "49": {
-    "species": " Fraisier",
+    "species": "Fraisier",
     "category": "vegetable",
     "light": "partial",
     "difficulty": "easy",
@@ -2143,24 +2096,24 @@
       1,
       2
     ],
-    "soil": "sol riche, frais et bien drainé",
+    "soil": "Sol riche, frais et bien drainé",
     "pruning": "Supprimez les stolons au fur et à mesure.",
     "care": "Arrosez régulièrement, surtout en période de floraison et de fructification.",
     "general": "Le fraisier est une plante vivace herbacée cultivée pour ses fruits sucrés et parfumés.",
     "esthetic": "fruit",
-    "foliage": "deciduous",
-    "height": "",
+    "foliage": "evergreen",
+    "height": "ground",
     "vegType": "fruit"
   },
   "50": {
-    "species": " Framboisier",
+    "species": "Framboisier",
     "category": "vegetable",
     "light": "brightInd",
     "difficulty": "easy",
     "humidity": "medium",
     "temperature": "hardy",
     "toxicity": "none",
-    "cycle": "biennial",
+    "cycle": "perennial",
     "water_summer": 10,
     "water_winter": 20,
     "fertilize_freq": 30,
@@ -2204,11 +2157,11 @@
     "general": "Le framboisier est un arbuste fruitier qui produit des framboises délicieuses et est facile à cultiver.",
     "esthetic": "fruit",
     "foliage": "deciduous",
-    "height": "",
+    "height": "shrub",
     "vegType": "fruit"
   },
   "51": {
-    "species": " Carotte",
+    "species": "Carotte",
     "category": "vegetable",
     "light": "partial",
     "difficulty": "easy",
@@ -2228,10 +2181,7 @@
       6,
       7
     ],
-    "planting_months": [
-      4,
-      5
-    ],
+    "planting_months": [],
     "harvest_months": [
       6,
       7,
@@ -2242,11 +2192,7 @@
       12
     ],
     "flowering_months": [],
-    "repotting_months": [
-      3,
-      4,
-      5
-    ],
+    "repotting_months": [],
     "pruning_months": [],
     "wintering_months": [
       11,
@@ -2260,11 +2206,11 @@
     "general": "La carotte est un légume-racine incontournable du potager, facile à cultiver et assure des récoltes généreuses.",
     "esthetic": "foliage",
     "foliage": "deciduous",
-    "height": "",
+    "height": "ground",
     "vegType": "root"
   },
   "52": {
-    "species": " Radis",
+    "species": "Radis",
     "category": "vegetable",
     "light": "brightInd",
     "difficulty": "easy",
@@ -2304,11 +2250,7 @@
       8
     ],
     "flowering_months": [],
-    "repotting_months": [
-      3,
-      4,
-      5
-    ],
+    "repotting_months": [],
     "pruning_months": [],
     "wintering_months": [],
     "soil": "Terreau léger et bien drainant.",
@@ -2317,11 +2259,11 @@
     "general": "Le radis est une culture rapide et facile, idéale pour les potagers.",
     "esthetic": "fruit",
     "foliage": "deciduous",
-    "height": "",
+    "height": "ground",
     "vegType": "root"
   },
   "53": {
-    "species": " Pomme de terre",
+    "species": "Pomme de terre",
     "category": "vegetable",
     "light": "direct",
     "difficulty": "easy",
@@ -2354,23 +2296,18 @@
       5
     ],
     "pruning_months": [],
-    "wintering_months": [
-      11,
-      12,
-      1,
-      2
-    ],
+    "wintering_months": [],
     "soil": "Terre légère, riche et peu humide.",
     "pruning": "Conservez 2-3 germes trapus par tubercule, retirez les autres.",
     "care": "Arrosez modérément et ajustez en fonction des conditions climatiques.",
     "general": "La pomme de terre est facile à cultiver, productive et polyvalente en cuisine.",
     "esthetic": "fruit",
     "foliage": "deciduous",
-    "height": "",
+    "height": "ground",
     "vegType": "root"
   },
   "54": {
-    "species": " Betterave",
+    "species": "Betterave",
     "category": "vegetable",
     "light": "direct",
     "difficulty": "easy",
@@ -2387,8 +2324,7 @@
       4,
       5,
       6,
-      7,
-      8
+      7
     ],
     "planting_months": [
       3,
@@ -2405,11 +2341,7 @@
       8
     ],
     "flowering_months": [],
-    "repotting_months": [
-      3,
-      4,
-      5
-    ],
+    "repotting_months": [],
     "pruning_months": [],
     "wintering_months": [
       11,
@@ -2423,11 +2355,11 @@
     "general": "La betterave est riche en vitamines, fibres et minéraux.",
     "esthetic": "fruit",
     "foliage": "deciduous",
-    "height": "",
+    "height": "ground",
     "vegType": "root"
   },
   "55": {
-    "species": " Ail",
+    "species": "Ail",
     "category": "vegetable",
     "light": "direct",
     "difficulty": "easy",
@@ -2442,40 +2374,30 @@
     "sowing_months": [
       10,
       11,
-      2
+      2,
+      3
     ],
-    "planting_months": [
-      10,
-      11,
-      2
-    ],
+    "planting_months": [],
     "harvest_months": [
+      6,
+      7,
       8
     ],
     "flowering_months": [],
-    "repotting_months": [
-      3,
-      4,
-      5
-    ],
+    "repotting_months": [],
     "pruning_months": [],
-    "wintering_months": [
-      11,
-      12,
-      1,
-      2
-    ],
+    "wintering_months": [],
     "soil": "Tous types, meuble, profond, drainé",
     "pruning": "Aucune taille nécessaire, couper les feuilles jaunies si besoin.",
     "care": "Peu d'entretien, arroser en cas de sécheresse prolongée.",
     "general": "L'ail rocambole est un bulbe potager rustique et savoureux.",
-    "esthetic": "foliage",
+    "esthetic": "fruit",
     "foliage": "deciduous",
-    "height": "",
-    "vegType": "herb"
+    "height": "ground",
+    "vegType": "root"
   },
   "56": {
-    "species": " Oignon",
+    "species": "Oignon",
     "category": "vegetable",
     "light": "direct",
     "difficulty": "easy",
@@ -2491,47 +2413,38 @@
       2,
       3,
       8,
+      9,
+      10
+    ],
+    "planting_months": [],
+    "harvest_months": [
+      6,
+      7,
+      8,
       9
     ],
-    "planting_months": [
-      3,
-      4
-    ],
-    "harvest_months": [
-      5,
-      6
-    ],
     "flowering_months": [],
-    "repotting_months": [
-      3,
-      4,
-      5
-    ],
+    "repotting_months": [],
     "pruning_months": [],
-    "wintering_months": [
-      11,
-      12,
-      1,
-      2
-    ],
+    "wintering_months": [],
     "soil": "Sol léger, meuble, bien drainé, frais et fertile.",
     "pruning": "Désherber avec soin et couper les feuilles jaunies.",
     "care": "Arroser juste après semis/plantation, puis uniquement si le temps est sec.",
     "general": "L'oignon nouveau est un jeune oignon récolté avant sa pleine maturité, idéal pour une récolte précoce au printemps.",
     "esthetic": "fruit",
     "foliage": "deciduous",
-    "height": "",
+    "height": "ground",
     "vegType": "root"
   },
   "57": {
-    "species": " Echalote",
+    "species": "Echalote",
     "category": "vegetable",
-    "light": "brightInd",
+    "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
     "temperature": "frostTender",
     "toxicity": "none",
-    "cycle": "annual",
+    "cycle": "biennial",
     "water_summer": 5,
     "water_winter": 15,
     "fertilize_freq": 0,
@@ -2539,10 +2452,10 @@
     "sowing_months": [
       3
     ],
-    "planting_months": [
-      3
-    ],
+    "planting_months": [],
     "harvest_months": [
+      6,
+      7,
       8
     ],
     "flowering_months": [],
@@ -2552,23 +2465,18 @@
       5
     ],
     "pruning_months": [],
-    "wintering_months": [
-      11,
-      12,
-      1,
-      2
-    ],
+    "wintering_months": [],
     "soil": "Terres de jardin meubles et bien drainées, légères et plutôt sableuses.",
     "pruning": "Couper les feuilles jaunies/sèches.",
     "care": "Arrosez légèrement, mais régulièrement pour maintenir le substrat frais.",
     "general": "L’échalote est un bulbe très apprécié des fins gourmets, cultivable en pot.",
-    "esthetic": "foliage",
+    "esthetic": "fruit",
     "foliage": "deciduous",
-    "height": "",
-    "vegType": "leaf"
+    "height": "ground",
+    "vegType": "root"
   },
   "58": {
-    "species": " Salade",
+    "species": "Salade",
     "category": "vegetable",
     "light": "partial",
     "difficulty": "easy",
@@ -2581,9 +2489,14 @@
     "fertilize_freq": 30,
     "repot_freq": 0,
     "sowing_months": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
       8,
-      9,
-      10
+      9
     ],
     "planting_months": [
       8,
@@ -2591,12 +2504,14 @@
       10
     ],
     "harvest_months": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
       10,
-      11,
-      12,
-      1,
-      2,
-      3
+      11
     ],
     "flowering_months": [],
     "repotting_months": [
@@ -2617,11 +2532,11 @@
     "general": "La mâche est une salade facile à cultiver, riche en nutriments et appréciée pour sa saveur douce.",
     "esthetic": "foliage",
     "foliage": "deciduous",
-    "height": "",
+    "height": "ground",
     "vegType": "leaf"
   },
   "59": {
-    "species": " Epinard",
+    "species": "Epinard",
     "category": "vegetable",
     "light": "partial",
     "difficulty": "easy",
@@ -2630,7 +2545,7 @@
     "toxicity": "none",
     "cycle": "annual",
     "water_summer": 3,
-    "water_winter": 7,
+    "water_winter": 15,
     "fertilize_freq": 30,
     "repot_freq": 0,
     "sowing_months": [
@@ -2670,23 +2585,18 @@
       5
     ],
     "pruning_months": [],
-    "wintering_months": [
-      11,
-      12,
-      1,
-      2
-    ],
+    "wintering_months": [],
     "soil": "Terreau de qualité, riche en matières organiques et bien drainé.",
     "pruning": "Couper les feuilles jaunies/sèches.",
     "care": "Veiller à l'arrosage régulier et éviter l'eau stagnante.",
     "general": "L'épinard est une plante potagère qui apprécie les terres argileuses et bien drainées.",
     "esthetic": "foliage",
     "foliage": "deciduous",
-    "height": "",
+    "height": "ground",
     "vegType": "leaf"
   },
   "60": {
-    "species": " Mâche",
+    "species": "Mâche",
     "category": "vegetable",
     "light": "partial",
     "difficulty": "easy",
@@ -2699,9 +2609,9 @@
     "fertilize_freq": 30,
     "repot_freq": 0,
     "sowing_months": [
+      7,
       8,
-      9,
-      10
+      9
     ],
     "planting_months": [
       8,
@@ -2735,20 +2645,20 @@
     "general": "La mâche est une salade facile à cultiver, riche en nutriments et appréciée pour sa saveur douce.",
     "esthetic": "foliage",
     "foliage": "deciduous",
-    "height": "",
+    "height": "ground",
     "vegType": "leaf"
   },
   "61": {
-    "species": " Basilic",
+    "species": "Basilic",
     "category": "vegetable",
-    "light": "brightInd",
+    "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
     "temperature": "frostTender",
     "toxicity": "none",
     "cycle": "annual",
     "water_summer": 3,
-    "water_winter": 7,
+    "water_winter": 0,
     "fertilize_freq": 15,
     "repot_freq": 0,
     "sowing_months": [
@@ -2773,33 +2683,28 @@
     "pruning_months": [
       9
     ],
-    "wintering_months": [
-      11,
-      12,
-      1,
-      2
-    ],
+    "wintering_months": [],
     "soil": "Léger, riche, bien drainé",
     "pruning": "Supprimez les fleurs dès leur apparition pour favoriser les feuilles.",
     "care": "Arrosez régulièrement sans détremper et fertilisez légèrement.",
     "general": "Le basilic est une plante aromatique annuelle qui se cultive facilement en pot ou en pleine terre.",
     "esthetic": "foliage",
     "foliage": "deciduous",
-    "height": "",
+    "height": "ground",
     "vegType": "herb"
   },
   "62": {
-    "species": " Menthe",
+    "species": "Menthe",
     "category": "vegetable",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "high",
-    "temperature": "frostTender",
+    "temperature": "hardy",
     "toxicity": "none",
     "cycle": "perennial",
     "water_summer": 5,
     "water_winter": 15,
-    "fertilize_freq": 30,
+    "fertilize_freq": 15,
     "repot_freq": 24,
     "sowing_months": [
       3,
@@ -2839,11 +2744,11 @@
     "general": "La menthe est une plante aromatique vivace très appréciée au jardin et en cuisine.",
     "esthetic": "foliage",
     "foliage": "deciduous",
-    "height": "",
+    "height": "ground",
     "vegType": "herb"
   },
   "63": {
-    "species": " Persil",
+    "species": "Persil",
     "category": "vegetable",
     "light": "partial",
     "difficulty": "easy",
@@ -2853,7 +2758,7 @@
     "cycle": "biennial",
     "water_summer": 5,
     "water_winter": 15,
-    "fertilize_freq": 30,
+    "fertilize_freq": 15,
     "repot_freq": 0,
     "sowing_months": [
       2,
@@ -2903,11 +2808,11 @@
     "general": "Le persil est une plante aromatique facile à cultiver et très aromatique en cuisine.",
     "esthetic": "foliage",
     "foliage": "deciduous",
-    "height": "",
+    "height": "ground",
     "vegType": "herb"
   },
   "64": {
-    "species": " Ciboulette",
+    "species": "Ciboulette",
     "category": "vegetable",
     "light": "partial",
     "difficulty": "easy",
@@ -2917,7 +2822,7 @@
     "cycle": "perennial",
     "water_summer": 5,
     "water_winter": 15,
-    "fertilize_freq": 30,
+    "fertilize_freq": 15,
     "repot_freq": 0,
     "sowing_months": [
       3,
@@ -2963,11 +2868,11 @@
     "general": "La ciboulette est une plante aromatique vivace, très facile de culture et précieuse en cuisine.",
     "esthetic": "foliage",
     "foliage": "deciduous",
-    "height": "",
+    "height": "ground",
     "vegType": "herb"
   },
   "65": {
-    "species": " Thym",
+    "species": "Thym",
     "category": "vegetable",
     "light": "direct",
     "difficulty": "easy",
@@ -3026,11 +2931,11 @@
     "general": "Plante aromatique très appréciée pour ses qualités culinaires et médicinales, résistante à la sécheresse.",
     "esthetic": "foliage",
     "foliage": "evergreen",
-    "height": "",
+    "height": "ground",
     "vegType": "herb"
   },
   "66": {
-    "species": " Romarin",
+    "species": "Romarin",
     "category": "vegetable",
     "light": "direct",
     "difficulty": "easy",
@@ -3061,7 +2966,11 @@
       11,
       12
     ],
-    "flowering_months": [],
+    "flowering_months": [
+      2,
+      3,
+      4
+    ],
     "repotting_months": [
       3,
       4,
@@ -3083,11 +2992,11 @@
     "general": "Le romarin est une plante aromatique résistante, utile en cuisine et facile à cultiver.",
     "esthetic": "foliage",
     "foliage": "evergreen",
-    "height": "",
+    "height": "shrub",
     "vegType": "herb"
   },
   "67": {
-    "species": " Coriandre",
+    "species": "Coriandre",
     "category": "vegetable",
     "light": "brightInd",
     "difficulty": "easy",
@@ -3124,23 +3033,18 @@
       5
     ],
     "pruning_months": [],
-    "wintering_months": [
-      11,
-      12,
-      1,
-      2
-    ],
+    "wintering_months": [],
     "soil": "Riche et léger",
     "pruning": "Couper les feuilles au fur et à mesure des besoins.",
     "care": "Arroser régulièrement et éviter les sols trop riches.",
     "general": "Plante annuelle aromatique largement utilisée en cuisine.",
     "esthetic": "foliage",
     "foliage": "deciduous",
-    "height": "",
+    "height": "ground",
     "vegType": "herb"
   },
   "68": {
-    "species": " Sauge",
+    "species": "Sauge",
     "category": "vegetable",
     "light": "brightInd",
     "difficulty": "easy",
@@ -3209,11 +3113,11 @@
     "general": "La sauge officinale est une plante aromatique vivace, résistante et parfumée, appréciée pour ses qualités gustatives et ornementales.",
     "esthetic": "foliage",
     "foliage": "semi_evergreen",
-    "height": "",
+    "height": "shrub",
     "vegType": "herb"
   },
   "69": {
-    "species": " Laurier Sauce",
+    "species": "Laurier Sauce",
     "category": "outdoor",
     "light": "direct",
     "difficulty": "easy",
@@ -3265,11 +3169,11 @@
     "general": "Le laurier-sauce est un arbuste persistant très utilisé en haie pour son port dense et élégant.",
     "esthetic": "foliage",
     "foliage": "evergreen",
-    "height": "",
+    "height": "tree",
     "vegType": ""
   },
   "70": {
-    "species": " Haricot vert",
+    "species": "Haricot vert",
     "category": "vegetable",
     "light": "direct",
     "difficulty": "easy",
@@ -3310,11 +3214,11 @@
     "general": "Le haricot est une plante légumineuse incontournable de nos potagers, facile à cultiver et rapide à produire.",
     "esthetic": "fruit",
     "foliage": "deciduous",
-    "height": "",
+    "height": "climber",
     "vegType": "fruit"
   },
   "71": {
-    "species": " Petit pois",
+    "species": "Petit pois",
     "category": "vegetable",
     "light": "brightInd",
     "difficulty": "easy",
@@ -3327,8 +3231,11 @@
     "fertilize_freq": 30,
     "repot_freq": 0,
     "sowing_months": [
+      2,
       3,
-      4
+      4,
+      10,
+      11
     ],
     "planting_months": [
       4,
@@ -3349,23 +3256,18 @@
       5
     ],
     "pruning_months": [],
-    "wintering_months": [
-      11,
-      12,
-      1,
-      2
-    ],
+    "wintering_months": [],
     "soil": "Sols légers, frais, bien drainés et riches.",
     "pruning": "Ne taillez jamais le petit pois.",
     "care": "Arrosez légèrement mais régulièrement, surtout en pot.",
     "general": "Le petit pois est une plante potagère appréciée pour ses grains consommés cuits.",
-    "esthetic": "flowering",
+    "esthetic": "fruit",
     "foliage": "deciduous",
-    "height": "",
+    "height": "climber",
     "vegType": "fruit"
   },
   "72": {
-    "species": " Poireau",
+    "species": "Poireau",
     "category": "vegetable",
     "light": "brightInd",
     "difficulty": "easy",
@@ -3382,11 +3284,7 @@
       2,
       3,
       4,
-      5,
-      6,
-      7,
-      8,
-      9
+      5
     ],
     "planting_months": [
       3,
@@ -3428,14 +3326,14 @@
     "general": "Le poireau est un légume-feuille rustique et facile à cultiver, présent au potager presque toute l’année.",
     "esthetic": "foliage",
     "foliage": "deciduous",
-    "height": "",
+    "height": "ground",
     "vegType": "leaf"
   },
   "73": {
-    "species": " Chou",
+    "species": "Chou",
     "category": "vegetable",
     "light": "direct",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "humidity": "medium",
     "temperature": "hardy",
     "toxicity": "none",
@@ -3447,13 +3345,20 @@
     "sowing_months": [
       2,
       3,
-      4
+      4,
+      5,
+      6,
+      7,
+      8
     ],
     "planting_months": [
       3,
       4,
       5,
-      6
+      6,
+      7,
+      8,
+      9
     ],
     "harvest_months": [
       1,
@@ -3488,11 +3393,11 @@
     "general": "Le chou est un légume aux multiples variétés et facile à cultiver.",
     "esthetic": "foliage",
     "foliage": "deciduous",
-    "height": "",
+    "height": "ground",
     "vegType": "leaf"
   },
   "74": {
-    "species": " Citrouille",
+    "species": "Citrouille",
     "category": "vegetable",
     "light": "direct",
     "difficulty": "medium",
@@ -3528,23 +3433,18 @@
       6,
       7
     ],
-    "wintering_months": [
-      11,
-      12,
-      1,
-      2
-    ],
+    "wintering_months": [],
     "soil": "Riche et bien drainé",
     "pruning": "Pincer les tiges au-dessus de la 3e ou 4e feuille.",
     "care": "Éviter que la citrouille reste en contact avec le sol humide.",
     "general": "La citrouille est une plante annuelle à tige rampante ou grimpante, riche en vitamines A, B et C.",
     "esthetic": "fruit",
     "foliage": "deciduous",
-    "height": "",
+    "height": "climber",
     "vegType": "fruit"
   },
   "75": {
-    "species": " Melon",
+    "species": "Melon",
     "category": "vegetable",
     "light": "direct",
     "difficulty": "medium",
@@ -3563,6 +3463,7 @@
       6
     ],
     "planting_months": [
+      4,
       5,
       6
     ],
@@ -3573,11 +3474,7 @@
       10
     ],
     "flowering_months": [],
-    "repotting_months": [
-      3,
-      4,
-      5
-    ],
+    "repotting_months": [],
     "pruning_months": [
       3,
       4,
@@ -3590,11 +3487,11 @@
     "general": "Le melon est une plante herbacée annuelle, originaire d'Afrique, cultivable dans de nombreuses régions de France.",
     "esthetic": "fruit",
     "foliage": "deciduous",
-    "height": "",
+    "height": "climber",
     "vegType": "fruit"
   },
   "76": {
-    "species": " Rhubarbe",
+    "species": "Rhubarbe",
     "category": "vegetable",
     "light": "partial",
     "difficulty": "easy",
@@ -3641,13 +3538,13 @@
     "pruning": "Ôter régulièrement les pétioles fanés.",
     "care": "Arroser en cas de sécheresse prolongée ou de fortes chaleurs.",
     "general": "La rhubarbe est une plante vivace cultivée pour ses pétioles épais et acidulés, très appréciés en compotes, tartes ou confitures.",
-    "esthetic": "fruit",
+    "esthetic": "foliage",
     "foliage": "deciduous",
-    "height": "",
-    "vegType": "fruit"
+    "height": "ground",
+    "vegType": "leaf"
   },
   "77": {
-    "species": " Asperge",
+    "species": "Asperge",
     "category": "vegetable",
     "light": "direct",
     "difficulty": "medium",
@@ -3694,13 +3591,13 @@
     "pruning": "Couper les tiges au début de l'hiver.",
     "care": "Arrosage régulier, éviter l'eau stagnante.",
     "general": "L'asperge est un légume vivace qui produit pendant plus de 15 ans.",
-    "esthetic": "fruit",
+    "esthetic": "foliage",
     "foliage": "deciduous",
-    "height": "",
+    "height": "shrub",
     "vegType": "leaf"
   },
   "78": {
-    "species": " Artichaut",
+    "species": "Artichaut",
     "category": "vegetable",
     "light": "direct",
     "difficulty": "medium",
@@ -3713,9 +3610,9 @@
     "fertilize_freq": 30,
     "repot_freq": 0,
     "sowing_months": [
-      1,
       2,
-      3
+      3,
+      4
     ],
     "planting_months": [
       3,
@@ -3747,18 +3644,18 @@
     "care": "Arroser régulièrement mais sans excès, éviter de mouiller les feuilles",
     "general": "L'artichaut est une plante vivace qui peut produire pendant 3 à 5 ans.",
     "esthetic": "fruit",
-    "foliage": "deciduous",
-    "height": "",
-    "vegType": "fruit"
+    "foliage": "evergreen",
+    "height": "shrub",
+    "vegType": "leaf"
   },
   "79": {
-    "species": " Géranium",
+    "species": "Géranium",
     "category": "outdoor",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
     "temperature": "frostTender",
-    "toxicity": "none",
+    "toxicity": "low",
     "cycle": "perennial",
     "water_summer": 5,
     "water_winter": 0,
@@ -3796,12 +3693,12 @@
     "care": "Arrosez régulièrement, surtout en plein soleil.",
     "general": "Le géranium est une plante vivace qui fleurit de mai jusqu'aux premières gelées.",
     "esthetic": "flowering",
-    "foliage": "evergreen",
-    "height": "",
+    "foliage": "deciduous",
+    "height": "ground",
     "vegType": ""
   },
   "80": {
-    "species": " Pétunia",
+    "species": "Pétunia",
     "category": "outdoor",
     "light": "partial",
     "difficulty": "easy",
@@ -3833,23 +3730,18 @@
       5
     ],
     "pruning_months": [],
-    "wintering_months": [
-      11,
-      12,
-      1,
-      2
-    ],
+    "wintering_months": [],
     "soil": "Terre fertile bien drainée",
     "pruning": "Retirez les fleurs fanées pour favoriser l'apparition de nouvelles fleurs.",
     "care": "Arrosez régulièrement sans excès et apportez de l'engrais pour plantes fleuries.",
     "general": "Le pétunia est une plante annuelle appréciée pour sa floraison abondante et ses couleurs éclatantes.",
     "esthetic": "flowering",
     "foliage": "deciduous",
-    "height": "",
+    "height": "hanging",
     "vegType": ""
   },
   "81": {
-    "species": " Oeillet d'Inde",
+    "species": "Oeillet d'Inde",
     "category": "outdoor",
     "light": "direct",
     "difficulty": "easy",
@@ -3858,7 +3750,7 @@
     "toxicity": "low",
     "cycle": "annual",
     "water_summer": 5,
-    "water_winter": 15,
+    "water_winter": 0,
     "fertilize_freq": 30,
     "repot_freq": 0,
     "sowing_months": [
@@ -3883,23 +3775,18 @@
       5
     ],
     "pruning_months": [],
-    "wintering_months": [
-      11,
-      12,
-      1,
-      2
-    ],
+    "wintering_months": [],
     "soil": "Terreau spécial plantes fleuries",
     "pruning": "Supprimez les fleurs fanées au fur et à mesure.",
     "care": "Arrosez en cas de forte chaleur, évitez l'excès d'humidité.",
     "general": "L'œillet d'Inde est une plante rustique et florifère, utilisée pour ses propriétés répulsives contre les insectes nuisibles.",
     "esthetic": "flowering",
     "foliage": "deciduous",
-    "height": "",
+    "height": "ground",
     "vegType": ""
   },
   "82": {
-    "species": " Lavande",
+    "species": "Lavande",
     "category": "outdoor",
     "light": "direct",
     "difficulty": "easy",
@@ -3938,25 +3825,25 @@
       1,
       2
     ],
-    "soil": "terre de jardin légère et drainée, moyennement fertile, plutôt calcaire",
+    "soil": "Terre de jardin légère et drainée, moyennement fertile, plutôt calcaire",
     "pruning": "Rabattre les pousses défleuries à 2 ou 3 cm de leur point de naissance.",
     "care": "Désherbez soigneusement les jeunes plantations et arrosez seulement lorsque le sol est vraiment très sec.",
     "general": "La lavande est connue pour son parfum et ses propriétés apaisantes et antiseptiques.",
     "esthetic": "flowering",
     "foliage": "evergreen",
-    "height": "",
+    "height": "shrub",
     "vegType": ""
   },
   "83": {
-    "species": " Hortensia",
+    "species": "Hortensia",
     "category": "outdoor",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
     "temperature": "hardy",
-    "toxicity": "none",
+    "toxicity": "high",
     "cycle": "perennial",
-    "water_summer": 7,
+    "water_summer": 3,
     "water_winter": 15,
     "fertilize_freq": 30,
     "repot_freq": 24,
@@ -3995,17 +3882,17 @@
     "general": "L’hortensia est un arbuste apprécié pour ses fleurs généreuses en boules ou en panicules.",
     "esthetic": "flowering",
     "foliage": "deciduous",
-    "height": "",
+    "height": "shrub",
     "vegType": ""
   },
   "84": {
-    "species": " Pivoine",
+    "species": "Pivoine",
     "category": "outdoor",
     "light": "partial",
     "difficulty": "medium",
     "humidity": "medium",
     "temperature": "hardy",
-    "toxicity": "none",
+    "toxicity": "low",
     "cycle": "perennial",
     "water_summer": 7,
     "water_winter": 15,
@@ -4044,11 +3931,11 @@
     "general": "La pivoine est une fleur printanière délicate qui fleurit entre fin avril et début juin.",
     "esthetic": "flowering",
     "foliage": "deciduous",
-    "height": "",
+    "height": "shrub",
     "vegType": ""
   },
   "85": {
-    "species": " Tulipe",
+    "species": "Tulipe",
     "category": "outdoor",
     "light": "direct",
     "difficulty": "easy",
@@ -4092,17 +3979,17 @@
     "general": "La tulipe est une fleur emblématique du printemps, facile à cultiver et offrant une floraison spectaculaire.",
     "esthetic": "flowering",
     "foliage": "deciduous",
-    "height": "",
+    "height": "ground",
     "vegType": ""
   },
   "86": {
-    "species": " Narcisse",
+    "species": "Narcisse",
     "category": "outdoor",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
     "temperature": "hardy",
-    "toxicity": "none",
+    "toxicity": "low",
     "cycle": "perennial",
     "water_summer": 10,
     "water_winter": 15,
@@ -4142,33 +4029,36 @@
     "general": "Le narcisse est une fleur à bulbe qui fleurit au printemps.",
     "esthetic": "flowering",
     "foliage": "deciduous",
-    "height": "",
+    "height": "ground",
     "vegType": ""
   },
   "87": {
-    "species": " Jacinthe",
-    "category": "indoor",
-    "light": "partial",
-    "difficulty": "medium",
+    "species": "Jacinthe",
+    "category": "outdoor",
+    "light": "direct",
+    "difficulty": "easy",
     "humidity": "medium",
-    "temperature": "frostTender",
-    "toxicity": "high",
+    "temperature": "hardy",
+    "toxicity": "low",
     "cycle": "perennial",
     "water_summer": 7,
     "water_winter": 15,
     "fertilize_freq": 30,
     "repot_freq": 0,
     "sowing_months": [
-      9,
-      10
+      4,
+      5
     ],
     "planting_months": [
-      10
+      4,
+      5,
+      9
     ],
     "harvest_months": [],
     "flowering_months": [
       3,
-      4
+      4,
+      5
     ],
     "repotting_months": [
       3,
@@ -4176,7 +4066,7 @@
       5
     ],
     "pruning_months": [
-      6
+      9
     ],
     "wintering_months": [
       11,
@@ -4184,17 +4074,17 @@
       1,
       2
     ],
-    "soil": "Ordinaire, léger et bien drainé",
-    "pruning": "Couper les feuilles jaunies",
-    "care": "Arrosage léger à modéré, éviter l'excès d'eau",
-    "general": "La jacinthe est un bulbe printanier très parfumé, apprécié pour sa floraison colorée.",
+    "soil": "Riche, humifère, drainé et frais en été.",
+    "pruning": "Supprimez les hampes florales fanées mais ne touchez pas au feuillage.",
+    "care": "Maintenez le sol frais au printemps et en été.",
+    "general": "Plante bulbeuse vivace, fleurit de juillet à septembre, rustique jusqu'à -15°C.",
     "esthetic": "flowering",
     "foliage": "deciduous",
-    "height": "",
+    "height": "ground",
     "vegType": ""
   },
   "88": {
-    "species": " Dahlia",
+    "species": "Dahlia",
     "category": "outdoor",
     "light": "direct",
     "difficulty": "easy",
@@ -4242,11 +4132,11 @@
     "general": "Le dahlia est une plante tubéreuse qui offre une grande diversité de formes et de couleurs.",
     "esthetic": "flowering",
     "foliage": "deciduous",
-    "height": "",
+    "height": "shrub",
     "vegType": ""
   },
   "89": {
-    "species": " Cosmos",
+    "species": "Cosmos",
     "category": "outdoor",
     "light": "direct",
     "difficulty": "easy",
@@ -4277,24 +4167,19 @@
       5
     ],
     "pruning_months": [],
-    "wintering_months": [
-      11,
-      12,
-      1,
-      2
-    ],
+    "wintering_months": [],
     "soil": "Terre ordinaire, léger, bien drainé",
     "pruning": "Supprimez les fleurs fanées régulièrement pour stimuler la production continue.",
     "care": "Arrosage régulier après le semis, inutile une fois bien installé.",
     "general": "Le cosmos est une plante annuelle facile à cultiver, généreuse en floraison et qui peut se ressemer spontanément.",
     "esthetic": "flowering",
     "foliage": "deciduous",
-    "height": "",
+    "height": "ground",
     "vegType": ""
   },
   "90": {
-    "species": " Tournesol",
-    "category": "vegetable",
+    "species": "Tournesol",
+    "category": "outdoor",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -4333,23 +4218,18 @@
       8,
       9
     ],
-    "wintering_months": [
-      11,
-      12,
-      1,
-      2
-    ],
+    "wintering_months": [],
     "soil": "Le sol doit être bien drainé et riche en matière organique.",
     "pruning": "Supprimez les fleurs fanées au fur et à mesure.",
     "care": "Un désherbage régulier est nécessaire pour éviter la pousse des mauvaises herbes.",
     "general": "Le tournesol est une plante annuelle à croissance rapide, connue pour ses grandes fleurs jaunes et son port majestueux.",
     "esthetic": "flowering",
     "foliage": "deciduous",
-    "height": "",
-    "vegType": "fruit"
+    "height": "shrub",
+    "vegType": ""
   },
   "91": {
-    "species": " Laurier Rose",
+    "species": "Laurier Rose",
     "category": "outdoor",
     "light": "direct",
     "difficulty": "medium",
@@ -4383,8 +4263,7 @@
       5
     ],
     "pruning_months": [
-      3,
-      8
+      3
     ],
     "wintering_months": [
       11,
@@ -4398,11 +4277,11 @@
     "general": "Le laurier-rose est un arbuste emblématique des jardins méditerranéens, apprécié pour ses fleurs colorées et son feuillage persistant.",
     "esthetic": "flowering",
     "foliage": "evergreen",
-    "height": "",
+    "height": "shrub",
     "vegType": ""
   },
   "92": {
-    "species": " Laurier Palme",
+    "species": "Laurier Palme",
     "category": "outdoor",
     "light": "partial",
     "difficulty": "easy",
@@ -4448,11 +4327,11 @@
     "general": "Le laurier palme est un arbuste persistant idéal pour former des haies denses et protectrices.",
     "esthetic": "foliage",
     "foliage": "evergreen",
-    "height": "",
+    "height": "shrub",
     "vegType": ""
   },
   "93": {
-    "species": " Photinia",
+    "species": "Photinia",
     "category": "outdoor",
     "light": "direct",
     "difficulty": "easy",
@@ -4494,11 +4373,11 @@
     "general": "Le photinia est un arbuste ornemental persistant, apprécié pour son feuillage coloré et sa croissance rapide.",
     "esthetic": "foliage",
     "foliage": "evergreen",
-    "height": "",
+    "height": "shrub",
     "vegType": ""
   },
   "94": {
-    "species": " Thuya",
+    "species": "Thuya",
     "category": "outdoor",
     "light": "partial",
     "difficulty": "medium",
@@ -4508,7 +4387,7 @@
     "cycle": "perennial",
     "water_summer": 15,
     "water_winter": 20,
-    "fertilize_freq": 6,
+    "fertilize_freq": 182,
     "repot_freq": 0,
     "sowing_months": [],
     "planting_months": [
@@ -4540,17 +4419,17 @@
     "general": "Le thuya est un conifère persistant, excellent brise-vue, résistant à la pollution.",
     "esthetic": "foliage",
     "foliage": "evergreen",
-    "height": "",
+    "height": "tree",
     "vegType": ""
   },
   "95": {
-    "species": " Buis",
+    "species": "Buis",
     "category": "outdoor",
     "light": "partial",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "humidity": "medium",
     "temperature": "hardy",
-    "toxicity": "none",
+    "toxicity": "high",
     "cycle": "perennial",
     "water_summer": 15,
     "water_winter": 20,
@@ -4572,9 +4451,9 @@
       5
     ],
     "pruning_months": [
-      4,
       5,
-      10
+      6,
+      9
     ],
     "wintering_months": [
       11,
@@ -4588,11 +4467,11 @@
     "general": "Le buis est un arbuste persistant, rustique et de culture facile.",
     "esthetic": "foliage",
     "foliage": "evergreen",
-    "height": "",
+    "height": "shrub",
     "vegType": ""
   },
   "96": {
-    "species": " Forsythia",
+    "species": "Forsythia",
     "category": "outdoor",
     "light": "partial",
     "difficulty": "easy",
@@ -4622,7 +4501,8 @@
       5
     ],
     "pruning_months": [
-      3
+      4,
+      5
     ],
     "wintering_months": [
       11,
@@ -4636,13 +4516,13 @@
     "general": "Le Forsythia est un arbuste rustique qui fleurit de la fin de l’hiver au début du printemps avec des fleurs jaunes vives.",
     "esthetic": "flowering",
     "foliage": "deciduous",
-    "height": "",
+    "height": "shrub",
     "vegType": ""
   },
   "97": {
-    "species": " Lilas",
+    "species": "Lilas",
     "category": "outdoor",
-    "light": "partial",
+    "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
     "temperature": "hardy",
@@ -4682,11 +4562,11 @@
     "general": "Le lilas est un arbuste emblématique, aux grappes de fleurs généreuses, qui fleurit principalement en avril et mai.",
     "esthetic": "flowering",
     "foliage": "deciduous",
-    "height": "",
+    "height": "shrub",
     "vegType": ""
   },
   "98": {
-    "species": " Hibiscus",
+    "species": "Hibiscus",
     "category": "indoor",
     "light": "brightInd",
     "difficulty": "medium",
@@ -4724,17 +4604,17 @@
       1,
       2
     ],
-    "soil": "mélange terreau plantes fleuries + terre de bruyère à parts égales, avec 10–20 % de perlite/vermiculite",
+    "soil": "Mélange terreau plantes fleuries + terre de bruyère à parts égales, avec 10–20 % de perlite/vermiculite",
     "pruning": "Pincer légèrement les jeunes extrémités en fin d'hiver pour stimuler la ramification.",
     "care": "L'arrosage doit être régulier mais mesuré, laissez toujours sécher la surface entre deux arrosages.",
     "general": "L'hibiscus d'intérieur offre une floraison spectaculaire et nécessite chaleur, lumière et arrosage maîtrisé.",
     "esthetic": "flowering",
     "foliage": "evergreen",
-    "height": "",
+    "height": "shrub",
     "vegType": ""
   },
   "99": {
-    "species": " Buddleia",
+    "species": "Buddleia",
     "category": "outdoor",
     "light": "direct",
     "difficulty": "easy",
@@ -4778,11 +4658,11 @@
     "general": "Le buddleia est un arbuste à fleurs, ornemental, attirant les papillons.",
     "esthetic": "flowering",
     "foliage": "deciduous",
-    "height": "",
+    "height": "shrub",
     "vegType": ""
   },
   "100": {
-    "species": " Clématite",
+    "species": "Clématite",
     "category": "outdoor",
     "light": "partial",
     "difficulty": "easy",
@@ -4803,14 +4683,11 @@
     ],
     "harvest_months": [],
     "flowering_months": [
-      3,
-      4,
       5,
       6,
       7,
       8,
-      9,
-      10
+      9
     ],
     "repotting_months": [
       3,
@@ -4832,11 +4709,11 @@
     "general": "Plante grimpante rustique avec une floraison généreuse, idéale pour murs et pergolas.",
     "esthetic": "flowering",
     "foliage": "deciduous",
-    "height": "",
+    "height": "climber",
     "vegType": ""
   },
   "101": {
-    "species": " Glycine",
+    "species": "Glycine",
     "category": "outdoor",
     "light": "direct",
     "difficulty": "medium",
@@ -4846,7 +4723,7 @@
     "cycle": "perennial",
     "water_summer": 10,
     "water_winter": 20,
-    "fertilize_freq": 0,
+    "fertilize_freq": 365,
     "repot_freq": 0,
     "sowing_months": [
       3,
@@ -4868,10 +4745,9 @@
       5
     ],
     "pruning_months": [
-      11,
-      12,
       1,
-      2
+      2,
+      8
     ],
     "wintering_months": [
       11,
@@ -4885,11 +4761,11 @@
     "general": "Plante grimpante vigoureuse avec une floraison spectaculaire en grappes.",
     "esthetic": "flowering",
     "foliage": "deciduous",
-    "height": "",
+    "height": "climber",
     "vegType": ""
   },
   "102": {
-    "species": " Chèvrefeuille",
+    "species": "Chèvrefeuille",
     "category": "outdoor",
     "light": "partial",
     "difficulty": "easy",
@@ -4931,12 +4807,12 @@
     "care": "Surveiller l'arrosage au début de sa croissance.",
     "general": "Le chèvrefeuille arbustif est un arbuste à feuillage persistant, très dense, qui se prête à la formation de haies basses.",
     "esthetic": "foliage",
-    "foliage": "evergreen",
-    "height": "",
+    "foliage": "semi_evergreen",
+    "height": "climber",
     "vegType": ""
   },
   "103": {
-    "species": " Jasmin étoilé",
+    "species": "Jasmin étoilé",
     "category": "outdoor",
     "light": "partial",
     "difficulty": "easy",
@@ -4980,18 +4856,18 @@
       1,
       2
     ],
-    "soil": "terreau plantes fleuries + compost tamisé + un peu de pouzzolane pour le drainage",
+    "soil": "Terreau plantes fleuries + compost tamisé + un peu de pouzzolane pour le drainage",
     "pruning": "Raccourcissez les pousses qui dépassent après floraison.",
     "care": "Arrosages espacés et taille légère suffisent.",
     "general": "Le jasmin étoilé est une grimpante persistante, vigoureuse et très parfumée.",
     "esthetic": "flowering",
     "foliage": "evergreen",
-    "height": "",
+    "height": "climber",
     "vegType": ""
   },
   "104": {
-    "species": " Lierre",
-    "category": "climber",
+    "species": "Lierre",
+    "category": "outdoor",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -5010,7 +4886,10 @@
       10
     ],
     "harvest_months": [],
-    "flowering_months": [],
+    "flowering_months": [
+      9,
+      10
+    ],
     "repotting_months": [
       3,
       4,
@@ -5038,12 +4917,12 @@
     "general": "Le lierre est une plante grimpante ou tapissante, rustique et décorative.",
     "esthetic": "foliage",
     "foliage": "evergreen",
-    "height": "",
+    "height": "climber",
     "vegType": ""
   },
   "105": {
-    "species": " Olivier",
-    "category": "vegetable",
+    "species": "Olivier",
+    "category": "outdoor",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "low",
@@ -5086,11 +4965,11 @@
     "general": "L'olivier est un arbre fruitier emblématique du bassin méditerranéen, rustique et facile à cultiver.",
     "esthetic": "fruit",
     "foliage": "evergreen",
-    "height": "",
+    "height": "tree",
     "vegType": "fruitTree"
   },
   "106": {
-    "species": " Erable du Japon",
+    "species": "Erable du Japon",
     "category": "outdoor",
     "light": "partial",
     "difficulty": "medium",
@@ -5128,11 +5007,11 @@
     "general": "L'érable du Japon est apprécié pour ses couleurs changeantes et son port élégant, idéal pour la culture en pot.",
     "esthetic": "foliage",
     "foliage": "deciduous",
-    "height": "",
+    "height": "tree",
     "vegType": ""
   },
   "107": {
-    "species": " Palmier",
+    "species": "Palmier",
     "category": "outdoor",
     "light": "direct",
     "difficulty": "easy",
@@ -5177,12 +5056,12 @@
     "general": "Palmier du Mexique, Washingtonia robusta, est un palmier de croissance rapide, peu rustique, à cultiver en pleine terre sous climat doux.",
     "esthetic": "foliage",
     "foliage": "evergreen",
-    "height": "",
+    "height": "tree",
     "vegType": ""
   },
   "108": {
-    "species": " Citronnier",
-    "category": "vegetable",
+    "species": "Citronnier",
+    "category": "outdoor",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "medium",
@@ -5200,10 +5079,20 @@
       5
     ],
     "harvest_months": [
-      12
+      11,
+      12,
+      1,
+      2,
+      3
     ],
     "flowering_months": [
-      3
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
     ],
     "repotting_months": [
       3,
@@ -5227,11 +5116,11 @@
     "general": "Le citronnier est un agrume emblématique des jardins méditerranéens, apprécié pour ses fruits juteux et son parfum.",
     "esthetic": "fruit",
     "foliage": "evergreen",
-    "height": "",
+    "height": "tree",
     "vegType": "fruitTree"
   },
   "109": {
-    "species": " Mimosa",
+    "species": "Mimosa",
     "category": "outdoor",
     "light": "direct",
     "difficulty": "medium",
@@ -5239,7 +5128,7 @@
     "temperature": "frostTender",
     "toxicity": "none",
     "cycle": "perennial",
-    "water_summer": 1,
+    "water_summer": 10,
     "water_winter": 7,
     "fertilize_freq": 15,
     "repot_freq": 24,
@@ -5261,24 +5150,19 @@
     "pruning_months": [
       3
     ],
-    "wintering_months": [
-      11,
-      12,
-      1,
-      2
-    ],
+    "wintering_months": [],
     "soil": "substrat bien drainant, mélange de terre de bruyère et terreau avec du sable",
     "pruning": "taille légère après floraison, réduire les rameaux fleuris",
     "care": "arrosages réguliers, maintenir frais mais jamais détrempé",
     "general": "petit arbre apprécié pour sa floraison en pompons jaunes, supporte mal le froid",
     "esthetic": "flowering",
-    "foliage": "deciduous",
-    "height": "",
+    "foliage": "evergreen",
+    "height": "tree",
     "vegType": ""
   },
   "110": {
-    "species": " Pommier",
-    "category": "vegetable",
+    "species": "Pommier",
+    "category": "outdoor",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "medium",
@@ -5327,12 +5211,12 @@
     "general": "Le pommier est un arbre fruitier qui produit des pommes savoureuses et nécessite une pollinisation croisée pour une bonne récolte.",
     "esthetic": "fruit",
     "foliage": "deciduous",
-    "height": "",
+    "height": "tree",
     "vegType": "fruitTree"
   },
   "111": {
-    "species": " Poirier",
-    "category": "vegetable",
+    "species": "Poirier",
+    "category": "outdoor",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "medium",
@@ -5383,12 +5267,12 @@
     "general": "Le poirier est un arbre fruitier à feuillage caduc, cultivé pour ses fruits savoureux.",
     "esthetic": "fruit",
     "foliage": "deciduous",
-    "height": "",
+    "height": "tree",
     "vegType": "fruitTree"
   },
   "112": {
-    "species": " Cerisier",
-    "category": "vegetable",
+    "species": "Cerisier",
+    "category": "outdoor",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "medium",
@@ -5435,12 +5319,12 @@
     "general": "Le cerisier est un arbre fruitier apprécié pour sa floraison et ses fruits.",
     "esthetic": "fruit",
     "foliage": "deciduous",
-    "height": "",
+    "height": "tree",
     "vegType": "fruitTree"
   },
   "113": {
-    "species": " Prunier",
-    "category": "vegetable",
+    "species": "Prunier",
+    "category": "outdoor",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -5487,12 +5371,12 @@
     "general": "Le prunier est un arbre fruitier populaire, facile à cultiver et productif.",
     "esthetic": "fruit",
     "foliage": "deciduous",
-    "height": "",
+    "height": "tree",
     "vegType": "fruitTree"
   },
   "114": {
-    "species": " Pêcher",
-    "category": "fruitTree",
+    "species": "Pêcher",
+    "category": "outdoor",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "medium",
@@ -5522,8 +5406,8 @@
       5
     ],
     "pruning_months": [
-      6,
-      7
+      8,
+      9
     ],
     "wintering_months": [
       11,
@@ -5537,12 +5421,12 @@
     "general": "Le pêcher à pêche plate est autofertile et produit des fruits dès les premières années.",
     "esthetic": "fruit",
     "foliage": "deciduous",
-    "height": "",
+    "height": "tree",
     "vegType": "fruitTree"
   },
   "115": {
-    "species": " Abricotier",
-    "category": "vegetable",
+    "species": "Abricotier",
+    "category": "outdoor",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "medium",
@@ -5577,8 +5461,8 @@
       5
     ],
     "pruning_months": [
-      3,
-      10
+      8,
+      9
     ],
     "wintering_months": [
       11,
@@ -5592,12 +5476,12 @@
     "general": "L’abricotier est un arbre fruitier qui produit des abricots, il est rustique et nécessite un sol bien drainé.",
     "esthetic": "fruit",
     "foliage": "deciduous",
-    "height": "",
+    "height": "tree",
     "vegType": "fruitTree"
   },
   "116": {
-    "species": " Figuier",
-    "category": "vegetable",
+    "species": "Figuier",
+    "category": "outdoor",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -5638,12 +5522,12 @@
     "general": "Le figuier est un arbre fruitier rustique, capable de vivre jusqu'à 300 ans.",
     "esthetic": "fruit",
     "foliage": "deciduous",
-    "height": "",
+    "height": "tree",
     "vegType": "fruitTree"
   },
   "117": {
-    "species": " Noisetier",
-    "category": "vegetable",
+    "species": "Noisetier",
+    "category": "outdoor",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -5692,12 +5576,12 @@
     "general": "Le noisetier est un arbuste rustique qui produit des noisettes et est facile à cultiver.",
     "esthetic": "fruit",
     "foliage": "deciduous",
-    "height": "",
-    "vegType": "fruit"
+    "height": "shrub",
+    "vegType": "fruitTree"
   },
   "118": {
-    "species": " Noyer",
-    "category": "vegetable",
+    "species": "Noyer",
+    "category": "outdoor",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "medium",
@@ -5741,12 +5625,12 @@
     "general": "Le noyer est un arbre fruitier qui produit des noix et nécessite un bon emplacement ensoleillé.",
     "esthetic": "fruit",
     "foliage": "deciduous",
-    "height": "",
+    "height": "tree",
     "vegType": "fruitTree"
   },
   "119": {
-    "species": " Vigne",
-    "category": "vegetable",
+    "species": "Vigne",
+    "category": "outdoor",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "medium",
@@ -5777,12 +5661,8 @@
       5
     ],
     "pruning_months": [
-      11,
-      12,
       1,
-      2,
-      3,
-      4
+      2
     ],
     "wintering_months": [
       11,
@@ -5796,12 +5676,12 @@
     "general": "La vigne est un arbuste fruitier qui produit des raisins et nécessite un bon ensoleillement.",
     "esthetic": "fruit",
     "foliage": "deciduous",
-    "height": "",
+    "height": "climber",
     "vegType": "fruit"
   },
   "120": {
-    "species": " Kiwi",
-    "category": "vegetable",
+    "species": "Kiwi",
+    "category": "outdoor",
     "light": "partial",
     "difficulty": "medium",
     "humidity": "medium",
@@ -5846,12 +5726,12 @@
     "general": "L'actinidia est une liane fruitière rustique, productive et peu sensible aux maladies.",
     "esthetic": "fruit",
     "foliage": "deciduous",
-    "height": "",
-    "vegType": "fruit"
+    "height": "climber",
+    "vegType": "fruitTree"
   },
   "121": {
-    "species": " Oranger",
-    "category": "vegetable",
+    "species": "Oranger",
+    "category": "outdoor",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "medium",
@@ -5860,7 +5740,7 @@
     "cycle": "perennial",
     "water_summer": 7,
     "water_winter": 15,
-    "fertilize_freq": 21,
+    "fertilize_freq": 15,
     "repot_freq": 12,
     "sowing_months": [],
     "planting_months": [
@@ -5900,12 +5780,12 @@
     "general": "L’oranger est un arbre fruitier apprécié pour ses fleurs parfumées et ses oranges juteuses.",
     "esthetic": "fruit",
     "foliage": "evergreen",
-    "height": "",
+    "height": "tree",
     "vegType": "fruitTree"
   },
   "122": {
-    "species": " Mandarinier",
-    "category": "vegetable",
+    "species": "Mandarinier",
+    "category": "outdoor",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "medium",
@@ -5949,13 +5829,13 @@
     "general": "Le mandarinier est un arbre fruitier persistant, originaire d'Asie, qui nécessite du soleil et un sol bien drainé.",
     "esthetic": "fruit",
     "foliage": "evergreen",
-    "height": "",
+    "height": "tree",
     "vegType": "fruitTree"
   },
   "123": {
-    "species": " Kumquat",
-    "category": "vegetable",
-    "light": "brightInd",
+    "species": "Kumquat",
+    "category": "outdoor",
+    "light": "direct",
     "difficulty": "medium",
     "humidity": "medium",
     "temperature": "frostTender",
@@ -5995,11 +5875,11 @@
     "general": "Le kumquat est un petit agrume apprécié pour ses fruits comestibles et savoureux.",
     "esthetic": "fruit",
     "foliage": "evergreen",
-    "height": "",
-    "vegType": "fruit"
+    "height": "tree",
+    "vegType": "fruitTree"
   },
   "124": {
-    "species": " Catalpa",
+    "species": "Catalpa",
     "category": "outdoor",
     "light": "direct",
     "difficulty": "easy",
@@ -6040,11 +5920,11 @@
     "general": "Le catalpa est un arbre ornemental très apprécié pour son ombre et sa floraison spectaculaire.",
     "esthetic": "flowering",
     "foliage": "deciduous",
-    "height": "",
+    "height": "tree",
     "vegType": ""
   },
   "125": {
-    "species": " Hêtre",
+    "species": "Hêtre",
     "category": "outdoor",
     "light": "partial",
     "difficulty": "medium",
@@ -6088,11 +5968,11 @@
     "general": "Le hêtre commun est un arbre majestueux, très rustique et apprécié pour son esthétisme.",
     "esthetic": "foliage",
     "foliage": "deciduous",
-    "height": "",
+    "height": "tree",
     "vegType": ""
   },
   "126": {
-    "species": " Frêne",
+    "species": "Frêne",
     "category": "outdoor",
     "light": "direct",
     "difficulty": "easy",
@@ -6139,11 +6019,11 @@
     "general": "Le frêne est un arbre majestueux, apprécié pour son port élancé et sa croissance rapide.",
     "esthetic": "foliage",
     "foliage": "deciduous",
-    "height": "",
+    "height": "tree",
     "vegType": ""
   },
   "127": {
-    "species": " Erable",
+    "species": "Erable",
     "category": "outdoor",
     "light": "partial",
     "difficulty": "medium",
@@ -6187,11 +6067,11 @@
     "general": "L'érable est un arbre robuste et adaptable, apprécié pour son feuillage spectaculaire et sa capacité à offrir de l'ombre.",
     "esthetic": "foliage",
     "foliage": "deciduous",
-    "height": "",
+    "height": "tree",
     "vegType": ""
   },
   "128": {
-    "species": " Tilleul",
+    "species": "Tilleul",
     "category": "outdoor",
     "light": "partial",
     "difficulty": "easy",
@@ -6233,11 +6113,11 @@
     "general": "Le tilleul est un arbre durable, vivant jusqu'à 400 ans, apprécié pour son ombre et ses fleurs mellifères.",
     "esthetic": "foliage",
     "foliage": "deciduous",
-    "height": "",
+    "height": "tree",
     "vegType": ""
   },
   "129": {
-    "species": " Millepertuis",
+    "species": "Millepertuis",
     "category": "outdoor",
     "light": "partial",
     "difficulty": "easy",
@@ -6286,11 +6166,11 @@
     "general": "Le millepertuis est un arbuste à floraison abondante, facile à entretenir et reconnu en phytothérapie.",
     "esthetic": "flowering",
     "foliage": "evergreen",
-    "height": "",
+    "height": "ground",
     "vegType": ""
   },
   "130": {
-    "species": " Bambou",
+    "species": "Bambou",
     "category": "outdoor",
     "light": "partial",
     "difficulty": "medium",
@@ -6332,17 +6212,17 @@
     "general": "Le bambou est une plante à croissance rapide, idéale pour des haies persistantes.",
     "esthetic": "foliage",
     "foliage": "evergreen",
-    "height": "",
+    "height": "shrub",
     "vegType": ""
   },
   "131": {
-    "species": " Rhododendron",
+    "species": "Rhododendron",
     "category": "outdoor",
     "light": "partial",
     "difficulty": "medium",
     "humidity": "medium",
-    "temperature": "frostTender",
-    "toxicity": "low",
+    "temperature": "hardy",
+    "toxicity": "high",
     "cycle": "perennial",
     "water_summer": 5,
     "water_winter": 15,
@@ -6366,7 +6246,8 @@
       5
     ],
     "pruning_months": [
-      8
+      5,
+      6
     ],
     "wintering_months": [
       11,
@@ -6380,11 +6261,11 @@
     "general": "Le rhododendron est un bel arbuste approprié à la culture en pot, avec un feuillage persistant et une floraison de mars à juin.",
     "esthetic": "flowering",
     "foliage": "evergreen",
-    "height": "",
+    "height": "shrub",
     "vegType": ""
   },
   "132": {
-    "species": " Mahonia",
+    "species": "Mahonia",
     "category": "outdoor",
     "light": "partial",
     "difficulty": "easy",
@@ -6422,23 +6303,18 @@
     "pruning_months": [
       4
     ],
-    "wintering_months": [
-      11,
-      12,
-      1,
-      2
-    ],
+    "wintering_months": [],
     "soil": "Ordinaire à humifère, plutôt frais, bien drainé",
     "pruning": "Supprimez les hampes florales fanées après la floraison",
     "care": "Arrosez régulièrement la première année, puis en été si la sécheresse dure",
     "general": "Le mahonia est un arbuste persistant, rustique et décoratif, avec une floraison parfumée en hiver.",
     "esthetic": "flowering",
     "foliage": "evergreen",
-    "height": "",
+    "height": "shrub",
     "vegType": ""
   },
   "133": {
-    "species": " Jasmin d'hiver",
+    "species": "Jasmin d'hiver",
     "category": "outdoor",
     "light": "partial",
     "difficulty": "medium",
@@ -6446,7 +6322,7 @@
     "temperature": "hardy",
     "toxicity": "none",
     "cycle": "perennial",
-    "water_summer": 3,
+    "water_summer": 10,
     "water_winter": 7,
     "fertilize_freq": 15,
     "repot_freq": 12,
@@ -6467,23 +6343,18 @@
     "pruning_months": [
       4
     ],
-    "wintering_months": [
-      11,
-      12,
-      1,
-      2
-    ],
+    "wintering_months": [],
     "soil": "Mélange de terre de jardin avec du terreau pour plantes fleuries.",
     "pruning": "Couper les tiges de 10 à 25 cm après la floraison.",
     "care": "Arroser généreusement au printemps et en été, réduire les arrosages en hiver.",
     "general": "Le jasmin d'hiver est une plante grimpante à fleurs jaunes, rustique jusqu'à -15°C.",
     "esthetic": "flowering",
-    "foliage": "evergreen",
-    "height": "",
+    "foliage": "deciduous",
+    "height": "climber",
     "vegType": ""
   },
   "134": {
-    "species": " Arbre à papier",
+    "species": "Arbre à papier",
     "category": "outdoor",
     "light": "partial",
     "difficulty": "medium",
@@ -6527,11 +6398,11 @@
     "general": "L'Edgeworthia chrysantha est un arbuste à floraison précoce, idéal pour les jardins, avec des fleurs parfumées.",
     "esthetic": "flowering",
     "foliage": "deciduous",
-    "height": "",
+    "height": "shrub",
     "vegType": ""
   },
   "135": {
-    "species": " Myrte commune",
+    "species": "Myrte commune",
     "category": "outdoor",
     "light": "direct",
     "difficulty": "medium",
@@ -6575,11 +6446,11 @@
     "general": "Le myrte est un arbuste persistant typique des paysages méditerranéens, utilisé en ornement et en cuisine.",
     "esthetic": "flowering",
     "foliage": "evergreen",
-    "height": "",
+    "height": "shrub",
     "vegType": ""
   },
   "136": {
-    "species": " Agapanthe",
+    "species": "Agapanthe",
     "category": "outdoor",
     "light": "direct",
     "difficulty": "medium",
@@ -6606,9 +6477,7 @@
       3,
       4
     ],
-    "pruning_months": [
-      9
-    ],
+    "pruning_months": [],
     "wintering_months": [
       11,
       12,
@@ -6620,12 +6489,12 @@
     "care": "Arrosez lorsque 2–3 cm de substrat sont secs",
     "general": "Vivace rhizomateuse originaire d'Afrique du Sud, fleurit de juin à août",
     "esthetic": "flowering",
-    "foliage": "deciduous",
-    "height": "",
+    "foliage": "semi_evergreen",
+    "height": "ground",
     "vegType": ""
   },
   "137": {
-    "species": " Bambou sacré",
+    "species": "Bambou sacré",
     "category": "outdoor",
     "light": "partial",
     "difficulty": "easy",
@@ -6667,13 +6536,13 @@
     "pruning": "Aucune taille n'est vraiment indispensable, mais vous pouvez tailler après la floraison.",
     "care": "Arrosez régulièrement durant les 2 premières années après plantation.",
     "general": "Le Nandina domestica est un arbuste persistant, apprécié pour son feuillage coloré et ses baies décoratives.",
-    "esthetic": "flowering",
+    "esthetic": "foliage",
     "foliage": "evergreen",
-    "height": "",
+    "height": "shrub",
     "vegType": ""
   },
   "138": {
-    "species": " Camélia Japonais",
+    "species": "Camélia Japonais",
     "category": "outdoor",
     "light": "partial",
     "difficulty": "medium",
@@ -6696,13 +6565,13 @@
       4
     ],
     "repotting_months": [
+      4,
       5
     ],
     "pruning_months": [],
     "wintering_months": [
-      12,
-      1,
-      2
+      10,
+      11
     ],
     "soil": "Terre de bruyère, acide, frais, bien drainé.",
     "pruning": "Éliminer les fleurs fanées et harmoniser la silhouette.",
@@ -6710,11 +6579,11 @@
     "general": "Le camélia du Japon est un arbuste persistant qui fleurit de décembre à avril.",
     "esthetic": "flowering",
     "foliage": "evergreen",
-    "height": "",
+    "height": "shrub",
     "vegType": ""
   },
   "139": {
-    "species": " Ciste des corbières",
+    "species": "Ciste des corbières",
     "category": "outdoor",
     "light": "direct",
     "difficulty": "easy",
@@ -6761,11 +6630,11 @@
     "general": "Le ciste est un arbuste méditerranéen à fleurs, résistant aux maladies.",
     "esthetic": "flowering",
     "foliage": "evergreen",
-    "height": "",
+    "height": "shrub",
     "vegType": ""
   },
   "140": {
-    "species": " Céanothe",
+    "species": "Céanothe",
     "category": "outdoor",
     "light": "partial",
     "difficulty": "easy",
@@ -6812,11 +6681,11 @@
     "general": "Le céanothe est un arbuste d’ornement apprécié pour sa floraison bleue spectaculaire, parfois rose ou blanche.",
     "esthetic": "flowering",
     "foliage": "evergreen",
-    "height": "",
+    "height": "shrub",
     "vegType": ""
   },
   "141": {
-    "species": " Gaura",
+    "species": "Gaura",
     "category": "outdoor",
     "light": "direct",
     "difficulty": "easy",
@@ -6866,17 +6735,17 @@
     "general": "Vivace très généreuse, le gaura illumine massifs et potées de ses fleurs blanches ou roses.",
     "esthetic": "flowering",
     "foliage": "deciduous",
-    "height": "",
+    "height": "shrub",
     "vegType": ""
   },
   "142": {
-    "species": " Fleur de Lys",
+    "species": "Fleur de Lys",
     "category": "outdoor",
     "light": "partial",
     "difficulty": "medium",
     "humidity": "medium",
     "temperature": "hardy",
-    "toxicity": "none",
+    "toxicity": "high",
     "cycle": "perennial",
     "water_summer": 7,
     "water_winter": 15,
@@ -6918,11 +6787,11 @@
     "general": "Le lys est une fleur à bulbe rustique, symbole de pureté.",
     "esthetic": "flowering",
     "foliage": "deciduous",
-    "height": "",
+    "height": "shrub",
     "vegType": ""
   },
   "143": {
-    "species": " Saule Pleureur",
+    "species": "Saule Pleureur",
     "category": "outdoor",
     "light": "partial",
     "difficulty": "easy",
@@ -6965,11 +6834,11 @@
     "general": "Le saule pleureur est un arbre majestueux qui se développe bien au bord de l'eau et a une croissance rapide.",
     "esthetic": "foliage",
     "foliage": "deciduous",
-    "height": "",
+    "height": "tree",
     "vegType": ""
   },
   "144": {
-    "species": " Bouleau",
+    "species": "Bouleau",
     "category": "outdoor",
     "light": "direct",
     "difficulty": "medium",
@@ -7012,11 +6881,11 @@
     "general": "Le bouleau est un arbre d’ornement à croissance rapide, apprécié pour son écorce blanche et son feuillage caduc.",
     "esthetic": "foliage",
     "foliage": "deciduous",
-    "height": "",
+    "height": "tree",
     "vegType": ""
   },
   "145": {
-    "species": " Chêne",
+    "species": "Chêne",
     "category": "outdoor",
     "light": "direct",
     "difficulty": "easy",
@@ -7060,11 +6929,11 @@
     "general": "Le chêne vert est un arbre persistant, très résistant et adapté aux paysages méditerranéens.",
     "esthetic": "foliage",
     "foliage": "evergreen",
-    "height": "",
+    "height": "tree",
     "vegType": ""
   },
   "146": {
-    "species": " Pin",
+    "species": "Pin",
     "category": "outdoor",
     "light": "direct",
     "difficulty": "easy",
@@ -7106,11 +6975,11 @@
     "general": "Le pin maritime est un conifère robuste, adapté aux vents salés et à la sécheresse.",
     "esthetic": "foliage",
     "foliage": "evergreen",
-    "height": "",
+    "height": "tree",
     "vegType": ""
   },
   "147": {
-    "species": " Sapin",
+    "species": "Sapin",
     "category": "outdoor",
     "light": "direct",
     "difficulty": "easy",
@@ -7150,11 +7019,11 @@
     "general": "Le sapin du Colorado est un conifère rustique et résistant, avec une croissance lente.",
     "esthetic": "foliage",
     "foliage": "evergreen",
-    "height": "",
+    "height": "tree",
     "vegType": ""
   },
   "148": {
-    "species": " Ginkgo Biloba",
+    "species": "Ginkgo Biloba",
     "category": "outdoor",
     "light": "direct",
     "difficulty": "easy",
@@ -7193,17 +7062,17 @@
       1,
       2
     ],
-    "soil": "sol bien drainé",
+    "soil": "Sol bien drainé",
     "pruning": "Évitez les tailles sévères, ne retirez que les branches mortes ou gênantes.",
     "care": "Arrosez régulièrement durant les premières années après la plantation.",
     "general": "Le Ginkgo biloba est un arbre très résistant, apprécié pour son feuillage doré en automne.",
     "esthetic": "foliage",
     "foliage": "deciduous",
-    "height": "",
+    "height": "tree",
     "vegType": ""
   },
   "149": {
-    "species": " Magnolia",
+    "species": "Magnolia",
     "category": "outdoor",
     "light": "partial",
     "difficulty": "medium",
@@ -7247,26 +7116,30 @@
     "general": "Le magnolia est un arbre à fleurs qui offre une floraison spectaculaire du printemps à l'été.",
     "esthetic": "flowering",
     "foliage": "deciduous",
-    "height": "",
+    "height": "tree",
     "vegType": ""
   },
   "150": {
-    "species": " Yucca",
+    "species": "Yucca gloriosa",
     "category": "outdoor",
-    "light": "brightInd",
+    "light": "direct",
     "difficulty": "easy",
-    "humidity": "medium",
-    "temperature": "frostTender",
+    "humidity": "low",
+    "temperature": "hardy",
     "toxicity": "low",
     "cycle": "perennial",
-    "water_summer": 3,
-    "water_winter": 10,
+    "water_summer": 20,
+    "water_winter": 45,
     "fertilize_freq": 14,
     "repot_freq": 12,
     "sowing_months": [],
     "planting_months": [],
     "harvest_months": [],
-    "flowering_months": [],
+    "flowering_months": [
+      7,
+      8,
+      9
+    ],
     "repotting_months": [
       3
     ],
@@ -7282,12 +7155,12 @@
     "general": "Le Yucca elephantipes est une plante exotique qui se plaît au soleil et produit une floraison spectaculaire.",
     "esthetic": "foliage",
     "foliage": "evergreen",
-    "height": "",
+    "height": "shrub",
     "vegType": ""
   },
   "151": {
-    "species": " Passiflore",
-    "category": "climber",
+    "species": "Passiflore",
+    "category": "outdoor",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "medium",
@@ -7336,12 +7209,12 @@
     "care": "Arrosez régulièrement durant l’été et en cas de forte chaleur.",
     "general": "La passiflore est une plante grimpante originaire d’Amérique tropicale offrant une floraison exceptionnelle.",
     "esthetic": "flowering",
-    "foliage": "evergreen",
-    "height": "",
+    "foliage": "semi_evergreen",
+    "height": "climber",
     "vegType": ""
   },
   "152": {
-    "species": " Bignone",
+    "species": "Bignone",
     "category": "outdoor",
     "light": "direct",
     "difficulty": "medium",
@@ -7389,11 +7262,11 @@
     "general": "La bignone est une plante grimpante vigoureuse, appréciée pour sa floraison estivale et sa rusticité.",
     "esthetic": "flowering",
     "foliage": "deciduous",
-    "height": "",
+    "height": "climber",
     "vegType": ""
   },
   "153": {
-    "species": " Rosier Grimpant",
+    "species": "Rosier Grimpant",
     "category": "outdoor",
     "light": "direct",
     "difficulty": "medium",
@@ -7437,11 +7310,11 @@
     "general": "Les rosiers grimpants sont parfaits pour couvrir des structures et fleurissent généreusement.",
     "esthetic": "flowering",
     "foliage": "deciduous",
-    "height": "",
+    "height": "climber",
     "vegType": ""
   },
   "154": {
-    "species": " Rosier Buisson",
+    "species": "Rosier Buisson",
     "category": "outdoor",
     "light": "partial",
     "difficulty": "medium",
@@ -7486,17 +7359,17 @@
     "general": "Les rosiers sont des plantes ornementales appréciées pour leurs fleurs.",
     "esthetic": "flowering",
     "foliage": "deciduous",
-    "height": "",
+    "height": "shrub",
     "vegType": ""
   },
   "155": {
-    "species": " Iris",
+    "species": "Iris",
     "category": "outdoor",
-    "light": "partial",
+    "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
     "temperature": "veryHardy",
-    "toxicity": "none",
+    "toxicity": "low",
     "cycle": "perennial",
     "water_summer": 7,
     "water_winter": 15,
@@ -7512,8 +7385,9 @@
     ],
     "harvest_months": [],
     "flowering_months": [
-      2,
-      3
+      4,
+      5,
+      6
     ],
     "repotting_months": [
       3,
@@ -7533,11 +7407,11 @@
     "general": "Iris reticulata est l’une des premières fleurs du printemps, fleurissant en même temps que les perce-neige et les crocus précoces.",
     "esthetic": "flowering",
     "foliage": "deciduous",
-    "height": "",
+    "height": "ground",
     "vegType": ""
   },
   "156": {
-    "species": " Glaïeul",
+    "species": "Glaïeul",
     "category": "outdoor",
     "light": "direct",
     "difficulty": "easy",
@@ -7585,11 +7459,11 @@
     "general": "Le glaïeul est une fleur à bulbe qui fleurit de juin à septembre et nécessite un emplacement en plein soleil.",
     "esthetic": "flowering",
     "foliage": "deciduous",
-    "height": "",
+    "height": "shrub",
     "vegType": ""
   },
   "157": {
-    "species": " Muguet",
+    "species": "Muguet",
     "category": "outdoor",
     "light": "partial",
     "difficulty": "easy",
@@ -7631,11 +7505,11 @@
     "general": "Le muguet est une plante vivace rhizomateuse qui fleurit en avril-mai et est toxique.",
     "esthetic": "flowering",
     "foliage": "deciduous",
-    "height": "",
+    "height": "ground",
     "vegType": ""
   },
   "158": {
-    "species": " Primevère",
+    "species": "Primevère",
     "category": "outdoor",
     "light": "partial",
     "difficulty": "easy",
@@ -7679,28 +7553,23 @@
       5
     ],
     "pruning_months": [],
-    "wintering_months": [
-      11,
-      12,
-      1,
-      2
-    ],
+    "wintering_months": [],
     "soil": "Sols frais, riches, bien drainés et légèrement acides à neutres.",
     "pruning": "Retirez les fleurs fanées au fur et à mesure.",
     "care": "Arrosez régulièrement mais sans excès, surtout en été.",
     "general": "Plante vivace appréciée pour sa jolie floraison printanière et ses couleurs éclatantes.",
     "esthetic": "flowering",
     "foliage": "deciduous",
-    "height": "",
+    "height": "ground",
     "vegType": ""
   },
   "159": {
-    "species": " Pensée",
+    "species": "Pensée",
     "category": "outdoor",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
-    "temperature": "frostTender",
+    "temperature": "hardy",
     "toxicity": "none",
     "cycle": "biennial",
     "water_summer": 5,
@@ -7737,23 +7606,18 @@
       5
     ],
     "pruning_months": [],
-    "wintering_months": [
-      11,
-      12,
-      1,
-      2
-    ],
+    "wintering_months": [],
     "soil": "Normal, frais, bien drainé",
     "pruning": "Supprimez les fleurs fanées pour encourager une floraison continue.",
     "care": "Arrosez régulièrement, surtout pendant les périodes sèches.",
     "general": "Les pensées fleurissent presque tout au long de l'année selon les espèces et la façon dont on les cultive.",
     "esthetic": "flowering",
     "foliage": "deciduous",
-    "height": "",
+    "height": "ground",
     "vegType": ""
   },
   "160": {
-    "species": " Anémone",
+    "species": "Anémone",
     "category": "outdoor",
     "light": "partial",
     "difficulty": "easy",
@@ -7798,57 +7662,60 @@
     "general": "L’anémone des bois est une plante vivace qui fleurit au printemps et est toxique.",
     "esthetic": "flowering",
     "foliage": "deciduous",
-    "height": "",
+    "height": "ground",
     "vegType": ""
   },
   "161": {
-    "species": " Renoncule",
-    "category": "indoor",
-    "light": "partial",
-    "difficulty": "medium",
-    "humidity": "high",
-    "temperature": "veryHardy",
+    "species": "Renoncule",
+    "category": "outdoor",
+    "light": "direct",
+    "difficulty": "easy",
+    "humidity": "medium",
+    "temperature": "semiHardy",
     "toxicity": "none",
-    "cycle": "",
-    "water_summer": 1,
-    "water_winter": 1,
-    "fertilize_freq": 0,
+    "cycle": "perennial",
+    "water_summer": 5,
+    "water_winter": 0,
+    "fertilize_freq": 15,
     "repot_freq": 0,
     "sowing_months": [
-      3,
-      4,
-      5,
-      6
+      3
     ],
     "planting_months": [
-      3,
-      4,
-      5,
-      6
+      4
     ],
     "harvest_months": [],
     "flowering_months": [
+      5,
       6,
-      7,
-      8
+      7
     ],
-    "repotting_months": [],
+    "repotting_months": [
+      3,
+      4,
+      5
+    ],
     "pruning_months": [
       8
     ],
-    "wintering_months": [],
-    "soil": "Humide, terreau spécial plante aquatique",
-    "pruning": "Enlever une partie du feuillage à la fin de l'été.",
-    "care": "Contrôler sa propagation et nettoyer régulièrement le bassin.",
-    "general": "Plante aquatique décorative qui produit de l'oxygène pour la faune aquatique.",
+    "wintering_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "soil": "Sol léger, bien drainé, neutre ou acide",
+    "pruning": "Coupez les fleurs fanées après la floraison.",
+    "care": "Arrosez régulièrement par temps chaud et sec en laissant le substrat sécher entre deux arrosages.",
+    "general": "La renoncule est une plante vivace qui illumine le jardin par sa floraison aux coloris vifs.",
     "esthetic": "flowering",
-    "foliage": "",
-    "height": "",
+    "foliage": "deciduous",
+    "height": "ground",
     "vegType": ""
   },
   "162": {
-    "species": " Capucine",
-    "category": "vegetable",
+    "species": "Capucine",
+    "category": "outdoor",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -7885,23 +7752,18 @@
       5
     ],
     "pruning_months": [],
-    "wintering_months": [
-      11,
-      12,
-      1,
-      2
-    ],
+    "wintering_months": [],
     "soil": "Pauvre à modérément fertile, bien drainé.",
     "pruning": "Pas de taille nécessaire. Supprimez les fleurs fanées pour prolonger la floraison.",
     "care": "Arrosage modéré en pleine terre, plus régulier en pot, sans excès d'eau.",
     "general": "La capucine est une plante annuelle comestible, connue pour ses fleurs colorées et ses propriétés médicinales.",
     "esthetic": "flowering",
     "foliage": "deciduous",
-    "height": "",
-    "vegType": "fruit"
+    "height": "climber",
+    "vegType": "leaf"
   },
   "163": {
-    "species": " Coquelicot",
+    "species": "Coquelicot",
     "category": "outdoor",
     "light": "direct",
     "difficulty": "easy",
@@ -7909,7 +7771,7 @@
     "temperature": "hardy",
     "toxicity": "none",
     "cycle": "annual",
-    "water_summer": 0,
+    "water_summer": 7,
     "water_winter": 0,
     "fertilize_freq": 0,
     "repot_freq": 0,
@@ -7939,23 +7801,18 @@
     "pruning_months": [
       6
     ],
-    "wintering_months": [
-      11,
-      12,
-      1,
-      2
-    ],
+    "wintering_months": [],
     "soil": "Ordinaire ou plutôt riche",
     "pruning": "Supprimez les fleurs fanées pour prolonger la floraison.",
     "care": "Arrosage inutile sauf en période de sécheresse prolongée.",
     "general": "Le coquelicot est une plante annuelle emblématique des champs et des prairies, célèbre pour ses fleurs rouge vif.",
     "esthetic": "flowering",
     "foliage": "deciduous",
-    "height": "",
+    "height": "ground",
     "vegType": ""
   },
   "164": {
-    "species": " Bleuet",
+    "species": "Bleuet",
     "category": "outdoor",
     "light": "direct",
     "difficulty": "easy",
@@ -7990,74 +7847,60 @@
       5
     ],
     "pruning_months": [],
-    "wintering_months": [
-      11,
-      12,
-      1,
-      2
-    ],
+    "wintering_months": [],
     "soil": "Sol léger, bien drainé, pauvre à modérément fertile",
     "pruning": "Supprimez éventuellement les fleurs fanées pour prolonger la floraison.",
     "care": "Arrosez uniquement en cas de sécheresse prolongée.",
     "general": "Le bleuet est une fleur sauvage emblématique qui attire les pollinisateurs et embellit les jardins.",
     "esthetic": "flowering",
     "foliage": "deciduous",
-    "height": "",
+    "height": "ground",
     "vegType": ""
   },
   "165": {
-    "species": " Zinnia",
-    "category": "indoor",
-    "light": "partial",
-    "difficulty": "medium",
-    "humidity": "high",
+    "species": "Zinnia",
+    "category": "outdoor",
+    "light": "direct",
+    "difficulty": "easy",
+    "humidity": "medium",
     "temperature": "frostTender",
     "toxicity": "none",
-    "cycle": "perennial",
+    "cycle": "annual",
     "water_summer": 3,
-    "water_winter": 15,
+    "water_winter": 0,
     "fertilize_freq": 30,
-    "repot_freq": 24,
+    "repot_freq": 0,
     "sowing_months": [
-      2
+      3,
+      4
     ],
-    "planting_months": [],
+    "planting_months": [
+      5
+    ],
     "harvest_months": [],
     "flowering_months": [
-      1,
-      2,
-      3,
-      4,
-      5,
-      6,
       7,
       8,
-      9,
-      10,
-      11,
-      12
+      9
     ],
     "repotting_months": [
-      3
+      3,
+      4,
+      5
     ],
     "pruning_months": [],
-    "wintering_months": [
-      11,
-      12,
-      1,
-      2
-    ],
-    "soil": "substrat léger, aéré, humifère et fibreux, plutôt acide",
-    "pruning": "rabattre après la floraison si affaibli",
-    "care": "maintenir le substrat humide, brumiser régulièrement",
-    "general": "plante ornementale vivace, souvent épiphyte, avec des fleurs tubulaires colorées",
+    "wintering_months": [],
+    "soil": "Riche, humifère, bien drainé.",
+    "pruning": "Coupez les fleurs fanées pour favoriser le développement de nouvelles fleurs.",
+    "care": "Arrosage régulier, surtout en période de sécheresse.",
+    "general": "Le zinnia se cultive en jardinière, en massif ou en bordure, et ses fleurs sont appréciées en bouquet.",
     "esthetic": "flowering",
-    "foliage": "evergreen",
-    "height": "",
+    "foliage": "deciduous",
+    "height": "ground",
     "vegType": ""
   },
   "166": {
-    "species": " Ananas",
+    "species": "Ananas",
     "category": "indoor",
     "light": "brightInd",
     "difficulty": "medium",
@@ -8072,9 +7915,18 @@
     "sowing_months": [],
     "planting_months": [],
     "harvest_months": [
+      1,
+      2,
+      3,
+      4,
+      5,
       6,
       7,
-      8
+      8,
+      9,
+      10,
+      11,
+      12
     ],
     "flowering_months": [
       2,
@@ -8098,13 +7950,13 @@
     "general": "L'ananas est une plante vivace tropicale, cultivée en pot, qui nécessite chaleur et humidité.",
     "esthetic": "fruit",
     "foliage": "evergreen",
-    "height": "",
+    "height": "ground",
     "vegType": "fruit"
   },
   "167": {
-    "species": " Avocatier",
+    "species": "Avocatier",
     "category": "indoor",
-    "light": "partial",
+    "light": "brightInd",
     "difficulty": "medium",
     "humidity": "medium",
     "temperature": "frostTender",
@@ -8146,18 +7998,18 @@
     "pruning": "Pincez les extrémités des pousses et taillez le bois mort.",
     "care": "Arrosez régulièrement, la terre doit rester humide au début.",
     "general": "L'avocatier est une plante ornementale qui peut produire des avocats sous des conditions spécifiques.",
-    "esthetic": "foliage",
+    "esthetic": "fruit",
     "foliage": "evergreen",
-    "height": "",
+    "height": "tree",
     "vegType": ""
   },
   "168": {
-    "species": " Manguier",
-    "category": "vegetable",
+    "species": "Manguier",
+    "category": "outdoor",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "medium",
-    "temperature": "hardy",
+    "temperature": "frostTender",
     "toxicity": "none",
     "cycle": "perennial",
     "water_summer": 7,
@@ -8197,22 +8049,22 @@
     "care": "Arrosez régulièrement en cas de forte chaleur.",
     "general": "Le prunier est un arbre fruitier populaire, facile à cultiver.",
     "esthetic": "fruit",
-    "foliage": "deciduous",
-    "height": "",
+    "foliage": "evergreen",
+    "height": "tree",
     "vegType": "fruitTree"
   },
   "169": {
-    "species": " Bananier",
+    "species": "Bananier",
     "category": "outdoor",
     "light": "direct",
     "difficulty": "medium",
-    "humidity": "medium",
+    "humidity": "high",
     "temperature": "semiHardy",
     "toxicity": "none",
     "cycle": "perennial",
-    "water_summer": 7,
+    "water_summer": 3,
     "water_winter": 15,
-    "fertilize_freq": 15,
+    "fertilize_freq": 10,
     "repot_freq": 24,
     "sowing_months": [
       3
@@ -8250,11 +8102,11 @@
     "general": "Le Musa basjoo est un arbre exotique à feuillage persistant, idéal pour créer une ambiance de jungle luxuriante.",
     "esthetic": "foliage",
     "foliage": "evergreen",
-    "height": "",
+    "height": "tree",
     "vegType": ""
   },
   "170": {
-    "species": " Fuchsia",
+    "species": "Fuchsia",
     "category": "outdoor",
     "light": "partial",
     "difficulty": "medium",
@@ -8303,11 +8155,11 @@
     "general": "Le fuchsia est une plante à fleurs appréciée pour sa floraison généreuse et colorée.",
     "esthetic": "flowering",
     "foliage": "deciduous",
-    "height": "",
+    "height": "shrub",
     "vegType": ""
   },
   "171": {
-    "species": " Begonia",
+    "species": "Begonia",
     "category": "indoor",
     "light": "partial",
     "difficulty": "easy",
@@ -8343,23 +8195,18 @@
       11,
       12
     ],
-    "wintering_months": [
-      11,
-      12,
-      1,
-      2
-    ],
+    "wintering_months": [],
     "soil": "Plutôt riche, bien drainé",
     "pruning": "Supprimez les fleurs fanées au fur et à mesure.",
     "care": "Arrosez régulièrement après la mise en terre, surtout pour le bégonia en pot ou jardinière.",
     "general": "Le bégonia est une plante fleurie classique très décorative, appréciée pour sa floraison abondante et ses propriétés dépolluantes.",
     "esthetic": "flowering",
     "foliage": "deciduous",
-    "height": "",
+    "height": "ground",
     "vegType": ""
   },
   "172": {
-    "species": " Impatiens",
+    "species": "Impatiens",
     "category": "outdoor",
     "light": "partial",
     "difficulty": "easy",
@@ -8389,23 +8236,18 @@
       5
     ],
     "pruning_months": [],
-    "wintering_months": [
-      11,
-      12,
-      1,
-      2
-    ],
+    "wintering_months": [],
     "soil": "Terreau plantes fleuries",
     "pruning": "Aucune taille n'est nécessaire.",
     "care": "Arroser régulièrement en cas de fortes chaleurs.",
     "general": "Les impatiens sont décoratives et fleurissent remarquablement en massifs et jardinières.",
     "esthetic": "flowering",
     "foliage": "deciduous",
-    "height": "",
+    "height": "ground",
     "vegType": ""
   },
   "173": {
-    "species": " Bruyère",
+    "species": "Bruyère",
     "category": "outdoor",
     "light": "partial",
     "difficulty": "easy",
@@ -8453,18 +8295,18 @@
     "general": "La bruyère est une plante vivace qui colore les massifs en été à l’automne et en hiver selon l’espèce.",
     "esthetic": "flowering",
     "foliage": "evergreen",
-    "height": "",
+    "height": "ground",
     "vegType": ""
   },
   "174": {
-    "species": " Chrysanthème",
+    "species": "Chrysanthème",
     "category": "outdoor",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
     "temperature": "hardy",
-    "toxicity": "none",
-    "cycle": "annual",
+    "toxicity": "low",
+    "cycle": "perennial",
     "water_summer": 7,
     "water_winter": 15,
     "fertilize_freq": 30,
@@ -8507,11 +8349,11 @@
     "general": "Le chrysanthème est une plante emblématique de l'automne, appréciée pour sa floraison tardive.",
     "esthetic": "flowering",
     "foliage": "deciduous",
-    "height": "",
+    "height": "ground",
     "vegType": ""
   },
   "175": {
-    "species": " Aster",
+    "species": "Aster",
     "category": "outdoor",
     "light": "direct",
     "difficulty": "easy",
@@ -8533,10 +8375,6 @@
     ],
     "harvest_months": [],
     "flowering_months": [
-      4,
-      5,
-      6,
-      7,
       8,
       9,
       10,
@@ -8562,11 +8400,11 @@
     "general": "Les asters sont des vivaces peu exigeantes, attirant les abeilles.",
     "esthetic": "flowering",
     "foliage": "deciduous",
-    "height": "",
+    "height": "ground",
     "vegType": ""
   },
   "176": {
-    "species": " Aubriète",
+    "species": "Aubriète",
     "category": "outdoor",
     "light": "direct",
     "difficulty": "easy",
@@ -8608,11 +8446,11 @@
     "general": "L’aubriète est une plante vivace rustique, idéale pour les jardins secs et les murets en pierre.",
     "esthetic": "flowering",
     "foliage": "evergreen",
-    "height": "",
+    "height": "ground",
     "vegType": ""
   },
   "177": {
-    "species": " Campanule",
+    "species": "Campanule",
     "category": "outdoor",
     "light": "partial",
     "difficulty": "easy",
@@ -8663,11 +8501,11 @@
     "general": "La campanule est une plante vivace rustique, appréciée pour sa floraison abondante et sa facilité d'entretien.",
     "esthetic": "flowering",
     "foliage": "deciduous",
-    "height": "",
+    "height": "ground",
     "vegType": ""
   },
   "178": {
-    "species": " Digitale",
+    "species": "Digitale",
     "category": "outdoor",
     "light": "partial",
     "difficulty": "medium",
@@ -8717,18 +8555,18 @@
     "general": "La digitale est une plante vivace ou bisannuelle, très mellifère et toxique, idéale pour les jardins naturels.",
     "esthetic": "flowering",
     "foliage": "deciduous",
-    "height": "",
+    "height": "shrub",
     "vegType": ""
   },
   "179": {
-    "species": " Lupinus",
+    "species": "Lupinus",
     "category": "outdoor",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
     "temperature": "hardy",
     "toxicity": "high",
-    "cycle": "biennial",
+    "cycle": "perennial",
     "water_summer": 7,
     "water_winter": 15,
     "fertilize_freq": 30,
@@ -8767,18 +8605,18 @@
     "general": "Le lupin est une plante vivace ou annuelle, appréciée pour sa floraison spectaculaire et sa capacité à enrichir le sol en azote.",
     "esthetic": "flowering",
     "foliage": "deciduous",
-    "height": "",
+    "height": "shrub",
     "vegType": ""
   },
   "180": {
-    "species": " Delphinium",
+    "species": "Delphinium",
     "category": "outdoor",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "medium",
     "temperature": "hardy",
-    "toxicity": "none",
-    "cycle": "biennial",
+    "toxicity": "high",
+    "cycle": "perennial",
     "water_summer": 7,
     "water_winter": 15,
     "fertilize_freq": 30,
@@ -8818,17 +8656,17 @@
     "general": "Le delphinium, ou Pied d’alouette, est une plante vivace ou annuelle qui fleurit de juin à octobre.",
     "esthetic": "flowering",
     "foliage": "deciduous",
-    "height": "",
+    "height": "shrub",
     "vegType": ""
   },
   "181": {
-    "species": " Hosta",
+    "species": "Hosta",
     "category": "outdoor",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
     "temperature": "hardy",
-    "toxicity": "none",
+    "toxicity": "low",
     "cycle": "perennial",
     "water_summer": 7,
     "water_winter": 15,
@@ -8864,11 +8702,11 @@
     "general": "Les hostas sont des plantes vivaces très robustes qui se plaisent à l'ombre.",
     "esthetic": "foliage",
     "foliage": "deciduous",
-    "height": "",
+    "height": "ground",
     "vegType": ""
   },
   "182": {
-    "species": " Heuchère",
+    "species": "Heuchère",
     "category": "outdoor",
     "light": "partial",
     "difficulty": "easy",
@@ -8913,11 +8751,11 @@
     "general": "L'heuchère est une vivace graphique, célèbre pour son feuillage décoratif et facile d'entretien.",
     "esthetic": "foliage",
     "foliage": "evergreen",
-    "height": "",
+    "height": "ground",
     "vegType": ""
   },
   "183": {
-    "species": " Fétuque bleue",
+    "species": "Fétuque bleue",
     "category": "outdoor",
     "light": "partial",
     "difficulty": "easy",
@@ -8963,11 +8801,11 @@
     "general": "La fétuque bleue est une graminée ornementale appréciée pour son feuillage fin et sa teinte bleu argenté unique.",
     "esthetic": "foliage",
     "foliage": "evergreen",
-    "height": "",
+    "height": "ground",
     "vegType": ""
   },
   "184": {
-    "species": " Herbe de la pampa",
+    "species": "Herbe de la pampa",
     "category": "outdoor",
     "light": "direct",
     "difficulty": "medium",
@@ -8986,7 +8824,10 @@
       9,
       10
     ],
-    "repotting_months": [],
+    "repotting_months": [
+      3,
+      4
+    ],
     "pruning_months": [],
     "wintering_months": [
       11,
@@ -9000,11 +8841,11 @@
     "general": "L'herbe de la pampa est une plante graminée géante, invasive et interdite en France.",
     "esthetic": "foliage",
     "foliage": "deciduous",
-    "height": "",
+    "height": "shrub",
     "vegType": ""
   },
   "185": {
-    "species": " Charme",
+    "species": "Charme",
     "category": "outdoor",
     "light": "partial",
     "difficulty": "easy",
@@ -9047,11 +8888,11 @@
     "general": "Le charme est un arbre robuste, idéal pour les haies et les alignements, apprécié pour son feuillage dense et sa rusticité.",
     "esthetic": "foliage",
     "foliage": "deciduous",
-    "height": "",
+    "height": "tree",
     "vegType": ""
   },
   "186": {
-    "species": " Troène",
+    "species": "Troène",
     "category": "outdoor",
     "light": "partial",
     "difficulty": "easy",
@@ -9093,11 +8934,11 @@
     "general": "Le troène est un arbuste semi-persistant, souvent utilisé pour les haies.",
     "esthetic": "foliage",
     "foliage": "semi_evergreen",
-    "height": "",
+    "height": "shrub",
     "vegType": ""
   },
   "187": {
-    "species": " Cyprès de Leyland",
+    "species": "Cyprès de Leyland",
     "category": "outdoor",
     "light": "partial",
     "difficulty": "medium",
@@ -9139,11 +8980,11 @@
     "general": "Le cyprès de Leyland est un conifère utilisé pour former une haie persistante et occultante.",
     "esthetic": "foliage",
     "foliage": "evergreen",
-    "height": "",
+    "height": "tree",
     "vegType": ""
   },
   "188": {
-    "species": " Cotoneaster",
+    "species": "Cotoneaster",
     "category": "outdoor",
     "light": "partial",
     "difficulty": "easy",
@@ -9184,11 +9025,11 @@
     "general": "Le cotoneaster est un arbuste apprécié pour sa floraison printanière et ses baies décoratives.",
     "esthetic": "flowering",
     "foliage": "deciduous",
-    "height": "",
+    "height": "shrub",
     "vegType": ""
   },
   "189": {
-    "species": " Pyracantha",
+    "species": "Pyracantha",
     "category": "outdoor",
     "light": "partial",
     "difficulty": "easy",
@@ -9230,11 +9071,11 @@
     "general": "Le buisson ardent est un arbuste épineux apprécié pour sa croissance rapide et ses baies décoratives.",
     "esthetic": "flowering",
     "foliage": "evergreen",
-    "height": "",
+    "height": "shrub",
     "vegType": ""
   },
   "190": {
-    "species": " Houx",
+    "species": "Houx",
     "category": "outdoor",
     "light": "partial",
     "difficulty": "medium",
@@ -9276,11 +9117,11 @@
     "general": "Le houx est un arbuste persistant, résistant et décoratif, connu pour ses baies rouges.",
     "esthetic": "foliage",
     "foliage": "evergreen",
-    "height": "",
+    "height": "tree",
     "vegType": ""
   },
   "191": {
-    "species": " Viorne",
+    "species": "Viorne",
     "category": "outdoor",
     "light": "partial",
     "difficulty": "medium",
@@ -9323,12 +9164,12 @@
     "care": "Arroser régulièrement en été, surtout lors de périodes sèches.",
     "general": "La viorne est un arbuste ornemental apprécié pour sa floraison et son feuillage.",
     "esthetic": "flowering",
-    "foliage": "deciduous",
-    "height": "",
+    "foliage": "semi_evergreen",
+    "height": "shrub",
     "vegType": ""
   },
   "192": {
-    "species": " Seringat",
+    "species": "Seringat",
     "category": "outdoor",
     "light": "partial",
     "difficulty": "easy",
@@ -9370,11 +9211,11 @@
     "general": "Le seringat est un arbuste parfumé qui fleurit en juin et est très rustique.",
     "esthetic": "flowering",
     "foliage": "deciduous",
-    "height": "",
+    "height": "shrub",
     "vegType": ""
   },
   "193": {
-    "species": " Weigelia",
+    "species": "Weigelia",
     "category": "outdoor",
     "light": "partial",
     "difficulty": "easy",
@@ -9417,11 +9258,11 @@
     "general": "Le Weigélia est un arbuste caduc apprécié pour sa floraison abondante au printemps et son feuillage décoratif.",
     "esthetic": "flowering",
     "foliage": "deciduous",
-    "height": "",
+    "height": "shrub",
     "vegType": ""
   },
   "194": {
-    "species": " Spirée",
+    "species": "Spirée",
     "category": "outdoor",
     "light": "direct",
     "difficulty": "easy",
@@ -9470,11 +9311,11 @@
     "general": "La spirée est un arbuste à floraison printanière ou estivale, facile d'entretien et très rustique.",
     "esthetic": "flowering",
     "foliage": "deciduous",
-    "height": "",
+    "height": "shrub",
     "vegType": ""
   },
   "195": {
-    "species": " Cornouiller",
+    "species": "Cornouiller",
     "category": "outdoor",
     "light": "partial",
     "difficulty": "easy",
@@ -9517,11 +9358,11 @@
     "general": "Le cornouiller est un bel arbuste ou petit arbre qui offre une floraison spectaculaire au printemps et une belle mise en couleur automnale.",
     "esthetic": "flowering",
     "foliage": "deciduous",
-    "height": "",
+    "height": "shrub",
     "vegType": ""
   },
   "196": {
-    "species": " Tamaris",
+    "species": "Tamaris",
     "category": "outdoor",
     "light": "direct",
     "difficulty": "easy",
@@ -9570,11 +9411,11 @@
     "general": "Le tamaris est un arbuste résistant, avec une floraison rose pâle au printemps ou en été.",
     "esthetic": "flowering",
     "foliage": "deciduous",
-    "height": "",
+    "height": "tree",
     "vegType": ""
   },
   "197": {
-    "species": " Albizia",
+    "species": "Albizia",
     "category": "outdoor",
     "light": "direct",
     "difficulty": "easy",
@@ -9605,7 +9446,8 @@
       5
     ],
     "pruning_months": [
-      9
+      2,
+      3
     ],
     "wintering_months": [
       11,
@@ -9619,11 +9461,11 @@
     "general": "L'albizia est un arbre ornemental apprécié pour sa floraison estivale spectaculaire et son feuillage léger.",
     "esthetic": "flowering",
     "foliage": "deciduous",
-    "height": "",
+    "height": "tree",
     "vegType": ""
   },
   "198": {
-    "species": " Marronnier",
+    "species": "Marronnier",
     "category": "outdoor",
     "light": "direct",
     "difficulty": "easy",
@@ -9666,11 +9508,11 @@
     "general": "Le marronnier est un arbre majestueux et très ornemental, avec une croissance rapide.",
     "esthetic": "flowering",
     "foliage": "deciduous",
-    "height": "",
+    "height": "tree",
     "vegType": ""
   },
   "199": {
-    "species": " Platane",
+    "species": "Platane",
     "category": "outdoor",
     "light": "direct",
     "difficulty": "medium",
@@ -9709,11 +9551,11 @@
     "general": "Le platane est un arbre d’ombrage robuste, tolérant à la pollution et au vent.",
     "esthetic": "foliage",
     "foliage": "deciduous",
-    "height": "",
+    "height": "tree",
     "vegType": ""
   },
   "200": {
-    "species": " Peuplier",
+    "species": "Peuplier",
     "category": "outdoor",
     "light": "direct",
     "difficulty": "easy",
@@ -9756,12 +9598,12 @@
     "general": "Le peuplier blanc est un arbre caduc, rustique et à croissance rapide, apprécié pour son feuillage original.",
     "esthetic": "foliage",
     "foliage": "deciduous",
-    "height": "",
+    "height": "tree",
     "vegType": ""
   },
   "201": {
-    "species": " Groseillier",
-    "category": "vegetable",
+    "species": "Groseillier",
+    "category": "outdoor",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -9806,12 +9648,12 @@
     "general": "Le groseillier est un arbuste fruitier apprécié pour ses petits fruits acidulés et sucrés.",
     "esthetic": "fruit",
     "foliage": "deciduous",
-    "height": "",
+    "height": "shrub",
     "vegType": "fruit"
   },
   "202": {
-    "species": " Cassis",
-    "category": "vegetable",
+    "species": "Cassis",
+    "category": "outdoor",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
@@ -9855,12 +9697,12 @@
     "general": "Le cassissier est un arbuste fruitier qui produit des baies noires riches en vitamines.",
     "esthetic": "fruit",
     "foliage": "deciduous",
-    "height": "",
+    "height": "shrub",
     "vegType": "fruit"
   },
   "203": {
-    "species": " Mûrier",
-    "category": "vegetable",
+    "species": "Mûrier",
+    "category": "outdoor",
     "light": "partial",
     "difficulty": "medium",
     "humidity": "medium",
@@ -9908,11 +9750,11 @@
     "general": "Le mûrier est un petit fruitier qui offre de délicieux fruits durant l’été.",
     "esthetic": "fruit",
     "foliage": "deciduous",
-    "height": "",
-    "vegType": "fruit"
+    "height": "tree",
+    "vegType": "fruitTree"
   },
   "204": {
-    "species": " Mûrier Platane",
+    "species": "Mûrier Platane",
     "category": "outdoor",
     "light": "direct",
     "difficulty": "medium",
@@ -9955,12 +9797,12 @@
     "general": "Le mûrier platane est un arbre d’ombrage apprécié pour son feuillage et ses fruits comestibles.",
     "esthetic": "foliage",
     "foliage": "deciduous",
-    "height": "",
+    "height": "tree",
     "vegType": ""
   },
   "205": {
-    "species": " Cognassier",
-    "category": "vegetable",
+    "species": "Cognassier",
+    "category": "outdoor",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -10001,14 +9843,14 @@
     "pruning": "Aucune taille n’est vraiment nécessaire, mais il est possible de réduire la ramure.",
     "care": "Arrosez régulièrement la première année suivant la plantation.",
     "general": "Le cognassier est un arbre fruitier compact, idéal pour les petits jardins, avec de grandes fleurs rosées au printemps et des coings en automne.",
-    "esthetic": "flowering",
+    "esthetic": "fruit",
     "foliage": "deciduous",
-    "height": "",
+    "height": "tree",
     "vegType": "fruitTree"
   },
   "206": {
-    "species": " Kaki",
-    "category": "vegetable",
+    "species": "Kaki",
+    "category": "outdoor",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "medium",
@@ -10046,18 +9888,18 @@
       1,
       2
     ],
-    "soil": "sol profond, léger à franc, enrichi en matière organique, pH neutre à légèrement acide",
+    "soil": "Sol profond, léger à franc, enrichi en matière organique, pH neutre à légèrement acide",
     "pruning": "En hiver, supprimez le bois mort et les branches faibles ou croisées.",
     "care": "Arrosez régulièrement la première et la deuxième année, surtout en été ou en cas de canicule.",
     "general": "Le plaqueminier est un arbre fruitier ornemental qui produit des kakis, riches en glucose et en vitamines.",
     "esthetic": "fruit",
     "foliage": "deciduous",
-    "height": "",
+    "height": "tree",
     "vegType": "fruitTree"
   },
   "207": {
-    "species": " Grenadier",
-    "category": "vegetable",
+    "species": "Grenadier",
+    "category": "outdoor",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "medium",
@@ -10104,12 +9946,12 @@
     "general": "Le grenadier est un arbuste à floraison éclatante, produisant des grenades.",
     "esthetic": "fruit",
     "foliage": "deciduous",
-    "height": "",
-    "vegType": "fruit"
+    "height": "tree",
+    "vegType": "fruitTree"
   },
   "208": {
-    "species": " Feijoa",
-    "category": "vegetable",
+    "species": "Feijoa",
+    "category": "outdoor",
     "light": "direct",
     "difficulty": "medium",
     "humidity": "medium",
@@ -10152,12 +9994,12 @@
     "general": "Le Feijoa est un arbuste au feuillage persistant, produisant des fleurs originales et des fruits au goût d'ananas.",
     "esthetic": "fruit",
     "foliage": "evergreen",
-    "height": "",
+    "height": "shrub",
     "vegType": "fruit"
   },
   "209": {
-    "species": " Amandier",
-    "category": "vegetable",
+    "species": "Amandier",
+    "category": "outdoor",
     "light": "direct",
     "difficulty": "easy",
     "humidity": "medium",
@@ -10184,7 +10026,8 @@
       5
     ],
     "pruning_months": [
-      2
+      8,
+      9
     ],
     "wintering_months": [
       11,
@@ -10198,11 +10041,11 @@
     "general": "L'amandier est un arbre fruitier méditerranéen, connu pour sa belle floraison et sa production d'amandes.",
     "esthetic": "fruit",
     "foliage": "deciduous",
-    "height": "",
+    "height": "tree",
     "vegType": "fruitTree"
   },
   "210": {
-    "species": " Oseille",
+    "species": "Oseille",
     "category": "vegetable",
     "light": "partial",
     "difficulty": "easy",
@@ -10254,11 +10097,11 @@
     "general": "L'oseille est une plante aromatique dont on consomme les feuilles au goût acide, facile à cultiver.",
     "esthetic": "foliage",
     "foliage": "deciduous",
-    "height": "",
+    "height": "ground",
     "vegType": "leaf"
   },
   "211": {
-    "species": " Céleri branche",
+    "species": "Céleri branche",
     "category": "vegetable",
     "light": "partial",
     "difficulty": "medium",
@@ -10267,7 +10110,7 @@
     "toxicity": "low",
     "cycle": "biennial",
     "water_summer": 4,
-    "water_winter": 15,
+    "water_winter": 0,
     "fertilize_freq": 30,
     "repot_freq": 0,
     "sowing_months": [
@@ -10276,7 +10119,8 @@
     ],
     "planting_months": [
       4,
-      5
+      5,
+      6
     ],
     "harvest_months": [
       10,
@@ -10305,36 +10149,40 @@
     "pruning": "Biner et sarcler les plants pour aérer le sol.",
     "care": "Arrosages réguliers et abondants, maintenir le sol humide.",
     "general": "Le céleri-branche est un légume bisannuel dont on déguste les pétioles blanchis.",
-    "esthetic": "fruit",
+    "esthetic": "foliage",
     "foliage": "deciduous",
-    "height": "",
+    "height": "ground",
     "vegType": "leaf"
   },
   "212": {
-    "species": " Navet",
+    "species": "Navet",
     "category": "vegetable",
     "light": "partial",
     "difficulty": "easy",
     "humidity": "medium",
     "temperature": "hardy",
     "toxicity": "none",
-    "cycle": "annual",
+    "cycle": "biennial",
     "water_summer": 4,
     "water_winter": 0,
     "fertilize_freq": 0,
     "repot_freq": 0,
     "sowing_months": [
-      2,
-      3
+      3,
+      4,
+      5,
+      8,
+      9
     ],
     "planting_months": [
       2,
       3
     ],
     "harvest_months": [
-      4,
       5,
-      6
+      6,
+      10,
+      11
     ],
     "flowering_months": [],
     "repotting_months": [
@@ -10355,11 +10203,11 @@
     "general": "Le navet primeur est un légume-racine tendre et savoureux, idéal pour les récoltes de printemps.",
     "esthetic": "foliage",
     "foliage": "deciduous",
-    "height": "",
+    "height": "ground",
     "vegType": "root"
   },
   "213": {
-    "species": " Panais",
+    "species": "Panais",
     "category": "vegetable",
     "light": "direct",
     "difficulty": "easy",
@@ -10386,18 +10234,15 @@
       6
     ],
     "harvest_months": [
-      8,
-      9,
       10,
       11,
+      12,
+      1,
+      2,
       3
     ],
     "flowering_months": [],
-    "repotting_months": [
-      3,
-      4,
-      5
-    ],
+    "repotting_months": [],
     "pruning_months": [],
     "wintering_months": [
       11,
@@ -10411,11 +10256,11 @@
     "general": "Le panais est un légume d'automne et d'hiver, riche en vitamines et minéraux.",
     "esthetic": "foliage",
     "foliage": "deciduous",
-    "height": "",
+    "height": "ground",
     "vegType": "root"
   },
   "214": {
-    "species": " Fève",
+    "species": "Fève",
     "category": "vegetable",
     "light": "partial",
     "difficulty": "easy",
@@ -10428,9 +10273,10 @@
     "fertilize_freq": 30,
     "repot_freq": 0,
     "sowing_months": [
+      10,
+      11,
       2,
-      3,
-      4
+      3
     ],
     "planting_months": [
       2,
@@ -10451,23 +10297,18 @@
       6,
       7
     ],
-    "wintering_months": [
-      11,
-      12,
-      1,
-      2
-    ],
+    "wintering_months": [],
     "soil": "Sols profonds et frais",
     "pruning": "Pincer les extrémités des tiges pour favoriser le développement des gousses.",
     "care": "Binez et sarclez régulièrement.",
     "general": "La fève est une légumineuse annuelle cultivée pour ses graines, consommées crues ou cuites.",
     "esthetic": "fruit",
     "foliage": "deciduous",
-    "height": "",
+    "height": "shrub",
     "vegType": "fruit"
   },
   "215": {
-    "species": " Topinambour",
+    "species": "Topinambour",
     "category": "vegetable",
     "light": "direct",
     "difficulty": "easy",
@@ -10481,7 +10322,8 @@
     "repot_freq": 0,
     "sowing_months": [
       2,
-      3
+      3,
+      4
     ],
     "planting_months": [
       2,
@@ -10516,9 +10358,9 @@
     "pruning": "Aucun besoin de taille spécifique.",
     "care": "Arrosage ponctuel en période de sécheresse.",
     "general": "Le topinambour est un légume vivace, facile à cultiver, avec une récolte de tubercules en hiver.",
-    "esthetic": "flowering",
+    "esthetic": "fruit",
     "foliage": "deciduous",
-    "height": "",
+    "height": "shrub",
     "vegType": "root"
   }
 }

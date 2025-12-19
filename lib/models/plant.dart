@@ -77,15 +77,28 @@ class Plant {
     return month >= 10 || month <= 3;
   }
 
-  int get currentFrequency => _isWinter ? waterFrequencyWinter : waterFrequencySummer;
+  // On ajoute un getter intelligent qui va chercher la fréquence
+  int get effectiveWaterFrequency {
+    // 1. Si l'utilisateur a défini une fréquence perso (via le slider), on la garde ?
+    // Pour l'instant, ton slider modifie waterFrequencySummer en BDD.
+    // Si tu veux donner la priorité à l'Encyclopédie (car tes données BDD sont fausses), fais ceci :
+    
+    final data = EncyclopediaService().getData(species);
+    if (data != null) {
+      return _isWinter ? data.waterWinter : data.waterSummer;
+    }
+    
+    // Fallback sur la BDD
+    return _isWinter ? waterFrequencyWinter : waterFrequencySummer;
+  }
 
   DateTime get nextWateringDate {
     // Si la fréquence est 0 (ou négative), on renvoie une date très lointaine
     // Cela signifie "Pas besoin d'arroser"
-    if (currentFrequency <= 0) return DateTime(2100);
+    if (effectiveWaterFrequency <= 0) return DateTime(2100);
 
     if (lastWatered == null) return dateAdded;
-    return lastWatered!.add(Duration(days: currentFrequency));
+    return lastWatered!.add(Duration(days: effectiveWaterFrequency));
   }
   
   // --- CALCUL INTELLIGENT FERTILISATION ---
@@ -145,7 +158,7 @@ class Plant {
 
   // Jours restants
   int get daysUntilWatering {
-    if (currentFrequency <= 0) return 999; 
+    if (effectiveWaterFrequency <= 0) return 999; 
     
     final now = DateTime.now();
     final today = DateTime(now.year, now.month, now.day);
